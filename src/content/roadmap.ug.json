@@ -1,0 +1,99 @@
+{
+  "track": "ug",
+  "applicable_year": "2025 cycle",
+  "last_updated": "2025-06-01",
+  "source_url": "https://mcc.nic.in/UGCounselling/Home/Index",
+  "steps": [
+    {
+      "step_order": 1,
+      "title": "Result & rank declared",
+      "body": "After you write NEET UG, NTA (the exam body) publishes your scorecard with your marks and an All India Rank (AIR). This rank decides which colleges you can apply to — lower rank numbers mean better options. Download your scorecard from the NTA website and keep it safe because you'll need it in every step that follows.",
+      "timing_window": "June (typically)",
+      "documents": [
+        "NEET UG scorecard",
+        "NEET admit card",
+        "Class 12 marksheet"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 2,
+      "title": "Registration on counselling portal",
+      "body": "You need to register on the MCC (Medical Counselling Committee) website for AIQ (All India Quota) seats, or on your state's counselling portal for state quota seats — or both if you want to try for both. Registration means filling in your personal details, uploading documents, and paying a refundable security deposit. Missing the registration window means you cannot participate in that round at all, so set reminders.",
+      "timing_window": "Late June – early July",
+      "documents": [
+        "NEET UG scorecard",
+        "Class 10 certificate (for date of birth proof)",
+        "Class 12 marksheet",
+        "Aadhaar card",
+        "Category certificate (if applicable)",
+        "Passport-size photographs",
+        "Registration fee payment receipt"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 3,
+      "title": "Document verification",
+      "body": "After registration, your uploaded documents are verified — either online or at a designated centre depending on the counselling body. If any document is missing, incorrect, or doesn't match your registration data, your application can be rejected. Double-check every upload: make sure scans are clear, the name spelling matches across all documents, and category certificates are in the prescribed format.",
+      "timing_window": "July (overlaps with registration)",
+      "documents": [
+        "NEET UG scorecard",
+        "Class 10 certificate",
+        "Class 12 marksheet",
+        "Photo ID (Aadhaar / Passport)",
+        "Domicile / residence certificate",
+        "Category / EWS / PwD certificate (if applicable)",
+        "Transfer certificate from school"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 4,
+      "title": "Choice filling & locking",
+      "body": "This is where you pick the colleges and courses you want, ranked in order of your preference. You can add as many choices as you like — there's no limit. Once you're satisfied, you 'lock' your choices. If you don't lock them yourself before the deadline, the system auto-locks whatever you last saved. Strategy matters here: putting too few choices or only dream colleges is risky, so add a healthy mix of reach, match, and safety options.",
+      "timing_window": "July (4–7 day window per round)",
+      "documents": [],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 5,
+      "title": "Seat allotment (round-wise)",
+      "body": "MCC runs multiple rounds of allotment (usually Round 1, Round 2, and Round 3). In each round, the system looks at your rank and your preference list, then assigns you the best possible seat from your choices that's still available. After each round you can accept the seat, 'float up' (keep the seat but stay in for upgrades in the next round), or exit. If you don't get allotted in a round, you automatically stay in for the next one.",
+      "timing_window": "Late July – August (multiple rounds)",
+      "documents": [
+        "Allotment letter (generated after each round)"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 6,
+      "title": "Reporting & admission",
+      "body": "Once you accept a seat, you must physically report to the allotted college within the given deadline — usually 5 to 7 days. You'll submit original documents, pay the first-year tuition fee, and formally take admission. If you don't report on time, your seat is cancelled and your security deposit may be forfeited. Carry every original document along with two sets of photocopies.",
+      "timing_window": "Within 5–7 days of each allotment result",
+      "documents": [
+        "Allotment letter",
+        "NEET scorecard (original)",
+        "Class 10 & 12 certificates (original)",
+        "Photo ID (original)",
+        "Category certificate (original, if applicable)",
+        "Passport-size photographs (6–8 copies)",
+        "First-year fee payment receipt",
+        "Migration certificate"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 7,
+      "title": "Mop-up & stray vacancy rounds",
+      "body": "After all regular rounds, seats that weren't filled — because students didn't report, or chose a different college — become available again in 'mop-up' rounds. If still vacant after mop-up, a final 'stray vacancy' round happens where colleges directly admit from remaining candidates. These rounds are your last chance, and cutoffs here can sometimes be more relaxed than earlier rounds. Keep your documents ready even if you weren't allotted earlier.",
+      "timing_window": "September – October",
+      "documents": [
+        "All documents from earlier steps",
+        "Fresh registration (if required by state)",
+        "Proof of non-admission / non-reporting (if previously allotted)"
+      ],
+      "applicable_year": "2025 cycle"
+    }
+  ]
+}

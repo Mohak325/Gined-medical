@@ -1,0 +1,84 @@
+{
+  "_note": "Prices are INDICATIVE placeholders. Finalize before launch.",
+  "last_updated": "2025-06-01",
+  "packages": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "track": "both",
+      "price": 4999,
+      "price_note": "Indicative — confirm before launch",
+      "features": [
+        "1 session (45 min)",
+        "Personalised college shortlist based on your rank",
+        "Category-wise cutoff analysis (3-year trends)",
+        "Safe / Moderate / Ambitious college tagging",
+        "PDF report with recommended colleges"
+      ],
+      "exclusions": [
+        "Choice-filling strategy session",
+        "Document verification support",
+        "Round-by-round allotment tracking",
+        "Mop-up round guidance",
+        "WhatsApp / phone support between sessions"
+      ],
+      "session_count": 1,
+      "duration_min": 45,
+      "delivery_modes": ["Video Call", "Phone"],
+      "recommended": false
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "track": "both",
+      "price": 11999,
+      "price_note": "Indicative — confirm before launch",
+      "features": [
+        "3 sessions (45 min each)",
+        "Personalised college shortlist with detailed rationale",
+        "Category-wise cutoff analysis (3-year trends)",
+        "Safe / Moderate / Ambitious college tagging",
+        "Choice-filling strategy & preference ordering",
+        "Document checklist review",
+        "Round-by-round allotment guidance (Rounds 1–3)",
+        "WhatsApp support during counselling window"
+      ],
+      "exclusions": [
+        "Mop-up & stray vacancy round support",
+        "Bond advisory",
+        "State counselling support (AIQ only)"
+      ],
+      "session_count": 3,
+      "duration_min": 45,
+      "delivery_modes": ["Video Call", "Phone"],
+      "recommended": true
+    },
+    {
+      "id": "complete",
+      "name": "Complete",
+      "track": "both",
+      "price": 24999,
+      "price_note": "Indicative — confirm before launch",
+      "features": [
+        "Unlimited sessions throughout the counselling cycle",
+        "Personalised college shortlist with detailed rationale",
+        "Category-wise cutoff analysis (3-year trends)",
+        "Safe / Moderate / Ambitious college tagging",
+        "Choice-filling strategy & preference ordering",
+        "Document verification and checklist support",
+        "Round-by-round allotment guidance (all rounds)",
+        "Mop-up & stray vacancy round support",
+        "Bond and fee advisory",
+        "State + AIQ dual counselling support",
+        "Priority WhatsApp & phone support",
+        "Post-admission onboarding guidance"
+      ],
+      "exclusions": [],
+      "session_count": -1,
+      "session_count_note": "-1 indicates unlimited sessions",
+      "duration_min": 45,
+      "delivery_modes": ["Video Call", "Phone", "In-Person (select cities)"],
+      "recommended": false
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "track": "pg",
+  "applicable_year": "2025 cycle",
+  "last_updated": "2025-06-01",
+  "source_url": "https://mcc.nic.in/PGCounselling/Home/Index",
+  "steps": [
+    {
+      "step_order": 1,
+      "title": "Result & scorecard",
+      "body": "NEET PG results are declared by NBEMS. Download your scorecard immediately — you'll need it for MCC and state registrations. Verify your category-wise percentile and AIR against the published cutoff.",
+      "timing_window": "March – April",
+      "documents": [
+        "NEET PG scorecard",
+        "NEET PG admit card"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 2,
+      "title": "MCC PG registration",
+      "body": "Register on the MCC portal for 50% AIQ seats. Pay the refundable security deposit and complete profile verification. For state quota, register separately on respective state portals. Both registrations can run in parallel.",
+      "timing_window": "April – May",
+      "documents": [
+        "NEET PG scorecard",
+        "MBBS degree certificate / provisional pass certificate",
+        "Internship completion certificate",
+        "State / permanent medical registration",
+        "Aadhaar card",
+        "Category certificate (if applicable)",
+        "Security deposit payment receipt"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 3,
+      "title": "Document verification",
+      "body": "MCC verifies uploaded documents including internship completion, medical registration, and bond affidavits. Incomplete or mismatched documents lead to rejection. For sponsored / in-service candidates, employer NOC and sponsorship letters must be uploaded during this phase.",
+      "timing_window": "April – May (overlaps with registration)",
+      "documents": [
+        "MBBS degree certificate",
+        "Internship completion certificate",
+        "Permanent / provisional medical registration",
+        "Attempt certificate from university",
+        "Category / EWS / PwD certificate (if applicable)",
+        "Domicile certificate",
+        "NOC from employer (in-service candidates)",
+        "Bond affidavit (if applicable)"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 4,
+      "title": "Choice filling by specialty & college",
+      "body": "Fill choices by specialty-college-seat type combination. Unlike UG, the number of permutations is much higher — e.g. 'Radiology at AIIMS Delhi (UR)' is a separate choice from 'Radiology at AIIMS Delhi (OBC)'. Lock choices before deadline; auto-lock applies the last saved preference order.",
+      "timing_window": "May – June (4–7 day window per round)",
+      "documents": [],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 5,
+      "title": "Allotment",
+      "body": "Allotment runs across Round 1, 2, and 3. Accept the seat, float for upgrade, or free-exit (before cutoff round). Post-Round 2 exits may attract seat-leaving charges. Review the allotment letter carefully for bond obligations before accepting.",
+      "timing_window": "June – July (multiple rounds)",
+      "documents": [
+        "Allotment letter"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 6,
+      "title": "Joining & bond execution",
+      "body": "Report to the allotted institute with originals within the stipulated window (typically 7 days). Execute the bond deed if required — government colleges in many states mandate a 1–3 year service bond post-PG. Pay tuition and hostel fees. Collect joining report from the institute.",
+      "timing_window": "Within 7 days of allotment result",
+      "documents": [
+        "Allotment letter",
+        "MBBS degree & marksheets (original)",
+        "Internship completion certificate (original)",
+        "Medical registration (original)",
+        "Bond deed (stamp paper, notarized)",
+        "First-year fee payment receipt",
+        "Passport-size photographs (8–10 copies)",
+        "Joining report from institute"
+      ],
+      "applicable_year": "2025 cycle"
+    },
+    {
+      "step_order": 7,
+      "title": "Mop-up & stray vacancy",
+      "body": "Unfilled seats go to mop-up round, then stray vacancy. Stray vacancy is institute-level counselling where colleges directly interview and admit from a list of eligible candidates shared by MCC / state bodies. These rounds often see movement in competitive specialties.",
+      "timing_window": "August – September",
+      "documents": [
+        "All documents from earlier steps",
+        "Relieving letter (if leaving a previously joined seat)",
+        "Fresh registration receipt (if required)"
+      ],
+      "applicable_year": "2025 cycle"
+    }
+  ]
+}

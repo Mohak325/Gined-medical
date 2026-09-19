@@ -1,0 +1,21 @@
+{
+  "note": "These are placeholder figures. Remove M2 entirely if unverified at launch (OI-1).",
+  "last_updated": "2025-06-01",
+  "stats": [
+    {
+      "value": 12500,
+      "label": "Students counselled",
+      "qualifier": "since 2019"
+    },
+    {
+      "value": 680,
+      "label": "Colleges mapped",
+      "qualifier": null
+    },
+    {
+      "value": 5,
+      "label": "Years active",
+      "qualifier": null
+    }
+  ]
+}

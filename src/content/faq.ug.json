@@ -1,0 +1,78 @@
+{
+  "track": "ug",
+  "last_updated": "2025-06-01",
+  "questions": [
+    {
+      "question": "What is AIQ and how does it differ from state quota?",
+      "answer": "AIQ (All India Quota) reserves 15% of seats in all government medical colleges (and 100% in central institutions like AIIMS) for candidates from across India, counselled by MCC. State quota covers the remaining 85% of government college seats and is managed by each state's counselling authority. You're eligible for your home state's quota based on domicile, and anyone can apply for AIQ regardless of domicile. You can participate in both simultaneously.",
+      "order": 1,
+      "category": "process"
+    },
+    {
+      "question": "What happens if I don't get a seat in round 1?",
+      "answer": "Nothing bad — you automatically remain in the pool for Round 2 and Round 3. Cutoffs often relax in later rounds as seats freed by candidates who upgraded or didn't report become available again. Many students get their final seat in Round 2 or even mop-up. Don't panic after Round 1; the process is designed to give you multiple chances.",
+      "order": 2,
+      "category": "process"
+    },
+    {
+      "question": "What are free exit and seat leaving bond?",
+      "answer": "Free exit means you can leave your allotted seat without any financial penalty — this is only allowed up to a certain round (typically after Round 2). After the free-exit cutoff, if you leave a seat, you forfeit your security deposit and may have to pay a 'seat leaving' penalty. This penalty can range from ₹1 lakh to ₹10 lakh depending on the counselling body. Always check the specific rules for the year before making a decision.",
+      "order": 3,
+      "category": "process"
+    },
+    {
+      "question": "What documents do I need for NEET UG counselling?",
+      "answer": "The core set includes: NEET scorecard, Class 10 certificate (date of birth proof), Class 12 marksheet, Aadhaar card, passport-size photographs, and the registration fee payment receipt. Depending on your category, you may also need a caste/EWS certificate, PwD certificate, or domicile/residence certificate. For state counselling, a domicile certificate is almost always mandatory. Always carry originals plus two photocopied sets.",
+      "order": 4,
+      "category": "documents"
+    },
+    {
+      "question": "When do I have to pay the college fees?",
+      "answer": "You pay a refundable security deposit at registration (typically ₹10,000–₹2,00,000 depending on the counselling body and category). The actual college tuition fee is paid when you physically report to the allotted college after seat acceptance. Some colleges allow instalment payments for the annual fee. The security deposit is refunded if you don't get a seat or if you exit within the free-exit window.",
+      "order": 5,
+      "category": "fees"
+    },
+    {
+      "question": "What is a mop-up round?",
+      "answer": "A mop-up round happens after all regular counselling rounds (1, 2, and 3) are over. It's meant to fill seats that remained vacant because candidates didn't report, upgraded to a better seat, or exited. Cutoffs in mop-up rounds can be higher or lower than regular rounds depending on demand. After mop-up, any still-vacant seats go to a 'stray vacancy' round where colleges admit directly.",
+      "order": 6,
+      "category": "process"
+    },
+    {
+      "question": "Can I participate in both AIQ and state counselling at the same time?",
+      "answer": "Yes, you can register for and participate in both AIQ (MCC) and your home state's counselling simultaneously. However, you can hold only one seat at any given time across all counselling processes. If you accept a seat in AIQ and also get allotted in state counselling, you must choose one and surrender the other before the deadline.",
+      "order": 7,
+      "category": "process"
+    },
+    {
+      "question": "What does 'float' mean in seat allotment?",
+      "answer": "'Float' means you keep your currently allotted seat but stay in the system for an upgrade in the next round. If a higher-preference college becomes available in the next round, you'll automatically be moved up. If not, you retain your current seat. Floating has no penalty and is the safest strategy when you want to try for better options without risking what you already have.",
+      "order": 8,
+      "category": "process"
+    },
+    {
+      "question": "How are deemed and private university fees different from government colleges?",
+      "answer": "Government college fees under AIQ are capped and relatively affordable — typically ₹10,000 to ₹5,00,000 per year. Private colleges charge ₹5,00,000 to ₹25,00,000 per year, while deemed universities can go up to ₹15,00,000–₹50,00,000 per year. Some states have fee regulatory committees that cap private college fees. NRI quota seats are even more expensive. Always verify the fee structure on the college's official website before choice filling.",
+      "order": 9,
+      "category": "fees"
+    },
+    {
+      "question": "How is the domicile certificate used in medical counselling?",
+      "answer": "Your domicile certificate determines which state's state-quota seats you're eligible for. Without a valid domicile certificate from that state, you cannot participate in its state counselling. For AIQ, domicile is not required since it's a national pool. Some states accept residence certificates instead of domicile — check your state's specific requirements.",
+      "order": 10,
+      "category": "documents"
+    },
+    {
+      "question": "How are your confidence labels calculated?",
+      "answer": "Our confidence labels (Safe, Moderate, Ambitious) are calculated by comparing your NEET rank against historical closing ranks for a college-course-category combination over the last 3 years. 'Safe' means your rank is comfortably within the closing rank range across all 3 years. 'Moderate' means you're within range for some years but not all. 'Ambitious' means your rank exceeds the historical closing rank, making admission unlikely but not impossible if cutoffs shift. These labels are indicative, not guarantees — actual cutoffs vary each year based on the candidate pool and seat availability.",
+      "order": 11,
+      "category": "data"
+    },
+    {
+      "question": "Where does your cutoff data come from?",
+      "answer": "Our cutoff data is sourced from officially published results on the MCC website (mcc.nic.in) for AIQ rounds, and from respective state counselling authority websites for state quota rounds. We update the data after each counselling cycle is completed. While we take care to ensure accuracy, we strongly recommend cross-checking any specific figure with the official MCC or state counselling portal before making decisions. All data points on our platform show the source year.",
+      "order": 12,
+      "category": "data"
+    }
+  ]
+}

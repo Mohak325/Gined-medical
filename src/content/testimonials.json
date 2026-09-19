@@ -1,0 +1,71 @@
+{
+  "last_updated": "2025-06-01",
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Priya Sharma",
+      "photo_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+      "rank": 15420,
+      "college_name": "Government Medical College, Kottayam",
+      "course": "MBBS",
+      "year": 2024,
+      "track": "ug",
+      "quote": "I had no idea how choice filling worked and almost put only 5 colleges. The counsellor helped me build a list of 45 choices with a proper safe-moderate-ambitious split. Got allotted in Round 2 — exactly where I wanted."
+    },
+    {
+      "id": "t2",
+      "name": "Arjun Reddy",
+      "photo_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop",
+      "rank": 42350,
+      "college_name": "Sri Ramachandra Medical College, Chennai",
+      "course": "MBBS",
+      "year": 2024,
+      "track": "ug",
+      "quote": "My parents and I were stressed about whether to take a private college seat in Round 1 or wait. The data-backed analysis showed me realistic options for Round 2 and mop-up, which gave us the confidence to float. Ended up upgrading to a much better college."
+    },
+    {
+      "id": "t3",
+      "name": "Ananya Iyer",
+      "photo_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop",
+      "rank": 8750,
+      "college_name": "Bangalore Medical College and Research Institute",
+      "course": "MBBS",
+      "year": 2024,
+      "track": "ug",
+      "quote": "The comparison tool saved me hours of manual research. I could see fee differences, seat matrices, and 3-year cutoff trends side by side. Made choice filling feel much less overwhelming."
+    },
+    {
+      "id": "t4",
+      "name": "Dr. Rahul Mehra",
+      "photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
+      "rank": 3200,
+      "college_name": "AIIMS New Delhi",
+      "course": "MD Radiology",
+      "year": 2024,
+      "track": "pg",
+      "quote": "For PG, the specialty-college combinations are insane — hundreds of permutations. Having historical cutoff data for each combination meant I didn't have to guess. Got Radiology at my top choice."
+    },
+    {
+      "id": "t5",
+      "name": "Dr. Sneha Kulkarni",
+      "photo_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop",
+      "rank": 18900,
+      "college_name": "Grant Medical College, Mumbai",
+      "course": "MS General Surgery",
+      "year": 2024,
+      "track": "pg",
+      "quote": "I was torn between Surgery at a mid-tier college and Medicine at a top one. The counsellor walked me through the bond implications and career trajectory for both. That clarity was worth everything."
+    },
+    {
+      "id": "t6",
+      "name": "Dr. Vikram Singh",
+      "photo_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop",
+      "rank": 45600,
+      "college_name": "Government Medical College, Jaipur",
+      "course": "MD Paediatrics",
+      "year": 2024,
+      "track": "pg",
+      "quote": "Got allotted in mop-up round after missing out in the regular rounds. The team helped me stay prepared with documents and alternative choices. Wouldn't have known about the stray vacancy process without their guidance."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "track": "pg",
+  "last_updated": "2025-06-01",
+  "questions": [
+    {
+      "question": "How does PG counselling differ from UG counselling?",
+      "answer": "PG counselling follows the same round-based allotment system but has key differences: choices are filled by specialty-college-seat type combination (not just college), the candidate pool is MBBS graduates only, and additional documents like internship completion certificate, medical registration, and bond affidavits are required. The AIQ reservation structure and free-exit rules are similar.",
+      "order": 1,
+      "category": "process"
+    },
+    {
+      "question": "What service bonds apply to PG medical seats?",
+      "answer": "Many government colleges mandate a compulsory service bond — typically 1 to 3 years of rural or government service after completing your PG. Bond amounts vary by state (₹10 lakh to ₹1 crore in some states). If you fail to serve the bond period, you must pay the penalty amount. Read the bond terms carefully before accepting a seat; they are legally enforceable. Private and deemed universities generally do not have service bonds.",
+      "order": 2,
+      "category": "bonds"
+    },
+    {
+      "question": "Do I need to complete internship before NEET PG counselling?",
+      "answer": "You must have completed your internship (or be completing it by the cutoff date specified by MCC, usually March 31 of the counselling year) to be eligible. An internship completion certificate from your medical college is mandatory during document verification. Candidates whose internship ends after the cutoff date are not eligible for that cycle.",
+      "order": 3,
+      "category": "documents"
+    },
+    {
+      "question": "Can in-service candidates apply for PG counselling?",
+      "answer": "Yes. In-service candidates (doctors working in government service) have a separate quota in some states. You'll need an NOC from your employer and a sponsorship letter if applicable. In-service reservation percentages vary by state — typically 10–30% of state PG seats. These candidates often have relaxed cutoffs compared to the open category.",
+      "order": 4,
+      "category": "process"
+    },
+    {
+      "question": "How should I decide between MD/MS and DNB for PG?",
+      "answer": "MD/MS degrees from NMC-recognized colleges are universally accepted for government jobs, teaching positions, and further specialization (DM/MCh). DNB from NBE-accredited hospitals is now treated as equivalent for most purposes, but some state PSCs and institutions still differentiate. Consider the training quality at the specific hospital, not just the degree tag. DNB seats are not part of MCC counselling — they're filled through a separate NBE counselling process.",
+      "order": 5,
+      "category": "process"
+    },
+    {
+      "question": "What is the fee structure for PG medical courses?",
+      "answer": "Government PG seats range from ₹25,000 to ₹3,00,000 per year. Private colleges charge ₹10,00,000 to ₹40,00,000 per year, and deemed universities can go up to ₹30,00,000–₹60,00,000 per year. Clinical specialties (Surgery, Orthopaedics, Radiology) sometimes have higher fees than pre/para-clinical subjects. Stipends at government colleges (₹50,000–₹1,00,000/month) partially offset the cost.",
+      "order": 6,
+      "category": "fees"
+    },
+    {
+      "question": "Which specialties are the most competitive in NEET PG?",
+      "answer": "Dermatology, Radiology, and General Surgery at top government colleges consistently have the lowest closing ranks (most competitive). Orthopaedics, Ophthalmology, and Paediatrics are in the next tier. Pre-clinical subjects like Anatomy, Physiology, and Biochemistry are less competitive. Competitiveness also varies by institution — a clinical seat at AIIMS Delhi is far harder to get than the same specialty at a newer government college.",
+      "order": 7,
+      "category": "process"
+    },
+    {
+      "question": "Can I switch specialties between counselling rounds?",
+      "answer": "Yes. You can re-order or completely change your choice list between rounds during the fresh choice-filling window. If you accepted General Medicine in Round 1, you can float for Radiology in Round 2 by reordering your preferences. If you get upgraded, your previous seat is automatically released. If not, you keep your Round 1 seat.",
+      "order": 8,
+      "category": "process"
+    },
+    {
+      "question": "How are your confidence labels calculated?",
+      "answer": "Confidence labels (Safe, Moderate, Ambitious) compare your NEET PG rank against 3 years of historical closing ranks for a specific specialty-college-category combination. 'Safe' means your rank is comfortably within range across all historical years. 'Moderate' means borderline — within range for some years. 'Ambitious' means your rank exceeds the historical closing rank. These are statistical indicators, not guarantees.",
+      "order": 9,
+      "category": "data"
+    },
+    {
+      "question": "Where does your cutoff data come from?",
+      "answer": "PG cutoff data is sourced from MCC's officially published allotment results (mcc.nic.in) for AIQ rounds, and from state counselling authority websites for state PG seats. We update data after each counselling cycle. We recommend verifying critical figures against the official source before making decisions. Every data point on our platform shows the associated year and source.",
+      "order": 10,
+      "category": "data"
+    }
+  ]
+}

@@ -1,26 +1,218 @@
+/* ═══════════════════════════════════════════════════════
+   Global Styles — v2
+   gined.in · Medical (NEET) Counselling Section
+   
+   Import order matters: tokens → Tailwind → animations
+   ═══════════════════════════════════════════════════════ */
+
+/* Switzer — Fontshare. Weights: 400, 500, 600, 700 */
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap");
+
+@import "../styles/tokens.css";
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ═══ Tailwind Theme Extension ═══ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Switzer', 'General Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Brand colours mapped into Tailwind */
+  --color-ink:           var(--ink);
+  --color-ink-deep:      var(--ink-deep);
+  --color-ink-soft:      var(--ink-soft);
+  --color-paper:         var(--paper);
+  --color-paper-dim:     var(--paper-dim);
+  --color-paper-bright:  var(--paper-bright);
+  --color-gold:          var(--gold);
+  --color-gold-deep:     var(--gold-deep);
+  --color-gold-glow:     var(--gold-glow);
+  --color-text-main:     var(--text);
+  --color-text-muted:    var(--text-muted);
+  --color-text-on-dark:  var(--text-on-dark);
+  --color-hairline:      var(--border);
+  --color-border-strong: var(--border-strong);
+
+  /* Data semantics */
+  --color-safe:       var(--safe);
+  --color-moderate:   var(--moderate);
+  --color-ambitious:  var(--ambitious);
+  --color-no-data:    var(--no-data);
+
+  /* shadcn base mapping */
+  --color-background:          var(--paper);
+  --color-foreground:          var(--text);
+  --color-border:              var(--border);
+  --color-input:               var(--border);
+  --color-ring:                var(--gold);
+  --color-primary:             var(--gold);
+  --color-primary-foreground:  var(--ink);
+  --color-secondary:           var(--ink);
+  --color-secondary-foreground: var(--paper);
+  --color-muted:               var(--paper-dim);
+  --color-muted-foreground:    var(--text-muted);
+  --color-card:                var(--paper-bright);
+  --color-card-foreground:     var(--text);
+  --color-popover:             var(--paper-bright);
+  --color-popover-foreground:  var(--text);
+  --color-destructive:         var(--ambitious);
+  --color-accent:              var(--paper-dim);
+  --color-accent-foreground:   var(--ink);
+
+  /* Radius — two tokens only */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-md);
+  --radius-xl: var(--radius-md);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ═══ Base Layer ═══ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Gold focus ring — never suppressed (Design §13.4) */
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ═══ Typography Scale (Design §3.2.2) ═══ */
+@layer utilities {
+  .text-display-xl {
+    font-size: clamp(3.5rem, 9vw, 9rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+  .text-display {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .text-h1 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+  .text-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .text-h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .text-h4 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .text-body-large {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+  .text-body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .text-small {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .text-micro {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+  .text-data {
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.4;
+  }
+  .text-data-lg {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Tabular numerals utility */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Prose width cap — 68-72 chars (Design §3.2.3) */
+  .prose-width {
+    max-width: 680px;
+  }
+
+  /* Content widths — register system (Design §3.3) */
+  .max-w-marketing {
+    max-width: 1200px;
+  }
+  .max-w-instrument {
+    max-width: 960px;
+  }
+  .max-w-ledger {
+    max-width: 1440px;
+  }
+  .max-w-prose {
+    max-width: 680px;
+  }
+
+  /* Shadow — only for result cards, directory cards, compare tray (Design §3.4) */
+  .shadow-card {
+    box-shadow: var(--shadow);
+  }
+  .shadow-tray {
+    box-shadow: var(--shadow-tray);
+  }
+}
+
+/* ═══ Animations ═══ */
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  @keyframes skeleton-pulse {
+    0%, 100% { background-color: var(--paper-dim); }
+    50% { background-color: var(--paper-bright); }
+  }
+}
+
+/* ═══ Reduced Motion (Design §5.4) ═══ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
