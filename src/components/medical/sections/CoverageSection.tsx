@@ -1,13 +1,20 @@
 "use client";
 
-import { useCinematicContext } from "@/lib/medical/CinematicProvider";
 import dynamic from "next/dynamic";
 
-const CoverageDraw = dynamic(() => import("@/components/medical/cinematic/CoverageDraw"), { ssr: false });
+const CoverageDraw = dynamic(
+  () => import("@/components/medical/cinematic/CoverageDraw"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full max-w-md aspect-square bg-white/5 rounded-full border border-white/10 flex items-center justify-center animate-pulse">
+        <span className="text-white/40 font-semibold tracking-widest">Loading Map…</span>
+      </div>
+    ),
+  }
+);
 
 export default function CoverageSection({ id }: { id: string }) {
-  const cinematic = useCinematicContext();
-
   return (
     <section id={id} className="bg-ink py-32 border-y border-white/10 overflow-hidden relative">
       <div className="max-w-ledger mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-16 relative z-10">
@@ -36,11 +43,7 @@ export default function CoverageSection({ id }: { id: string }) {
         </div>
 
         <div className="md:w-1/2 flex justify-center">
-          {cinematic ? <CoverageDraw /> : (
-            <div className="w-full max-w-md aspect-square bg-white/5 rounded-full border border-white/10 flex items-center justify-center">
-              <span className="text-white/40 font-semibold tracking-widest">MAP PLACEHOLDER</span>
-            </div>
-          )}
+          <CoverageDraw />
         </div>
 
       </div>
