@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
-import { getCollegeById } from "@/lib/medical/api";
-import { MOCK_COURSES, MOCK_CUTOFFS } from "@/lib/medical/mockData";
+import { getCollegeById, getCutoffs, getCourses } from "@/lib/medical/api";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
@@ -24,8 +23,8 @@ export default async function CollegeDetailPage({
     notFound();
   }
 
-  const courses = MOCK_COURSES.filter((c) => c.collegeId === collegeId);
-  const cutoffs = MOCK_CUTOFFS.filter((c) => c.collegeId === collegeId);
+  const courses = await getCourses({ collegeId });
+  const cutoffs = await getCutoffs({ collegeId });
 
   return (
     <>

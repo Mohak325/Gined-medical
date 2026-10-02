@@ -25,10 +25,10 @@ export default function ResultsSummaryBar({
   
   // Calculate distribution for the visual bar
   const totalInView = total;
-  const safePct = totalInView ? (breakdown.safe / totalInView) * 100 : 0;
-  const modPct = totalInView ? (breakdown.moderate / totalInView) * 100 : 0;
-  const ambPct = totalInView ? (breakdown.ambitious / totalInView) * 100 : 0;
-  const longPct = totalInView && showLongshots ? (breakdown.longshot / totalInView) * 100 : 0;
+  const safePct = totalInView ? ((breakdown.safe || 0) / totalInView) * 100 : 0;
+  const modPct = totalInView ? ((breakdown.moderate || 0) / totalInView) * 100 : 0;
+  const ambPct = totalInView ? ((breakdown.ambitious || 0) / totalInView) * 100 : 0;
+  const longPct = totalInView && showLongshots ? ((breakdown.longshot || 0) / totalInView) * 100 : 0;
 
   return (
     <div className="sticky top-[var(--h-nav)] z-[var(--z-sticky)] bg-paper/85 backdrop-blur-xl border-b border-hairline py-6 px-6 md:px-12 flex flex-col gap-5 -mx-6 md:-mx-12 mb-10 shadow-sm transition-all duration-300">
@@ -50,9 +50,9 @@ export default function ResultsSummaryBar({
           
           <div className="hidden sm:flex items-center gap-3">
             {[
-              { label: "Safe", count: breakdown.safe, color: "var(--safe-fg)", bg: "var(--safe-bg)" },
-              { label: "Moderate", count: breakdown.moderate, color: "var(--moderate-fg)", bg: "var(--moderate-bg)" },
-              { label: "Ambitious", count: breakdown.ambitious, color: "var(--ambitious-fg)", bg: "var(--ambitious-bg)" },
+              { label: "Safe", count: breakdown.safe || 0, color: "var(--safe-fg)", bg: "var(--safe-bg)" },
+              { label: "Moderate", count: breakdown.moderate || 0, color: "var(--moderate-fg)", bg: "var(--moderate-bg)" },
+              { label: "Ambitious", count: breakdown.ambitious || 0, color: "var(--ambitious-fg)", bg: "var(--ambitious-bg)" },
             ].map(tier => tier.count > 0 && (
               <div key={tier.label} className="flex flex-col">
                 <div className="flex items-center gap-1.5 mb-1">
@@ -84,7 +84,7 @@ export default function ResultsSummaryBar({
             <span className="text-small font-medium text-text-muted group-hover:text-text-main transition-colors flex items-center gap-1.5">
               <Eye className="w-3.5 h-3.5" />
               Longshots
-              <span className="bg-paper-dim px-1.5 py-0.5 rounded-[var(--radius-sm)] text-[10px] ml-1">{breakdown.longshot}</span>
+              <span className="bg-paper-dim px-1.5 py-0.5 rounded-[var(--radius-sm)] text-[10px] ml-1">{breakdown.longshot || 0}</span>
             </span>
           </button>
 

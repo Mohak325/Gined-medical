@@ -3,8 +3,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { CalculatorQuerySchema } from "@/lib/medical/schemas";
-import { getColleges } from "@/lib/medical/api";
-import { type College, type CutoffEntry, MOCK_CUTOFFS } from "@/lib/medical/mockData";
+import { getColleges, getCutoffs } from "@/lib/medical/api";
+import { type College, type CutoffEntry } from "@/lib/medical/mockData";
 import { computeConfidence, type ConfidenceLevel } from "@/lib/medical/confidence";
 
 import ResultsSummaryBar from "@/components/medical/results/ResultsSummaryBar";
@@ -17,6 +17,7 @@ export default function ResultsClient() {
   
   // State
   const [colleges, setColleges] = useState<College[]>([]);
+  const [cutoffs, setCutoffs] = useState<CutoffEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [sortBy, setSortBy] = useState("confidence_desc");
   const [showLongshots, setShowLongshots] = useState(false);
@@ -34,34 +35,35 @@ export default function ResultsClient() {
     }
 
     setLoading(true);
-    getColleges({ 
-      track: query.track, 
-      state: query.state,
-      type: query.type
-    }).then((data) => {
+    Promise.all([
+      getColleges({ 
+        track: query.track, 
+        state: query.state,
+        type: query.type
+      }),
+      getCutoffs({
+        track: query.track,
+        quota: query.quota,
+        category: query.category,
+        round: 1, // Only consider round 1 for initial prediction
+        year: 2024
+      })
+    ]).then(([collegesData, cutoffsData]) => {
       if (mounted) {
-        setColleges(data);
+        setColleges(collegesData);
+        setCutoffs(cutoffsData);
         setLoading(false);
       }
     });
     return () => { mounted = false; };
-  }, [query.rank, query.track, query.state, query.type]);
+  }, [query.rank, query.track, query.state, query.type, query.quota, query.category]);
 
   // Compute Results
   const results = useMemo(() => {
     if (!query.rank) return [];
 
     const computed = colleges.map(college => {
-      // Find relevant cutoffs for this college + query constraints
-      // Taking Round 1 of the most recent year in the mock data (2025)
-      const cutoff = MOCK_CUTOFFS.find(c => 
-        c.collegeId === college.id &&
-        c.track === query.track &&
-        c.quota === query.quota &&
-        c.category === query.category &&
-        c.round === 1 &&
-        c.year === 2025
-      );
+      const cutoff = cutoffs.find(c => c.collegeId === college.id);
 
       if (!cutoff) return null;
 

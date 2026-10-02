@@ -1,7 +1,11 @@
-import { MOCK_COLLEGES, type College } from "./mockData";
+"use server";
+import type { College, CutoffEntry, SeatEntry } from "./mockData";
+import collegesData from "@/data/colleges.json";
+import cutoffsData from "@/data/cutoffs.json";
+import seatsData from "@/data/seats.json";
 
-export async function getColleges(params: any): Promise<College[]> {
-  let results = [...MOCK_COLLEGES];
+export async function getColleges(params: Record<string, any>): Promise<College[]> {
+  let results = [...collegesData] as College[];
 
   if (params.type && params.type !== "all") {
     results = results.filter((c) => c.type.toLowerCase() === params.type.toLowerCase());
@@ -32,16 +36,18 @@ export async function getColleges(params: any): Promise<College[]> {
 }
 
 export async function getCollegeById(id: string): Promise<College | null> {
-  return MOCK_COLLEGES.find((c) => c.id === id) || null;
+  return (collegesData as College[]).find((c) => c.id === id) || null;
 }
 
-import { MOCK_SEATS, type SeatEntry } from "./mockData";
-
-export async function getSeats(params: any): Promise<(SeatEntry & { college: College })[]> {
-  let results = MOCK_SEATS.map(seat => ({
-    ...seat,
-    college: MOCK_COLLEGES.find(c => c.id === seat.collegeId)!
-  }));
+export async function getSeats(params: Record<string, any>): Promise<(SeatEntry & { college: College })[]> {
+  let results = (seatsData as SeatEntry[]).map(seat => {
+    const college = (collegesData as College[]).find(c => c.id === seat.collegeId);
+    if (!college) return null;
+    return {
+      ...seat,
+      college
+    };
+  }).filter(Boolean) as (SeatEntry & { college: College })[];
 
   if (params.track) {
     results = results.filter(s => s.track === params.track);
@@ -68,4 +74,84 @@ export async function getSeats(params: any): Promise<(SeatEntry & { college: Col
   results.sort((a, b) => a.college.name.localeCompare(b.college.name));
 
   return results;
+}
+
+// Adding getCutoffs so client components don't have to import the whole JSON directly
+export async function getCutoffs(params: Record<string, any>): Promise<CutoffEntry[]> {
+  let results = [...cutoffsData] as CutoffEntry[];
+
+  if (params.collegeId) {
+    results = results.filter(c => c.collegeId === params.collegeId);
+  }
+  if (params.track) {
+    results = results.filter(c => c.track === params.track);
+  }
+  if (params.quota && params.quota !== "all") {
+    results = results.filter(c => c.quota === params.quota);
+  }
+  if (params.category && params.category !== "all") {
+    results = results.filter(c => c.category === params.category);
+  }
+  if (params.round) {
+    results = results.filter(c => c.round === params.round);
+  }
+  if (params.year) {
+    results = results.filter(c => c.year === params.year);
+  }
+
+  return results;
+}
+
+export async function getCourses(params: Record<string, any>) {
+  // Derive courses from seats data dynamically
+  let results = (seatsData as SeatEntry[]).filter(s => s.collegeId === params.collegeId);
+  
+  const college = await getCollegeById(params.collegeId);
+  if (!college) return [];
+
+  // Group by track and course to get total seats
+  const grouped = results.reduce((acc, curr) => {
+    const key = `${curr.track}_${curr.course}`;
+    if (!acc[key]) {
+      acc[key] = {
+        collegeId: curr.collegeId,
+        track: curr.track,
+        course: curr.course,
+        totalSeats: 0,
+      };
+    }
+    acc[key].totalSeats += curr.seats;
+    return acc;
+  }, {} as Record<string, any>);
+
+  return Object.values(grouped).map((course: any) => {
+    // Generate estimated fees based on college type
+    let fees = 0;
+    let bondYears = 0;
+    let bondPenalty = 0;
+
+    if (college.type === "Government") {
+      fees = 50000;
+      bondYears = 1;
+      bondPenalty = 1000000;
+    } else if (college.type === "Central") {
+      fees = 15000;
+      bondYears = 0;
+    } else if (college.type === "Deemed") {
+      fees = 2000000; // 20 LPA
+      bondYears = 0;
+    } else {
+      // Private
+      fees = 1500000; // 15 LPA
+      bondYears = 1;
+      bondPenalty = 500000;
+    }
+
+    return {
+      ...course,
+      fees,
+      bondYears,
+      bondPenalty
+    };
+  });
 }
