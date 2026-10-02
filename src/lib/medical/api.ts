@@ -7,20 +7,18 @@ import seatsData from "@/data/seats.json";
 export async function getColleges(params: Record<string, any>): Promise<College[]> {
   let results = [...collegesData] as College[];
 
-  // Reliable, fast SVG gradients to replace Unsplash (which can be rate-limited/blocked)
-  const PLACEHOLDERS = [
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%231a365d"/><stop offset="100%" stop-color="%232563eb"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g1)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23064e3b"/><stop offset="100%" stop-color="%23059669"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g2)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g3" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="%234c1d95"/><stop offset="100%" stop-color="%237c3aed"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g3)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g4" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="%237f1d1d"/><stop offset="100%" stop-color="%23dc2626"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g4)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%231e3a8a"/><stop offset="100%" stop-color="%233b82f6"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g5)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-  ];
-
   results = results.map(c => {
-    // If it's a placeholder or doesn't have an image, apply SVG
-    if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com")) {
-      const hash = c.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-      return { ...c, hero_image_url: PLACEHOLDERS[hash % PLACEHOLDERS.length] };
+    // If it's a placeholder, missing, or an Unsplash URL, apply the brand-styled initials fallback
+    if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com") || c.hero_image_url.includes("data:image/svg+xml")) {
+      const words = c.name.split(/[\s,.-]+/);
+      const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
+      
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+        <rect width="100%" height="100%" fill="%230F2E3D" />
+        <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="%23C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
+      </svg>`;
+      
+      return { ...c, hero_image_url: `data:image/svg+xml;utf8,${svg.replace(/\n/g, '').replace(/\s+/g, ' ')}` };
     }
     return c;
   });
@@ -57,17 +55,16 @@ export async function getCollegeById(id: string): Promise<College | null> {
   const c = (collegesData as College[]).find((c) => c.id === id);
   if (!c) return null;
 
-  const PLACEHOLDERS = [
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%231a365d"/><stop offset="100%" stop-color="%232563eb"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g1)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23064e3b"/><stop offset="100%" stop-color="%23059669"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g2)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g3" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="%234c1d95"/><stop offset="100%" stop-color="%237c3aed"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g3)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g4" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="%237f1d1d"/><stop offset="100%" stop-color="%23dc2626"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g4)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-    `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><defs><linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%231e3a8a"/><stop offset="100%" stop-color="%233b82f6"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g5)"/><text x="50%" y="50%" font-family="sans-serif" font-size="48" font-weight="bold" fill="%23ffffff" opacity="0.3" text-anchor="middle" dominant-baseline="middle">Medical Campus</text></svg>`,
-  ];
-
-  if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com")) {
-    const hash = c.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return { ...c, hero_image_url: PLACEHOLDERS[hash % PLACEHOLDERS.length] };
+  if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com") || c.hero_image_url.includes("data:image/svg+xml")) {
+    const words = c.name.split(/[\s,.-]+/);
+    const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
+    
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+      <rect width="100%" height="100%" fill="%230F2E3D" />
+      <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="%23C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
+    </svg>`;
+    
+    return { ...c, hero_image_url: `data:image/svg+xml;utf8,${svg.replace(/\n/g, '').replace(/\s+/g, ' ')}` };
   }
   return c;
 }
