@@ -82,17 +82,17 @@ export default function CollegeListView({ colleges }: CollegeListViewProps) {
                 {/* 3-column micro grid for metrics as requested in PRD */}
                 <div className="grid grid-cols-3 gap-2 mb-5 py-3 border-y border-hairline/60">
                    <div className="flex flex-col">
-                     <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Established</span>
+                     <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Type</span>
                      <span className="text-small font-semibold text-text-main flex items-center gap-1">
                        <Building2 className="w-3.5 h-3.5 text-text-muted/60" />
-                       {college.established || "N/A"}
+                       {college.type}
                      </span>
                    </div>
-                    <div className="flex flex-col border-l border-hairline/60 pl-3">
-                     <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Seats</span>
+                   <div className="flex flex-col border-l border-hairline/60 pl-3">
+                     <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Total Seats</span>
                      <span className="text-small font-semibold text-text-main flex items-center gap-1">
                        <GraduationCap className="w-3.5 h-3.5 text-text-muted/60" />
-                       150+
+                       {college.totalSeats || "N/A"}
                      </span>
                    </div>
                    {college.nirfRanking ? (
@@ -102,12 +102,20 @@ export default function CollegeListView({ colleges }: CollegeListViewProps) {
                          #{college.nirfRanking}
                        </span>
                      </div>
-                   ) : (
+                   ) : college.established ? (
                      <div className="flex flex-col border-l border-hairline/60 pl-3">
-                       <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Beds</span>
+                       <span className="text-micro text-text-muted uppercase tracking-wider mb-1">Established</span>
                        <span className="text-small font-semibold text-text-main flex items-center gap-1">
                          <Activity className="w-3.5 h-3.5 text-text-muted/60" />
-                         {college.hospitalBeds}
+                         {college.established}
+                       </span>
+                     </div>
+                   ) : (
+                     <div className="flex flex-col border-l border-hairline/60 pl-3">
+                       <span className="text-micro text-text-muted uppercase tracking-wider mb-1">State</span>
+                       <span className="text-small font-semibold text-text-main flex items-center gap-1 line-clamp-1 text-ellipsis">
+                         <MapPin className="w-3.5 h-3.5 text-text-muted/60 shrink-0" />
+                         {college.state}
                        </span>
                      </div>
                    )}

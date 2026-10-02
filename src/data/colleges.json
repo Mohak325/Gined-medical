@@ -36,7 +36,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 404
   },
   {
     "id": "ug_mh001p3",
@@ -61,7 +62,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 129
   },
   {
     "id": "ug_in001p3",
@@ -98,7 +100,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 372
   },
   {
     "id": "ug_ap001g1",
@@ -126,7 +129,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 256
   },
   {
     "id": "ug_rj001p3",
@@ -142,7 +146,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_py001p3",
@@ -177,7 +182,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 268
   },
   {
     "id": "ug_cg001g1",
@@ -193,7 +199,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_kl001g1",
@@ -226,7 +233,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 51
   },
   {
     "id": "ug_or001g1",
@@ -243,7 +251,8 @@
     "branches": [
       "MD - Anaesthesiology",
       "MD - Pathology"
-    ]
+    ],
+    "totalSeats": 6
   },
   {
     "id": "ug_in002p3",
@@ -271,7 +280,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 190
   },
   {
     "id": "ug_pb001p3",
@@ -307,7 +317,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 234
   },
   {
     "id": "ug_hr001p3",
@@ -338,7 +349,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 325
   },
   {
     "id": "ug_ka002p3",
@@ -375,7 +387,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 378
   },
   {
     "id": "ug_tr001g1",
@@ -411,7 +424,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 295
   },
   {
     "id": "ug_up001g1",
@@ -427,7 +441,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_ka003p3",
@@ -461,7 +476,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 387
   },
   {
     "id": "ug_hr002p3",
@@ -488,7 +504,8 @@
       "MD - Pathology",
       "MD - Physiology",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_ka004p3",
@@ -519,7 +536,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 230
   },
   {
     "id": "ug_kl001p3",
@@ -544,7 +562,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 266
   },
   {
     "id": "ug_wb001g1",
@@ -561,7 +580,8 @@
     "branches": [
       "MD - Community Medicine",
       "MD - Public Health"
-    ]
+    ],
+    "totalSeats": 27
   },
   {
     "id": "ug_in001i1",
@@ -577,7 +597,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in002i1",
@@ -594,7 +615,8 @@
     "nirfRanking": 33,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in003i1",
@@ -611,7 +633,8 @@
     "nirfRanking": 17,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in004i1",
@@ -627,7 +650,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in005i1",
@@ -643,7 +667,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in006i1",
@@ -659,7 +684,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in007i1",
@@ -675,7 +701,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in008i1",
@@ -691,7 +718,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in009i1",
@@ -708,7 +736,8 @@
     "nirfRanking": 12,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in010i1",
@@ -724,7 +753,8 @@
     "hero_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Gate_of_AIIMS%2CKalyani.jpg/800px-Gate_of_AIIMS%2CKalyani.jpg",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in011i1",
@@ -740,7 +770,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in012i1",
@@ -756,7 +787,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in013i1",
@@ -773,7 +805,8 @@
     "nirfRanking": 37,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in014i1",
@@ -790,7 +823,8 @@
     "nirfRanking": 1,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 132
   },
   {
     "id": "ug_in015i1",
@@ -807,7 +841,8 @@
     "nirfRanking": 25,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in016i1",
@@ -823,7 +858,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in017i1",
@@ -840,7 +876,8 @@
     "nirfRanking": 28,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in018i1",
@@ -856,7 +893,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 75
   },
   {
     "id": "ug_in019i1",
@@ -873,7 +911,8 @@
     "nirfRanking": 20,
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in020i1",
@@ -889,7 +928,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh001g1",
@@ -905,7 +945,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Physical Medicine & Rehabilitation"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_ap001p3",
@@ -941,7 +982,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 408
   },
   {
     "id": "ug_ka005p3",
@@ -957,7 +999,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_kl002p3",
@@ -991,7 +1034,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 164
   },
   {
     "id": "ug_in003p3",
@@ -1028,7 +1072,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 384
   },
   {
     "id": "ug_rj002p3",
@@ -1058,7 +1103,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 221
   },
   {
     "id": "ug_kl003p3",
@@ -1100,7 +1146,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 282
   },
   {
     "id": "ug_hr003p3",
@@ -1135,7 +1182,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 211
   },
   {
     "id": "ug_rj003p3",
@@ -1166,7 +1214,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 302
   },
   {
     "id": "ug_in004p3",
@@ -1190,7 +1239,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 172
   },
   {
     "id": "ug_an001g1",
@@ -1212,7 +1262,8 @@
       "MD - Ophthalmology",
       "MS - Anatomy",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 127
   },
   {
     "id": "ug_ap002g1",
@@ -1250,7 +1301,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 576
   },
   {
     "id": "ug_ap002p3",
@@ -1266,7 +1318,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in005p3",
@@ -1287,7 +1340,8 @@
       "MD - Microbiology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 160
   },
   {
     "id": "ug_br001g1",
@@ -1317,7 +1371,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 161
   },
   {
     "id": "ug_ap003p3",
@@ -1348,7 +1403,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 211
   },
   {
     "id": "ug_in006p3",
@@ -1383,7 +1439,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 245
   },
   {
     "id": "ug_in007p3",
@@ -1399,7 +1456,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 20
   },
   {
     "id": "ug_mh002g1",
@@ -1441,7 +1499,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 322
   },
   {
     "id": "ug_in008p3",
@@ -1457,7 +1516,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in001g1",
@@ -1482,7 +1542,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 59
   },
   {
     "id": "ug_in009p3",
@@ -1514,7 +1575,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 242
   },
   {
     "id": "ug_tg001p3",
@@ -1530,7 +1592,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj004p3",
@@ -1546,7 +1609,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh002p3",
@@ -1573,7 +1637,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 212
   },
   {
     "id": "ug_as001g1",
@@ -1609,7 +1674,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 441
   },
   {
     "id": "ug_in002g1",
@@ -1642,7 +1708,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 302
   },
   {
     "id": "ug_up001p3",
@@ -1664,7 +1731,8 @@
       "MD/MS - Anatomy",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 115
   },
   {
     "id": "ug_in010p3",
@@ -1683,7 +1751,8 @@
       "MD - Biochemistry",
       "MD - Pathology",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 109
   },
   {
     "id": "ug_up002p3",
@@ -1703,7 +1772,8 @@
       "MD - Community Medicine",
       "MD - Pathology",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 115
   },
   {
     "id": "ug_in011p3",
@@ -1721,7 +1791,8 @@
       "MBBS",
       "MD - Community Medicine",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 106
   },
   {
     "id": "ug_up002g1",
@@ -1737,7 +1808,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up003g1",
@@ -1753,7 +1825,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up004g1",
@@ -1769,7 +1842,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up005g1",
@@ -1785,7 +1859,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up006g1",
@@ -1801,7 +1876,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up007g1",
@@ -1817,7 +1893,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up008g1",
@@ -1833,7 +1910,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up009g1",
@@ -1849,7 +1927,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up010g1",
@@ -1867,7 +1946,8 @@
       "MBBS",
       "MD - Biochemistry",
       "MD - Community Medicine"
-    ]
+    ],
+    "totalSeats": 106
   },
   {
     "id": "ug_up011g1",
@@ -1883,7 +1963,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up012g1",
@@ -1899,7 +1980,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in012p3",
@@ -1918,7 +2000,8 @@
       "MD - Biochemistry",
       "MD - Community Medicine",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 106
   },
   {
     "id": "ug_in013p3",
@@ -1951,7 +2034,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 211
   },
   {
     "id": "ug_kl002g1",
@@ -1976,7 +2060,8 @@
       "MS - General Surgery",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 169
   },
   {
     "id": "ug_in003g1",
@@ -2016,7 +2101,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 713
   },
   {
     "id": "ug_mh003g1",
@@ -2053,7 +2139,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 466
   },
   {
     "id": "ug_mh003p3",
@@ -2084,7 +2171,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 213
   },
   {
     "id": "ug_hr004p3",
@@ -2100,7 +2188,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka006p3",
@@ -2134,7 +2223,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 328
   },
   {
     "id": "ug_ka007p3",
@@ -2150,7 +2240,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_hr001g1",
@@ -2173,7 +2264,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 148
   },
   {
     "id": "ug_up013g1",
@@ -2210,7 +2302,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 273
   },
   {
     "id": "ug_up014g1",
@@ -2226,7 +2319,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj005p3",
@@ -2242,7 +2336,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_gj001p3",
@@ -2258,7 +2353,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_ka001g1",
@@ -2298,7 +2394,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 542
   },
   {
     "id": "ug_wb002g1",
@@ -2333,7 +2430,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 288
   },
   {
     "id": "ug_wb003g1",
@@ -2349,7 +2447,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka008p3",
@@ -2383,7 +2482,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 223
   },
   {
     "id": "ug_ka002g1",
@@ -2419,7 +2519,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 302
   },
   {
     "id": "ug_kl004p3",
@@ -2445,7 +2546,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 120
   },
   {
     "id": "ug_tn001p3",
@@ -2474,7 +2576,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_tn001g1",
@@ -2488,7 +2591,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": true,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_mh004g1",
@@ -2504,7 +2608,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Nuclear Medicine"
-    ]
+    ],
+    "totalSeats": 6
   },
   {
     "id": "ug_br002g1",
@@ -2528,7 +2633,8 @@
       "MD - Pharmacology",
       "MD - Physiology",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 144
   },
   {
     "id": "ug_gj002p3",
@@ -2544,7 +2650,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_or001p3",
@@ -2560,7 +2667,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh004p3",
@@ -2596,7 +2704,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 369
   },
   {
     "id": "ug_mh005p3",
@@ -2634,7 +2743,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 435
   },
   {
     "id": "ug_in014p3",
@@ -2650,7 +2760,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg002p3",
@@ -2681,7 +2792,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 285
   },
   {
     "id": "ug_mp001g1",
@@ -2702,7 +2814,8 @@
       "MD - Pathology",
       "MD - Psychiatry",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 14
   },
   {
     "id": "ug_ka003g1",
@@ -2734,7 +2847,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 270
   },
   {
     "id": "ug_mh006p3",
@@ -2758,7 +2872,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 17
   },
   {
     "id": "ug_in004g1",
@@ -2782,7 +2897,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 32
   },
   {
     "id": "ug_br003g1",
@@ -2798,7 +2914,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in005g1",
@@ -2832,7 +2949,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 231
   },
   {
     "id": "ug_wb004g1",
@@ -2868,7 +2986,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 338
   },
   {
     "id": "ug_in015p3",
@@ -2892,7 +3011,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 279
   },
   {
     "id": "ug_gj003p3",
@@ -2927,7 +3047,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 249
   },
   {
     "id": "ug_wb005g1",
@@ -2962,7 +3083,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 395
   },
   {
     "id": "ug_up015g1",
@@ -2997,7 +3119,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 243
   },
   {
     "id": "ug_in006g1",
@@ -3013,7 +3136,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "Diploma - Hospital Administration"
-    ]
+    ],
+    "totalSeats": 20
   },
   {
     "id": "ug_jh001g1",
@@ -3029,7 +3153,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 34
   },
   {
     "id": "ug_in007g1",
@@ -3045,7 +3170,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 8
   },
   {
     "id": "ug_tg003p3",
@@ -3080,7 +3206,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 327
   },
   {
     "id": "ug_ka004g1",
@@ -3094,7 +3221,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": true,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_ka005g1",
@@ -3127,7 +3255,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 232
   },
   {
     "id": "ug_cg002g1",
@@ -3143,7 +3272,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_in008g1",
@@ -3179,7 +3309,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 202
   },
   {
     "id": "ug_in016p3",
@@ -3217,7 +3348,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 519
   },
   {
     "id": "ug_ka009p3",
@@ -3233,7 +3365,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_cg003g1",
@@ -3268,7 +3401,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 241
   },
   {
     "id": "ug_ka006g1",
@@ -3291,7 +3425,8 @@
       "MD/MS - Anatomy",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 24
   },
   {
     "id": "ug_ka007g1",
@@ -3310,7 +3445,8 @@
       "MD - Biochemistry",
       "MD - General Medicine",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 159
   },
   {
     "id": "ug_in017p3",
@@ -3348,7 +3484,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 411
   },
   {
     "id": "ug_in009g1",
@@ -3364,7 +3501,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in010g1",
@@ -3383,7 +3521,8 @@
       "MD - Laboratory Medicine",
       "MD - Radiation Oncology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 9
   },
   {
     "id": "ug_wb006g1",
@@ -3400,7 +3539,8 @@
     "branches": [
       "MD - Paediatrics",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 18
   },
   {
     "id": "ug_pb002p3",
@@ -3434,7 +3574,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 176
   },
   {
     "id": "ug_in018p3",
@@ -3478,7 +3619,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 354
   },
   {
     "id": "ug_in011g1",
@@ -3513,7 +3655,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 321
   },
   {
     "id": "ug_wb007g1",
@@ -3540,7 +3683,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 172
   },
   {
     "id": "ug_wb008g1",
@@ -3569,7 +3713,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 195
   },
   {
     "id": "ug_ka008g1",
@@ -3594,7 +3739,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 32
   },
   {
     "id": "ug_hr002g1",
@@ -3613,7 +3759,8 @@
       "MD - General Medicine",
       "MS - General Surgery",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 9
   },
   {
     "id": "ug_wb009g1",
@@ -3639,7 +3786,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 38
   },
   {
     "id": "ug_up016g1",
@@ -3664,7 +3812,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 18
   },
   {
     "id": "ug_wb010g1",
@@ -3680,7 +3829,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_kl003g1",
@@ -3696,7 +3846,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Dermatology, Venereology & Leprosy"
-    ]
+    ],
+    "totalSeats": 2
   },
   {
     "id": "ug_in019p3",
@@ -3721,7 +3872,8 @@
       "MD - Physiology",
       "MD - Radio Diagnosis",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_in020p3",
@@ -3737,7 +3889,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_br004g1",
@@ -3772,7 +3925,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 305
   },
   {
     "id": "ug_mh007p3",
@@ -3803,7 +3957,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 344
   },
   {
     "id": "ug_pb003p3",
@@ -3839,7 +3994,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 257
   },
   {
     "id": "ug_tg004p3",
@@ -3875,7 +4031,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 226
   },
   {
     "id": "ug_tn002p3",
@@ -3912,7 +4069,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_in021p3",
@@ -3949,7 +4107,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 357
   },
   {
     "id": "ug_or002g1",
@@ -3965,7 +4124,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka009g1",
@@ -3981,7 +4141,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 10
   },
   {
     "id": "ug_as002g1",
@@ -3997,7 +4158,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_wb011g1",
@@ -4019,7 +4181,8 @@
       "MD - Microbiology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 164
   },
   {
     "id": "ug_as003g1",
@@ -4038,7 +4201,8 @@
       "MD - Anaesthesiology",
       "MD - Pathology",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 109
   },
   {
     "id": "ug_pb001g1",
@@ -4056,7 +4220,8 @@
       "MBBS",
       "MD - Community Medicine",
       "MD - Microbiology"
-    ]
+    ],
+    "totalSeats": 108
   },
   {
     "id": "ug_ka010p3",
@@ -4093,7 +4258,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 236
   },
   {
     "id": "ug_rj006p3",
@@ -4129,7 +4295,8 @@
       "MS - General Surgery",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 318
   },
   {
     "id": "ug_up017g1",
@@ -4149,7 +4316,8 @@
       "MD - Community Medicine",
       "MD - Pathology",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 112
   },
   {
     "id": "ug_mh005g1",
@@ -4184,7 +4352,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_wb012g1",
@@ -4200,7 +4369,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 14
   },
   {
     "id": "ug_as004g1",
@@ -4217,7 +4387,8 @@
     "branches": [
       "MD - Anaesthesiology",
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 9
   },
   {
     "id": "ug_rj007p3",
@@ -4233,7 +4404,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_up003p3",
@@ -4249,7 +4421,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in012g1",
@@ -4265,7 +4438,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_up018g1",
@@ -4295,7 +4469,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 156
   },
   {
     "id": "ug_mp002g1",
@@ -4324,7 +4499,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 247
   },
   {
     "id": "ug_mh008p3",
@@ -4361,7 +4537,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 504
   },
   {
     "id": "ug_mh009p3",
@@ -4389,7 +4566,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 277
   },
   {
     "id": "ug_up004p3",
@@ -4423,7 +4601,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 341
   },
   {
     "id": "ug_gj004p3",
@@ -4439,7 +4618,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_mp003g1",
@@ -4472,7 +4652,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 282
   },
   {
     "id": "ug_in022p3",
@@ -4507,7 +4688,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 341
   },
   {
     "id": "ug_kl005p3",
@@ -4531,7 +4713,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 266
   },
   {
     "id": "ug_in023p3",
@@ -4557,7 +4740,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 136
   },
   {
     "id": "ug_gj005p3",
@@ -4591,7 +4775,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 278
   },
   {
     "id": "ug_in024p3",
@@ -4628,7 +4813,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 273
   },
   {
     "id": "ug_mh010p3",
@@ -4662,7 +4848,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 207
   },
   {
     "id": "ug_tg005p3",
@@ -4693,7 +4880,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 294
   },
   {
     "id": "ug_hp001g1",
@@ -4712,7 +4900,8 @@
       "MD - Dermatology, Venereology & Leprosy",
       "MD - Physiology",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 128
   },
   {
     "id": "ug_hp002g1",
@@ -4746,7 +4935,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 223
   },
   {
     "id": "ug_mh011p3",
@@ -4772,7 +4962,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 182
   },
   {
     "id": "ug_up019g1",
@@ -4804,7 +4995,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 307
   },
   {
     "id": "ug_rj001g1",
@@ -4844,7 +5036,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 469
   },
   {
     "id": "ug_mh006g1",
@@ -4880,7 +5073,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_kl006p3",
@@ -4911,7 +5105,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 243
   },
   {
     "id": "ug_mh012p3",
@@ -4946,7 +5141,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 289
   },
   {
     "id": "ug_tg006p3",
@@ -4973,7 +5169,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 120
   },
   {
     "id": "ug_mh013p3",
@@ -5004,7 +5201,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 224
   },
   {
     "id": "ug_mh014p3",
@@ -5030,7 +5228,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 276
   },
   {
     "id": "ug_jh002g1",
@@ -5046,7 +5245,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh007g1",
@@ -5065,7 +5265,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 6
   },
   {
     "id": "ug_mh008g1",
@@ -5081,7 +5282,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_as005g1",
@@ -5097,7 +5299,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mp004g1",
@@ -5113,7 +5316,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_rj002g1",
@@ -5129,7 +5333,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tn002g1",
@@ -5166,7 +5371,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 241
   },
   {
     "id": "ug_up020g1",
@@ -5182,7 +5388,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in013g1",
@@ -5198,7 +5405,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_pb002g1",
@@ -5214,7 +5422,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_gj001g1",
@@ -5230,7 +5439,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in014g1",
@@ -5257,7 +5467,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 113
   },
   {
     "id": "ug_ka011p3",
@@ -5293,7 +5504,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 344
   },
   {
     "id": "ug_wb001p3",
@@ -5309,7 +5521,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in015g1",
@@ -5347,7 +5560,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 256
   },
   {
     "id": "ug_rj003g1",
@@ -5374,7 +5588,8 @@
       "MD/MS - Anatomy",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 129
   },
   {
     "id": "ug_ka010g1",
@@ -5406,7 +5621,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 238
   },
   {
     "id": "ug_hr003g1",
@@ -5445,7 +5661,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 237
   },
   {
     "id": "ug_ka011g1",
@@ -5477,7 +5694,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 216
   },
   {
     "id": "ug_in016g1",
@@ -5504,7 +5722,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 187
   },
   {
     "id": "ug_br005g1",
@@ -5520,7 +5739,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up005p3",
@@ -5555,7 +5775,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 375
   },
   {
     "id": "ug_up006p3",
@@ -5586,7 +5807,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 324
   },
   {
     "id": "ug_hr005p3",
@@ -5623,7 +5845,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 290
   },
   {
     "id": "ug_in025p3",
@@ -5658,7 +5881,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 320
   },
   {
     "id": "ug_as006g1",
@@ -5686,7 +5910,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 183
   },
   {
     "id": "ug_ka012p3",
@@ -5702,7 +5927,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in026p3",
@@ -5718,7 +5944,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka013p3",
@@ -5754,7 +5981,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 288
   },
   {
     "id": "ug_ap003g1",
@@ -5782,7 +6010,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 173
   },
   {
     "id": "ug_up007p3",
@@ -5798,7 +6027,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka014p3",
@@ -5814,7 +6044,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in017g1",
@@ -5833,7 +6064,8 @@
       "MD - Microbiology",
       "MD - Pathology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 13
   },
   {
     "id": "ug_up021g1",
@@ -5871,7 +6103,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 347
   },
   {
     "id": "ug_gj006p3",
@@ -5908,7 +6141,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 299
   },
   {
     "id": "ug_ap004p3",
@@ -5938,7 +6172,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 202
   },
   {
     "id": "ug_gj002g1",
@@ -5962,7 +6197,8 @@
       "MS - General Surgery",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 241
   },
   {
     "id": "ug_gj003g1",
@@ -5992,7 +6228,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 303
   },
   {
     "id": "ug_gj004g1",
@@ -6021,7 +6258,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 306
   },
   {
     "id": "ug_in018g1",
@@ -6044,7 +6282,8 @@
       "MS - General Surgery",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 240
   },
   {
     "id": "ug_gj005g1",
@@ -6065,7 +6304,8 @@
       "MD - Pathology",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 227
   },
   {
     "id": "ug_gj006g1",
@@ -6081,7 +6321,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_gj007g1",
@@ -6097,7 +6338,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_gj008g1",
@@ -6128,7 +6370,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 304
   },
   {
     "id": "ug_in019g1",
@@ -6146,7 +6389,8 @@
       "MBBS",
       "MD - Microbiology",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 208
   },
   {
     "id": "ug_in020g1",
@@ -6169,7 +6413,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 224
   },
   {
     "id": "ug_ap005p3",
@@ -6206,7 +6451,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 435
   },
   {
     "id": "ug_up022g1",
@@ -6241,7 +6487,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 421
   },
   {
     "id": "ug_in021g1",
@@ -6277,7 +6524,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 428
   },
   {
     "id": "ug_in022g1",
@@ -6315,7 +6563,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 516
   },
   {
     "id": "ug_in023g1",
@@ -6353,7 +6602,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 467
   },
   {
     "id": "ug_as007g1",
@@ -6391,7 +6641,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 449
   },
   {
     "id": "ug_uk001p3",
@@ -6416,7 +6667,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 182
   },
   {
     "id": "ug_in027p3",
@@ -6447,7 +6699,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 290
   },
   {
     "id": "ug_rj008p3",
@@ -6463,7 +6716,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_in028p3",
@@ -6501,7 +6755,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 443
   },
   {
     "id": "ug_pb004p3",
@@ -6524,7 +6779,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 178
   },
   {
     "id": "ug_ga001g1",
@@ -6562,7 +6818,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 390
   },
   {
     "id": "ug_wb002p3",
@@ -6597,7 +6854,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 286
   },
   {
     "id": "ug_up023g1",
@@ -6622,7 +6880,8 @@
       "MD - Physiology",
       "MS - General Surgery",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 131
   },
   {
     "id": "ug_tn003g1",
@@ -6664,7 +6923,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 284
   },
   {
     "id": "ug_tn004g1",
@@ -6689,7 +6949,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 146
   },
   {
     "id": "ug_uk001g1",
@@ -6722,7 +6983,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 221
   },
   {
     "id": "ug_tn005g1",
@@ -6743,7 +7005,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - General Surgery",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 113
   },
   {
     "id": "ug_up024g1",
@@ -6773,7 +7036,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 158
   },
   {
     "id": "ug_tn006g1",
@@ -6790,7 +7054,8 @@
     "branches": [
       "MBBS",
       "MD - Emergency Medicine"
-    ]
+    ],
+    "totalSeats": 105
   },
   {
     "id": "ug_or003g1",
@@ -6809,7 +7074,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 110
   },
   {
     "id": "ug_or004g1",
@@ -6828,7 +7094,8 @@
       "MD - Anaesthesiology",
       "MS - Obstetrics & Gynaecology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 108
   },
   {
     "id": "ug_mh009g1",
@@ -6850,7 +7117,8 @@
       "MD - Physiology",
       "MD/MS - Anatomy",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 127
   },
   {
     "id": "ug_up025g1",
@@ -6871,7 +7139,8 @@
       "MD - Community Medicine",
       "MD - Pharmacology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 124
   },
   {
     "id": "ug_mh010g1",
@@ -6887,7 +7156,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_or005g1",
@@ -6903,7 +7173,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh011g1",
@@ -6919,7 +7190,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh012g1",
@@ -6952,7 +7224,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 275
   },
   {
     "id": "ug_mh013g1",
@@ -6968,7 +7241,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj004g1",
@@ -6984,7 +7258,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh014g1",
@@ -7000,7 +7275,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh015g1",
@@ -7016,7 +7292,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_pb003g1",
@@ -7056,7 +7333,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 412
   },
   {
     "id": "ug_ap004g1",
@@ -7093,7 +7371,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 332
   },
   {
     "id": "ug_in024g1",
@@ -7114,7 +7393,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 168
   },
   {
     "id": "ug_tn007g1",
@@ -7130,7 +7410,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh016g1",
@@ -7168,7 +7449,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 403
   },
   {
     "id": "ug_up026g1",
@@ -7186,7 +7468,8 @@
       "MBBS",
       "MD - Community Medicine",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 106
   },
   {
     "id": "ug_rj005g1",
@@ -7202,7 +7485,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in025g1",
@@ -7221,7 +7505,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 160
   },
   {
     "id": "ug_rj006g1",
@@ -7237,7 +7522,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj007g1",
@@ -7253,7 +7539,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 130
   },
   {
     "id": "ug_br006g1",
@@ -7277,7 +7564,8 @@
       "MD - Radio Diagnosis",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 138
   },
   {
     "id": "ug_tg001g1",
@@ -7293,7 +7581,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh017g1",
@@ -7309,7 +7598,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj008g1",
@@ -7330,7 +7620,8 @@
       "MD - General Medicine",
       "MD - Microbiology",
       "MD - Pathology"
-    ]
+    ],
+    "totalSeats": 174
   },
   {
     "id": "ug_gj009g1",
@@ -7369,7 +7660,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 355
   },
   {
     "id": "ug_rj009g1",
@@ -7390,7 +7682,8 @@
       "MD - Microbiology",
       "MD - Pathology",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 172
   },
   {
     "id": "ug_mh018g1",
@@ -7406,7 +7699,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj010g1",
@@ -7422,7 +7716,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ch001g1",
@@ -7459,7 +7754,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 355
   },
   {
     "id": "ug_mh019g1",
@@ -7493,7 +7789,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 225
   },
   {
     "id": "ug_mp005g1",
@@ -7522,7 +7819,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 196
   },
   {
     "id": "ug_rj011g1",
@@ -7538,7 +7836,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mn001g1",
@@ -7554,7 +7853,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj012g1",
@@ -7572,7 +7872,8 @@
       "MBBS",
       "MD - Community Medicine",
       "MD - Pathology"
-    ]
+    ],
+    "totalSeats": 157
   },
   {
     "id": "ug_cg004g1",
@@ -7588,7 +7889,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mp006g1",
@@ -7617,7 +7919,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 166
   },
   {
     "id": "ug_in026g1",
@@ -7633,7 +7936,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj013g1",
@@ -7649,7 +7953,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tn008g1",
@@ -7665,7 +7970,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_jk001g1",
@@ -7681,7 +7987,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj014g1",
@@ -7699,7 +8006,8 @@
       "MBBS",
       "MD - Community Medicine",
       "MD - Pharmacology"
-    ]
+    ],
+    "totalSeats": 154
   },
   {
     "id": "ug_in027g1",
@@ -7721,7 +8029,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 166
   },
   {
     "id": "ug_kl004g1",
@@ -7751,7 +8060,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 136
   },
   {
     "id": "ug_up027g1",
@@ -7778,7 +8088,8 @@
       "MD - Pharmacology",
       "MD - Physiology",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 139
   },
   {
     "id": "ug_up028g1",
@@ -7808,7 +8119,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 149
   },
   {
     "id": "ug_mh020g1",
@@ -7824,7 +8136,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh021g1",
@@ -7854,7 +8167,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 204
   },
   {
     "id": "ug_uk002g1",
@@ -7888,7 +8202,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 208
   },
   {
     "id": "ug_in028g1",
@@ -7904,7 +8219,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj015g1",
@@ -7920,7 +8236,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_uk003g1",
@@ -7936,7 +8253,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh022g1",
@@ -7952,7 +8270,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_kl005g1",
@@ -7968,7 +8287,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg002g1",
@@ -7984,7 +8304,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj016g1",
@@ -8000,7 +8321,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mh023g1",
@@ -8031,7 +8353,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 216
   },
   {
     "id": "ug_mh024g1",
@@ -8047,7 +8370,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in029g1",
@@ -8083,7 +8407,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 492
   },
   {
     "id": "ug_tg003g1",
@@ -8099,7 +8424,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_cg005g1",
@@ -8115,7 +8441,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_cg006g1",
@@ -8131,7 +8458,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tg004g1",
@@ -8147,7 +8475,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj017g1",
@@ -8163,7 +8492,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg005g1",
@@ -8179,7 +8509,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_cg007g1",
@@ -8195,7 +8526,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_ap005g1",
@@ -8232,7 +8564,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 384
   },
   {
     "id": "ug_in030g1",
@@ -8248,7 +8581,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in031g1",
@@ -8264,7 +8598,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in032g1",
@@ -8280,7 +8615,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in033g1",
@@ -8296,7 +8632,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tn009g1",
@@ -8312,7 +8649,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_kl006g1",
@@ -8328,7 +8666,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in034g1",
@@ -8353,7 +8692,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 175
   },
   {
     "id": "ug_in035g1",
@@ -8369,7 +8709,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp007g1",
@@ -8392,7 +8733,8 @@
       "MD - Pathology",
       "MD - Physiology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 148
   },
   {
     "id": "ug_tg006g1",
@@ -8408,7 +8750,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_wb013g1",
@@ -8452,7 +8795,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 501
   },
   {
     "id": "ug_kl007g1",
@@ -8468,7 +8812,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_cg008g1",
@@ -8488,7 +8833,8 @@
       "MD - General Medicine",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 138
   },
   {
     "id": "ug_rj018g1",
@@ -8525,7 +8871,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 445
   },
   {
     "id": "ug_kl008g1",
@@ -8563,7 +8910,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 294
   },
   {
     "id": "ug_in036g1",
@@ -8604,7 +8952,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 467
   },
   {
     "id": "ug_tn010g1",
@@ -8620,7 +8969,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_tg007g1",
@@ -8636,7 +8986,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh025g1",
@@ -8670,7 +9021,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 232
   },
   {
     "id": "ug_in037g1",
@@ -8691,7 +9043,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 170
   },
   {
     "id": "ug_tg008g1",
@@ -8707,7 +9060,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_tg009g1",
@@ -8735,7 +9089,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 234
   },
   {
     "id": "ug_cg009g1",
@@ -8751,7 +9106,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_tg010g1",
@@ -8767,7 +9123,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tg011g1",
@@ -8783,7 +9140,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_kl009g1",
@@ -8802,7 +9160,8 @@
       "MD - Dermatology, Venereology & Leprosy",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 116
   },
   {
     "id": "ug_tg012g1",
@@ -8818,7 +9177,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mh026g1",
@@ -8854,7 +9214,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 303
   },
   {
     "id": "ug_gj010g1",
@@ -8870,7 +9231,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg013g1",
@@ -8886,7 +9248,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tn011g1",
@@ -8902,7 +9265,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_tg014g1",
@@ -8918,7 +9282,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj019g1",
@@ -8934,7 +9299,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh027g1",
@@ -8971,7 +9337,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 534
   },
   {
     "id": "ug_hp003g1",
@@ -8988,7 +9355,8 @@
     "branches": [
       "MBBS",
       "MD - Community Medicine"
-    ]
+    ],
+    "totalSeats": 123
   },
   {
     "id": "ug_in038g1",
@@ -9015,7 +9383,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 191
   },
   {
     "id": "ug_in039g1",
@@ -9031,7 +9400,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh028g1",
@@ -9052,7 +9422,8 @@
       "MD/MS - Anatomy",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 119
   },
   {
     "id": "ug_in040g1",
@@ -9073,7 +9444,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 170
   },
   {
     "id": "ug_tg015g1",
@@ -9089,7 +9461,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tg016g1",
@@ -9105,7 +9478,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mh029g1",
@@ -9121,7 +9495,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in041g1",
@@ -9137,7 +9512,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in042g1",
@@ -9172,7 +9548,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 231
   },
   {
     "id": "ug_in043g1",
@@ -9195,7 +9572,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 131
   },
   {
     "id": "ug_ap006g1",
@@ -9230,7 +9608,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 249
   },
   {
     "id": "ug_mh030g1",
@@ -9246,7 +9625,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ap007g1",
@@ -9262,7 +9642,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_rj020g1",
@@ -9286,7 +9667,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 187
   },
   {
     "id": "ug_gj011g1",
@@ -9302,7 +9684,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh031g1",
@@ -9318,7 +9701,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_kl010g1",
@@ -9346,7 +9730,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 148
   },
   {
     "id": "ug_kl011g1",
@@ -9362,7 +9747,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in044g1",
@@ -9400,7 +9786,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 410
   },
   {
     "id": "ug_ap008g1",
@@ -9416,7 +9803,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_gj012g1",
@@ -9432,7 +9820,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tn012g1",
@@ -9450,7 +9839,8 @@
       "MBBS",
       "MD - Anaesthesiology",
       "MD - Emergency Medicine"
-    ]
+    ],
+    "totalSeats": 158
   },
   {
     "id": "ug_in045g1",
@@ -9466,7 +9856,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg017g1",
@@ -9482,7 +9873,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_ap009g1",
@@ -9503,7 +9895,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 170
   },
   {
     "id": "ug_in046g1",
@@ -9519,7 +9912,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_cg010g1",
@@ -9541,7 +9935,8 @@
       "MD - Pathology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 143
   },
   {
     "id": "ug_jk002g1",
@@ -9558,7 +9953,8 @@
     "branches": [
       "MBBS",
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 104
   },
   {
     "id": "ug_tg018g1",
@@ -9578,7 +9974,8 @@
       "MD - Emergency Medicine",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 166
   },
   {
     "id": "ug_in047g1",
@@ -9594,7 +9991,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up029g1",
@@ -9617,7 +10015,8 @@
       "MD - Pharmacology",
       "MD - Physiology",
       "MD/MS - Anatomy"
-    ]
+    ],
+    "totalSeats": 124
   },
   {
     "id": "ug_tg019g1",
@@ -9633,7 +10032,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh032g1",
@@ -9649,7 +10049,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in048g1",
@@ -9670,7 +10071,8 @@
       "MD - Forensic Medicine & Toxicology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 168
   },
   {
     "id": "ug_rj021g1",
@@ -9686,7 +10088,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp008g1",
@@ -9702,7 +10105,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp009g1",
@@ -9720,7 +10124,8 @@
       "MBBS",
       "MD - Forensic Medicine & Toxicology",
       "MD - Microbiology"
-    ]
+    ],
+    "totalSeats": 106
   },
   {
     "id": "ug_up030g1",
@@ -9745,7 +10150,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 153
   },
   {
     "id": "ug_mp010g1",
@@ -9761,7 +10167,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp011g1",
@@ -9786,7 +10193,8 @@
       "MD - Physiology",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 133
   },
   {
     "id": "ug_tg020g1",
@@ -9820,7 +10228,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 283
   },
   {
     "id": "ug_mh033g1",
@@ -9836,7 +10245,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp012g1",
@@ -9852,7 +10262,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj022g1",
@@ -9868,7 +10279,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_rj023g1",
@@ -9884,7 +10296,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in049g1",
@@ -9921,7 +10334,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 527
   },
   {
     "id": "ug_or006g1",
@@ -9937,7 +10351,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in050g1",
@@ -9977,7 +10392,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 488
   },
   {
     "id": "ug_in051g1",
@@ -10004,7 +10420,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - Obstetrics & Gynaecology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 187
   },
   {
     "id": "ug_tn013g1",
@@ -10020,7 +10437,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_tn014g1",
@@ -10037,7 +10455,8 @@
     "branches": [
       "MBBS",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 154
   },
   {
     "id": "ug_kl012g1",
@@ -10074,7 +10493,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 318
   },
   {
     "id": "ug_tn015g1",
@@ -10090,7 +10510,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj024g1",
@@ -10106,7 +10527,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in052g1",
@@ -10122,7 +10544,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp013g1",
@@ -10153,7 +10576,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 246
   },
   {
     "id": "ug_tg021g1",
@@ -10169,7 +10593,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in053g1",
@@ -10185,7 +10610,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in054g1",
@@ -10206,7 +10632,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 170
   },
   {
     "id": "ug_tg022g1",
@@ -10222,7 +10649,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh034g1",
@@ -10238,7 +10666,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_kl013g1",
@@ -10254,7 +10683,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_tg023g1",
@@ -10270,7 +10700,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_kl014g1",
@@ -10290,7 +10721,8 @@
       "MD - Microbiology",
       "MD - Pathology",
       "MD - Pharmacology"
-    ]
+    ],
+    "totalSeats": 112
   },
   {
     "id": "ug_ap010g1",
@@ -10326,7 +10758,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 402
   },
   {
     "id": "ug_in055g1",
@@ -10348,7 +10781,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 126
   },
   {
     "id": "ug_in056g1",
@@ -10371,7 +10805,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 146
   },
   {
     "id": "ug_in057g1",
@@ -10397,7 +10832,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in058g1",
@@ -10422,7 +10858,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_cg011g1",
@@ -10438,7 +10875,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_in059g1",
@@ -10470,7 +10908,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 197
   },
   {
     "id": "ug_mh035g1",
@@ -10509,7 +10948,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 557
   },
   {
     "id": "ug_uk002p3",
@@ -10525,7 +10965,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_ap006p3",
@@ -10561,7 +11002,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 309
   },
   {
     "id": "ug_gj007p3",
@@ -10594,7 +11036,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 252
   },
   {
     "id": "ug_ka012g1",
@@ -10629,7 +11072,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 307
   },
   {
     "id": "ug_ap011g1",
@@ -10667,7 +11111,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 443
   },
   {
     "id": "ug_pb004g1",
@@ -10707,7 +11152,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 377
   },
   {
     "id": "ug_mp014g1",
@@ -10723,7 +11169,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_mh036g1",
@@ -10754,7 +11201,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 268
   },
   {
     "id": "ug_in029p3",
@@ -10785,7 +11233,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 199
   },
   {
     "id": "ug_ka013g1",
@@ -10821,7 +11270,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 304
   },
   {
     "id": "ug_ka014g1",
@@ -10842,7 +11292,8 @@
       "MD - General Medicine",
       "MD - Physiology",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 167
   },
   {
     "id": "ug_jh003g1",
@@ -10858,7 +11309,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up008p3",
@@ -10891,7 +11343,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 314
   },
   {
     "id": "ug_or002p3",
@@ -10923,7 +11376,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 260
   },
   {
     "id": "ug_in030p3",
@@ -10948,7 +11402,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 120
   },
   {
     "id": "ug_br001p3",
@@ -10964,7 +11419,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_uk003p3",
@@ -11003,7 +11459,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 381
   },
   {
     "id": "ug_in031p3",
@@ -11039,7 +11496,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 171
   },
   {
     "id": "ug_up009p3",
@@ -11070,7 +11528,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 213
   },
   {
     "id": "ug_ap012g1",
@@ -11087,7 +11546,8 @@
     "branches": [
       "MD - Anaesthesiology",
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 6
   },
   {
     "id": "ug_ch002g1",
@@ -11104,7 +11564,8 @@
     "branches": [
       "MD - Anaesthesiology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 8
   },
   {
     "id": "ug_pb005g1",
@@ -11120,7 +11581,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_up031g1",
@@ -11138,7 +11600,8 @@
       "MD - Anaesthesiology",
       "MD - Radiation Oncology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 14
   },
   {
     "id": "ug_wb003p3",
@@ -11170,7 +11633,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 262
   },
   {
     "id": "ug_in032p3",
@@ -11205,7 +11669,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 350
   },
   {
     "id": "ug_in033p3",
@@ -11241,7 +11706,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 466
   },
   {
     "id": "ug_mh015p3",
@@ -11269,7 +11735,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 207
   },
   {
     "id": "ug_in060g1",
@@ -11293,7 +11760,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 32
   },
   {
     "id": "ug_ka015g1",
@@ -11309,7 +11777,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 22
   },
   {
     "id": "ug_br002p3",
@@ -11346,7 +11815,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 263
   },
   {
     "id": "ug_mh037g1",
@@ -11382,7 +11852,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 357
   },
   {
     "id": "ug_py001g1",
@@ -11416,7 +11887,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 253
   },
   {
     "id": "ug_hp004g1",
@@ -11458,7 +11930,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 259
   },
   {
     "id": "ug_tn003p3",
@@ -11481,7 +11954,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 278
   },
   {
     "id": "ug_ka016g1",
@@ -11497,7 +11971,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Aerospace Medicine"
-    ]
+    ],
+    "totalSeats": 10
   },
   {
     "id": "ug_wb014g1",
@@ -11513,7 +11988,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 16
   },
   {
     "id": "ug_ka017g1",
@@ -11527,7 +12003,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": false,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_in061g1",
@@ -11543,7 +12020,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 12
   },
   {
     "id": "ug_in062g1",
@@ -11557,7 +12035,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": false,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_or003p3",
@@ -11595,7 +12074,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 485
   },
   {
     "id": "ug_or004p3",
@@ -11611,7 +12091,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_up032g1",
@@ -11651,7 +12132,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 289
   },
   {
     "id": "ug_up033g1",
@@ -11667,7 +12149,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 8
   },
   {
     "id": "ug_mh038g1",
@@ -11694,7 +12177,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 43
   },
   {
     "id": "ug_ka018g1",
@@ -11708,7 +12192,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": false,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_in063g1",
@@ -11724,7 +12209,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "Diploma - Radiation Medicine"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_tn004p3",
@@ -11740,7 +12226,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 8
   },
   {
     "id": "ug_wb015g1",
@@ -11778,7 +12265,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 458
   },
   {
     "id": "ug_in034p3",
@@ -11809,7 +12297,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 322
   },
   {
     "id": "ug_tn005p3",
@@ -11825,7 +12314,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_rj009p3",
@@ -11841,7 +12331,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_in035p3",
@@ -11863,7 +12354,8 @@
       "MD - Paediatrics",
       "MD - Pathology",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 174
   },
   {
     "id": "ug_ka015p3",
@@ -11900,7 +12392,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 491
   },
   {
     "id": "ug_in036p3",
@@ -11916,7 +12409,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka016p3",
@@ -11957,7 +12451,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 416
   },
   {
     "id": "ug_ka017p3",
@@ -11973,7 +12468,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_wb004p3",
@@ -12003,7 +12499,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 319
   },
   {
     "id": "ug_wb005p3",
@@ -12019,7 +12516,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj010p3",
@@ -12057,7 +12555,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 375
   },
   {
     "id": "ug_wb006p3",
@@ -12073,7 +12572,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_wb016g1",
@@ -12089,7 +12589,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_br007g1",
@@ -12105,7 +12606,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in021i1",
@@ -12121,7 +12623,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 61
   },
   {
     "id": "ug_in022i1",
@@ -12137,7 +12640,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 182
   },
   {
     "id": "ug_mn002g1",
@@ -12173,7 +12677,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 241
   },
   {
     "id": "ug_rj025g1",
@@ -12213,7 +12718,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 500
   },
   {
     "id": "ug_up034g1",
@@ -12251,7 +12757,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 372
   },
   {
     "id": "ug_ka018p3",
@@ -12290,7 +12797,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 470
   },
   {
     "id": "ug_br008g1",
@@ -12324,7 +12832,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 225
   },
   {
     "id": "ug_mh016p3",
@@ -12360,7 +12869,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 466
   },
   {
     "id": "ug_rj026g1",
@@ -12390,7 +12900,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 306
   },
   {
     "id": "ug_wb017g1",
@@ -12406,7 +12917,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_as008g1",
@@ -12441,7 +12953,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 209
   },
   {
     "id": "ug_in037p3",
@@ -12475,7 +12988,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 202
   },
   {
     "id": "ug_in064g1",
@@ -12509,7 +13023,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 256
   },
   {
     "id": "ug_ka019p3",
@@ -12545,7 +13060,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 386
   },
   {
     "id": "ug_in038p3",
@@ -12580,7 +13096,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 231
   },
   {
     "id": "ug_in039p3",
@@ -12616,7 +13133,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 368
   },
   {
     "id": "ug_ka019g1",
@@ -12651,7 +13169,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_mh017p3",
@@ -12675,7 +13194,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 132
   },
   {
     "id": "ug_up010p3",
@@ -12691,7 +13211,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_in040p3",
@@ -12717,7 +13238,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 189
   },
   {
     "id": "ug_kl007p3",
@@ -12756,7 +13278,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 354
   },
   {
     "id": "ug_wb007p3",
@@ -12791,7 +13314,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 288
   },
   {
     "id": "ug_in065g1",
@@ -12830,7 +13354,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 442
   },
   {
     "id": "ug_or005p3",
@@ -12868,7 +13393,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 471
   },
   {
     "id": "ug_hr004g1",
@@ -12893,7 +13419,8 @@
       "MD - Physiology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 148
   },
   {
     "id": "ug_up035g1",
@@ -12909,7 +13436,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in041p3",
@@ -12944,7 +13472,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 244
   },
   {
     "id": "ug_in042p3",
@@ -12982,7 +13511,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 294
   },
   {
     "id": "ug_ka020p3",
@@ -13011,7 +13541,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 334
   },
   {
     "id": "ug_kl008p3",
@@ -13037,7 +13568,8 @@
       "MD - Psychiatry",
       "MD - Radio Diagnosis",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 20
   },
   {
     "id": "ug_tn016g1",
@@ -13064,7 +13596,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 204
   },
   {
     "id": "ug_tn006p3",
@@ -13080,7 +13613,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka020g1",
@@ -13116,7 +13650,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 434
   },
   {
     "id": "ug_in043p3",
@@ -13151,7 +13686,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 225
   },
   {
     "id": "ug_in044p3",
@@ -13177,7 +13713,8 @@
       "MD - Radio Diagnosis",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 170
   },
   {
     "id": "ug_kl009p3",
@@ -13199,7 +13736,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 160
   },
   {
     "id": "ug_ka021g1",
@@ -13231,7 +13769,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 204
   },
   {
     "id": "ug_in066g1",
@@ -13248,7 +13787,8 @@
     "branches": [
       "Diploma - Obstetrics & Gynaecology",
       "Diploma - Paediatrics"
-    ]
+    ],
+    "totalSeats": 5
   },
   {
     "id": "ug_ka021p3",
@@ -13287,7 +13827,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 438
   },
   {
     "id": "ug_ka022p3",
@@ -13329,7 +13870,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 483
   },
   {
     "id": "ug_br003p3",
@@ -13364,7 +13906,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 284
   },
   {
     "id": "ug_in045p3",
@@ -13396,7 +13939,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 246
   },
   {
     "id": "ug_ka023p3",
@@ -13433,7 +13977,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 441
   },
   {
     "id": "ug_kl010p3",
@@ -13449,7 +13994,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka024p3",
@@ -13482,7 +14028,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 207
   },
   {
     "id": "ug_ka022g1",
@@ -13504,7 +14051,8 @@
       "MD - Pathology",
       "MD - Radiation Oncology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 38
   },
   {
     "id": "ug_in067g1",
@@ -13543,7 +14091,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 294
   },
   {
     "id": "ug_in068g1",
@@ -13586,7 +14135,8 @@
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)",
       "MS - Traumatology & Surgery"
-    ]
+    ],
+    "totalSeats": 623
   },
   {
     "id": "ug_gj008p3",
@@ -13610,7 +14160,8 @@
       "MD - Physiology",
       "MD - Radio Diagnosis",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 229
   },
   {
     "id": "ug_ka023g1",
@@ -13644,7 +14195,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 224
   },
   {
     "id": "ug_as009g1",
@@ -13660,7 +14212,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ap007p3",
@@ -13695,7 +14248,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 344
   },
   {
     "id": "ug_ka024g1",
@@ -13727,7 +14281,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 214
   },
   {
     "id": "ug_mh018p3",
@@ -13762,7 +14317,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 434
   },
   {
     "id": "ug_up011p3",
@@ -13791,7 +14347,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 332
   },
   {
     "id": "ug_wb018g1",
@@ -13807,7 +14364,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_ap013g1",
@@ -13844,7 +14402,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 438
   },
   {
     "id": "ug_in046p3",
@@ -13880,7 +14439,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 424
   },
   {
     "id": "ug_up036g1",
@@ -13921,7 +14481,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 295
   },
   {
     "id": "ug_mp001p3",
@@ -13940,7 +14501,8 @@
       "MD - Paediatrics",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 262
   },
   {
     "id": "ug_in069g1",
@@ -13977,7 +14539,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 414
   },
   {
     "id": "ug_as010g1",
@@ -13995,7 +14558,8 @@
       "MBBS",
       "MD - Biochemistry",
       "MD - Community Medicine"
-    ]
+    ],
+    "totalSeats": 107
   },
   {
     "id": "ug_cg012g1",
@@ -14018,7 +14582,8 @@
       "MS - General Surgery",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 178
   },
   {
     "id": "ug_cg013g1",
@@ -14049,7 +14614,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 142
   },
   {
     "id": "ug_jh001p3",
@@ -14065,7 +14631,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh039g1",
@@ -14110,7 +14677,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 419
   },
   {
     "id": "ug_as011g1",
@@ -14126,7 +14694,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 11
   },
   {
     "id": "ug_br004p3",
@@ -14158,7 +14727,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 262
   },
   {
     "id": "ug_kl011p3",
@@ -14193,7 +14763,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 254
   },
   {
     "id": "ug_in070g1",
@@ -14232,7 +14803,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 533
   },
   {
     "id": "ug_jh004g1",
@@ -14267,7 +14839,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 203
   },
   {
     "id": "ug_ka025p3",
@@ -14306,7 +14879,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 392
   },
   {
     "id": "ug_or007g1",
@@ -14343,7 +14917,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 408
   },
   {
     "id": "ug_in047p3",
@@ -14378,7 +14953,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 376
   },
   {
     "id": "ug_mp015g1",
@@ -14420,7 +14996,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 490
   },
   {
     "id": "ug_ka026p3",
@@ -14448,7 +15025,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 335
   },
   {
     "id": "ug_hp001p3",
@@ -14464,7 +15042,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in048p3",
@@ -14493,7 +15072,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 195
   },
   {
     "id": "ug_br005p3",
@@ -14526,7 +15106,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 346
   },
   {
     "id": "ug_in071g1",
@@ -14568,7 +15149,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 732
   },
   {
     "id": "ug_tn017g1",
@@ -14606,7 +15188,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 464
   },
   {
     "id": "ug_br006p3",
@@ -14622,7 +15205,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka027p3",
@@ -14657,7 +15241,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 406
   },
   {
     "id": "ug_hr006p3",
@@ -14685,7 +15270,8 @@
       "MS - General Surgery",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 152
   },
   {
     "id": "ug_ap008p3",
@@ -14718,7 +15304,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 294
   },
   {
     "id": "ug_up037g1",
@@ -14749,7 +15336,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_mh019p3",
@@ -14779,7 +15367,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 193
   },
   {
     "id": "ug_mh020p3",
@@ -14811,7 +15400,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 194
   },
   {
     "id": "ug_mh040g1",
@@ -14840,7 +15430,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 79
   },
   {
     "id": "ug_hr005g1",
@@ -14856,7 +15447,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_hr007p3",
@@ -14890,7 +15482,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 263
   },
   {
     "id": "ug_hr008p3",
@@ -14927,7 +15520,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 397
   },
   {
     "id": "ug_hp002p3",
@@ -14963,7 +15557,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 242
   },
   {
     "id": "ug_in072g1",
@@ -14980,7 +15575,8 @@
     "branches": [
       "MBBS",
       "MD - Anatomy"
-    ]
+    ],
+    "totalSeats": 104
   },
   {
     "id": "ug_mh021p3",
@@ -15016,7 +15612,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 182
   },
   {
     "id": "ug_py002p3",
@@ -15052,7 +15649,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 441
   },
   {
     "id": "ug_in049p3",
@@ -15098,7 +15696,8 @@
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)",
       "MS - Traumatology & Surgery"
-    ]
+    ],
+    "totalSeats": 485
   },
   {
     "id": "ug_in050p3",
@@ -15114,7 +15713,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh022p3",
@@ -15151,7 +15751,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 376
   },
   {
     "id": "ug_mh041g1",
@@ -15191,7 +15792,8 @@
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)",
       "MS - Traumatology & Surgery"
-    ]
+    ],
+    "totalSeats": 407
   },
   {
     "id": "ug_in051p3",
@@ -15207,7 +15809,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_mh023p3",
@@ -15223,7 +15826,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_up038g1",
@@ -15239,7 +15843,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in052p3",
@@ -15263,7 +15868,8 @@
       "MD - Radio Diagnosis",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 176
   },
   {
     "id": "ug_tg007p3",
@@ -15299,7 +15905,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 269
   },
   {
     "id": "ug_in053p3",
@@ -15329,7 +15936,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 305
   },
   {
     "id": "ug_or008g1",
@@ -15345,7 +15953,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_kl012p3",
@@ -15361,7 +15970,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 2
   },
   {
     "id": "ug_kl013p3",
@@ -15395,7 +16005,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 322
   },
   {
     "id": "ug_kl014p3",
@@ -15419,7 +16030,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 126
   },
   {
     "id": "ug_mh024p3",
@@ -15435,7 +16047,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_wb019g1",
@@ -15458,7 +16071,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 180
   },
   {
     "id": "ug_in054p3",
@@ -15490,7 +16104,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 420
   },
   {
     "id": "ug_in055p3",
@@ -15523,7 +16138,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 376
   },
   {
     "id": "ug_in056p3",
@@ -15553,7 +16169,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 298
   },
   {
     "id": "ug_in057p3",
@@ -15590,7 +16207,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 334
   },
   {
     "id": "ug_ka025g1",
@@ -15625,7 +16243,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 298
   },
   {
     "id": "ug_in058p3",
@@ -15641,7 +16260,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_mp002p3",
@@ -15657,7 +16277,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_br007p3",
@@ -15690,7 +16311,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 312
   },
   {
     "id": "ug_gj009p3",
@@ -15706,7 +16328,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in073g1",
@@ -15744,7 +16367,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 496
   },
   {
     "id": "ug_mh025p3",
@@ -15760,7 +16384,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in074g1",
@@ -15799,7 +16424,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 466
   },
   {
     "id": "ug_kl015g1",
@@ -15839,7 +16465,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 504
   },
   {
     "id": "ug_in059p3",
@@ -15874,7 +16501,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 240
   },
   {
     "id": "ug_in060p3",
@@ -15909,7 +16537,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 355
   },
   {
     "id": "ug_tn018g1",
@@ -15942,7 +16571,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 253
   },
   {
     "id": "ug_wb020g1",
@@ -15967,7 +16597,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_up039g1",
@@ -16004,7 +16635,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 371
   },
   {
     "id": "ug_in061p3",
@@ -16023,7 +16655,8 @@
       "MD - General Medicine",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 155
   },
   {
     "id": "ug_wb021g1",
@@ -16049,7 +16682,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 188
   },
   {
     "id": "ug_up012p3",
@@ -16085,7 +16719,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 367
   },
   {
     "id": "ug_ka026g1",
@@ -16121,7 +16756,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 422
   },
   {
     "id": "ug_mh042g1",
@@ -16156,7 +16792,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 402
   },
   {
     "id": "ug_hr009p3",
@@ -16182,7 +16819,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 244
   },
   {
     "id": "ug_dn001g1",
@@ -16210,7 +16848,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 223
   },
   {
     "id": "ug_ap009p3",
@@ -16242,7 +16881,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 365
   },
   {
     "id": "ug_ap010p3",
@@ -16279,7 +16919,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 339
   },
   {
     "id": "ug_nl001g1",
@@ -16295,7 +16936,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_as012g1",
@@ -16311,7 +16953,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_br009g1",
@@ -16347,7 +16990,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 317
   },
   {
     "id": "ug_as013g1",
@@ -16363,7 +17007,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tn007p3",
@@ -16379,7 +17024,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka027g1",
@@ -16395,7 +17041,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in062p3",
@@ -16430,7 +17077,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 318
   },
   {
     "id": "ug_br008p3",
@@ -16462,7 +17110,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 370
   },
   {
     "id": "ug_in063p3",
@@ -16498,7 +17147,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 388
   },
   {
     "id": "ug_gj013g1",
@@ -16533,7 +17183,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 396
   },
   {
     "id": "ug_up013p3",
@@ -16566,7 +17217,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 288
   },
   {
     "id": "ug_in075g1",
@@ -16583,7 +17235,8 @@
     "branches": [
       "Diploma - Hospital Administration",
       "MD - Community Health Administration"
-    ]
+    ],
+    "totalSeats": 16
   },
   {
     "id": "ug_rj011p3",
@@ -16623,7 +17276,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 470
   },
   {
     "id": "ug_in023i1",
@@ -16637,7 +17291,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": true,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_ka028p3",
@@ -16671,7 +17326,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 380
   },
   {
     "id": "ug_tg008p3",
@@ -16700,7 +17356,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 248
   },
   {
     "id": "ug_in064p3",
@@ -16733,7 +17390,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 324
   },
   {
     "id": "ug_jh002p3",
@@ -16749,7 +17407,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_pb006g1",
@@ -16765,7 +17424,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "Diploma - Sports Medicine"
-    ]
+    ],
+    "totalSeats": 6
   },
   {
     "id": "ug_in076g1",
@@ -16800,7 +17460,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 443
   },
   {
     "id": "ug_wb022g1",
@@ -16837,7 +17498,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 386
   },
   {
     "id": "ug_ap011p3",
@@ -16864,7 +17526,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 260
   },
   {
     "id": "ug_tg024g1",
@@ -16890,7 +17553,8 @@
       "MD - Radiation Oncology",
       "MD - Radio Diagnosis",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 97
   },
   {
     "id": "ug_up014p3",
@@ -16918,7 +17582,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 284
   },
   {
     "id": "ug_gj010p3",
@@ -16947,7 +17612,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 243
   },
   {
     "id": "ug_wb023g1",
@@ -16980,7 +17646,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_in077g1",
@@ -16997,7 +17664,8 @@
     "branches": [
       "MBBS",
       "MD - Community Medicine"
-    ]
+    ],
+    "totalSeats": 60
   },
   {
     "id": "ug_ml001g1",
@@ -17028,7 +17696,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 85
   },
   {
     "id": "ug_tg009p3",
@@ -17044,7 +17713,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_in078g1",
@@ -17085,7 +17755,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 743
   },
   {
     "id": "ug_ap012p3",
@@ -17120,7 +17791,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 264
   },
   {
     "id": "ug_kl015p3",
@@ -17145,7 +17817,8 @@
       "MS - General Surgery",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 268
   },
   {
     "id": "ug_ka028g1",
@@ -17161,7 +17834,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_in065p3",
@@ -17177,7 +17851,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in066p3",
@@ -17212,7 +17887,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 327
   },
   {
     "id": "ug_tn008p3",
@@ -17237,7 +17913,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 283
   },
   {
     "id": "ug_hr006g1",
@@ -17253,7 +17930,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ml001p3",
@@ -17269,7 +17947,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_or009g1",
@@ -17285,7 +17964,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in067p3",
@@ -17322,7 +18002,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 475
   },
   {
     "id": "ug_rj012p3",
@@ -17359,7 +18040,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 402
   },
   {
     "id": "ug_in068p3",
@@ -17399,7 +18081,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 449
   },
   {
     "id": "ug_kl016p3",
@@ -17415,7 +18098,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_jh005g1",
@@ -17431,7 +18115,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in079g1",
@@ -17474,7 +18159,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 357
   },
   {
     "id": "ug_tn009p3",
@@ -17490,7 +18176,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_in069p3",
@@ -17506,7 +18193,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_gj011p3",
@@ -17542,7 +18230,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 301
   },
   {
     "id": "ug_br010g1",
@@ -17579,7 +18268,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 451
   },
   {
     "id": "ug_in070p3",
@@ -17616,7 +18306,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 396
   },
   {
     "id": "ug_mh043g1",
@@ -17645,7 +18336,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 62
   },
   {
     "id": "ug_py003p3",
@@ -17680,7 +18372,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 313
   },
   {
     "id": "ug_up040g1",
@@ -17699,7 +18392,8 @@
       "MD - Immunohematology & Blood Transfusion",
       "MD - Microbiology",
       "MD - Paediatrics"
-    ]
+    ],
+    "totalSeats": 17
   },
   {
     "id": "ug_or010g1",
@@ -17725,7 +18419,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 36
   },
   {
     "id": "ug_mh044g1",
@@ -17745,7 +18440,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 22
   },
   {
     "id": "ug_in024i1",
@@ -17759,7 +18455,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": true,
     "hero_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Postgraduate_Institute_of_Medical_Education_and_Research_Logo.png/800px-Postgraduate_Institute_of_Medical_Education_and_Research_Logo.png",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_mh026p3",
@@ -17775,7 +18472,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_wb024g1",
@@ -17791,7 +18489,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_as014g1",
@@ -17807,7 +18506,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh027p3",
@@ -17833,7 +18533,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 204
   },
   {
     "id": "ug_gj012p3",
@@ -17871,7 +18572,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 257
   },
   {
     "id": "ug_up015p3",
@@ -17899,7 +18601,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 246
   },
   {
     "id": "ug_tg010p3",
@@ -17934,7 +18637,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 389
   },
   {
     "id": "ug_tg011p3",
@@ -17950,7 +18654,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_up016p3",
@@ -17966,7 +18671,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_hr007g1",
@@ -18004,7 +18710,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 493
   },
   {
     "id": "ug_cg014g1",
@@ -18041,7 +18748,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 396
   },
   {
     "id": "ug_hp005g1",
@@ -18059,7 +18767,8 @@
       "MBBS",
       "MD - General Medicine",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_or011g1",
@@ -18082,7 +18791,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 145
   },
   {
     "id": "ug_pb007g1",
@@ -18096,7 +18806,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": false,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_pb005p3",
@@ -18112,7 +18823,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_up041g1",
@@ -18128,7 +18840,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_wb025g1",
@@ -18144,7 +18857,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_kl017p3",
@@ -18179,7 +18893,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 165
   },
   {
     "id": "ug_mh028p3",
@@ -18195,7 +18910,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj027g1",
@@ -18233,7 +18949,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 476
   },
   {
     "id": "ug_tg012p3",
@@ -18272,7 +18989,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 362
   },
   {
     "id": "ug_wb026g1",
@@ -18310,7 +19028,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 424
   },
   {
     "id": "ug_pb006p3",
@@ -18326,7 +19045,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in071p3",
@@ -18362,7 +19082,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_in080g1",
@@ -18395,7 +19116,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 209
   },
   {
     "id": "ug_ap013p3",
@@ -18411,7 +19133,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_br009p3",
@@ -18444,7 +19167,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 262
   },
   {
     "id": "ug_ka029g1",
@@ -18478,7 +19202,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 269
   },
   {
     "id": "ug_in081g1",
@@ -18494,7 +19219,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_cg001p3",
@@ -18525,7 +19251,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 313
   },
   {
     "id": "ug_ka029p3",
@@ -18541,7 +19268,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka030p3",
@@ -18578,7 +19306,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 468
   },
   {
     "id": "ug_tn019g1",
@@ -18594,7 +19323,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 250
   },
   {
     "id": "ug_mh045g1",
@@ -18629,7 +19359,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 234
   },
   {
     "id": "ug_jh006g1",
@@ -18663,7 +19394,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 426
   },
   {
     "id": "ug_in082g1",
@@ -18695,7 +19427,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 222
   },
   {
     "id": "ug_ap014g1",
@@ -18731,7 +19464,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 300
   },
   {
     "id": "ug_mh046g1",
@@ -18763,7 +19497,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 163
   },
   {
     "id": "ug_up042g1",
@@ -18786,7 +19521,8 @@
       "MD - Physiology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 132
   },
   {
     "id": "ug_up043g1",
@@ -18813,7 +19549,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 140
   },
   {
     "id": "ug_up044g1",
@@ -18836,7 +19573,8 @@
       "MD - Pathology",
       "MS - General Surgery",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_cg015g1",
@@ -18865,7 +19603,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 165
   },
   {
     "id": "ug_up017p3",
@@ -18901,7 +19640,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 383
   },
   {
     "id": "ug_in072p3",
@@ -18936,7 +19676,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 317
   },
   {
     "id": "ug_up018p3",
@@ -18970,7 +19711,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 332
   },
   {
     "id": "ug_in073p3",
@@ -18998,7 +19740,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 323
   },
   {
     "id": "ug_in083g1",
@@ -19015,7 +19758,8 @@
     "branches": [
       "MBBS",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 152
   },
   {
     "id": "ug_jh007g1",
@@ -19031,7 +19775,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Psychiatry"
-    ]
+    ],
+    "totalSeats": 1
   },
   {
     "id": "ug_ap015g1",
@@ -19069,7 +19814,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 453
   },
   {
     "id": "ug_wb008p3",
@@ -19085,7 +19831,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_kl016g1",
@@ -19103,7 +19850,8 @@
       "MD - Anaesthesiology",
       "MD - Pathology",
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 16
   },
   {
     "id": "ug_in074p3",
@@ -19119,7 +19867,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Radiation Oncology"
-    ]
+    ],
+    "totalSeats": 7
   },
   {
     "id": "ug_mn003g1",
@@ -19160,7 +19909,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 318
   },
   {
     "id": "ug_tn020g1",
@@ -19176,7 +19926,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 15
   },
   {
     "id": "ug_up019p3",
@@ -19213,7 +19964,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 418
   },
   {
     "id": "ug_mh029p3",
@@ -19247,7 +19999,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 303
   },
   {
     "id": "ug_mp003p3",
@@ -19282,7 +20035,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 256
   },
   {
     "id": "ug_up045g1",
@@ -19323,7 +20077,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 411
   },
   {
     "id": "ug_ka031p3",
@@ -19360,7 +20115,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 340
   },
   {
     "id": "ug_in084g1",
@@ -19397,7 +20153,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 470
   },
   {
     "id": "ug_in075p3",
@@ -19429,7 +20186,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 348
   },
   {
     "id": "ug_ka032p3",
@@ -19466,7 +20224,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 381
   },
   {
     "id": "ug_in076p3",
@@ -19482,7 +20241,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_gj014g1",
@@ -19518,7 +20278,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 457
   },
   {
     "id": "ug_or012g1",
@@ -19556,7 +20317,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 485
   },
   {
     "id": "ug_ka033p3",
@@ -19595,7 +20357,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 286
   },
   {
     "id": "ug_in085g1",
@@ -19611,7 +20374,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Tuberculosis & Respiratory Diseases"
-    ]
+    ],
+    "totalSeats": 12
   },
   {
     "id": "ug_in077p3",
@@ -19639,7 +20403,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 244
   },
   {
     "id": "ug_up046g1",
@@ -19655,7 +20420,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh030p3",
@@ -19681,7 +20447,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 221
   },
   {
     "id": "ug_rj028g1",
@@ -19724,7 +20491,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 893
   },
   {
     "id": "ug_ka034p3",
@@ -19740,7 +20508,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in078p3",
@@ -19778,7 +20547,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 464
   },
   {
     "id": "ug_mh047g1",
@@ -19812,7 +20582,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 243
   },
   {
     "id": "ug_tn010p3",
@@ -19842,7 +20613,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_ap016g1",
@@ -19858,7 +20630,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 175
   },
   {
     "id": "ug_or013g1",
@@ -19875,7 +20648,8 @@
     "branches": [
       "MBBS",
       "MD - General Medicine"
-    ]
+    ],
+    "totalSeats": 126
   },
   {
     "id": "ug_or014g1",
@@ -19891,7 +20665,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mh031p3",
@@ -19907,7 +20682,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 20
   },
   {
     "id": "ug_ka030g1",
@@ -19923,7 +20699,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 10
   },
   {
     "id": "ug_up047g1",
@@ -19950,7 +20727,8 @@
       "MD - Radio Diagnosis",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 76
   },
   {
     "id": "ug_mh032p3",
@@ -19966,7 +20744,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 3
   },
   {
     "id": "ug_in079p3",
@@ -19982,7 +20761,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 4
   },
   {
     "id": "ug_hr010p3",
@@ -19998,7 +20778,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ap014p3",
@@ -20033,7 +20814,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 343
   },
   {
     "id": "ug_wb009p3",
@@ -20049,7 +20831,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_up020p3",
@@ -20089,7 +20872,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 307
   },
   {
     "id": "ug_ka035p3",
@@ -20124,7 +20908,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 440
   },
   {
     "id": "ug_up021p3",
@@ -20159,7 +20944,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 354
   },
   {
     "id": "ug_up048g1",
@@ -20184,7 +20970,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 167
   },
   {
     "id": "ug_wb027g1",
@@ -20200,7 +20987,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_rj013p3",
@@ -20216,7 +21004,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_rj029g1",
@@ -20254,7 +21043,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 455
   },
   {
     "id": "ug_in080p3",
@@ -20291,7 +21081,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 416
   },
   {
     "id": "ug_mp004p3",
@@ -20307,7 +21098,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_wb028g1",
@@ -20328,7 +21120,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Tropical Medicine"
-    ]
+    ],
+    "totalSeats": 27
   },
   {
     "id": "ug_in086g1",
@@ -20363,7 +21156,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 480
   },
   {
     "id": "ug_in081p3",
@@ -20395,7 +21189,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 295
   },
   {
     "id": "ug_hr008g1",
@@ -20419,7 +21214,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 147
   },
   {
     "id": "ug_jh008g1",
@@ -20440,7 +21236,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 119
   },
   {
     "id": "ug_up049g1",
@@ -20467,7 +21264,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 151
   },
   {
     "id": "ug_in082p3",
@@ -20488,7 +21286,8 @@
       "MD - Microbiology",
       "MD - Pharmacology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 217
   },
   {
     "id": "ug_up022p3",
@@ -20524,7 +21323,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 386
   },
   {
     "id": "ug_jk003g1",
@@ -20558,7 +21358,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 278
   },
   {
     "id": "ug_mn001p3",
@@ -20579,7 +21380,8 @@
       "MD - General Medicine",
       "MD - Radio Diagnosis",
       "MS - General Surgery"
-    ]
+    ],
+    "totalSeats": 158
   },
   {
     "id": "ug_ml002g1",
@@ -20595,7 +21397,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 50
   },
   {
     "id": "ug_ka031g1",
@@ -20630,7 +21433,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 252
   },
   {
     "id": "ug_br010p3",
@@ -20656,7 +21460,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 188
   },
   {
     "id": "ug_ka032g1",
@@ -20680,7 +21485,8 @@
       "MD - Pathology",
       "MD - Pharmacology",
       "MD - Physiology"
-    ]
+    ],
+    "totalSeats": 227
   },
   {
     "id": "ug_hr009g1",
@@ -20696,7 +21502,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka036p3",
@@ -20735,7 +21542,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 421
   },
   {
     "id": "ug_cg002p3",
@@ -20771,7 +21579,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 346
   },
   {
     "id": "ug_up050g1",
@@ -20787,7 +21596,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_uk004p3",
@@ -20824,7 +21634,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 448
   },
   {
     "id": "ug_rj030g1",
@@ -20840,7 +21651,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_br011g1",
@@ -20865,7 +21677,8 @@
       "MD - Physiology",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 179
   },
   {
     "id": "ug_hp006g1",
@@ -20889,7 +21702,8 @@
       "MS - General Surgery",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 146
   },
   {
     "id": "ug_up023p3",
@@ -20928,7 +21742,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 333
   },
   {
     "id": "ug_wb010p3",
@@ -20956,7 +21771,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 307
   },
   {
     "id": "ug_cg003p3",
@@ -20972,7 +21788,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in083p3",
@@ -21004,7 +21821,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 362
   },
   {
     "id": "ug_cg004p3",
@@ -21040,7 +21858,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 351
   },
   {
     "id": "ug_up051g1",
@@ -21056,7 +21875,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_mh048g1",
@@ -21088,7 +21908,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 273
   },
   {
     "id": "ug_ka037p3",
@@ -21125,7 +21946,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 352
   },
   {
     "id": "ug_cg016g1",
@@ -21141,7 +21963,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 125
   },
   {
     "id": "ug_ka038p3",
@@ -21157,7 +21980,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_mp016g1",
@@ -21192,7 +22016,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 332
   },
   {
     "id": "ug_br012g1",
@@ -21208,7 +22033,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_in084p3",
@@ -21243,7 +22069,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 321
   },
   {
     "id": "ug_jh003p3",
@@ -21259,7 +22086,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_sk001g1",
@@ -21275,7 +22103,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_sk001p3",
@@ -21304,7 +22133,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 132
   },
   {
     "id": "ug_as015g1",
@@ -21338,7 +22168,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 261
   },
   {
     "id": "ug_mh033p3",
@@ -21354,7 +22185,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 149
   },
   {
     "id": "ug_in085p3",
@@ -21370,7 +22202,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_gj015g1",
@@ -21388,7 +22221,8 @@
       "MD - Anaesthesiology",
       "MD - Immunohematology & Blood Transfusion",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 15
   },
   {
     "id": "ug_mh034p3",
@@ -21421,7 +22255,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 239
   },
   {
     "id": "ug_gj016g1",
@@ -21460,7 +22295,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 505
   },
   {
     "id": "ug_uk004g1",
@@ -21489,7 +22325,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 135
   },
   {
     "id": "ug_in086p3",
@@ -21524,7 +22361,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 407
   },
   {
     "id": "ug_in025i1",
@@ -21539,7 +22377,8 @@
     "nmcRecognized": true,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "nirfRanking": 8,
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_kl018p3",
@@ -21572,7 +22411,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 207
   },
   {
     "id": "ug_in087p3",
@@ -21609,7 +22449,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 223
   },
   {
     "id": "ug_kl017g1",
@@ -21633,7 +22474,8 @@
       "MD - Tuberculosis & Respiratory Diseases",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 164
   },
   {
     "id": "ug_kl019p3",
@@ -21668,7 +22510,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 288
   },
   {
     "id": "ug_in088p3",
@@ -21706,7 +22549,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 481
   },
   {
     "id": "ug_ap015p3",
@@ -21729,7 +22573,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 177
   },
   {
     "id": "ug_mh049g1",
@@ -21759,7 +22604,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 210
   },
   {
     "id": "ug_ka039p3",
@@ -21790,7 +22636,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 251
   },
   {
     "id": "ug_ka040p3",
@@ -21827,7 +22674,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 427
   },
   {
     "id": "ug_pb007p3",
@@ -21864,7 +22712,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 289
   },
   {
     "id": "ug_or015g1",
@@ -21880,7 +22729,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka033g1",
@@ -21894,7 +22744,8 @@
     "hospitalBeds": 0,
     "nmcRecognized": false,
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
-    "branches": []
+    "branches": [],
+    "totalSeats": 0
   },
   {
     "id": "ug_py004p3",
@@ -21923,7 +22774,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 328
   },
   {
     "id": "ug_ka041p3",
@@ -21955,7 +22807,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 95
   },
   {
     "id": "ug_py005p3",
@@ -21991,7 +22844,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 378
   },
   {
     "id": "ug_in089p3",
@@ -22020,7 +22874,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 196
   },
   {
     "id": "ug_in090p3",
@@ -22062,7 +22917,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 524
   },
   {
     "id": "ug_ka042p3",
@@ -22095,7 +22951,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 319
   },
   {
     "id": "ug_ka043p3",
@@ -22130,7 +22987,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 389
   },
   {
     "id": "ug_ap017g1",
@@ -22166,7 +23024,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 67
   },
   {
     "id": "ug_tn011p3",
@@ -22195,7 +23054,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 299
   },
   {
     "id": "ug_py006p3",
@@ -22232,7 +23092,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 391
   },
   {
     "id": "ug_ka044p3",
@@ -22266,7 +23127,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 363
   },
   {
     "id": "ug_in091p3",
@@ -22303,7 +23165,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 326
   },
   {
     "id": "ug_ka045p3",
@@ -22343,7 +23206,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 297
   },
   {
     "id": "ug_in087g1",
@@ -22380,7 +23244,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 470
   },
   {
     "id": "ug_ka046p3",
@@ -22417,7 +23282,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 361
   },
   {
     "id": "ug_up024p3",
@@ -22456,7 +23322,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 342
   },
   {
     "id": "ug_rj014p3",
@@ -22472,7 +23339,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_mp005p3",
@@ -22500,7 +23368,8 @@
       "MD - Radio Diagnosis",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 241
   },
   {
     "id": "ug_mp017g1",
@@ -22516,7 +23385,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tg013p3",
@@ -22547,7 +23417,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 259
   },
   {
     "id": "ug_gj017g1",
@@ -22584,7 +23455,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 421
   },
   {
     "id": "ug_in092p3",
@@ -22616,7 +23488,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 252
   },
   {
     "id": "ug_in093p3",
@@ -22644,7 +23517,8 @@
       "MS - General Surgery",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 284
   },
   {
     "id": "ug_in094p3",
@@ -22678,7 +23552,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 214
   },
   {
     "id": "ug_kl018g1",
@@ -22716,7 +23591,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 273
   },
   {
     "id": "ug_up025p3",
@@ -22748,7 +23624,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 333
   },
   {
     "id": "ug_tg014p3",
@@ -22777,7 +23654,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 188
   },
   {
     "id": "ug_in095p3",
@@ -22808,7 +23686,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 295
   },
   {
     "id": "ug_tn012p3",
@@ -22824,7 +23703,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 200
   },
   {
     "id": "ug_wb029g1",
@@ -22840,7 +23720,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mh050g1",
@@ -22865,7 +23746,8 @@
       "MD - Pathology",
       "MD - Radiation Oncology",
       "MD - Radio Diagnosis"
-    ]
+    ],
+    "totalSeats": 111
   },
   {
     "id": "ug_up026p3",
@@ -22901,7 +23783,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 409
   },
   {
     "id": "ug_mh035p3",
@@ -22928,7 +23811,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 193
   },
   {
     "id": "ug_as016g1",
@@ -22959,7 +23843,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 189
   },
   {
     "id": "ug_in088g1",
@@ -22994,7 +23879,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 274
   },
   {
     "id": "ug_ka047p3",
@@ -23031,7 +23917,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 361
   },
   {
     "id": "ug_tn021g1",
@@ -23047,7 +23934,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MD - Immunohematology & Blood Transfusion"
-    ]
+    ],
+    "totalSeats": 5
   },
   {
     "id": "ug_in089g1",
@@ -23073,7 +23961,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 148
   },
   {
     "id": "ug_tn022g1",
@@ -23096,7 +23985,8 @@
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 134
   },
   {
     "id": "ug_in090g1",
@@ -23121,7 +24011,8 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 202
   },
   {
     "id": "ug_as017g1",
@@ -23137,7 +24028,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_tn023g1",
@@ -23174,7 +24066,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 394
   },
   {
     "id": "ug_ar001g1",
@@ -23201,7 +24094,8 @@
       "MD - Radio Diagnosis",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 123
   },
   {
     "id": "ug_mh051g1",
@@ -23237,7 +24131,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 319
   },
   {
     "id": "ug_in096p3",
@@ -23266,7 +24161,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 251
   },
   {
     "id": "ug_in097p3",
@@ -23302,7 +24198,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 371
   },
   {
     "id": "ug_tr001p3",
@@ -23326,7 +24223,8 @@
       "MD - Pharmacology",
       "MS - Ophthalmology",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 168
   },
   {
     "id": "ug_tr002p3",
@@ -23342,7 +24240,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_in098p3",
@@ -23362,7 +24261,8 @@
       "MD - Biochemistry",
       "MS - General Surgery",
       "MS - Orthopaedics"
-    ]
+    ],
+    "totalSeats": 110
   },
   {
     "id": "ug_in099p3",
@@ -23390,7 +24290,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 292
   },
   {
     "id": "ug_in091g1",
@@ -23426,7 +24327,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 380
   },
   {
     "id": "ug_up052g1",
@@ -23458,7 +24360,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 318
   },
   {
     "id": "ug_in100p3",
@@ -23487,7 +24390,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 291
   },
   {
     "id": "ug_in092g1",
@@ -23507,7 +24411,8 @@
       "MD - Pharmacology",
       "MD - Physiology",
       "MD - Tuberculosis & Respiratory Diseases"
-    ]
+    ],
+    "totalSeats": 10
   },
   {
     "id": "ug_in093g1",
@@ -23545,7 +24450,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 494
   },
   {
     "id": "ug_up027p3",
@@ -23576,7 +24482,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 349
   },
   {
     "id": "ug_mh036p3",
@@ -23611,7 +24518,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 257
   },
   {
     "id": "ug_jk004g1",
@@ -23638,7 +24546,8 @@
       "MD - Physiology",
       "MS - Obstetrics & Gynaecology",
       "MS - Ophthalmology"
-    ]
+    ],
+    "totalSeats": 184
   },
   {
     "id": "ug_or016g1",
@@ -23673,7 +24582,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 395
   },
   {
     "id": "ug_in101p3",
@@ -23707,7 +24617,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 199
   },
   {
     "id": "ug_in102p3",
@@ -23735,7 +24646,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 346
   },
   {
     "id": "ug_ka034g1",
@@ -23768,7 +24680,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 371
   },
   {
     "id": "ug_in103p3",
@@ -23804,7 +24717,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 319
   },
   {
     "id": "ug_py007p3",
@@ -23837,7 +24751,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 271
   },
   {
     "id": "ug_br011p3",
@@ -23853,7 +24768,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_mp018g1",
@@ -23869,7 +24785,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ap016p3",
@@ -23903,7 +24820,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 346
   },
   {
     "id": "ug_wb030g1",
@@ -23932,7 +24850,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 51
   },
   {
     "id": "ug_rj015p3",
@@ -23948,7 +24867,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 100
   },
   {
     "id": "ug_ka048p3",
@@ -23987,7 +24907,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 440
   },
   {
     "id": "ug_hr011p3",
@@ -24016,7 +24937,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 324
   },
   {
     "id": "ug_ka035g1",
@@ -24032,7 +24954,8 @@
     "hero_image_url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200",
     "branches": [
       "MBBS"
-    ]
+    ],
+    "totalSeats": 150
   },
   {
     "id": "ug_ka049p3",
@@ -24071,7 +24994,8 @@
       "MS - Ophthalmology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 371
   },
   {
     "id": "ug_mz001g1",
@@ -24092,7 +25016,8 @@
       "MD - Paediatrics",
       "MS - General Surgery",
       "MS - Obstetrics & Gynaecology"
-    ]
+    ],
+    "totalSeats": 110
   },
   {
     "id": "ug_in104p3",
@@ -24124,6 +25049,7 @@
       "MS - Obstetrics & Gynaecology",
       "MS - Orthopaedics",
       "MS - Otorhinolaryngology (ENT)"
-    ]
+    ],
+    "totalSeats": 278
   }
 ]

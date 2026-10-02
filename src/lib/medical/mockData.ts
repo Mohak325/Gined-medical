@@ -17,6 +17,7 @@ export interface College {
   hero_image_url: string | null;
   nirfRanking?: number;
   branches?: string[];
+  totalSeats?: number;
 }
 
 export interface CollegeCourse {
