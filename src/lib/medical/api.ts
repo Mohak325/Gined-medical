@@ -7,6 +7,24 @@ import seatsData from "@/data/seats.json";
 export async function getColleges(params: Record<string, any>): Promise<College[]> {
   let results = [...collegesData] as College[];
 
+  const PLACEHOLDERS = [
+    "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200", // Original modern
+    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200", // Classic brick
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200", // Graduation
+    "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=1200", // Library/campus
+    "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1200", // Modern campus
+    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1200", // Medical building
+  ];
+
+  results = results.map(c => {
+    if (!c.hero_image_url || c.hero_image_url === PLACEHOLDERS[0]) {
+      // Deterministic pseudo-random based on id length and characters
+      const hash = c.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+      return { ...c, hero_image_url: PLACEHOLDERS[hash % PLACEHOLDERS.length] };
+    }
+    return c;
+  });
+
   if (params.type && params.type !== "all") {
     results = results.filter((c) => c.type.toLowerCase() === params.type.toLowerCase());
   }
@@ -36,7 +54,23 @@ export async function getColleges(params: Record<string, any>): Promise<College[
 }
 
 export async function getCollegeById(id: string): Promise<College | null> {
-  return (collegesData as College[]).find((c) => c.id === id) || null;
+  const c = (collegesData as College[]).find((c) => c.id === id);
+  if (!c) return null;
+
+  const PLACEHOLDERS = [
+    "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=1200", // Original modern
+    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200", // Classic brick
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200", // Graduation
+    "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=1200", // Library/campus
+    "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1200", // Modern campus
+    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1200", // Medical building
+  ];
+
+  if (!c.hero_image_url || c.hero_image_url === PLACEHOLDERS[0]) {
+    const hash = c.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    return { ...c, hero_image_url: PLACEHOLDERS[hash % PLACEHOLDERS.length] };
+  }
+  return c;
 }
 
 export async function getSeats(params: Record<string, any>): Promise<(SeatEntry & { college: College })[]> {
