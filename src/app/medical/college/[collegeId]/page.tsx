@@ -47,11 +47,43 @@ export default async function CollegeDetailPage({
             </section>
 
             <section>
-              <h2 className="text-h2 text-text-main mb-6">Cutoff Trends (General, AIQ)</h2>
-              <CutoffTrendChart cutoffs={cutoffs} category="general" quota="aiq" />
-              <p className="text-small text-text-muted mt-4">
-                Note: This chart shows Round 1 AIQ General category closing ranks. A lower rank indicates higher competition.
-              </p>
+              <h2 className="text-h2 text-text-main mb-6">Cutoff Trends</h2>
+              {(() => {
+                // Find the most represented quota and category for this college's cutoffs
+                if (cutoffs.length === 0) {
+                  return (
+                    <div className="bg-paper border border-hairline rounded-[var(--radius-md)] p-8 text-center text-text-muted">
+                      No historical cutoff data available for this institution in our database yet.
+                    </div>
+                  );
+                }
+
+                // Prefer AIQ General, but fallback to whatever has the most data points
+                let bestQuota = "aiq";
+                let bestCategory = "general";
+
+                const hasAiqGen = cutoffs.some(c => c.quota === "aiq" && c.category === "general");
+                
+                if (!hasAiqGen) {
+                  const counts: Record<string, number> = {};
+                  cutoffs.forEach(c => {
+                    const key = `${c.quota}_${c.category}`;
+                    counts[key] = (counts[key] || 0) + 1;
+                  });
+                  
+                  const bestKey = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+                  [bestQuota, bestCategory] = bestKey.split("_");
+                }
+
+                return (
+                  <>
+                    <CutoffTrendChart cutoffs={cutoffs} category={bestCategory} quota={bestQuota} />
+                    <p className="text-small text-text-muted mt-4">
+                      Note: This chart shows Round 1 {bestQuota.toUpperCase()} {bestCategory.toUpperCase()} category closing ranks. A lower rank number indicates higher competition.
+                    </p>
+                  </>
+                );
+              })()}
             </section>
           </div>
 
