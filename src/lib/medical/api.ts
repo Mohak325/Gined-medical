@@ -14,11 +14,13 @@ export async function getColleges(params: Record<string, any>): Promise<College[
       const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
       
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-        <rect width="100%" height="100%" fill="%230F2E3D" />
-        <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="%23C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
+        <rect width="100%" height="100%" fill="#0F2E3D" />
+        <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="#C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
       </svg>`;
       
-      return { ...c, hero_image_url: `data:image/svg+xml;utf8,${svg.replace(/\n/g, '').replace(/\s+/g, ' ')}` };
+      // Use proper base64 encoding to prevent browser parsing errors
+      const base64Svg = Buffer.from(svg).toString('base64');
+      return { ...c, hero_image_url: `data:image/svg+xml;base64,${base64Svg}` };
     }
     return c;
   });
@@ -60,11 +62,12 @@ export async function getCollegeById(id: string): Promise<College | null> {
     const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
     
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-      <rect width="100%" height="100%" fill="%230F2E3D" />
-      <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="%23C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
+      <rect width="100%" height="100%" fill="#0F2E3D" />
+      <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="#C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
     </svg>`;
     
-    return { ...c, hero_image_url: `data:image/svg+xml;utf8,${svg.replace(/\n/g, '').replace(/\s+/g, ' ')}` };
+    const base64Svg = Buffer.from(svg).toString('base64');
+    return { ...c, hero_image_url: `data:image/svg+xml;base64,${base64Svg}` };
   }
   return c;
 }
