@@ -113,6 +113,21 @@ export default function CollegeListView({ colleges }: CollegeListViewProps) {
                    )}
                 </div>
 
+                {college.branches && college.branches.length > 0 && (
+                  <div className="mb-5 flex flex-wrap gap-1.5">
+                    {college.branches.slice(0, 3).map((branch, i) => (
+                      <span key={i} className="inline-flex items-center px-2 py-0.5 rounded-[var(--radius-sm)] bg-paper text-[10px] text-text-muted border border-hairline whitespace-nowrap">
+                        {branch}
+                      </span>
+                    ))}
+                    {college.branches.length > 3 && (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-[var(--radius-sm)] bg-paper-dim text-[10px] text-text-muted font-medium">
+                        +{college.branches.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                )}
+
                 <div className="mt-auto flex items-center justify-between relative z-20">
                   <Link 
                     href={`/medical/college/${college.id}`}

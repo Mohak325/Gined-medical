@@ -16,6 +16,7 @@ export interface College {
   nmcRecognized: boolean;
   hero_image_url: string | null;
   nirfRanking?: number;
+  branches?: string[];
 }
 
 export interface CollegeCourse {
