@@ -198,6 +198,34 @@ for (const [name, result] of Object.entries(stateReport)) {
   if (result.written === 0) errors.push(`${name}: no rows were read from the PDF`);
 }
 
+// Andhra Pradesh's lists are read by their own script.
+{
+  const ap = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/ap-report.json"), "utf8"));
+  for (const [name, result] of Object.entries(ap.files)) {
+    if (result.rejected > 0) errors.push(`${name}: ${result.rejected} rows could not be read from the PDF`);
+  }
+  expectEqual("Andhra Pradesh 2026 management quota Phase 1 seats, per neet2seat", ap.files["AP-2026-mq-r1"].written, 1629);
+}
+
+// Gujarat publishes its last merit number for each college in Round 1. Compare with ours.
+{
+  const gj = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/gj-report.json"), "utf8"));
+  expectEqual("Gujarat 2026 Round 1 students allotted, per neet2seat", gj["GJ-2026-r1"].written, 7459);
+  for (const [name, result] of Object.entries(gj)) {
+    if (result.rejected > 0) errors.push(`${name}: ${result.rejected} rows could not be read from the PDF`);
+  }
+  const lines = fs.readFileSync(path.join(ROOT, "data/extracted/states/GJ-2026-r1.csv"), "utf8").split(/\r?\n/).slice(1).filter(Boolean);
+  const highest = {};
+  for (const line of lines) {
+    const c = line.split(",");
+    if (c[5] === "GQ" && c[3] === "OP") highest[c[1]] = Math.max(highest[c[1]] ?? 0, Number(c[8]));
+  }
+  const official = Object.entries(gj["GJ-2026-lastmerit-r1"].openMerit);
+  const same = official.filter(([label, merit]) => highest[label] === Number(merit)).length;
+  console.log(`Gujarat's own 2026 Round 1 last merit numbers matched: ${same} of ${official.length}`);
+  if (same < official.length * 0.95) errors.push(`Only ${same} of ${official.length} Gujarat last merit numbers match`);
+}
+
 // Careers360 reported 5,666 MBBS and BDS seats in Rajasthan's Round 1.
 expectEqual("Rajasthan 2026 Round 1 students allotted", stateReport["RJ-2026-r1"].written, 5666);
 

@@ -1,0 +1,7 @@
+[
+  {"name":"2026-r1","year":2026,"round":1,"title":"Provisional Meritwise Allotment List, Round 01","url":"https://medadmgujarat.ncode.in/web/UG2026/R1/r1_merit_wiseadm_025530.pdf"},
+  {"name":"2026-r2","year":2026,"round":2,"title":"Rank Wise Result, Round 02","url":"https://medadmgujarat.ncode.in/web/UG2026/R2/merit_wiseadm_r2_0330.pdf"},
+  {"name":"2026-r3","year":2026,"round":3,"title":"Rank Wise Result, Round 03","url":"https://medadmgujarat.ncode.in/web/UG2026/R3/merit_wiseadm_r3_1225.pdf"},
+  {"name":"2026-stray","year":2026,"round":4,"title":"Rank Wise Result, Round 04 (stray vacancy)","url":"https://medadmgujarat.ncode.in/web/UG2026/R4/r4_merit_wiseadm_1135.pdf"},
+  {"name":"2026-lastmerit-r1","year":2026,"round":1,"lastMerit":true,"title":"Last Merit, Round 01","url":"https://medadmgujarat.ncode.in/web/UG2026/R1/r1_last_merit_mopwise_025530.pdf"}
+]

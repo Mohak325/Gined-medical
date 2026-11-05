@@ -1,0 +1,114 @@
+{
+  "files": {
+    "AP-2026-cq-r1": {
+      "pages": 172,
+      "written": 4321,
+      "rejected": 0,
+      "phases": {
+        "Phase-1": 4321
+      },
+      "colleges": 39
+    },
+    "AP-2026-cq-r2": {
+      "pages": 178,
+      "written": 4317,
+      "rejected": 0,
+      "phases": {
+        "Phase-1": 3112,
+        "Phase-2": 1205
+      },
+      "colleges": 39
+    },
+    "AP-2026-cq-r3": {
+      "pages": 138,
+      "written": 4581,
+      "rejected": 0,
+      "phases": {
+        "Phase-1": 2130,
+        "Phase-2": 658,
+        "Phase-3": 1793
+      },
+      "colleges": 39
+    },
+    "AP-2026-cq-stray": {
+      "pages": 1,
+      "written": 3,
+      "rejected": 0,
+      "phases": {
+        "Stray": 3
+      },
+      "colleges": 2
+    },
+    "AP-2026-mq-r1": {
+      "pages": 49,
+      "written": 1629,
+      "rejected": 0,
+      "phases": {
+        "Phase-1": 1629
+      },
+      "colleges": 27
+    },
+    "AP-2026-mq-r2": {
+      "pages": 62,
+      "written": 1795,
+      "rejected": 0,
+      "phases": {
+        "Phase-2": 589,
+        "Phase-1": 1206
+      },
+      "colleges": 28
+    },
+    "AP-2026-mq-r3": {
+      "pages": 77,
+      "written": 2134,
+      "rejected": 0,
+      "phases": {
+        "Phase-2": 442,
+        "Phase-3": 784,
+        "Phase-1": 908
+      },
+      "colleges": 28
+    }
+  },
+  "collegeNames": {
+    "ACSR": "ACSR Govt Medical College, Nellore",
+    "AGMP": "Anna Gowri Medical College & Hospital,Parameshwaramangalam.",
+    "AMCV": "Andhra Medical College,Visakhapatnam",
+    "APLC": "Apollo Inst. Of Medical Sciences & Research, Chittoor",
+    "ASRA": "Alluri Sitarama Raju Academy of Medical Sciences, Eluru.",
+    "BMCT": "Sri Balaji Institute of Medical Sciences Tirupati",
+    "FIMS": "Fathima Institute of Medical Sciences, Kadapa",
+    "GEMS": "Great Eastern Medical School & Hospital, Ragolu, Srikakulam",
+    "GMCA": "Government Medical College, Anantapuram",
+    "GMCE": "Dr YELLAPRAGADA SUBBA RAO GOVERNMENT MEDICAL COLLEGE, ELURU",
+    "GMCG": "Guntur Medical College, Guntur",
+    "GMCK": "Govt. Medical College, Kadapa",
+    "GMCM": "SRI PINGALI VENKAIAH GOVERNMENT MEDICAL COLLEGE, MACHILIPATNAM",
+    "GMCN": "Government Medical College, Nandyala",
+    "GMCO": "Government Medical College, Ongole",
+    "GMCP": "Government Medical College, Paderu",
+    "GMCR": "Government Medical College, Rajahmahendravaram",
+    "GMCS": "Govt. Medical College, (Old RIMS) Srikakulam",
+    "GMCV": "Government Medical College, Vizianagaram",
+    "GMPD": "Government Medical College, PIDUGURALLA",
+    "GSLR": "GSL Medical College, Rajamahendravaram",
+    "GVPT": "Gayathri Vidhya Parishad Inst. Of Health Care and Medical Technology, Visakhapatnam",
+    "KATR": "Katuri Medical College & Hospital, Chinakondrupadu, Guntur.",
+    "KMCK": "Kurnool Medical College, Kurnool",
+    "KONA": "Konaseema Institute of Medical Sciences , Amalapuram",
+    "MAHA": "Maharajah Institute of Medical Sciences (MIMS) Vizianagaram.",
+    "NARN": "Narayana Medical College, Nellore",
+    "NIMR": "Nimra Institute of Medical Sciences (NIMS), Ibrahimpatnam, Vijayawada",
+    "NRIM": "NRI Medical College & Hospital, Chinnakakani, Guntur .",
+    "NRVP": "NRI Institute of Medical Sciences, Visakhapatnam",
+    "PADT": "Sri Padmavathi Medical College for Women, Tirupati",
+    "PESK": "PES Institute of Medical Sciences and Research, Kuppam.",
+    "PSIM": "Dr. Pinnamaneni Siddhartha Institute of Medical Sciences Chinnaavutapalli, Gannavaram.",
+    "RMCK": "Rangaraya Medical College, Kakinada",
+    "RVSC": "RVS Institute of Medical Sciences , CHITTOOR",
+    "SMCV": "Siddhartha Medical College, Vijayawada",
+    "SRMC": "Santhiram Medical College, Nandyala.",
+    "SVMC": "S.V.Medical College, Tirupati",
+    "VMCK": "Viswabharathi Medical College , Kurnool."
+  }
+}

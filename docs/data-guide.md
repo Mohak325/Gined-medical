@@ -126,7 +126,8 @@ Every state publishes differently, so start by reading before writing any code.
 1. **Find the state's authority.** Look for its final allotment lists, by round, for at least two years.
 2. **Read its bulletin first.** Note what each seat type and category code means, and who is eligible. Don't assume
    a state's categories match the national ones. Karnataka's `2A` isn't simply "OBC".
-3. **Check the layout.** Do the files hold ranks, or marks? All India ranks, or a state rank? Do they include students
+3. **Check the layout.** Do the files hold ranks, or marks? All India ranks, or a state rank? This matters most of all: students enter their
+   All India rank, so a state rank would give wrong answers. Gujarat's and Tamil Nadu's lists both include state numbers. Do they include students
    who only kept an earlier seat? Is there a stable college code to match on? Karnataka's is, so `data/curated/kea-college-codes.json`
    is a short list checked by hand.
 4. **Add it in three places,** which is usually all it takes:
@@ -136,6 +137,8 @@ Every state publishes differently, so start by reading before writing any code.
 5. **Extract and build:** `npm run data:states:extract`, then `npm run data:build`. The build stops on any college or label it hasn't seen.
 6. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work. Some states publish their own closing ranks,
    which is the best check of all.
+
+Some lists have no ruled table, or code everything into one column. Gujarat and Andhra Pradesh each have a small reader for this (`gj_extract.py`, `ap_extract.py`).
 
 The predictor reads each state's choices from `state-rules.mjs`, so it needs no change. Karnataka is the one exception, with its own files.
 

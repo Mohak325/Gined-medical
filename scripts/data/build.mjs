@@ -143,7 +143,11 @@ const rawPg = readJson(path.join(RAW, "pg_all.json"));
 const crosswalk = readJson(path.join(CURATED, "mcc-college-crosswalk.json"));
 const keaCodes = readJson(path.join(CURATED, "kea-college-codes.json"));
 const stateColleges = readJson(path.join(CURATED, "state-colleges.json"));
-const stateSources = readJson(path.join(ROOT, "data/raw/states/sources.json"));
+const stateSources = [
+  ...readJson(path.join(ROOT, "data/raw/states/sources.json")),
+  ...readJson(path.join(ROOT, "data/raw/states/gj.json")).filter((s) => !s.lastMerit).map((s) => ({ ...s, state: "GJ" })),
+  ...readJson(path.join(ROOT, "data/raw/states/ap.json")).map((s) => ({ ...s, state: "AP" })),
+];
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 
 /* ── Seats ────────────────────────────────────────────────────────────── */
@@ -295,7 +299,7 @@ for (const source of stateSources.filter((s) => !s.checkOnly)) {
     if (!rules.isMbbs(row)) { drop(`${source.state} row that isn't MBBS`); continue; }
     const collegeId = matchStateCollege(source.state, row.college);
     if (!collegeId) { drop("college not on the site"); continue; }
-    const seat = rules.map(row);
+    const seat = rules.map(row, source);
     if (!seat) { drop("student kept an earlier seat"); continue; }
 
     const key = [source.state, collegeId, seat.seatType, seat.code, source.round, source.year].join("|");
