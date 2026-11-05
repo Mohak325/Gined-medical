@@ -39,7 +39,9 @@ export default function CollegeBranchesMatrix({ courses, cutoffs }: CollegeBranc
                 const quotaOrder = ["aiq", "deemed", "central", "state"];
                 const benchmark = cutoffs
                   .filter(c => c.course === course.course && c.category === "general" && c.round === 1 && quotaOrder.includes(c.quota))
-                  .sort((a, b) => b.year - a.year || quotaOrder.indexOf(a.quota) - quotaOrder.indexOf(b.quota))[0];
+                  .sort((a, b) => b.year - a.year || quotaOrder.indexOf(a.quota) - quotaOrder.indexOf(b.quota))[0]
+                  // With no All India figure, show a state's own open seat, clearly labelled as its rank.
+                  ?? cutoffs.find(c => c.course === course.course && c.rankType === "state" && c.round === 1 && ["OC", "SM"].includes(c.stateCategory ?? ""));
 
                 return (
                   <tr key={idx} className="hover:bg-paper/50 transition-colors">
@@ -67,7 +69,7 @@ export default function CollegeBranchesMatrix({ courses, cutoffs }: CollegeBranc
                         <div className="font-semibold">
                           #{benchmark.closingRank.toLocaleString()}
                           <span className="text-micro text-text-muted font-normal ml-2">
-                            ({benchmark.year} {benchmark.quota.toUpperCase()})
+                            ({benchmark.year} {benchmark.rankType === "state" ? `${benchmark.state} STATE RANK` : benchmark.quota.toUpperCase()})
                           </span>
                         </div>
                       ) : (

@@ -36,6 +36,7 @@ export default function ResultsClient() {
   const defaultStateCode = query.state ? stateOptions[query.state]?.[0]?.code ?? "GM" : "GM";
   const stateCategory = stateHasData ? (query.stateCategory ?? defaultStateCode) : undefined;
   const stateName = query.state ? INDIA_STATES.find((s) => s.code === query.state)?.name : undefined;
+  const usesStateRank = isState && !!query.state && query.state in meta.stateRanks;
 
   useEffect(() => {
     let mounted = true;
@@ -184,10 +185,12 @@ export default function ResultsClient() {
           <div>
             <h3 className="text-body font-bold text-text-main mb-1">Your Summary</h3>
             <p className="text-small text-text-muted leading-relaxed">
-              Based on {meta.cutoffYear} Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
+              Based on {meta.cutoffYear} Round 1 closing ranks, your {usesStateRank ? `${stateName} state rank` : "rank"} of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
               {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
+              {usesStateRank && ` These closing ranks are ${stateName}'s own, so compare them with your state rank and not your All India rank.`}
+              {query.state === "TN" && ` Tamil Nadu's lists show each student's community and not the seat they took, so each figure is the last-ranked student of that community who got a seat.`}
             </p>
           </div>
         </div>

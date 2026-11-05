@@ -12,11 +12,16 @@
     "BR",
     "CG",
     "GJ",
+    "HP",
     "HR",
     "KA",
+    "KL",
     "MH",
+    "MP",
+    "PB",
     "RJ",
-    "TG"
+    "TG",
+    "TN"
   ],
   "stateOptions": {
     "BR": [
@@ -597,6 +602,172 @@
         "label": "Institute quota seats"
       }
     ],
+    "PB": [
+      {
+        "code": "OPEN",
+        "label": "Open, government quota"
+      },
+      {
+        "code": "SC",
+        "label": "Scheduled Caste, government quota"
+      },
+      {
+        "code": "BC",
+        "label": "Backward Classes, government quota"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS, government quota"
+      },
+      {
+        "code": "MGMT-OPEN",
+        "label": "Open, management quota"
+      },
+      {
+        "code": "MGMT-SC",
+        "label": "Scheduled Caste, management quota"
+      },
+      {
+        "code": "MGMT-BC",
+        "label": "Backward Classes, management quota"
+      }
+    ],
+    "HP": [
+      {
+        "code": "GEN",
+        "label": "General, HP quota"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC, HP quota"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS, HP quota"
+      },
+      {
+        "code": "SC",
+        "label": "SC, HP quota"
+      },
+      {
+        "code": "ST",
+        "label": "ST, HP quota"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota seats"
+      }
+    ],
+    "MP": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      }
+    ],
+    "TN": [
+      {
+        "code": "OC",
+        "label": "OC, government quota"
+      },
+      {
+        "code": "BC",
+        "label": "BC, government quota"
+      },
+      {
+        "code": "BCM",
+        "label": "BC Muslim (BCM), government quota"
+      },
+      {
+        "code": "MBC",
+        "label": "MBC & DNC, government quota"
+      },
+      {
+        "code": "SC",
+        "label": "SC, government quota"
+      },
+      {
+        "code": "SCA",
+        "label": "SC Arunthathiyar (SCA), government quota"
+      },
+      {
+        "code": "ST",
+        "label": "ST, government quota"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota, using your management rank"
+      }
+    ],
+    "KL": [
+      {
+        "code": "SM",
+        "label": "State Merit (SM)"
+      },
+      {
+        "code": "EW",
+        "label": "EWS (EW)"
+      },
+      {
+        "code": "EZ",
+        "label": "Ezhava (EZ)"
+      },
+      {
+        "code": "MU",
+        "label": "Muslim (MU)"
+      },
+      {
+        "code": "BH",
+        "label": "Other Backward Hindu (BH)"
+      },
+      {
+        "code": "LA",
+        "label": "Latin Catholic and Anglo Indian (LA)"
+      },
+      {
+        "code": "DV",
+        "label": "Dheevara (DV)"
+      },
+      {
+        "code": "VK",
+        "label": "Viswakarma (VK)"
+      },
+      {
+        "code": "KN",
+        "label": "Kusavan (KN)"
+      },
+      {
+        "code": "BX",
+        "label": "Other Backward Christian (BX)"
+      },
+      {
+        "code": "KU",
+        "label": "Kudumbi (KU)"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -728,9 +899,19 @@
       }
     ]
   },
+  "stateRanks": {
+    "TN": {
+      "label": "Tamil Nadu State Rank",
+      "help": "Enter your rank from Tamil Nadu's merit list, not your All India rank. Government and management quota seats have separate rank lists."
+    },
+    "KL": {
+      "label": "Kerala KEAM Medical Rank",
+      "help": "Enter your KEAM medical rank from the Commissioner's rank list, not your All India rank."
+    }
+  },
   "seatYear": "2026-27",
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 700
+  "collegesWithCutoffs": 767
 }

@@ -149,6 +149,11 @@ const stateSources = [
   ...readJson(path.join(ROOT, "data/raw/states/ap.json")).map((s) => ({ ...s, state: "AP" })),
   ...readJson(path.join(ROOT, "data/raw/states/tg.json")).map((s) => ({ ...s, state: "TG" })),
   ...readJson(path.join(ROOT, "data/raw/states/mh.json")).map((s) => ({ ...s, state: "MH" })),
+  ...readJson(path.join(ROOT, "data/raw/states/pb.json")).map((s) => ({ ...s, state: "PB" })),
+  ...readJson(path.join(ROOT, "data/raw/states/hp.json")).map((s) => ({ ...s, state: "HP" })),
+  ...readJson(path.join(ROOT, "data/raw/states/mp.json")).map((s) => ({ ...s, state: "MP" })),
+  ...readJson(path.join(ROOT, "data/raw/states/tn.json")).map((s) => ({ ...s, state: "TN" })),
+  ...readJson(path.join(ROOT, "data/raw/states/kl.json")).map((s) => ({ ...s, state: "KL" })),
 ];
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 
@@ -311,6 +316,8 @@ for (const source of stateSources.filter((s) => !s.checkOnly)) {
       round: source.round, year: source.year, openingRank: rank, closingRank: rank, allotted: 0,
       quotaDetail: `${source.state}_${seat.seatType.toUpperCase()}`, state: source.state,
       seatType: seat.seatType, stateCategory: seat.code,
+      // A state's own rank can't be compared with an All India rank, so the rows say which they hold.
+      ...(rules.stateRank ? { rankType: "state" } : {}),
     };
     group.openingRank = Math.min(group.openingRank, rank);
     group.closingRank = Math.max(group.closingRank, rank);
@@ -336,6 +343,7 @@ const meta = {
   cutoffYears: [...new Set(cutoffs.map((cutoff) => cutoff.year))].sort(),
   stateCutoffs: [...new Set(cutoffs.map((cutoff) => cutoff.state).filter(Boolean))].sort(),
   stateOptions: Object.fromEntries(Object.entries(STATES).map(([code, rules]) => [code, rules.options])),
+  stateRanks: Object.fromEntries(Object.entries(STATES).filter(([, rules]) => rules.stateRank).map(([code, rules]) => [code, rules.stateRank])),
   seatYear: SEAT_YEAR,
   collegeCount: colleges.length,
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,

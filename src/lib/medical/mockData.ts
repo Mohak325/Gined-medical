@@ -52,6 +52,7 @@ export interface CutoffEntry {
   state?: string; // State code, for state counselling
   seatType?: "government" | "private" | "nri" | "others"; // The state's seat type
   stateCategory?: string; // The state's own seat code, e.g. "2AG"
+  rankType?: "state"; // Set when ranks are the state's own, not All India ranks
 }
 
 export interface SeatEntry {

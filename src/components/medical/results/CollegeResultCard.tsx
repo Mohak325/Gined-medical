@@ -106,7 +106,7 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
 
       <div className="sm:w-56 shrink-0 flex flex-col justify-between sm:text-right border-t sm:border-t-0 sm:border-l border-hairline pt-6 sm:pt-0 sm:pl-8 z-10">
         <div>
-          <div className="text-micro text-text-muted font-semibold tracking-wider uppercase mb-1">Previous Closing Rank</div>
+          <div className="text-micro text-text-muted font-semibold tracking-wider uppercase mb-1">{cutoff.rankType === "state" ? "Previous Closing State Rank" : "Previous Closing Rank"}</div>
           <div className="text-[32px] leading-tight font-bold tabular-nums text-text-main mb-2">
             {formatRank(cutoff.closingRank)}
           </div>

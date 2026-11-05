@@ -7,6 +7,7 @@
  * When you find a new kind of data bug, add a check here so it can't come back.
  */
 import fs from "node:fs";
+import { readCsv } from "./mcc-lib.mjs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "../..");
@@ -211,6 +212,107 @@ for (const [name, result] of Object.entries(stateReport)) {
   console.log(`Maharashtra last Open rank: government ${lastOpen("Government")}, private ${lastOpen("Private")}`);
   expectEqual("Maharashtra last Open government rank, per neet2seat", lastOpen("Government"), 47413);
   expectEqual("Maharashtra last Open private rank, per neet2seat", lastOpen("Private"), 114441);
+}
+
+// Punjab's counts and closing All India ranks, as reported by neet2seat and Careers360.
+{
+  const pb = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/pb-report.json"), "utf8"));
+  expectEqual("Punjab 2026 Round 1 students listed, per Careers360", pb.files["PB-2026-r1"].seen, 2410);
+  const table = {
+    ug_in044g1: [12064, 15207, 18092], // Patiala
+    ug_pb003g1: [24548, 27209, 33860], // Amritsar
+    ug_pb001g1: [24071, 27191, 34876], // Mohali
+    ug_pb002g1: [27199, 31197, 36672], // ESIC Ludhiana
+    ug_pb004g1: [30897, 34317, 46909], // Faridkot
+  };
+  for (const [collegeId, closes] of Object.entries(table)) {
+    closes.forEach((closing, index) => {
+      const row = cutoffs.find((c) => c.state === "PB" && c.collegeId === collegeId && c.stateCategory === "OPEN" && c.round === index + 1);
+      expectEqual(`Punjab ${collegeId} Open Round ${index + 1}, per neet2seat`, row?.closingRank, closing);
+    });
+  }
+}
+
+// Madhya Pradesh publishes its own closing ranks each round. Ours are calculated from the student lists.
+{
+  const mp = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/mp-report.json"), "utf8"));
+  for (const [name, file] of Object.entries(mp.files)) {
+    if (file.serialGaps > 0) errors.push(`${name}: serial numbers skip`);
+    const groups = new Map();
+    for (const row of readCsv(path.join(ROOT, `data/extracted/states/${name}.csv`))) {
+      if (row.course !== "MBBS" || row.remark === "NOT UPGRADED") continue;
+      const key = `${row.college}|${row.category}`;
+      const group = groups.get(key) ?? { closing: 0, allotted: 0 };
+      group.closing = Math.max(group.closing, Number(row.rank));
+      group.allotted++;
+      groups.set(key, group);
+    }
+    const official = new Map();
+    for (const row of file.summary) {
+      const key = `${row.college}|${row.seat}`;
+      const group = official.get(key) ?? { closing: 0, allotted: 0 };
+      group.closing = Math.max(group.closing, row.closing);
+      group.allotted += row.allotted;
+      official.set(key, group);
+    }
+    let same = 0;
+    const differ = [];
+    for (const [key, group] of official) {
+      const ours = groups.get(key);
+      if (ours?.closing === group.closing && ours.allotted === group.allotted) same++;
+      else differ.push(`${key}: official ${group.closing}/${group.allotted}, ours ${ours?.closing}/${ours?.allotted}`);
+    }
+    console.log(`Madhya Pradesh's own closing ranks, ${name}: ${same} of ${official.size} match, and we have ${groups.size} groups`);
+    if (differ.length > 0) errors.push(`${name}: ${differ.length} official closing ranks differ. ${differ.slice(0, 5).join("; ")}`);
+  }
+}
+
+// Tamil Nadu's closing ranks by community, as reported by neet2seat. Its Open figures aren't compared:
+// the lists show each student's community and not the seat, so ours is the last OC student's rank.
+{
+  const tn = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tn-report.json"), "utf8"));
+  for (const [name, file] of Object.entries(tn.files)) {
+    if (file.serialGaps > 0) errors.push(`${name}: serial numbers skip`);
+  }
+  const table = {
+    ug_in071g1: { BC: [3, 277], BCM: [2, 349], MBC: [3, 319], SC: [2, 1258], SCA: [2, 2604], ST: [3, 3103] }, // Madras
+    ug_in087g1: { BC: [3, 521], BCM: [2, 445], MBC: [3, 623], SC: [3, 2088], SCA: [2, 4307], ST: [3, 6358] }, // Stanley
+    ug_in067g1: { BC: [3, 966], BCM: [3, 1279], MBC: [3, 751], SC: [3, 3705], SCA: [2, 4749], ST: [1, 2945] }, // Kilpauk
+  };
+  for (const [collegeId, codes] of Object.entries(table)) {
+    for (const [code, [round, closing]] of Object.entries(codes)) {
+      const row = cutoffs.find((c) => c.state === "TN" && c.collegeId === collegeId && c.stateCategory === code && c.round === round && c.seatType === "government");
+      expectEqual(`Tamil Nadu ${collegeId} ${code} Round ${round}, per neet2seat`, row?.closingRank, closing);
+    }
+  }
+}
+
+// Kerala's own Phase 1 last rank table. PT, PI and CC seats are skipped, because the table gives their
+// category rank. Seat codes we don't offer are skipped too.
+{
+  const kl = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/kl-report.json"), "utf8"));
+  const ids = JSON.parse(fs.readFileSync(path.join(ROOT, "data/curated/state-colleges.json"), "utf8")).KL;
+  const offered = ["SM", "EW", "EZ", "MU", "BH", "LA", "DV", "VK", "KN", "BX", "KU", "SC", "ST"];
+  let same = 0;
+  let total = 0;
+  for (const [key, official] of Object.entries(kl.lastRankPhase1)) {
+    const [college, code] = key.split("|");
+    if (!offered.includes(code)) continue;
+    total++;
+    const row = cutoffs.filter((c) => c.state === "KL" && c.collegeId === ids[`${college}-`] && c.stateCategory === code && c.round === 1);
+    if (Math.max(0, ...row.map((c) => c.closingRank)) === official) same++;
+    else errors.push(`Kerala Phase 1 ${key}: official ${official}`);
+  }
+  console.log(`Kerala's own Phase 1 last ranks: ${same} of ${total} match`);
+}
+
+// A state's own rank must never be presented as an All India rank.
+{
+  const stateRankStates = ["TN", "KL"];
+  const unmarked = cutoffs.filter((c) => stateRankStates.includes(c.state) && c.rankType !== "state");
+  if (unmarked.length > 0) errors.push(`${unmarked.length} Tamil Nadu or Kerala rows aren't marked as state ranks`);
+  const general = cutoffs.filter((c) => c.rankType === "state" && c.category !== "state_only");
+  if (general.length > 0) errors.push(`${general.length} state-rank rows could be mixed with All India rows`);
 }
 
 // Telangana's counts, as reported by neet2seat.

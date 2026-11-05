@@ -43,6 +43,9 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
   const [stateCode, setStateCode] = useState(searchParams.get("stateCategory") || "");
   const chosenStateCode = stateOptions?.some((o) => o.code === stateCode) ? stateCode : stateOptions?.[0]?.code;
   const usesOwnCategories = usesKarnataka || !!stateOptions;
+  // A few states counsel on their own rank, so an All India rank would give wrong answers.
+  const stateRanks = meta.stateRanks as Record<string, { label: string; help: string }>;
+  const stateRank = quota === "state" ? stateRanks[domicileState] : undefined;
 
   const handleRankChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Only allow numbers and commas
@@ -104,18 +107,23 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         
         {/* Rank Input */}
         <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
-          <label className="block text-small font-semibold text-text-main mb-2">
-            NEET {track.toUpperCase()} Rank
+          <label htmlFor="rank-input" className="block text-small font-semibold text-text-main mb-2">
+            {stateRank ? stateRank.label : `NEET ${track.toUpperCase()} Rank`}
           </label>
           <input
+            id="rank-input"
             type="text"
             required
+            aria-describedby={stateRank ? "rank-help" : undefined}
             value={rankInput}
             onChange={handleRankChange}
             onBlur={handleRankBlur}
             placeholder="e.g. 12,500"
             className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body tabular-nums focus:outline-none focus:border-gold transition-colors"
           />
+          {stateRank && (
+            <p id="rank-help" className="text-micro text-text-muted mt-2">{stateRank.help}</p>
+          )}
         </div>
 
         {/* Quota */}
