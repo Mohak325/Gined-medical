@@ -1,5 +1,11 @@
+import meta from "@/data/meta.json";
 import { ShieldCheck } from "lucide-react";
-import trustData from "@/content/trust-stats.json";
+
+const stats = [
+  { label: "MBBS colleges", value: meta.ugCollegeCount.toLocaleString("en-IN") },
+  { label: `UG seats, ${meta.seatYear}`, value: meta.ugSeats.toLocaleString("en-IN") },
+  { label: "Colleges with cutoffs", value: meta.collegesWithCutoffs.toLocaleString("en-IN") },
+];
 
 export default function TrustBar({ id }: { id: string }) {
   return (
@@ -13,12 +19,12 @@ export default function TrustBar({ id }: { id: string }) {
             </div>
             <div>
               <div className="text-small font-semibold text-white">Cutoff Data</div>
-              <div className="text-micro text-white/60">From the 2024 counselling cycle</div>
+              <div className="text-micro text-white/60">From the {meta.cutoffYear} counselling cycle</div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
-            {trustData.stats.map((stat) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center md:text-left border-l border-white/10 pl-4 md:pl-8">
                 <div className="text-h2 text-gold mb-1 font-tabular-nums">{stat.value}</div>
                 <div className="text-micro text-white/60 uppercase tracking-widest">{stat.label}</div>

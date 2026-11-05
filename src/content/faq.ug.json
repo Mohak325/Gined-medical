@@ -64,13 +64,13 @@
     },
     {
       "question": "How are your confidence labels calculated?",
-      "answer": "Our labels compare your NEET rank with a college's 2024 Round 1 closing rank for your quota and category. 'Safe' means your rank is at least 15% better than that closing rank. 'Moderate' means it falls between 15% better and 10% worse. 'Ambitious' means it is 10–35% worse, and anything further is a 'Longshot'. These labels use one year of data and are indicative, not guarantees, because cutoffs change each year with the candidate pool and seat availability.",
+      "answer": "Our labels compare your NEET rank with a college's 2025 Round 1 closing rank for your quota and category. 'Safe' means your rank is at least 15% better than that closing rank. 'Moderate' means it falls between 15% better and 10% worse. 'Ambitious' means it is 10–35% worse, and anything further is a 'Longshot'. These labels use one year of data and are indicative, not guarantees, because cutoffs change each year with the candidate pool and seat availability.",
       "order": 11,
       "category": "data"
     },
     {
       "question": "Where does your cutoff data come from?",
-      "answer": "Our current cutoff data covers the 2024 counselling cycle and mostly the All India Quota; state-quota coverage is limited. We strongly recommend cross-checking any figure with the official MCC or state counselling portal before making decisions. Results on our platform show the quota, round and year they are based on.",
+      "answer": "Our cutoffs cover the 2025 All India Quota counselling, Rounds 1 to 3, and our seat counts come from the 2026-27 NMC seat matrix released in July 2026. We use a public compilation of MCC and NMC records (the open-source NexDoc project) and check samples against published figures. We don't have state-quota cutoffs yet, and some colleges are missing. Always confirm any figure on the official MCC or state counselling portal before making decisions.",
       "order": 12,
       "category": "data"
     }

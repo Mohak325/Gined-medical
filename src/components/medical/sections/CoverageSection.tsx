@@ -1,5 +1,6 @@
 "use client";
 
+import meta from "@/data/meta.json";
 import dynamic from "next/dynamic";
 
 const CoverageDraw = dynamic(
@@ -24,20 +25,20 @@ export default function CoverageSection({ id }: { id: string }) {
             National Coverage
           </div>
           <h2 className="text-h2 text-text-on-dark mb-6">
-            926 Colleges. One Searchable Directory.
+            {meta.collegeCount} Colleges. One Searchable Directory.
           </h2>
           <p className="text-body-large text-text-on-dark/80 mb-12">
-            Browse medical colleges across India and check your rank against 2024 cutoffs, which mostly cover the All India Quota. State-quota coverage is still limited.
+            Browse medical colleges across India and check your rank against {meta.cutoffYear} All India Quota cutoffs. State-quota cutoffs are still to come.
           </p>
 
           <div className="grid grid-cols-2 gap-8">
             <div className="border-l border-white/20 pl-6">
-              <div className="text-display text-white mb-2 font-tabular-nums">926</div>
+              <div className="text-display text-white mb-2 font-tabular-nums">{meta.collegeCount}</div>
               <div className="text-small text-white/60">Colleges Listed</div>
             </div>
             <div className="border-l border-white/20 pl-6">
-              <div className="text-display text-white mb-2 font-tabular-nums">1.39L</div>
-              <div className="text-small text-white/60">UG Seats Listed</div>
+              <div className="text-display text-white mb-2 font-tabular-nums">{(meta.ugSeats / 100000).toFixed(2)}L</div>
+              <div className="text-small text-white/60">UG Seats, {meta.seatYear}</div>
             </div>
           </div>
         </div>

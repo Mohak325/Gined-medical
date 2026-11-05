@@ -42,7 +42,8 @@ export async function getColleges(params: Record<string, any>): Promise<College[
   if (params.sort === "name_desc") {
     results.sort((a, b) => b.name.localeCompare(a.name));
   } else if (params.sort === "established") {
-    results.sort((a, b) => a.established - b.established);
+    // Colleges with no known year go last.
+    results.sort((a, b) => (a.established || 9999) - (b.established || 9999));
   } else if (params.sort === "nirf_asc") {
     results.sort((a, b) => (a.nirfRanking || 9999) - (b.nirfRanking || 9999));
   } else {
@@ -88,9 +89,6 @@ export async function getSeats(params: Record<string, any>): Promise<(SeatEntry 
   if (params.quota && params.quota !== "all") {
     results = results.filter(s => s.quota === params.quota);
   }
-  if (params.category && params.category !== "all") {
-    results = results.filter(s => s.category === params.category);
-  }
   if (params.state) {
     results = results.filter(s => s.college.stateCode === params.state);
   }
@@ -124,6 +122,9 @@ export async function getCutoffs(params: Record<string, any>): Promise<CutoffEnt
   }
   if (params.category && params.category !== "all") {
     results = results.filter(c => c.category === params.category);
+  }
+  if (params.course) {
+    results = results.filter(c => c.course === params.course);
   }
   if (params.round) {
     results = results.filter(c => c.round === params.round);

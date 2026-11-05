@@ -1,0 +1,307 @@
+{
+  "_note": "Not used by the site. These links fail (Wikipedia rejects the 800px size), several show the wrong college, and Wikipedia photos usually need credit. Check each photo and its licence, then move it to college-extras.json with a working link.",
+  "ug_tr001g1": {
+    "college": "Agartala Government Medical College, Agartala",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/AGMC_Auditorium.JPG/800px-AGMC_Auditorium.JPG"
+  },
+  "ug_in002i1": {
+    "college": "All India Institute of Medical Sciences, Bhopal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/AIIMS_Bhopal_Front.jpg/800px-AIIMS_Bhopal_Front.jpg"
+  },
+  "ug_in003i1": {
+    "college": "All India Institute of Medical Sciences, Bhubaneswar",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Institute_Of_Medical_Sciences_BHU.jpg/800px-Institute_Of_Medical_Sciences_BHU.jpg"
+  },
+  "ug_in009i1": {
+    "college": "All India Institute of Medical Sciences, Jodhpur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/AIIMS_Jodhpur.png/800px-AIIMS_Jodhpur.png"
+  },
+  "ug_in010i1": {
+    "college": "All India Institute of Medical Sciences, Kalyani",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Gate_of_AIIMS%2CKalyani.jpg/800px-Gate_of_AIIMS%2CKalyani.jpg"
+  },
+  "ug_in014i1": {
+    "college": "All India Institute of Medical Sciences, New Delhi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/AIIMS_central_lawn.jpg/800px-AIIMS_central_lawn.jpg"
+  },
+  "ug_in015i1": {
+    "college": "All India Institute of Medical Sciences, Patna",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Aiimspatnaopd.png/800px-Aiimspatnaopd.png"
+  },
+  "ug_in017i1": {
+    "college": "All India Institute of Medical Sciences, Raipur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Side_view_of_aiims_raipur_college.jpg/800px-Side_view_of_aiims_raipur_college.jpg"
+  },
+  "ug_in019i1": {
+    "college": "All India Institute of Medical Sciences, Rishikesh",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/AIIMS_Rishikesh.jpg/800px-AIIMS_Rishikesh.jpg"
+  },
+  "ug_ap002g1": {
+    "college": "Andhra Medical College, Visakhapatnam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Andhra_Medical_College_and_King_George_Hospital_entrance.jpg/800px-Andhra_Medical_College_and_King_George_Hospital_entrance.jpg"
+  },
+  "ug_mh002g1": {
+    "college": "Armed Forces Medical College, Pune",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/AFMC_Main_Building.jpg/800px-AFMC_Main_Building.jpg"
+  },
+  "ug_ka001g1": {
+    "college": "Bangalore Medical College and Research Institute, Bangalore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bangalore_Medical_College_and_Research_Institute.jpg/800px-Bangalore_Medical_College_and_Research_Institute.jpg"
+  },
+  "ug_wb002g1": {
+    "college": "Bankura Sammilani Medical College, Bankura",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bankura_Sammilani_Medical_College.jpg/800px-Bankura_Sammilani_Medical_College.jpg"
+  },
+  "ug_wb004g1": {
+    "college": "Burdwan Medical College, Burdwan",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Burdwan_Medical_College_Hospital.jpg/800px-Burdwan_Medical_College_Hospital.jpg"
+  },
+  "ug_wb005g1": {
+    "college": "Calcutta National Medical College, Kolkata",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/CMC_administrative.JPG/800px-CMC_administrative.JPG"
+  },
+  "ug_in008g1": {
+    "college": "Chengalpattu Medical College, Chengalpattu",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/ChMC_Hospital_-_New_Block.JPG/800px-ChMC_Hospital_-_New_Block.JPG"
+  },
+  "ug_pb002p3": {
+    "college": "Christian Medical College, Ludhiana",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/CMCH_Vellore.JPG/800px-CMCH_Vellore.JPG"
+  },
+  "ug_in018p3": {
+    "college": "Christian Medical College, Vellore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/CMCH_Vellore.JPG/800px-CMCH_Vellore.JPG"
+  },
+  "ug_in011g1": {
+    "college": "Coimbatore Medical College, Coimbatore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Coimbatore_medical_college.jpg/800px-Coimbatore_medical_college.jpg"
+  },
+  "ug_br004g1": {
+    "college": "Darbhanga Medical College, Lehriasarai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Darbhanga_Medical_College_Platinum_Jubilee_Gate.JPG/800px-Darbhanga_Medical_College_Platinum_Jubilee_Gate.JPG"
+  },
+  "ug_up022g1": {
+    "college": "GSVM Medical College, Kanpur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/LPS_Institute_of_Cardiology%2C_GSVM_Kanpur.jpg/800px-LPS_Institute_of_Cardiology%2C_GSVM_Kanpur.jpg"
+  },
+  "ug_in021g1": {
+    "college": "Gajra Raja Medical College, Gwalior",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Gajraja_Medical_College_Gwalior_-_panoramio.jpg/800px-Gajraja_Medical_College_Gwalior_-_panoramio.jpg"
+  },
+  "ug_in022g1": {
+    "college": "Gandhi Medical College, Bhopal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_in023g1": {
+    "college": "Gandhi Medical College, Secunderabad",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_as007g1": {
+    "college": "Gauhati Medical College, Guwahati",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/GAUHATI_MEDICAL_COLLEGE.JPG/800px-GAUHATI_MEDICAL_COLLEGE.JPG"
+  },
+  "ug_pb003g1": {
+    "college": "Government Medical College, Amritsar",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Gmc_amritsar.jpg/800px-Gmc_amritsar.jpg"
+  },
+  "ug_mh016g1": {
+    "college": "Government Medical College, Aurangabad",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/GMC_Main_Building.jpg/800px-GMC_Main_Building.jpg"
+  },
+  "ug_ch001g1": {
+    "college": "Government Medical College, Chandigarh",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Government_Medical_College_and_Hospital%2C_Chandigarh_logo.png/800px-Government_Medical_College_and_Hospital%2C_Chandigarh_logo.png"
+  },
+  "ug_kl004g1": {
+    "college": "Government Medical College, Ernakulam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Govt%2C_Medical_College%2C_Ernakulam.jpg/800px-Govt%2C_Medical_College%2C_Ernakulam.jpg"
+  },
+  "ug_wb013g1": {
+    "college": "Medical College, Kolkata",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/CMC_administrative.JPG/800px-CMC_administrative.JPG"
+  },
+  "ug_kl008g1": {
+    "college": "Government Medical College, Kottayam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kottayam_Medical_College.jpg/800px-Kottayam_Medical_College.jpg"
+  },
+  "ug_in036g1": {
+    "college": "Government Medical College, Kozhikode, Calicut",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kozhikode_Medical_College.jpg/800px-Kozhikode_Medical_College.jpg"
+  },
+  "ug_kl009g1": {
+    "college": "Government Medical College, Manjeri, Malapuram Dist",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Manjeri_govt_medical_college.jpg/800px-Manjeri_govt_medical_college.jpg"
+  },
+  "ug_mh027g1": {
+    "college": "Government Medical College, Nagpur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Government_Medical_College%2C_Nagpur.jpg/800px-Government_Medical_College%2C_Nagpur.jpg"
+  },
+  "ug_in044g1": {
+    "college": "Government Medical College, Patiala",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Govt._Medical_College%2C_Patiala_-_Campus.jpg/800px-Govt._Medical_College%2C_Patiala_-_Campus.jpg"
+  },
+  "ug_in049g1": {
+    "college": "Government Medical College, Srinagar",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/GMC_Srinagar.jpg/800px-GMC_Srinagar.jpg"
+  },
+  "ug_mh035g1": {
+    "college": "Grant Medical College, Mumbai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Grant_Medical_College%2C_Bombay_%2812675403393%29.jpg/800px-Grant_Medical_College%2C_Bombay_%2812675403393%29.jpg"
+  },
+  "ug_gj007p3": {
+    "college": "Gujarat Adani Institute of Medical Sciences, Bhuj",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Institute_Of_Medical_Sciences_BHU.jpg/800px-Institute_Of_Medical_Sciences_BHU.jpg"
+  },
+  "ug_ap011g1": {
+    "college": "Guntur Medical College, Guntur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Guntur_Medical_College_3.jpg/800px-Guntur_Medical_College_3.jpg"
+  },
+  "ug_mh037g1": {
+    "college": "Indira Gandhi Medical College & Hospital, Nagpur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_py001g1": {
+    "college": "Indira Gandhi Medical College & Research Institute, Puducherry",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_hp004g1": {
+    "college": "Indira Gandhi Medical College, Shimla",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/IGMC_SHIMLA.jpg/800px-IGMC_SHIMLA.jpg"
+  },
+  "ug_up032g1": {
+    "college": "Institute of Medical Sciences, BHU, Varansi",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Institute_Of_Medical_Sciences_BHU.jpg/800px-Institute_Of_Medical_Sciences_BHU.jpg"
+  },
+  "ug_up034g1": {
+    "college": "Jawaharlal Nehru Medical College, Aligarh",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Jawaharlal_Nehru_Medical_College.jpg/800px-Jawaharlal_Nehru_Medical_College.jpg"
+  },
+  "ug_in065g1": {
+    "college": "Kakatiya Medical College, Warangal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/KMC_building_cropped.jpg/800px-KMC_building_cropped.jpg"
+  },
+  "ug_or005p3": {
+    "college": "Kalinga Institute of Medical Sciences, Bhubaneswar",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Institute_Of_Medical_Sciences_BHU.jpg/800px-Institute_Of_Medical_Sciences_BHU.jpg"
+  },
+  "ug_ka021p3": {
+    "college": "Kasturba Medical College, Mangalore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/KMC%2C_MANIPAL_UNIVERSITY.jpg/800px-KMC%2C_MANIPAL_UNIVERSITY.jpg"
+  },
+  "ug_ka022p3": {
+    "college": "Kasturba Medical College, Manipal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/KMC%2C_MANIPAL_UNIVERSITY.jpg/800px-KMC%2C_MANIPAL_UNIVERSITY.jpg"
+  },
+  "ug_ap013g1": {
+    "college": "Kurnool Medical College, Kurnool",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Kurnool_Medical_College.jpg/800px-Kurnool_Medical_College.jpg"
+  },
+  "ug_in069g1": {
+    "college": "Lady Hardinge Medical College, New Delhi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LHMC.jpg/800px-LHMC.jpg"
+  },
+  "ug_mh039g1": {
+    "college": "Lokmanya Tilak Municipal Medical College, Sion, Mumbai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/LTMMC_past.jpg/800px-LTMMC_past.jpg"
+  },
+  "ug_or007g1": {
+    "college": "MKCG Medical College, Berhampur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mkcg_Medical_College.jpg/800px-Mkcg_Medical_College.jpg"
+  },
+  "ug_in071g1": {
+    "college": "Madras Medical College, Chennai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Madras_Medical_College.JPG/800px-Madras_Medical_College.JPG"
+  },
+  "ug_py002p3": {
+    "college": "Mahatma Gandhi Medical College & Research Institute, Pondicherry",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_in049p3": {
+    "college": "Mahatma Gandhi Medical College and Hospital, Sitapur, Jaipur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_in073g1": {
+    "college": "Maulana Azad Medical College, New Delhi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Maulana_Azad_Medical_College%2C_New_Delhi.jpg/800px-Maulana_Azad_Medical_College%2C_New_Delhi.jpg"
+  },
+  "ug_in074g1": {
+    "college": "Medical College, Baroda",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Baroda_Medical_College.jpg/800px-Baroda_Medical_College.jpg"
+  },
+  "ug_kl015g1": {
+    "college": "Medical College, Thiruvananthapuram",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Medical_college_Gate_Thiruvananthapuram.jpg/800px-Medical_college_Gate_Thiruvananthapuram.jpg"
+  },
+  "ug_ka026g1": {
+    "college": "Mysore Medical College and Research Institute, Mysore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mysore_Medical_College.jpg/800px-Mysore_Medical_College.jpg"
+  },
+  "ug_wb022g1": {
+    "college": "Nilratan Sircar Medical College, Kolkata",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/CMC_administrative.JPG/800px-CMC_administrative.JPG"
+  },
+  "ug_wb023g1": {
+    "college": "North Bengal Medical College, Darjeeling",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/NBMCH_Main_gate.jpg/800px-NBMCH_Main_gate.jpg"
+  },
+  "ug_in078g1": {
+    "college": "Osmania Medical College, Hyderabad",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Osmania_Medical_College_Image.jpg/800px-Osmania_Medical_College_Image.jpg"
+  },
+  "ug_br010g1": {
+    "college": "Patna Medical College, Patna",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Patna_medical_college_%26_hospital.jpg/800px-Patna_medical_college_%26_hospital.jpg"
+  },
+  "ug_in024i1": {
+    "college": "Postgraduate Institute of Medical Education and Research (PGIMER), Chandigarh",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Postgraduate_Institute_of_Medical_Education_and_Research_Logo.png/800px-Postgraduate_Institute_of_Medical_Education_and_Research_Logo.png"
+  },
+  "ug_wb026g1": {
+    "college": "RG Kar Medical College, Kolkata",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/CMC_administrative.JPG/800px-CMC_administrative.JPG"
+  },
+  "ug_jh006g1": {
+    "college": "Rajendra Institute of Medical Sciences, Ranchi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Rims_Ranchi_%2C_Super_speciality_Block.jpg/800px-Rims_Ranchi_%2C_Super_speciality_Block.jpg"
+  },
+  "ug_mh046g1": {
+    "college": "Rajiv Gandhi Medical College and Chhatrapati Shivaji Maharaj Hospital, Thane",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gandhimedicalcollege.jpg/800px-Gandhimedicalcollege.jpg"
+  },
+  "ug_ap015g1": {
+    "college": "Rangaraya Medical College, Kakinada",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Rangaraya_Medical_College%2C_Kakinada%2C_Andhra_Pradesh%2C_India_%282023%29.jpg/800px-Rangaraya_Medical_College%2C_Kakinada%2C_Andhra_Pradesh%2C_India_%282023%29.jpg"
+  },
+  "ug_or012g1": {
+    "college": "SCB Medical College, Cuttack",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SCB_Medical_College.jpg/800px-SCB_Medical_College.jpg"
+  },
+  "ug_rj029g1": {
+    "college": "Sardar Patel Medical College, Bikaner",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Sardar_Patel_Medical_College%2C_Bikaner.jpg/800px-Sardar_Patel_Medical_College%2C_Bikaner.jpg"
+  },
+  "ug_in086g1": {
+    "college": "Seth GS Medical College and KEM Hospital, Mumbai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/K.E.M_Hospital%2C_completing_100_years.jpg/800px-K.E.M_Hospital%2C_completing_100_years.jpg"
+  },
+  "ug_as015g1": {
+    "college": "Silchar Medical College, Silchar",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/View_of_SilcharMedicalCollegeOPD.jpg/800px-View_of_SilcharMedicalCollegeOPD.jpg"
+  },
+  "ug_in087g1": {
+    "college": "Stanley Medical College, Chennai",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Stanley_medical_college_Chennai_01.jpg/800px-Stanley_medical_college_Chennai_01.jpg"
+  },
+  "ug_in088g1": {
+    "college": "Thanjavur Medical College, Thanjavur",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thanjavur_Medical_College.png/800px-Thanjavur_Medical_College.png"
+  },
+  "ug_tn023g1": {
+    "college": "Tirunelveli Medical College, Tirunelveli",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tirunelveli_Medical_College.jpg/800px-Tirunelveli_Medical_College.jpg"
+  },
+  "ug_in091g1": {
+    "college": "University College of Medical Sciences & GTB Hospital, New Delhi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/University_College_of_Medical_Sciences_or_U.C.M.S_lecture_theatre.jpg/800px-University_College_of_Medical_Sciences_or_U.C.M.S_lecture_theatre.jpg"
+  }
+}

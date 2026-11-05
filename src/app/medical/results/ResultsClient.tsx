@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
+import meta from "@/data/meta.json";
 import { PG_ENABLED } from "@/lib/medical/TrackProvider";
 import { CalculatorQuerySchema } from "@/lib/medical/schemas";
 import { getColleges, getCutoffs } from "@/lib/medical/api";
@@ -46,8 +47,9 @@ export default function ResultsClient() {
         track: query.track,
         quota: query.quota,
         category: query.category,
+        course: "MBBS",
         round: 1, // Only consider round 1 for initial prediction
-        year: 2024
+        year: meta.cutoffYear
       })
     ]).then(([collegesData, cutoffsData]) => {
       if (mounted) {
@@ -140,9 +142,9 @@ export default function ResultsClient() {
     return (
       <EmptyState
         icon={<SearchX className="w-12 h-12" />}
-        title={query.quota === "state" ? "Limited state-quota data" : "No matches found"}
+        title={query.quota === "state" ? "State-quota cutoffs aren't available yet" : "No matches found"}
         description={query.quota === "state"
-          ? "We have very little state-quota cutoff data so far, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
+          ? "We haven't collected state counselling results yet, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
           : "We couldn't find any colleges matching your criteria. Try a different quota or category."}
         actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
       />
@@ -166,7 +168,7 @@ export default function ResultsClient() {
           <div>
             <h3 className="text-body font-bold text-text-main mb-1">Your Summary</h3>
             <p className="text-small text-text-muted leading-relaxed">
-              Based on 2024 Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
+              Based on {meta.cutoffYear} Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
             </p>

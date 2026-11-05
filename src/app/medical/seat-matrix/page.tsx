@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import meta from "@/data/meta.json";
 import SeatMatrixClient from "./SeatMatrixClient";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
@@ -20,7 +21,7 @@ export default function SeatMatrixPage() {
               Seat Matrix Explorer
             </h1>
             <p className="text-body-large text-text-muted max-w-prose">
-              View total seats by college and course. Quota and category breakdowns are coming soon.
+              View {meta.seatYear} seats by college, course and quota. Category breakdowns are coming soon.
             </p>
           </header>
 

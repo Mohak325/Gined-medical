@@ -11,9 +11,15 @@ export interface College {
   stateCode: string;
   type: "Government" | "Private" | "Deemed" | "Central";
   established: number;
-  campusSize: string;
-  hospitalBeds: number;
+  campusSize?: string;
+  hospitalBeds?: number;
+  nmcStatus?: string;
   nmcRecognized: boolean;
+  university?: string;
+  website?: string;
+  address?: string;
+  ugSeats?: number;
+  pgSeats?: number;
   hero_image_url: string | null;
   nirfRanking?: number;
   branches?: string[];
@@ -34,20 +40,22 @@ export interface CutoffEntry {
   collegeId: string;
   track: "ug" | "pg";
   course: string;
-  quota: "aiq" | "state" | "deemed" | "central";
-  category: "general" | "obc" | "sc" | "st" | "ews";
-  round: 1 | 2 | 3 | 4; // 3 = mop-up, 4 = stray
+  /** "special" quotas have their own eligibility rules and are left out of predictions. */
+  quota: "aiq" | "state" | "deemed" | "central" | "special" | "nri";
+  category: string; // general, obc, sc, st, ews, or the same with _pwd
+  round: 1 | 2 | 3;
   year: number;
   openingRank: number;
   closingRank: number;
+  allotted?: number;
+  quotaDetail?: string; // The quota label used by the source
 }
 
 export interface SeatEntry {
   collegeId: string;
   track: "ug" | "pg";
   course: string;
-  quota: "aiq" | "state" | "deemed" | "central";
-  category: "general" | "obc" | "sc" | "st" | "ews";
+  quota: "aiq" | "state" | "management" | "nri";
   seats: number;
 }
 

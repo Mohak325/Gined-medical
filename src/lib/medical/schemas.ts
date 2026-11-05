@@ -39,8 +39,7 @@ export const CompareQuerySchema = z.object({
 // Seat Matrix Query Params
 export const SeatMatrixQuerySchema = z.object({
   track: TrackSchema.default("ug"),
-  quota: QuotaSchema.or(z.literal("all")).default("all"),
-  category: CategorySchema.or(z.literal("all")).default("all"),
+  quota: z.enum(["all", "aiq", "state", "management", "nri"]).default("all"),
   state: z.string().optional(),
   type: CollegeTypeSchema.default("all"),
   course: z.string().optional(),

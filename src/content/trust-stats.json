@@ -1,9 +1,0 @@
-{
-  "note": "Counts come from src/data (colleges.json, and seats.json for UG seats). Update them when the data changes.",
-  "last_updated": "2026-11-05",
-  "stats": [
-    { "value": "926", "label": "Colleges listed", "qualifier": null },
-    { "value": "1,39,439", "label": "UG seats listed", "qualifier": null },
-    { "value": "2024", "label": "Latest cutoff data", "qualifier": null }
-  ]
-}
