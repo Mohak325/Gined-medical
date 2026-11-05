@@ -127,6 +127,51 @@ export const STATES = {
     },
   },
 
+  HR: {
+    name: "Haryana",
+    authority: "Department of Medical Education and Research, Haryana",
+    isMbbs: (row) => squash(row.course) === "mbbs",
+    options: [
+      { code: "OPEN", label: "Open" }, { code: "EWS", label: "EWS" }, { code: "BCA", label: "BC-A" }, { code: "BCB", label: "BC-B" },
+      { code: "OSC", label: "OSC" }, { code: "SCD", label: "SC Deprived" }, { code: "MINORITY", label: "Minority" }, { code: "MGMT", label: "Management quota seats" },
+    ],
+    map(row) {
+      const label = row.category.replace(/\s+/g, " ").trim();
+      if (/^NRI/i.test(label)) return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (label === "MGT") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      // Disability and ex-servicemen or freedom fighter seats have their own rules.
+      if (/PWBD|ESM/.test(label)) return { code: label, seatType: "government", quota: "special", category: "state_only" };
+      const found = { "OPEN CAT": ["OPEN", "general"], EWS: ["EWS", "ews"], BCA: ["BCA", "state_only"], BCB: ["BCB", "state_only"], OSC: ["OSC", "state_only"], "SC DEPRIVED": ["SCD", "state_only"], MINORITY: ["MINORITY", "state_only"] }[label];
+      if (!found) throw new Error(`Unknown Haryana category "${label}".`);
+      return { code: found[0], seatType: "government", quota: "state", category: found[1] };
+    },
+  },
+
+  MH: {
+    name: "Maharashtra",
+    authority: "State Common Entrance Test Cell, Maharashtra",
+    isMbbs: (row) => row.course === "MBBS",
+    options: ["OPEN", "OBC", "SEBC", "EWS", "SC", "ST", "VJA", "NTB", "NTC", "NTD"].flatMap((code) => {
+      const label = { OPEN: "Open", VJA: "VJ(A)", NTB: "NT(B)", NTC: "NT(C)", NTD: "NT(D)" }[code] ?? code;
+      return code === "NOP" ? [] : [{ code, label }, { code: `${code}-W`, label: `${label}, women's quota` }];
+    }).concat({ code: "MGMT", label: "Institute quota seats" }),
+    map(row) {
+      // A candidate's own category can run into the next column, as in "SEBCHA OPEN".
+      const label = row.category.replace(/\s+/g, "").toUpperCase().replace(/^SEBC(?=HA|PWD|PEM|D[123]|ORP)/, "");
+      // Institute quota, without a minority mark, is the management route.
+      if (label === "I.Q.") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      // Minority, defence, disability, hilly area, orphan and other seats have their own rules.
+      // MKB isn't in the list's legend, so it isn't offered until its meaning is confirmed.
+      if (/MINO|^D[123]|^PWD|^PEM|^HA|^ORP|^I\.Q\.|NRI|^MKB/.test(label)) return { code: label, seatType: "others", quota: "special", category: "state_only" };
+      // EMD and EMR mark seats earmarked between categories. The seat stays in its category.
+      const match = label.replace(/\((EMD|EMR)\)/g, "").replace(/^EM/, "").match(/^(OPEN|OBC|SEBC|EWS|SC|ST|VJA|NTB|NTC|NTD)(W|\(W\))?$/);
+      if (!match) throw new Error(`Unknown Maharashtra category "${row.category}".`);
+      const women = Boolean(match[2]);
+      const site = { OPEN: "general", SC: "sc", ST: "st", EWS: "ews", OBC: "obc" }[match[1]];
+      return { code: women ? `${match[1]}-W` : match[1], seatType: "government", quota: "state", category: women ? "state_only" : (site ?? "state_only") };
+    },
+  },
+
   GJ: {
     name: "Gujarat",
     authority: "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",

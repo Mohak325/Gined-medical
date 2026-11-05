@@ -12,7 +12,9 @@
     "BR",
     "CG",
     "GJ",
+    "HR",
     "KA",
+    "MH",
     "RJ",
     "TG"
   ],
@@ -475,6 +477,126 @@
         "label": "Management quota, category B, unreserved"
       }
     ],
+    "HR": [
+      {
+        "code": "OPEN",
+        "label": "Open"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "BCA",
+        "label": "BC-A"
+      },
+      {
+        "code": "BCB",
+        "label": "BC-B"
+      },
+      {
+        "code": "OSC",
+        "label": "OSC"
+      },
+      {
+        "code": "SCD",
+        "label": "SC Deprived"
+      },
+      {
+        "code": "MINORITY",
+        "label": "Minority"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota seats"
+      }
+    ],
+    "MH": [
+      {
+        "code": "OPEN",
+        "label": "Open"
+      },
+      {
+        "code": "OPEN-W",
+        "label": "Open, women's quota"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC"
+      },
+      {
+        "code": "OBC-W",
+        "label": "OBC, women's quota"
+      },
+      {
+        "code": "SEBC",
+        "label": "SEBC"
+      },
+      {
+        "code": "SEBC-W",
+        "label": "SEBC, women's quota"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-W",
+        "label": "EWS, women's quota"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "SC-W",
+        "label": "SC, women's quota"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "ST-W",
+        "label": "ST, women's quota"
+      },
+      {
+        "code": "VJA",
+        "label": "VJ(A)"
+      },
+      {
+        "code": "VJA-W",
+        "label": "VJ(A), women's quota"
+      },
+      {
+        "code": "NTB",
+        "label": "NT(B)"
+      },
+      {
+        "code": "NTB-W",
+        "label": "NT(B), women's quota"
+      },
+      {
+        "code": "NTC",
+        "label": "NT(C)"
+      },
+      {
+        "code": "NTC-W",
+        "label": "NT(C), women's quota"
+      },
+      {
+        "code": "NTD",
+        "label": "NT(D)"
+      },
+      {
+        "code": "NTD-W",
+        "label": "NT(D), women's quota"
+      },
+      {
+        "code": "MGMT",
+        "label": "Institute quota seats"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -610,5 +732,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 669
+  "collegesWithCutoffs": 700
 }

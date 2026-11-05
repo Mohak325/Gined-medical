@@ -832,5 +832,95 @@
       "": 1064
     },
     "rejectSamples": []
+  },
+  "HR-2026-r1": {
+    "pages": 123,
+    "written": 2707,
+    "rejected": 0,
+    "colleges": 23,
+    "categories": {
+      "MGT": 873,
+      "OPEN CAT": 860,
+      "BCA": 224,
+      "BCB": 150,
+      "SC DEPRIVED": 145,
+      "OSC": 144,
+      "EWS": 93,
+      "MINORITY": 92,
+      "NRI Category - VI": 25,
+      "OPEN CAT PWBD": 22,
+      "OPEN CAT ESM FF Priority-IV": 8,
+      "NRI Category - II": 8,
+      "OPEN CAT ESM FF Priority-VI": 7,
+      "OPEN CAT ESM FF": 6,
+      "NRI Category - IV": 5,
+      "NRI Category - I": 4,
+      "BCB ESM FF Priority- IV": 4,
+      "NRI Category - III": 4,
+      "NRI Category - V": 4,
+      "BCB PWBD": 4,
+      "BCA ESM FF Priority- VI": 3,
+      "OSC ESM FF Priority- VI": 3,
+      "BCB ESM FF Priority- VI": 3,
+      "EWS ESM FF Priority- III": 2,
+      "SC DEPRIVED ESM FF Priority-VI": 2,
+      "OPEN CAT ESM FF Priority-II": 2,
+      "EWS PWBD": 2,
+      "BCA PWBD": 2,
+      "OSC PWBD": 2,
+      "EWS ESM FF Priority- IV": 1,
+      "BCA ESM FF Priority- V": 1,
+      "BCA ESM FF Priority- III": 1,
+      "OPEN CAT ESM FF Priority-III": 1
+    },
+    "courses": {
+      "M.B.B.S.": 2176,
+      "B.D.S.": 531
+    },
+    "seats": {
+      "": 2707
+    },
+    "quotas": {
+      "": 2707
+    },
+    "genders": {
+      "": 2707
+    },
+    "remarks": {
+      "Allotted": 2707
+    },
+    "rejectSamples": []
+  },
+  "HR-2026-stray": {
+    "pages": 6,
+    "written": 104,
+    "rejected": 0,
+    "colleges": 17,
+    "categories": {
+      "MGT": 76,
+      "OPEN CAT": 13,
+      "OSC": 6,
+      "SC DEPRIVED": 4,
+      "NRI Category - VI": 3,
+      "BCB": 1,
+      "OPEN CAT ESM FF Priority-VI": 1
+    },
+    "courses": {
+      "M.B.B.S.": 81,
+      "B.D.S.": 23
+    },
+    "seats": {
+      "": 104
+    },
+    "quotas": {
+      "": 104
+    },
+    "genders": {
+      "": 104
+    },
+    "remarks": {
+      "Allotted": 104
+    },
+    "rejectSamples": []
   }
 }

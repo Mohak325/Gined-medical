@@ -198,6 +198,21 @@ for (const [name, result] of Object.entries(stateReport)) {
   if (result.written === 0) errors.push(`${name}: no rows were read from the PDF`);
 }
 
+// Maharashtra's count and last ranks, as reported by neet2seat.
+{
+  const mh = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/mh-report.json"), "utf8"));
+  const file = mh.files["MH-2026-r1"];
+  expectEqual("Maharashtra 2026 Round 1 candidates listed", file.seen, 31047);
+  expectEqual("Maharashtra 2026 Round 1 students allotted", file.written, 10509);
+  if (file.rejected > 0 || file.serialGaps > 0) errors.push("MH-2026-r1: rows could not be read, or serial numbers skip");
+  const lastOpen = (type) => Math.max(0, ...cutoffs
+    .filter((c) => c.state === "MH" && c.round === 1 && c.stateCategory === "OPEN" && colleges.find((x) => x.id === c.collegeId)?.type === type)
+    .map((c) => c.closingRank));
+  console.log(`Maharashtra last Open rank: government ${lastOpen("Government")}, private ${lastOpen("Private")}`);
+  expectEqual("Maharashtra last Open government rank, per neet2seat", lastOpen("Government"), 47413);
+  expectEqual("Maharashtra last Open private rank, per neet2seat", lastOpen("Private"), 114441);
+}
+
 // Telangana's counts, as reported by neet2seat.
 {
   const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));
