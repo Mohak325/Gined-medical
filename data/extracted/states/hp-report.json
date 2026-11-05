@@ -1,0 +1,110 @@
+{
+  "meritRanks": 3042,
+  "rankConflicts": 5,
+  "files": {
+    "HP-2026-r1": {
+      "pages": 59,
+      "seen": 948,
+      "written": 948,
+      "kept": 0,
+      "noRank": 0,
+      "courses": {
+        "MBBS": 683,
+        "BDS": 265
+      },
+      "labels": {
+        "HP Quota / General": 306,
+        "HP Quota / SC": 95,
+        "HP Quota / EWS": 57,
+        "Management Quota / General": 56,
+        "HP Quota / ST": 42,
+        "NRI Quota / NRI": 22,
+        "HP Quota / OBC": 16,
+        "HP Quota / Physically Handicapp ed": 16,
+        "Management Quota / SC": 16,
+        "HP Quota / Backward Area": 14,
+        "Management Quota / ST": 8,
+        "HP Quota / Single Girl child": 7,
+        "HP Quota / Wards /Wives of Defence Personnel": 6,
+        "HP Quota / Widows/W ards of ExService men": 6,
+        "HP Quota / Children of Tibetan Refugees": 5,
+        "Management Quota / OBC": 5,
+        "HP Quota / Ward of Freedom Fighters": 3,
+        "HP Quota / IRDP/BPL": 2,
+        "HP Quota / Children of J and K Migrants": 1
+      }
+    },
+    "HP-2026-r2": {
+      "pages": 22,
+      "seen": 360,
+      "written": 354,
+      "kept": 6,
+      "noRank": 0,
+      "courses": {
+        "MBBS": 173,
+        "BDS": 181
+      },
+      "labels": {
+        "HP Quota / General": 63,
+        "Managemen t Quota / General": 37,
+        "HP Quota / ST": 19,
+        "HP Quota / SC": 18,
+        "NRI Quota / NRI": 17,
+        "HP Quota / EWS": 5,
+        "Managemen t Quota / SC": 5,
+        "Managemen t Quota / ST": 4,
+        "HP Quota / Physically Handicapped": 2,
+        "HP Quota / Children of J and K Migrants": 1,
+        "HP Quota / OBC": 1,
+        "Managemen t Quota / OBC": 1
+      }
+    },
+    "HP-2026-r3": {
+      "pages": 10,
+      "seen": 177,
+      "written": 175,
+      "kept": 2,
+      "noRank": 0,
+      "courses": {
+        "MBBS": 82,
+        "BDS": 93
+      },
+      "labels": {
+        "HP Quota / General": 43,
+        "Manageme nt Quota / General": 30,
+        "NRI Quota / NRI": 5,
+        "Manageme nt Quota / SC": 3,
+        "HP Quota / Physically Handicap ped": 1
+      }
+    },
+    "HP-2026-stray": {
+      "pages": 4,
+      "seen": 33,
+      "written": 33,
+      "kept": 0,
+      "noRank": 0,
+      "courses": {
+        "BDS": 16,
+        "MBBS": 17
+      },
+      "labels": {
+        "Management Quota / General": 10,
+        "NRI Quota / NRI": 4,
+        "Management Quota / SC": 3
+      }
+    }
+  },
+  "collegeNames": {
+    "Bhojia Dental College and Hospital, Nalagarh": 124,
+    "Dr RadhaKrishanan Govt Medical College Hamirpur": 129,
+    "Dr Rajendra Prasad Govt Medical College Tanda Kangra": 117,
+    "Dr Yashwant Parmar Govt Medical College Nahan Sirmour": 132,
+    "H.P Government Dental College and Hospital, Shimla": 124,
+    "Himachal Dental College, Sunder Nagar": 114,
+    "Himachal Institute of Dental Sciences, Paonta Sahib, Sirmour.": 193,
+    "Indira Gandhi Medical College Shimla": 118,
+    "Maharishi Markandeshwar Medical College kumarhatti District Solan": 242,
+    "Pt Jawahar Lal Nehru Govt Medical College and Hospital Chamba": 133,
+    "Shri Lal Bahadur Shastri Govt Medical College and Hospital Nerchowk Mandi": 84
+  }
+}

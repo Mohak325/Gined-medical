@@ -172,6 +172,146 @@ export const STATES = {
     },
   },
 
+  PB: {
+    name: "Punjab",
+    authority: "Baba Farid University of Health Sciences, Faridkot",
+    isMbbs: (row) => squash(row.course) === "mbbs",
+    options: [
+      { code: "OPEN", label: "Open, government quota" }, { code: "SC", label: "Scheduled Caste, government quota" },
+      { code: "BC", label: "Backward Classes, government quota" }, { code: "EWS", label: "EWS, government quota" },
+      { code: "MGMT-OPEN", label: "Open, management quota" }, { code: "MGMT-SC", label: "Scheduled Caste, management quota" },
+      { code: "MGMT-BC", label: "Backward Classes, management quota" },
+    ],
+    map(row) {
+      const quota = squash(row.quota);
+      const label = row.category.trim();
+      if (label === "NRI" || quota === "nriquota") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      // Minority seats have their own eligibility. We haven't confirmed who "Open Quota" is for.
+      if (["christianminority", "minorityquota", "openquota", "openquotaaiq"].includes(quota)) {
+        return { code: `${quota}-${label}`, seatType: "others", quota: "special", category: "state_only" };
+      }
+      const government = ["government", "govtquota"].includes(quota);
+      if (!government && !["management", "managementquota"].includes(quota)) throw new Error(`Unknown Punjab quota "${row.quota}".`);
+      const found = { Open: ["OPEN", "general"], "Scheduled Caste": ["SC", "sc"], "Backward Classes": ["BC", "state_only"], EWS: ["EWS", "ews"] }[label];
+      if (!found) {
+        // Defence, sports, disability, border area and similar seats have their own rules.
+        if (["Backward Area", "Border Area", "Defence", "Freed Fight", "J & K", "PP", "PWD", "Riots Affected", "Sports Person", "Terrorist Affected"].includes(label)) {
+          return { code: label, seatType: government ? "government" : "others", quota: "special", category: "state_only" };
+        }
+        throw new Error(`Unknown Punjab category "${label}".`);
+      }
+      if (government) return { code: found[0], seatType: "government", quota: "state", category: found[1] };
+      return { code: `MGMT-${found[0]}`, seatType: "others", quota: "state", category: "state_only" };
+    },
+  },
+
+  HP: {
+    name: "Himachal Pradesh",
+    authority: "Atal Medical and Research University, Himachal Pradesh",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "GEN", label: "General, HP quota" }, { code: "OBC", label: "OBC, HP quota" }, { code: "EWS", label: "EWS, HP quota" },
+      { code: "SC", label: "SC, HP quota" }, { code: "ST", label: "ST, HP quota" },
+      { code: "MGMT", label: "Management quota seats" },
+    ],
+    map(row) {
+      const quota = squash(row.quota);
+      const label = row.category.replace(/\s+/g, " ").trim();
+      if (quota === "nriquota") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (quota === "managementquota") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      if (quota !== "hpquota") throw new Error(`Unknown Himachal Pradesh quota "${row.quota}".`);
+      const found = { General: ["GEN", "general"], OBC: ["OBC", "obc"], EWS: ["EWS", "ews"], SC: ["SC", "sc"], ST: ["ST", "st"] }[label];
+      if (found) return { code: found[0], seatType: "government", quota: "state", category: found[1] };
+      // Disability, defence, migrant, backward area and similar seats have their own rules.
+      return { code: label, seatType: "government", quota: "special", category: "state_only" };
+    },
+  },
+
+  MP: {
+    name: "Madhya Pradesh",
+    authority: "Directorate of Medical Education, Madhya Pradesh",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "UR", label: "Unreserved (UR)" }, { code: "OBC", label: "OBC" }, { code: "SC", label: "SC" },
+      { code: "ST", label: "ST" }, { code: "EWS", label: "EWS" },
+    ],
+    map(row) {
+      // Later lists repeat students who kept an earlier seat.
+      if (row.remark === "NOT UPGRADED") return null;
+      const seatType = row.seat === "GOVT" ? "government" : "private";
+      if (row.category === "NRI") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      const match = row.category.match(/^(UR|OBC|SC|ST|EWS)\/(X|GS|PH|SN|FF)\/OP$/);
+      if (!match) throw new Error(`Unknown Madhya Pradesh seat "${row.category}".`);
+      // X is the ordinary seat. GS, PH, SN and FF are sub-quotas with their own eligibility.
+      if (match[2] !== "X") return { code: row.category, seatType, quota: "special", category: "state_only" };
+      const site = { UR: "general", OBC: "obc", SC: "sc", ST: "st", EWS: "ews" }[match[1]];
+      return { code: match[1], seatType, quota: "state", category: site };
+    },
+  },
+
+  TN: {
+    name: "Tamil Nadu",
+    authority: "Selection Committee, Directorate of Medical Education and Research, Tamil Nadu",
+    stateRank: {
+      label: "Tamil Nadu State Rank",
+      help: "Enter your rank from Tamil Nadu's merit list, not your All India rank. Government and management quota seats have separate rank lists.",
+    },
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "OC", label: "OC, government quota" }, { code: "BC", label: "BC, government quota" },
+      { code: "BCM", label: "BC Muslim (BCM), government quota" }, { code: "MBC", label: "MBC & DNC, government quota" },
+      { code: "SC", label: "SC, government quota" }, { code: "SCA", label: "SC Arunthathiyar (SCA), government quota" },
+      { code: "ST", label: "ST, government quota" },
+      { code: "MGMT", label: "Management quota, using your management rank" },
+    ],
+    map(row) {
+      const label = row.category.trim();
+      // Some NRI students are listed with no real rank.
+      if (row.quota === "NRI") return Number(row.rank) > 0 ? { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" } : null;
+      if (row.quota === "MQ") {
+        // The stray list has no category column. It's the same management pool.
+        if (label === "Management Quota" || label === "") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+        return { code: label, seatType: /NRI/i.test(label) ? "nri" : "others", quota: /NRI/i.test(label) ? "nri" : "special", category: "state_only" };
+      }
+      const seatType = row.seat === "Govt. Colleges" || row.seat === "ESIC" ? "government" : "private";
+      // Lists show each student's community, not the seat's. So a closing rank here is the last rank among that community's students.
+      // A1 (ESIC), IRT wards and CMC's 20% seats aren't confirmed as open to everyone.
+      if (row.quota !== "GQ" || label !== "") return { code: row.quota !== "GQ" ? `${row.quota}-${row.seat}` : label, seatType, quota: "special", category: "state_only" };
+      const code = { OC: "OC", BC: "BC", BCM: "BCM", "MBC&DNC": "MBC", SC: "SC", SCA: "SCA", ST: "ST" }[row.remark];
+      if (!code) throw new Error(`Unknown Tamil Nadu community "${row.remark}".`);
+      return { code, seatType, quota: "state", category: "state_only" };
+    },
+  },
+
+  KL: {
+    name: "Kerala",
+    authority: "Commissioner for Entrance Examinations, Kerala",
+    stateRank: {
+      label: "Kerala KEAM Medical Rank",
+      help: "Enter your KEAM medical rank from the Commissioner's rank list, not your All India rank.",
+    },
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "SM", label: "State Merit (SM)" }, { code: "EW", label: "EWS (EW)" }, { code: "EZ", label: "Ezhava (EZ)" },
+      { code: "MU", label: "Muslim (MU)" }, { code: "BH", label: "Other Backward Hindu (BH)" },
+      { code: "LA", label: "Latin Catholic and Anglo Indian (LA)" }, { code: "DV", label: "Dheevara (DV)" },
+      { code: "VK", label: "Viswakarma (VK)" }, { code: "KN", label: "Kusavan (KN)" }, { code: "BX", label: "Other Backward Christian (BX)" },
+      { code: "KU", label: "Kudumbi (KU)" }, { code: "SC", label: "SC" }, { code: "ST", label: "ST" },
+    ],
+    map(row) {
+      // "#" marks a provisional allotment. SM-EZ and FL-EZ count as EZ in the state's own last rank table.
+      const code = row.category.replace(/\s*#\s*$/, "").split("-").pop();
+      const seatType = /Govt\.|Government/.test(row.college) ? "government" : "private";
+      if (code === "NR") return { code, seatType: "nri", quota: "nri", category: "state_only" };
+      if (["SM", "EW", "EZ", "MU", "BH", "LA", "DV", "VK", "KN", "BX", "KU", "SC", "ST"].includes(code)) {
+        return { code, seatType, quota: "state", category: "state_only" };
+      }
+      // AM, AC, MM, NC and NM aren't explained in what we've read. PD, XS and others have their own rules.
+      if (/^[A-Z]{2}$/.test(code)) return { code, seatType: "others", quota: "special", category: "state_only" };
+      throw new Error(`Unknown Kerala seat "${row.category}".`);
+    },
+  },
+
   GJ: {
     name: "Gujarat",
     authority: "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",

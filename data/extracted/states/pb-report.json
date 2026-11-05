@@ -1,0 +1,199 @@
+{
+  "meritRanks": 5954,
+  "files": {
+    "PB-2026-r1": {
+      "pages": 241,
+      "seen": 2410,
+      "written": 2409,
+      "keptOrNone": 0,
+      "noRank": 1,
+      "statuses": {
+        "": 2410
+      },
+      "courses": {
+        "M.B.B.S.": 1384,
+        "B.D.S": 1025
+      },
+      "quotas": {
+        "Government": 1632,
+        "Open Quota (AIQ)": 8,
+        "Christian Minority": 64,
+        "Open Quota": 80,
+        "Management": 505,
+        "Minority Quota": 98,
+        "CHRISTIAN MINORITY": 14,
+        "NRI Quota": 8
+      },
+      "categories": {
+        "Open": 1150,
+        "Scheduled Caste": 617,
+        "Backward Classes": 282,
+        "NRI": 59,
+        "EWS": 58,
+        "Backward Area": 29,
+        "Border Area": 29,
+        "Defence": 29,
+        "2A": 21,
+        "Terrorist Affected": 20,
+        "J & K": 15,
+        "Riots Affected": 15,
+        "PWD": 14,
+        "2B": 11,
+        "2C": 11,
+        "2D": 10,
+        "2F": 10,
+        "2E": 10,
+        "AIQ": 8,
+        "2G": 5,
+        "Freed Fight": 5,
+        "PP": 1
+      }
+    },
+    "PB-2026-r2": {
+      "pages": 199,
+      "seen": 1783,
+      "written": 1044,
+      "keptOrNone": 739,
+      "noRank": 0,
+      "statuses": {
+        "New Allotted": 782,
+        "No Change": 739,
+        "Upgraded": 262
+      },
+      "courses": {
+        "M.B.B.S.": 533,
+        "B.D.S": 511
+      },
+      "quotas": {
+        "Govt. Quota": 708,
+        "Open Quota (AIQ)": 7,
+        "Management Quota": 225,
+        "Open Quota": 59,
+        "Christian Minority": 14,
+        "Minority Quota": 25,
+        "CHRISTIAN MINORITY": 6
+      },
+      "categories": {
+        "Open": 573,
+        "Scheduled Caste": 246,
+        "Backward Classes": 119,
+        "Sports Person": 20,
+        "EWS": 12,
+        "Defence": 11,
+        "Backward Area": 10,
+        "2B": 9,
+        "Border Area": 9,
+        "J & K": 8,
+        "AIQ": 7,
+        "PWD": 4,
+        "2G": 3,
+        "2F": 3,
+        "2D": 3,
+        "Terrorist Affected": 3,
+        "2C": 2,
+        "Riots Affected": 1,
+        "Freed Fight": 1
+      }
+    },
+    "PB-2026-r3": {
+      "pages": 296,
+      "seen": 2066,
+      "written": 1331,
+      "keptOrNone": 735,
+      "noRank": 0,
+      "statuses": {
+        "Upgraded": 528,
+        "No Change": 735,
+        "New Allotted": 803
+      },
+      "courses": {
+        "M.B.B.S.": 623,
+        "B.D.S": 708
+      },
+      "quotas": {
+        "Govt. Quota": 591,
+        "Open Quota": 73,
+        "Management Quota": 609,
+        "Open Quota (AIQ)": 2,
+        "Christian Minority": 9,
+        "Minority Quota": 44,
+        "CHRISTIAN MINORITY": 3
+      },
+      "categories": {
+        "Open": 1178,
+        "Scheduled Caste": 53,
+        "Backward Classes": 40,
+        "Backward Area": 14,
+        "Border Area": 8,
+        "NRI": 8,
+        "EWS": 7,
+        "Sports Person": 6,
+        "J & K": 6,
+        "Defence": 5,
+        "AIQ": 2,
+        "Riots Affected": 2,
+        "Terrorist Affected": 1,
+        "2E": 1
+      }
+    },
+    "PB-2026-stray": {
+      "pages": 9,
+      "seen": 60,
+      "written": 60,
+      "keptOrNone": 0,
+      "noRank": 0,
+      "statuses": {
+        "New Allotted": 60
+      },
+      "courses": {
+        "M.B.B.S.": 9,
+        "B.D.S": 51
+      },
+      "quotas": {
+        "Govt. Quota": 10,
+        "Open Quota": 2,
+        "Management Quota": 47,
+        "Christian Minority": 1
+      },
+      "categories": {
+        "Open": 45,
+        "Scheduled Caste": 10,
+        "Backward Classes": 2,
+        "J & K": 1,
+        "2E": 1,
+        "Defence": 1
+      }
+    }
+  },
+  "collegeNames": {
+    "Adesh Institute of Dental Sciences & Research, Bathinda": 159,
+    "Adesh Institute of Medical Sciences & Research, Bathinda": 303,
+    "Baba Jaswant Singh Dental College, Ludhiana": 158,
+    "Christian Dental College, Ludhiana": 57,
+    "Christian Medical College, Ludhiana": 137,
+    "Dasmesh Institute of Research & Dental Sciences, Faridkot": 154,
+    "Dayanand Medical College and Hospital Ludhiana": 188,
+    "Desh Bhagat Dental College & Hospital,Mandi Gobindgarh": 166,
+    "Dr.B.R Ambedkar State Institute of Medical Sciences S.A.S Nagar,Mohali": 113,
+    "ESIC Medical College, Bharat Nagar, Ludhiana": 32,
+    "Genesis Institute of Dental Sciences & Research, Ferozepur": 154,
+    "Gian Sagar Dental College & Hospital, Banur": 169,
+    "Gian Sagar Medical College & Hospital, Banur": 249,
+    "Government Dental College, Amritsar": 63,
+    "Government Dental College, Patiala": 78,
+    "Government Medical College, Amritsar": 281,
+    "Government Medical College, Patiala": 285,
+    "Guru Gobind Singh Medical College Faridkot": 309,
+    "Guru Nanak Dev Dental College, Sunam": 153,
+    "Luxmi Bai Instt. of Dental Sciences & Hospital, Patiala": 148,
+    "National Dental College, Dera Bassi": 155,
+    "Punjab Institute of Medical Sciences, Jalandhar": 239,
+    "RIMT Dental College,Mandi Gobindgarh": 154,
+    "RIMT Medical College and Hospital,Mandi Gobindgarh": 154,
+    "Rayat-Bahra Dental College & Hospital, Sahauran, Mohali": 160,
+    "SGRD Inst. of Dental Sci. & Research, Amritsar": 152,
+    "Shaheed Kartar Singh Sarabha Dental College, Sarabha(Ldh)": 72,
+    "Sri Guru Ram Das Institute of Medical Sciences and Research Amritsar": 259,
+    "Sri Sukhmani Dental College & Hospital, Dera Bassi": 143
+  }
+}

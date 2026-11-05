@@ -127,7 +127,7 @@ Every state publishes differently, so start by reading before writing any code.
 2. **Read its bulletin first.** Note what each seat type and category code means, and who is eligible. Don't assume
    a state's categories match the national ones. Karnataka's `2A` isn't simply "OBC".
 3. **Check the layout.** Do the files hold ranks, or marks? All India ranks, or a state rank? This matters most of all: students enter their
-   All India rank, so a state rank would give wrong answers. Gujarat's and Tamil Nadu's lists both include state numbers. Do they include students
+   All India rank, so a state rank would give wrong answers. Gujarat's and Tamil Nadu's lists both include state numbers, and Kerala's are KEAM ranks. Do they include students
    who only kept an earlier seat? Is there a stable college code to match on? Karnataka's is, so `data/curated/kea-college-codes.json`
    is a short list checked by hand.
 4. **Add it in three places,** which is usually all it takes:
@@ -138,8 +138,12 @@ Every state publishes differently, so start by reading before writing any code.
 6. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work. Some states publish their own closing ranks,
    which is the best check of all.
 
-Some lists have no ruled table, or code everything into one column. Gujarat, Andhra Pradesh, Telangana and Maharashtra each have a small reader for this (`gj_extract.py`, `ap_extract.py`, `tg_extract.py`, `mh_extract.py`). Maharashtra's
+Some lists have no ruled table, or code everything into one column. Gujarat, Andhra Pradesh, Telangana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu and Kerala each have a small reader for this (`gj_extract.py`, `ap_extract.py`, `tg_extract.py`, `mh_extract.py`, `pb_extract.py`, `hp_extract.py`, `mp_extract.py`, `tn_extract.py`, `kl_extract.py`). Maharashtra's
 pages are printed sideways, so words sharing an x position form a row.
+
+A list with no rank can sometimes be joined to a merit list on a roll or application number, as Punjab and Himachal Pradesh are. Use the number only while the script runs, and never write it out.
+
+**If a state only publishes its own ranks,** as Tamil Nadu and Kerala do, add `stateRank` to its entry in `state-rules.mjs`, and give every row `category: "state_only"`. The form then asks for that rank, and results and college pages label it. Never compare a state rank with an All India rank.
 
 **When a check fails, find out which side is wrong before changing anything.** Telangana's check once failed on 6 of 12 figures. Tracing each one showed the data was
 right, and the check had mixed female seats into a table that only covered general seats.

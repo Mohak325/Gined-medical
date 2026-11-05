@@ -1,0 +1,6391 @@
+{
+  "files": {
+    "MP-2026-r1": {
+      "seen": 15828,
+      "written": 6169,
+      "notAllotted": 9659,
+      "serialGaps": 0,
+      "statuses": {
+        "": 15828
+      },
+      "courses": {
+        "MBBS": 5146,
+        "BDS": 1023
+      },
+      "summary": [
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 197714,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 906015,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 55139,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 40120,
+          "seat": "EWS/X/OP",
+          "allotted": 13,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 112687,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 891753,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 39710,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 34410,
+          "seat": "OBC/X/OP",
+          "allotted": 18,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 133513,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 1025794,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 129508,
+          "seat": "SC/X/OP",
+          "allotted": 20,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 287363,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 1055322,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 272042,
+          "seat": "ST/X/OP",
+          "allotted": 25,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 812526,
+          "seat": "UR/FF/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 107600,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 758094,
+          "seat": "UR/PH/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 35882,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 31086,
+          "seat": "UR/X/OP",
+          "allotted": 51,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 217194,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 67185,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 54237,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 63323,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 50452,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 151078,
+          "seat": "SC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 318186,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 315749,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 146166,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 990851,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 52168,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 48680,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 41002,
+          "seat": "EWS/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 106374,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 41841,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 36045,
+          "seat": "OBC/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 140890,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 1047886,
+          "seat": "SC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 240801,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 127997,
+          "seat": "SC/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 284444,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 1083299,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 284373,
+          "seat": "ST/X/OP",
+          "allotted": 21,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 916008,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 100231,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 828409,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 37311,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 32591,
+          "seat": "UR/X/OP",
+          "allotted": 42,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 53500,
+          "seat": "EWS/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 144704,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 1002166,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 47157,
+          "seat": "OBC/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 163265,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 1121316,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 285939,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 145050,
+          "seat": "SC/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 300788,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 1112081,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 901808,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 297811,
+          "seat": "ST/X/OP",
+          "allotted": 21,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 136168,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 925461,
+          "seat": "UR/PH/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 54756,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 43935,
+          "seat": "UR/X/OP",
+          "allotted": 42,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 176756,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 48470,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 42953,
+          "seat": "EWS/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 128430,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 958233,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 37820,
+          "seat": "OBC/X/OP",
+          "allotted": 20,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 143795,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 1010789,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 254033,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 135413,
+          "seat": "SC/X/OP",
+          "allotted": 22,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 276960,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 995878,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 907787,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 264659,
+          "seat": "ST/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 123442,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 801091,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 46081,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 35947,
+          "seat": "UR/X/OP",
+          "allotted": 57,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 34552,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 27271,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 108060,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 886999,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 200264,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 118686,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 22924,
+          "seat": "UR/X/OP",
+          "allotted": 9,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 106307,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 805411,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 33505,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 30728,
+          "seat": "EWS/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 76700,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 782055,
+          "seat": "OBC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 27372,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 25222,
+          "seat": "OBC/X/OP",
+          "allotted": 24,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 120170,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 827334,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 193344,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 97678,
+          "seat": "SC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 250855,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 733396,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 694188,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 243606,
+          "seat": "ST/X/OP",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 578929,
+          "seat": "UR/FF/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 76626,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 513821,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 27240,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 21358,
+          "seat": "UR/X/OP",
+          "allotted": 71,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 80229,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 475427,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 31251,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 20553,
+          "seat": "EWS/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 60708,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 492711,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 26451,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 16110,
+          "seat": "OBC/X/OP",
+          "allotted": 24,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 1151351,
+          "seat": "SC/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 105290,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 692570,
+          "seat": "SC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 183214,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 77191,
+          "seat": "SC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 193769,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 457225,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 413405,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 180016,
+          "seat": "ST/X/OP",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 476496,
+          "seat": "UR/FF/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 60430,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 394329,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 16644,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 12608,
+          "seat": "UR/X/OP",
+          "allotted": 69,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 210302,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 50562,
+          "seat": "EWS/X/OP",
+          "allotted": 9,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 46194,
+          "seat": "OBC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 161227,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 903776,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 282472,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 143823,
+          "seat": "SC/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 308239,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 307905,
+          "seat": "ST/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 139246,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 848654,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 47864,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 43910,
+          "seat": "UR/X/OP",
+          "allotted": 34,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 225166,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 1047558,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 58424,
+          "seat": "EWS/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 142928,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 1059450,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 60630,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 51777,
+          "seat": "OBC/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 163910,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 1158787,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 154154,
+          "seat": "SC/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 324158,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 320901,
+          "seat": "ST/X/OP",
+          "allotted": 21,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 996327,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 142112,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 979628,
+          "seat": "UR/PH/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 58431,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 48965,
+          "seat": "UR/X/OP",
+          "allotted": 42,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 74677,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 60601,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 141441,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 53903,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 306951,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 158517,
+          "seat": "SC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 325526,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 316973,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 138246,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 977031,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 67317,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 52944,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 62845,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 157443,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 1141244,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 69882,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 55157,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 167225,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 320912,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 161763,
+          "seat": "SC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 326807,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 323776,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 155481,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 63954,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 54269,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 233405,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 62711,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 1167656,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 56090,
+          "seat": "OBC/X/OP",
+          "allotted": 9,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 334134,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 163840,
+          "seat": "SC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 326812,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 324519,
+          "seat": "ST/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 154230,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 1063589,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 63875,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 55593,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 664251,
+          "seat": "EWS/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 67483,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 635245,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 15375,
+          "seat": "EWS/X/OP",
+          "allotted": 18,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 892678,
+          "seat": "OBC/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 57540,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 299985,
+          "seat": "OBC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 21756,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 12178,
+          "seat": "OBC/X/OP",
+          "allotted": 26,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 870862,
+          "seat": "SC/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 92382,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 490488,
+          "seat": "SC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 120587,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 54286,
+          "seat": "SC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 175514,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 367022,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 425533,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 161079,
+          "seat": "ST/X/OP",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 243389,
+          "seat": "UR/FF/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 51018,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 257614,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 12480,
+          "seat": "UR/SN/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 8072,
+          "seat": "UR/X/OP",
+          "allotted": 70,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 63100,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 47905,
+          "seat": "EWS/X/OP",
+          "allotted": 9,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 135882,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 1091678,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 42456,
+          "seat": "OBC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 150665,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 824345,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 143122,
+          "seat": "SC/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 282065,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 1057180,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 274748,
+          "seat": "ST/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 956567,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 135206,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 693339,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 46976,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 39988,
+          "seat": "UR/X/OP",
+          "allotted": 34,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 98167,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 892622,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 43790,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 27032,
+          "seat": "EWS/X/OP",
+          "allotted": 17,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 70308,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 553512,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 27068,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 24764,
+          "seat": "OBC/X/OP",
+          "allotted": 23,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 110504,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 696574,
+          "seat": "SC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 139214,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 99309,
+          "seat": "SC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 232268,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 629683,
+          "seat": "ST/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 783097,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 225824,
+          "seat": "ST/X/OP",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 777894,
+          "seat": "UR/FF/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 64750,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 513608,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 25863,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 20191,
+          "seat": "UR/X/OP",
+          "allotted": 69,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 44590,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 130135,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 42989,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 139335,
+          "seat": "SC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 305447,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 302790,
+          "seat": "ST/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 125636,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 1048953,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 42071,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 38793,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 215964,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 1027440,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 37344,
+          "seat": "EWS/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 96619,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 943865,
+          "seat": "OBC/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 32850,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 30119,
+          "seat": "OBC/X/OP",
+          "allotted": 20,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 122636,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 1046665,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 204950,
+          "seat": "SC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 118354,
+          "seat": "SC/X/OP",
+          "allotted": 23,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 284305,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 771884,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 1020033,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 283808,
+          "seat": "ST/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 958608,
+          "seat": "UR/FF/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 89564,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 641120,
+          "seat": "UR/PH/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 30164,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 27903,
+          "seat": "UR/X/OP",
+          "allotted": 56,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 225722,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 57726,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 68917,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 52367,
+          "seat": "OBC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 166121,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 155455,
+          "seat": "SC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 305526,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 297308,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 146845,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 1033351,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 62720,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 50959,
+          "seat": "UR/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 231096,
+          "seat": "EWS/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 60528,
+          "seat": "EWS/X/OP",
+          "allotted": 7,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 152623,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 1100067,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 53707,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 165465,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 159338,
+          "seat": "SC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 1141331,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 308221,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 149316,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 1095950,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 55486,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 52541,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 897182,
+          "seat": "NRI",
+          "allotted": 21,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 277287,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 123017,
+          "seat": "OBC/X/OP",
+          "allotted": 27,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 288907,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 280177,
+          "seat": "SC/X/OP",
+          "allotted": 31,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 497206,
+          "seat": "ST/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 489488,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 263739,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 814345,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 119450,
+          "seat": "UR/X/OP",
+          "allotted": 95,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 865604,
+          "seat": "NRI",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 216005,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 84330,
+          "seat": "OBC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 224881,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 220968,
+          "seat": "SC/X/OP",
+          "allotted": 31,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 401274,
+          "seat": "ST/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 394644,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 215459,
+          "seat": "UR/GS/OP",
+          "allotted": 6,
+          "report": ""
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 80690,
+          "seat": "UR/X/OP",
+          "allotted": 94,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 925591,
+          "seat": "NRI",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 263560,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 117925,
+          "seat": "OBC/X/OP",
+          "allotted": 27,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 281351,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 276029,
+          "seat": "SC/X/OP",
+          "allotted": 30,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 485875,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 481797,
+          "seat": "ST/X/OP",
+          "allotted": 37,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 255376,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 333939,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 110757,
+          "seat": "UR/X/OP",
+          "allotted": 96,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 972579,
+          "seat": "NRI",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 229307,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 97061,
+          "seat": "OBC/X/OP",
+          "allotted": 27,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 255254,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 244400,
+          "seat": "SC/X/OP",
+          "allotted": 30,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 455057,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 451252,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 227286,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 94803,
+          "seat": "UR/X/OP",
+          "allotted": 96,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 984150,
+          "seat": "NRI",
+          "allotted": 14,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 253979,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 116822,
+          "seat": "OBC/X/OP",
+          "allotted": 26,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 280684,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 270663,
+          "seat": "SC/X/OP",
+          "allotted": 30,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 484176,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 481736,
+          "seat": "ST/X/OP",
+          "allotted": 39,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 244152,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 808040,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 111558,
+          "seat": "UR/X/OP",
+          "allotted": 96,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 992621,
+          "seat": "NRI",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 245926,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 113991,
+          "seat": "OBC/X/OP",
+          "allotted": 16,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 268359,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 264838,
+          "seat": "SC/X/OP",
+          "allotted": 18,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 468298,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 465966,
+          "seat": "ST/X/OP",
+          "allotted": 23,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 235588,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 102973,
+          "seat": "UR/X/OP",
+          "allotted": 57,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 983048,
+          "seat": "NRI",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 295127,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 140014,
+          "seat": "OBC/X/OP",
+          "allotted": 26,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 318310,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 313267,
+          "seat": "SC/X/OP",
+          "allotted": 31,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 547039,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 543564,
+          "seat": "ST/X/OP",
+          "allotted": 39,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 290973,
+          "seat": "UR/GS/OP",
+          "allotted": 6,
+          "report": ""
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 137487,
+          "seat": "UR/X/OP",
+          "allotted": 95,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 992256,
+          "seat": "NRI",
+          "allotted": 35,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 222814,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 89895,
+          "seat": "OBC/X/OP",
+          "allotted": 27,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 234314,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 231285,
+          "seat": "SC/X/OP",
+          "allotted": 30,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 414713,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 414465,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 221529,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 87829,
+          "seat": "UR/X/OP",
+          "allotted": 96,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 988400,
+          "seat": "NRI",
+          "allotted": 25,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 284655,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 130076,
+          "seat": "OBC/X/OP",
+          "allotted": 27,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 308224,
+          "seat": "SC/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 298574,
+          "seat": "SC/X/OP",
+          "allotted": 30,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 534765,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 530880,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 277220,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 124791,
+          "seat": "UR/X/OP",
+          "allotted": 96,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 919426,
+          "seat": "NRI",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 170320,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 73640,
+          "seat": "OBC/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 197081,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 191448,
+          "seat": "SC/X/OP",
+          "allotted": 18,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 356096,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 350713,
+          "seat": "ST/X/OP",
+          "allotted": 23,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 164906,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 70130,
+          "seat": "UR/X/OP",
+          "allotted": 58,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 280078,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 130098,
+          "seat": "OBC/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 315649,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 294129,
+          "seat": "SC/X/OP",
+          "allotted": 19,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 532289,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 523846,
+          "seat": "ST/X/OP",
+          "allotted": 23,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 249516,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": ""
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 127726,
+          "seat": "UR/X/OP",
+          "allotted": 58,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 292770,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 134887,
+          "seat": "OBC/X/OP",
+          "allotted": 11,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 316720,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 305929,
+          "seat": "SC/X/OP",
+          "allotted": 12,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 544533,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 535231,
+          "seat": "ST/X/OP",
+          "allotted": 15,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 290356,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 133646,
+          "seat": "UR/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 971152,
+          "seat": "NRI",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 197178,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 76482,
+          "seat": "OBC/X/OP",
+          "allotted": 28,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 207758,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 203349,
+          "seat": "SC/X/OP",
+          "allotted": 31,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 389046,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 382745,
+          "seat": "ST/X/OP",
+          "allotted": 38,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 194526,
+          "seat": "UR/GS/OP",
+          "allotted": 6,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 289620,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 72238,
+          "seat": "UR/X/OP",
+          "allotted": 94,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 988474,
+          "seat": "NRI",
+          "allotted": 26,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 279907,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 133212,
+          "seat": "OBC/X/OP",
+          "allotted": 21,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 315613,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 301078,
+          "seat": "SC/X/OP",
+          "allotted": 25,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 526138,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 520063,
+          "seat": "ST/X/OP",
+          "allotted": 31,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 276487,
+          "seat": "UR/GS/OP",
+          "allotted": 5,
+          "report": ""
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 131154,
+          "seat": "UR/X/OP",
+          "allotted": 76,
+          "report": ""
+        }
+      ]
+    },
+    "MP-2026-r2": {
+      "seen": 10893,
+      "written": 4824,
+      "notAllotted": 6069,
+      "serialGaps": 0,
+      "statuses": {
+        "FRESH ALLOTTED": 1281,
+        "UPGRADED": 962,
+        "NOT UPGRADED": 2581,
+        "NOT ALLOTTED": 6069
+      },
+      "courses": {
+        "MBBS": 3939,
+        "BDS": 885
+      },
+      "summary": [
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 40661,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 36718,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 115283,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 31976,
+          "seat": "UR/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 57641,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 51525,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 156167,
+          "seat": "SC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 315696,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 726406,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 49335,
+          "seat": "UR/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 41524,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 123442,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 39149,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 142250,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 133916,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 268529,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 116158,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 979628,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 35905,
+          "seat": "UR/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 54059,
+          "seat": "EWS/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 48009,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 151151,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 300432,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 1140046,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 287585,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 431317,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 64541,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 43561,
+          "seat": "UR/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 44992,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 130135,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 1048953,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 39962,
+          "seat": "OBC/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 139091,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 1083299,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 202653,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 129266,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 741205,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 37218,
+          "seat": "UR/X/OP",
+          "allotted": 17,
+          "report": "YES"
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 27799,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 223842,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 23679,
+          "seat": "UR/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 30831,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 313557,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 26085,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 100318,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 771884,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 196905,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 27328,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 23437,
+          "seat": "UR/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 892622,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 21651,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 17180,
+          "seat": "OBC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 824345,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 80680,
+          "seat": "SC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 629683,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 160342,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 594310,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 61149,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 539008,
+          "seat": "UR/PH/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 25863,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 15360,
+          "seat": "UR/X/OP",
+          "allotted": 27,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 51131,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 48476,
+          "seat": "OBC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 154968,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 150665,
+          "seat": "SC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 305792,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 300004,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 146845,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 44921,
+          "seat": "UR/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 60601,
+          "seat": "EWS/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 154640,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 54264,
+          "seat": "OBC/X/OP",
+          "allotted": 12,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 160749,
+          "seat": "SC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 324787,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 300788,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 119577,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 1095950,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 63875,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 50364,
+          "seat": "UR/X/OP",
+          "allotted": 13,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 61325,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 54797,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 158671,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 305447,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 155481,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 53192,
+          "seat": "UR/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 63133,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 164291,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 55871,
+          "seat": "OBC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 165055,
+          "seat": "SC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 324158,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 316871,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 157270,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 55002,
+          "seat": "UR/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 63111,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 1177028,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 56828,
+          "seat": "OBC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 166442,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 316459,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 157443,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 69591,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 56006,
+          "seat": "UR/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 16304,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 60430,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 692570,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 60073,
+          "seat": "SC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 160874,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 693899,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 435139,
+          "seat": "UR/PH/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 12006,
+          "seat": "UR/X/OP",
+          "allotted": 29,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 51360,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 152623,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 1008544,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 46126,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 161227,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 143823,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 258123,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 248842,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 135882,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 55985,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 42456,
+          "seat": "UR/X/OP",
+          "allotted": 15,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 31230,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 27240,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 25296,
+          "seat": "OBC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 827334,
+          "seat": "SC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 103811,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 995878,
+          "seat": "ST/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 200264,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 956255,
+          "seat": "UR/FF/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 89564,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 641120,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 25794,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 22495,
+          "seat": "UR/X/OP",
+          "allotted": 21,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 44868,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 91684,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 1167656,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 44254,
+          "seat": "OBC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 140348,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 299967,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 282065,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 1002146,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 53339,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 39248,
+          "seat": "UR/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 1047558,
+          "seat": "EWS/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 40977,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 106374,
+          "seat": "OBC/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 943865,
+          "seat": "OBC/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 46976,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 37820,
+          "seat": "OBC/X/OP",
+          "allotted": 17,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 131729,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 297308,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 285379,
+          "seat": "ST/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 96619,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 828409,
+          "seat": "UR/PH/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 32850,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 29962,
+          "seat": "UR/X/OP",
+          "allotted": 22,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 51747,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 51297,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 158928,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 256731,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 159468,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 1033351,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 46654,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 57825,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 164697,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 53470,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 162131,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 282329,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 163622,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 1077214,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 48955,
+          "seat": "UR/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 631596,
+          "seat": "NRI",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 115099,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 237134,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 234973,
+          "seat": "SC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 397657,
+          "seat": "ST/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 111237,
+          "seat": "UR/X/OP",
+          "allotted": 22,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 983048,
+          "seat": "NRI",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 72261,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 178774,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 335348,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 179479,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 71916,
+          "seat": "UR/X/OP",
+          "allotted": 13,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 969070,
+          "seat": "NRI",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 970514,
+          "seat": "NRI",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 117994,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 201732,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 397819,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 391714,
+          "seat": "ST/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 111833,
+          "seat": "UR/X/OP",
+          "allotted": 27,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 909293,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 956851,
+          "seat": "NRI",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 80380,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 199081,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 360084,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 213350,
+          "seat": "UR/GS/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 77921,
+          "seat": "UR/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 833857,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 950056,
+          "seat": "NRI",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 118490,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 221514,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 370770,
+          "seat": "ST/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 210481,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 808040,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 111613,
+          "seat": "UR/X/OP",
+          "allotted": 23,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 842073,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 992621,
+          "seat": "NRI",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 87761,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 239662,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 219467,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 371487,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 224946,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 87346,
+          "seat": "UR/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 260622,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 300110,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 146325,
+          "seat": "OBC/X/OP",
+          "allotted": 26,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 321710,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 308418,
+          "seat": "SC/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 516082,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 506487,
+          "seat": "ST/X/OP",
+          "allotted": 17,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 295192,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 143291,
+          "seat": "UR/X/OP",
+          "allotted": 65,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 988602,
+          "seat": "NRI",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 834042,
+          "seat": "NRI",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 74080,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 189724,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 344282,
+          "seat": "ST/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 189443,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 73878,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 975634,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 782574,
+          "seat": "NRI",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 132181,
+          "seat": "OBC/X/OP",
+          "allotted": 16,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 277791,
+          "seat": "SC/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 476851,
+          "seat": "ST/X/OP",
+          "allotted": 19,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 271847,
+          "seat": "UR/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 126745,
+          "seat": "UR/X/OP",
+          "allotted": 35,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 458578,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 203671,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 71222,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 172429,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 325490,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 176898,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 62925,
+          "seat": "UR/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 137165,
+          "seat": "OBC/X/OP",
+          "allotted": 20,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 290676,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 282063,
+          "seat": "SC/X/OP",
+          "allotted": 13,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 479165,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 478423,
+          "seat": "ST/X/OP",
+          "allotted": 18,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 259746,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 133350,
+          "seat": "UR/X/OP",
+          "allotted": 45,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 139815,
+          "seat": "OBC/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 288323,
+          "seat": "SC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 470278,
+          "seat": "ST/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 137898,
+          "seat": "UR/X/OP",
+          "allotted": 27,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 987956,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 960057,
+          "seat": "NRI",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 175594,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 335843,
+          "seat": "ST/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 59728,
+          "seat": "UR/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 815751,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 870603,
+          "seat": "NRI",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 137737,
+          "seat": "OBC/X/OP",
+          "allotted": 22,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 304595,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 287602,
+          "seat": "SC/X/OP",
+          "allotted": 12,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 458592,
+          "seat": "ST/X/OP",
+          "allotted": 16,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 280093,
+          "seat": "UR/GS/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 133140,
+          "seat": "UR/X/OP",
+          "allotted": 49,
+          "report": "YES"
+        }
+      ]
+    },
+    "MP-2026-r3": {
+      "seen": 4715,
+      "written": 2804,
+      "notAllotted": 1911,
+      "serialGaps": 0,
+      "statuses": {
+        "UPGRADED FROM FIRST ROUND": 327,
+        "FRESH ALLOTTED": 832,
+        "UPGRADED FROM SECOND ROUND": 487,
+        "NOT UPGRADED": 1158,
+        "NOT ALLOTTED": 1911
+      },
+      "courses": {
+        "MBBS": 2081,
+        "BDS": 723
+      },
+      "summary": [
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 41578,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 38099,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 109938,
+          "seat": "SC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 271780,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA",
+          "closing": 32179,
+          "seat": "UR/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 62711,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 55557,
+          "seat": "OBC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 166759,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 327662,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL",
+          "closing": 51884,
+          "seat": "UR/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 42025,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 41282,
+          "seat": "OBC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 141956,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 304689,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 63100,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "BUNDELKHAND MEDICAL COLLEGE SAGAR",
+          "closing": 38424,
+          "seat": "UR/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 61454,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 48955,
+          "seat": "OBC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 148289,
+          "seat": "SC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 311844,
+          "seat": "ST/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA",
+          "closing": 45476,
+          "seat": "UR/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 55958,
+          "seat": "EWS/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 40735,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 144743,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 267348,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 242616,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "Dr. Laxminarayan Pandey Government Medical College, Ratlam",
+          "closing": 37402,
+          "seat": "UR/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 93884,
+          "seat": "SC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE",
+          "closing": 186210,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 32740,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 26155,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 104312,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 279665,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "GAJRA RAJA MEDICAL COLLEGE GWALIOR",
+          "closing": 23576,
+          "seat": "UR/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 1060585,
+          "seat": "OBC/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 17327,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 196310,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GANDHI MEDICAL COLLEGE BHOPAL",
+          "closing": 16194,
+          "seat": "UR/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 52029,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 48865,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 147638,
+          "seat": "SC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 329569,
+          "seat": "ST/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE DATIA",
+          "closing": 46321,
+          "seat": "UR/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 63111,
+          "seat": "EWS/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 163622,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 55313,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 164814,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 334896,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 330499,
+          "seat": "ST/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 956567,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SATNA",
+          "closing": 52769,
+          "seat": "UR/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 63487,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 55469,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 166862,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 321242,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SEONI",
+          "closing": 53871,
+          "seat": "UR/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 66671,
+          "seat": "EWS/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 58026,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 169390,
+          "seat": "SC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 332221,
+          "seat": "ST/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 69591,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SHEOPUR",
+          "closing": 56902,
+          "seat": "UR/X/OP",
+          "allotted": 15,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 66323,
+          "seat": "EWS/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 58592,
+          "seat": "OBC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 170100,
+          "seat": "SC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 333550,
+          "seat": "ST/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 70483,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "GOVERNMENT MEDICAL COLLEGE SINGRAULI",
+          "closing": 57109,
+          "seat": "UR/X/OP",
+          "allotted": 13,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 892678,
+          "seat": "OBC/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 870862,
+          "seat": "SC/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 164232,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 564918,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE",
+          "closing": 16110,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 345364,
+          "seat": "EWS/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 57173,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 48434,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 161132,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 672482,
+          "seat": "ST/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 284880,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 814345,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA",
+          "closing": 46498,
+          "seat": "UR/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 32145,
+          "seat": "EWS/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 32850,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 25323,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 106358,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 235158,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 828409,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR",
+          "closing": 22684,
+          "seat": "UR/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 50440,
+          "seat": "EWS/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 163526,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 322618,
+          "seat": "ST/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI",
+          "closing": 38989,
+          "seat": "UR/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 44992,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 55486,
+          "seat": "OBC/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 39962,
+          "seat": "OBC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 140348,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 326847,
+          "seat": "ST/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 971481,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 46976,
+          "seat": "UR/SN/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SHYAM SHAH MEDICAL COLLEGE REWA",
+          "closing": 30172,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 63870,
+          "seat": "EWS/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 165055,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 304180,
+          "seat": "ST/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 476496,
+          "seat": "UR/FF/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR",
+          "closing": 51742,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 64594,
+          "seat": "EWS/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 54379,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 167051,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 304117,
+          "seat": "ST/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 164906,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 63954,
+          "seat": "UR/SN/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH",
+          "closing": 53630,
+          "seat": "UR/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 966682,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 797719,
+          "seat": "NRI",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 122828,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 215855,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 418672,
+          "seat": "ST/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS",
+          "closing": 120853,
+          "seat": "UR/X/OP",
+          "allotted": 22,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 77356,
+          "seat": "OBC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 181259,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 358406,
+          "seat": "ST/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL",
+          "closing": 77006,
+          "seat": "UR/X/OP",
+          "allotted": 12,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 651559,
+          "seat": "NRI",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 195515,
+          "seat": "OBC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 121246,
+          "seat": "OBC/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 204030,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 437950,
+          "seat": "ST/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE",
+          "closing": 114748,
+          "seat": "UR/X/OP",
+          "allotted": 20,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 95008,
+          "seat": "OBC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 202212,
+          "seat": "SC/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 373488,
+          "seat": "ST/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "LN MEDICAL COLLEGE BHOPAL",
+          "closing": 90410,
+          "seat": "UR/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 769581,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 244897,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 120011,
+          "seat": "OBC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 205012,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 404889,
+          "seat": "ST/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 1091678,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE",
+          "closing": 116049,
+          "seat": "UR/X/OP",
+          "allotted": 25,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 963983,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 112961,
+          "seat": "OBC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 206414,
+          "seat": "SC/X/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 388960,
+          "seat": "ST/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL",
+          "closing": 100396,
+          "seat": "UR/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 640685,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 163998,
+          "seat": "OBC/X/OP",
+          "allotted": 25,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 315393,
+          "seat": "SC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 635377,
+          "seat": "ST/GS/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 576101,
+          "seat": "ST/X/OP",
+          "allotted": 26,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 219532,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE",
+          "closing": 158331,
+          "seat": "UR/X/OP",
+          "allotted": 98,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 967243,
+          "seat": "NRI",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 84813,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 187065,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 361372,
+          "seat": "ST/X/OP",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL",
+          "closing": 80380,
+          "seat": "UR/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 709625,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 978345,
+          "seat": "NRI",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 138881,
+          "seat": "OBC/X/OP",
+          "allotted": 20,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 264624,
+          "seat": "SC/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 529732,
+          "seat": "ST/X/OP",
+          "allotted": 19,
+          "report": "YES"
+        },
+        {
+          "college": "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 132276,
+          "seat": "UR/X/OP",
+          "allotted": 48,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 911011,
+          "seat": "NRI",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 73020,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 176527,
+          "seat": "SC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 341511,
+          "seat": "ST/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 180146,
+          "seat": "UR/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RD GARDI MEDICAL COLLEGE UJJAIN",
+          "closing": 70113,
+          "seat": "UR/X/OP",
+          "allotted": 13,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 146606,
+          "seat": "OBC/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 294890,
+          "seat": "SC/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 290676,
+          "seat": "SC/X/OP",
+          "allotted": 6,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 534675,
+          "seat": "ST/GS/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 527826,
+          "seat": "ST/X/OP",
+          "allotted": 14,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 333939,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL",
+          "closing": 144882,
+          "seat": "UR/X/OP",
+          "allotted": 69,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 145633,
+          "seat": "OBC/X/OP",
+          "allotted": 7,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 289653,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 469045,
+          "seat": "ST/X/OP",
+          "allotted": 8,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 1061027,
+          "seat": "UR/PH/OP",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE",
+          "closing": 143131,
+          "seat": "UR/X/OP",
+          "allotted": 25,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 907608,
+          "seat": "NRI",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 71916,
+          "seat": "OBC/X/OP",
+          "allotted": 2,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 178774,
+          "seat": "SC/X/OP",
+          "allotted": 4,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 355527,
+          "seat": "ST/X/OP",
+          "allotted": 9,
+          "report": "YES"
+        },
+        {
+          "college": "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE",
+          "closing": 68393,
+          "seat": "UR/X/OP",
+          "allotted": 11,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 878679,
+          "seat": "NRI",
+          "allotted": 1,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 728688,
+          "seat": "NRI",
+          "allotted": 3,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 142338,
+          "seat": "OBC/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 284279,
+          "seat": "SC/X/OP",
+          "allotted": 5,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 473455,
+          "seat": "ST/X/OP",
+          "allotted": 10,
+          "report": "YES"
+        },
+        {
+          "college": "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR",
+          "closing": 134887,
+          "seat": "UR/X/OP",
+          "allotted": 24,
+          "report": "YES"
+        }
+      ]
+    }
+  },
+  "collegeNames": {
+    "AMALTAS INSTITUTE OF MEDICAL SCIENCES DEWAS": 476,
+    "ATAL BIHARI VAJPAYEE GOVERNMENT MEDICAL COLLEGE VIDISHA": 279,
+    "BHABHA COLLEGE OF DENTAL SCIENCES BHOPAL": 224,
+    "BIRSA MUNDA GOVERNMENT MEDICAL COLLEGE SHAHDOL": 183,
+    "BUNDELKHAND MEDICAL COLLEGE SAGAR": 252,
+    "CHHINDWARA INSTITUTE OF MEDICAL SCIENCES CHHINDWARA": 254,
+    "CHIRAYU MEDICAL COLLEGE AND HOSPITAL BHOPAL": 485,
+    "COLLEGE OF DENTAL SCIENCES AND HOSPITAL RAU INDORE": 116,
+    "Dr. Laxminarayan Pandey Government Medical College, Ratlam": 308,
+    "ESIC MEDICAL COLLEGE AND HOSPITAL INDORE": 42,
+    "GAJRA RAJA MEDICAL COLLEGE GWALIOR": 311,
+    "GANDHI MEDICAL COLLEGE BHOPAL": 304,
+    "GOVERNMENT AUTONOMOUS COLLEGE OF DENTISTRY INDORE": 224,
+    "GOVERNMENT MEDICAL COLLEGE DATIA": 216,
+    "GOVERNMENT MEDICAL COLLEGE SATNA": 276,
+    "GOVERNMENT MEDICAL COLLEGE SEONI": 182,
+    "GOVERNMENT MEDICAL COLLEGE SHEOPUR": 203,
+    "GOVERNMENT MEDICAL COLLEGE SINGRAULI": 211,
+    "HITKARINI DENTAL COLLEGE AND HOSPITAL JABALPUR": 126,
+    "INDEX INSTITUTE OF DENTAL SCIENCES INDORE": 199,
+    "INDEX MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTER INDORE": 501,
+    "LN MEDICAL COLLEGE BHOPAL": 507,
+    "LNCT MEDICAL COLLEGE AND SEWAKUNJ HOSPITAL INDORE": 473,
+    "MAHARANA PRATAP COLLEGE OF DENTISTRY AND RESEARCH CENTER GWALIOR": 197,
+    "MAHATMA GANDHI MEMORIAL MEDICAL COLLEGE INDORE": 263,
+    "MAHAVEER INSTITUTE OF MEDICAL SCIENCES AND RESEARCH BHOPAL": 315,
+    "MANSAROVAR DENTAL COLLEGE BHOPAL": 226,
+    "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL SEHORE": 625,
+    "MODERN DENTAL COLLEGE AND RESEARCH CENTRE INDORE": 214,
+    "NANDKUMAR SINGH CHOUHAN GOVERNMENT MEDICAL COLLEGE KHANDWA": 218,
+    "NETAJI SUBHASH CHANDRA BOSE MEDICAL COLLEGE JABALPUR": 386,
+    "PEOPLES COLLEGE OF DENTAL SCIENCES AND RESEARCH CENTRE BHOPAL": 209,
+    "PEOPLES COLLEGE OF MEDICAL SCIENCE BHOPAL": 488,
+    "PEOPLES DENTAL ACADAMY BHOPAL": 211,
+    "RAM KRISHNA MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL": 598,
+    "RD GARDI MEDICAL COLLEGE UJJAIN": 317,
+    "RISHIRAJ COLLEGE OF DENTAL SCIENCES AND RESEARCH CENTRE BHOPAL": 234,
+    "RKDF DENTAL COLLEGE AND RESEARCH CENTRE BHOPAL": 224,
+    "RKDF MEDICAL COLLEGE HOSPITAL AND RESEARCH CENTRE BHOPAL": 438,
+    "SCHOOL OF MEDICAL SCIENCE SRI SATYA SAI UNIVERSITY OF TECHNOLOGY AND MEDICAL SCIENCES SEHORE": 224,
+    "SHRIMANT RAJMATA VIJAYARAJE SCINDIA MEDICAL COLLEGE SHIVPURI": 174,
+    "SHYAM SHAH MEDICAL COLLEGE REWA": 370,
+    "SRI AUROBINDO COLLEGE OF DENTISTRY INDORE": 227,
+    "SRI AUROBINDO INSTITUTE OF MEDICAL SCIENCE INDORE": 475,
+    "SUKH SAGAR MEDICAL COLLEGE AND HOSPITAL JABALPUR": 470,
+    "SUNDERLAL PATWA GOVERNMENT MEDICAL COLLEGE MANDSAUR": 169,
+    "VIRENDRA KUMAR SAKHLECHA GOVERNMENT MEDICAL COLLEGE NEEMUCH": 173
+  }
+}

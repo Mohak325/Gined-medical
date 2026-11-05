@@ -1,0 +1,336 @@
+{
+  "files": {
+    "TN-2026-gq-r1": {
+      "pages": 449,
+      "seen": 7484,
+      "written": 7471,
+      "kept": 0,
+      "unread": 13,
+      "serialGaps": 0,
+      "mbbs": 6198,
+      "statuses": {
+        "": 7471
+      },
+      "quotas": {
+        "GQ": 6109,
+        "A1": 89
+      },
+      "seats": {
+        "Govt. Colleges": 3943,
+        "SF Colleges": 1862,
+        "ESIC": 89,
+        "Private": 304
+      },
+      "categories": {
+        "": 6148,
+        "IRT WARD": 30,
+        "CMC 20%": 20
+      },
+      "communities": {
+        "BC": 2846,
+        "MBC&DNC": 1588,
+        "SC": 985,
+        "BCM": 282,
+        "OC": 246,
+        "SCA": 185,
+        "ST": 66
+      }
+    },
+    "TN-2026-mq-r1": {
+      "pages": 119,
+      "seen": 1953,
+      "written": 1951,
+      "kept": 0,
+      "unread": 2,
+      "serialGaps": 0,
+      "mbbs": 1416,
+      "statuses": {
+        "": 1951
+      },
+      "quotas": {
+        "MQ": 1154,
+        "NRI": 262
+      },
+      "seats": {
+        "SF Colleges": 1236,
+        "Private": 180
+      },
+      "categories": {
+        "Management Quota": 607,
+        "Telugu Minority": 385,
+        "NRI": 262,
+        "Christian Minority": 60,
+        "Malayalam Minority": 52,
+        "Minority Network": 38,
+        "CMC Staff": 10,
+        "CMC General": 2
+      },
+      "communities": {
+        "": 1416
+      }
+    },
+    "TN-2026-gq-r2": {
+      "pages": 768,
+      "seen": 8127,
+      "written": 3787,
+      "kept": 4323,
+      "unread": 17,
+      "serialGaps": 0,
+      "mbbs": 2863,
+      "statuses": {
+        "Retained": 4245,
+        "": 3865
+      },
+      "quotas": {
+        "GQ": 2847,
+        "A1": 16
+      },
+      "seats": {
+        "Govt. Colleges": 1396,
+        "SF Colleges": 1171,
+        "ESIC": 16,
+        "Private": 280
+      },
+      "categories": {
+        "": 2855,
+        "IRT Ward": 5,
+        "CMC 20%": 2,
+        "PWD": 1
+      },
+      "communities": {
+        "BC": 1505,
+        "MBC&DNC": 715,
+        "SC": 345,
+        "BCM": 119,
+        "SCA": 76,
+        "OC": 65,
+        "ST": 38
+      }
+    },
+    "TN-2026-mq-r2": {
+      "pages": 172,
+      "seen": 2046,
+      "written": 1259,
+      "kept": 784,
+      "unread": 3,
+      "serialGaps": 0,
+      "mbbs": 885,
+      "statuses": {
+        "Retained": 747,
+        "": 1296
+      },
+      "quotas": {
+        "MQ": 786,
+        "NRI": 99
+      },
+      "seats": {
+        "SF Colleges": 708,
+        "Private": 177
+      },
+      "categories": {
+        "Management Quota": 557,
+        "Telugu Minority": 165,
+        "NRI": 99,
+        "Christian Minority": 40,
+        "Malayalam Minority": 21,
+        "Minority Network": 3
+      },
+      "communities": {
+        "": 885
+      }
+    },
+    "TN-2026-gq-r3": {
+      "pages": 697,
+      "seen": 8124,
+      "written": 2417,
+      "kept": 5686,
+      "unread": 21,
+      "serialGaps": 0,
+      "mbbs": 1705,
+      "statuses": {
+        "Retained": 5546,
+        "": 2557
+      },
+      "quotas": {
+        "GQ": 1692,
+        "A1": 13
+      },
+      "seats": {
+        "Govt. Colleges": 694,
+        "ESIC": 13,
+        "SF Colleges": 751,
+        "Private": 247
+      },
+      "categories": {
+        "": 1673,
+        "SPORTS": 13,
+        "Children of Exserviceman": 10,
+        "IRT WARD": 4,
+        "PWD": 4,
+        "CMC 20%": 1
+      },
+      "communities": {
+        "BC": 794,
+        "MBC&DNC": 391,
+        "SC": 362,
+        "BCM": 71,
+        "SCA": 33,
+        "OC": 30,
+        "ST": 24
+      }
+    },
+    "TN-2026-mq-r3": {
+      "pages": 224,
+      "seen": 2607,
+      "written": 1455,
+      "kept": 1147,
+      "unread": 5,
+      "serialGaps": 0,
+      "mbbs": 1147,
+      "statuses": {
+        "Retained": 1132,
+        "": 1470
+      },
+      "quotas": {
+        "MQ": 1122,
+        "NRI": 25
+      },
+      "seats": {
+        "SF Colleges": 874,
+        "Private": 273
+      },
+      "categories": {
+        "Management Quota": 1039,
+        "Telugu Minority": 47,
+        "Christian Minority": 34,
+        "NRI": 25,
+        "Malayalam Minority": 2
+      },
+      "communities": {
+        "": 1147
+      }
+    },
+    "TN-2026-gq-stray": {
+      "pages": 16,
+      "seen": 259,
+      "written": 256,
+      "kept": 1,
+      "unread": 2,
+      "serialGaps": 0,
+      "mbbs": 115,
+      "statuses": {
+        "": 257
+      },
+      "quotas": {
+        "GQ": 115
+      },
+      "seats": {
+        "SF Colleges": 22,
+        "Govt. Colleges": 1,
+        "Private": 92
+      },
+      "categories": {
+        "": 115
+      },
+      "communities": {
+        "BC": 51,
+        "MBC&DNC": 29,
+        "SC": 23,
+        "SCA": 6,
+        "BCM": 5,
+        "ST": 1
+      }
+    },
+    "TN-2026-mq-stray": {
+      "pages": 15,
+      "seen": 254,
+      "written": 254,
+      "kept": 0,
+      "unread": 0,
+      "serialGaps": 0,
+      "mbbs": 197,
+      "statuses": {
+        "": 254
+      },
+      "quotas": {
+        "MQ": 197
+      },
+      "seats": {
+        "SF Colleges": 93,
+        "Private": 104
+      },
+      "categories": {
+        "": 193,
+        "Christian Minority": 4
+      },
+      "communities": {
+        "": 197
+      }
+    }
+  },
+  "collegeNames": {
+    "ANNAPOORNA MEDICAL COLLEGE & HOSPITAL, SALEM": 274,
+    "APS MEDICAL COLLEGE HOSPITAL,MEVALOORKUPPAM, KANCHEEPURAM": 260,
+    "ARUNAI MEDICAL COLLEGE & HOSPITAL, TIRUVANNAMALAI": 343,
+    "CHENGALPATTU MEDICAL COLLEGE, CHENGALPATTU": 136,
+    "CHRISTIAN MEDICAL COLLEGE, VELLORE": 108,
+    "COIMBATORE MEDICAL COLLEGE, COIMBATORE": 223,
+    "DHANALAKSHMI SRINIVASAN MEDICAL COLLEGE AND HOSPITAL, PERAMBALUR": 460,
+    "ESI-PGIMSR,ESI HOSPITAL,K.K NAGAR,CHENNAI": 118,
+    "GOVERNMENT DHARMAPURI MEDICAL COLLEGE, DHARMAPURI": 109,
+    "GOVERNMENT ERODE MEDICAL COLLEGE & HOSPITAL, PERUNDURAI": 110,
+    "GOVERNMENT MEDICAL COLLEGE & ESIC HOSPITAL, COIMBATORE": 80,
+    "GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, CUDDALORE": 175,
+    "GOVERNMENT MEDICAL COLLEGE, KARUR": 156,
+    "GOVERNMENT MEDICAL COLLEGE, OMANDURAR,CHENNAI": 136,
+    "GOVERNMENT MEDICAL COLLEGE, PUDUKOTTAI": 156,
+    "GOVERNMENT SIVAGANGAI MEDICAL COLLEGE, SIVAGANGA": 133,
+    "GOVERNMENT THIRUVANNAMALAI MEDICAL COLLEGE, THIRUVANNAMALAI": 118,
+    "GOVERNMENT VELLORE MEDICAL COLLEGE, VELLORE": 116,
+    "GOVERNMENT VILLUPURAM MEDICAL COLLEGE, VILLUPURAM": 117,
+    "GOVT MOHAN KUMARAMANGALAM MEDICAL COLLEGE, SALEM": 133,
+    "GOVT. DINDIGUL MEDICAL COLLEGE HOSPITAL, DINDIGUL": 155,
+    "GOVT. KRISHNAGIRI MEDICAL COLLEGE HOSPITAL,": 146,
+    "GOVT. MEDICAL COLLEGE HOSPITAL, VIRUDHUNAGAR.": 174,
+    "GOVT. NAGAPATTINAM MEDICAL COLLEGE HOSPITAL,": 208,
+    "GOVT. NAMAKKAL MEDICAL COLLEGE HOSPITAL, NAMAKKAL.": 145,
+    "GOVT. RAMANATHAPURAM MEDICAL COLLEGE HOSPITAL,": 162,
+    "GOVT. THE NILGIRIS MEDICAL COLLEGE HOSPITAL, THE NILGIRIS": 206,
+    "GOVT. THIRUVALLUR MEDICAL COLLEGE HOSPITAL,": 155,
+    "GOVT. TIRUPPUR MEDICAL COLLEGE HOSPITAL, TIRUPPUR.": 152,
+    "GOVT.ARIYALUR MEDICAL COLLEGE HOSPITAL, ARIYALUR.": 167,
+    "GOVT.KALLAKURUCHI MEDICAL COLLEGE HOSPITAL,": 170,
+    "INDIRA MEDICAL COLLEGE & HOSPITALS, THIRUVALLUR": 405,
+    "K A P VISWANATHAM GOVERNMENT MEDICAL COLLEGE, TRICHY": 195,
+    "KANYAKUMARI GOVERNMENT MEDICAL COLLEGE, ASARIPALLAM": 164,
+    "KANYAKUMARI MEDICAL MISSION RESEARCH CENTER, KANYAKUMARI": 451,
+    "KANYAKUMARI MEDICAL MISSION RESEARCH CENTER, KANYAKUMARI (PRIVATE UNIVERSITY)": 42,
+    "KARPAGAM FACULTY OF MEDICAL SCIENCES & RESEARCH, COIMBATORE": 246,
+    "KILPAUK MEDICAL COLLEGE, CHENNAI": 209,
+    "KMCH INSTITUTE OF HEALTH SCIENCES AND RESEARCH, COIMBATORE": 259,
+    "MADHA MEDICAL COLLEGE AND HOSPITAL, THANDALAM, CHENNAI": 380,
+    "MADRAS MEDICAL COLLEGE, CHENNAI": 264,
+    "MADURAI MEDICAL COLLEGE, MADURAI": 248,
+    "MELMARUVATHUR ADHIPARASAKTHI INSTITUTE OF MEDICAL SCIENCES AND RESEARCH, MELMARUVATHUR": 308,
+    "NANDHA MEDICAL COLLEGE AND HOSPITAL, PERUNDURAI, ERODE": 233,
+    "PANIMALAR MEDICAL COLLEGE HOSPITAL & RESEARCH INSTITUTE, CHENNAI": 272,
+    "PSG INSTITUTE OF MEDICAL SCIENCES, COIMBATORE": 360,
+    "PSP MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, KANCHEEPURAM": 421,
+    "RAJALAKSHMI MEDICAL COLLEGE HOSPITAL AND RESEARCH INSITUTE, KANCHIPURAM": 510,
+    "SREE MOOKAMBIKA INSTITUTE OF MEDICAL SCIENCES, KANYAKUMARI": 228,
+    "SRI MUTHUKUMARAN MEDICAL COLLEGE,CHENNAI": 273,
+    "SRI VENKATESWARAA MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, CHENNAI (PRIVATE UNIVERSITY)": 720,
+    "STANLEY MEDICAL COLLEGE, CHENNAI": 281,
+    "SWAMY VIVEKANANDHA MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, NAMAKKAL": 352,
+    "TAGORE MEDICAL COLLEGE AND HOSPITAL, CHENNAI": 398,
+    "TAKSHASHILA MEDICAL COLLEGE, ONGUR, TINDIVANAM, VILLUPURAM": 423,
+    "TAKSHASHILA MEDICAL COLLEGE, ONGUR, TINDIVANAM, VILLUPURAM (PRIVATE UNIVERSITY)": 21,
+    "THANJAVUR MEDICAL COLLEGE,THANJAVUR": 184,
+    "THENI GOVERNMENT MEDICAL COLLEGE,THENI": 134,
+    "THIRUVARUR GOVT. MEDICAL COLLEGE, THIRUVARUR": 135,
+    "THOOTHUKUDI MEDICAL COLLEGE, THOOTHUKUDI": 192,
+    "TIRUNELVELI MEDICAL COLLEGE,TIRUNELVELI": 290,
+    "TRICHY SRM MEDICAL COLLEGE HOSPITAL & RESEARCH CENTRE, TRICHY": 397,
+    "VELAMMAL MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, MADURAI": 230
+  }
+}

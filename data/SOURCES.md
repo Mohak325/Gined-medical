@@ -25,8 +25,8 @@ taken from them are in `data/extracted/mcc/`.
 no student names. The rows taken from them are in `data/extracted/kea/`. They also hold each seat's fee,
 which isn't used on the site yet (Phase 4).
 
-**Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana and Maharashtra come straight from their counselling authorities.** The files
-are listed in `data/raw/states/sources.json`, `gj.json`, `ap.json`, `tg.json` and `mh.json`. These lists include student names, so the extractors keep only rank, college, course, category,
+**Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu and Kerala come straight from their counselling authorities.** The files
+are listed in `data/raw/states/sources.json`, `gj.json`, `ap.json`, `tg.json`, `mh.json`, `pb.json`, `hp.json`, `mp.json`, `tn.json` and `kl.json`. These lists include student names, so the extractors keep only rank, college, course, category,
 seat, quota, gender, remark and, where needed, merit number and round. The PDFs are never committed, so `npm run data:download` fetches
 Karnataka's and MCC's, and those three files give the addresses for the rest.
 
@@ -38,11 +38,26 @@ Karnataka's and MCC's, and those three files give the addresses for the rest.
 | Gujarat | 2026, Rounds 1 to 3 and stray | 52 of 53 of its own published Round 1 last merit numbers match, for Open seats. Rajpipla differs by one. Round 1 count matches [neet2seat](https://neet2seat.com/news/gujarat-neet-ug-2026-round-1-allotment) (7,459) |
 | Telangana | 2026, Phases 1 and 2, mop-up and stray, for competent authority and management quota | Counts match [neet2seat](https://neet2seat.com/news/telangana-neet-ug-2026-phase-1-mbbs-allotment) for Phase 1 (4,734) and [Phase 2](https://neet2seat.com/news/telangana-neet-ug-2026-phase-2-allotment-management-quota-phase-1) (6,181). All 12 of its statewide last ranks for Phase 1 match |
 | Haryana | 2026, Round 1 and stray, both marked provisional. Rounds 2 and 3 mark rows "Joined" or "Not Allotted", so new seats can't be told apart, and they aren't used | No outside figure yet. Each college's Round 1 count fits within its seats |
+| Tamil Nadu | 2026, Rounds 1 to 3 and stray, government and management quota, all marked provisional. **Ranks are Tamil Nadu's own, not All India.** The 7.5% government school lists aren't included | 18 of [neet2seat's](https://neet2seat.com/guides/tamil-nadu/tamil-nadu-mbbs-cutoffs-2026) reserved category closing ranks, at Madras, Stanley and Kilpauk, match. Its Open figures differ slightly, as explained below |
+| Kerala | 2026, Phases 1 to 3 and stray. **Ranks are KEAM medical ranks, not All India** | All 378 of the state's own Phase 1 last ranks for the 13 seat codes we offer match |
+| Madhya Pradesh | 2026, Rounds 1 and 2 and mop-up (mop-up marked provisional). No stray result was linked | All 886 of its own closing rank and seat count figures, across the three rounds, match what we calculate from its student lists. The Round 1 closing rank table comes from a Medical Dialogues copy, and its student list copy was byte-identical to the official file |
+| Punjab | 2026, Rounds 1 to 3 and stray. Round 1 and stray are marked provisional | 15 closing All India ranks across Rounds 1 to 3 match [neet2seat](https://neet2seat.com/guides/punjab/punjab-mbbs-cutoffs-2026). The 2,410 students listed in Round 1 match [Careers360](https://news.careers360.com/punjab-neet-counselling-2026-round-1-seat-allotment-out-mbbs-bds-dayanand-medical-college-gmc-patiala-top-choice-bfuhs-ggsmch-org). One Round 1 NRI seat, with no rank in any list we read, is left out |
+| Himachal Pradesh | 2026, Rounds 1 to 3 and stray, final lists. A second stray round was scheduled but isn't included | No outside figure yet. Each college's Round 1 count fits within its seats |
 | Maharashtra | 2026, Round 1 only, marked provisional. Later rounds aren't linked publicly that we could find, and the portal page asks for a login | The 31,047 candidates and 10,509 allotted match [neet2seat](https://neet2seat.com/news/maharashtra-neet-ug-2026-round-1-selection-list). So do its last Open ranks: 47,413 government and 1,14,441 private |
 | Andhra Pradesh | 2026, Phases 1 to 3 and competent-quota stray. Management-quota stray rounds aren't read yet | Management Phase 1 count matches [neet2seat](https://neet2seat.com/news/andhra-pradesh-neet-ug-2026-phase-2-web-options-management-quota-allotment) (1,629). Each college's Round 1 count fits its seats, apart from Paderu (71 against 50) |
 
 **Check what a state's "rank" means before using it.** Gujarat's last-merit files use its own state merit numbers, and Tamil Nadu's and Kerala's lists use a state
 rank. The site compares against All India ranks, so those numbers can't be used directly. Gujarat's lists also have an All India rank column, which is what we use.
+
+Tamil Nadu and Kerala counsel on their own ranks, so the predictor asks for that rank when either state is chosen, and those rows carry `rankType: "state"`. Their `category` is always `state_only`, so they can't mix with All India figures.
+
+Tamil Nadu's government lists show each student's community and not the seat they took. Our closing rank for BC, for example, is the last BC student to get a seat, whichever seat that was. The OC figure is the last OC student, and neet2seat's Open figure is a little different (Madras Round 3: its 152 against our Round 2 143). Its management quota has a separate rank list, which the form says. A1 (ESIC), IRT ward, CMC 20%, minority, sports, disability and ex-serviceman seats are kept as `special`.
+
+Kerala's own last rank table counts `SM-EZ` and `FL-EZ` as Ezhava, and likewise for other communities, so we do too. The prospectus confirms the 13 codes we offer. `AM`, `AC`, `MM`, `NC` and `NM` aren't explained in what we've read, so they stay `special`, as do `PD`, `XS` and other sub-quotas. Kerala's Phase 2 last rank table is cumulative, so only Phase 1 is compared.
+
+Punjab's Round 1 list has roll numbers and no rank, so the rank comes from its merit lists. Himachal Pradesh does the same with application numbers. Those numbers are only used
+while the extractors run and are never saved. Punjab's "Open Quota" seats are kept as `special`, because we haven't confirmed who they're for: its notification is a scanned file. In Madhya Pradesh, we read
+`X` in a seat code as the ordinary seat, because `GS`, `PH`, `SN` and `FF` look like sub-quotas. Those four stay `special`. This reading isn't confirmed by its rule book yet.
 
 In Maharashtra, the list's legend gives W as women's quota, EMD and EMR as earmarking donor and receiver, HA as hilly area, D1 to D3 as defence and I.Q. as
 institute quota. EMD and EMR seats stay in their category, which is our reading. `MKB` isn't in the legend, so it's kept as `special`. Colleges with no rows,
@@ -147,7 +162,7 @@ NMC has since revised that to [1,40,664](https://medicaldialogues.in/amp/news/ed
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana and Maharashtra only. There are no PG cutoffs or real fees.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu and Kerala only. There are no PG cutoffs or real fees.
 - Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
 - Many of the 845 UG colleges still have no cutoffs. Most fill seats only through states we haven't added yet.
 - Tamil Nadu and Kerala publish lists using their own state rank, with no All India rank, so they can't feed the site's predictor as it works today.
