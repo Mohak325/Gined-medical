@@ -22,6 +22,13 @@ const AP_OPTIONS = Object.entries(AP_REGIONS).flatMap(([region, regionLabel]) =>
   ])
 );
 
+// Telangana's categories, each with general and female seats.
+const TG_CATEGORIES = { OPEN: "Open", EWS: "EWS", BCA: "BC-A", BCB: "BC-B", BCC: "BC-C", BCD: "BC-D", BCE: "BC-E", SC1: "SC group 1", SC2: "SC group 2", SC3: "SC group 3", ST: "ST", MIN: "Minority" };
+const TG_OPTIONS = Object.entries(TG_CATEGORIES).flatMap(([code, label]) => [
+  { code: `${code}-G`, label },
+  { code: `${code}-F`, label: `${label}, female seat` },
+]);
+
 export const STATES = {
   BR: {
     name: "Bihar",
@@ -86,6 +93,37 @@ export const STATES = {
       if (special.length > 0) return { code: rest.join("-"), seatType: "government", quota: "special", category: "state_only" };
       const code = `${region}-${category}-${gender}`;
       return { code, seatType: "government", quota: "state", category: code === "UR-OC-G" ? "general" : "state_only" };
+    },
+  },
+
+  TG: {
+    name: "Telangana",
+    authority: "KNRUHS (Kaloji Narayana Rao University of Health Sciences)",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      ...TG_OPTIONS,
+      { code: "MGMT-LOCAL", label: "Management quota, category B, local" },
+      { code: "MGMT-OPEN", label: "Management quota, category B, unreserved" },
+    ],
+    map(row, source) {
+      // Each seat tag ends in its phase. Later lists repeat earlier phases' seats.
+      const parts = row.category.split("-");
+      const phase = parts.pop();
+      if (phase !== `P${source.round}`) return null;
+      if (source.quota === "MQ") {
+        const [kind, area] = parts;
+        if (kind === "NRI") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+        if (kind !== "CTB" || !["LOC", "UNR"].includes(area)) throw new Error(`Unknown Telangana management seat "${row.category}".`);
+        return { code: area === "LOC" ? "MGMT-LOCAL" : "MGMT-OPEN", seatType: "others", quota: "state", category: "state_only" };
+      }
+      const [base, gender] = parts;
+      if (!(base in TG_CATEGORIES) || !["GEN", "FEM"].includes(gender)) throw new Error(`Unknown Telangana seat "${row.category}".`);
+      // MRC and MSM annotate the student's seat. Others, such as PHO, CAP and NCC, have their own rules.
+      const special = parts.slice(2).filter((part) => !["MRC", "MSM"].includes(part));
+      if (special.length > 0) return { code: parts.join("-"), seatType: "government", quota: "special", category: "state_only" };
+      const code = `${base}-${gender === "FEM" ? "F" : "G"}`;
+      const site = { "OPEN-G": "general", "ST-G": "st", "EWS-G": "ews" }[code] ?? "state_only";
+      return { code, seatType: "government", quota: "state", category: site };
     },
   },
 

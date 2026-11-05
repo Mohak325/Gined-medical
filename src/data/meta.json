@@ -13,7 +13,8 @@
     "CG",
     "GJ",
     "KA",
-    "RJ"
+    "RJ",
+    "TG"
   ],
   "stateOptions": {
     "BR": [
@@ -368,6 +369,112 @@
         "label": "Management quota, category B2"
       }
     ],
+    "TG": [
+      {
+        "code": "OPEN-G",
+        "label": "Open"
+      },
+      {
+        "code": "OPEN-F",
+        "label": "Open, female seat"
+      },
+      {
+        "code": "EWS-G",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-F",
+        "label": "EWS, female seat"
+      },
+      {
+        "code": "BCA-G",
+        "label": "BC-A"
+      },
+      {
+        "code": "BCA-F",
+        "label": "BC-A, female seat"
+      },
+      {
+        "code": "BCB-G",
+        "label": "BC-B"
+      },
+      {
+        "code": "BCB-F",
+        "label": "BC-B, female seat"
+      },
+      {
+        "code": "BCC-G",
+        "label": "BC-C"
+      },
+      {
+        "code": "BCC-F",
+        "label": "BC-C, female seat"
+      },
+      {
+        "code": "BCD-G",
+        "label": "BC-D"
+      },
+      {
+        "code": "BCD-F",
+        "label": "BC-D, female seat"
+      },
+      {
+        "code": "BCE-G",
+        "label": "BC-E"
+      },
+      {
+        "code": "BCE-F",
+        "label": "BC-E, female seat"
+      },
+      {
+        "code": "SC1-G",
+        "label": "SC group 1"
+      },
+      {
+        "code": "SC1-F",
+        "label": "SC group 1, female seat"
+      },
+      {
+        "code": "SC2-G",
+        "label": "SC group 2"
+      },
+      {
+        "code": "SC2-F",
+        "label": "SC group 2, female seat"
+      },
+      {
+        "code": "SC3-G",
+        "label": "SC group 3"
+      },
+      {
+        "code": "SC3-F",
+        "label": "SC group 3, female seat"
+      },
+      {
+        "code": "ST-G",
+        "label": "ST"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, female seat"
+      },
+      {
+        "code": "MIN-G",
+        "label": "Minority"
+      },
+      {
+        "code": "MIN-F",
+        "label": "Minority, female seat"
+      },
+      {
+        "code": "MGMT-LOCAL",
+        "label": "Management quota, category B, local"
+      },
+      {
+        "code": "MGMT-OPEN",
+        "label": "Management quota, category B, unreserved"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -503,5 +610,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 641
+  "collegesWithCutoffs": 669
 }
