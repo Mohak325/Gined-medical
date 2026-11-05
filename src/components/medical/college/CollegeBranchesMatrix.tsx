@@ -36,7 +36,7 @@ export default function CollegeBranchesMatrix({ courses, cutoffs }: CollegeBranc
                 // Find the benchmark cutoff (General, AIQ, Round 1, latest year)
                 // If not AIQ, we fallback to whatever is available by sorting
                 // Quotas with their own eligibility rules are never used as the benchmark.
-                const quotaOrder = ["aiq", "deemed", "central"];
+                const quotaOrder = ["aiq", "deemed", "central", "state"];
                 const benchmark = cutoffs
                   .filter(c => c.course === course.course && c.category === "general" && c.round === 1 && quotaOrder.includes(c.quota))
                   .sort((a, b) => b.year - a.year || quotaOrder.indexOf(a.quota) - quotaOrder.indexOf(b.quota))[0];

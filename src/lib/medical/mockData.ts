@@ -41,14 +41,17 @@ export interface CutoffEntry {
   track: "ug" | "pg";
   course: string;
   /** "special" quotas have their own eligibility rules and are left out of predictions. */
-  quota: "aiq" | "state" | "deemed" | "central" | "special" | "nri";
-  category: string; // general, obc, sc, st, ews, or the same with _pwd
+  quota: "aiq" | "state" | "deemed" | "central" | "special" | "nri" | "management";
+  category: string; // general, obc, sc, st, ews, the same with _pwd, or state_only for a state's own codes
   round: 1 | 2 | 3;
   year: number;
   openingRank: number;
   closingRank: number;
   allotted?: number;
   quotaDetail?: string; // The quota label used by the source
+  state?: string; // State code, for state counselling
+  seatType?: "government" | "private" | "nri" | "others"; // The state's seat type
+  stateCategory?: string; // The state's own seat code, e.g. "2AG"
 }
 
 export interface SeatEntry {

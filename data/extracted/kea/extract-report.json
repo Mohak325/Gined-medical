@@ -1,0 +1,127 @@
+{
+  "2025-r1": {
+    "pages": 391,
+    "written": 8321,
+    "rejected": 0,
+    "lastRank": 1300799.0,
+    "lastSno": 8321,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "": 8321
+    },
+    "rejectSamples": []
+  },
+  "2025-r2": {
+    "pages": 568,
+    "written": 9958,
+    "rejected": 0,
+    "lastRank": 1319086.0,
+    "lastSno": 9958,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Allotted": 8253,
+      "Reproted": 1704,
+      "Allottmen t Result is subject to the final result in the SLP NO 21313/20 25": 1
+    },
+    "rejectSamples": []
+  },
+  "2025-r3": {
+    "pages": 67,
+    "written": 1080,
+    "rejected": 0,
+    "lastRank": 1310859.0,
+    "lastSno": 1080,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Allotted": 1080
+    },
+    "rejectSamples": []
+  },
+  "2025-stray": {
+    "pages": 5,
+    "written": 73,
+    "rejected": 0,
+    "lastRank": 1299312.0,
+    "lastSno": 73,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Allotted": 73
+    },
+    "rejectSamples": []
+  },
+  "2026-r1": {
+    "pages": 617,
+    "written": 11875,
+    "rejected": 0,
+    "lastRank": 1186487.0,
+    "lastSno": 11875,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Allotted": 11875
+    },
+    "rejectSamples": []
+  },
+  "2026-r2": {
+    "pages": 598,
+    "written": 11551,
+    "rejected": 0,
+    "lastRank": 1192844.0,
+    "lastSno": 11551,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Allotted": 8772,
+      "Round-1 Reported": 2779
+    },
+    "rejectSamples": []
+  },
+  "2026-r3": {
+    "pages": 272,
+    "written": 5032,
+    "rejected": 0,
+    "lastRank": 1192782.0,
+    "lastSno": 5032,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "Not Upgraded": 3284,
+      "Upgraded": 975,
+      "Newly Allotted": 773
+    },
+    "rejectSamples": []
+  },
+  "2026-stray": {
+    "pages": 20,
+    "written": 367,
+    "rejected": 0,
+    "lastRank": 1194070.0,
+    "lastSno": 367,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "statuses": {
+      "ALLOTTED": 367
+    },
+    "rejectSamples": []
+  }
+}

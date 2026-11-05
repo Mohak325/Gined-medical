@@ -29,9 +29,20 @@ export default function ResultsClient() {
   const parsed = CalculatorQuerySchema.safeParse(rawParams);
   const query = parsed.success ? parsed.data : CalculatorQuerySchema.parse({});
 
+  // State counselling uses each state's own seat codes, and we only hold some states.
+  const isState = query.quota === "state";
+  const stateHasData = isState && !!query.state && meta.stateCutoffs.includes(query.state);
+  const stateCategory = stateHasData ? (query.stateCategory ?? "GM") : undefined;
+
   useEffect(() => {
     let mounted = true;
     if (!query.rank) {
+      setLoading(false);
+      return;
+    }
+
+    if (isState && !stateHasData) {
+      setCutoffs([]);
       setLoading(false);
       return;
     }
@@ -46,7 +57,7 @@ export default function ResultsClient() {
       getCutoffs({
         track: query.track,
         quota: query.quota,
-        category: query.category,
+        ...(isState ? { state: query.state, stateCategory } : { category: query.category }),
         course: "MBBS",
         round: 1, // Only consider round 1 for initial prediction
         year: meta.cutoffYear
@@ -59,7 +70,7 @@ export default function ResultsClient() {
       }
     });
     return () => { mounted = false; };
-  }, [query.rank, query.track, query.state, query.type, query.quota, query.category]);
+  }, [query.rank, query.track, query.state, query.type, query.quota, query.category, isState, stateHasData, stateCategory]);
 
   // Compute Results
   const allResults = useMemo(() => {
@@ -142,10 +153,12 @@ export default function ResultsClient() {
     return (
       <EmptyState
         icon={<SearchX className="w-12 h-12" />}
-        title={query.quota === "state" ? "State-quota cutoffs aren't available yet" : "No matches found"}
-        description={query.quota === "state"
-          ? "We haven't collected state counselling results yet, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
-          : "We couldn't find any colleges matching your criteria. Try a different quota or category."}
+        title={isState && !stateHasData ? "We don't have this state's cutoffs yet" : "No matches found"}
+        description={isState && !stateHasData
+          ? "So far we've collected state counselling results for Karnataka only, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
+          : isState
+            ? `No seats were allotted under Karnataka code ${stateCategory} in ${meta.cutoffYear} Round 1. Try a different category or sub-quota.`
+            : "We couldn't find any colleges matching your criteria. Try a different quota or category."}
         actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
       />
     );
@@ -171,6 +184,7 @@ export default function ResultsClient() {
               Based on {meta.cutoffYear} Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
+              {stateCategory && ` These are Karnataka counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility in KEA's information bulletin.`}
             </p>
           </div>
         </div>

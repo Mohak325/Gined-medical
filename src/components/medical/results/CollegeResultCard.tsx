@@ -111,7 +111,7 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
             {formatRank(cutoff.closingRank)}
           </div>
           <div className="flex sm:justify-end">
-            <ProvenanceLabel quota={cutoff.quota.toUpperCase()} year={cutoff.year} round={`Round ${cutoff.round}`} />
+            <ProvenanceLabel quota={cutoff.state ? `${cutoff.state} ${cutoff.stateCategory}` : cutoff.quota.toUpperCase()} year={cutoff.year} round={`Round ${cutoff.round}`} />
           </div>
         </div>
 

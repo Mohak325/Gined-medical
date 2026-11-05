@@ -17,6 +17,7 @@ export const CalculatorQuerySchema = z.object({
   quota: QuotaSchema.default("aiq"),
   category: CategorySchema.default("general"),
   state: z.string().optional(),     // State code, e.g. "MH"
+  stateCategory: z.string().optional(), // The state's own seat code, e.g. "2AG" in Karnataka
   course: z.string().optional(),    // "mbbs", "bds", or PG specialty
   type: CollegeTypeSchema.default("all"),
 });

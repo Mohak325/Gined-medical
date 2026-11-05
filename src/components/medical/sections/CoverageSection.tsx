@@ -28,7 +28,7 @@ export default function CoverageSection({ id }: { id: string }) {
             {meta.collegeCount} Colleges. One Searchable Directory.
           </h2>
           <p className="text-body-large text-text-on-dark/80 mb-12">
-            Browse medical colleges across India and check your rank against {meta.cutoffYear} All India Quota cutoffs. State-quota cutoffs are still to come.
+            Browse medical colleges across India and check your rank against {meta.cutoffYear} All India Quota cutoffs. State-quota cutoffs cover Karnataka so far, with more states to come.
           </p>
 
           <div className="grid grid-cols-2 gap-8">

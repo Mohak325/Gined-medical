@@ -16,6 +16,7 @@ to update it yourself. No prior knowledge assumed.
 | **Allotment list** | The published list of which rank got which seat in a round. |
 | **Closing rank (cutoff)** | The highest-numbered rank that got a seat in a group. We calculate it from allotment lists. |
 | **Seat matrix** | How many seats each college has, split by quota. |
+| **KEA** | Karnataka Examinations Authority. Runs Karnataka's state counselling. |
 
 A cutoff only means something with all of its context: **college + course + quota +
 category + round + year**. "Closing rank 695" alone tells you nothing.
@@ -117,6 +118,21 @@ Two checks caught mistakes the script made:
   Mumbai.
 - **The source can be wrong.** The Pune and Sangli PINs for Bharati Vidyapeeth are swapped, so
   trusting them would have swapped those colleges' cutoffs.
+
+## Adding another state
+
+Every state publishes differently, so start by reading before writing any code.
+
+1. **Find the state's authority.** Look for its final allotment lists, by round, for at least two years.
+2. **Read its bulletin first.** Note what each seat type and category code means, and who is eligible. Don't assume
+   a state's categories match the national ones. Karnataka's `2A` isn't simply "OBC".
+3. **Check the layout.** Do the files hold ranks, or marks? All India ranks, or a state rank? Do they include students
+   who only kept an earlier seat? Is there a stable college code to match on? Karnataka's is, so `data/curated/kea-college-codes.json`
+   is a short list checked by hand.
+4. **Write three pieces,** copying the Karnataka ones: an extractor (`kea_extract.py`), a label table (`kea-lib.mjs`) and a
+   college list. Add the rounds to `scripts/data/build.mjs`.
+5. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work.
+6. **Add the state to the predictor,** with its own categories, as `src/lib/medical/karnataka.ts` does.
 
 ## Five habits that prevent bad data
 

@@ -65,21 +65,32 @@ export default async function CollegeDetailPage({
                 const hasAiqGen = cutoffs.some(c => c.quota === "aiq" && c.category === "general");
                 
                 if (!hasAiqGen) {
+                  // A state's own codes have several rows per year, so they can't draw one line.
                   const counts: Record<string, number> = {};
-                  cutoffs.forEach(c => {
-                    const key = `${c.quota}_${c.category}`;
+                  cutoffs.filter(c => c.category !== "state_only").forEach(c => {
+                    const key = `${c.quota}|${c.category}`;
                     counts[key] = (counts[key] || 0) + 1;
                   });
-                  
-                  const bestKey = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
-                  [bestQuota, bestCategory] = bestKey.split("_");
+
+                  const keys = Object.keys(counts);
+                  if (keys.length === 0) {
+                    return (
+                      <p className="text-small text-text-muted">
+                        This college only has seats with their own category codes, so there&apos;s no single trend to show.
+                      </p>
+                    );
+                  }
+                  const bestKey = keys.includes("state|general")
+                    ? "state|general"
+                    : keys.reduce((a, b) => counts[a] > counts[b] ? a : b);
+                  [bestQuota, bestCategory] = bestKey.split("|");
                 }
 
                 return (
                   <>
                     <CutoffTrendChart cutoffs={cutoffs} category={bestCategory} quota={bestQuota} />
                     <p className="text-small text-text-muted mt-4">
-                      Note: This chart shows Round 1 {bestQuota.toUpperCase()} {bestCategory.toUpperCase()} category closing ranks. A lower rank number indicates higher competition.
+                      Note: This chart shows Round 1 {bestQuota === "state" ? "state counselling" : bestQuota.toUpperCase()} {bestCategory.toUpperCase()} category closing ranks. A lower rank number indicates higher competition.
                     </p>
                   </>
                 );

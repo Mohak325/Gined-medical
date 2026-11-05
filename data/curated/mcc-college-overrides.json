@@ -72,7 +72,7 @@
   {"pattern":"^CHHATTISGARH INSTITUTE OF MEDICAL SCIENCES, BILASP,GOND","id":"ug_cg003g1"},
   {"pattern":"^Chhattisgarh Institute of Medical Sciences, Bilaspur,GO","id":"ug_cg003g1"},
   {"pattern":"^Chhindwara Institute of Medical Sciences,Teachers Colon","id":"ug_mp005g1"},
-  {"pattern":"^CHIKKABALLAPURA INSTITUTE OF MEDICAL SCIENCES, KARNATAK","id":"ug_ka006g1"},
+  {"pattern":"^CHIKKABALLAPURA INSTITUTE OF MEDICAL SCIENCES, KARNATAK","id":"ug_ka027g1","note":"KEA calls it Nandi Medical College (Chikkaballapura Institute of Medical Sciences)"},
   {"pattern":"^Chikkamagaluru Institute of Medical Sciences, Chikkamag","id":"ug_ka007g1"},
   {"pattern":"^Deben Mahata Government Medical College & Hospital,Vill","id":"ug_wb025g1"},
   {"pattern":"^Dharanidhar Medical College and Hospital \\(previously Go","id":"ug_or002g1"},

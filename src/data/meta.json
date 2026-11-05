@@ -7,9 +7,12 @@
     2025,
     2026
   ],
+  "stateCutoffs": [
+    "KA"
+  ],
   "seatYear": "2026-27",
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 517
+  "collegesWithCutoffs": 554
 }
