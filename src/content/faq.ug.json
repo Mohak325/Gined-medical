@@ -64,13 +64,13 @@
     },
     {
       "question": "How are your confidence labels calculated?",
-      "answer": "Our confidence labels (Safe, Moderate, Ambitious) are calculated by comparing your NEET rank against historical closing ranks for a college-course-category combination over the last 3 years. 'Safe' means your rank is comfortably within the closing rank range across all 3 years. 'Moderate' means you're within range for some years but not all. 'Ambitious' means your rank exceeds the historical closing rank, making admission unlikely but not impossible if cutoffs shift. These labels are indicative, not guarantees — actual cutoffs vary each year based on the candidate pool and seat availability.",
+      "answer": "Our labels compare your NEET rank with a college's 2024 Round 1 closing rank for your quota and category. 'Safe' means your rank is at least 15% better than that closing rank. 'Moderate' means it falls between 15% better and 10% worse. 'Ambitious' means it is 10–35% worse, and anything further is a 'Longshot'. These labels use one year of data and are indicative, not guarantees, because cutoffs change each year with the candidate pool and seat availability.",
       "order": 11,
       "category": "data"
     },
     {
       "question": "Where does your cutoff data come from?",
-      "answer": "Our cutoff data is sourced from officially published results on the MCC website (mcc.nic.in) for AIQ rounds, and from respective state counselling authority websites for state quota rounds. We update the data after each counselling cycle is completed. While we take care to ensure accuracy, we strongly recommend cross-checking any specific figure with the official MCC or state counselling portal before making decisions. All data points on our platform show the source year.",
+      "answer": "Our current cutoff data covers the 2024 counselling cycle and mostly the All India Quota; state-quota coverage is limited. We strongly recommend cross-checking any figure with the official MCC or state counselling portal before making decisions. Results on our platform show the quota, round and year they are based on.",
       "order": 12,
       "category": "data"
     }

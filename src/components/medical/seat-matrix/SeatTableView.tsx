@@ -39,21 +39,8 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
         header: "Course",
         cell: (info) => <span className="text-small font-medium text-text-main">{info.getValue()}</span>,
       }),
-      columnHelper.accessor("quota", {
-        header: "Quota / Cat",
-        cell: (info) => (
-          <div className="flex items-center gap-2">
-            <span className="inline-flex px-2 py-1 rounded-[var(--radius-sm)] bg-gold/10 text-gold-deep text-micro font-bold uppercase tracking-wider">
-              {info.getValue()}
-            </span>
-            <span className="inline-flex px-2 py-1 rounded-[var(--radius-sm)] bg-paper-dim border border-hairline/50 text-text-muted text-micro font-bold uppercase tracking-wider">
-              {info.row.original.category}
-            </span>
-          </div>
-        ),
-      }),
       columnHelper.accessor("seats", {
-        header: "Available Seats",
+        header: "Total Seats",
         cell: (info) => {
           const val = info.getValue();
           const percentage = (val / maxSeats) * 100;
@@ -89,7 +76,7 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
   return (
     <div className="border border-hairline rounded-[var(--radius-lg)] overflow-hidden bg-paper-bright shadow-card">
       <div className="overflow-x-auto">
-        <table className="w-full text-left border-collapse min-w-[700px]">
+        <table className="w-full text-left border-collapse min-w-[560px]">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id} className="bg-paper border-b border-hairline/80">
@@ -117,8 +104,8 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.3, delay: i * 0.02 }}
-                  key={row.original.collegeId + row.original.course + row.original.quota + row.original.category}
+                  transition={{ duration: 0.3, delay: Math.min(i, 20) * 0.02 }}
+                  key={row.original.collegeId + row.original.course}
                   className="border-b border-hairline/60 last:border-0 hover:bg-gold/5 transition-colors group"
                 >
                   {row.getVisibleCells().map((cell) => (

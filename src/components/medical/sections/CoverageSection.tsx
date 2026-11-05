@@ -24,20 +24,20 @@ export default function CoverageSection({ id }: { id: string }) {
             National Coverage
           </div>
           <h2 className="text-h2 text-text-on-dark mb-6">
-            Every College. Every State. Every Category.
+            926 Colleges. One Searchable Directory.
           </h2>
           <p className="text-body-large text-text-on-dark/80 mb-12">
-            Our database tracks every NMC-recognized institution across India, bringing AIQ, State, Deemed, and Central counselling quotas into a single unified platform.
+            Browse medical colleges across India and check your rank against 2024 cutoffs, which mostly cover the All India Quota. State-quota coverage is still limited.
           </p>
 
           <div className="grid grid-cols-2 gap-8">
             <div className="border-l border-white/20 pl-6">
-              <div className="text-display text-white mb-2 font-tabular-nums">680+</div>
-              <div className="text-small text-white/60">Medical Colleges</div>
+              <div className="text-display text-white mb-2 font-tabular-nums">926</div>
+              <div className="text-small text-white/60">Colleges Listed</div>
             </div>
             <div className="border-l border-white/20 pl-6">
-              <div className="text-display text-white mb-2 font-tabular-nums">1.1L+</div>
-              <div className="text-small text-white/60">Total MBBS Seats</div>
+              <div className="text-display text-white mb-2 font-tabular-nums">1.39L</div>
+              <div className="text-small text-white/60">UG Seats Listed</div>
             </div>
           </div>
         </div>

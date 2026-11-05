@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getCompareColleges } from "@/app/medical/compare/actions";
@@ -8,21 +8,33 @@ import { type College } from "@/lib/medical/mockData";
 import { CompareQuerySchema } from "@/lib/medical/schemas";
 import { useCompare } from "@/lib/medical/CompareProvider";
 import EmptyState from "@/components/medical/shared/EmptyState";
-import { Scale, Check, X, Building2 } from "lucide-react";
+import { Scale, X, Building2 } from "lucide-react";
 import { formatIndian } from "@/lib/medical/format";
 
 export default function CompareClient() {
   const searchParams = useSearchParams();
   const rawParams = Object.fromEntries(searchParams.entries());
   const parsed = CompareQuerySchema.safeParse(rawParams);
-  const ids = parsed.success ? parsed.data.ids : [];
+  const urlIds = parsed.success ? parsed.data.ids : [];
 
-  const { remove } = useCompare();
+  const router = useRouter();
+  const { ids: trayIds, remove } = useCompare();
+  // The nav link has no ids in its URL, so fall back to the compare tray.
+  const ids = urlIds.length > 0 ? urlIds : trayIds;
+  const idsKey = ids.join(",");
+
+  const handleRemove = (id: string) => {
+    remove(id);
+    const remaining = ids.filter(i => i !== id);
+    router.replace(remaining.length > 0 ? `/medical/compare?ids=${remaining.join(",")}` : "/medical/compare");
+  };
+
   const [colleges, setColleges] = useState<College[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (ids.length === 0) {
+      setColleges([]);
       setLoading(false);
       return;
     }
@@ -37,7 +49,7 @@ export default function CompareClient() {
     });
 
     return () => { mounted = false; };
-  }, [searchParams]);
+  }, [idsKey]);
 
   if (loading) {
     return (
@@ -70,8 +82,8 @@ export default function CompareClient() {
               {colleges.map(c => (
                 <th key={c.id} className="p-6 w-1/4 border-r border-hairline last:border-r-0 relative group">
                   <button 
-                    onClick={() => remove(c.id)}
-                    className="absolute top-4 right-4 text-text-muted hover:text-ambitious opacity-0 group-hover:opacity-100 transition-opacity"
+                    onClick={() => handleRemove(c.id)}
+                    className="absolute top-4 right-4 text-text-muted hover:text-ambitious transition-colors"
                     title="Remove"
                   >
                     <X className="w-4 h-4" />
@@ -111,7 +123,7 @@ export default function CompareClient() {
               <td className="p-6 border-r border-hairline bg-paper-dim/30 font-medium text-text-main">Established</td>
               {colleges.map(c => (
                 <td key={c.id} className="p-6 border-r border-hairline last:border-r-0 text-text-muted tabular-nums">
-                  {c.established}
+                  {c.established || "—"}
                 </td>
               ))}
               {Array.from({ length: 3 - colleges.length }).map((_, i) => (
@@ -120,44 +132,14 @@ export default function CompareClient() {
             </tr>
 
             <tr className="border-b border-hairline">
-              <td className="p-6 border-r border-hairline bg-paper-dim/30 font-medium text-text-main">Hospital Beds</td>
+              <td className="p-6 border-r border-hairline bg-paper-dim/30 font-medium text-text-main">Total Seats</td>
               {colleges.map(c => (
                 <td key={c.id} className="p-6 border-r border-hairline last:border-r-0 text-text-muted tabular-nums">
-                  {formatIndian(c.hospitalBeds)}
+                  {c.totalSeats ? formatIndian(c.totalSeats) : "—"}
                 </td>
               ))}
               {Array.from({ length: 3 - colleges.length }).map((_, i) => (
-                <td key={`empty-beds-${i}`} className="p-6 border-r border-hairline last:border-r-0 bg-paper-dim/10"></td>
-              ))}
-            </tr>
-
-            <tr className="border-b border-hairline">
-              <td className="p-6 border-r border-hairline bg-paper-dim/30 font-medium text-text-main">Campus Size</td>
-              {colleges.map(c => (
-                <td key={c.id} className="p-6 border-r border-hairline last:border-r-0 text-text-muted">
-                  {c.campusSize}
-                </td>
-              ))}
-              {Array.from({ length: 3 - colleges.length }).map((_, i) => (
-                <td key={`empty-size-${i}`} className="p-6 border-r border-hairline last:border-r-0 bg-paper-dim/10"></td>
-              ))}
-            </tr>
-
-            <tr className="border-b border-hairline">
-              <td className="p-6 border-r border-hairline bg-paper-dim/30 font-medium text-text-main">NMC Recognized</td>
-              {colleges.map(c => (
-                <td key={c.id} className="p-6 border-r border-hairline last:border-r-0">
-                  {c.nmcRecognized ? (
-                    <span className="flex items-center gap-1.5 text-safe text-small">
-                      <Check className="w-4 h-4" /> Yes
-                    </span>
-                  ) : (
-                    <span className="text-text-muted">—</span>
-                  )}
-                </td>
-              ))}
-              {Array.from({ length: 3 - colleges.length }).map((_, i) => (
-                <td key={`empty-nmc-${i}`} className="p-6 border-r border-hairline last:border-r-0 bg-paper-dim/10"></td>
+                <td key={`empty-seats-${i}`} className="p-6 border-r border-hairline last:border-r-0 bg-paper-dim/10"></td>
               ))}
             </tr>
 

@@ -12,8 +12,8 @@ export default function TrustBar({ id }: { id: string }) {
               <ShieldCheck className="w-6 h-6 text-gold" />
             </div>
             <div>
-              <div className="text-small font-semibold text-white">Verified Data</div>
-              <div className="text-micro text-white/60">Updated for 2025 Cycle</div>
+              <div className="text-small font-semibold text-white">Cutoff Data</div>
+              <div className="text-micro text-white/60">From the 2024 counselling cycle</div>
             </div>
           </div>
 

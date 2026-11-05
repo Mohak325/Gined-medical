@@ -34,3 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Booking requests
+
+The booking form sends each request as a JSON POST to the webhook in `LEADS_WEBHOOK_URL`, set in `.env.local` and in the Vercel project settings. If it is missing or the webhook fails, the form shows an error instead of confirming the request.

@@ -7,10 +7,31 @@ import { type College, type SeatEntry, INDIA_STATES } from "@/lib/medical/mockDa
 import { SeatMatrixQuerySchema } from "@/lib/medical/schemas";
 import SeatTableView from "@/components/medical/seat-matrix/SeatTableView";
 import EmptyState from "@/components/medical/shared/EmptyState";
+import ShowMoreButton from "@/components/medical/shared/ShowMoreButton";
 import { Search, SlidersHorizontal, Users } from "lucide-react";
 import { useTrack } from "@/lib/medical/TrackProvider";
 
 type SeatWithCollege = SeatEntry & { college: College };
+
+const PAGE_SIZE = 50;
+
+/**
+ * The source data has no real quota or category split: every record is labelled
+ * state/general. Combine each college's records into one total per course.
+ */
+function totalByCourse(seats: SeatWithCollege[]): SeatWithCollege[] {
+  const totals = new Map<string, SeatWithCollege>();
+  for (const seat of seats) {
+    const key = `${seat.collegeId}|${seat.course}`;
+    const existing = totals.get(key);
+    if (existing) {
+      existing.seats += seat.seats;
+    } else {
+      totals.set(key, { ...seat });
+    }
+  }
+  return [...totals.values()];
+}
 
 export default function SeatMatrixClient() {
   const router = useRouter();
@@ -24,6 +45,8 @@ export default function SeatMatrixClient() {
 
   const [seats, setSeats] = useState<SeatWithCollege[]>([]);
   const [loading, setLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   // Sync track with URL on load
   useEffect(() => {
@@ -35,9 +58,10 @@ export default function SeatMatrixClient() {
   useEffect(() => {
     let mounted = true;
     setLoading(true);
-    getSeats({ ...params, track }).then((data) => {
+    setVisibleCount(PAGE_SIZE);
+    getSeats({ ...params, track, quota: "all", category: "all" }).then((data) => {
       if (mounted) {
-        setSeats(data);
+        setSeats(totalByCourse(data));
         setLoading(false);
       }
     });
@@ -56,12 +80,12 @@ export default function SeatMatrixClient() {
     router.push(`${pathname}?${current.toString()}`);
   }, [searchParams, pathname, router]);
 
-  const hasFilters = params.state || params.quota !== "aiq" || params.category !== "general" || params.search;
+  const hasFilters = params.state || params.search;
 
   return (
     <div className="flex flex-col lg:flex-row gap-8">
       {/* Sidebar Filters */}
-      <aside className="hidden lg:block w-72 shrink-0">
+      <aside className={`${filtersOpen ? "block" : "hidden"} lg:block w-full lg:w-72 shrink-0`}>
         <div className="bg-paper-bright/80 backdrop-blur-md border border-hairline rounded-[var(--radius-lg)] p-6 sticky top-28 shadow-card">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-hairline/60">
             <h3 className="font-semibold text-text-main flex items-center gap-2">
@@ -89,47 +113,6 @@ export default function SeatMatrixClient() {
                   value={params.search || ""}
                   onChange={(e) => updateQuery({ search: e.target.value })}
                 />
-              </div>
-            </div>
-
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Quota</label>
-              <div className="relative">
-                <select 
-                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
-                  value={params.quota}
-                  onChange={(e) => updateQuery({ quota: e.target.value })}
-                >
-                  <option value="all">All Quotas</option>
-                  <option value="aiq">All India Quota (15%)</option>
-                  <option value="state">State Quota (85%)</option>
-                  <option value="deemed">Deemed</option>
-                  <option value="central">Central</option>
-                </select>
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Category</label>
-              <div className="relative">
-                <select 
-                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
-                  value={params.category}
-                  onChange={(e) => updateQuery({ category: e.target.value })}
-                >
-                  <option value="all">All Categories</option>
-                  <option value="general">General (UR)</option>
-                  <option value="obc">OBC-NCL</option>
-                  <option value="sc">SC</option>
-                  <option value="st">ST</option>
-                  <option value="ews">EWS</option>
-                </select>
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
               </div>
             </div>
 
@@ -164,10 +147,10 @@ export default function SeatMatrixClient() {
                 <div className="w-3 h-3 rounded-full border-2 border-gold border-t-transparent animate-spin" /> Fetching allocations...
               </span>
             ) : (
-              <span>Showing seat distribution for <strong className="text-gold font-bold">{seats.length}</strong> matching rules</span>
+              <span>Found <strong className="text-gold font-bold">{seats.length.toLocaleString("en-IN")}</strong> college and course entries</span>
             )}
           </div>
-          <button className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform w-full sm:w-auto">
+          <button type="button" onClick={() => setFiltersOpen(open => !open)} aria-expanded={filtersOpen} className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform w-full sm:w-auto">
             <SlidersHorizontal className="w-4 h-4 text-gold" /> Filters
           </button>
         </div>
@@ -181,10 +164,10 @@ export default function SeatMatrixClient() {
           ) : seats.length > 0 ? (
             <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
               {/* Summary Metrics Bar */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="bg-paper-bright border border-hairline rounded-[var(--radius-md)] p-4 shadow-sm flex flex-col items-center text-center justify-center hover:border-gold/30 transition-colors">
                   <div className="text-h3 font-bold text-gold mb-1">
-                    {seats.reduce((sum, s) => sum + s.seats, 0).toLocaleString()}
+                    {seats.reduce((sum, s) => sum + s.seats, 0).toLocaleString("en-IN")}
                   </div>
                   <div className="text-micro uppercase tracking-wider text-text-muted">Total Seats</div>
                 </div>
@@ -200,22 +183,22 @@ export default function SeatMatrixClient() {
                   </div>
                   <div className="text-micro uppercase tracking-wider text-text-muted">Courses</div>
                 </div>
-                <div className="bg-paper-bright border border-hairline rounded-[var(--radius-md)] p-4 shadow-sm flex flex-col items-center text-center justify-center hover:border-gold/30 transition-colors">
-                  <div className="text-h3 font-bold text-text-main mb-1">
-                    {params.quota === "all" ? "All" : params.quota.toUpperCase()}
-                  </div>
-                  <div className="text-micro uppercase tracking-wider text-text-muted">Quota Filter</div>
-                </div>
               </div>
               
-              <SeatTableView seats={seats} />
+              <SeatTableView seats={seats.slice(0, visibleCount)} />
+              <ShowMoreButton
+                shown={Math.min(visibleCount, seats.length)}
+                total={seats.length}
+                noun="entries"
+                onClick={() => setVisibleCount(count => count + PAGE_SIZE)}
+              />
             </div>
           ) : (
             <div className="animate-in fade-in zoom-in-95 duration-500">
               <EmptyState
                 icon={<Users className="w-12 h-12 text-gold/50" />}
                 title="No seats found"
-                description="No seats match your selected quota, category, or state filters."
+                description="No seats match your search or state filter."
                 actions={[{ label: "Reset Filters", href: pathname }]}
               />
             </div>

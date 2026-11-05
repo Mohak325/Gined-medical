@@ -28,7 +28,7 @@ export const DirectoryQuerySchema = z.object({
   type: CollegeTypeSchema.default("all"),
   course: z.string().optional(),
   search: z.string().optional(),
-  sort: z.enum(["name_asc", "name_desc", "established"]).default("name_asc"),
+  sort: z.enum(["name_asc", "name_desc", "established", "nirf_asc"]).default("name_asc"),
 });
 
 // Compare Tray Query Params

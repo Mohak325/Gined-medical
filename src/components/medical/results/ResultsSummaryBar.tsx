@@ -101,7 +101,6 @@ export default function ResultsSummaryBar({
               <option value="confidence_desc">Best Match First</option>
               <option value="cutoff_asc">Highest Cutoff First</option>
               <option value="cutoff_desc">Lowest Cutoff First</option>
-              <option value="fees_asc">Lowest Fees First</option>
             </select>
           </div>
         </div>

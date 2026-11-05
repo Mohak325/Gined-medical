@@ -76,9 +76,11 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
             <MapPin className="w-4 h-4 text-gold/70" />
             {college.city}, {college.state}
           </p>
-          <span className="flex items-center gap-1.5 border-l border-hairline pl-4">
-            <Building2 className="w-4 h-4 text-gold/70" /> Est. {college.established}
-          </span>
+          {college.established > 0 && (
+            <span className="flex items-center gap-1.5 border-l border-hairline pl-4">
+              <Building2 className="w-4 h-4 text-gold/70" /> Est. {college.established}
+            </span>
+          )}
         </div>
 
         {/* Rank Gap Visualizer */}

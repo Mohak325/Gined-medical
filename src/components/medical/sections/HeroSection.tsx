@@ -37,13 +37,13 @@ function HeroStatic({ id }: { id: string }) {
       <div className="relative z-10 max-w-ledger mx-auto px-6 md:px-12 w-full">
         <div className="mb-12">
           <div className="text-small text-gold tracking-[0.2em] uppercase mb-4 font-semibold">
-            Medical Counselling 2025
+            NEET Medical Counselling
           </div>
           <h1 className="text-display text-text-on-dark mb-6 max-w-5xl">
             <BlurText text="Navigate the medical admission maze with absolute clarity." delay={0.1} />
           </h1>
           <p className="text-body-large text-text-on-dark/80 max-w-2xl mb-8">
-            Data-backed cutoff predictions, complete fee structures, and transparent seat matrices for every NMC-recognized institution in India.
+            Cutoff-based college shortlists, seat counts and indicative fees for 926 medical colleges across India.
           </p>
 
           <TrackToggle />
