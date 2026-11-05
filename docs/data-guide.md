@@ -24,6 +24,7 @@ category + round + year**. "Closing rank 695" alone tells you nothing.
 
 ```
 data/raw/        Original files, exactly as downloaded. Never edit these.
+data/extracted/  Rows taken from MCC's PDFs by a script.
 data/curated/    Facts we added by hand, such as photos and name matches.
       │
       ▼
@@ -65,11 +66,63 @@ git diff --stat src/data
 A small update should cause a small change. If thousands of rows move when you expected
 ten, stop and find out why.
 
+## Adding a new MCC result
+
+MCC publishes each round as a PDF that lists students by rank, with no names. This is how
+one becomes cutoffs on the site. You need Python and `pip install pymupdf` once.
+
+1. **Find the file.** Look under "Current Events" at <https://mcc.nic.in/current-events-ug/>,
+   and under <https://mcc.nic.in/archive-ug/> for older years. Use the one titled "Final", since
+   "Provisional" lists often get revised.
+2. **Record it.** Save the PDF as `data/raw/mcc/pdfs/2026-special.pdf`, using the same naming
+   pattern. Add it to `data/raw/mcc/sources.json`, then to `MCC_ROUNDS` in `scripts/data/build.mjs`.
+   Round 2 and Round 3 PDFs have a different layout from the others, and the script recognises
+   them from `-r2` or `-r3` in the file name.
+3. **Extract the rows:**
+
+```bash
+npm run data:mcc:extract
+```
+
+   The script reports any row it couldn't read. Serial numbers that skip or ranks that go backwards
+   fail the later check. That's how the rank 13767.5 was found: it was at first misread.
+4. **Match the colleges:**
+
+```bash
+npm run data:mcc:match
+```
+
+   Names the script isn't sure of go to `data/curated/mcc-matches-to-review.json`, with its
+   three best guesses. **Don't trust the first guess.** Look the college up, then add a line to
+   `mcc-college-overrides.json`. Use `"id": null` if it isn't on the site. The build stops if a
+   medical college has no decision.
+5. **Build and check**, as described above. A new round should only add rows, so a large change
+   to older rows means something went wrong.
+
+### How a closing rank is calculated
+
+For one college, course, quota, category, round and year, the closing rank is the highest rank
+that received a **new** seat in that round. Students who only kept an earlier seat don't count:
+the 2026 lists include them as "Retained", the 2025 lists leave them out, and skipping them
+makes both years mean the same thing.
+
+The category is the one the seat was allotted under, not the student's own. An OBC student who
+wins an Open seat counts towards the Open closing rank.
+
+### Why college matching needs care
+
+Two checks caught mistakes the script made:
+
+- **Same PIN code doesn't mean same college.** Terna and two other colleges share a PIN in Navi
+  Mumbai.
+- **The source can be wrong.** The Pune and Sangli PINs for Bharati Vidyapeeth are swapped, so
+  trusting them would have swapped those colleges' cutoffs.
+
 ## Five habits that prevent bad data
 
 1. **Keep the original.** Save source files untouched, and record where and when you got them in `data/SOURCES.md`.
 2. **Never assume a year or label.** Prove it by matching a few numbers against an outside source. This project once labelled 2025 cutoffs as 2024 because of one typed-in number.
-3. **Match on IDs, not names.** The same college can appear under several names. Fuzzy name matching gave some colleges another college's cutoffs here. Use a shared ID, or a hand-checked list like `data/curated/cutoff-college-crosswalk.json`.
+3. **Match on IDs, not names.** The same college can appear under several names. Fuzzy name matching gave some colleges another college's cutoffs here. Use a shared ID, or a hand-checked list like `data/curated/mcc-college-overrides.json`.
 4. **Read the labels before merging them.** Children-of-armed-forces seats were once grouped with central quotas, with closing ranks near 6 lakh, which could mislead an ordinary student.
 5. **Turn every bug into a check.** When you find a new kind of error, add a test to `scripts/data/check.mjs` so it can't return quietly.
 
@@ -77,13 +130,12 @@ ten, stop and find out why.
 
 **A college's NIRF rank is wrong, or you've checked a photo.** Edit `data/curated/college-extras.json`, then rebuild. A photo needs a working link and any credit its licence requires.
 
-**The build says a cutoff college has no match.** Find the right college in `colleges_details.json` by city and name, add the pair to `cutoff-college-crosswalk.json`, then rebuild.
+**The build says a college has no match.** Run `npm run data:mcc:match` and work through the review list, as described above.
 
-**The build says there's an unknown quota.** Find out who that quota is for before adding it to the table in `build.mjs`. If it has its own eligibility rules, map it to `special`.
+**The build says there's an unknown quota.** Find out who that quota is for before adding it to the table in `scripts/data/mcc-lib.mjs`. If it has its own eligibility rules, map it to `special`.
 
 **A new source file arrives.** Save it in `data/raw/`, add it to `data/SOURCES.md`, update `build.mjs`, and add spot checks from an independent source.
 
 ## Limits of the current data
 
-`data/SOURCES.md` lists every known gap. The biggest are state-quota cutoffs, more years
-of cutoffs, and real fees.
+`data/SOURCES.md` lists every known gap. The biggest are state-quota cutoffs and real fees.

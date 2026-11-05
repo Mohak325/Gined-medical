@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# MCC's PDFs are large. data/raw/mcc/sources.json records how to download them again.
+/data/raw/mcc/pdfs/

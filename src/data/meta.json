@@ -1,10 +1,15 @@
 {
   "source": "NexDoc",
   "sourceCommit": "b71b933e5b9dbe35c2a2bfe7502049817c843a99",
-  "cutoffYear": 2025,
+  "cutoffSource": "MCC",
+  "cutoffYear": 2026,
+  "cutoffYears": [
+    2025,
+    2026
+  ],
   "seatYear": "2026-27",
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 367
+  "collegesWithCutoffs": 517
 }
