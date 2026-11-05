@@ -40,7 +40,7 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
         cell: (info) => <span className="text-small font-medium text-text-main">{info.getValue()}</span>,
       }),
       columnHelper.accessor("seats", {
-        header: "Total Seats",
+        header: "Seats",
         cell: (info) => {
           const val = info.getValue();
           const percentage = (val / maxSeats) * 100;

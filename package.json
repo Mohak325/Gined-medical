@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:build": "node scripts/data/build.mjs",
+    "data:check": "node scripts/data/check.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

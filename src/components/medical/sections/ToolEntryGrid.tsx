@@ -1,3 +1,4 @@
+import meta from "@/data/meta.json";
 import Link from "next/link";
 import { Search, Map, Scale } from "lucide-react";
 
@@ -5,13 +6,13 @@ export default function ToolEntryGrid({ id }: { id: string }) {
   const tools = [
     {
       title: "All Colleges Directory",
-      desc: "Browse and filter 926 medical colleges.",
+      desc: `Browse and filter ${meta.collegeCount} colleges.`,
       icon: <Search className="w-6 h-6 text-gold" />,
       href: "/medical/colleges",
     },
     {
       title: "Seat Matrix Explorer",
-      desc: "See total UG seat counts by college and course.",
+      desc: `See ${meta.seatYear} seats by college, course and quota.`,
       icon: <Map className="w-6 h-6 text-gold" />,
       href: "/medical/seat-matrix",
     },

@@ -16,8 +16,8 @@ type SeatWithCollege = SeatEntry & { college: College };
 const PAGE_SIZE = 50;
 
 /**
- * The source data has no real quota or category split: every record is labelled
- * state/general. Combine each college's records into one total per course.
+ * Each college has one record per quota. Combine the records left after filtering
+ * into one total per course, so a college appears once in the table.
  */
 function totalByCourse(seats: SeatWithCollege[]): SeatWithCollege[] {
   const totals = new Map<string, SeatWithCollege>();
@@ -59,7 +59,7 @@ export default function SeatMatrixClient() {
     let mounted = true;
     setLoading(true);
     setVisibleCount(PAGE_SIZE);
-    getSeats({ ...params, track, quota: "all", category: "all" }).then((data) => {
+    getSeats({ ...params, track }).then((data) => {
       if (mounted) {
         setSeats(totalByCourse(data));
         setLoading(false);
@@ -80,7 +80,7 @@ export default function SeatMatrixClient() {
     router.push(`${pathname}?${current.toString()}`);
   }, [searchParams, pathname, router]);
 
-  const hasFilters = params.state || params.search;
+  const hasFilters = params.state || params.search || params.quota !== "all";
 
   return (
     <div className="flex flex-col lg:flex-row gap-8">
@@ -113,6 +113,26 @@ export default function SeatMatrixClient() {
                   value={params.search || ""}
                   onChange={(e) => updateQuery({ search: e.target.value })}
                 />
+              </div>
+            </div>
+
+            <div className="group">
+              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Quota</label>
+              <div className="relative">
+                <select
+                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
+                  value={params.quota}
+                  onChange={(e) => updateQuery({ quota: e.target.value })}
+                >
+                  <option value="all">All Quotas</option>
+                  <option value="aiq">All India Quota</option>
+                  <option value="state">State Quota (Competent Authority)</option>
+                  <option value="management">Management Quota</option>
+                  <option value="nri">NRI / Minority Quota</option>
+                </select>
+                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
               </div>
             </div>
 
@@ -198,7 +218,7 @@ export default function SeatMatrixClient() {
               <EmptyState
                 icon={<Users className="w-12 h-12 text-gold/50" />}
                 title="No seats found"
-                description="No seats match your search or state filter."
+                description="No seats match your search, quota, or state filter."
                 actions={[{ label: "Reset Filters", href: pathname }]}
               />
             </div>

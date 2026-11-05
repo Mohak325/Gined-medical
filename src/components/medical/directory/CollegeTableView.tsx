@@ -46,14 +46,6 @@ export default function CollegeTableView({ colleges }: { colleges: College[] }) 
           <span className="text-small text-text-muted">{info.getValue() || "—"}</span>
         ),
       }),
-      columnHelper.accessor("hospitalBeds", {
-        header: "Beds",
-        cell: (info) => (
-          <span className="text-small tabular-nums text-text-muted">
-            {info.getValue() || "—"}
-          </span>
-        ),
-      }),
       columnHelper.display({
         id: "actions",
         header: "",

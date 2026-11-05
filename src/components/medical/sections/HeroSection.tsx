@@ -1,5 +1,6 @@
 "use client";
 
+import meta from "@/data/meta.json";
 import { useCinematicContext } from "@/lib/medical/CinematicProvider";
 import dynamic from "next/dynamic";
 import { BlurText } from "@/components/reactbits/BlurText";
@@ -43,7 +44,7 @@ function HeroStatic({ id }: { id: string }) {
             <BlurText text="Navigate the medical admission maze with absolute clarity." delay={0.1} />
           </h1>
           <p className="text-body-large text-text-on-dark/80 max-w-2xl mb-8">
-            Cutoff-based college shortlists, seat counts and indicative fees for 926 medical colleges across India.
+            Cutoff-based college shortlists, seat counts and indicative fees for {meta.ugCollegeCount} MBBS colleges across India.
           </p>
 
           <TrackToggle />

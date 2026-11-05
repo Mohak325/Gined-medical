@@ -1,47 +1,123 @@
 [
   {
-    "code": "KA",
-    "name": "Karnataka"
-  },
-  {
-    "code": "MH",
-    "name": "Maharashtra"
-  },
-  {
-    "code": "XX",
-    "name": "India"
+    "code": "AN",
+    "name": "Andaman and Nicobar Islands"
   },
   {
     "code": "AP",
     "name": "Andhra Pradesh"
   },
   {
-    "code": "RJ",
-    "name": "Rajasthan"
+    "code": "AR",
+    "name": "Arunachal Pradesh"
   },
   {
-    "code": "PY",
-    "name": "Puducherry"
+    "code": "AS",
+    "name": "Assam"
+  },
+  {
+    "code": "BR",
+    "name": "Bihar"
+  },
+  {
+    "code": "CH",
+    "name": "Chandigarh"
   },
   {
     "code": "CG",
     "name": "Chhattisgarh"
   },
   {
+    "code": "DN",
+    "name": "Dadra and Nagar Haveli and Daman and Diu"
+  },
+  {
+    "code": "DL",
+    "name": "Delhi (NCT)"
+  },
+  {
+    "code": "GA",
+    "name": "Goa"
+  },
+  {
+    "code": "GJ",
+    "name": "Gujarat"
+  },
+  {
+    "code": "HR",
+    "name": "Haryana"
+  },
+  {
+    "code": "HP",
+    "name": "Himachal Pradesh"
+  },
+  {
+    "code": "JK",
+    "name": "Jammu and Kashmir"
+  },
+  {
+    "code": "JH",
+    "name": "Jharkhand"
+  },
+  {
+    "code": "KA",
+    "name": "Karnataka"
+  },
+  {
     "code": "KL",
     "name": "Kerala"
+  },
+  {
+    "code": "MP",
+    "name": "Madhya Pradesh"
+  },
+  {
+    "code": "MH",
+    "name": "Maharashtra"
+  },
+  {
+    "code": "MN",
+    "name": "Manipur"
+  },
+  {
+    "code": "ML",
+    "name": "Meghalaya"
+  },
+  {
+    "code": "MZ",
+    "name": "Mizoram"
+  },
+  {
+    "code": "NL",
+    "name": "Nagaland"
   },
   {
     "code": "OR",
     "name": "Odisha"
   },
   {
+    "code": "PY",
+    "name": "Puducherry"
+  },
+  {
     "code": "PB",
     "name": "Punjab"
   },
   {
-    "code": "HR",
-    "name": "Haryana"
+    "code": "RJ",
+    "name": "Rajasthan"
+  },
+  {
+    "code": "SK",
+    "name": "Sikkim"
+  },
+  {
+    "code": "TN",
+    "name": "Tamil Nadu"
+  },
+  {
+    "code": "TG",
+    "name": "Telangana"
   },
   {
     "code": "TR",
@@ -52,91 +128,11 @@
     "name": "Uttar Pradesh"
   },
   {
-    "code": "WB",
-    "name": "West Bengal"
-  },
-  {
-    "code": "MP",
-    "name": "Madhya Pradesh"
-  },
-  {
-    "code": "TG",
-    "name": "Telangana"
-  },
-  {
-    "code": "HP",
-    "name": "Himachal Pradesh"
-  },
-  {
-    "code": "JH",
-    "name": "Jharkhand"
-  },
-  {
-    "code": "AS",
-    "name": "Assam"
-  },
-  {
-    "code": "TN",
-    "name": "Tamil Nadu"
-  },
-  {
-    "code": "DL",
-    "name": "Delhi (NCT)"
-  },
-  {
-    "code": "BR",
-    "name": "Bihar"
-  },
-  {
-    "code": "GJ",
-    "name": "Gujarat"
-  },
-  {
     "code": "UK",
     "name": "Uttarakhand"
   },
   {
-    "code": "JK",
-    "name": "Jammu and Kashmir"
-  },
-  {
-    "code": "AN",
-    "name": "Andaman and Nicobar Islands"
-  },
-  {
-    "code": "GA",
-    "name": "Goa"
-  },
-  {
-    "code": "CH",
-    "name": "Chandigarh"
-  },
-  {
-    "code": "MN",
-    "name": "Manipur"
-  },
-  {
-    "code": "DH",
-    "name": "Dadra and Nagar Haveli and Daman and Diu"
-  },
-  {
-    "code": "NL",
-    "name": "Nagaland"
-  },
-  {
-    "code": "ML",
-    "name": "Meghalaya"
-  },
-  {
-    "code": "SK",
-    "name": "Sikkim"
-  },
-  {
-    "code": "AR",
-    "name": "Arunachal Pradesh"
-  },
-  {
-    "code": "MZ",
-    "name": "Mizoram"
+    "code": "WB",
+    "name": "West Bengal"
   }
 ]

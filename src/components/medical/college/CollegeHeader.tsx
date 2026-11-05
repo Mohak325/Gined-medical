@@ -1,6 +1,6 @@
 import { type College } from "@/lib/medical/mockData";
 import TypographicFallback from "@/components/medical/shared/TypographicFallback";
-import { Building2, MapPin, Bed, FileText } from "lucide-react";
+import { Building2, MapPin, FileText, GraduationCap, Globe } from "lucide-react";
 
 interface CollegeHeaderProps {
   college: College;
@@ -55,16 +55,6 @@ export default function CollegeHeader({ college }: CollegeHeaderProps) {
                 <span className="text-small text-text-on-dark/90 font-medium">Est. {college.established || "N/A"}</span>
               </div>
               
-              {college.hospitalBeds > 0 && (
-                <>
-                  <div className="w-px h-6 bg-white/10 hidden sm:block"></div>
-                  <div className="flex items-center gap-2">
-                    <Bed className="w-5 h-5 text-gold" />
-                    <span className="text-small text-text-on-dark/90 font-medium">{college.hospitalBeds} Beds</span>
-                  </div>
-                </>
-              )}
-              
               {college.nirfRanking && (
                 <>
                   <div className="w-px h-6 bg-white/10 hidden sm:block"></div>
@@ -75,16 +65,39 @@ export default function CollegeHeader({ college }: CollegeHeaderProps) {
                 </>
               )}
               
-              {college.nmcRecognized && (
+              {(college.nmcStatus === "Recognized" || college.nmcStatus === "Permitted") && (
                 <>
                   <div className="w-px h-6 bg-white/10 hidden sm:block"></div>
                   <div className="flex items-center gap-2">
-                    <FileText className="w-5 h-5 text-safe" />
-                    <span className="text-small text-safe font-semibold tracking-wide">NMC Recognized</span>
+                    <FileText className="w-5 h-5 text-gold" />
+                    <span className="text-small text-text-on-dark/90 font-medium">NMC: {college.nmcStatus}</span>
                   </div>
                 </>
               )}
             </div>
+
+            {(college.university || college.website || college.address) && (
+              <div className="mt-6 space-y-2 text-small text-text-on-dark/70">
+                {college.university && (
+                  <p className="flex items-start gap-2">
+                    <GraduationCap className="w-4 h-4 mt-0.5 text-gold shrink-0" /> {college.university}
+                  </p>
+                )}
+                {college.address && (
+                  <p className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> {college.address}
+                  </p>
+                )}
+                {college.website && (
+                  <p className="flex items-start gap-2">
+                    <Globe className="w-4 h-4 mt-0.5 text-gold shrink-0" />
+                    <a href={college.website} target="_blank" rel="noopener noreferrer nofollow" className="underline break-all hover:text-text-on-dark">
+                      {college.website.replace(/^https?:\/\//, "")}
+                    </a>
+                  </p>
+                )}
+              </div>
+            )}
           </div>
 
         </div>

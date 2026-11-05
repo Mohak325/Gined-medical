@@ -1,10 +1,11 @@
+import meta from "@/data/meta.json";
 import { Target, Lightbulb, TrendingUp, Lock } from "lucide-react";
 
 export default function WhyChooseUsSection({ id }: { id: string }) {
   const blocks = [
     {
       title: "Data over Intuition",
-      body: "We compare your rank with 2024 closing ranks, so your shortlist starts from real numbers rather than guesswork.",
+      body: `We compare your rank with ${meta.cutoffYear} closing ranks, so your shortlist starts from real numbers rather than guesswork.`,
       icon: <Target className="w-6 h-6 text-gold" />
     },
     {
