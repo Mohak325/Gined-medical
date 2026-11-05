@@ -129,10 +129,18 @@ Every state publishes differently, so start by reading before writing any code.
 3. **Check the layout.** Do the files hold ranks, or marks? All India ranks, or a state rank? Do they include students
    who only kept an earlier seat? Is there a stable college code to match on? Karnataka's is, so `data/curated/kea-college-codes.json`
    is a short list checked by hand.
-4. **Write three pieces,** copying the Karnataka ones: an extractor (`kea_extract.py`), a label table (`kea-lib.mjs`) and a
-   college list. Add the rounds to `scripts/data/build.mjs`.
-5. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work.
-6. **Add the state to the predictor,** with its own categories, as `src/lib/medical/karnataka.ts` does.
+4. **Add it in three places,** which is usually all it takes:
+   - `data/raw/states/sources.json`: each file's address, and which heading holds which field
+   - `data/curated/state-colleges.json`: each college name in the lists, matched to its site id by hand
+   - `scripts/data/state-rules.mjs`: what each label means, and which codes students can pick
+5. **Extract and build:** `npm run data:states:extract`, then `npm run data:build`. The build stops on any college or label it hasn't seen.
+6. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work. Some states publish their own closing ranks,
+   which is the best check of all.
+
+The predictor reads each state's choices from `state-rules.mjs`, so it needs no change. Karnataka is the one exception, with its own files.
+
+**Student names:** many state lists include them. The extractor only writes named fields, so never add a name, roll number or application
+number column to `FIELDS`, and never commit the PDFs.
 
 ## Five habits that prevent bad data
 

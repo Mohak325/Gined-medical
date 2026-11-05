@@ -8,11 +8,170 @@
     2026
   ],
   "stateCutoffs": [
-    "KA"
+    "BR",
+    "CG",
+    "KA",
+    "RJ"
   ],
+  "stateOptions": {
+    "BR": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "UR-F",
+        "label": "Unreserved, female seat"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-F",
+        "label": "EWS, female seat"
+      },
+      {
+        "code": "BC",
+        "label": "Backward Class (BC)"
+      },
+      {
+        "code": "BC-F",
+        "label": "Backward Class, female seat"
+      },
+      {
+        "code": "EBC",
+        "label": "Extremely Backward Class (EBC)"
+      },
+      {
+        "code": "EBC-F",
+        "label": "Extremely Backward Class, female seat"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "SC-F",
+        "label": "SC, female seat"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, female seat"
+      }
+    ],
+    "RJ": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "UR-F",
+        "label": "Unreserved, female seat"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC-NCL"
+      },
+      {
+        "code": "OBC-F",
+        "label": "OBC-NCL, female seat"
+      },
+      {
+        "code": "MBC",
+        "label": "MBC-NCL"
+      },
+      {
+        "code": "MBC-F",
+        "label": "MBC-NCL, female seat"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-F",
+        "label": "EWS, female seat"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "SC-F",
+        "label": "SC, female seat"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, female seat"
+      },
+      {
+        "code": "STA",
+        "label": "ST-STA"
+      },
+      {
+        "code": "STA-F",
+        "label": "ST-STA, female seat"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota seats"
+      }
+    ],
+    "CG": [
+      {
+        "code": "UR-NC",
+        "label": "Unreserved (UR-NC)"
+      },
+      {
+        "code": "UR-F",
+        "label": "Unreserved, female seat"
+      },
+      {
+        "code": "OBC-NC",
+        "label": "OBC (OBC-NC)"
+      },
+      {
+        "code": "OBC-F",
+        "label": "OBC, female seat"
+      },
+      {
+        "code": "SC-NC",
+        "label": "SC (SC-NC)"
+      },
+      {
+        "code": "SC-F",
+        "label": "SC, female seat"
+      },
+      {
+        "code": "ST-NC",
+        "label": "ST (ST-NC)"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, female seat"
+      },
+      {
+        "code": "EWS-NC",
+        "label": "EWS (EWS-NC)"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota seats"
+      }
+    ]
+  },
   "seatYear": "2026-27",
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 554
+  "collegesWithCutoffs": 592
 }
