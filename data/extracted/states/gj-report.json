@@ -1,0 +1,79 @@
+{
+  "GJ-2026-r1": {
+    "pages": 163,
+    "written": 7459,
+    "rejected": 0
+  },
+  "GJ-2026-r2": {
+    "pages": 184,
+    "written": 8452,
+    "rejected": 0
+  },
+  "GJ-2026-r3": {
+    "pages": 184,
+    "written": 8452,
+    "rejected": 0
+  },
+  "GJ-2026-stray": {
+    "pages": 5,
+    "written": 223,
+    "rejected": 0
+  },
+  "GJ-2026-lastmerit-r1": {
+    "openMerit": {
+      "AMED": "116",
+      "BMED": "349",
+      "SMED": "486",
+      "RMED": "576",
+      "JMED": "714",
+      "BHMED": "889",
+      "ESICMED": "923",
+      "SOLMED": "938",
+      "GMED": "1167",
+      "GOTMED": "1220",
+      "VALMED": "1562",
+      "JUMED": "1688",
+      "HIMMED": "1732",
+      "MORMED": "1824",
+      "PATMED": "1973",
+      "NAVMED": "2065",
+      "VADMED": "2163",
+      "PORMED": "2261",
+      "RAJMED": "2327",
+      "GODHMED": "2388",
+      "NHL": "2428",
+      "GCSMED": "2934",
+      "NAMOMED": "3192",
+      "SMC": "3260",
+      "CUMED": "3706",
+      "PLMED": "4173",
+      "VISMED": "4240",
+      "KMED": "4253",
+      "BHUMED": "4332",
+      "MKMED": "4475",
+      "KIRMED": "4614",
+      "BHARMED": "4957",
+      "NDMED": "4984",
+      "AMRMED": "5017",
+      "SALMED": "5102",
+      "MPKBMED": "5593",
+      "ANAMED": "5611",
+      "ZYMED": "6025",
+      "BHAGMED": "6156",
+      "PRMED": "6198",
+      "SWAMED": "6204",
+      "AD": "3159",
+      "JD": "3989",
+      "SD": "6477",
+      "MPD": "6492",
+      "AMCD": "7651",
+      "AHD": "7890",
+      "DAMD": "7980",
+      "BOPD": "8308",
+      "ND": "8429",
+      "UKD": "8678",
+      "GD": "9083",
+      "VD": "9177"
+    }
+  }
+}

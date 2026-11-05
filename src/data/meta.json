@@ -8,8 +8,10 @@
     2026
   ],
   "stateCutoffs": [
+    "AP",
     "BR",
     "CG",
+    "GJ",
     "KA",
     "RJ"
   ],
@@ -62,6 +64,334 @@
       {
         "code": "ST-F",
         "label": "ST, female seat"
+      }
+    ],
+    "AP": [
+      {
+        "code": "UR-OC-G",
+        "label": "Unreserved, OC"
+      },
+      {
+        "code": "UR-OC-F",
+        "label": "Unreserved, OC, female seat"
+      },
+      {
+        "code": "UR-EWS-G",
+        "label": "Unreserved, EWS"
+      },
+      {
+        "code": "UR-EWS-F",
+        "label": "Unreserved, EWS, female seat"
+      },
+      {
+        "code": "UR-BCA-G",
+        "label": "Unreserved, BC-A"
+      },
+      {
+        "code": "UR-BCA-F",
+        "label": "Unreserved, BC-A, female seat"
+      },
+      {
+        "code": "UR-BCB-G",
+        "label": "Unreserved, BC-B"
+      },
+      {
+        "code": "UR-BCB-F",
+        "label": "Unreserved, BC-B, female seat"
+      },
+      {
+        "code": "UR-BCC-G",
+        "label": "Unreserved, BC-C"
+      },
+      {
+        "code": "UR-BCC-F",
+        "label": "Unreserved, BC-C, female seat"
+      },
+      {
+        "code": "UR-BCD-G",
+        "label": "Unreserved, BC-D"
+      },
+      {
+        "code": "UR-BCD-F",
+        "label": "Unreserved, BC-D, female seat"
+      },
+      {
+        "code": "UR-BCE-G",
+        "label": "Unreserved, BC-E"
+      },
+      {
+        "code": "UR-BCE-F",
+        "label": "Unreserved, BC-E, female seat"
+      },
+      {
+        "code": "UR-SC1-G",
+        "label": "Unreserved, SC group 1"
+      },
+      {
+        "code": "UR-SC1-F",
+        "label": "Unreserved, SC group 1, female seat"
+      },
+      {
+        "code": "UR-SC2-G",
+        "label": "Unreserved, SC group 2"
+      },
+      {
+        "code": "UR-SC2-F",
+        "label": "Unreserved, SC group 2, female seat"
+      },
+      {
+        "code": "UR-SC3-G",
+        "label": "Unreserved, SC group 3"
+      },
+      {
+        "code": "UR-SC3-F",
+        "label": "Unreserved, SC group 3, female seat"
+      },
+      {
+        "code": "UR-ST-G",
+        "label": "Unreserved, ST"
+      },
+      {
+        "code": "UR-ST-F",
+        "label": "Unreserved, ST, female seat"
+      },
+      {
+        "code": "UR-MINORITY-G",
+        "label": "Unreserved, Minority"
+      },
+      {
+        "code": "UR-MINORITY-F",
+        "label": "Unreserved, Minority, female seat"
+      },
+      {
+        "code": "AU-OC-G",
+        "label": "AU region, OC"
+      },
+      {
+        "code": "AU-OC-F",
+        "label": "AU region, OC, female seat"
+      },
+      {
+        "code": "AU-EWS-G",
+        "label": "AU region, EWS"
+      },
+      {
+        "code": "AU-EWS-F",
+        "label": "AU region, EWS, female seat"
+      },
+      {
+        "code": "AU-BCA-G",
+        "label": "AU region, BC-A"
+      },
+      {
+        "code": "AU-BCA-F",
+        "label": "AU region, BC-A, female seat"
+      },
+      {
+        "code": "AU-BCB-G",
+        "label": "AU region, BC-B"
+      },
+      {
+        "code": "AU-BCB-F",
+        "label": "AU region, BC-B, female seat"
+      },
+      {
+        "code": "AU-BCC-G",
+        "label": "AU region, BC-C"
+      },
+      {
+        "code": "AU-BCC-F",
+        "label": "AU region, BC-C, female seat"
+      },
+      {
+        "code": "AU-BCD-G",
+        "label": "AU region, BC-D"
+      },
+      {
+        "code": "AU-BCD-F",
+        "label": "AU region, BC-D, female seat"
+      },
+      {
+        "code": "AU-BCE-G",
+        "label": "AU region, BC-E"
+      },
+      {
+        "code": "AU-BCE-F",
+        "label": "AU region, BC-E, female seat"
+      },
+      {
+        "code": "AU-SC1-G",
+        "label": "AU region, SC group 1"
+      },
+      {
+        "code": "AU-SC1-F",
+        "label": "AU region, SC group 1, female seat"
+      },
+      {
+        "code": "AU-SC2-G",
+        "label": "AU region, SC group 2"
+      },
+      {
+        "code": "AU-SC2-F",
+        "label": "AU region, SC group 2, female seat"
+      },
+      {
+        "code": "AU-SC3-G",
+        "label": "AU region, SC group 3"
+      },
+      {
+        "code": "AU-SC3-F",
+        "label": "AU region, SC group 3, female seat"
+      },
+      {
+        "code": "AU-ST-G",
+        "label": "AU region, ST"
+      },
+      {
+        "code": "AU-ST-F",
+        "label": "AU region, ST, female seat"
+      },
+      {
+        "code": "AU-MINORITY-G",
+        "label": "AU region, Minority"
+      },
+      {
+        "code": "AU-MINORITY-F",
+        "label": "AU region, Minority, female seat"
+      },
+      {
+        "code": "SVU-OC-G",
+        "label": "SVU region, OC"
+      },
+      {
+        "code": "SVU-OC-F",
+        "label": "SVU region, OC, female seat"
+      },
+      {
+        "code": "SVU-EWS-G",
+        "label": "SVU region, EWS"
+      },
+      {
+        "code": "SVU-EWS-F",
+        "label": "SVU region, EWS, female seat"
+      },
+      {
+        "code": "SVU-BCA-G",
+        "label": "SVU region, BC-A"
+      },
+      {
+        "code": "SVU-BCA-F",
+        "label": "SVU region, BC-A, female seat"
+      },
+      {
+        "code": "SVU-BCB-G",
+        "label": "SVU region, BC-B"
+      },
+      {
+        "code": "SVU-BCB-F",
+        "label": "SVU region, BC-B, female seat"
+      },
+      {
+        "code": "SVU-BCC-G",
+        "label": "SVU region, BC-C"
+      },
+      {
+        "code": "SVU-BCC-F",
+        "label": "SVU region, BC-C, female seat"
+      },
+      {
+        "code": "SVU-BCD-G",
+        "label": "SVU region, BC-D"
+      },
+      {
+        "code": "SVU-BCD-F",
+        "label": "SVU region, BC-D, female seat"
+      },
+      {
+        "code": "SVU-BCE-G",
+        "label": "SVU region, BC-E"
+      },
+      {
+        "code": "SVU-BCE-F",
+        "label": "SVU region, BC-E, female seat"
+      },
+      {
+        "code": "SVU-SC1-G",
+        "label": "SVU region, SC group 1"
+      },
+      {
+        "code": "SVU-SC1-F",
+        "label": "SVU region, SC group 1, female seat"
+      },
+      {
+        "code": "SVU-SC2-G",
+        "label": "SVU region, SC group 2"
+      },
+      {
+        "code": "SVU-SC2-F",
+        "label": "SVU region, SC group 2, female seat"
+      },
+      {
+        "code": "SVU-SC3-G",
+        "label": "SVU region, SC group 3"
+      },
+      {
+        "code": "SVU-SC3-F",
+        "label": "SVU region, SC group 3, female seat"
+      },
+      {
+        "code": "SVU-ST-G",
+        "label": "SVU region, ST"
+      },
+      {
+        "code": "SVU-ST-F",
+        "label": "SVU region, ST, female seat"
+      },
+      {
+        "code": "SVU-MINORITY-G",
+        "label": "SVU region, Minority"
+      },
+      {
+        "code": "SVU-MINORITY-F",
+        "label": "SVU region, Minority, female seat"
+      },
+      {
+        "code": "CA-SF",
+        "label": "Self-finance seats in government colleges (CA-SF)"
+      },
+      {
+        "code": "MGMT-B1",
+        "label": "Management quota, category B1"
+      },
+      {
+        "code": "MGMT-B2",
+        "label": "Management quota, category B2"
+      }
+    ],
+    "GJ": [
+      {
+        "code": "OPEN",
+        "label": "Open"
+      },
+      {
+        "code": "SEBC",
+        "label": "SEBC"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota seats"
       }
     ],
     "RJ": [
@@ -173,5 +503,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 592
+  "collegesWithCutoffs": 641
 }

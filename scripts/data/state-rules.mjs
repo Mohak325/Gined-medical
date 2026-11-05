@@ -12,6 +12,16 @@
 const SITE_CATEGORY = { UR: "general", SC: "sc", ST: "st", EWS: "ews", OBC: "obc" };
 const squash = (value) => String(value).toLowerCase().replace(/[^a-z0-9]/g, "");
 
+// Andhra Pradesh has three regions, ten or so categories, and general or female seats.
+const AP_REGIONS = { UR: "Unreserved", AU: "AU region", SVU: "SVU region" };
+const AP_CATEGORIES = { OC: "OC", EWS: "EWS", BCA: "BC-A", BCB: "BC-B", BCC: "BC-C", BCD: "BC-D", BCE: "BC-E", SC1: "SC group 1", SC2: "SC group 2", SC3: "SC group 3", ST: "ST", MINORITY: "Minority" };
+const AP_OPTIONS = Object.entries(AP_REGIONS).flatMap(([region, regionLabel]) =>
+  Object.entries(AP_CATEGORIES).flatMap(([category, categoryLabel]) => [
+    { code: `${region}-${category}-G`, label: `${regionLabel}, ${categoryLabel}` },
+    { code: `${region}-${category}-F`, label: `${regionLabel}, ${categoryLabel}, female seat` },
+  ])
+);
+
 export const STATES = {
   BR: {
     name: "Bihar",
@@ -38,6 +48,67 @@ export const STATES = {
         quota: "state",
         category: female ? "state_only" : (SITE_CATEGORY[base] ?? "state_only"),
       };
+    },
+  },
+
+  AP: {
+    name: "Andhra Pradesh",
+    authority: "Dr. NTR University of Health Sciences",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      ...AP_OPTIONS,
+      { code: "CA-SF", label: "Self-finance seats in government colleges (CA-SF)" },
+      { code: "MGMT-B1", label: "Management quota, category B1" },
+      { code: "MGMT-B2", label: "Management quota, category B2" },
+    ],
+    map(row, source) {
+      // Later lists repeat earlier phases' students, each marked with the phase of their seat.
+      const wanted = source.round === 4 ? "Stray" : `Phase-${source.round}`;
+      if (row.phase !== wanted) return null;
+      const parts = row.category.split(/\s*-\s*/).filter(Boolean);
+      if (source.quota === "MQ") {
+        const code = row.category.replace(/\s+/g, "").replace(/-L$/, "");
+        if (code === "B1" || code === "B2") return { code: `MGMT-${code}`, seatType: "others", quota: "state", category: "state_only" };
+        if (code === "CA-SF") return { code, seatType: "others", quota: "state", category: "state_only" };
+        if (code === "C" || code === "CA-NRI") return { code, seatType: "nri", quota: "nri", category: "state_only" };
+        throw new Error(`Unknown Andhra Pradesh management seat "${row.category}".`);
+      }
+      // MRC marks a meritorious reserved student in a reserved seat, so it stays with that category.
+      const flags = parts.filter((part) => part === "MRC");
+      const rest = parts.filter((part) => part !== "MRC");
+      const [region, category] = rest;
+      if (category === "ANGLO") return { code: rest.join("-"), seatType: "government", quota: "special", category: "state_only" };
+      if (!(region in AP_REGIONS) || !(category in AP_CATEGORIES)) throw new Error(`Unknown Andhra Pradesh seat "${row.category}".`);
+      const gender = rest[rest.length - 1] === "F" || rest.includes("F") ? "F" : "G";
+      // PH, CAP, NCC, sports and similar seats have their own eligibility rules.
+      const special = rest.filter((part) => ![region, category, "G", "F"].includes(part));
+      void flags;
+      if (special.length > 0) return { code: rest.join("-"), seatType: "government", quota: "special", category: "state_only" };
+      const code = `${region}-${category}-${gender}`;
+      return { code, seatType: "government", quota: "state", category: code === "UR-OC-G" ? "general" : "state_only" };
+    },
+  },
+
+  GJ: {
+    name: "Gujarat",
+    authority: "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",
+    // Gujarat lists colleges by short labels. Medical ones end in MED, plus these two.
+    isMbbs: (row) => /MED$/.test(row.college) || ["NHL", "SMC"].includes(row.college),
+    options: [
+      { code: "OPEN", label: "Open" }, { code: "SEBC", label: "SEBC" }, { code: "EWS", label: "EWS" },
+      { code: "SC", label: "SC" }, { code: "ST", label: "ST" }, { code: "MGMT", label: "Management quota seats" },
+    ],
+    map(row, source) {
+      // Later lists repeat students who kept a seat from an earlier round.
+      if (Number(row.admRound) !== source.round) return null;
+      if (row.quota === "MQ") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      if (row.quota === "NQ") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (row.quota === "LQ") return { code: "LOCAL", seatType: "others", quota: "special", category: "state_only" };
+      if (row.quota !== "GQ") throw new Error(`Unknown Gujarat quota "${row.quota}".`);
+      if (/PH$/.test(row.category)) return { code: row.category, seatType: "government", quota: "special", category: "state_only" };
+      const found = { OP: ["OPEN", "general"], SE: ["SEBC", "state_only"], EW: ["EWS", "ews"], SC: ["SC", "sc"], ST: ["ST", "st"] }[row.category];
+      if (!found) throw new Error(`Unknown Gujarat category "${row.category}".`);
+      return { code: found[0], seatType: "government", quota: "state", category: found[1] };
     },
   },
 
