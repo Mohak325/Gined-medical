@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "data:download": "node scripts/data/download.mjs",
+    "data:states:extract": "python -I scripts/data/state_extract.py data/raw/states/sources.json data/raw/states/pdfs data/extracted/states",
     "data:kea:extract": "python -I scripts/data/kea_extract.py data/raw/kea/pdfs data/extracted/kea",
     "data:mcc:extract": "python -I scripts/data/mcc_extract.py data/raw/mcc/pdfs data/extracted/mcc",
     "data:mcc:match": "node scripts/data/mcc-match.mjs",

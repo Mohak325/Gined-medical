@@ -25,6 +25,24 @@ taken from them are in `data/extracted/mcc/`.
 no student names. The rows taken from them are in `data/extracted/kea/`. They also hold each seat's fee,
 which isn't used on the site yet (Phase 4).
 
+**Bihar, Chhattisgarh and Rajasthan come straight from their counselling authorities.** The files are listed in
+`data/raw/states/sources.json`. These lists include student names, so `scripts/data/state_extract.py` keeps only rank,
+college, course, category, seat, quota, gender and remark. The PDFs are never committed, so `npm run data:download` fetches
+Karnataka's and MCC's, and `data/raw/states/sources.json` gives the addresses for the rest.
+
+| State | Covers | How it was checked |
+|---|---|---|
+| Bihar | 2025 and 2026, Rounds 1 to 3 and stray | All 142 of BCECEB's own published 2026 Round 1 closing ranks appear in our data, matched on category and rank |
+| Chhattisgarh | 2026, Rounds 1 to 3 and stray. Rounds 3 and stray are marked provisional | No outside figure yet. Each college's Round 1 count fits within its seats |
+| Rajasthan | 2026, Round 1 and stray, both marked provisional. Rounds 2 and 3 use another layout and aren't read yet | Round 1 count matches [Careers360](https://news.careers360.com/rajasthan-neet-ug-seat-allotment-result-2026-round-1-out-ug-neetrajasthan-com-mbbs-bds-counselling-admission/amp) (5,666) |
+
+Only codes whose meaning is confirmed are offered in the predictor. In Bihar, `DQ` is the disability quota, while `RCG`, `MM`,
+`SM` and `WQ` aren't confirmed, so they're kept as `special`. Two readings are inferred: Rajasthan's `G` suffix as the 25% of
+seats its bulletin sets aside for women, and Chhattisgarh's `-NC` as the ordinary seat in a category. Confirm both with those authorities.
+
+Students who only kept an earlier seat can't always be told apart in these three states' later rounds, so Rounds 2 and up are
+less certain than Round 1. The predictor uses Round 1.
+
 KEA ran more stray rounds after the first (four more in 2026, two more in 2025). They're small mop-ups and
 aren't included. Dental and AYUSH lists aren't included either.
 
@@ -111,9 +129,9 @@ NMC has since revised that to [1,40,664](https://medicaldialogues.in/amp/news/ed
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka only. There are no PG cutoffs or real fees.
-- 292 of 845 UG colleges have no cutoffs. Most probably fill seats only through the state counselling
-  of states we haven't added yet.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh and Rajasthan only. There are no PG cutoffs or real fees.
+- Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
+- Many of the 845 UG colleges still have no cutoffs. Most fill seats only through states we haven't added yet.
 - 7 Karnataka colleges have no KEA rows: Chettinad Kolar, Kasturba Manipal, Raja Rajeswari, Shri B M Patil,
   Sri Devaraj Urs and the two Sri Siddhartha colleges. They're probably outside KEA's counselling, but that isn't confirmed.
 - Bagalkote Medical College is in KEA's and MCC's lists but not in our college list.

@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useTrack } from "@/lib/medical/TrackProvider";
 import { parseIndianNumber, formatIndian } from "@/lib/medical/format";
 import { INDIA_STATES } from "@/lib/medical/mockData";
+import meta from "@/data/meta.json";
 import { KEA_GROUPS, KEA_SEATS, KEA_SUB_QUOTAS, composeKeaCode, parseKeaCode, type KeaSeat } from "@/lib/medical/karnataka";
 import { ArrowRight } from "lucide-react";
 
@@ -36,6 +37,12 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
   const [keaSubQuota, setKeaSubQuota] = useState(initKea.subQuota);
   // Karnataka has its own categories, so the national ones would mislead here.
   const usesKarnataka = quota === "state" && domicileState === "KA";
+  // Other states with data offer their own codes from one list.
+  const allOptions = meta.stateOptions as Record<string, { code: string; label: string }[]>;
+  const stateOptions = quota === "state" ? allOptions[domicileState] : undefined;
+  const [stateCode, setStateCode] = useState(searchParams.get("stateCategory") || "");
+  const chosenStateCode = stateOptions?.some((o) => o.code === stateCode) ? stateCode : stateOptions?.[0]?.code;
+  const usesOwnCategories = usesKarnataka || !!stateOptions;
 
   const handleRankChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Only allow numbers and commas
@@ -67,6 +74,8 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
     }
     if (usesKarnataka) {
       params.set("stateCategory", composeKeaCode(keaSeat, keaGroup, keaSubQuota));
+    } else if (chosenStateCode) {
+      params.set("stateCategory", chosenStateCode);
     }
     if (course !== "all") {
       params.set("course", course);
@@ -127,7 +136,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         </div>
 
         {/* Category */}
-        {!usesKarnataka && (
+        {!usesOwnCategories && (
           <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
             <label className="block text-small font-semibold text-text-main mb-2">
               Category
@@ -162,6 +171,23 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
               {INDIA_STATES.map((s) => (
                 <option key={s.code} value={s.code}>{s.name}</option>
               ))}
+            </select>
+          </div>
+        )}
+
+        {/* Another state's own categories */}
+        {stateOptions && (
+          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+            <label htmlFor="state-code" className="block text-small font-semibold text-text-main mb-2">
+              State Category
+            </label>
+            <select
+              id="state-code"
+              value={chosenStateCode}
+              onChange={(e) => setStateCode(e.target.value)}
+              className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
+            >
+              {stateOptions.map((o) => <option key={o.code} value={o.code}>{o.label}</option>)}
             </select>
           </div>
         )}

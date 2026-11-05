@@ -190,6 +190,39 @@ expectNone(
   warnings
 );
 
+/* ── Other states: do we match what they publish themselves? ────────── */
+
+const stateReport = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/extract-report.json"), "utf8"));
+for (const [name, result] of Object.entries(stateReport)) {
+  if (result.rejected > 0) errors.push(`${name}: ${result.rejected} rows could not be read from the PDF`);
+  if (result.written === 0) errors.push(`${name}: no rows were read from the PDF`);
+}
+
+// Careers360 reported 5,666 MBBS and BDS seats in Rajasthan's Round 1.
+expectEqual("Rajasthan 2026 Round 1 students allotted", stateReport["RJ-2026-r1"].written, 5666);
+
+// Bihar publishes its own closing ranks for Round 1, so we can compare every one with ours.
+{
+  const official = fs.readFileSync(path.join(ROOT, "data/extracted/states/BR-2026-official-r1.csv"), "utf8").split(/\r?\n/).slice(1).filter(Boolean);
+  const ours = cutoffs.filter((c) => c.state === "BR" && c.year === 2026 && c.round === 1);
+  const closing = new Set(ours.map((c) => `${c.stateCategory}|${c.closingRank}`));
+  let same = 0;
+  const differ = [];
+  for (const line of official) {
+    const match = line.match(/^([\d.]+),(?:"[^"]*"|[^,]*),([^,]*),([^,]*),([^,]*),/);
+    if (!match || !/m\.?b\.?b\.?s/i.test(match[2])) continue;
+    const base = match[3].trim();
+    if (!["UR", "EWS", "BC", "EBC", "SC", "ST"].includes(base)) continue;
+    const code = /female/i.test(match[4]) ? `${base}-F` : base;
+    if (closing.has(`${code}|${Number(match[1])}`)) same++;
+    else differ.push(`${code} ${match[1]}`);
+  }
+  console.log(`Bihar's own 2026 Round 1 closing ranks also found in ours: ${same} of ${same + differ.length}`);
+  if (same === 0 || differ.length > (same + differ.length) * 0.05) {
+    errors.push(`Bihar's published closing ranks don't match ours: ${differ.length} differ. Examples: ${differ.slice(0, 4).join("; ")}`);
+  }
+}
+
 /* ── A college shouldn't change character between years ──────────────── */
 
 // A closing rank that moves more than 4 times over in a year usually means a wrong college

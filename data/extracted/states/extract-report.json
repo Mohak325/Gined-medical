@@ -1,0 +1,836 @@
+{
+  "BR-2025-r1": {
+    "pages": 81,
+    "written": 3028,
+    "rejected": 0,
+    "colleges": 29,
+    "categories": {
+      "UR": 1492,
+      "EBC": 351,
+      "SC": 239,
+      "BC": 209,
+      "NRI": 204,
+      "EWS": 185,
+      "MM": 150,
+      "DQ": 74,
+      "RCG": 63,
+      "SM": 45,
+      "ST": 15,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 2582,
+      "B.D.S.": 306,
+      "B.V.Sc. & A.H.": 140
+    },
+    "seats": {
+      "GENERAL SEAT": 2594,
+      "FEMALE SEAT": 434
+    },
+    "quotas": {
+      "": 3028
+    },
+    "genders": {
+      "": 3028
+    },
+    "remarks": {
+      "Against UR seat": 1492,
+      "Against SC seat": 237,
+      "Against NRI seat": 204,
+      "Against MM seat": 150,
+      "Against EBC seat": 147,
+      "JUMP OVER ON EBC seat": 102,
+      "Compensation Seat EBC Against UR": 102,
+      "Against BC seat": 93,
+      "Against EWS seat": 77,
+      "JUMP OVER ON BC seat": 58,
+      "Compensation Seat BC Against UR": 58,
+      "JUMP OVER ON EWS seat": 54,
+      "Compensation Seat EWS Against UR": 54,
+      "Against SM seat": 45,
+      "Against DQ Category on BC Seat": 27,
+      "Against RCG seat": 25,
+      "JUMP OVER ON RCG seat": 19,
+      "Against DQ Category on EWS Seat": 18,
+      "Against DQ Category on EB Seat": 17,
+      "Compensation Seat RCG Against UR": 16,
+      "Against ST seat": 15,
+      "Against DQ Category on UR Seat": 10,
+      "Compensation seat RCG Against UR": 3,
+      "Against DQ Category on SC Seat": 2,
+      "JUMP OVER ON SC seat": 1,
+      "Against WQ seat": 1,
+      "Compensation Seat SC Against UR": 1
+    },
+    "rejectSamples": []
+  },
+  "BR-2025-r2": {
+    "pages": 43,
+    "written": 2175,
+    "rejected": 0,
+    "colleges": 29,
+    "categories": {
+      "UR": 1017,
+      "EBC": 289,
+      "SC": 182,
+      "BC": 176,
+      "EWS": 159,
+      "NRI": 123,
+      "MM": 107,
+      "DQ": 58,
+      "RCG": 50,
+      "ST": 8,
+      "SM": 5,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 1879,
+      "B.D.S.": 175,
+      "B.V.Sc. & A.H.": 121
+    },
+    "seats": {
+      "GENERAL SEAT": 1834,
+      "FEMALE SEAT": 341
+    },
+    "quotas": {
+      "": 2175
+    },
+    "genders": {
+      "": 2175
+    },
+    "remarks": {
+      "Against UR seat": 902,
+      "Against SC seat": 147,
+      "Against EBC seat": 134,
+      "Against NRI seat": 118,
+      "Against UR seat - upgraded": 115,
+      "Against MM seat": 107,
+      "Against BC seat": 83,
+      "Compensation Seat EBC Against UR": 76,
+      "JUMP OVER ON EBC seat": 66,
+      "Against EWS seat": 59,
+      "Compensation Seat BC Against UR": 48,
+      "Compensation Seat EWS Against UR": 44,
+      "JUMP OVER ON BC seat": 35,
+      "Against SC seat- upgraded": 34,
+      "JUMP OVER ON EWS seat": 31,
+      "Against RCG seat": 22,
+      "Against DQ Category on BC Seat": 18,
+      "Against DQ Category on UR Seat": 13,
+      "Compensation Seat RCG Against UR": 11,
+      "Against DQ Category on EB Seat": 11,
+      "JUMP OVER ON EWS seat - upgraded": 10,
+      "JUMP OVER ON RCG seat": 9,
+      "Against DQ Category on EWS Seat": 9,
+      "Against ST seat": 8,
+      "CompensatSeat EWS Against UR- UPGRADAT": 7,
+      "JUMP OVER ON BC seat - upgraded": 6,
+      "Against EWS seat- upgraded": 6,
+      "CompensatSeat EBC Against UR": 6,
+      "Against SM seat": 5,
+      "Against BC seat- upgraded": 4,
+      "CompensatSeat EBC Against UR- UPGRADAT": 4,
+      "Against NRI seat- upgraded": 4,
+      "Compensation seat RCG Against UR": 3,
+      "Against DQ Category on SC Seat": 3,
+      "JUMP OVER ON RCG seat - upgraded": 2,
+      "Against RCG seat - upgraded": 2,
+      "CompensatSeat EWS Against UR": 2,
+      "Against EBC seat- upgraded": 2,
+      "Against DQ on UR Seat- upgraded": 2,
+      "Against DQ on EB Seat- upgraded": 2
+    },
+    "rejectSamples": []
+  },
+  "BR-2025-r3": {
+    "pages": 38,
+    "written": 1621,
+    "rejected": 0,
+    "colleges": 32,
+    "categories": {
+      "UR": 808,
+      "EBC": 192,
+      "NRI": 152,
+      "BC": 117,
+      "EWS": 111,
+      "SC": 95,
+      "MM": 55,
+      "DQ": 52,
+      "RCG": 30,
+      "ST": 6,
+      "SM": 2,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 1424,
+      "B.D.S.": 110,
+      "B.V.Sc. & A.H.": 87
+    },
+    "seats": {
+      "GENERAL SEAT": 1405,
+      "FEMALE SEAT": 216
+    },
+    "quotas": {
+      "": 1621
+    },
+    "genders": {
+      "": 1621
+    },
+    "remarks": {
+      "Against UR seat": 695,
+      "Against NRI seat": 152,
+      "Against UR seat - upgraded": 99,
+      "Against SC seat": 82,
+      "Against EBC seat": 70,
+      "Against BC seat": 58,
+      "Compensation Seat EBC Against UR": 44,
+      "Against MM seat": 40,
+      "Compensation Seat EWS Against UR": 37,
+      "JUMP OVER ON EBC seat": 36,
+      "Against EWS seat": 31,
+      "Compensation Seat BC Against UR": 27,
+      "Against EBC seat- upgraded": 21,
+      "JUMP OVER ON BC seat": 15,
+      "JUMP OVER ON EWS seat - upgraded": 15,
+      "Against EWS seat- upgraded": 15,
+      "Against MM seat - upgraded": 15,
+      "Against DQ Category on BC Seat": 14,
+      "JUMP OVER ON EBC seat - upgraded": 13,
+      "Against DQ Category on UR Seat": 13,
+      "Against UR seat on Converted NRI Seat": 13,
+      "JUMP OVER ON BC seat - upgraded": 12,
+      "JUMP OVER ON EWS seat": 12,
+      "Against SC seat- upgraded": 12,
+      "Against RCG seat": 10,
+      "Against DQ Category on EB Seat": 9,
+      "Compensation Seat EBC Against UR - upgra": 8,
+      "Compensation seat RCG Against UR": 8,
+      "Against RCG seat - upgraded": 7,
+      "Against DQ Category on EWS Seat": 7,
+      "Against BC seat- upgraded": 5,
+      "Against ST seat": 5,
+      "Against DQ Category on SC Seat": 5,
+      "JUMP OVER ON RCG seat - upgraded": 4,
+      "Against SM seat": 2,
+      "Against DQ on UR Seat- upgraded": 2,
+      "Compensation Seat EWS Against UR - upgra": 1,
+      "Compensation Seat RCG Against UR": 1,
+      "Against WQ seat": 1,
+      "Compensation Seat SC Against UR": 1
+    },
+    "rejectSamples": []
+  },
+  "BR-2025-stray": {
+    "pages": 6,
+    "written": 300,
+    "rejected": 0,
+    "colleges": 33,
+    "categories": {
+      "UR": 165,
+      "DQ": 40,
+      "NRI": 36,
+      "EBC": 16,
+      "SC": 14,
+      "BC": 13,
+      "EWS": 8,
+      "RCG": 2,
+      "ST": 2,
+      "SM": 2,
+      "WQ": 1,
+      "MM": 1
+    },
+    "courses": {
+      "M.B.B.S.": 214,
+      "B.SC IN POULTRY PRODUCTION": 50,
+      "B.V.Sc. & A.H.": 21,
+      "B.D.S.": 15
+    },
+    "seats": {
+      "GENERAL SEAT": 298,
+      "FEMALE SEAT": 2
+    },
+    "quotas": {
+      "": 300
+    },
+    "genders": {
+      "": 300
+    },
+    "remarks": {
+      "Against UR seat": 165,
+      "Against NRI seat": 36,
+      "Against EBC seat": 16,
+      "Against DQ Category on UR Seat": 15,
+      "Against SC seat": 13,
+      "Against BC seat": 11,
+      "Against DQ Category on BC Seat": 11,
+      "Against EWS seat": 8,
+      "Against DQ Category on EB Seat": 7,
+      "Against DQ Category on EWS Seat": 5,
+      "Against RCG seat": 2,
+      "Against ST seat": 2,
+      "Against SM seat": 2,
+      "Against DQ Category on SC Seat": 2,
+      "JUMP OVER ON BC seat": 1,
+      "Compensation Seat BC Against UR": 1,
+      "Against WQ seat": 1,
+      "Against MM seat": 1,
+      "Against SC seat on converted ST seat": 1
+    },
+    "rejectSamples": []
+  },
+  "BR-2026-r1": {
+    "pages": 71,
+    "written": 3985,
+    "rejected": 0,
+    "colleges": 34,
+    "categories": {
+      "UR": 2396,
+      "EBC": 378,
+      "SC": 257,
+      "BC": 237,
+      "MM": 225,
+      "EWS": 208,
+      "DQ": 78,
+      "NRI": 66,
+      "RCG": 64,
+      "SM": 60,
+      "ST": 15,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 3574,
+      "B.D.S.": 221,
+      "B.V.Sc. & A.H.": 144,
+      "B.F.Sc.": 46
+    },
+    "seats": {
+      "GENERAL SEAT": 3525,
+      "FEMALE SEAT": 460
+    },
+    "quotas": {
+      "": 3985
+    },
+    "genders": {
+      "": 3985
+    },
+    "remarks": {
+      "Against UR seat": 2396,
+      "Against SC seat": 255,
+      "Against MM seat": 225,
+      "Against EBC seat": 160,
+      "JUMP OVER ON EBC seat": 109,
+      "Compensation Seat EBC Against UR": 109,
+      "Against BC seat": 97,
+      "Against EWS seat": 84,
+      "JUMP OVER ON BC seat": 70,
+      "Compensation Seat BC Against UR": 70,
+      "Against NRI seat": 66,
+      "JUMP OVER ON EWS seat": 62,
+      "Compensation Seat EWS Against UR": 62,
+      "Against SM seat": 60,
+      "Against RCG seat": 32,
+      "Against DQ Category on BC Seat": 25,
+      "Against DQ Category on EB Seat": 22,
+      "Against DQ Category on UR Seat": 17,
+      "JUMP OVER ON RCG seat": 16,
+      "Against ST seat": 15,
+      "Against DQ Category on EWS Seat": 14,
+      "Compensation Seat RCG Against UR": 9,
+      "Compensation seat RCG Against UR": 7,
+      "JUMP OVER ON SC seat": 1,
+      "Compensation Seat SC Against UR": 1,
+      "Against WQ seat": 1
+    },
+    "rejectSamples": []
+  },
+  "BR-2026-r2": {
+    "pages": 76,
+    "written": 3222,
+    "rejected": 0,
+    "colleges": 39,
+    "categories": {
+      "UR": 1980,
+      "EBC": 349,
+      "BC": 221,
+      "SC": 215,
+      "EWS": 203,
+      "MM": 76,
+      "RCG": 63,
+      "DQ": 62,
+      "NRI": 25,
+      "ST": 16,
+      "SM": 11,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 2955,
+      "B.V.Sc. & A.H.": 121,
+      "B.D.S.": 100,
+      "B.F.Sc.": 46
+    },
+    "seats": {
+      "GENERAL SEAT": 2821,
+      "FEMALE SEAT": 401
+    },
+    "quotas": {
+      "": 3222
+    },
+    "genders": {
+      "": 3222
+    },
+    "remarks": {
+      "Against UR seat": 1755,
+      "Against UR seat - upgraded": 225,
+      "Against SC seat": 177,
+      "Against EBC seat": 132,
+      "Compensation Seat EBC Against UR": 96,
+      "Against BC seat": 87,
+      "Against EWS seat": 82,
+      "Compensation Seat BC Against UR": 77,
+      "Against MM seat": 73,
+      "Compensation Seat EWS Against UR": 63,
+      "JUMP OVER ON BC seat": 44,
+      "JUMP OVER ON EBC seat": 42,
+      "JUMP OVER ON EWS seat": 41,
+      "Against SC seat- upgraded": 37,
+      "Against RCG seat": 33,
+      "Against EBC seat- upgraded": 32,
+      "JUMP OVER ON EBC seat - upgraded": 26,
+      "Against NRI seat": 25,
+      "Against DQ Category on BC Seat": 22,
+      "CompensatSeat EBC Against UR- UPGRADAT": 15,
+      "Against ST seat": 13,
+      "Against DQ Category on UR Seat": 13,
+      "Compensation Seat RCG Against UR": 11,
+      "Against SM seat": 10,
+      "Against DQ Category on EWS Seat": 9,
+      "JUMP OVER ON BC seat - upgraded": 9,
+      "Against EWS seat- upgraded": 9,
+      "Against DQ Category on EB Seat": 8,
+      "JUMP OVER ON RCG seat": 8,
+      "Compensation seat RCG Against UR": 7,
+      "JUMP OVER ON EWS seat - upgraded": 7,
+      "CompensatSeat EBC Against UR": 6,
+      "Against DQ on EB Seat- upgraded": 6,
+      "Against BC seat- upgraded": 4,
+      "JUMP OVER ON RCG seat - upgraded": 3,
+      "Against ST seat- upgraded": 3,
+      "Against MM seat - upgraded": 3,
+      "Against DQ on UR Seat- upgraded": 3,
+      "Compensation Seat SC Against UR": 1,
+      "Against WQ seat": 1
+    },
+    "rejectSamples": []
+  },
+  "BR-2026-r3": {
+    "pages": 34,
+    "written": 2310,
+    "rejected": 0,
+    "colleges": 39,
+    "categories": {
+      "UR": 1430,
+      "EBC": 249,
+      "EWS": 180,
+      "BC": 176,
+      "SC": 122,
+      "RCG": 50,
+      "DQ": 44,
+      "MM": 25,
+      "NRI": 19,
+      "ST": 13,
+      "SM": 1,
+      "WQ": 1
+    },
+    "courses": {
+      "M.B.B.S.": 2101,
+      "B.V.Sc. & A.H.": 93,
+      "B.D.S.": 71,
+      "B.F.Sc.": 45
+    },
+    "seats": {
+      "GENERAL SEAT": 2017,
+      "FEMALE SEAT": 293
+    },
+    "quotas": {
+      "": 2310
+    },
+    "genders": {
+      "": 2310
+    },
+    "remarks": {
+      "Against UR seat": 964,
+      "Against UR seat - upgraded": 466,
+      "Against EBC seat": 104,
+      "Against SC seat": 99,
+      "Against BC seat": 64,
+      "Compensation Seat EBC Against UR": 60,
+      "Compensation Seat EWS Against UR": 53,
+      "Against EWS seat": 52,
+      "Compensation Seat BC Against UR": 40,
+      "JUMP OVER ON BC seat": 29,
+      "JUMP OVER ON EBC seat": 28,
+      "Against EWS seat- upgraded": 28,
+      "Against MM seat": 25,
+      "Against EBC seat- upgraded": 23,
+      "Against RCG seat": 22,
+      "Against SC seat- upgraded": 22,
+      "JUMP OVER ON EWS seat - upgraded": 21,
+      "Against NRI seat": 19,
+      "Against DQ Category on UR Seat": 17,
+      "CompensatSeat EBC Against UR- UPGRADAT": 17,
+      "JUMP OVER ON EWS seat": 16,
+      "Against DQ Category on BC Seat": 14,
+      "CompensatSeat BC Against UR": 14,
+      "Against BC seat- upgraded": 13,
+      "Against ST seat": 12,
+      "JUMP OVER ON BC seat - upgraded": 11,
+      "JUMP OVER ON EBC seat - upgraded": 10,
+      "JUMP OVER ON RCG seat": 7,
+      "CompensatSeat EBC Against UR": 7,
+      "Compensation seat RCG Against UR - upgra": 7,
+      "CompensatSeat EWS Against UR": 6,
+      "Compensation Seat RCG Against UR": 5,
+      "Compensation seat RCG Against UR": 5,
+      "CompensatSeat BC Against UR- UPGRADAT": 5,
+      "Against DQ Category on EB Seat": 4,
+      "CompensatSeat EWS Against UR- UPGRADAT": 4,
+      "Against RCG seat - upgraded": 3,
+      "Against DQ on BC Seat- upgraded": 2,
+      "Against DQ on EWS Seat- upgraded": 2,
+      "Against DQ on UR Seat- upgraded": 2
+    },
+    "rejectSamples": []
+  },
+  "BR-2026-stray": {
+    "pages": 5,
+    "written": 243,
+    "rejected": 0,
+    "colleges": 37,
+    "categories": {
+      "UR": 159,
+      "DQ": 21,
+      "SC": 19,
+      "EBC": 16,
+      "EWS": 10,
+      "BC": 8,
+      "RCG": 5,
+      "MM": 2,
+      "NRI": 2,
+      "SM": 1
+    },
+    "courses": {
+      "M.B.B.S.": 144,
+      "B.V.Sc. & A.H.": 42,
+      "B.F.Sc.": 40,
+      "B.D.S.": 17
+    },
+    "seats": {
+      "GENERAL SEAT": 239,
+      "FEMALE SEAT": 4
+    },
+    "quotas": {
+      "": 243
+    },
+    "genders": {
+      "": 243
+    },
+    "remarks": {
+      "Against UR seat": 159,
+      "Against SC seat": 19,
+      "Against EBC seat": 14,
+      "Against DQ Category on UR Seat": 11,
+      "Against EWS seat": 9,
+      "Against DQ Category on BC Seat": 8,
+      "Against BC seat": 7,
+      "Against RCG seat": 3,
+      "Against MM seat": 2,
+      "Against DQ Category on EB Seat": 2,
+      "Against NRI seat": 2,
+      "JUMP OVER ON EBC seat - upgraded": 1,
+      "JUMP OVER ON RCG seat": 1,
+      "Compensation Seat BC Against UR": 1,
+      "Compensation Seat EBC Against UR": 1,
+      "Compensation Seat RCG Against UR": 1,
+      "Compensation Seat EWS Against UR": 1,
+      "Against SM seat": 1
+    },
+    "rejectSamples": []
+  },
+  "CG-2026-r1": {
+    "pages": 123,
+    "written": 2560,
+    "rejected": 0,
+    "tablesSkipped": 2,
+    "colleges": 28,
+    "categories": {
+      "UR-NC": 865,
+      "UR-F": 352,
+      "ST-NC": 316,
+      "OBC-NC": 309,
+      "SC-NC": 190,
+      "ST-F": 143,
+      "EWS-NC": 140,
+      "OBC-F": 115,
+      "SC-F": 71,
+      "UR-EX": 18,
+      "UR-PH": 18,
+      "UR-FF": 5,
+      "SST-NC": 5,
+      "ST-EX": 4,
+      "SC-PH": 2,
+      "ST-PH": 2,
+      "ST-FF": 2,
+      "OBC-PH": 2,
+      "SST-F": 1
+    },
+    "courses": {
+      "MBBS": 2114,
+      "BDS": 446
+    },
+    "seats": {
+      "": 2560
+    },
+    "quotas": {
+      "GQ": 1992,
+      "Mgmt": 530,
+      "NRI": 31,
+      "Minority": 7
+    },
+    "genders": {
+      "": 2560
+    },
+    "remarks": {
+      "": 2560
+    },
+    "rejectSamples": []
+  },
+  "CG-2026-r2": {
+    "pages": 137,
+    "written": 2099,
+    "rejected": 0,
+    "colleges": 29,
+    "categories": {
+      "UR-NC": 895,
+      "-": 776,
+      "ST-NC": 181,
+      "UR- Female": 77,
+      "SC-NC": 56,
+      "OBC-NC": 41,
+      "ST-Female": 25,
+      "EWS-NC": 19,
+      "UR-PH": 10,
+      "OBC- Female": 7,
+      "SC-Female": 6,
+      "UR-EX": 2,
+      "Special ST- NC": 2,
+      "UR-FF": 1,
+      "OBC-PH": 1
+    },
+    "courses": {
+      "MBBS": 963,
+      "-": 776,
+      "BDS": 360
+    },
+    "seats": {
+      "": 2099
+    },
+    "quotas": {
+      "-": 776,
+      "GQ": 701,
+      "Mgmt": 590,
+      "NRI": 32
+    },
+    "genders": {
+      "B": 1208,
+      "-": 776,
+      "F": 115
+    },
+    "remarks": {
+      "": 2099
+    },
+    "rejectSamples": []
+  },
+  "CG-2026-r3": {
+    "pages": 22,
+    "written": 391,
+    "rejected": 0,
+    "colleges": 22,
+    "categories": {
+      "UR-NC": 296,
+      "-": 52,
+      "ST-NC": 22,
+      "SC-NC": 10,
+      "OBC-NC": 6,
+      "EWS-NC": 2,
+      "UR-EX": 2,
+      "UR-FF": 1
+    },
+    "courses": {
+      "BDS": 206,
+      "MBBS": 133,
+      "-": 52
+    },
+    "seats": {
+      "": 391
+    },
+    "quotas": {
+      "Mgmt": 168,
+      "GQ": 113,
+      "NRI": 56,
+      "-": 52,
+      "Minority": 2
+    },
+    "genders": {
+      "B": 339,
+      "-": 52
+    },
+    "remarks": {
+      "": 391
+    },
+    "rejectSamples": []
+  },
+  "CG-2026-stray": {
+    "pages": 9,
+    "written": 149,
+    "rejected": 0,
+    "colleges": 15,
+    "categories": {
+      "UR-NC": 130,
+      "ST-NC": 14,
+      "SC-NC": 3,
+      "OBC-NC": 2
+    },
+    "courses": {
+      "MBBS": 87,
+      "BDS": 62
+    },
+    "seats": {
+      "": 149
+    },
+    "quotas": {
+      "Mgmt": 119,
+      "GQ": 30
+    },
+    "genders": {
+      "B": 149
+    },
+    "remarks": {
+      "": 149
+    },
+    "rejectSamples": []
+  },
+  "BR-2026-official-r1": {
+    "pages": 5,
+    "written": 225,
+    "rejected": 0,
+    "colleges": 34,
+    "categories": {
+      "UR": 42,
+      "SC": 31,
+      "BC": 31,
+      "EWS": 30,
+      "EBC": 30,
+      "RCG": 16,
+      "ST": 15,
+      "DQ": 15,
+      "NRI": 11,
+      "MUSLIM-MINORITY": 2,
+      "WARD-QUOTA": 1,
+      "SIKH-MINORITY": 1
+    },
+    "courses": {
+      "M.B.B.S.": 180,
+      "B.V.Sc. & A.H.": 21,
+      "B.D.S.": 15,
+      "B.F.Sc.": 9
+    },
+    "seats": {
+      "General": 159,
+      "Female": 66
+    },
+    "quotas": {
+      "": 225
+    },
+    "genders": {
+      "": 225
+    },
+    "remarks": {
+      "": 225
+    },
+    "rejectSamples": []
+  },
+  "RJ-2026-r1": {
+    "pages": 172,
+    "written": 5666,
+    "rejected": 0,
+    "colleges": 125,
+    "categories": {
+      "URB": 1999,
+      "OBB": 887,
+      "URG": 647,
+      "SCB": 485,
+      "EBB": 355,
+      "OBG": 300,
+      "STB": 234,
+      "SCG": 191,
+      "MBB": 145,
+      "SAB": 131,
+      "EBG": 119,
+      "STG": 81,
+      "MBG": 48,
+      "SAG": 44
+    },
+    "courses": {
+      "MBBS": 4523,
+      "BDS": 1143
+    },
+    "seats": {
+      "": 5666
+    },
+    "quotas": {
+      "": 5666
+    },
+    "genders": {
+      "": 5666
+    },
+    "remarks": {
+      "": 5666
+    },
+    "rejectSamples": []
+  },
+  "RJ-2026-stray": {
+    "pages": 47,
+    "written": 1064,
+    "rejected": 0,
+    "colleges": 63,
+    "categories": {
+      "URB": 773,
+      "URG": 187,
+      "OBB": 52,
+      "OBG": 17,
+      "SCB": 13,
+      "STB": 9,
+      "EBB": 5,
+      "SCG": 4,
+      "STG": 3,
+      "EBG": 1
+    },
+    "courses": {
+      "MBBS": 947,
+      "BDS": 117
+    },
+    "seats": {
+      "": 1064
+    },
+    "quotas": {
+      "": 1064
+    },
+    "genders": {
+      "": 1064
+    },
+    "remarks": {
+      "": 1064
+    },
+    "rejectSamples": []
+  }
+}

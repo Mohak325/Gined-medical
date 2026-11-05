@@ -6,7 +6,7 @@ import meta from "@/data/meta.json";
 import { PG_ENABLED } from "@/lib/medical/TrackProvider";
 import { CalculatorQuerySchema } from "@/lib/medical/schemas";
 import { getColleges, getCutoffs } from "@/lib/medical/api";
-import { type College, type CutoffEntry } from "@/lib/medical/mockData";
+import { INDIA_STATES, type College, type CutoffEntry } from "@/lib/medical/mockData";
 import { computeConfidence, type ConfidenceLevel } from "@/lib/medical/confidence";
 
 import ResultsSummaryBar from "@/components/medical/results/ResultsSummaryBar";
@@ -32,7 +32,10 @@ export default function ResultsClient() {
   // State counselling uses each state's own seat codes, and we only hold some states.
   const isState = query.quota === "state";
   const stateHasData = isState && !!query.state && meta.stateCutoffs.includes(query.state);
-  const stateCategory = stateHasData ? (query.stateCategory ?? "GM") : undefined;
+  const stateOptions = meta.stateOptions as Record<string, { code: string; label: string }[]>;
+  const defaultStateCode = query.state ? stateOptions[query.state]?.[0]?.code ?? "GM" : "GM";
+  const stateCategory = stateHasData ? (query.stateCategory ?? defaultStateCode) : undefined;
+  const stateName = query.state ? INDIA_STATES.find((s) => s.code === query.state)?.name : undefined;
 
   useEffect(() => {
     let mounted = true;
@@ -155,9 +158,9 @@ export default function ResultsClient() {
         icon={<SearchX className="w-12 h-12" />}
         title={isState && !stateHasData ? "We don't have this state's cutoffs yet" : "No matches found"}
         description={isState && !stateHasData
-          ? "So far we've collected state counselling results for Karnataka only, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
+          ? `We haven't collected this state's counselling results yet, so this doesn't mean no seats exist for you. So far we hold ${meta.stateCutoffs.map((code) => INDIA_STATES.find((s) => s.code === code)?.name ?? code).join(", ")}. Try the All India Quota, or check your state counselling portal.`
           : isState
-            ? `No seats were allotted under Karnataka code ${stateCategory} in ${meta.cutoffYear} Round 1. Try a different category or sub-quota.`
+            ? `No seats were allotted under ${stateName} code ${stateCategory} in ${meta.cutoffYear} Round 1. Try a different category.`
             : "We couldn't find any colleges matching your criteria. Try a different quota or category."}
         actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
       />
@@ -184,7 +187,7 @@ export default function ResultsClient() {
               Based on {meta.cutoffYear} Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
-              {stateCategory && ` These are Karnataka counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility in KEA's information bulletin.`}
+              {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
             </p>
           </div>
         </div>

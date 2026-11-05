@@ -4,6 +4,7 @@
  *   Input:  data/raw/nexdoc/*       college list and seats, exact copies, never edited
  *           data/extracted/mcc/*    rows taken from MCC's result PDFs
  *           data/extracted/kea/*    rows taken from Karnataka's result PDFs
+ *           data/extracted/states/* rows taken from other states' result PDFs
  *           data/curated/*          facts we added by hand
  *   Output: src/data/*.json         what the website reads
  *
@@ -15,6 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { isNewAllotment, mapCategory, mapQuota, readCsv, squash } from "./mcc-lib.mjs";
 import * as kea from "./kea-lib.mjs";
+import { STATES } from "./state-rules.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "../..");
 const RAW = path.join(ROOT, "data/raw/nexdoc");
@@ -22,6 +24,7 @@ const CURATED = path.join(ROOT, "data/curated");
 const OUT = path.join(ROOT, "src/data");
 const MCC = path.join(ROOT, "data/extracted/mcc");
 const KEA = path.join(ROOT, "data/extracted/kea");
+const STATE_ROWS = path.join(ROOT, "data/extracted/states");
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const writeJson = (name, value) =>
@@ -139,6 +142,8 @@ const rawUg = readJson(path.join(RAW, "ug_all.json"));
 const rawPg = readJson(path.join(RAW, "pg_all.json"));
 const crosswalk = readJson(path.join(CURATED, "mcc-college-crosswalk.json"));
 const keaCodes = readJson(path.join(CURATED, "kea-college-codes.json"));
+const stateColleges = readJson(path.join(CURATED, "state-colleges.json"));
+const stateSources = readJson(path.join(ROOT, "data/raw/states/sources.json"));
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 
 /* ── Seats ────────────────────────────────────────────────────────────── */
@@ -275,6 +280,39 @@ for (const { file, year, round } of KEA_ROUNDS) {
   }
 }
 
+// Other states. Names vary between files, so a listed name only has to start the college's name.
+function matchStateCollege(state, name) {
+  const squashed = squash(name);
+  const entries = Object.entries(stateColleges[state]).sort((a, b) => b[0].length - a[0].length);
+  const found = entries.find(([listed]) => squashed.startsWith(squash(listed)));
+  if (!found) throw new Error(`No match for ${state} college "${name}". Add it to state-colleges.json.`);
+  return found[1];
+}
+
+for (const source of stateSources.filter((s) => !s.checkOnly)) {
+  const rules = STATES[source.state];
+  for (const row of readCsv(path.join(STATE_ROWS, `${source.state}-${source.name}.csv`))) {
+    if (!rules.isMbbs(row)) { drop(`${source.state} row that isn't MBBS`); continue; }
+    const collegeId = matchStateCollege(source.state, row.college);
+    if (!collegeId) { drop("college not on the site"); continue; }
+    const seat = rules.map(row);
+    if (!seat) { drop("student kept an earlier seat"); continue; }
+
+    const key = [source.state, collegeId, seat.seatType, seat.code, source.round, source.year].join("|");
+    const rank = Number(row.rank);
+    const group = groups.get(key) ?? {
+      collegeId, track: "ug", course: "MBBS", quota: seat.quota, category: seat.category,
+      round: source.round, year: source.year, openingRank: rank, closingRank: rank, allotted: 0,
+      quotaDetail: `${source.state}_${seat.seatType.toUpperCase()}`, state: source.state,
+      seatType: seat.seatType, stateCategory: seat.code,
+    };
+    group.openingRank = Math.min(group.openingRank, rank);
+    group.closingRank = Math.max(group.closingRank, rank);
+    group.allotted++;
+    groups.set(key, group);
+  }
+}
+
 const cutoffs = [...groups.values()];
 
 /* ── States and summary numbers ───────────────────────────────────────── */
@@ -291,6 +329,7 @@ const meta = {
   cutoffYear: Math.max(...cutoffs.map((cutoff) => cutoff.year)),
   cutoffYears: [...new Set(cutoffs.map((cutoff) => cutoff.year))].sort(),
   stateCutoffs: [...new Set(cutoffs.map((cutoff) => cutoff.state).filter(Boolean))].sort(),
+  stateOptions: Object.fromEntries(Object.entries(STATES).map(([code, rules]) => [code, rules.options])),
   seatYear: SEAT_YEAR,
   collegeCount: colleges.length,
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
