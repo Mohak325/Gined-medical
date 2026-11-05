@@ -4,6 +4,9 @@ import { createContext, useContext, useState, useEffect, useCallback } from "rea
 
 type Track = "ug" | "pg";
 
+/** PG stays off until PG cutoff data exists; every PG search would return nothing. */
+export const PG_ENABLED = false;
+
 interface TrackContextValue {
   track: Track;
   setTrack: (t: Track) => void;
@@ -19,12 +22,13 @@ export function TrackProvider({ children }: { children: React.ReactNode }) {
   // Hydrate from sessionStorage on mount
   useEffect(() => {
     const stored = sessionStorage.getItem(STORAGE_KEY);
-    if (stored === "ug" || stored === "pg") {
+    if (stored === "ug" || (stored === "pg" && PG_ENABLED)) {
       setTrackState(stored);
     }
   }, []);
 
   const setTrack = useCallback((t: Track) => {
+    if (t === "pg" && !PG_ENABLED) return;
     setTrackState(t);
     sessionStorage.setItem(STORAGE_KEY, t);
   }, []);

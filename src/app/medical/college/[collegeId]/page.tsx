@@ -42,7 +42,7 @@ export default async function CollegeDetailPage({
             </section>
 
             <section>
-              <h2 className="text-h2 text-text-main mb-6">Fees & Bond Structure</h2>
+              <h2 className="text-h2 text-text-main mb-6">Estimated Fees & Bond</h2>
               <CollegeFeesBreakdown courses={courses} />
             </section>
 

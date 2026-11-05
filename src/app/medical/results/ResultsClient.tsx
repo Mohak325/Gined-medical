@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
+import { PG_ENABLED } from "@/lib/medical/TrackProvider";
 import { CalculatorQuerySchema } from "@/lib/medical/schemas";
 import { getColleges, getCutoffs } from "@/lib/medical/api";
 import { type College, type CutoffEntry } from "@/lib/medical/mockData";
@@ -59,7 +60,7 @@ export default function ResultsClient() {
   }, [query.rank, query.track, query.state, query.type, query.quota, query.category]);
 
   // Compute Results
-  const results = useMemo(() => {
+  const allResults = useMemo(() => {
     if (!query.rank) return [];
 
     const computed = colleges.map(college => {
@@ -71,14 +72,8 @@ export default function ResultsClient() {
       return { college, cutoff, confidence };
     }).filter(Boolean) as { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel }[];
 
-    // Filter Longshots
-    let filtered = computed;
-    if (!showLongshots) {
-      filtered = computed.filter(r => r.confidence !== "longshot");
-    }
-
     // Sort
-    filtered.sort((a, b) => {
+    computed.sort((a, b) => {
       if (sortBy === "confidence_desc") {
         const order = { safe: 0, moderate: 1, ambitious: 2, longshot: 3 };
         const confDiff = order[a.confidence] - order[b.confidence];
@@ -92,20 +87,35 @@ export default function ResultsClient() {
       if (sortBy === "cutoff_desc") {
         return b.cutoff.closingRank - a.cutoff.closingRank;
       }
-      // fees_asc requires course lookup (omitted for brevity, default to rank)
       return a.cutoff.closingRank - b.cutoff.closingRank;
     });
 
-    return filtered;
+    return computed;
 
-  }, [colleges, query, showLongshots, sortBy]);
+  }, [colleges, cutoffs, query.rank, sortBy]);
+
+  const results = useMemo(
+    () => (showLongshots ? allResults : allResults.filter(r => r.confidence !== "longshot")),
+    [allResults, showLongshots]
+  );
 
   // Breakdown
   const breakdown = useMemo(() => {
     const counts: Record<ConfidenceLevel, number> = { safe: 0, moderate: 0, ambitious: 0, longshot: 0 };
-    results.forEach(r => { counts[r.confidence]++; });
+    allResults.forEach(r => { counts[r.confidence]++; });
     return counts;
-  }, [results]);
+  }, [allResults]);
+
+  if (query.track === "pg" && !PG_ENABLED) {
+    return (
+      <EmptyState
+        icon={<SearchX className="w-12 h-12" />}
+        title="PG predictions are coming soon"
+        description="We don't have PG cutoff data yet. You can still browse the PG courses each college offers in the directory."
+        actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
+      />
+    );
+  }
 
   if (!query.rank) {
     return (
@@ -126,12 +136,14 @@ export default function ResultsClient() {
     );
   }
 
-  if (results.length === 0) {
+  if (allResults.length === 0) {
     return (
       <EmptyState
         icon={<SearchX className="w-12 h-12" />}
-        title="No matches found"
-        description="We couldn't find any colleges matching your criteria. Try adjusting your quota, category, or checking the 'Show Longshots' option."
+        title={query.quota === "state" ? "Limited state-quota data" : "No matches found"}
+        description={query.quota === "state"
+          ? "We have very little state-quota cutoff data so far, so this doesn't mean no seats exist for you. Try the All India Quota, or check your state counselling portal."
+          : "We couldn't find any colleges matching your criteria. Try a different quota or category."}
         actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
       />
     );
@@ -148,18 +160,15 @@ export default function ResultsClient() {
         onToggleLongshots={() => setShowLongshots(!showLongshots)}
       />
 
-      {/* AI Insight Card */}
+      {/* Summary Card */}
       <div className="bg-gradient-to-br from-gold/10 to-transparent border border-gold/20 rounded-[var(--radius-lg)] p-6 mb-8 shadow-sm">
         <div className="flex items-start gap-4">
-          <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center shrink-0 border border-gold/30">
-            <span className="text-gold-deep font-bold text-small">AI</span>
-          </div>
           <div>
-            <h3 className="text-body font-bold text-text-main mb-1">Counselling Insight</h3>
+            <h3 className="text-body font-bold text-text-main mb-1">Your Summary</h3>
             <p className="text-small text-text-muted leading-relaxed">
-              Based on historical seat allocation data, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> falls securely within the closing ranks of <strong>{breakdown.safe}</strong> colleges. 
-              {breakdown.moderate > 0 && ` You have a competitive edge in ${breakdown.moderate} moderate options.`}
-              {breakdown.ambitious > 0 && ` We recommend keeping a few of the ${breakdown.ambitious} ambitious options in your priority list as cutoffs can fluctuate during stray vacancy rounds.`}
+              Based on 2024 Round 1 closing ranks, your rank of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
+              {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
+              {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
             </p>
           </div>
         </div>

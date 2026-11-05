@@ -1,6 +1,6 @@
 "use client";
 
-import { useTrack } from "@/lib/medical/TrackProvider";
+import { PG_ENABLED, useTrack } from "@/lib/medical/TrackProvider";
 
 /**
  * TrackToggle — Large segmented control.
@@ -24,13 +24,14 @@ export default function TrackToggle() {
       </button>
       <button
         onClick={() => setTrack("pg")}
+        disabled={!PG_ENABLED}
         className={`px-6 py-3 text-body font-semibold transition-colors duration-[var(--dur-fast)] ${
           track === "pg"
             ? "bg-gold text-ink"
-            : "bg-transparent text-text-muted hover:text-text-main"
+            : "bg-transparent text-text-muted enabled:hover:text-text-main disabled:cursor-not-allowed"
         }`}
       >
-        PG (MD / MS / DNB)
+        {PG_ENABLED ? "PG (MD / MS / DNB)" : "PG: Coming Soon"}
       </button>
     </div>
   );

@@ -8,7 +8,10 @@ import { DirectoryQuerySchema } from "@/lib/medical/schemas";
 import CollegeListView from "@/components/medical/directory/CollegeListView";
 import CollegeTableView from "@/components/medical/directory/CollegeTableView";
 import EmptyState from "@/components/medical/shared/EmptyState";
+import ShowMoreButton from "@/components/medical/shared/ShowMoreButton";
 import { Search, LayoutGrid, List, SlidersHorizontal, Building2 } from "lucide-react";
+
+const PAGE_SIZE = 24;
 
 export default function DirectoryClient() {
   const router = useRouter();
@@ -23,11 +26,14 @@ export default function DirectoryClient() {
   const [colleges, setColleges] = useState<College[]>([]);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState<"grid" | "table">("grid");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   // Fetch
   useEffect(() => {
     let mounted = true;
     setLoading(true);
+    setVisibleCount(PAGE_SIZE);
     getColleges(params).then((data) => {
       if (mounted) {
         setColleges(data);
@@ -55,7 +61,7 @@ export default function DirectoryClient() {
   return (
     <div className="flex flex-col lg:flex-row gap-8">
       {/* Sidebar Filters (Desktop) */}
-      <aside className="hidden lg:block w-72 shrink-0">
+      <aside className={`${filtersOpen ? "block" : "hidden"} lg:block w-full lg:w-72 shrink-0`}>
         <div className="bg-paper-bright/80 backdrop-blur-md border border-hairline rounded-[var(--radius-lg)] p-6 sticky top-28 shadow-card">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-hairline/60">
             <h3 className="font-semibold text-text-main flex items-center gap-2">
@@ -162,7 +168,7 @@ export default function DirectoryClient() {
           </div>
           
           <div className="flex items-center gap-3 w-full sm:w-auto">
-            <button className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+            <button type="button" onClick={() => setFiltersOpen(open => !open)} aria-expanded={filtersOpen} className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
               <SlidersHorizontal className="w-4 h-4 text-gold" /> Filters
             </button>
             
@@ -200,10 +206,16 @@ export default function DirectoryClient() {
           ) : colleges.length > 0 ? (
             <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
               {view === "grid" ? (
-                <CollegeListView colleges={colleges} />
+                <CollegeListView colleges={colleges.slice(0, visibleCount)} />
               ) : (
-                <CollegeTableView colleges={colleges} />
+                <CollegeTableView colleges={colleges.slice(0, visibleCount)} />
               )}
+              <ShowMoreButton
+                shown={Math.min(visibleCount, colleges.length)}
+                total={colleges.length}
+                noun="colleges"
+                onClick={() => setVisibleCount(count => count + PAGE_SIZE)}
+              />
             </div>
           ) : (
             <div className="animate-in fade-in zoom-in-95 duration-500">

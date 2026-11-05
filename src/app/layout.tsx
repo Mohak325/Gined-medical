@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "gined.in — Medical (NEET) Counselling",
   description:
-    "Find which MBBS, BDS, MD, MS colleges you can realistically get into based on your NEET rank. Data-backed shortlisting, seat matrix, and 1-to-1 counselling.",
+    "Find which MBBS and BDS colleges you can realistically get into based on your NEET rank. Cutoff-based shortlisting, seat counts, and 1-to-1 counselling.",
 };
 
 export default function RootLayout({

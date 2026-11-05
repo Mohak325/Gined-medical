@@ -4,12 +4,12 @@ export default function WhyChooseUsSection({ id }: { id: string }) {
   const blocks = [
     {
       title: "Data over Intuition",
-      body: "We process over 5 years of historical allotments across all state and central counsellings to calculate your exact probabilities.",
+      body: "We compare your rank with 2024 closing ranks, so your shortlist starts from real numbers rather than guesswork.",
       icon: <Target className="w-6 h-6 text-gold" />
     },
     {
       title: "No Hidden Agendas",
-      body: "Unlike agents, we do not have tie-ups with private colleges. Our recommendations are 100% unbiased and mathematically derived.",
+      body: "Unlike agents, we do not have tie-ups with private colleges. Our recommendations start from your rank and the data.",
       icon: <Lock className="w-6 h-6 text-gold" />
     },
     {
@@ -18,8 +18,8 @@ export default function WhyChooseUsSection({ id }: { id: string }) {
       icon: <Lightbulb className="w-6 h-6 text-gold" />
     },
     {
-      title: "Volatility Aware",
-      body: "We flag colleges where closing ranks have fluctuated by more than 25% year-on-year, protecting you from nasty surprises.",
+      title: "Honest About Uncertainty",
+      body: "Safe, Moderate and Ambitious labels are indicative, not guarantees. Cutoffs change every year, so we help you build a list that allows for that.",
       icon: <TrendingUp className="w-6 h-6 text-gold" />
     }
   ];

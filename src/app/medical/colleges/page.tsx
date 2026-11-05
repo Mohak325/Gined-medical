@@ -21,8 +21,8 @@ export default function CollegesPage() {
               All Medical Colleges
             </h1>
             <p className="text-body-large text-text-muted max-w-prose">
-              Browse, filter, and compare every NMC-recognised medical college in India.
-              Detailed fee structures, seat matrices, and historical cutoff trends.
+              Browse, filter, and compare medical colleges in India. See seat counts,
+              indicative fees, and 2024 cutoffs where available.
             </p>
           </header>
 

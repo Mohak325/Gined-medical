@@ -20,7 +20,7 @@ export default function SeatMatrixPage() {
               Seat Matrix Explorer
             </h1>
             <p className="text-body-large text-text-muted max-w-prose">
-              View exact seat allocations for every quota and category across all colleges.
+              View total seats by college and course. Quota and category breakdowns are coming soon.
             </p>
           </header>
 

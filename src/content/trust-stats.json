@@ -1,21 +1,9 @@
 {
-  "note": "These are placeholder figures. Remove M2 entirely if unverified at launch (OI-1).",
-  "last_updated": "2025-06-01",
+  "note": "Counts come from src/data (colleges.json, and seats.json for UG seats). Update them when the data changes.",
+  "last_updated": "2026-11-05",
   "stats": [
-    {
-      "value": 12500,
-      "label": "Students counselled",
-      "qualifier": "since 2019"
-    },
-    {
-      "value": 680,
-      "label": "Colleges mapped",
-      "qualifier": null
-    },
-    {
-      "value": 5,
-      "label": "Years active",
-      "qualifier": null
-    }
+    { "value": "926", "label": "Colleges listed", "qualifier": null },
+    { "value": "1,39,439", "label": "UG seats listed", "qualifier": null },
+    { "value": "2024", "label": "Latest cutoff data", "qualifier": null }
   ]
 }

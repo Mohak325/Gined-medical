@@ -5,19 +5,19 @@ export default function ToolEntryGrid({ id }: { id: string }) {
   const tools = [
     {
       title: "All Colleges Directory",
-      desc: "Browse every NMC-recognised medical college.",
+      desc: "Browse and filter 926 medical colleges.",
       icon: <Search className="w-6 h-6 text-gold" />,
       href: "/medical/colleges",
     },
     {
       title: "Seat Matrix Explorer",
-      desc: "Breakdown of seats across all quotas for every category.",
+      desc: "See total UG seat counts by college and course.",
       icon: <Map className="w-6 h-6 text-gold" />,
       href: "/medical/seat-matrix",
     },
     {
       title: "Comparison Tool",
-      desc: "Side-by-side analysis of fees, cutoffs, and bond penalties.",
+      desc: "See up to 3 colleges side by side.",
       icon: <Scale className="w-6 h-6 text-gold" />,
       href: "/medical/compare",
     },
