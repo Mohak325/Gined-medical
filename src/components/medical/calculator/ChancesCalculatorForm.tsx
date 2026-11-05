@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useTrack } from "@/lib/medical/TrackProvider";
 import { parseIndianNumber, formatIndian } from "@/lib/medical/format";
 import { INDIA_STATES } from "@/lib/medical/mockData";
+import { KEA_GROUPS, KEA_SEATS, KEA_SUB_QUOTAS, composeKeaCode, parseKeaCode, type KeaSeat } from "@/lib/medical/karnataka";
 import { ArrowRight } from "lucide-react";
 
 interface ChancesCalculatorFormProps {
@@ -28,6 +29,13 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
   const [category, setCategory] = useState(initCategory);
   const [domicileState, setDomicileState] = useState(initState);
   const [course, setCourse] = useState(initCourse);
+
+  const initKea = parseKeaCode(searchParams.get("stateCategory"));
+  const [keaSeat, setKeaSeat] = useState<KeaSeat>(initKea.seat);
+  const [keaGroup, setKeaGroup] = useState(initKea.group);
+  const [keaSubQuota, setKeaSubQuota] = useState(initKea.subQuota);
+  // Karnataka has its own categories, so the national ones would mislead here.
+  const usesKarnataka = quota === "state" && domicileState === "KA";
 
   const handleRankChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Only allow numbers and commas
@@ -56,6 +64,9 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
     
     if (quota === "state" && domicileState) {
       params.set("state", domicileState);
+    }
+    if (usesKarnataka) {
+      params.set("stateCategory", composeKeaCode(keaSeat, keaGroup, keaSubQuota));
     }
     if (course !== "all") {
       params.set("course", course);
@@ -116,28 +127,30 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         </div>
 
         {/* Category */}
-        <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
-          <label className="block text-small font-semibold text-text-main mb-2">
-            Category
-          </label>
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
-          >
-            <option value="general">General (UR)</option>
-            <option value="obc">OBC-NCL</option>
-            <option value="sc">SC</option>
-            <option value="st">ST</option>
-            <option value="ews">EWS</option>
-          </select>
-        </div>
+        {!usesKarnataka && (
+          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+            <label className="block text-small font-semibold text-text-main mb-2">
+              Category
+            </label>
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
+            >
+              <option value="general">General (UR)</option>
+              <option value="obc">OBC-NCL</option>
+              <option value="sc">SC</option>
+              <option value="st">ST</option>
+              <option value="ews">EWS</option>
+            </select>
+          </div>
+        )}
 
         {/* State (Conditional) */}
         {quota === "state" && (
           <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
             <label className="block text-small font-semibold text-text-main mb-2">
-              Domicile State
+              Counselling State
             </label>
             <select
               required
@@ -151,6 +164,57 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
               ))}
             </select>
           </div>
+        )}
+
+        {/* Karnataka's own seat types and categories */}
+        {usesKarnataka && (
+          <>
+            <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+              <label htmlFor="kea-seat" className="block text-small font-semibold text-text-main mb-2">
+                Seat Type
+              </label>
+              <select
+                id="kea-seat"
+                value={keaSeat}
+                onChange={(e) => setKeaSeat(e.target.value as KeaSeat)}
+                className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
+              >
+                {KEA_SEATS.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
+              </select>
+            </div>
+            {keaSeat === "government" && (
+              <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+                <label htmlFor="kea-group" className="block text-small font-semibold text-text-main mb-2">
+                  Karnataka Category
+                </label>
+                <select
+                  id="kea-group"
+                  value={keaGroup}
+                  onChange={(e) => setKeaGroup(e.target.value)}
+                  className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
+                >
+                  {KEA_GROUPS.map((g) => <option key={g.value} value={g.value}>{g.label}</option>)}
+                </select>
+              </div>
+            )}
+            {keaSeat !== "private_open" && (
+              <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+                <label htmlFor="kea-sub" className="block text-small font-semibold text-text-main mb-2">
+                  Sub-quota
+                </label>
+                <select
+                  id="kea-sub"
+                  value={keaSeat === "private_karnataka" && keaSubQuota !== "H" ? "G" : keaSubQuota}
+                  onChange={(e) => setKeaSubQuota(e.target.value)}
+                  className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
+                >
+                  {KEA_SUB_QUOTAS.filter((s) => keaSeat === "government" || s.value === "G" || s.value === "H").map((s) => (
+                    <option key={s.value} value={s.value}>{s.label}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+          </>
         )}
 
         {/* Course (Conditional for PG) */}

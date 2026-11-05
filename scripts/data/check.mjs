@@ -57,7 +57,7 @@ expectNone([...new Set(cutoffs.filter((c) => !idSet.has(c.collegeId)).map((c) =>
 
 /* ── Values: are the numbers possible? ───────────────────────────────── */
 
-const describe = (c) => `${c.collegeId} ${c.course} ${c.quota} ${c.category} R${c.round}`;
+const describe = (c) => `${c.collegeId} ${c.course} ${c.quota} ${c.stateCategory ?? c.category} R${c.round}`;
 expectNone(seats.filter((s) => !(s.seats > 0)).map((s) => s.collegeId), "Seat rows with no seats");
 expectNone(
   seats.filter((s) => !["aiq", "state", "management", "nri"].includes(s.quota)).map((s) => s.quota),
@@ -68,6 +68,7 @@ expectNone(cutoffs.filter((c) => c.openingRank > c.closingRank).map(describe), "
 expectNone(cutoffs.filter((c) => !meta.cutoffYears.includes(c.year)).map(describe), "Cutoffs with an unexpected year");
 expectNone(cutoffs.filter((c) => c.round < 1 || c.round > 5).map(describe), "Cutoffs with an unknown round");
 expectNone(cutoffs.filter((c) => !(c.allotted > 0)).map(describe), "Cutoffs with no students behind them");
+expectNone(cutoffs.filter((c) => c.quota === "state" && !(c.state && c.stateCategory)).map(describe), "State cutoffs with no state or category");
 
 const keys = cutoffs.map((c) => `${describe(c)} ${c.quotaDetail} ${c.year}`);
 const seen = new Set();
@@ -142,12 +143,50 @@ for (const [name, result] of Object.entries(extract)) {
 // The rank predictor looks up college + course + quota + category + round + year and uses
 // the first row. Two rows there would give an arbitrary answer.
 const predictorKeys = cutoffs
-  .filter((c) => c.quota !== "special")
-  .map((c) => [c.collegeId, c.course, c.quota, c.category, c.round, c.year].join(" "));
+  .filter((c) => c.quota !== "special" && c.category !== "state_only")
+  .map((c) => [c.collegeId, c.course, c.quota, c.category, c.round, c.year].join(" "))
+  .concat(cutoffs.filter((c) => c.quota === "state").map((c) => [c.collegeId, c.state, c.stateCategory, c.round, c.year].join(" ")));
 const predictorSeen = new Set();
 expectNone(
   predictorKeys.filter((key) => predictorSeen.has(key) || !predictorSeen.add(key)),
   "Two cutoffs compete for one rank-predictor lookup",
+  warnings
+);
+
+/* ── Karnataka: do we match KEA's published figures? ─────────────────── */
+
+const keaClosing = (collegeId, code = "GM", year = 2026) =>
+  cutoffs.find((c) => c.state === "KA" && c.collegeId === collegeId && c.stateCategory === code && c.round === 1 && c.year === year)?.closingRank;
+
+// neet2seat's table of 2026 Round 1 closing ranks. See data/SOURCES.md.
+expectEqual("KEA Bangalore Medical College", keaClosing("ug_ka001g1"), 2655);
+expectEqual("KEA Mysore Medical College", keaClosing("ug_ka026g1"), 6539);
+expectEqual("KEA Shri Atal Bihari Vajpayee", keaClosing("ug_ka032g1"), 8022);
+expectEqual("KEA Kasturba Mangalore", keaClosing("ug_ka021p3"), 9426);
+expectEqual("KEA ESIC Bangalore", keaClosing("ug_ka010g1"), 11745);
+expectEqual("KEA Ramaiah", keaClosing("ug_ka025p3"), 12100);
+expectEqual("KEA JSS Mysore", keaClosing("ug_ka016p3"), 12456);
+expectEqual("KEA Karnataka Medical College Hubballi", keaClosing("ug_ka020g1"), 12840);
+expectEqual("KEA Kempegowda", keaClosing("ug_ka023p3"), 18046);
+
+const keaReport = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/kea/extract-report.json"), "utf8"));
+expectEqual("KEA 2026 Round 1 students allotted, per neet2seat", keaReport["2026-r1"].written, 11875);
+for (const [name, result] of Object.entries(keaReport)) {
+  if (result.rejected > 0) errors.push(`KEA ${name}: ${result.rejected} rows could not be read from the PDF`);
+  if (result.snoGapCount > 0) errors.push(`KEA ${name}: serial numbers skip, so rows may be missing`);
+  if (result.rankDropCount > 0) warnings.push(`KEA ${name}: ranks go backwards ${result.rankDropCount} times`);
+}
+
+// A college can't fill more seats in Round 1 than it has. More means a wrong college match.
+const keaFirstRound = new Map();
+for (const c of cutoffs.filter((c) => c.state === "KA" && c.year === 2026 && c.round === 1)) {
+  keaFirstRound.set(c.collegeId, (keaFirstRound.get(c.collegeId) ?? 0) + c.allotted);
+}
+expectNone(
+  [...keaFirstRound]
+    .filter(([id, count]) => { const seats = colleges.find((c) => c.id === id)?.ugSeats ?? 0; return seats > 0 && count > seats * 1.1; })
+    .map(([id, count]) => `${id} allotted ${count}, seats ${colleges.find((c) => c.id === id).ugSeats}`),
+  "Karnataka colleges with more Round 1 students than seats",
   warnings
 );
 
@@ -177,7 +216,7 @@ const withCutoffs = new Set(cutoffs.map((c) => c.collegeId));
 const ugColleges = colleges.filter((c) => c.ugSeats > 0);
 const missing = ugColleges.filter((c) => !withCutoffs.has(c.id));
 warnings.push(`UG colleges with no cutoffs: ${missing.length} of ${ugColleges.length}`);
-warnings.push(`State-quota cutoffs: ${cutoffs.filter((c) => c.quota === "state").length} rows (none collected yet)`);
+warnings.push(`State-quota cutoffs cover only: ${meta.stateCutoffs.join(", ")} (${cutoffs.filter((c) => c.quota === "state").length} rows)`);
 warnings.push(`PG cutoffs: ${cutoffs.filter((c) => c.track === "pg").length} rows (none collected yet)`);
 
 /* ── Report ──────────────────────────────────────────────────────────── */

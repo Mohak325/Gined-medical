@@ -3,6 +3,7 @@
  *
  *   Input:  data/raw/nexdoc/*       college list and seats, exact copies, never edited
  *           data/extracted/mcc/*    rows taken from MCC's result PDFs
+ *           data/extracted/kea/*    rows taken from Karnataka's result PDFs
  *           data/curated/*          facts we added by hand
  *   Output: src/data/*.json         what the website reads
  *
@@ -13,12 +14,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { isNewAllotment, mapCategory, mapQuota, readCsv, squash } from "./mcc-lib.mjs";
+import * as kea from "./kea-lib.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "../..");
 const RAW = path.join(ROOT, "data/raw/nexdoc");
 const CURATED = path.join(ROOT, "data/curated");
 const OUT = path.join(ROOT, "src/data");
 const MCC = path.join(ROOT, "data/extracted/mcc");
+const KEA = path.join(ROOT, "data/extracted/kea");
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const writeJson = (name, value) =>
@@ -90,6 +93,18 @@ const SEAT_QUOTAS = {
   "NRI / Minority Quota": "nri",
 };
 
+// Karnataka's state counselling (KEA). Each file holds one round of MBBS allotments.
+const KEA_ROUNDS = [
+  { file: "2025-r1", year: 2025, round: 1 },
+  { file: "2025-r2", year: 2025, round: 2 },
+  { file: "2025-r3", year: 2025, round: 3 },
+  { file: "2025-stray", year: 2025, round: 4 },
+  { file: "2026-r1", year: 2026, round: 1 },
+  { file: "2026-r2", year: 2026, round: 2 },
+  { file: "2026-r3", year: 2026, round: 3 },
+  { file: "2026-stray", year: 2026, round: 4 },
+];
+
 const CUTOFF_COURSES = new Set(["MBBS", "BDS"]);
 
 /* ── Helpers ──────────────────────────────────────────────────────────── */
@@ -123,6 +138,7 @@ const rawColleges = Object.values(readJson(path.join(RAW, "colleges_details.json
 const rawUg = readJson(path.join(RAW, "ug_all.json"));
 const rawPg = readJson(path.join(RAW, "pg_all.json"));
 const crosswalk = readJson(path.join(CURATED, "mcc-college-crosswalk.json"));
+const keaCodes = readJson(path.join(CURATED, "kea-college-codes.json"));
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 
 /* ── Seats ────────────────────────────────────────────────────────────── */
@@ -233,6 +249,32 @@ for (const { file, year, round } of MCC_ROUNDS) {
   }
 }
 
+// Karnataka's rows work the same way, with its own seat types and categories.
+for (const { file, year, round } of KEA_ROUNDS) {
+  for (const row of readCsv(path.join(KEA, `${file}.csv`))) {
+    if (!kea.isNewAllotment(row.status)) { drop("student kept an earlier seat"); continue; }
+    const { college, seatType } = kea.parseCourseCode(row.code);
+    const stateCategory = row.category;
+    const { quota, category } = kea.mapSeat(seatType, stateCategory);
+    if (!(college in keaCodes)) throw new Error(`KEA college ${college} (${row.college}) has no match. Add it to kea-college-codes.json.`);
+    const collegeId = keaCodes[college];
+    if (!collegeId) { drop("college not on the site"); continue; }
+    if (!colleges.some((c) => c.id === collegeId)) throw new Error(`kea-college-codes.json names unknown college ${collegeId}.`);
+
+    const key = ["KA", collegeId, seatType, stateCategory, round, year].join("|");
+    const rank = Number(row.rank);
+    const group = groups.get(key) ?? {
+      collegeId, track: "ug", course: "MBBS", quota, category, round, year,
+      openingRank: rank, closingRank: rank, allotted: 0,
+      quotaDetail: `KEA_${seatType.toUpperCase()}`, state: "KA", seatType, stateCategory,
+    };
+    group.openingRank = Math.min(group.openingRank, rank);
+    group.closingRank = Math.max(group.closingRank, rank);
+    group.allotted++;
+    groups.set(key, group);
+  }
+}
+
 const cutoffs = [...groups.values()];
 
 /* ── States and summary numbers ───────────────────────────────────────── */
@@ -248,6 +290,7 @@ const meta = {
   cutoffSource: "MCC",
   cutoffYear: Math.max(...cutoffs.map((cutoff) => cutoff.year)),
   cutoffYears: [...new Set(cutoffs.map((cutoff) => cutoff.year))].sort(),
+  stateCutoffs: [...new Set(cutoffs.map((cutoff) => cutoff.state).filter(Boolean))].sort(),
   seatYear: SEAT_YEAR,
   collegeCount: colleges.length,
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
@@ -260,7 +303,8 @@ const meta = {
 fs.mkdirSync(OUT, { recursive: true });
 writeJson("colleges.json", colleges);
 writeJson("seats.json", seats);
-writeJson("cutoffs.json", cutoffs);
+// One row per line keeps this large file smaller and its changes easy to read.
+fs.writeFileSync(path.join(OUT, "cutoffs.json"), `[\n${cutoffs.map((c) => JSON.stringify(c)).join(",\n")}\n]\n`);
 writeJson("states.json", states);
 writeJson("meta.json", meta);
 

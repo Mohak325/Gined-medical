@@ -67,7 +67,7 @@ export default function SiteFooter() {
         <div className="mt-16 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-micro text-text-on-dark/30">
             © {new Date().getFullYear()} gined.in. Not affiliated with NTA or
-            MCC. Cutoffs calculated from MCC's published results. College list and seats adapted from{" "}
+            MCC. Cutoffs calculated from MCC's and KEA's published results. College list and seats adapted from{" "}
             <a href="https://github.com/deekshithvodela/nexdoc" target="_blank" rel="noopener noreferrer" className="underline">NexDoc</a>
             {" "}(open licence), compiled from MCC and NMC records. Check official portals before deciding.
           </p>

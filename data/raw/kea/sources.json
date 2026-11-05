@@ -1,0 +1,66 @@
+[
+  {
+    "name": "2025-r1",
+    "title": "UGNEET-2025 Medical 1st round final allotment list",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2025/UGNEET_ALLOT_2025_1st_final_mbbskannada.pdf",
+    "bytes": 2845277,
+    "sha256": "fea6570a18cd522d492dee8dd49e03ecd1693e0585b8a951bd5b3da4dfc4bad9",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2025-r2",
+    "title": "UGNEET-2025 Medical 2nd round final allotment list",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2025/UGNEET_ALLOT_2025_R2_prov_2ND_FIN_MED_23092025.pdf",
+    "bytes": 3892915,
+    "sha256": "f71312ec2e42dddf91b90f7b823c80a045567913cc221e9b2ccd5980644159c3",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2025-r3",
+    "title": "UGNEET-2025 Medical 3rd round final allotment list (08-12-2025)",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2025/UGNEET_ALLOT_2025_court_Fin_08122025kannada.pdf",
+    "bytes": 619892,
+    "sha256": "c36b570d5ba80b4e79abac50ef7faeaf4c5c77eedf18eb534c8293b83492eb84",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2025-stray",
+    "title": "UGNEET-2025 Medical stray round final allotment list",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2025/UGNEET_ALLOT_2025_SPE_STRY_med_16122025_finl.pdf",
+    "bytes": 228416,
+    "sha256": "d8c960d48a269c1e83b72f89b0753acc051c9557f2ffe1711eaf756607c301bb",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2026-r1",
+    "title": "UGNEET-2026 Medical 1st round final allotment list (28-08-2026)",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2026/UGNEET_ALLOT_2026_2nd_M_Fin_28082026kannada.pdf",
+    "bytes": 9423924,
+    "sha256": "6d0dcb5d1816d349a18cf0f08f0fdc946d40c917774f7ee461676c07d884b96d",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2026-r2",
+    "title": "UGNEET-2026 Medical 2nd round final allotment list (16-09-2026)",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2026/UGNEET_ALLOT_2026_2nd_MFINAL_16092026_R2_SECONDkannada.pdf",
+    "bytes": 9344206,
+    "sha256": "56e87d09a2c4ba289156bfd7a9c0ac731600a197e8b9d896d5c0a04bd0f4151d",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2026-r3",
+    "title": "UGNEET-2026 Medical 3rd round final allotment list (06-10-2026)",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2026/UGNEET_ALLOT_2026_3rd_MFINAL_06102026_R3kannada.pdf",
+    "bytes": 6966146,
+    "sha256": "42de210ca21b05e724b80f81542ccc739486125edd011c62f36e96c9c13c96d4",
+    "retrieved": "2026-11-05"
+  },
+  {
+    "name": "2026-stray",
+    "title": "UGNEET-2026 Medical stray vacancy round final allotment list (22-10-2026)",
+    "url": "https://cetonline.karnataka.gov.in/keawebentry456/ugneet2026/UGNEET_ALLOT_2026_MED_STRAYkannada.pdf",
+    "bytes": 5227904,
+    "sha256": "1c90a0bd260aff7c90dc2f153db690d9ff3d2b09bf735e1fc61933bda5916023",
+    "retrieved": "2026-11-05"
+  }
+]

@@ -120,6 +120,12 @@ export async function getCutoffs(params: Record<string, any>): Promise<CutoffEnt
   if (params.quota && params.quota !== "all") {
     results = results.filter(c => c.quota === params.quota);
   }
+  if (params.state) {
+    results = results.filter(c => c.state === params.state);
+  }
+  if (params.stateCategory) {
+    results = results.filter(c => c.stateCategory === params.stateCategory);
+  }
   if (params.category && params.category !== "all") {
     results = results.filter(c => c.category === params.category);
   }

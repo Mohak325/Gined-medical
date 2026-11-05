@@ -16,8 +16,17 @@ Update this file whenever a source changes.
 `data/raw/mcc/sources.json` with each file's address, size and fingerprint: 2025 Rounds 1 to 3,
 stray and special stray, and 2026 Rounds 1 to 3 and stray. Retrieved 5 November 2026 from
 <https://mcc.nic.in/archive-ug/> and <https://mcc.nic.in/current-events-ug/>. The PDFs aren't
-kept in git because they're large: `npm run data:mcc:download` fetches them again. The rows
+kept in git because they're large: `npm run data:download` fetches them again. The rows
 taken from them are in `data/extracted/mcc/`.
+
+**Karnataka's state-quota cutoffs come straight from KEA.** The eight result PDFs are listed in
+`data/raw/kea/sources.json`: 2025 and 2026, Rounds 1 to 3 and the first stray round. Retrieved 5 November
+2026 from <https://cetonline.karnataka.gov.in/kea/ugneet2026> and the 2025 page beside it. KEA's lists hold
+no student names. The rows taken from them are in `data/extracted/kea/`. They also hold each seat's fee,
+which isn't used on the site yet (Phase 4).
+
+KEA ran more stray rounds after the first (four more in 2026, two more in 2025). They're small mop-ups and
+aren't included. Dental and AYUSH lists aren't included either.
 
 The site stores rounds as numbers: 1 to 3 as named, 4 for the stray vacancy round and 5 for the
 special stray round. The 2026 special stray round was still running on 5 November 2026, so add
@@ -46,6 +55,32 @@ The 2025 Round 1 PDF has [26,608 allotted students](https://news.careers360.com/
 as reported. For 2026 we count 29,946 in the final list, while the press reported
 [29,945](https://news.careers360.com/neet-ug-2026-round-1-seat-allotment-out-mcc-nic-in-29945-mbbs-bds-allied-admissions-medical-college-reporting/amp).
 That report may describe an earlier version of the list; we haven't confirmed why they differ.
+
+**KEA's figures match an independent report.** [neet2seat](https://neet2seat.com/news/karnataka-neet-ug-2026-round-1-final-allotment)
+reports 11,875 MBBS students allotted in 2026 Round 1, the same as our count. Nine General Merit closing ranks
+from its table also match exactly, including Bangalore Medical College (2,655) and JSS Mysore (12,456). The
+closing-rank report compiles the same KEA list, so it checks our reading and college matching, not KEA itself.
+
+## What Karnataka's codes mean
+
+From KEA's UGNEET 2026 information bulletin (sections 11 to 13) and its seat matrix.
+
+| Code | Meaning |
+|---|---|
+| Course code ending `MG`, `MP`, `MN`, `MQ` | Government, Private, NRI and Others seats |
+| `GM`, `1`, `2A`, `2B`, `3A`, `3B`, `SC`, `ST` | Base category. These reservations apply only to eligible Karnataka candidates |
+| Ending `G`, `R`, `K` | General, Rural and Kannada medium |
+| Ending `H` | Hyderabad-Karnataka region, under Article 371(J) |
+| `GMP`, `GMPH` | Private seats for Karnataka candidates |
+| `OPN` | Private seats open to any Indian citizen |
+| `OTH`, `NRI` | Others (management) and NRI seats |
+| `MA`, `MC`, `ME`, `MK`, `MM`, `MU`, `RC1` to `RC8` | Minority seats and St John's categories, kept as `special` |
+| `PH`, `PHM`, `D`, `DK`, `XD`, `NCC`, `SPO`, `S-G`, `JK`, `CAP`, `AGL` | Special categories such as disability, defence, NCC and sports, kept as `special` |
+
+**S1 to S4 are not fully confirmed.** They appear only in 2026, in place of `SCG`. The bulletin says SC was split
+into SCA, SCB and SCC, and the seat matrix has four SC columns: SCA, SCB, SCC and "SCC (20%)". That order probably
+matches S1 to S4, but no KEA document we found states it, so the site shows KEA's codes rather than claiming this.
+Confirm with KEA before relying on it.
 
 ## What the comparison with NexDoc found
 
@@ -76,17 +111,23 @@ NMC has since revised that to [1,40,664](https://medicaldialogues.in/amp/news/ed
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- There are no state-quota cutoffs, PG cutoffs or real fees.
-- 330 of 845 UG colleges have no cutoffs: 295 private, 32 government and 3 deemed. MCC doesn't
-  allot these seats in the files we hold. Most fill seats only through state counselling, which
-  Phase 3 adds.
+- State-quota cutoffs cover Karnataka only. There are no PG cutoffs or real fees.
+- 292 of 845 UG colleges have no cutoffs. Most probably fill seats only through the state counselling
+  of states we haven't added yet.
+- 7 Karnataka colleges have no KEA rows: Chettinad Kolar, Kasturba Manipal, Raja Rajeswari, Shri B M Patil,
+  Sri Devaraj Urs and the two Sri Siddhartha colleges. They're probably outside KEA's counselling, but that isn't confirmed.
+- Bagalkote Medical College is in KEA's and MCC's lists but not in our college list.
+- 4 Karnataka colleges filled more Round 1 seats than NexDoc's seat data shows, such as Karwar (170 against
+  150). KEA's own matrix should replace those seat counts.
 - 12 colleges have All India seats in NexDoc's seat data but no MCC allotments, including the
   Gujarat GMERS colleges and Armed Forces Medical College. The seat data may be wrong for them.
 - 8 colleges on MCC's list aren't in our college list, so their 323 MBBS allotments are left out: AIIMS
   Rewari, CAPFIMS Delhi, and the medical colleges at Bagalkote, Bongaigaon, Chapra, Pithoragarh,
   Ahilyanagar and Samastipur. See `data/curated/mcc-college-overrides.json`.
 - Dental colleges aren't on the site, so most BDS rows aren't used.
-- Bhaarath Medical College and Chikkaballapura have MCC cutoffs but no seats in NexDoc's data.
+- Bhaarath Medical College has MCC cutoffs but no seats in NexDoc's data.
+- Chikkaballapura Institute of Medical Sciences and Nandi Medical College are one college listed twice in NexDoc.
+  Cutoffs are on Nandi (`ug_ka027g1`), as KEA names it.
 - Chamarajanagar appears twice in NexDoc's list (`ug_ka004g1` and `ug_ka005g1`). Only the second
   has seats and cutoffs.
 - NexDoc's seat data shows only 15 All India seats at BHU and 22 at Aligarh, while MCC allotted

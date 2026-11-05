@@ -70,7 +70,7 @@
     },
     {
       "question": "Where does your cutoff data come from?",
-      "answer": "Our cutoffs come directly from MCC's published allotment results for the 2025 and 2026 All India counselling, including the stray vacancy rounds. Our college list and seat counts come from a public compilation of NMC and MCC records (the open-source NexDoc project), using the 2026-27 seat matrix released in July 2026. We check samples against published figures. We don't have state-quota cutoffs yet, so colleges that only fill seats through state counselling show no cutoff. Always confirm any figure on the official MCC or state counselling portal before making decisions.",
+      "answer": "Our All India cutoffs come directly from MCC's published allotment results for the 2025 and 2026 All India counselling, including the stray vacancy rounds. Our college list and seat counts come from a public compilation of NMC and MCC records (the open-source NexDoc project), using the 2026-27 seat matrix released in July 2026. We check samples against published figures. For state quota we've added Karnataka, using KEA's published allotment lists. Other states' cutoffs are still to come, so colleges that only fill seats through those states' counselling show no cutoff. Always confirm any figure on the official MCC or state counselling portal before making decisions.",
       "order": 12,
       "category": "data"
     }
