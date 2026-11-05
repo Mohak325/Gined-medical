@@ -147,6 +147,7 @@ const stateSources = [
   ...readJson(path.join(ROOT, "data/raw/states/sources.json")),
   ...readJson(path.join(ROOT, "data/raw/states/gj.json")).filter((s) => !s.lastMerit).map((s) => ({ ...s, state: "GJ" })),
   ...readJson(path.join(ROOT, "data/raw/states/ap.json")).map((s) => ({ ...s, state: "AP" })),
+  ...readJson(path.join(ROOT, "data/raw/states/tg.json")).map((s) => ({ ...s, state: "TG" })),
 ];
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 

@@ -198,6 +198,34 @@ for (const [name, result] of Object.entries(stateReport)) {
   if (result.written === 0) errors.push(`${name}: no rows were read from the PDF`);
 }
 
+// Telangana's counts, as reported by neet2seat.
+{
+  const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));
+  for (const [name, result] of Object.entries(tg)) {
+    if (result.rejected > 0) errors.push(`${name}: ${result.rejected} rows could not be read from the PDF`);
+  }
+  expectEqual("Telangana 2026 Phase 1 MBBS seats, per neet2seat", tg["TG-2026-cq-r1"].written, 4734);
+  expectEqual("Telangana 2026 Phase 2 MBBS seats, per neet2seat", tg["TG-2026-cq-r2"].written, 6181);
+
+  // neet2seat's table of the last All India Rank allotted in each category, statewide, in Phase 1.
+  // Apart from its Open female row, the table covers general seats, not female ones.
+  const lastInState = (...codes) => Math.max(0, ...cutoffs
+    .filter((c) => c.state === "TG" && c.year === 2026 && c.round === 1 && codes.includes(c.stateCategory))
+    .map((c) => c.closingRank));
+  expectEqual("Telangana EWS last rank", lastInState("EWS-G"), 90014);
+  expectEqual("Telangana Open general last rank", lastInState("OPEN-G"), 164912);
+  expectEqual("Telangana Open female last rank", lastInState("OPEN-F"), 171983);
+  expectEqual("Telangana BC-D last rank", lastInState("BCD-G"), 168391);
+  expectEqual("Telangana BC-B last rank", lastInState("BCB-G"), 191895);
+  expectEqual("Telangana BC-E last rank", lastInState("BCE-G"), 181262);
+  expectEqual("Telangana Minority last rank", lastInState("MIN-G"), 194811);
+  expectEqual("Telangana ST last rank", lastInState("ST-G"), 239392);
+  expectEqual("Telangana SC group 3 last rank", lastInState("SC3-G"), 239994);
+  expectEqual("Telangana BC-C last rank", lastInState("BCC-G"), 267387);
+  expectEqual("Telangana SC group 2 last rank", lastInState("SC2-G"), 294966);
+  expectEqual("Telangana BC-A last rank", lastInState("BCA-G"), 333056);
+}
+
 // Andhra Pradesh's lists are read by their own script.
 {
   const ap = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/ap-report.json"), "utf8"));

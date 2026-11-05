@@ -138,7 +138,10 @@ Every state publishes differently, so start by reading before writing any code.
 6. **Add spot checks** to `scripts/data/check.mjs` from a report that didn't come from your own work. Some states publish their own closing ranks,
    which is the best check of all.
 
-Some lists have no ruled table, or code everything into one column. Gujarat and Andhra Pradesh each have a small reader for this (`gj_extract.py`, `ap_extract.py`).
+Some lists have no ruled table, or code everything into one column. Gujarat, Andhra Pradesh and Telangana each have a small reader for this (`gj_extract.py`, `ap_extract.py`, `tg_extract.py`).
+
+**When a check fails, find out which side is wrong before changing anything.** Telangana's check once failed on 6 of 12 figures. Tracing each one showed the data was
+right, and the check had mixed female seats into a table that only covered general seats.
 
 The predictor reads each state's choices from `state-rules.mjs`, so it needs no change. Karnataka is the one exception, with its own files.
 
