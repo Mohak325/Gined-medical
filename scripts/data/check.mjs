@@ -9,7 +9,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const DATA = path.resolve(import.meta.dirname, "../../src/data");
+const ROOT = path.resolve(import.meta.dirname, "../..");
+const DATA = path.join(ROOT, "src/data");
 const load = (name) => JSON.parse(fs.readFileSync(path.join(DATA, name), "utf8"));
 
 const colleges = load("colleges.json");
@@ -64,7 +65,9 @@ expectNone(
 );
 expectNone(cutoffs.filter((c) => !(c.openingRank > 0 && c.closingRank > 0)).map(describe), "Cutoffs with an impossible rank");
 expectNone(cutoffs.filter((c) => c.openingRank > c.closingRank).map(describe), "Cutoffs where opening rank is above closing rank");
-expectNone(cutoffs.filter((c) => c.year !== meta.cutoffYear).map(describe), "Cutoffs with an unexpected year");
+expectNone(cutoffs.filter((c) => !meta.cutoffYears.includes(c.year)).map(describe), "Cutoffs with an unexpected year");
+expectNone(cutoffs.filter((c) => c.round < 1 || c.round > 5).map(describe), "Cutoffs with an unknown round");
+expectNone(cutoffs.filter((c) => !(c.allotted > 0)).map(describe), "Cutoffs with no students behind them");
 
 const keys = cutoffs.map((c) => `${describe(c)} ${c.quotaDetail} ${c.year}`);
 const seen = new Set();
@@ -76,22 +79,92 @@ function expectEqual(name, actual, expected) {
   if (actual !== expected) errors.push(`Spot check failed, ${name}: expected ${expected}, got ${actual}`);
 }
 
-function closingRank(collegeId, category = "general", round = 1) {
+function closingRank(collegeId, year, category = "general", round = 1) {
   return cutoffs.find(
     (c) => c.collegeId === collegeId && c.course === "MBBS" && c.quota === "aiq" &&
-      c.category === category && c.round === round
+      c.category === category && c.round === round && c.year === year
   )?.closingRank;
 }
 
 // Press reports of the 2025 MCC Round 1 result. See data/SOURCES.md.
-expectEqual("AIIMS Delhi 2025 R1 general closing rank", closingRank("ug_in014i1"), 48);
-expectEqual("Madras Medical College 2025 R1 general closing rank", closingRank("ug_in071g1"), 695);
+expectEqual("AIIMS Delhi 2025 R1 general closing rank", closingRank("ug_in014i1", 2025), 48);
+expectEqual("Madras Medical College 2025 R1 general closing rank", closingRank("ug_in071g1", 2025), 695);
+// Press reports of the 2026 MCC Round 1 result, and the 2025 figure beside it.
+expectEqual("AIIMS Delhi 2026 R1 general closing rank", closingRank("ug_in014i1", 2026), 52);
+expectEqual("Maulana Azad 2026 R1 general closing rank", closingRank("ug_in073g1", 2026), 129);
+expectEqual("Maulana Azad 2025 R1 general closing rank", closingRank("ug_in073g1", 2025), 103);
 
 // NMC's July 2026 release: 1,36,939 MBBS seats, not counting national institutes.
 const nonCentralUgSeats = seats
   .filter((s) => s.track === "ug" && colleges.find((c) => c.id === s.collegeId)?.type !== "Central")
   .reduce((sum, s) => sum + s.seats, 0);
 expectEqual("UG seats excluding national institutes", nonCentralUgSeats, 136939);
+
+/* ── Second opinion: does a separate compilation of the same PDFs agree? ─ */
+
+// NexDoc worked out 2025 closing ranks from the same MCC PDFs, separately from us. It often
+// files a row under the wrong college (Career Institute got King George's ranks), and it
+// puts dental rows on medical colleges, so its college isn't trusted. But every medical
+// result it holds should exist somewhere in our data. If many don't, our extraction broke.
+const NEXDOC_CATEGORY = { OPEN: "general", OBC: "obc", SC: "sc", ST: "st", EWS: "ews", OPEN_PWD: "general_pwd", OBC_PWD: "obc_pwd", SC_PWD: "sc_pwd", ST_PWD: "st_pwd", EWS_PWD: "ews_pwd" };
+const nexdoc = JSON.parse(fs.readFileSync(path.join(ROOT, "data/raw/nexdoc/ug_colleges_aiq_mapping.json"), "utf8"));
+const groupKey = (detail, category, round, rank) => [detail, category, round, rank].join("|");
+const ourResults = new Set(
+  cutoffs.filter((c) => c.year === 2025 && c.course === "MBBS").map((c) => groupKey(c.quotaDetail, c.category, c.round, c.closingRank))
+);
+let found = 0;
+const notFound = [];
+for (const college of nexdoc) {
+  for (const row of college.aiq_cutoffs_raw) {
+    if (row.course !== "MBBS" || !NEXDOC_CATEGORY[row.category] || ["CW_ARMED_FORCES", "FOREIGN"].includes(row.quota)) continue;
+    for (const round of [1, 2, 3]) {
+      const rank = row[`r${round}_closing_rank`];
+      if (rank == null) continue;
+      if (ourResults.has(groupKey(row.quota, NEXDOC_CATEGORY[row.category], round, rank))) found++;
+      else notFound.push(`${college.college_name} ${row.quota} ${row.category} R${round}: ${rank}`);
+    }
+  }
+}
+console.log(`NexDoc's 2025 medical results also found in MCC's PDFs: ${found} of ${found + notFound.length}`);
+expectNone(notFound.length > 10 ? notFound : [], "NexDoc results missing from our 2025 data");
+
+// Press counts of students allotted a seat, which test that no PDF rows were lost.
+const extract = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/mcc/extract-report.json"), "utf8"));
+expectEqual("2025 Round 1 students allotted, per Careers360", extract["2025-r1"].written, 26608);
+for (const [name, result] of Object.entries(extract)) {
+  if (result.rejected > 0) errors.push(`${name}: ${result.rejected} rows could not be read from the PDF`);
+  if (result.snoGapCount > 0) errors.push(`${name}: serial numbers skip, so rows may be missing`);
+  if (result.rankDropCount > 0) errors.push(`${name}: ranks go backwards, so a rank was misread`);
+}
+
+/* ── One answer per question ─────────────────────────────────────────── */
+
+// The rank predictor looks up college + course + quota + category + round + year and uses
+// the first row. Two rows there would give an arbitrary answer.
+const predictorKeys = cutoffs
+  .filter((c) => c.quota !== "special")
+  .map((c) => [c.collegeId, c.course, c.quota, c.category, c.round, c.year].join(" "));
+const predictorSeen = new Set();
+expectNone(
+  predictorKeys.filter((key) => predictorSeen.has(key) || !predictorSeen.add(key)),
+  "Two cutoffs compete for one rank-predictor lookup",
+  warnings
+);
+
+/* ── A college shouldn't change character between years ──────────────── */
+
+// A closing rank that moves more than 4 times over in a year usually means a wrong college
+// match. Small groups can move a lot for real reasons, so only larger ones are compared.
+const firstRound = (year) => new Map(
+  cutoffs
+    .filter((c) => c.year === year && c.round === 1 && c.course === "MBBS" && c.quota === "aiq" && c.category === "general" && c.allotted >= 5)
+    .map((c) => [c.collegeId, c.closingRank])
+);
+const before = firstRound(2025);
+const jumps = [...firstRound(2026)]
+  .filter(([id, rank]) => before.has(id) && (rank > before.get(id) * 4 || rank * 4 < before.get(id)))
+  .map(([id, rank]) => `${id} ${before.get(id)} to ${rank}`);
+expectNone(jumps, "All India closing rank moved over 4 times between 2025 and 2026", warnings);
 
 /* ── Known gaps: these don't stop a build, but stay visible ──────────── */
 
@@ -106,7 +179,6 @@ const missing = ugColleges.filter((c) => !withCutoffs.has(c.id));
 warnings.push(`UG colleges with no cutoffs: ${missing.length} of ${ugColleges.length}`);
 warnings.push(`State-quota cutoffs: ${cutoffs.filter((c) => c.quota === "state").length} rows (none collected yet)`);
 warnings.push(`PG cutoffs: ${cutoffs.filter((c) => c.track === "pg").length} rows (none collected yet)`);
-warnings.push(`Cutoff years held: ${[...new Set(cutoffs.map((c) => c.year))].join(", ")} (one year cannot show a trend)`);
 
 /* ── Report ──────────────────────────────────────────────────────────── */
 

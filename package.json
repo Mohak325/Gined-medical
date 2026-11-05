@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "data:mcc:download": "node scripts/data/mcc-download.mjs",
+    "data:mcc:extract": "python -I scripts/data/mcc_extract.py data/raw/mcc/pdfs data/extracted/mcc",
+    "data:mcc:match": "node scripts/data/mcc-match.mjs",
     "data:build": "node scripts/data/build.mjs",
     "data:check": "node scripts/data/check.mjs"
   },

@@ -1,9 +1,10 @@
 /**
  * Builds the site's data files from the raw source files.
  *
- *   Input:  data/raw/nexdoc/*   exact copies of the source files, never edited
- *           data/curated/*      facts we added by hand
- *   Output: src/data/*.json     what the website reads
+ *   Input:  data/raw/nexdoc/*       college list and seats, exact copies, never edited
+ *           data/extracted/mcc/*    rows taken from MCC's result PDFs
+ *           data/curated/*          facts we added by hand
+ *   Output: src/data/*.json         what the website reads
  *
  * Run with: npm run data:build, then npm run data:check
  * Never edit src/data by hand: the next build would overwrite it.
@@ -11,11 +12,13 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { isNewAllotment, mapCategory, mapQuota, readCsv, squash } from "./mcc-lib.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "../..");
 const RAW = path.join(ROOT, "data/raw/nexdoc");
 const CURATED = path.join(ROOT, "data/curated");
 const OUT = path.join(ROOT, "src/data");
+const MCC = path.join(ROOT, "data/extracted/mcc");
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const writeJson = (name, value) =>
@@ -23,9 +26,21 @@ const writeJson = (name, value) =>
 
 /* ── Facts about the source that its files don't state ───────────────── */
 
-// The source files have no year. See data/SOURCES.md for how these were worked out.
-const CUTOFF_YEAR = 2025;
+// The NexDoc files have no year. See data/SOURCES.md for how this was worked out.
 const SEAT_YEAR = "2026-27";
+
+// Which round each MCC result file holds. Add a line here when MCC publishes a new one.
+const MCC_ROUNDS = [
+  { file: "2025-r1", year: 2025, round: 1 },
+  { file: "2025-r2", year: 2025, round: 2 },
+  { file: "2025-r3", year: 2025, round: 3 },
+  { file: "2025-stray", year: 2025, round: 4 },
+  { file: "2025-special", year: 2025, round: 5 },
+  { file: "2026-r1", year: 2026, round: 1 },
+  { file: "2026-r2", year: 2026, round: 2 },
+  { file: "2026-r3", year: 2026, round: 3 },
+  { file: "2026-stray", year: 2026, round: 4 },
+];
 
 /* ── Lookup tables: how source labels translate to the site's labels ──── */
 
@@ -75,36 +90,6 @@ const SEAT_QUOTAS = {
   "NRI / Minority Quota": "nri",
 };
 
-// "special" quotas have their own eligibility rules, so they must not be mixed
-// into a prediction for an ordinary student. Unlisted quotas (such as FOREIGN)
-// are dropped, and the build reports how many.
-const CUTOFF_QUOTAS = {
-  AIQ: "aiq",
-  OPEN_SEAT: "aiq",
-  DEEMED: "deemed",
-  DU: "central",
-  AMU: "central",
-  CW_ARMED_FORCES: "special",
-  IPU: "special",
-  ESI: "special",
-  PUDUCHERRY_INTERNAL: "special",
-  MUSLIM_MINORITY: "special",
-  NRI: "nri",
-};
-
-const CUTOFF_CATEGORIES = {
-  OPEN: "general",
-  OBC: "obc",
-  SC: "sc",
-  ST: "st",
-  EWS: "ews",
-  OPEN_PWD: "general_pwd",
-  OBC_PWD: "obc_pwd",
-  SC_PWD: "sc_pwd",
-  ST_PWD: "st_pwd",
-  EWS_PWD: "ews_pwd",
-};
-
 const CUTOFF_COURSES = new Set(["MBBS", "BDS"]);
 
 /* ── Helpers ──────────────────────────────────────────────────────────── */
@@ -137,11 +122,8 @@ function websiteUrl(website) {
 const rawColleges = Object.values(readJson(path.join(RAW, "colleges_details.json")));
 const rawUg = readJson(path.join(RAW, "ug_all.json"));
 const rawPg = readJson(path.join(RAW, "pg_all.json"));
-const rawCutoffs = readJson(path.join(RAW, "ug_colleges_aiq_mapping.json"));
-const crosswalk = readJson(path.join(CURATED, "cutoff-college-crosswalk.json"));
+const crosswalk = readJson(path.join(CURATED, "mcc-college-crosswalk.json"));
 const extras = readJson(path.join(CURATED, "college-extras.json"));
-
-const collegeIds = new Set(rawColleges.map((college) => college.college_id));
 
 /* ── Seats ────────────────────────────────────────────────────────────── */
 
@@ -214,49 +196,44 @@ const colleges = rawColleges.map((raw) => {
 
 /* ── Cutoffs ──────────────────────────────────────────────────────────── */
 
-const cutoffs = [];
 const drop = (reason) => {
   report.droppedCutoffs[reason] = (report.droppedCutoffs[reason] ?? 0) + 1;
 };
 
-for (const college of rawCutoffs) {
-  const collegeId = crosswalk[college.college_id] ?? college.college_id;
-  // AIIMS Guwahati alone has both OPEN_SEAT and AIQ rows, with very different ranks.
-  // Until checked against MCC's PDF, predict from the stricter OPEN_SEAT rows and
-  // set the others aside, so no student is told a seat is safer than it is.
-  const hasOpenSeat = college.aiq_cutoffs_raw.some((row) => row.quota === "OPEN_SEAT");
-  if (!collegeIds.has(collegeId)) {
-    throw new Error(`Cutoff college ${college.college_id} (${college.college_name}) has no match. Add it to the crosswalk.`);
-  }
+// A closing rank is the highest rank that received a new seat in a group, where a group
+// is one college + course + quota + category + round + year. See mcc-lib.mjs.
+const groups = new Map();
 
-  for (const row of college.aiq_cutoffs_raw) {
-    const quota = hasOpenSeat && row.quota === "AIQ" ? "special" : CUTOFF_QUOTAS[row.quota];
-    const category = CUTOFF_CATEGORIES[row.category];
-    const course = clean(row.course);
-    if (!quota) { drop(`quota ${row.quota}`); continue; }
-    if (!category) { drop(`category ${row.category}`); continue; }
-    if (!CUTOFF_COURSES.has(course)) { drop(`course ${course}`); continue; }
+for (const { file, year, round } of MCC_ROUNDS) {
+  for (const row of readCsv(path.join(MCC, `${file}.csv`))) {
+    const { quota, detail } = mapQuota(row.quota);
+    if (!isNewAllotment(row)) { drop("student kept an earlier seat"); continue; }
+    if (!quota) { drop(`quota ${detail}`); continue; }
+    if (!CUTOFF_COURSES.has(row.course)) { drop(`course ${row.course}`); continue; }
 
-    for (const round of [1, 2, 3]) {
-      const openingRank = row[`r${round}_opening_rank`];
-      const closingRank = row[`r${round}_closing_rank`];
-      if (openingRank == null || closingRank == null) continue;
-      cutoffs.push({
-        collegeId,
-        track: "ug",
-        course,
-        quota,
-        category,
-        round,
-        year: CUTOFF_YEAR,
-        openingRank: Number(openingRank),
-        closingRank: Number(closingRank),
-        allotted: Number(row[`r${round}_total_allotted`] ?? 0),
-        quotaDetail: row.quota,
-      });
+    const match = crosswalk[squash(row.institute)];
+    if (!match) {
+      if (row.course === "MBBS") throw new Error(`No match for "${row.institute}". Run: npm run data:mcc:match`);
+      drop("BDS college not on the site");
+      continue;
     }
+    if (!match.id) { drop("college not on the site"); continue; }
+
+    const category = mapCategory(row.allottedCategory);
+    const key = [match.id, row.course, quota, detail, category, round, year].join("|");
+    const rank = Number(row.rank);
+    const group = groups.get(key) ?? {
+      collegeId: match.id, track: "ug", course: row.course, quota, category, round, year,
+      openingRank: rank, closingRank: rank, allotted: 0, quotaDetail: detail,
+    };
+    group.openingRank = Math.min(group.openingRank, rank);
+    group.closingRank = Math.max(group.closingRank, rank);
+    group.allotted++;
+    groups.set(key, group);
   }
 }
+
+const cutoffs = [...groups.values()];
 
 /* ── States and summary numbers ───────────────────────────────────────── */
 
@@ -268,7 +245,9 @@ const ugSeats = seats.filter((seat) => seat.track === "ug").reduce((sum, seat) =
 const meta = {
   source: "NexDoc",
   sourceCommit: fs.readFileSync(path.join(RAW, "COMMIT"), "utf8").trim(),
-  cutoffYear: CUTOFF_YEAR,
+  cutoffSource: "MCC",
+  cutoffYear: Math.max(...cutoffs.map((cutoff) => cutoff.year)),
+  cutoffYears: [...new Set(cutoffs.map((cutoff) => cutoff.year))].sort(),
   seatYear: SEAT_YEAR,
   collegeCount: colleges.length,
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
@@ -290,5 +269,5 @@ console.log(`  Colleges: ${colleges.length} (${meta.ugCollegeCount} with UG seat
 console.log(`  States:   ${states.length}`);
 console.log(`  Seats:    ${seats.length} rows (${ugSeats} UG seats), ${report.zeroSeatRows} zero-seat rows skipped`);
 console.log(`  Cutoffs:  ${cutoffs.length} rows across ${meta.collegesWithCutoffs} colleges`);
-console.log("  Cutoff rows dropped:", report.droppedCutoffs);
+console.log("  Rows not used for cutoffs:", report.droppedCutoffs);
 console.log("Now run: npm run data:check");

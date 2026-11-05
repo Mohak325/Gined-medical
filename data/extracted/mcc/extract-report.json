@@ -1,0 +1,157 @@
+{
+  "2025-r1": {
+    "pages": 1107,
+    "written": 26608,
+    "rejected": 0,
+    "rowsSeen": 26608,
+    "lastRank": 1315471.0,
+    "lastSno": 26608,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Allotted": 26608
+    },
+    "rejectSamples": []
+  },
+  "2025-r2": {
+    "pages": 3237,
+    "written": 15321,
+    "rejected": 0,
+    "rowsSeen": 35551,
+    "noAllotmentThisRound": 20230,
+    "lastRank": 1315566.0,
+    "lastSno": 35551,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Fresh Allotted in 2nd Round": 12901,
+      "Upgraded": 2420
+    },
+    "rejectSamples": []
+  },
+  "2025-r3": {
+    "pages": 1930,
+    "written": 9143,
+    "rejected": 0,
+    "rowsSeen": 39455,
+    "noAllotmentThisRound": 30312,
+    "lastRank": 1317215.0,
+    "lastSno": null,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Fresh Allotted in 3nd Round": 5529,
+      "Upgraded": 3614
+    },
+    "rejectSamples": []
+  },
+  "2025-special": {
+    "pages": 14,
+    "written": 264,
+    "rejected": 0,
+    "rowsSeen": 264,
+    "lastRank": 1227396.0,
+    "lastSno": 264,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Allotted": 264
+    },
+    "rejectSamples": []
+  },
+  "2025-stray": {
+    "pages": 52,
+    "written": 1129,
+    "rejected": 0,
+    "rowsSeen": 1129,
+    "lastRank": 1284136.0,
+    "lastSno": 1129,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Allotted": 1129
+    },
+    "rejectSamples": []
+  },
+  "2026-r1": {
+    "pages": 1272,
+    "written": 29946,
+    "rejected": 0,
+    "rowsSeen": 29946,
+    "lastRank": 1194233.0,
+    "lastSno": 29946,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Allotted": 29946
+    },
+    "rejectSamples": []
+  },
+  "2026-r2": {
+    "pages": 2666,
+    "written": 21111,
+    "rejected": 0,
+    "rowsSeen": 36761,
+    "noAllotmentThisRound": 15650,
+    "lastRank": 1194233.0,
+    "lastSno": null,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Fresh Allotted in 2nd Round": 8828,
+      "Retained": 7675,
+      "Upgraded": 4608
+    },
+    "rejectSamples": []
+  },
+  "2026-r3": {
+    "pages": 1920,
+    "written": 15500,
+    "rejected": 0,
+    "rowsSeen": 40458,
+    "noAllotmentThisRound": 24958,
+    "lastRank": 1194890.0,
+    "lastSno": null,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Upgraded": 5169,
+      "Retained": 5018,
+      "Fresh Allotted in 3nd Round": 4687,
+      "Did not fill up fresh choices.": 626
+    },
+    "rejectSamples": []
+  },
+  "2026-stray": {
+    "pages": 137,
+    "written": 3108,
+    "rejected": 0,
+    "rowsSeen": 3108,
+    "lastRank": 1190352.0,
+    "lastSno": 3108,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "remarks": {
+      "Allotted": 3108
+    },
+    "rejectSamples": []
+  }
+}
