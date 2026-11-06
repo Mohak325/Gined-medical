@@ -175,6 +175,8 @@ number column to `FIELDS`, and never commit the PDFs.
 
 **A new source file arrives.** Save it in `data/raw/`, add it to `data/SOURCES.md`, update `build.mjs`, and add spot checks from an independent source.
 
+**You've found an official fee notice.** Add the document under `sources` in `data/curated/fees.json`, with a short label, its full title, its address and a note on what the amount includes. Then add one row per college and seat type, with the year. Use the tuition fee, and say in the note what else students pay. Only use the counselling body's or the state's own documents. Aggregator sites often disagree with each other. Rebuild and run the check.
+
 ## Limits of the current data
 
 `data/SOURCES.md` lists every known gap. The biggest are state-quota cutoffs and real fees.

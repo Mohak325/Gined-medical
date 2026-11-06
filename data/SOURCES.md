@@ -184,6 +184,9 @@ are still estimates.
 | KEA allotment lists | 68 Karnataka colleges, 194 seat types | One fee per college and seat type, as printed beside each allotment. 2026 where present, otherwise 2025. A fee of 0 is treated as not published |
 | [OJEE's Round 3 admission notice](https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf) | All 14 Odisha government colleges and its 3 private ones | Government colleges charge ₹37,950 a year. NRI fees are four times the private fee, as the notice states, so those are worked out |
 | [Puducherry's fee order of 28 August 2026](https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view) | PIMS and Sri Manakula Vinayagar | Government, management and NRI seats, for 2026-27 to 2028-29. The table is a scanned image and was read by eye. Sri Venkateshwaraa's fee is under a High Court stay |
+| [Uttar Pradesh's fee orders on upneet.gov.in](https://upneet.gov.in/) | 32 private colleges by government order, 4 minority colleges, Integral, and ESIC Noida and Varanasi | Tuition fee only, for 2026-27. The orders are scanned and were read by eye. They open from the home page notices, which have no direct address. Minority colleges set their own fee and declare it to DGME. Prasad (Unnao), Radha Govind (Meerut) and Mayo (Barabanki) are in the orders but not on this site |
+| [DME Madhya Pradesh's fee report](https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx) | All 34 MBBS colleges in the state counselling | Tuition for government, private and NRI seats. Private colleges also charge a development fee of about 15 to 18% of tuition, left out here. A live report, read on 6 November 2026 |
+| [Tamil Nadu's prospectus 2026-27](https://tnmedicalselection.net/news/30062026003157.pdf) | 36 government colleges, ESIC K.K. Nagar and 27 self-financing colleges | Government quota seats only. Government colleges charge ₹6,000 tuition (₹18,073 with other fees). Management and NRI fees are in a separate prospectus |
 
 Fees read by hand from a notice go in `data/curated/fees.json`, with the document named for each.
 
@@ -193,7 +196,7 @@ Fees read by hand from a notice go in `data/curated/fees.json`, with the documen
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. There are no PG cutoffs. Published fees cover Karnataka, Odisha and Puducherry so far.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. There are no PG cutoffs. Published fees cover Karnataka, Odisha, Puducherry, Uttar Pradesh, Madhya Pradesh and Tamil Nadu so far. Maharashtra's fee authority site couldn't be reached, and deemed universities have no single official fee list.
 - Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
 - 18 MBBS colleges still have no cutoffs: Jharkhand's 3 (separate portal, own merit rank), 6 in Tripura, Jammu and Kashmir, Sikkim, Manipur
   and Meghalaya, the 2 armed forces colleges, and 7 not in any state list found.
