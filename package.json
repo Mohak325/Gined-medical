@@ -20,6 +20,7 @@
     "data:kl:extract": "python -I scripts/data/kl_extract.py data/raw/states/kl.json data/raw/states/pdfs data/extracted/states",
     "data:up:download": "python -I scripts/data/up_download.py data/extracted/states/UP-2026-all.csv",
     "data:up:extract": "python -I scripts/data/up_extract.py data/raw/states/up.json data/extracted/states/UP-2026-all.csv data/extracted/states",
+    "data:wb:extract": "python -I scripts/data/wb_extract.py data/raw/states/wb.json data/raw/states/pdfs data/extracted/states",
     "data:kea:extract": "python -I scripts/data/kea_extract.py data/raw/kea/pdfs data/extracted/kea",
     "data:mcc:extract": "python -I scripts/data/mcc_extract.py data/raw/mcc/pdfs data/extracted/mcc",
     "data:mcc:match": "node scripts/data/mcc-match.mjs",

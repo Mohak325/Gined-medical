@@ -143,6 +143,8 @@ pages are printed sideways, so words sharing an x position form a row.
 
 A list with no rank can sometimes be joined to a merit list on a roll or application number, as Punjab and Himachal Pradesh are. Use the number only while the script runs, and never write it out.
 
+**If a PDF's text comes out as gibberish,** check its fonts before reaching for OCR. West Bengal's use Type 3 fonts, where each character is a small drawing. Group identical drawings, look at each shape once, and map them, as `wb_extract.py` does. That's exact, where OCR can misread a 1 as a 7.
+
 **If a state only shows results on a web form,** as Uttar Pradesh does, write a download script like `up_download.py`. Pause a few seconds between requests, keep only the fields you need, and never save names or roll numbers. Check what the page shows: Uttar Pradesh's shows current seat holders, not everyone allotted.
 
 **If a state only publishes its own ranks,** as Tamil Nadu and Kerala do, add `stateRank` to its entry in `state-rules.mjs`, and give every row `category: "state_only"`. The form then asks for that rank, and results and college pages label it. Never compare a state rank with an All India rank.

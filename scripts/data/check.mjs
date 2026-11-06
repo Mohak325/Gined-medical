@@ -348,6 +348,22 @@ for (const [name, result] of Object.entries(stateReport)) {
   if (same < total * 0.7) errors.push(`Uttar Pradesh: only ${same} of ${total} closing ranks match Sartha`);
 }
 
+// West Bengal's Round 1 counts and median closing ranks for government colleges, as reported by neet2seat.
+{
+  const wb = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/wb-report.json"), "utf8"));
+  expectEqual("West Bengal 2026 Round 1 seats allotted, per neet2seat", wb["WB-2026-r1"].rows, 6422);
+  expectEqual("West Bengal 2026 Round 1 MBBS seats allotted, per neet2seat", wb["WB-2026-r1"].mbbs, 5833);
+  for (const [name, file] of Object.entries(wb)) {
+    if (file.unread > 0 || file.badRank > 0) errors.push(`${name}: rows could not be read`);
+  }
+  const medians = { UR: 36975, OBC: 44526, EWS: 117197, SC: 142062, ST: 475677 };
+  for (const [code, value] of Object.entries(medians)) {
+    const ranks = cutoffs.filter((c) => c.state === "WB" && c.round === 1 && c.stateCategory === code && c.seatType === "government")
+      .map((c) => c.closingRank).sort((a, b) => a - b);
+    expectEqual(`West Bengal Round 1 median ${code} closing rank in government colleges, per neet2seat`, ranks[Math.floor((ranks.length - 1) / 2)], value);
+  }
+}
+
 // Telangana's counts, as reported by neet2seat.
 {
   const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));
