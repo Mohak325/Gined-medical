@@ -11,6 +11,7 @@ interface ResultItem {
   cutoff: CutoffEntry;
   confidence: ConfidenceLevel;
   allRounds?: AllRoundsClosing;
+  laterRounds?: boolean;
 }
 
 interface ResultsListProps {
@@ -29,6 +30,7 @@ export default function ResultsList({ results, userRank }: ResultsListProps) {
             cutoff={item.cutoff}
             confidence={item.confidence}
             allRounds={item.allRounds}
+            laterRounds={item.laterRounds}
             userRank={userRank}
             index={i}
           />

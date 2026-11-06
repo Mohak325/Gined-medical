@@ -16,6 +16,11 @@ export interface AllRoundsClosing {
   year: number;
   /** The round that reached furthest down the list. */
   round: number;
+  /**
+   * The furthest rank reached in Rounds 1 to 3, leaving out stray and extra rounds (4 and up).
+   * A stray round often fills one leftover seat far down the list, which is too thin to rely on.
+   */
+  mainRoundsClosing?: number;
 }
 
 /** One seat group: the same college, course, quota and category, in any round. */
@@ -34,8 +39,10 @@ export function allRoundsIndex(cutoffs: CutoffEntry[]): Map<string, AllRoundsClo
   for (const c of cutoffs) {
     if (c.year !== allRoundsYear(c.track) || !hasLaterRounds(c)) continue;
     const key = seatGroupKey(c);
-    const best = index.get(key);
-    if (!best || c.closingRank > best.closingRank) index.set(key, { closingRank: c.closingRank, year: c.year, round: c.round });
+    const best = index.get(key) ?? { closingRank: 0, year: c.year, round: c.round };
+    if (c.closingRank > best.closingRank) Object.assign(best, { closingRank: c.closingRank, round: c.round });
+    if (c.round <= 3) best.mainRoundsClosing = Math.max(best.mainRoundsClosing ?? 0, c.closingRank);
+    index.set(key, best);
   }
   return index;
 }
