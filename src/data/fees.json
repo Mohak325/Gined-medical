@@ -1,5 +1,55 @@
 [
   {
+    "collegeId": "ug_in003p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3396000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1443300,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in009g1",
     "course": "MBBS",
     "seatType": "government",
@@ -7,6 +57,66 @@
     "year": 2026,
     "source": "KEA allotment lists",
     "state": "KA"
+  },
+  {
+    "collegeId": "ug_in009p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "ESIC Noida and Varanasi fee structure, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in017p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5094000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in017p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1443300,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in018p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 56330,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
   },
   {
     "collegeId": "ug_in019p3",
@@ -29,6 +139,46 @@
     "state": "OR"
   },
   {
+    "collegeId": "ug_in021g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in021p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in022g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in030g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in030p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -49,6 +199,46 @@
     "state": "OR"
   },
   {
+    "collegeId": "ug_in031p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1718306,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in033p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3522000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in033p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1496850,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in034p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1875000,
+    "year": 2026,
+    "source": "Integral's revised MBBS fee, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
     "collegeId": "ug_in038p3",
     "course": "MBBS",
     "seatType": "government",
@@ -85,6 +275,346 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_in039g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in039p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1625613,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in040p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in043g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in043p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in044p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 440000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in046p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5349000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in046p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1515550,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in047g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in048g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in048p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in052p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3375000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in052p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 978261,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in053g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in055g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in056g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in057g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in058g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in059g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in062p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1450010,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in064g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in066p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in067g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in070g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in070p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5283000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in070p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1496850,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in071g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in071p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5094000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in071p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1443300,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in072p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3318000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in072p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 961740,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in073p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1510150,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in076g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in077p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1450300,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
     "collegeId": "ug_in084p3",
     "course": "MBBS",
     "seatType": "government",
@@ -119,6 +649,156 @@
     "year": 2026,
     "source": "KEA allotment lists",
     "state": "KA"
+  },
+  {
+    "collegeId": "ug_in087g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in087p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 440000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in088g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in088p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5298000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in088p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1501100,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_in089g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in089p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in090g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in091p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 540000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in093p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in095p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 435000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in097p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in099p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1453070,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_in101p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 440000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in102p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1500250,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
   },
   {
     "collegeId": "ug_ka001g1",
@@ -1759,6 +2439,26 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_mp001p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5094000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1443300,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
     "collegeId": "ug_mp002g1",
     "course": "MBBS",
     "seatType": "government",
@@ -1784,6 +2484,226 @@
     "year": 2026,
     "source": "KEA allotment lists",
     "state": "KA"
+  },
+  {
+    "collegeId": "ug_mp002p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 5085000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1440750,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp003p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3660000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1060870,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp004p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4650000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1317500,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp005p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3780000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1095652,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp017g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
+  },
+  {
+    "collegeId": "ug_mp018g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "DME Madhya Pradesh's college fee report, UG counselling 2026",
+    "sourceUrl": "https://dme.mponline.gov.in/Portal/Services/DMEMP/College/RptSubjectFeeDetailsUG.aspx",
+    "state": "MP"
   },
   {
     "collegeId": "ug_or002g1",
@@ -2004,5 +2924,595 @@
     "source": "Puducherry's fee order of 28 August 2026",
     "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
     "state": "PY"
+  },
+  {
+    "collegeId": "ug_rj013p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1599973,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_tn002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 540000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 540000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn009p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 540000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 540000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn017g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn018g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn019g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn022g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn023g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 6000,
+    "year": 2026,
+    "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_up001g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1674142,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1604740,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1790000,
+    "year": 2026,
+    "source": "Minority colleges' fee statements, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up006p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1895000,
+    "year": 2026,
+    "source": "Minority colleges' fee statements, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1599973,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up008p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1800268,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up009p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1360690,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up010p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1672880,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up011p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1525250,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up012p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1762947,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up013p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1431460,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up014p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1716784,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up015g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1695000,
+    "year": 2026,
+    "source": "Minority colleges' fee statements, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up015p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1460730,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up017p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1768904,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up018p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1600460,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up019p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1872361,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up020g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "ESIC Noida and Varanasi fee structure, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up021g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1510880,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up021p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1462816,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up022p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1625910,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up023p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1978214,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up024p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1495975,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up025p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1890847,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up026p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1737000,
+    "year": 2026,
+    "source": "Minority colleges' fee statements, UP NEET UG 2026, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up027p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1506050,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up048g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1375025,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up050g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1610100,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up051g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1673200,
+    "year": 2026,
+    "source": "UP's fee orders for 2026-27, on upneet.gov.in",
+    "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
   }
 ]
