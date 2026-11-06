@@ -2,7 +2,7 @@
  "7airforcehospitalnathusinghroadkanpurcanttkanpuruttarpradesh208004": {
   "id": null,
   "how": "override",
-  "mcc": "7 Air Force Hospital, ,NATHU SINGH ROAD KANPUR CANTT KANPUR, Uttar Pradesh, 208004",
+  "mcc": "7 Air Force Hospital, , NATHU SINGH ROAD KANPUR CANTT KANPUR, Uttar Pradesh, 208004",
   "site": null
  },
  "acsmedicalcollegeandhospitalacsmedicalcollegeandhospitaltamilnadu600077": {
@@ -104,7 +104,7 @@
  "amritaschoolofmedicinefaridabadamritaschoolofmedicinemataamritanandmayimargsec88faridabadharyana": {
   "id": "ug_hr003p3",
   "how": "exact",
-  "mcc": "Amrita School of Medicine,Faridabad,Amrita School of Medicine, Mata Amritanandmayi Marg, Sec-88, Faridabad, Ha",
+  "mcc": "Amrita School of Medicine,Faridabad , Amrita School of Medicine, Mata Amritanandmayi Marg, Sec-88, Faridabad, ",
   "site": "Amrita School of Medicine, Faridabad"
  },
  "amritaschoolofmedicinekochiamritaschoolofmedicineamritainstituteofmedicalsciencesaimsponekkarapokochikerala682041": {
@@ -122,7 +122,7 @@
  "andamannicobarislandsinstituteofmedicalsciencesdhsannexebuildingatlantapointsrivijayapuramandamanandnicobarislands": {
   "id": "ug_an001g1",
   "how": "override",
-  "mcc": "Andaman & Nicobar Islands Institute of Medical Sciences ,DHS Annexe Building, Atlanta Point, Sri Vijaya Puram,",
+  "mcc": "Andaman & Nicobar Islands Institute of Medical Sciences , DHS Annexe Building, Atlanta Point, Sri Vijaya Puram",
   "site": "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair"
  },
  "andamannicobarislandsinstituteofmedicalsciencesportblairdhsannexebuildingatlantapointsrivijayapuramsouthandaman": {
@@ -158,13 +158,13 @@
  "armedforcesmedicalcollegesolapurroadnearracecourseoppositeoldcommandhospitalwanowaripunemaharashtra411040": {
   "id": "ug_mh002g1",
   "how": "pin+name",
-  "mcc": "Armed Forces Medical College,SOLAPUR ROAD NEAR RACE COURSE OPPOSITE OLD COMMAND HOSPITAL, WANOWARI PUNE, Mahar",
+  "mcc": "Armed Forces Medical College , SOLAPUR ROAD NEAR RACE COURSE OPPOSITE OLD COMMAND HOSPITAL, WANOWARI PUNE, Mah",
   "site": "Armed Forces Medical College, Pune"
  },
  "armyhospitalresearchreferraldelhidhaulakuannewdelhi110010delhinct110010": {
   "id": "ug_in001g1",
   "how": "pin+name",
-  "mcc": "Army Hospital (Research & Referral), Delhi,Dhaula Kuan New Delhi - 110010, Delhi (NCT), 110010",
+  "mcc": "Army Hospital (Research & Referral), Delhi , Dhaula Kuan New Delhi - 110010, Delhi (NCT), 110010",
   "site": "Army Hospital Research & Referral, New Delhi"
  },
  "assammedialcollegedibrugarhassammedicalcollege": {
@@ -206,7 +206,7 @@
  "autonomousstatemedicalcollegesocietyetahuttarpradesh112naglapadiharsiraomahraralinkroadsakeetetahuttarpradesh207001etahuttarpradesh": {
   "id": "ug_up001p3",
   "how": "exact",
-  "mcc": "Autonomous State Medical College Society, Etah, Uttar Pradesh.,112 Nagla Padihar, Sirao Mahrara Link road Sake",
+  "mcc": "Autonomous State Medical College Society, Etah, Uttar Pradesh. , 112 Nagla Padihar, Sirao Mahrara Link road Sa",
   "site": "Autonomous State Medical College Society, Etah, Uttar Pradesh"
  },
  "autonomousstatemedicalcollegesocietyhardoigauradandasitapurroadhardoiup241001": {
@@ -227,10 +227,16 @@
   "mcc": "Autonomous State Medical College, Firozabad,Autonomous State Medical College Society and S.N.M District Hospit",
   "site": "Government Medical College, Firozabad"
  },
+ "autonomousstatemedicalcollegehardoiautonomousstatemedicalcollegegauradandasitapurroadhardoiup": {
+  "id": "ug_in011p3",
+  "how": "override",
+  "mcc": "Autonomous State Medical College, Hardoi , Autonomous State Medical College, Gaura Danda Sitapur Road, Hardoi ",
+  "site": "Autonomous State Medical College Society, Hardoi"
+ },
  "autonomousstatemedicalcollegepratapgarhupdrsonelalpatelautonomousstatemedicalcollegepratapgarhup": {
   "id": "ug_up017g1",
   "how": "override",
-  "mcc": "Autonomous State Medical College, Pratapgarh U.P,Dr Sonelal Patel, Autonomous State Medical College, Pratapgar",
+  "mcc": "Autonomous State Medical College, Pratapgarh U.P , Dr Sonelal Patel, Autonomous State Medical College, Pratapg",
   "site": "Dr Sonelal Patel Autonomous State Medical College, Pratapgarh"
  },
  "autonomousstatemedicalcollegeshahjahanpurdharnipurjignerajalalabadroadshahjahanpuruttarpradesh242001": {
@@ -243,6 +249,12 @@
   "id": "ug_up010g1",
   "how": "exact",
   "mcc": "Autonomous State Medical College, Siddharthnagar,71 Ashok Marg, Mudila Naugarh Siddharthnagar",
+  "site": "Autonomous State Medical College, Siddharthnagar"
+ },
+ "autonomousstatemedicalcollegesiddharthnagarup71ashokmargvilllagemudilahnaugarhuttarpradesh": {
+  "id": "ug_up010g1",
+  "how": "exact",
+  "mcc": "Autonomous state Medical College, Siddharthnagar,UP , 71-Ashok Marg, Villlage- Mudilah, Naugarh, Uttar Pradesh",
   "site": "Autonomous State Medical College, Siddharthnagar"
  },
  "autonomousstatesocietymedicalcollegemirzapurvillvisundarpurpipradarmirzapuruttarpradesh231001": {
@@ -311,16 +323,22 @@
   "mcc": "Barpeta Medical College & Hospital, Barpeta, Assam,Jotigaon, Jania Road, Barpeta Assam- 781301",
   "site": "Fakhruddin Ali Ahmed Medical College, Barpeta, Assam"
  },
- "belagaviinstituteofmedicalsciencesbelagavibelagaviinstituteofmedicalsciencesbelagavi": {
-  "id": "ug_ka002g1",
-  "how": "exact",
-  "mcc": "Belagavi Institute of Medical Sciences, Belagavi,BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI",
-  "site": "Belagavi Institute of Medical Sciences, Belagavi"
+ "basehospitaldelhicanttdelhi110010": {
+  "id": null,
+  "how": "override",
+  "mcc": "Base Hospital, , Delhi Cantt.,, Delhi-110010",
+  "site": null
  },
  "belagaviinstituteofmedicalsciencesbelagavibelagaviinstituteofmedicalsciencesbelagavikarnataka590001": {
   "id": "ug_ka002g1",
   "how": "exact",
-  "mcc": "BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI,BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI, Karnataka, ",
+  "mcc": "BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI , BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI, Karnataka",
+  "site": "Belagavi Institute of Medical Sciences, Belagavi"
+ },
+ "belagaviinstituteofmedicalsciencesbelagavibelagaviinstituteofmedicalsciencesbelagavi": {
+  "id": "ug_ka002g1",
+  "how": "exact",
+  "mcc": "Belagavi Institute of Medical Sciences, Belagavi,BELAGAVI INSTITUTE OF MEDICAL SCIENCES, BELAGAVI",
   "site": "Belagavi Institute of Medical Sciences, Belagavi"
  },
  "bhaaratmedicalcollegehospital173agarammainroadselaiyurtambaramchennai600073": {
@@ -332,7 +350,7 @@
  "bhaarathmedicalcollegeandhospitalselaiyur173agarammainroadselaiyurchennai": {
   "id": "ug_tn001p3",
   "how": "override",
-  "mcc": "BHAARATH MEDICAL COLLEGE AND HOSPITAL,SELAIYUR,173, AGARAM MAIN ROAD,SELAIYUR,CHENNAI",
+  "mcc": "BHAARATH MEDICAL COLLEGE AND HOSPITAL,SELAIYUR , 173, AGARAM MAIN ROAD,SELAIYUR,CHENNAI",
   "site": "Bhaarat Medical College & Hospital"
  },
  "bhabhaatomicresearchcentremumbaitatamemorialhospitalpremisesannexebldgjerbaiwadiaroadparelmumbai400012": {
@@ -370,6 +388,12 @@
   "how": "exact",
   "mcc": "Bharati Vidyapeeth University Medical College, Pune,Pune-Satara Road, Dhanakawadi",
   "site": "Bharati Vidyapeeth University Medical College, Pune"
+ },
+ "bhimabhoimedicalcollegehospitalbalangirlaltikraporajendracollegebalangirdistbalangirodisha": {
+  "id": "ug_or003g1",
+  "how": "override",
+  "mcc": "Bhima Bhoi Medical College & Hospital,Balangir , Laltikra Po- Rajendra College, Balangir Dist- Balangir, Odish",
+  "site": "Government Medical College & Hospital, Balangir"
  },
  "bhopalmemorialhospitalresearchcentrebhopalraisenbypassroadbhopal": {
   "id": "ug_mp001g1",
@@ -587,22 +611,40 @@
   "mcc": "College of Medicine and Sagore Dutta Hospital, Kolkata,College of Medicine & Sagore Dutta Hospital, 578 B.T. R",
   "site": "College of Medicine and Sagore Dutta Hospital, Kolkata"
  },
+ "commandhospitalwesterncommandchandimandirharyana134107": {
+  "id": "ug_hr002g1",
+  "how": "pin+name",
+  "mcc": "Command Hospital , Western Command, Chandimandir, Haryana-134107",
+  "site": "Command Hospital, Chandimandir"
+ },
  "commandhospitaleasterncommandkolkatawestbengalaliporekolkatawestbengal70027": {
   "id": "ug_wb009g1",
   "how": "override",
-  "mcc": "Command Hospital (Eastern Command), Kolkata, West Bengal,Alipore Kolkata, West Bengal, 70027",
+  "mcc": "Command Hospital (Eastern Command), Kolkata, West Bengal , Alipore Kolkata, West Bengal, 70027",
   "site": "Command Hospital, Kolkata"
+ },
+ "commandhospitalwesterncommandchandimandircommandhospitalchandimandirpanchkulaharyanaharyana134107": {
+  "id": "ug_hr002g1",
+  "how": "pin+name",
+  "mcc": "Command Hospital (Western Command), Chandimandir , Command Hospital, Chandimandir Panchkula Haryana, Haryana, ",
+  "site": "Command Hospital, Chandimandir"
+ },
+ "commandhospitalairforceoldairportroadagrampostbangalorekarnataka560007": {
+  "id": "ug_ka008g1",
+  "how": "override",
+  "mcc": "Command Hospital Air Force, , Old Airport Road Agram Post Bangalore, Karnataka-560007",
+  "site": "Command Hospital Air Force, Bangalore"
  },
  "commandhospitalairforcebangalorecommandhospitalairforcebangaloreoldairportroadagrampostbangalorekarnataka560007": {
   "id": "ug_ka008g1",
   "how": "override",
-  "mcc": "Command Hospital Air Force, Bangalore,COMMAND HOSPITAL, AIR FORCE, BANGALORE, OLD AIRPORT ROAD, AGRAM POST, BA",
+  "mcc": "Command Hospital Air Force, Bangalore , COMMAND HOSPITAL, AIR FORCE, BANGALORE, OLD AIRPORT ROAD, AGRAM POST, ",
   "site": "Command Hospital Air Force, Bangalore"
  },
  "commandhospitalcentralcommandlucknowcariapparoadcantonmentuttarpradesh226002": {
   "id": "ug_up016g1",
   "how": "pin+name",
-  "mcc": "Command Hospital Central Command, Lucknow,Cariappa Road, Cantonment, Uttar Pradesh, 226002",
+  "mcc": "Command Hospital Central Command, Lucknow , Cariappa Road, Cantonment, Uttar Pradesh, 226002",
   "site": "Command Hospital, Lucknow"
  },
  "dypatilmedicalcollegekolhapur869edypatilvidyanagarkolhapur416006maharashtra416006": {
@@ -716,7 +758,7 @@
  "drbrambedkarstateinstituteofmedicalsciencessasnagarmohalidrbrambedkarstateinstituteofmedicalsciencesphase6sec56sasnagarpunjab160055punjab160055": {
   "id": "ug_pb001g1",
   "how": "exact",
-  "mcc": "Dr. B R Ambedkar State Institute of Medical Sciences, SAS Nagar (Mohali),Dr. B.R Ambedkar State Institute of M",
+  "mcc": "Dr. B R Ambedkar State Institute of Medical Sciences, SAS Nagar (Mohali) , Dr. B.R Ambedkar State Institute of",
   "site": "Dr B R Ambedkar State Institute of Medical Sciences, SAS Nagar, Mohali"
  },
  "drbborooahcancerinstituteregionalcancercentreguwahatigopinathnagarakazadroadguwahatikamrupmetro": {
@@ -878,7 +920,7 @@
  "esicmedicalcollegehospitalalwarmiadesulaalwarrajasthan": {
   "id": "ug_rj003g1",
   "how": "override",
-  "mcc": "ESIC Medical College & Hospital, Alwar,MIA, DESULA, ALWAR, RAJASTHAN",
+  "mcc": "ESIC Medical College & Hospital, Alwar , MIA, DESULA, ALWAR, RAJASTHAN",
   "site": "Employees State Insurance Corporation Medical College, Alwar"
  },
  "esicmedicalcollegehospitalbasaidarapurnewdelhiesicmedicalcollegehospitalbasaidarapurnewdelhi": {
@@ -935,10 +977,16 @@
   "mcc": "FAKIR MOHAN MEDICAL COLLEGE AND HOSPITAL , REMUNA, BALASORE, Orissa-756019,AT-Remuna Post-Remuna Dist-Balasore",
   "site": "Government Medical College & Hospital, Balasore"
  },
+ "fakirmohanmedicalcollegeandhospitalbalasoreatporemunadistbalasoreodisha756019": {
+  "id": "ug_or004g1",
+  "how": "pin+name",
+  "mcc": "Fakir Mohan Medical College and Hospital, Balasore , AT/PO- Remuna, Dist- Balasore, Odisha, 756019",
+  "site": "Government Medical College & Hospital, Balasore"
+ },
  "gbpantinstituteofpostgraduatemedicaleducationandresearchgbpantinstituteofpostgraduatemedicaleducationandresearch1jlnmargdelhi110002delhinct110007": {
   "id": "ug_in017g1",
   "how": "pin+name",
-  "mcc": "G B Pant Institute of Post Graduate Medical Education and Research,G B Pant Institute of Post Graduate Medical",
+  "mcc": "G B Pant Institute of Post Graduate Medical Education and Research , G B Pant Institute of Post Graduate Medic",
   "site": "G.B. Pant Institute of Postgraduate Medical Education and Research, New Delhi"
  },
  "gbpantinstituteofpostgraduatemedicaleducationandresearchnewdelhigbpantinstituteofpostgraduatemedicaleducationandresearch1jlnmargdelhi110002": {
@@ -1040,13 +1088,13 @@
  "govermentmedicalcollegekorbacgitcollegecampusugrabypassjhagrharoadkobra": {
   "id": "ug_cg008g1",
   "how": "override",
-  "mcc": "GOVERMENT MEDICAL COLLEGE, KORBA(C.G),IT COLLEGE CAMPUS, UGRA BYPASS, JHAGRHA ROAD KOBRA",
+  "mcc": "GOVERMENT MEDICAL COLLEGE, KORBA(C.G) , IT COLLEGE CAMPUS, UGRA BYPASS, JHAGRHA ROAD KOBRA",
   "site": "Government Medical College, Korba"
  },
  "govermentmedicalcollegethiruvallurblock1masterplancomplexthiruvallurcollectorateperumbakkamvillagethiruvallurtamilnadu": {
   "id": "ug_tn014g1",
   "how": "override",
-  "mcc": "GOVERMENT MEDICAL COLLEGE, THIRUVALLUR,BLOCK-1, MASTER PLAN COMPLEX, THIRUVALLUR COLLECTORATE, PERUMBAKKAM VIL",
+  "mcc": "GOVERMENT MEDICAL COLLEGE, THIRUVALLUR , BLOCK-1, MASTER PLAN COMPLEX, THIRUVALLUR COLLECTORATE, PERUMBAKKAM V",
   "site": "Government Medical College, Thiruvallur"
  },
  "governmentallopathicmedicalcollegebandaupranidurgavatimedicalcollegenarainiroadbanda": {
@@ -1196,7 +1244,7 @@
  "governmentmedicalcollegekanthbaghbaramullakanthbaghbaramulla": {
   "id": "ug_in025g1",
   "how": "override",
-  "mcc": "Government Medical College Kanth Bagh Baramulla,Kanth Bagh Baramulla",
+  "mcc": "Government Medical College Kanth Bagh Baramulla , Kanth Bagh Baramulla",
   "site": "Government Medical College, Baramulla"
  },
  "governmentmedicalcollegekotagovernmentmedicalcollegekotarajasthan324005": {
@@ -1214,7 +1262,7 @@
  "governmentmedicalcollegemachilipatnamkaraagraharamnearradarcentrechilakalpudimachilipatnam": {
   "id": "ug_in037g1",
   "how": "exact",
-  "mcc": "GOVERNMENT MEDICAL COLLEGE MACHILIPATNAM,KARA AGRAHARAM NEAR RADAR CENTRE, CHILAKALPUDI, MACHILIPATNAM",
+  "mcc": "GOVERNMENT MEDICAL COLLEGE MACHILIPATNAM , KARA AGRAHARAM NEAR RADAR CENTRE, CHILAKALPUDI, MACHILIPATNAM",
   "site": "Government Medical College, Machilipatnam"
  },
  "governmentmedicalcollegepatialagovernmentmedicalcollegepatialapunjab147001": {
@@ -1301,16 +1349,16 @@
   "mcc": "Government Medical College, Baramulla,Kanth Bagh, Baramulla Jammu & Kashmir 193101",
   "site": "Government Medical College, Baramulla"
  },
+ "governmentmedicalcollegebettiahgovernmentmedicalcollegebettiahwestchamparanbiharbihar845438": {
+  "id": "ug_br006g1",
+  "how": "exact",
+  "mcc": "Government Medical College, Bettiah , Government Medical College Bettiah West Champaran Bihar, Bihar, 845438",
+  "site": "Government Medical College, Bettiah"
+ },
  "governmentmedicalcollegebettiahgovernmentmedicalcollegebettiahwestchamparanbihar": {
   "id": "ug_br006g1",
   "how": "exact",
   "mcc": "Government Medical College, Bettiah,Government Medical College Bettiah West Champaran Bihar",
-  "site": "Government Medical College, Bettiah"
- },
- "governmentmedicalcollegebettiahgovernmentmedicalcollegebettiahwestchamparanbiharbihar845438": {
-  "id": "ug_br006g1",
-  "how": "exact",
-  "mcc": "Government Medical College, Bettiah,Government Medical College Bettiah West Champaran Bihar, Bihar, 845438",
   "site": "Government Medical College, Bettiah"
  },
  "governmentmedicalcollegebharatpurrajasthansjpmedicalcollegebharatpurvillagerampuranh21": {
@@ -1325,16 +1373,16 @@
   "mcc": "Government Medical College, Bhavnagar,Near Life Science Department, sardar Vallabhbhai Patel Campus, M. K. Bha",
   "site": "Government Medical College, Bhavnagar"
  },
+ "governmentmedicalcollegebhilwarasindrikebalajiroadsanganerbhilwararajasthan311001rajasthan311001": {
+  "id": "ug_rj009g1",
+  "how": "override",
+  "mcc": "Government Medical College, Bhilwara , Sindri ke Balaji Road, Sanganer, Bhilwara, Rajasthan 311001, Rajasthan,",
+  "site": "Government Medical College, Bhilwara, Rajasthan"
+ },
  "governmentmedicalcollegebhilwararajasthansindrikebalajiroadsanganerbhilwararajasthan311001": {
   "id": "ug_rj009g1",
   "how": "override",
   "mcc": "Government Medical College, Bhilwara, Rajasthan,Sindri ke Balaji Road, Sanganer, Bhilwara, Rajasthan 311001",
-  "site": "Government Medical College, Bhilwara, Rajasthan"
- },
- "governmentmedicalcollegebhilwarasindrikebalajiroadsanganerbhilwararajasthan311001rajasthan311001": {
-  "id": "ug_rj009g1",
-  "how": "override",
-  "mcc": "Government Medical College, Bhilwara,Sindri ke Balaji Road, Sanganer, Bhilwara, Rajasthan 311001, Rajasthan, 3",
   "site": "Government Medical College, Bhilwara, Rajasthan"
  },
  "governmentmedicalcollegechandigarhgovtmedicalcollegeandhospitalchandigarh": {
@@ -1406,7 +1454,7 @@
  "governmentmedicalcollegeelurusurveyno60oppdmhoofficeeluruelurudistrictpin534001andhrapradesh": {
   "id": "ug_in027g1",
   "how": "override",
-  "mcc": "Government Medical College, Eluru.,Survey No – 60, Opp DM&HO office , Eluru , Eluru district , Pin - 534001, A",
+  "mcc": "Government Medical College, Eluru. , Survey No – 60, Opp DM&HO office , Eluru , Eluru district , Pin - 534001,",
   "site": "Government Medical College, Eluru"
  },
  "governmentmedicalcollegeernakulamgovtmedicalcollegeernakulam": {
@@ -1420,6 +1468,12 @@
   "how": "exact",
   "mcc": "Government Medical College, Faizabad,GANJA DABHSEMAR AYODHYA",
   "site": "Government Medical College, Faizabad"
+ },
+ "governmentmedicalcollegefatehpuramarshaheedjodhasinghataiyathakurdariyaosinghmedicalcollegeasmcfatehpur": {
+  "id": "ug_in010p3",
+  "how": "override",
+  "mcc": "GOVERNMENT MEDICAL COLLEGE, FATEHPUR , Amar Shaheed Jodha Singh Ataiya Thakur Dariyao Singh Medical College (A",
+  "site": "Autonomous State Medical College Society, Fatehpur"
  },
  "governmentmedicalcollegefirozabadautonomousstatemedicalcollegesocietyandsnmdistricthospitaldaulattapurjalesarroadnarkhi": {
   "id": "ug_up028g1",
@@ -1466,7 +1520,7 @@
  "governmentmedicalcollegekathuanh1anearkalibarikathua": {
   "id": "ug_in034g1",
   "how": "exact",
-  "mcc": "Government Medical College, Kathua,NH1A, Near Kalibari, Kathua",
+  "mcc": "Government Medical College, Kathua , NH1A, Near Kalibari, Kathua",
   "site": "Government Medical College, Kathua"
  },
  "governmentmedicalcollegekathuavillagechacksajjankathua184101": {
@@ -1529,16 +1583,16 @@
   "mcc": "Government Medical College, Machilipatnam,KARAGRAHARAM, NEAR RADAR STATION, MACHILIPATNAM, KRISHNA DISTRICT, A",
   "site": "Government Medical College, Machilipatnam"
  },
+ "governmentmedicalcollegemahabubnagargovernmentmedicalcollegeyediramahabubnagartelanganastatetelangana509002": {
+  "id": "ug_tg009g1",
+  "how": "override",
+  "mcc": "Government Medical College, Mahabubnagar , Government Medical College, Yedira, Mahabubnagar, Telangana state, ",
+  "site": "Government Medical College, Mahabubnagar"
+ },
  "governmentmedicalcollegemahabubnagargovernmentmedicalcollegeyediramahabubnagartelanganastate": {
   "id": "ug_tg009g1",
   "how": "override",
   "mcc": "Government Medical College, Mahabubnagar,Government Medical College, Yedira, Mahabubnagar, Telangana state",
-  "site": "Government Medical College, Mahabubnagar"
- },
- "governmentmedicalcollegemahabubnagargovernmentmedicalcollegeyediramahabubnagartelanganastatetelangana509002": {
-  "id": "ug_tg009g1",
-  "how": "override",
-  "mcc": "Government Medical College, Mahabubnagar,Government Medical College, Yedira, Mahabubnagar, Telangana state, Te",
   "site": "Government Medical College, Mahabubnagar"
  },
  "governmentmedicalcollegemanjerimalapuramdistgovernmentmedicalcollegemanjerimalappuramkerala": {
@@ -1592,13 +1646,13 @@
  "governmentmedicalcollegenandurbarmaharashtradistricthospitalareasakriroadnandurbar": {
   "id": "ug_mh028g1",
   "how": "exact",
-  "mcc": "Government Medical College, Nandurbar,Maharashtra,District Hospital Area, Sakri Road Nandurbar",
+  "mcc": "Government Medical College, Nandurbar,Maharashtra , District Hospital Area, Sakri Road Nandurbar",
   "site": "Government Medical College, Nandurbar"
  },
  "governmentmedicalcollegenandyalnoonepallenandyalaandhrapradesh": {
   "id": "ug_in040g1",
   "how": "exact",
-  "mcc": "Government Medical College, Nandyal,Noonepalle, Nandyala, Andhra Pradesh",
+  "mcc": "Government Medical College, Nandyal , Noonepalle, Nandyala, Andhra Pradesh",
   "site": "Government Medical College, Nandyal"
  },
  "governmentmedicalcollegenandyalprincipalgmcnandyalagmailcom": {
@@ -1658,7 +1712,7 @@
  "governmentmedicalcollegepudukkottaigovernmentmedicalcollegehospitalmullurvillagethanjavurroadpudukkottaitamilnadu": {
   "id": "ug_tn012g1",
   "how": "override",
-  "mcc": "GOVERNMENT MEDICAL COLLEGE, PUDUKKOTTAI,Government Medical College & Hospital Mullur Village, Thanjavur Road, ",
+  "mcc": "GOVERNMENT MEDICAL COLLEGE, PUDUKKOTTAI , Government Medical College & Hospital Mullur Village, Thanjavur Road",
   "site": "Government Medical College, Pudukottai, Tamil Nadu"
  },
  "governmentmedicalcollegepudukottaitamilnadumullurvillagepudukkottaipopudukkottai": {
@@ -1667,11 +1721,23 @@
   "mcc": "Government Medical College, Pudukottai, Tamil Nadu,MULLUR VILLAGE, PUDUKKOTTAI PO PUDUKKOTTAI",
   "site": "Government Medical College, Pudukottai, Tamil Nadu"
  },
+ "governmentmedicalcollegerajamahendravaram57520ramalayamstreetrvnagarmallikarjunanagarrajamahendravarameastgodavaridistrictandhra": {
+  "id": "ug_ap009g1",
+  "how": "exact",
+  "mcc": "Government Medical College, Rajamahendravaram , 57-5-20, Ramalayam Street, R.V.Nagar, Mallikarjuna Nagar, Raja",
+  "site": "Government Medical College, Rajamahendravaram"
+ },
  "governmentmedicalcollegerajamahendravaramdno5541centraljailroadnearctrirajamahendravaram533105andhrapradesh": {
   "id": "ug_ap009g1",
   "how": "override",
   "mcc": "Government Medical College, Rajamahendravaram,D. NO. 55-4-1, CENTRAL JAIL ROAD, NEAR CTRI, RAJAMAHENDRAVARAM-5",
   "site": "Government Medical College, Rajamahendravaram"
+ },
+ "governmentmedicalcollegerajourirajourikheoramehrarajourijammuandkashmir": {
+  "id": "ug_jk002g1",
+  "how": "override",
+  "mcc": "Government Medical College, Rajouri, , Rajouri, Kheora/Mehra Rajouri, Jammu and Kashmir.",
+  "site": "Government Medical College, Rajouri, J & K"
  },
  "governmentmedicalcollegerajourijkgovernmentmedicalcollegerajourimehracampuspincode185132": {
   "id": "ug_jk002g1",
@@ -1679,11 +1745,11 @@
   "mcc": "Government Medical College, Rajouri, J&K,Government Medical College, Rajouri Mehra Campus Pincode: 185132",
   "site": "Government Medical College, Rajouri, J & K"
  },
- "governmentmedicalcollegerajourirajourikheoramehrarajourijammuandkashmir": {
-  "id": "ug_jk002g1",
-  "how": "override",
-  "mcc": "Government Medical College, Rajouri,,Rajouri, Kheora/Mehra Rajouri, Jammu and Kashmir.",
-  "site": "Government Medical College, Rajouri, J & K"
+ "governmentmedicalcollegeramagundamgovernmentmedicalcollegeramagundam929596malkapurvillageramagundammandalpedapalli": {
+  "id": "ug_tg018g1",
+  "how": "exact",
+  "mcc": "Government MEdical College, Ramagundam , Government Medical College Ramagundam 92, 95, 96 Malkapur Village Ram",
+  "site": "Government Medical College, Ramagundam"
  },
  "governmentmedicalcollegeramagundamsyno929596malkapurvillageramagundampeddapallydist": {
   "id": "ug_tg018g1",
@@ -1706,7 +1772,7 @@
  "governmentmedicalcollegesatnampkripalpurnearcentralschool2satnamadhyapradesh": {
   "id": "ug_in048g1",
   "how": "exact",
-  "mcc": "GOVERNMENT MEDICAL COLLEGE, SATNA (M.P),KRIPALPUR, NEAR CENTRAL SCHOOL 2, SATNA MADHYA PRADESH",
+  "mcc": "GOVERNMENT MEDICAL COLLEGE, SATNA (M.P) , KRIPALPUR, NEAR CENTRAL SCHOOL 2, SATNA MADHYA PRADESH",
   "site": "Government Medical College, Satna"
  },
  "governmentmedicalcollegesatnanearkendriyavidyalayano2satnamp": {
@@ -1784,7 +1850,7 @@
  "governmentmedicalcollegevizianagaramoppcentraltribaluniversityjntujunctiongajularegavizianagaramandhrapradesh": {
   "id": "ug_in054g1",
   "how": "exact",
-  "mcc": "Government Medical College, Vizianagaram,Opp. Central Tribal University, JNTU Junction, Gajularega, Vizianagar",
+  "mcc": "Government Medical College, Vizianagaram , Opp. Central Tribal University, JNTU Junction, Gajularega, Vizianag",
   "site": "Government Medical College, Vizianagaram"
  },
  "governmentmedicalcollegevizianagaramprincipalgmcvzmgmailcom": {
@@ -1928,7 +1994,7 @@
  "govtmedicalcollegeanantnagjkgovtmedicalcollegeanantnagjkmaincampusdialgam192210": {
   "id": "ug_in024g1",
   "how": "override",
-  "mcc": "Govt. Medical College Anantnag, J&K,Govt. Medical College Anantnag, J&K- Main Campus Dialgam, 192210",
+  "mcc": "Govt. Medical College Anantnag, J&K , Govt. Medical College Anantnag, J&K- Main Campus Dialgam, 192210",
   "site": "Government Medical College, Anantnag"
  },
  "govtmedicalcollegeandhospitalchandigarhgovtmedicalcollegeandhospitalchandigarhchandigarh160030": {
@@ -1958,7 +2024,7 @@
  "govtmedicalcollegehamirpurgovtmedicalcollegehamirpurhimachalpradesh": {
   "id": "ug_hp001g1",
   "how": "override",
-  "mcc": "Govt. Medical College, Hamirpur,,Govt. Medical College, Hamirpur, Himachal Pradesh",
+  "mcc": "Govt. Medical College, Hamirpur, , Govt. Medical College, Hamirpur, Himachal Pradesh",
   "site": "Dr. Radhakrishnan Government Medical College, Hamirpur, H.P"
  },
  "govtmedicalcollegejammugovtmedicalcollegebakshinagarjamujammuandkashmir180001": {
@@ -2093,16 +2159,16 @@
   "mcc": "HASSAN INSTITUTE OF MEDICAL SCIENCES, HASSAN,HASSAN INSTITUTE OF MEDICAL SCIENCES, HASSAN, Karnataka, 573201",
   "site": "Hassan Institute of Medical Sciences, Hassan"
  },
+ "haveriinstituteofmedicalsciencesdevagiriyellapuradcofficeroadhaveri": {
+  "id": "ug_ka014g1",
+  "how": "override",
+  "mcc": "HAVERI INSTITUTE OF MEDICAL SCIENCES , DEVAGIRI YELLAPURA, DC OFFICE ROAD,, HAVERI",
+  "site": "Haveri Institute of Medical Sciences, Haveri"
+ },
  "haveriinstituteofmedicalscienceshaverihaveriinstituteofmedicalsciencesdevagiriyallapurahaveri581110karnataka": {
   "id": "ug_ka014g1",
   "how": "exact",
   "mcc": "Haveri Institute of Medical Sciences, Haveri,Haveri Institute of Medical Sciences, Devagiri-Yallapura, Haveri-",
-  "site": "Haveri Institute of Medical Sciences, Haveri"
- },
- "haveriinstituteofmedicalsciencesdevagiriyellapuradcofficeroadhaveri": {
-  "id": "ug_ka014g1",
-  "how": "override",
-  "mcc": "HAVERI INSTITUTE OF MEDICAL SCIENCES,DEVAGIRI YELLAPURA, DC OFFICE ROAD,, HAVERI",
   "site": "Haveri Institute of Medical Sciences, Haveri"
  },
  "hinduraohospitaldelhihinduraohospitaldelhidelhinct110007": {
@@ -2117,10 +2183,22 @@
   "mcc": "Hinduhridayasamrat Balasaheb Thackeray Medical College and Dr. R. N. Cooper Municipal General Hospital, Mahara",
   "site": "H.B.T. Medical College & Dr. R.N. Cooper Municipal General Hospital, Juhu, Mumbai"
  },
+ "homibhabhacancerhospitalandresearchcentreaganampudivillagegajuwakamandalvisakhapatnamandhrapradesh530053": {
+  "id": "ug_ch002g1",
+  "how": "override",
+  "mcc": "HOMI BHABHA CANCER HOSPITAL AND RESEARCH CENTRE , AGANAMPUDI VILLAGE GAJUWAKA MANDAL VISAKHAPATNAM, Andhra Pra",
+  "site": "Homi Bhabha Cancer Hospital, New Chandigarh (Mullanpur)"
+ },
  "homibhabhacancerhospitalandresearchcentrenewchandigarhhomibhabhacancerhospitalandresearchcentreplotno1medicitynewchandigarhdistrictsasnagar": {
   "id": "ug_ch002g1",
   "how": "override",
   "mcc": "HOMI BHABHA CANCER HOSPITAL AND RESEARCH CENTRE NEW CHANDIGARH,HOMI BHABHA CANCER HOSPITAL AND RESEARCH CENTRE",
+  "site": "Homi Bhabha Cancer Hospital, New Chandigarh (Mullanpur)"
+ },
+ "homibhabhacancerhospitalandresearchcentrenewchandigarhhomibhabhacancerhospitalandresearchcentreplotno1medicitynewchandigarhsasnagarmohali": {
+  "id": "ug_ch002g1",
+  "how": "override",
+  "mcc": "HOMI BHABHA CANCER HOSPITAL AND RESEARCH CENTRE, NEW CHANDIGARH , HOMI BHABHA CANCER HOSPITAL AND RESEARCH CEN",
   "site": "Homi Bhabha Cancer Hospital, New Chandigarh (Mullanpur)"
  },
  "homibhabhacancerhospitalandresearchcentrevisakhapatnamaganampudivillagegajuwakamandalvisakhapatnam": {
@@ -2228,7 +2306,7 @@
  "instituteofaerospacemedicineiafbangaluruinstituteofaerospacemedicineiafoldairportroadvimanapurapostbengalurukarnataka560017": {
   "id": "ug_ka016g1",
   "how": "override",
-  "mcc": "Institute of Aerospace Medicine, IAF, Bangaluru,Institute of Aerospace Medicine IAF, Old Airport Road, Vimanap",
+  "mcc": "Institute of Aerospace Medicine, IAF, Bangaluru , Institute of Aerospace Medicine IAF, Old Airport Road, Viman",
   "site": "Institute of Aerospace Medicine Indian Air Force, Bangaluru"
  },
  "instituteofchildhealthkolkatainstituteofchildhealthkolkata": {
@@ -2242,6 +2320,12 @@
   "how": "exact",
   "mcc": "Institute of Child Health, Kolkata,Institute of Child Health, Kolkata, West Bengal, 700017",
   "site": "Institute of Child Health, Kolkata"
+ },
+ "instituteofhumanbehaviourandalliedsciencesinstituteofhumanbehaviourandalliedsciencesdilshadgardennewdelhidelhi110095indiadelhinct110095": {
+  "id": "ug_in061g1",
+  "how": "pin+name",
+  "mcc": "INSTITUTE OF HUMAN BEHAVIOUR AND ALLIED SCIENCES , Institute of Human Behaviour and Allied Sciences, Dilshad G",
+  "site": "Institute of Human Behaviour and Allied Sciences, Delhi"
  },
  "instituteofhumanbehaviourandalliedsciencesdelhiinstituteofhumanbehaviourandalliedsciencesdilshadgardennewdelhidelhi110095india": {
   "id": "ug_in061g1",
@@ -2294,7 +2378,7 @@
  "instituteofnavalmedicinecolabamumbaiinstituteofnavalmedicineinhsasvinicolabamumbai400005maharashtra400005": {
   "id": "ug_mh038g1",
   "how": "pin+name",
-  "mcc": "Institute of Naval Medicine, Colaba, Mumbai,INSTITUTE OF NAVAL MEDICINE, INHS ASVINI, COLABA, MUMBAI 400005, M",
+  "mcc": "Institute of Naval Medicine, Colaba, Mumbai , INSTITUTE OF NAVAL MEDICINE, INHS ASVINI, COLABA, MUMBAI 400005,",
   "site": "Institute of Navel Medicine, INHS, Aswini"
  },
  "instituteofnuclearmedicinealliedsciencesnewdelhiinstituteofnuclearmedicinealliedsciencesinmasbrigskmazumdarmargtimarpur": {
@@ -2324,7 +2408,7 @@
  "jawaharlalnehrugovernmentmedicalcollegechambaakhandchandipalacenearlaxminarayanmandirchambahp": {
   "id": "ug_hp005g1",
   "how": "override",
-  "mcc": "JAWAHAR LAL NEHRU GOVERNMENT MEDICAL COLLEGE, CHAMBA,AKHAND CHANDI PALACE, NEAR LAXMINARAYAN MANDIR,CHAMBA,HP",
+  "mcc": "JAWAHAR LAL NEHRU GOVERNMENT MEDICAL COLLEGE, CHAMBA , AKHAND CHANDI PALACE, NEAR LAXMINARAYAN MANDIR,CHAMBA,H",
   "site": "Pt. Jawahar Lal Nehru Government Medical College, Chamba"
  },
  "jawaharlalnehrumedicalcollegeajmernearpatelstadiumajmerrajasthan305001": {
@@ -2336,7 +2420,7 @@
  "jawaharlalinstituteofmedicalsciencesmanipurjawaharlalnehruinstituteofmedicalsciencesporompatimphaleastmanipur795005manipur795005": {
   "id": "ug_mn002g1",
   "how": "pin+name",
-  "mcc": "Jawaharlal Institute of Medical Sciences, Manipur,Jawaharlal Nehru Institute of Medical Sciences, Porompat, Im",
+  "mcc": "Jawaharlal Institute of Medical Sciences, Manipur , Jawaharlal Nehru Institute of Medical Sciences, Porompat, ",
   "site": "Jawaharlal Nehru Institute of Medical Sciences, Porompet, Imphal"
  },
  "jawaharlalnehruinstituteofmedicalsciencesporompetimphalporompatimphaleast": {
@@ -2543,6 +2627,12 @@
   "mcc": "Karwar Institute of Medical Sciences, Karwar,MG Road",
   "site": "Karwar Institute of Medical Sciences, Karwar"
  },
+ "kasturbahospitaldaryaganjdelhidaryaganjdelhi": {
+  "id": "ug_in066g1",
+  "how": "override",
+  "mcc": "Kasturba Hospital, Daryaganj,Delhi , Daryaganj,Delhi",
+  "site": "Kasturba Hospital, New Delhi"
+ },
  "kasturbahospitalnewdelhikasturbahospitaldaryaganjdelhi": {
   "id": "ug_in066g1",
   "how": "exact",
@@ -2666,7 +2756,7 @@
  "lakhimpurmedicalcollegechowkhamsabotipostofficesabotipolicestationnorthlakhimpur": {
   "id": "ug_as010g1",
   "how": "exact",
-  "mcc": "Lakhimpur Medical College,Chowkham, Saboti,Post Office – Saboti, Police Station – North Lakhimpur",
+  "mcc": "Lakhimpur Medical College , Chowkham, Saboti,Post Office – Saboti, Police Station – North Lakhimpur",
   "site": "Lakhimpur Medical College"
  },
  "lakhimpurmedicalcollegesabotichowkhampostofficechabotipolicestationnorthlakhimpurdistrictlakhimpur": {
@@ -2768,7 +2858,7 @@
  "maavindhyavashiniautonomousstatemedicalcollegemirzapurvisundarpurpipradarmirzapuruttarpradesh231001": {
   "id": "ug_in012p3",
   "how": "override",
-  "mcc": "Maa Vindhyavashini Autonomous State Medical College, Mirzapur,Visundarpur,Pipradar, Mirzapur, Uttar Pradesh -2",
+  "mcc": "Maa Vindhyavashini Autonomous State Medical College, Mirzapur , Visundarpur,Pipradar, Mirzapur, Uttar Pradesh ",
   "site": "Autonomous State Society Medical College, Mirzapur"
  },
  "madrasmedicalcollegechennaievrperiyarsalaichennai03": {
@@ -2864,7 +2954,7 @@
  "maharshivishwamitraautonomousstatemedicalcollegeghazipurrmaharshivishwamitraautonomousstatemedicalcollegertigroundghazipuruttarpradesh": {
   "id": "ug_up002p3",
   "how": "override",
-  "mcc": "Maharshi Vishwamitra Autonomous State Medical College, Ghazipurr,Maharshi Vishwamitra Autonomous State Medical",
+  "mcc": "Maharshi Vishwamitra Autonomous State Medical College, Ghazipurr , Maharshi Vishwamitra Autonomous State Medic",
   "site": "Autonomous State Medical College Society, Ghazipur"
  },
  "mahatmagandhiinstituteofmedicalscienceswardhamahatmagandhiinstituteofmedicalsciencessevagramwardha": {
@@ -2919,6 +3009,12 @@
   "id": "ug_kl012p3",
   "how": "exact",
   "mcc": "Malabar Cancer Centre Post Graduate Institute of Oncology Sciences and Research, Modakkallur,Moozhikkara (PO),",
+  "site": "Malabar Cancer Centre Post Graduate Institute of Oncology Sciences and Research"
+ },
+ "malabarcancercentrepostgraduateinstituteofoncologysciencesandresearchmoozhikkarapokodiyerithalasserykannurkerala": {
+  "id": "ug_kl012p3",
+  "how": "exact",
+  "mcc": "MALABAR CANCER CENTRE POST GRADUATE INSTITUTE OF ONCOLOGY SCIENCES AND RESEARCH,MOOZHIKKARA )PO), KODIYERI, TH",
   "site": "Malabar Cancer Centre Post Graduate Institute of Oncology Sciences and Research"
  },
  "maldamedicalcollegehospitalmaldamaldamedicalcollege": {
@@ -3110,7 +3206,7 @@
  "nandimedicalcollegeandreaserchinstituteearoorvillageperesandrapostchikkaballapura": {
   "id": "ug_ka006g1",
   "how": "override",
-  "mcc": "NANDI MEDICAL COLLEGE AND REASERCH INSTITUTEE ,AROOR VILLAGE, PERESANDRA POST, CHIKKABALLAPURA",
+  "mcc": "NANDI MEDICAL COLLEGE AND REASERCH INSTITUTEE , AROOR VILLAGE, PERESANDRA POST, CHIKKABALLAPURA",
   "site": "Chikkaballapura Institute of Medical Sciences"
  },
  "nandimedicalcollegeandresearchinstitutechikkaballapurachikkaballapurainstituteofmedicalscienceschikkaballapuraarooruvillageperesandrapostchikkaballapura562104": {
@@ -3173,16 +3269,16 @@
   "mcc": "NIZAMS INSTITUTE OF MEDICAL SCIENCES,NIZAMS INSTITUTE OF MEDICAL SCIENCES PANJAGUTTA HYDERABAD, Telangana, 500",
   "site": "Nizams Institute of Medical Sciences, Hyderabad"
  },
+ "northbengalmedicalcollegenorthbengalmedicalcollegewestbengal734012": {
+  "id": "ug_wb023g1",
+  "how": "pin+name",
+  "mcc": "North Bengal Medical College , North Bengal Medical College, West Bengal, 734012",
+  "site": "North Bengal Medical College, Darjeeling"
+ },
  "northbengalmedicalcollegedarjeelingsushrutanagardarjeeling": {
   "id": "ug_wb023g1",
   "how": "ug",
   "mcc": "North Bengal Medical College, Darjeeling,Sushrutanagar, Darjeeling",
-  "site": "North Bengal Medical College, Darjeeling"
- },
- "northbengalmedicalcollegenorthbengalmedicalcollegewestbengal734012": {
-  "id": "ug_wb023g1",
-  "how": "pin+name",
-  "mcc": "North Bengal Medical College,North Bengal Medical College, West Bengal, 734012",
   "site": "North Bengal Medical College, Darjeeling"
  },
  "northeasternindiragandhiregionalinstituteofhealthmedicalsciencesshillongnortheasternindiragandhiregionalinstituteofhealthmedicalsciencesshillongmeghalaya793018": {
@@ -3344,7 +3440,7 @@
  "ptraghunathmurmumedicalcollegehospitalbaripadagovernmentatrangamatiapolaxmiposipsbaripadasadarviashankhabhangadistmayurbhanjodisha": {
   "id": "ug_or011g1",
   "how": "override",
-  "mcc": "Pt. Raghunath Murmu Medical College & Hospital, Baripada Government,At- Rangamatia, Po- Laxmiposi, PS- Baripad",
+  "mcc": "Pt. Raghunath Murmu Medical College & Hospital, Baripada Government , At- Rangamatia, Po- Laxmiposi, PS- Barip",
   "site": "Pt. Raghunath Murmu Medical College and Hospital, Baripada, Odisha"
  },
  "rgkarmedicalcollegewestbengalrgkarmedicalcollege1khudirambosesaranikolkatawestbengalwestbengal700004": {
@@ -3368,7 +3464,7 @@
  "raichurinstituteofmedicalscienceskarnatkaraichurinstituteofmedicalscienceskarnataka584102": {
   "id": "ug_ka029g1",
   "how": "pin+name",
-  "mcc": "RAICHUR INSTITUTE OF MEDICAL SCIENCES, kARNATKA,RAICHUR INSTITUTE OF MEDICAL SCIENCES, Karnataka, 584102",
+  "mcc": "RAICHUR INSTITUTE OF MEDICAL SCIENCES, kARNATKA , RAICHUR INSTITUTE OF MEDICAL SCIENCES, Karnataka, 584102",
   "site": "Raichur Institute of Medical Sciences, Raichur"
  },
  "raichurinstituteofmedicalsciencesraichurraichurinstituteofmedicalsciences": {
@@ -3863,16 +3959,16 @@
   "mcc": "Shrimant Rajmata Vijayaraje Scindia Government Medical College, Shivpuri, Madhya Pradesh,Near Kattha Mill, Gwa",
   "site": "Government Medical College, Shivpuri"
  },
+ "shyamshahmedicalcollegedeanmcrewarediffmailcommadhyapradesh486001": {
+  "id": "ug_mp016g1",
+  "how": "pin+name",
+  "mcc": "SHYAM SHAH MEDICAL COLLEGE , deanmcrewa@rediffmail.com, Madhya Pradesh, 486001",
+  "site": "Shyam Shah Medical College, Rewa"
+ },
  "shyamshahmedicalcollegerewadeanmcrewarediffmailcom": {
   "id": "ug_mp016g1",
   "how": "exact",
   "mcc": "Shyam Shah Medical College, Rewa,deanmcrewa@rediffmail.com",
-  "site": "Shyam Shah Medical College, Rewa"
- },
- "shyamshahmedicalcollegedeanmcrewarediffmailcommadhyapradesh486001": {
-  "id": "ug_mp016g1",
-  "how": "pin+name",
-  "mcc": "SHYAM SHAH MEDICAL COLLEGE,deanmcrewa@rediffmail.com, Madhya Pradesh, 486001",
   "site": "Shyam Shah Medical College, Rewa"
  },
  "siddharthamedicalcollegevijayawadasiddharthamedicalcollegevijayawadaandhrapradesh520008": {
@@ -3926,7 +4022,7 @@
  "sobansinghjeenagovernmentinstituteofmedicalsciencesresearchalmorapandeykholanearvikasbhawanalmorapin263601": {
   "id": "ug_uk004g1",
   "how": "pin+name",
-  "mcc": "Soban Singh Jeena Government Institute of Medical Sciences & Research, Almora,,Pandeykhola,Near Vikas Bhawan, ",
+  "mcc": "Soban Singh Jeena Government Institute of Medical Sciences & Research, Almora, , Pandeykhola,Near Vikas Bhawan",
   "site": "Soban Singh Jeena Government Institute of Medical Science & Research, Almora"
  },
  "sreebalajimedicalcollegeandhospitalchennaino7worksroadchromepetchennai": {
@@ -3974,7 +4070,7 @@
  "srilalithambigaimediclcollegeandhospitalchennaiserviceroadadayalampattumaduravoyalchennaitamilnadu": {
   "id": "ug_in025p3",
   "how": "override",
-  "mcc": "SRI LALITHAMBIGAI MEDICL COLLEGE AND HOSPITAL,CHENNAI,Service Road, Adayalampattu, Maduravoyal, Chennai, Tamil",
+  "mcc": "SRI LALITHAMBIGAI MEDICL COLLEGE AND HOSPITAL,CHENNAI , Service Road, Adayalampattu, Maduravoyal, Chennai, Tam",
   "site": "Faculty of Medicine, Sri Lalithambigai Medical College and Hospital"
  },
  "sriramachandramedicalcollegeresearchinstitutechennaisriramachandramedicalcollegeandresearchinstitute": {
@@ -3992,7 +4088,7 @@
  "srisiddharthainstituteofmedicalsciencesresearchcentressimrctbegurnelamangalabangaloreruralkarnataka562123": {
   "id": "ug_ka042p3",
   "how": "pin+name",
-  "mcc": "Sri Siddhartha Institute of Medical Sciences & Research Centre (SSIMRC),T Begur, Nelamangala, Bangalore rural,",
+  "mcc": "Sri Siddhartha Institute of Medical Sciences & Research Centre (SSIMRC) , T Begur, Nelamangala, Bangalore rura",
   "site": "Sri Siddhartha Institute of Medical Sciences & Research Centre, Bangalore"
  },
  "srisiddharthainstituteofmedicalsciencesresearchcentrebangaloretbegurnelamangalabangalorerural": {
@@ -4079,6 +4175,12 @@
   "mcc": "SWAMI RAMANAND TEERTH RURAL GOVERNMENT MEDICAL COLLEGE AMBAJOGAI,SWAMI RAMANAND TEERTH RURAL GOVERNMENT MEDICA",
   "site": "SRTR Medical College, Ambajogai"
  },
+ "symbiosismedicalcollegeforwomenlavalemulshipune412115maharashtraindiafemaleseatonly": {
+  "id": "ug_in094p3",
+  "how": "pin+name",
+  "mcc": "Symbiosis Medical College for Women , Lavale, Mulshi, Pune - 412115, Maharashtra, India (Female Seat only )",
+  "site": "Symbiosis Medical College for Women, Pune"
+ },
  "symbiosismedicalcollegeforwomenpunegramlavaletalmulshipune": {
   "id": "ug_in094p3",
   "how": "exact",
@@ -4136,7 +4238,7 @@
  "thenationalinstituteofhealthandfamilywelfarethenationalinstituteofhealthandfamilywelfaredelhinct110067": {
   "id": "ug_in075g1",
   "how": "pin+name",
-  "mcc": "The National Institute of Health and Family Welfare,The National Institute of Health and Family Welfare, Delhi",
+  "mcc": "The National Institute of Health and Family Welfare , The National Institute of Health and Family Welfare, Del",
   "site": "National Institute of Health and Family Welfare, New Delhi"
  },
  "thenigovernmentmedicalcollegethenigovernmentmedicalcollegetheni": {
@@ -4280,7 +4382,7 @@
  "velsmedicalcollegehospitalunitofvelsinstituteofsciencetechnologyadvancedstudiesvistasno12123velannagarmanjankaranaivillageperiyapalayamroaduthukottaitaluktiruvallurtamilnadu": {
   "id": "ug_in100p3",
   "how": "exact",
-  "mcc": "VELS Medical College & Hospital, Unit of Vels Institute of Science, Technology & Advanced Studies (VISTAS),No.",
+  "mcc": "VELS Medical College & Hospital, Unit of Vels Institute of Science, Technology & Advanced Studies (VISTAS) , N",
   "site": "VELS Medical College & Hospital"
  },
  "velsmedicalcollegehospital12123velannagarmanjankaranaivillageperiyapalayamroaduthukottaitaluktiruvallurdistric": {

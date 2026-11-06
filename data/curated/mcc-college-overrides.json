@@ -393,5 +393,12 @@
   {"pattern":"^Vallabhbhai Patel Chest Institute, Delhi,Vallabh","id":"ug_in092g1","track":"pg"},
   {"pattern":"^VARDHMAN INSTITUTE OF MEDICAL SCIENCES, NALANDA,","id":"ug_br002g1","track":"pg"},
   {"pattern":"^VP Chest Institute of Medical Sciences, Delhi,Va","id":"ug_in092g1","track":"pg"},
-  {"pattern":"^Zoram Medical College & Hospital,Mizoram ,Falkaw","id":"ug_mz001g1","track":"pg"}
+  {"pattern":"^Zoram Medical College & Hospital,Mizoram ,Falkaw","id":"ug_mz001g1","track":"pg"},
+  {"pattern":"^Autonomous State Medical College, Hardoi ","id":"ug_in011p3","track":"pg"},
+  {"pattern":"^Base Hospital, , Delhi Cantt","id":null,"note":"Army base hospital, not the Army Hospital R&R; not on the site","track":"pg"},
+  {"pattern":"^Bhima Bhoi Medical College","id":"ug_or003g1","note":"Government Medical College, Balangir","track":"pg"},
+  {"pattern":"^Command Hospital Air Force, , Old Airport Road","id":"ug_ka008g1","track":"pg"},
+  {"pattern":"^GOVERNMENT MEDICAL COLLEGE, FATEHPUR ","id":"ug_in010p3","note":"Amar Shaheed Jodha Singh Ataiya Thakur Dariyao Singh Medical College","track":"pg"},
+  {"pattern":"^HOMI BHABHA CANCER HOSPITAL AND RESEARCH CENTRE, NEW CHANDIGARH","id":"ug_ch002g1","track":"pg"},
+  {"pattern":"^Kasturba Hospital, Daryaganj","id":"ug_in066g1","track":"pg"}
 ]

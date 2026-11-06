@@ -52,6 +52,8 @@ const MCC_ROUNDS = [
 // NEET PG result files from MCC. Rounds 2 and 3 use a wider layout that isn't read yet.
 const MCC_PG_ROUNDS = [
   { file: "2025-r1", year: 2025, round: 1 },
+  { file: "2025-r2", year: 2025, round: 2 },
+  { file: "2025-r3", year: 2025, round: 3 },
   { file: "2025-stray", year: 2025, round: 4 },
   { file: "2026-r1", year: 2026, round: 1 },
 ];

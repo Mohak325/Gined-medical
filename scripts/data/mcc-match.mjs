@@ -89,7 +89,9 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".csv"))) {
   for (const row of readCsv(path.join(dir, file))) {
     if (PG ? /DNB/i.test(row.quota) : row.course !== "MBBS") continue;
     const key = squash(row.institute);
-    const entry = institutes.get(key) ?? { text: row.institute, students: 0 };
+    // Rounds space the same name differently, so every spelling is kept for the overrides.
+    const entry = institutes.get(key) ?? { text: row.institute, texts: new Set(), students: 0 };
+    entry.texts.add(row.institute);
     entry.students++;
     institutes.set(key, entry);
   }
@@ -101,7 +103,7 @@ const tally = { override: 0, notOnSite: 0, ug: 0, exact: 0, "pin+name": 0, revie
 
 for (const [key, entry] of [...institutes].sort((a, b) => a[1].text.localeCompare(b[1].text))) {
   const short = entry.text.slice(0, 110);
-  const rule = overrides.find((candidate) => candidate.regex.test(entry.text));
+  const rule = overrides.find((candidate) => [...entry.texts].some((text) => candidate.regex.test(text)));
   if (rule) {
     if (rule.id && !built.has(rule.id)) throw new Error(`Override "${rule.pattern}" names unknown college ${rule.id}`);
     crosswalk[key] = { id: rule.id, how: "override", mcc: short, site: rule.id ? built.get(rule.id).name : null };
