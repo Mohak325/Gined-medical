@@ -364,6 +364,85 @@ export const STATES = {
     },
   },
 
+  OR: {
+    name: "Odisha",
+    authority: "Odisha Joint Entrance Examination (OJEE)",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "OPEN", label: "Open" }, { code: "SEBC", label: "SEBC" }, { code: "SC", label: "SC" },
+      { code: "ST", label: "ST" }, { code: "EWS", label: "EWS" },
+    ],
+    map(row) {
+      if (/^NR/.test(row.quota)) return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      const seatType = /^(HITECH|DRIEMS)/i.test(row.college) ? "private" : "government";
+      // SGS seats have their own eligibility, which we haven't confirmed.
+      if (row.quota === "SGS") return { code: `SGS-${row.category}`, seatType, quota: "special", category: "state_only" };
+      if (!["HS", "-", ""].includes(row.quota)) throw new Error(`Unknown Odisha quota "${row.quota}".`);
+      const match = row.category.match(/^(OP|EB|SC|ST|EW)(NO|GC|PH|EX)$/);
+      if (!match) throw new Error(`Unknown Odisha category "${row.category}".`);
+      // NO is the ordinary seat. GC (green card), PH (disability) and EX (ex-servicemen) have their own rules.
+      if (match[2] !== "NO") return { code: row.category, seatType, quota: "special", category: "state_only" };
+      const found = { OP: ["OPEN", "general"], EB: ["SEBC", "state_only"], SC: ["SC", "sc"], ST: ["ST", "st"], EW: ["EWS", "ews"] }[match[1]];
+      return { code: found[0], seatType, quota: "state", category: found[1] };
+    },
+  },
+
+  PY: {
+    name: "Puducherry",
+    authority: "CENTAC (Centralised Admission Committee), Puducherry",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "UGE", label: "U.T. general (UGE), government quota" }, { code: "UOB", label: "U.T. OBC (UOB), government quota" },
+      { code: "UMB", label: "U.T. MBC (UMB), government quota" }, { code: "UEB", label: "U.T. EBC (UEB), government quota" },
+      { code: "UBM", label: "U.T. BCM (UBM), government quota" }, { code: "USC", label: "U.T. SC (USC), government quota" },
+      { code: "UEW", label: "U.T. EWS (UEW), government quota" },
+      { code: "MGMT", label: "Management quota" },
+    ],
+    map(row) {
+      // Later lists repeat students who kept their seat.
+      if (row.remark === "RETAINED") return null;
+      if (/^NRI/.test(row.quota)) return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (/MINORITY/i.test(row.college)) return { code: "MINORITY", seatType: "others", quota: "special", category: "state_only" };
+      if (row.quota === "MANAGEMENT QUOTA") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      if (row.quota !== "GOVERNMENT QUOTA") throw new Error(`Unknown Puducherry quota "${row.quota}".`);
+      const seatType = /Indira Gandhi/i.test(row.college) ? "government" : "private";
+      // Codes start with a region letter. K, M and Y are Karaikal, Mahe and Yanam, and suffixes such as
+      // /GSS, /FF, /ESM and /MSP mark sub-quotas. Those have their own rules, so only the U.T. codes are offered.
+      if (!/^U[A-Z]{2}$/.test(row.category)) return { code: row.category, seatType, quota: "special", category: "state_only" };
+      return { code: row.category, seatType, quota: "state", category: "state_only" };
+    },
+  },
+
+  UK: {
+    name: "Uttarakhand",
+    authority: "H.N.B. Uttarakhand Medical Education University",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "UR", label: "Unreserved (UR)" }, { code: "UR-F", label: "Unreserved, women's seat" },
+      { code: "OBC", label: "OBC (NCL)" }, { code: "OBC-F", label: "OBC (NCL), women's seat" },
+      { code: "SC", label: "SC" }, { code: "SC-F", label: "SC, women's seat" },
+      { code: "ST", label: "ST" }, { code: "ST-F", label: "ST, women's seat" },
+      { code: "EWS", label: "EWS" }, { code: "EWS-F", label: "EWS, women's seat" },
+      { code: "OPEN-AI", label: "All India open seats in private colleges" },
+    ],
+    map(row) {
+      // Wrapped cells leave spaces inside codes, as in "OBC(NCL)(OP EN)".
+      const label = row.category.replace(/\s+/g, "");
+      const seatType = /Government|Govt\./i.test(row.college) ? "government" : "private";
+      if (row.quota === "NRI QUOTA SEATS") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (row.quota === "ALL INDIA OPEN QUOTA SEATS") return { code: "OPEN-AI", seatType: "others", quota: "state", category: "state_only" };
+      if (row.quota !== "STATE QUOTA SEATS") throw new Error(`Unknown Uttarakhand quota "${row.quota}".`);
+      const match = label.match(/^(UR|SC|ST|OBC\(NCL\)|EWS)\((OPEN|WOMEN|DPW|PWD|ORPHAN|FF|WKM)\)$/);
+      if (!match) throw new Error(`Unknown Uttarakhand category "${row.category}".`);
+      const base = match[1] === "OBC(NCL)" ? "OBC" : match[1];
+      if (match[2] === "WOMEN") return { code: `${base}-F`, seatType, quota: "state", category: "state_only" };
+      // DPW, PWD, ORPHAN, FF and WKM seats have their own eligibility rules.
+      if (match[2] !== "OPEN") return { code: `${base}-${match[2]}`, seatType, quota: "special", category: "state_only" };
+      const site = { UR: "general", OBC: "obc", SC: "sc", ST: "st", EWS: "ews" }[base];
+      return { code: base, seatType, quota: "state", category: site };
+    },
+  },
+
   GJ: {
     name: "Gujarat",
     authority: "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",
