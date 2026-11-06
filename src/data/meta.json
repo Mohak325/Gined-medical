@@ -21,7 +21,8 @@
     "PB",
     "RJ",
     "TG",
-    "TN"
+    "TN",
+    "UP"
   ],
   "stateOptions": {
     "BR": [
@@ -768,6 +769,48 @@
         "label": "ST"
       }
     ],
+    "UP": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "UR-F",
+        "label": "Unreserved, girls' seat"
+      },
+      {
+        "code": "BC",
+        "label": "Backward Class (BC)"
+      },
+      {
+        "code": "BC-F",
+        "label": "Backward Class, girls' seat"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "SC-F",
+        "label": "SC, girls' seat"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, girls' seat"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-F",
+        "label": "EWS, girls' seat"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -913,5 +956,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 767
+  "collegesWithCutoffs": 804
 }

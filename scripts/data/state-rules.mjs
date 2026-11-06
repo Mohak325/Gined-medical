@@ -312,6 +312,34 @@ export const STATES = {
     },
   },
 
+  UP: {
+    name: "Uttar Pradesh",
+    authority: "Directorate General of Medical Education and Training, Uttar Pradesh",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "UR", label: "Unreserved (UR)" }, { code: "UR-F", label: "Unreserved, girls' seat" },
+      { code: "BC", label: "Backward Class (BC)" }, { code: "BC-F", label: "Backward Class, girls' seat" },
+      { code: "SC", label: "SC" }, { code: "SC-F", label: "SC, girls' seat" },
+      { code: "ST", label: "ST" }, { code: "ST-F", label: "ST, girls' seat" },
+      { code: "EWS", label: "EWS" }, { code: "EWS-F", label: "EWS, girls' seat" },
+    ],
+    map(row) {
+      const institute = Number(row.quota);
+      // Institutes 42 to 47 are the minority quota seats of private colleges, listed separately.
+      if (institute >= 42 && institute <= 47) return { code: `MINORITY-${row.category}`, seatType: "others", quota: "special", category: "state_only" };
+      const government = institute <= 38 || (institute >= 80 && institute <= 89 && institute !== 86);
+      const seatType = government ? "government" : "private";
+      const match = row.category.match(/^(UR|BC|SC|ST|EW)(OP|GL|FF|PH|EX|NC)$/);
+      if (!match) throw new Error(`Unknown Uttar Pradesh category "${row.category}".`);
+      const base = match[1] === "EW" ? "EWS" : match[1];
+      // GL marks the girls' seats. FF, PH, EX and NC are freedom fighter, disability, ex-serviceman and NCC seats.
+      if (match[2] === "GL") return { code: `${base}-F`, seatType, quota: "state", category: "state_only" };
+      if (match[2] !== "OP") return { code: `${base}-${match[2]}`, seatType, quota: "special", category: "state_only" };
+      const site = { UR: "general", BC: "obc", SC: "sc", ST: "st", EWS: "ews" }[base];
+      return { code: base, seatType, quota: "state", category: site };
+    },
+  },
+
   GJ: {
     name: "Gujarat",
     authority: "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",

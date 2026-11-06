@@ -1,0 +1,84 @@
+{
+  "files": {
+    "UP-2026-r1": {
+      "written": 9293,
+      "mbbs": 7689,
+      "categories": {
+        "UROP": 5159,
+        "SCOP": 719,
+        "BCOP": 619,
+        "SCGL": 199,
+        "EWOP": 198,
+        "URGL": 172,
+        "BCGL": 168,
+        "URPH": 67,
+        "STOP": 63,
+        "EWGL": 54,
+        "BCPH": 48,
+        "UREX": 28,
+        "URFF": 26,
+        "BCEX": 23,
+        "SCPH": 22,
+        "STGL": 20,
+        "SCEX": 20,
+        "URNC": 17,
+        "BCFF": 14,
+        "BCNC": 12,
+        "EWPH": 12,
+        "SCNC": 11,
+        "EWEX": 8,
+        "EWNC": 4,
+        "SCFF": 3,
+        "STEX": 2,
+        "EWFF": 1
+      }
+    },
+    "UP-2026-r2": {
+      "written": 4021,
+      "mbbs": 3557,
+      "categories": {
+        "UROP": 3336,
+        "URGL": 68,
+        "BCOP": 36,
+        "SCOP": 26,
+        "BCGL": 19,
+        "URPH": 18,
+        "EWOP": 16,
+        "EWGL": 9,
+        "UREX": 7,
+        "SCGL": 7,
+        "BCPH": 4,
+        "EWPH": 3,
+        "URFF": 2,
+        "BCFF": 2,
+        "SCPH": 2,
+        "STGL": 1,
+        "STOP": 1
+      }
+    },
+    "UP-2026-r3": {
+      "written": 1961,
+      "mbbs": 1778,
+      "categories": {
+        "UROP": 1288,
+        "BCOP": 167,
+        "URGL": 98,
+        "SCOP": 68,
+        "EWOP": 65,
+        "BCGL": 43,
+        "STOP": 13,
+        "EWGL": 10,
+        "BCPH": 7,
+        "SCGL": 7,
+        "SCPH": 4,
+        "EWPH": 3,
+        "URFF": 2,
+        "BCFF": 1,
+        "URPH": 1,
+        "EWFF": 1
+      }
+    }
+  },
+  "institutes": 120,
+  "rows": 15275
+}
