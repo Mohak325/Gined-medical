@@ -1,5 +1,585 @@
 [
   {
+    "collegeId": "ug_ap001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap008p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap009p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap009p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap011p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap013p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap013p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap014p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap015p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap015p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap016p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap016p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_gj001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1001000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2037000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1135000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), Bhagyoday Medical College order",
+    "sourceUrl": "https://frcmedical.org/2025/ORDER.pdf",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2173000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), Bhagyoday Medical College order",
+    "sourceUrl": "https://frcmedical.org/2025/ORDER.pdf",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1091000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2400000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1050000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2000000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1150000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2250000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1091000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2046000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1080000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2250000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1135000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj008p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2173000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1000000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1254000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj011p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2140000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1240000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2498000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1146000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj013g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2885000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 930000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj016g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2870000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj017g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1123000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj017g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2406000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
     "collegeId": "ug_in003p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -20,6 +600,26 @@
     "state": "MP"
   },
   {
+    "collegeId": "ug_in004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1135000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2173000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
     "collegeId": "ug_in005g1",
     "course": "MBBS",
     "seatType": "government",
@@ -38,6 +638,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in008g1",
@@ -87,6 +707,46 @@
     "source": "ESIC Noida and Varanasi fee structure, UP NEET UG 2026, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in013p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in013p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in015p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in015p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in017p3",
@@ -169,6 +829,126 @@
     "state": "MP"
   },
   {
+    "collegeId": "ug_in022p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1212000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in022p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2424000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in024p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in024p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in026g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in026g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in026p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in026p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in027p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in027p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in028p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2300000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in028p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
     "collegeId": "ug_in030g1",
     "course": "MBBS",
     "seatType": "government",
@@ -209,6 +989,26 @@
     "state": "UP"
   },
   {
+    "collegeId": "ug_in032g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in032g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
     "collegeId": "ug_in033p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -237,6 +1037,36 @@
     "source": "Integral's revised MBBS fee, UP NEET UG 2026, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in036g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_in037p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2249006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_in037p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
   },
   {
     "collegeId": "ug_in038p3",
@@ -305,6 +1135,46 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in041p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in041p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in042p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in042p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in043g1",
     "course": "MBBS",
     "seatType": "government",
@@ -333,6 +1203,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in045p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in045p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
   },
   {
     "collegeId": "ug_in046p3",
@@ -365,6 +1255,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in047p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in047p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in048g1",
     "course": "MBBS",
     "seatType": "government",
@@ -383,6 +1293,16 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in049p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2400000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
   },
   {
     "collegeId": "ug_in052p3",
@@ -415,6 +1335,46 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in053p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in053p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in054p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in054p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in055g1",
     "course": "MBBS",
     "seatType": "government",
@@ -423,6 +1383,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in055p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in055p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in056g1",
@@ -435,6 +1415,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in056p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in056p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in057g1",
     "course": "MBBS",
     "seatType": "government",
@@ -443,6 +1443,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in057p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in057p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in058g1",
@@ -465,6 +1485,46 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in059p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in059p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in061p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_in061p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 850436,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
     "collegeId": "ug_in062p3",
     "course": "MBBS",
     "seatType": "private",
@@ -473,6 +1533,26 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in063p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 18150,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in063p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1452000,
+    "year": 2026,
+    "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
+    "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
   },
   {
     "collegeId": "ug_in064g1",
@@ -503,6 +1583,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in067p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2200000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in067p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
   },
   {
     "collegeId": "ug_in070g1",
@@ -595,6 +1695,26 @@
     "state": "UP"
   },
   {
+    "collegeId": "ug_in075p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in075p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1250000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in076g1",
     "course": "MBBS",
     "seatType": "government",
@@ -605,6 +1725,26 @@
     "state": "MP"
   },
   {
+    "collegeId": "ug_in076p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1194000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in076p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2208000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
     "collegeId": "ug_in077p3",
     "course": "MBBS",
     "seatType": "private",
@@ -613,6 +1753,66 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in080g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in080g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in081p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in081p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in082p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1076000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in082p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2000000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
   },
   {
     "collegeId": "ug_in084p3",
@@ -741,6 +1941,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in092p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1135000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in092p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2173000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
     "collegeId": "ug_in093p3",
     "course": "MBBS",
     "seatType": "government",
@@ -759,6 +1979,26 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in096p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_in096p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
   },
   {
     "collegeId": "ug_in097p3",
@@ -799,6 +2039,26 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in104p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1175000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in104p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2350000,
+    "year": 2026,
+    "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
+    "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
   },
   {
     "collegeId": "ug_ka001g1",
@@ -2439,6 +3699,496 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_kl001p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl002g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl002g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl002p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2249006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl004p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl005p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 931118,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl006p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl006p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl007p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 847690,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl009p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl009p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 827169,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl010p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl010p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 810175,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl011p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl011p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl013p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl013p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl014p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2249006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl014p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl015p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2165720,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl015p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 897000,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl016p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2165720,
+    "year": 2026,
+    "source": "CEE Kerala, first phase MBBS notification adding Palakkad Institute of Medical Sciences, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/216/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl016p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 898800,
+    "year": 2026,
+    "source": "CEE Kerala, first phase MBBS notification adding Palakkad Institute of Medical Sciences, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/216/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl017g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl017g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 892459,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl017p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2249006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl017p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 856840,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl018g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 23150,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl018p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl018p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 810175,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl019p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2274006,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl019p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 815329,
+    "year": 2026,
+    "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
+    "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
     "collegeId": "ug_mp001p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -2706,6 +4456,26 @@
     "state": "MP"
   },
   {
+    "collegeId": "ug_or001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_or001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2820000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
     "collegeId": "ug_or002g1",
     "course": "MBBS",
     "seatType": "government",
@@ -2926,6 +4696,436 @@
     "state": "PY"
   },
   {
+    "collegeId": "ug_rj001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, ESIC college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786813957760.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, ESIC college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786813957760.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj004g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj005g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2395000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj006g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2250000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2950000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj007g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3250000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj008g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj008p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj009g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj009p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj009p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2820000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj010g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2400000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj011g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2495000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj012g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 2100000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2450000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj013g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
     "collegeId": "ug_rj013p3",
     "course": "MBBS",
     "seatType": "private",
@@ -2934,6 +5134,576 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_rj014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj014g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj014p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2820000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj015g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj015p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj015p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj016g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj017g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj017g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj018g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj019g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj019g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj020g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj020g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj021g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj021g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj022g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj022g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj023g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj023g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj024g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj024g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj025g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj026g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj026g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj027g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj028g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj029g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj030g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 73900,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_rj030g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1005100,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, government, RUHS and RajMES college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1786878970509.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_tg001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1300000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1390000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg011p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg013p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg013p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 60000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg014p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1155000,
+    "year": 2026,
+    "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
+    "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
   },
   {
     "collegeId": "ug_tn002g1",
@@ -3364,6 +6134,26 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_up016p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1890000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
+  },
+  {
+    "collegeId": "ug_up016p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
+    "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
+    "state": "RJ"
   },
   {
     "collegeId": "ug_up017p3",
