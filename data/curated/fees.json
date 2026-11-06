@@ -1,0 +1,45 @@
+{
+  "_about": "Published MBBS fees read by hand from official notices, one row per college and seat type. Amounts are rupees per year. Each source names the document it came from, so it can be checked again.",
+  "sources": {
+    "OR-2026": {
+      "label": "OJEE's Round 3 admission notice, 2026",
+      "title": "OJEE, Schedule and Instructions for Provisional Admission to MBBS/BDS (3rd Round Counselling), 2026, section C, Fee structure",
+      "url": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+      "note": "Government colleges: Rs. 37,950 per annum. NRI candidates pay four times the private college fee, as the notice states, so those rows are worked out from it."
+    },
+    "PY-2026": {
+      "label": "Puducherry's fee order of 28 August 2026",
+      "title": "Government of Puducherry, Chief Secretariat (Health), Order No.225/H5/Health-II/2026-27 dated 28.08.2026, Approved Fee Structure for UG Medical course, 2026-27 to 2028-29",
+      "url": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+      "note": "Covers PIMS and SMVMCH. Sri Venkateshwaraa's fee is governed by a High Court interim stay, so it isn't listed."
+    }
+  },
+  "fees": [
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or012g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or007g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or016g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or015g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or004g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or003g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or008g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or011g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or013g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or002g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or006g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or009g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or014g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or005g1", "seatType": "government", "annualFee": 37950 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or002p3", "seatType": "private", "annualFee": 1156000 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_or002p3", "seatType": "nri", "annualFee": 4624000 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_in030p3", "seatType": "private", "annualFee": 854000 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_in030p3", "seatType": "nri", "annualFee": 3416000 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_in019p3", "seatType": "private", "annualFee": 908000 },
+    { "state": "OR", "source": "OR-2026", "year": 2026, "collegeId": "ug_in019p3", "seatType": "nri", "annualFee": 3632000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py003p3", "seatType": "government", "annualFee": 450000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py003p3", "seatType": "management", "annualFee": 1700000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py003p3", "seatType": "nri", "annualFee": 2500000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py005p3", "seatType": "government", "annualFee": 450000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py005p3", "seatType": "management", "annualFee": 1700000 },
+    { "state": "PY", "source": "PY-2026", "year": 2026, "collegeId": "ug_py005p3", "seatType": "nri", "annualFee": 2500000 }
+  ]
+}

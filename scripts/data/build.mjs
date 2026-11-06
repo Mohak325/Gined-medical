@@ -321,6 +321,16 @@ for (const { file, year } of KEA_ROUNDS) {
   }
 }
 
+// Fees read by hand from official notices, with the document named for each.
+const curatedFees = readJson(path.join(CURATED, "fees.json"));
+for (const row of curatedFees.fees) {
+  const source = curatedFees.sources[row.source];
+  if (!source) throw new Error(`Fee for ${row.collegeId} names unknown source ${row.source}.`);
+  if (!colleges.some((c) => c.id === row.collegeId)) throw new Error(`fees.json names unknown college ${row.collegeId}.`);
+  addFee({ collegeId: row.collegeId, course: "MBBS", seatType: row.seatType, annualFee: row.annualFee, year: row.year,
+    source: source.label, sourceUrl: source.url, state: row.state });
+}
+
 // Other states. Names vary between files, so a listed name only has to start the college's name.
 function matchStateCollege(state, name) {
   const squashed = squash(name);
