@@ -97,16 +97,23 @@ export default function ResultsClient() {
     // One result per college and course: the first cutoff found for each, as before.
     const byId = new Map(colleges.map((college) => [college.id, college]));
     const seen = new Set<string>();
-    const computed: { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel; allRounds?: AllRoundsClosing }[] = [];
+    const computed: {
+      college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel;
+      allRounds?: AllRoundsClosing; laterRounds: boolean;
+    }[] = [];
     for (const cutoff of cutoffs) {
       const college = byId.get(cutoff.collegeId);
       const key = `${cutoff.collegeId}|${cutoff.course}`;
       if (!college || seen.has(key)) continue;
       seen.add(key);
-      computed.push({
-        college, cutoff, confidence: computeConfidence(query.rank!, cutoff.closingRank),
-        allRounds: allRounds.get(seatGroupKey({ ...cutoff, year: allRoundsYear(cutoff.track) })),
-      });
+      const final = allRounds.get(seatGroupKey({ ...cutoff, year: allRoundsYear(cutoff.track) }));
+      // The label comes from Round 1. A seat Round 1 never reached, but Round 2 or 3 did, is shown
+      // as Ambitious instead of being hidden as a long shot. No label gets more hopeful. The stray
+      // round doesn't count here: it often fills one leftover seat far down the list.
+      const laterRounds = !!final?.mainRoundsClosing && query.rank! > cutoff.closingRank && query.rank! <= final.mainRoundsClosing;
+      let confidence = computeConfidence(query.rank!, cutoff.closingRank);
+      if (laterRounds && confidence === "longshot") confidence = "ambitious";
+      computed.push({ college, cutoff, confidence, allRounds: final, laterRounds });
     }
 
     // Sort
@@ -115,6 +122,8 @@ export default function ResultsClient() {
         const order = { safe: 0, moderate: 1, ambitious: 2, longshot: 3 };
         const confDiff = order[a.confidence] - order[b.confidence];
         if (confDiff !== 0) return confDiff;
+        // Seats only a later round reached come after the ones Round 1 reached.
+        if (a.laterRounds !== b.laterRounds) return a.laterRounds ? 1 : -1;
         // Tie-breaker: sort by rank ascending within same confidence bucket
         return a.cutoff.closingRank - b.cutoff.closingRank;
       }
@@ -142,6 +151,7 @@ export default function ResultsClient() {
     allResults.forEach(r => { counts[r.confidence]++; });
     return counts;
   }, [allResults]);
+  const laterRoundsCount = useMemo(() => allResults.filter((r) => r.laterRounds).length, [allResults]);
 
   if (isPg && (!PG_ENABLED || isState)) {
     return (
@@ -212,6 +222,7 @@ export default function ResultsClient() {
               {` Later rounds fill seats that free up, so they reach further down the list. Where we have them, each card also shows how far the ${isPg ? allRoundsYear("pg") : allRoundsYear("ug")} counselling reached across all its rounds.`}
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
+              {laterRoundsCount > 0 && ` ${laterRoundsCount} of your options closed before your rank in Round 1 but reached it in Round 2 or 3; they're tagged "Reached in Round 2 or 3". Those seats depend on others leaving, so keep taking part in every round.`}
               {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
               {usesStateRank && ` These closing ranks are ${stateName}'s own, so compare them with your state rank and not your All India rank.`}
               {isPg && ` These are MCC's All India NEET PG results${specialty ? ` for ${specialty}` : ", across every specialty"}. DNB seats in hospitals aren't included.`}

@@ -21,9 +21,11 @@ interface CollegeResultCardProps {
   isVolatile?: boolean;
   /** How far the latest full counselling reached across all its rounds, where we have later rounds. */
   allRounds?: AllRoundsClosing;
+  /** Round 1 closed before the student's rank, but Round 2 or 3 reached it. */
+  laterRounds?: boolean;
 }
 
-export default function CollegeResultCard({ college, cutoff, confidence, userRank, index, isVolatile, allRounds }: CollegeResultCardProps) {
+export default function CollegeResultCard({ college, cutoff, confidence, userRank, index, isVolatile, allRounds, laterRounds }: CollegeResultCardProps) {
   const gap = cutoff.closingRank - userRank;
   const isPositive = gap >= 0;
   
@@ -51,6 +53,14 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
       <div className="flex-grow z-10">
         <div className="flex flex-wrap items-center gap-3 mb-3">
           <ConfidenceBadge level={confidence} />
+          {laterRounds && allRounds && (
+            <span
+              className="text-micro text-gold-deep bg-gold/10 border border-gold/20 px-2 py-1 font-semibold rounded-[var(--radius-sm)]"
+              title={`Round 1 closed before your rank, but ${allRounds.year} counselling reached it in Round 2 or 3`}
+            >
+              Reached in {allRounds.year !== cutoff.year ? `${allRounds.year} ` : ""}Round 2 or 3
+            </span>
+          )}
           {isVolatile && (
             <span className="inline-flex items-center gap-1 text-micro text-ambitious bg-ambitious/10 px-2 py-1 rounded-[var(--radius-sm)]" title="Cutoffs have fluctuated >25% recently">
               <AlertCircle className="w-3.5 h-3.5" /> Volatile
