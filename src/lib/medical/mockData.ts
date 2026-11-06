@@ -57,7 +57,7 @@ export interface CutoffEntry {
   /** "special" quotas have their own eligibility rules and are left out of predictions. */
   quota: "aiq" | "state" | "deemed" | "central" | "special" | "nri" | "management";
   category: string; // general, obc, sc, st, ews, the same with _pwd, or state_only for a state's own codes
-  round: 1 | 2 | 3;
+  round: number; // 1 to 3; 4 and 5 are stray or extra rounds, which differ by source
   year: number;
   openingRank: number;
   closingRank: number;

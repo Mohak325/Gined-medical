@@ -8,6 +8,7 @@ import { CalculatorQuerySchema } from "@/lib/medical/schemas";
 import { getColleges, getCutoffs } from "@/lib/medical/api";
 import { INDIA_STATES, type College, type CutoffEntry } from "@/lib/medical/mockData";
 import { computeConfidence, type ConfidenceLevel } from "@/lib/medical/confidence";
+import { allRoundsIndex, allRoundsYear, seatGroupKey, type AllRoundsClosing } from "@/lib/medical/rounds";
 
 import ResultsSummaryBar from "@/components/medical/results/ResultsSummaryBar";
 import ResultsList from "@/components/medical/results/ResultsList";
@@ -20,6 +21,8 @@ export default function ResultsClient() {
   // State
   const [colleges, setColleges] = useState<College[]>([]);
   const [cutoffs, setCutoffs] = useState<CutoffEntry[]>([]);
+  // Every round of the latest year that has later rounds, for the "all rounds" closing rank.
+  const [allRounds, setAllRounds] = useState<Map<string, AllRoundsClosing>>(new Map());
   const [loading, setLoading] = useState(true);
   const [sortBy, setSortBy] = useState("confidence_desc");
   const [showLongshots, setShowLongshots] = useState(false);
@@ -68,11 +71,19 @@ export default function ResultsClient() {
         ...(isPg ? (specialty ? { specialty } : {}) : { course: "MBBS" }),
         round: 1, // Only consider round 1 for initial prediction
         year: meta.cutoffYear
+      }),
+      getCutoffs({
+        track: query.track,
+        quota: query.quota,
+        ...(isState ? { state: query.state, stateCategory } : { category: query.category }),
+        ...(isPg ? (specialty ? { specialty } : {}) : { course: "MBBS" }),
+        year: allRoundsYear(query.track)
       })
-    ]).then(([collegesData, cutoffsData]) => {
+    ]).then(([collegesData, cutoffsData, allRoundsData]) => {
       if (mounted) {
         setColleges(collegesData);
         setCutoffs(cutoffsData);
+        setAllRounds(allRoundsIndex(allRoundsData));
         setLoading(false);
       }
     });
@@ -86,13 +97,16 @@ export default function ResultsClient() {
     // One result per college and course: the first cutoff found for each, as before.
     const byId = new Map(colleges.map((college) => [college.id, college]));
     const seen = new Set<string>();
-    const computed: { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel }[] = [];
+    const computed: { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel; allRounds?: AllRoundsClosing }[] = [];
     for (const cutoff of cutoffs) {
       const college = byId.get(cutoff.collegeId);
       const key = `${cutoff.collegeId}|${cutoff.course}`;
       if (!college || seen.has(key)) continue;
       seen.add(key);
-      computed.push({ college, cutoff, confidence: computeConfidence(query.rank!, cutoff.closingRank) });
+      computed.push({
+        college, cutoff, confidence: computeConfidence(query.rank!, cutoff.closingRank),
+        allRounds: allRounds.get(seatGroupKey({ ...cutoff, year: allRoundsYear(cutoff.track) })),
+      });
     }
 
     // Sort
@@ -115,7 +129,7 @@ export default function ResultsClient() {
 
     return computed;
 
-  }, [colleges, cutoffs, query.rank, sortBy]);
+  }, [colleges, cutoffs, allRounds, query.rank, sortBy]);
 
   const results = useMemo(
     () => (showLongshots ? allResults : allResults.filter(r => r.confidence !== "longshot")),
@@ -195,6 +209,7 @@ export default function ResultsClient() {
             <h3 className="text-body font-bold text-text-main mb-1">Your Summary</h3>
             <p className="text-small text-text-muted leading-relaxed">
               Based on {meta.cutoffYear} Round 1 closing ranks, your {usesStateRank ? `${stateName} state rank` : "rank"} of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> {isPg ? "college and specialty options" : "colleges"}. These labels are indicative, not guarantees.
+              {` Later rounds fill seats that free up, so they reach further down the list. Where we have them, each card also shows how far the ${isPg ? allRoundsYear("pg") : allRoundsYear("ug")} counselling reached across all its rounds.`}
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
               {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
