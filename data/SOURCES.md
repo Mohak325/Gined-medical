@@ -23,7 +23,7 @@ taken from them are in `data/extracted/mcc/`.
 `data/raw/kea/sources.json`: 2025 and 2026, Rounds 1 to 3 and the first stray round. Retrieved 5 November
 2026 from <https://cetonline.karnataka.gov.in/kea/ugneet2026> and the 2025 page beside it. KEA's lists hold
 no student names. The rows taken from them are in `data/extracted/kea/`. They also hold each seat's fee,
-which isn't used on the site yet (Phase 4).
+which the build turns into official fees (see below).
 
 **Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand come straight from their counselling authorities.** The files
 are listed in `data/raw/states/sources.json`, `gj.json`, `ap.json`, `tg.json`, `mh.json`, `pb.json`, `hp.json`, `mp.json`, `tn.json`, `kl.json`, `up.json`, `wb.json`, `or.json`, `py.json` and `uk.json`. These lists include student names, so the extractors keep only rank, college, course, category,
@@ -173,16 +173,26 @@ NMC has since revised that to [1,40,664](https://medicaldialogues.in/amp/news/ed
 
 `npm run data:check` repeats these comparisons on every build.
 
+## Fees
+
+`src/data/fees.json` holds published annual fees, one row per college, course and seat type (government, private, management or NRI),
+with the year and source. College pages show these where they exist, and a labelled estimate by college type everywhere else. Bond terms
+are still estimates.
+
+| Source | Covers | Notes |
+|---|---|---|
+| KEA allotment lists | 68 Karnataka colleges, 194 seat types | One fee per college and seat type, as printed beside each allotment. 2026 where present, otherwise 2025. A fee of 0 is treated as not published |
+
+`npm run data:check` rejects a fee for an unknown college or seat type, an amount outside ₹1,000 to ₹1 crore a year, or a row without a source and year.
+
 ## Known problems
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. There are no PG cutoffs or real fees.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. There are no PG cutoffs. Published fees cover Karnataka only so far.
 - Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
-- Many of the 845 UG colleges still have no cutoffs. Most fill seats only through states we haven't added yet.
-- Tamil Nadu and Kerala publish lists using their own state rank, with no All India rank, so they can't feed the site's predictor as it works today.
-- Uttar Pradesh shows results one college at a time through a form, across 120 colleges.
-- West Bengal's PDFs have scrambled text.
+- 18 MBBS colleges still have no cutoffs: Jharkhand's 3 (separate portal, own merit rank), 6 in Tripura, Jammu and Kashmir, Sikkim, Manipur
+  and Meghalaya, the 2 armed forces colleges, and 7 not in any state list found.
 - 7 Karnataka colleges have no KEA rows: Chettinad Kolar, Kasturba Manipal, Raja Rajeswari, Shri B M Patil,
   Sri Devaraj Urs and the two Sri Siddhartha colleges. They're probably outside KEA's counselling, but that isn't confirmed.
 - Bagalkote Medical College is in KEA's and MCC's lists but not in our college list.

@@ -26,11 +26,22 @@ export interface College {
   totalSeats?: number;
 }
 
+export interface OfficialFee {
+  collegeId: string;
+  course: string;
+  seatType: "government" | "private" | "management" | "nri";
+  annualFee: number;      // Rupees per year, as published
+  year: number;
+  source: string;
+  state: string;
+}
+
 export interface CollegeCourse {
   collegeId: string;
   track: "ug" | "pg";
   course: string;
-  fees: number;           // Per year
+  officialFees: OfficialFee[]; // Published fees by seat type, newest year only
+  fees: number;           // Per year, estimated from college type
   bondYears: number;      // 0 if none
   bondPenalty: number;    // 0 if none
   totalSeats: number;

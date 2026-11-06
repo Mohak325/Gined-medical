@@ -14,7 +14,7 @@ const sections = [
   },
   {
     title: "Data accuracy",
-    body: "Cutoffs and seat counts come from past data and may be incomplete or out of date. Fees and bond details are estimates based on college type, not figures published by each college. Safe, Moderate and Ambitious labels are indicative. Always check details with MCC, your state counselling authority and the college before acting on them.",
+    body: "Cutoffs and seat counts come from past data and may be incomplete or out of date. Fees are published figures where a college page names their source, and estimates based on college type everywhere else. Bond details are estimates. Safe, Moderate and Ambitious labels are indicative. Always check details with MCC, your state counselling authority and the college before acting on them.",
   },
   {
     title: "Not affiliated",

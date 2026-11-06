@@ -1,0 +1,1748 @@
+[
+  {
+    "collegeId": "ug_in009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in038p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in038p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2634214,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in038p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2634214,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in038p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in084p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in084p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3011950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in084p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3011950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_in084p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4011950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka001p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4011950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3515000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3415000,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2215000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3611950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2911950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2511950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka005p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2511950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4211950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka006p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4211950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka006p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3515000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2215000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka008p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3465000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka008p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3511950,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka008p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2265000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 109350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3511950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka010p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3511950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka010p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 109350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka011p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3711950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka011p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3611950,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka011p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3311950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3311950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka012p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3611950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3611950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka013p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka014p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2711950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka014p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka015p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka015p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3911950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka015p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3911950,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka015p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka016p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka017p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 609084,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka018p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka019g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka019g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka019g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka019p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2861950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2861950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka020p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka021g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka021g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka021g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka021p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka023g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka023p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka023p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4311950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka023p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4311950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka023p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3215000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3215000,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka024p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1629965,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4500000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4500000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka025p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2515000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka026g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka026g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka026p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka026p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4011950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka026p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3911950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3911950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka027p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3915000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3915000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2215000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2736950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2736950,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka028p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka029g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka029g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka029g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka031g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka031p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka031p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3611950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka031p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3611950,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka031p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3361950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3361950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka032p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka033p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka033p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3615000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka033p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3615000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka033p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2015000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2509350,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2509350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3511950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka034p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka035g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 64350,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka035p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 182371,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka035p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4500000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka035p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4500000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka035p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2240750,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka037p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka037p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3341950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka037p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3341950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka037p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka039p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka039p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3101950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka039p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3101950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka039p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka041p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4500000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka041p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4500000,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka041p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2200000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka044p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 166621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka044p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2975000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka044p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2825000,
+    "year": 2025,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka044p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2225000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka045p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 810535,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka046p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka046p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 2711950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka046p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2711950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka046p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka047p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka047p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 3411950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka047p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka048p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 153571,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka048p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4411950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka048p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4411950,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka048p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1200117,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka049p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_mp002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 156621,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_mp002g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 4015000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_mp002g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2215000,
+    "year": 2026,
+    "source": "KEA allotment lists",
+    "state": "KA"
+  }
+]

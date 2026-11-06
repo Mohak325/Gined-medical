@@ -386,6 +386,21 @@ for (const [name, result] of Object.entries(stateReport)) {
   }
 }
 
+// Official fees: every row names a real college, a known seat type and a plausible yearly amount.
+{
+  const fees = JSON.parse(fs.readFileSync(path.join(ROOT, "src/data/fees.json"), "utf8"));
+  const ids = new Set(colleges.map((c) => c.id));
+  for (const fee of fees) {
+    const where = `${fee.collegeId} ${fee.seatType} ${fee.year}`;
+    if (!ids.has(fee.collegeId)) errors.push(`Fee for unknown college: ${where}`);
+    if (!["government", "private", "management", "nri"].includes(fee.seatType)) errors.push(`Fee with unknown seat type: ${where}`);
+    // Government seats can cost a few thousand rupees a year. No MBBS seat costs over a crore a year.
+    if (!(fee.annualFee >= 1000 && fee.annualFee <= 10000000)) errors.push(`Implausible fee ${fee.annualFee}: ${where}`);
+    if (!fee.source || !fee.year) errors.push(`Fee without a source or year: ${where}`);
+  }
+  console.log(`Official fees: ${fees.length} rows across ${new Set(fees.map((f) => f.collegeId)).size} colleges`);
+}
+
 // Telangana's counts, as reported by neet2seat.
 {
   const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));

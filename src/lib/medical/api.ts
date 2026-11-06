@@ -1,8 +1,9 @@
 "use server";
-import type { College, CutoffEntry, SeatEntry } from "./mockData";
+import type { College, CutoffEntry, OfficialFee, SeatEntry } from "./mockData";
 import collegesData from "@/data/colleges.json";
 import cutoffsData from "@/data/cutoffs.json";
 import seatsData from "@/data/seats.json";
+import feesData from "@/data/fees.json";
 
 export async function getColleges(params: Record<string, any>): Promise<College[]> {
   let results = [...collegesData] as College[];
@@ -187,8 +188,11 @@ export async function getCourses(params: Record<string, any>) {
       bondPenalty = 500000;
     }
 
+    const officialFees = (feesData as OfficialFee[]).filter((fee) => fee.collegeId === course.collegeId && fee.course === course.course);
+
     return {
       ...course,
+      officialFees,
       fees,
       bondYears,
       bondPenalty
