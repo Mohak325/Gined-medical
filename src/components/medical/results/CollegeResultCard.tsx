@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { type College, type CutoffEntry } from "@/lib/medical/mockData";
 import { type ConfidenceLevel } from "@/lib/medical/confidence";
+import { type AllRoundsClosing } from "@/lib/medical/rounds";
 import { formatRank } from "@/lib/medical/format";
 import ConfidenceBadge from "@/components/medical/shared/ConfidenceBadge";
 import ProvenanceLabel from "@/components/medical/shared/ProvenanceLabel";
@@ -18,9 +19,11 @@ interface CollegeResultCardProps {
   userRank: number;
   index: number;
   isVolatile?: boolean;
+  /** How far the latest full counselling reached across all its rounds, where we have later rounds. */
+  allRounds?: AllRoundsClosing;
 }
 
-export default function CollegeResultCard({ college, cutoff, confidence, userRank, index, isVolatile }: CollegeResultCardProps) {
+export default function CollegeResultCard({ college, cutoff, confidence, userRank, index, isVolatile, allRounds }: CollegeResultCardProps) {
   const gap = cutoff.closingRank - userRank;
   const isPositive = gap >= 0;
   
@@ -116,6 +119,12 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
           <div className="flex sm:justify-end">
             <ProvenanceLabel quota={cutoff.state ? `${cutoff.state} ${cutoff.stateCategory}` : cutoff.quota.toUpperCase()} year={cutoff.year} round={`Round ${cutoff.round}`} />
           </div>
+          {allRounds && allRounds.closingRank > cutoff.closingRank && (
+            <div className="mt-4 pt-3 border-t border-hairline/60" title="The furthest rank that got this seat in any round of that year, including the stray round">
+              <div className="text-micro text-text-muted font-semibold tracking-wider uppercase mb-0.5">{allRounds.year} All Rounds</div>
+              <div className="text-body font-bold tabular-nums text-text-main">{formatRank(allRounds.closingRank)}</div>
+            </div>
+          )}
         </div>
 
         <div className="mt-8">

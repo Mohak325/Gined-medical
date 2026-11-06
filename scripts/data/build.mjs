@@ -443,6 +443,13 @@ const meta = {
   cutoffSource: "MCC",
   cutoffYear: Math.max(...cutoffs.map((cutoff) => cutoff.year)),
   cutoffYears: [...new Set(cutoffs.map((cutoff) => cutoff.year))].sort(),
+  // For "all rounds" closing ranks: the latest year with any round after Round 1, per track,
+  // and which sources ("track|year|quota", a state code for state quota) published later rounds.
+  // A source that only published Round 1 must not be shown as "all rounds".
+  allRoundsYear: Object.fromEntries(["ug", "pg"].map((track) => [
+    track, Math.max(...cutoffs.filter((c) => c.track === track && c.round > 1).map((c) => c.year)),
+  ])),
+  laterRounds: [...new Set(cutoffs.filter((c) => c.round > 1).map((c) => `${c.track}|${c.year}|${c.quota === "state" ? c.state : c.quota}`))].sort(),
   stateCutoffs: [...new Set(cutoffs.map((cutoff) => cutoff.state).filter(Boolean))].sort(),
   stateOptions: Object.fromEntries(Object.entries(STATES).map(([code, rules]) => [code, rules.options])),
   stateRanks: Object.fromEntries(Object.entries(STATES).filter(([, rules]) => rules.stateRank).map(([code, rules]) => [code, rules.stateRank])),

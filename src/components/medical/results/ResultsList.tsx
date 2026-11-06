@@ -4,11 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import CollegeResultCard from "./CollegeResultCard";
 import { type College, type CutoffEntry } from "@/lib/medical/mockData";
 import { type ConfidenceLevel } from "@/lib/medical/confidence";
+import { type AllRoundsClosing } from "@/lib/medical/rounds";
 
 interface ResultItem {
   college: College;
   cutoff: CutoffEntry;
   confidence: ConfidenceLevel;
+  allRounds?: AllRoundsClosing;
 }
 
 interface ResultsListProps {
@@ -26,6 +28,7 @@ export default function ResultsList({ results, userRank }: ResultsListProps) {
             college={item.college}
             cutoff={item.cutoff}
             confidence={item.confidence}
+            allRounds={item.allRounds}
             userRank={userRank}
             index={i}
           />
