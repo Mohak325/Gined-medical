@@ -518,6 +518,28 @@ expectNone(jumps, "All India closing rank moved over 4 times between 2025 and 20
   }
   console.log(`NEET PG 2026 Round 1 published closing ranks matched: ${same} of ${published.length}`);
 
+  // Published allotment totals for each PG result, against the rows read from MCC's PDFs.
+  // 2025 Round 2: 20,787 allotted (hellomentor.in), 9,667 of them All India.
+  // 2025 Round 3: 10,084 fresh allotments and 8,589 upgrades (Careers360 news, 6 Feb 2026).
+  // 2026 Round 1: 28,723 allotted (hireguideeducation.org). Last ranks are MCC's own last row.
+  const pgDir = path.join(ROOT, "data/extracted/mcc-pg");
+  const totals = [
+    ["2025-r2", (rows) => rows.length, 20787],
+    ["2025-r2", (rows) => rows.filter((r) => r.quota === "All India").length, 9667],
+    ["2025-r3", (rows) => rows.filter((r) => /^fresh/i.test(r.remarks)).length, 10084],
+    ["2025-r3", (rows) => rows.filter((r) => /^upgraded/i.test(r.remarks)).length, 8589],
+    ["2026-r1", (rows) => rows.length, 28723],
+  ];
+  let totalsSame = 0;
+  const pgRows = {};
+  for (const [file, count, expected] of totals) {
+    pgRows[file] ??= readCsv(path.join(pgDir, `${file}.csv`));
+    const ours = count(pgRows[file]);
+    if (ours === expected) totalsSame++;
+    else errors.push(`NEET PG ${file}: published total ${expected}, rows read ${ours}`);
+  }
+  console.log(`NEET PG published allotment totals matched: ${totalsSame} of ${totals.length}`);
+
   // Each PG cutoff should sit on a course the college lists. A few don't, because NMC's seat list is older.
   const listed = new Set(seats.filter((s) => s.track === "pg").map((s) => `${s.collegeId}|${s.course}`));
   const unlisted = pg.filter((c) => !listed.has(`${c.collegeId}|${c.course}`));
@@ -537,7 +559,7 @@ const ugColleges = colleges.filter((c) => c.ugSeats > 0);
 const missing = ugColleges.filter((c) => !withCutoffs.has(c.id));
 warnings.push(`UG colleges with no cutoffs: ${missing.length} of ${ugColleges.length}`);
 warnings.push(`State-quota cutoffs cover only: ${meta.stateCutoffs.join(", ")} (${cutoffs.filter((c) => c.quota === "state").length} rows)`);
-warnings.push("PG cutoffs cover MCC's All India rounds only (2025 Round 1 and stray, 2026 Round 1), with no state quota or DNB");
+warnings.push("PG cutoffs cover MCC's All India rounds only (2025 Rounds 1 to 3 and stray, 2026 Round 1), with no state quota or DNB");
 
 /* ── Report ──────────────────────────────────────────────────────────── */
 

@@ -143,6 +143,9 @@ Two things differ from UG:
   the college lists in its seats. A new spelling it doesn't know is counted under "PG course the site doesn't
   list" in the build report, so check that number after each new file.
 - **DNB rows are skipped.** They're for hospital seats the site doesn't list.
+- **Later rounds are wide.** A Round 2 or 3 file (named `-r2`, `-r3`) puts each student's earlier seats on the
+  same row, then this round's seat in the last 7 columns. The extractor keeps only those last 7. A new published
+  total for a round can be added to the PG totals list in `scripts/data/check.mjs`.
 
 ## Adding another state
 

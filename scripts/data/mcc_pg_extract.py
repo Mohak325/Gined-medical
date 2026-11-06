@@ -8,8 +8,16 @@ Reads the single-round layout used by Round 1 and the stray round:
     SNo, Rank, Allotted Quota, Allotted Institute, Course, Allotted Category, Candidate Category[, Remarks]
 
 2026 Round 1 has no Remarks column. Columns are found from the header row on each page,
-so either form works. Rounds 2 and 3 use a wider layout that repeats the earlier round,
-and aren't read yet.
+so either form works.
+
+Rounds 2 and 3 use a wider layout: each row is one rank, then the seat it held in every
+earlier round (4 columns per round), then this round's 7 columns:
+
+    Rank, [earlier rounds...], Allotted Quota, Allotted Institute, Course,
+    Allotted Category, Candidate Category, Option No., Remarks
+
+Only this round's columns are kept. They are read from the right, because the header
+row isn't repeated and its merged cells shift the column count on the first page.
 
 MCC's PG lists hold no names or roll numbers, only ranks. The report records every row
 that could not be read, so nothing is dropped silently.
@@ -56,22 +64,83 @@ def header_columns(cells):
 
 
 def extract_pages(job):
-    path, start, stop = job
+    path, start, stop, wide = job
     doc = fitz.open(path)
     out = []
     for page_index in range(start, stop):
         tables = doc[page_index].find_tables().tables
-        out.append((page_index, [[[clean(c) for c in row] for row in t.extract()] for t in tables]))
+        # Wide layout: a None cell is the empty half of a merged header cell, not a column.
+        out.append((page_index, [
+            [[clean(c) for c in row if not (wide and c is None)] for row in t.extract()] for t in tables
+        ]))
     return out
 
 
-def extract(path, pool):
+LATEST = ["quota", "institute", "course", "allottedCategory", "candidateCategory", "option", "remarks"]
+
+
+def read_wide(page_tables):
+    """Rounds 2 and 3: keep the rank and this round's last 7 columns."""
+    rows, rejects = [], []
+    report = Counter()
+    last_rank, rank_drops = None, []
+    previous = None
+    width = None
+    for page_index, tables in page_tables:
+        if not tables:
+            report["pagesWithoutTable"] += 1
+            continue
+        for table in tables:
+            for cells in table:
+                if not any(cells):
+                    continue
+                if cells[0] == "Rank":
+                    width = len(cells)
+                    continue
+                if width is None or re.search(r"^Round 1$|NEET-PG", cells[0]):
+                    continue
+                if len(cells) != width:
+                    rejects.append({"page": page_index + 1, "cells": cells})
+                    continue
+                latest = dict(zip(LATEST, cells[-7:]))
+                if not cells[0]:
+                    # A row carried on from the bottom of the previous page.
+                    if previous is None:
+                        rejects.append({"page": page_index + 1, "cells": cells})
+                        continue
+                    for key, value in latest.items():
+                        if key != "option" and value and value != "-":
+                            previous[key] = (previous[key] + " " + value).strip()
+                    report["continuationRows"] += 1
+                    continue
+                if not is_number(cells[0]):
+                    rejects.append({"page": page_index + 1, "cells": cells})
+                    continue
+                report["rowsSeen"] += 1
+                rank = int(float(cells[0]))
+                if last_rank is not None and rank < last_rank:
+                    rank_drops.append([last_rank, rank])
+                last_rank = rank
+                previous = {key: latest[key] for key in FIELDS if key in latest}
+                previous.update(rank=rank, page=page_index + 1)
+                rows.append(previous)
+    return rows, rejects, report, last_rank, rank_drops
+
+
+def extract(path, pool, wide):
     doc = fitz.open(path)
     pages = len(doc)
     doc.close()
     step = 60
-    jobs = [(path, s, min(s + step, pages)) for s in range(1, pages, step)]
+    jobs = [(path, s, min(s + step, pages), wide) for s in range(1, pages, step)]
     page_tables = sorted((p for chunk in pool.map(extract_pages, jobs) for p in chunk), key=lambda p: p[0])
+
+    if wide:
+        rows, rejects, report, last_rank, rank_drops = read_wide(page_tables)
+        return rows, rejects, dict(
+            pages=pages, **report, lastRank=last_rank,
+            rankDrops=rank_drops[:20], rankDropCount=len(rank_drops), snoGapCount=0,
+        )
 
     columns = None
     rows, rejects = [], []
@@ -141,9 +210,10 @@ def main():
     with ProcessPoolExecutor(max_workers=max(2, (os.cpu_count() or 4) - 2)) as pool:
         for path in sorted(glob.glob(os.path.join(pdf_dir, "*.pdf"))):
             name = os.path.splitext(os.path.basename(path))[0]
-            if not re.search(r"-(r1|stray)$", name):
+            if not re.search(r"-(r\d|stray)$", name):
                 continue
-            rows, rejects, report = extract(path, pool)
+            wide = bool(re.search(r"-r[2-9]$", name))
+            rows, rejects, report = extract(path, pool, wide)
             written = 0
             remarks = Counter()
             with open(os.path.join(out_dir, name + ".csv"), "w", newline="", encoding="utf-8") as handle:
