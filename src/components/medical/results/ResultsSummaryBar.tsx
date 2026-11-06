@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 
 interface ResultsSummaryBarProps {
   total: number;
+  /** What each result is: a college, or a college and specialty for PG. */
+  unitLabel?: string;
   breakdown: Record<ConfidenceLevel, number>;
   sortBy: string;
   onSortChange: (sort: string) => void;
@@ -16,6 +18,7 @@ interface ResultsSummaryBarProps {
 
 export default function ResultsSummaryBar({
   total,
+  unitLabel = "Colleges Found",
   breakdown,
   sortBy,
   onSortChange,
@@ -42,7 +45,7 @@ export default function ResultsSummaryBar({
               {total}
             </span>
             <span className="text-micro font-semibold uppercase tracking-widest text-text-muted mt-1">
-              Colleges Found
+              {unitLabel}
             </span>
           </div>
           

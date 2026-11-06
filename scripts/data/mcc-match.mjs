@@ -5,12 +5,16 @@
  * "Government Medical College, Shivpuri"), and MCC changes spellings between years, so
  * this is the riskiest step: a wrong match shows a student another college's cutoffs.
  *
- * Usage: node scripts/data/mcc-match.mjs
+ * Usage: node scripts/data/mcc-match.mjs        (UG, MBBS rows)
+ *        node scripts/data/mcc-match.mjs pg     (PG, MD/MS/diploma rows)
  *
- *   Input:  data/extracted/mcc/*.csv
- *           data/curated/mcc-college-overrides.json   decisions made by a person
- *   Output: data/curated/mcc-college-crosswalk.json   every name and its match
- *           data/curated/mcc-matches-to-review.json   names nobody has decided yet
+ *   Input:  data/extracted/mcc/*.csv  or  data/extracted/mcc-pg/*.csv
+ *           data/curated/mcc-college-overrides.json   decisions made by a person, shared by UG and PG
+ *   Output: data/curated/mcc-college-crosswalk.json   every name and its match (PG: mcc-pg-college-crosswalk.json)
+ *           data/curated/mcc-matches-to-review.json   names nobody has decided yet (PG: mcc-pg-matches-to-review.json)
+ *
+ * PG reuses every UG match first, because MCC often spells a college the same way in both.
+ * DNB quota rows are skipped: DNB seats are in hospitals the site doesn't list.
  *
  * An override wins over everything. Its "id" is null when the college isn't on the site.
  * docs/data-guide.md explains how to work through the review list.
@@ -19,16 +23,22 @@ import fs from "node:fs";
 import path from "node:path";
 import { readCsv, squash } from "./mcc-lib.mjs";
 
+const PG = process.argv[2] === "pg";
 const ROOT = path.resolve(import.meta.dirname, "../..");
 const CURATED = path.join(ROOT, "data/curated");
-const dir = path.join(ROOT, "data/extracted/mcc");
+const dir = path.join(ROOT, PG ? "data/extracted/mcc-pg" : "data/extracted/mcc");
+const OUT = PG ? "mcc-pg-" : "mcc-";
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const details = Object.values(readJson(path.join(ROOT, "data/raw/nexdoc/colleges_details.json")));
 const seats = readJson(path.join(ROOT, "src/data/seats.json"));
 const built = new Map(readJson(path.join(ROOT, "src/data/colleges.json")).map((c) => [c.id, c]));
-const mbbsIds = new Set(seats.filter((s) => s.track === "ug" && s.course === "MBBS").map((s) => s.collegeId));
-const overrides = readJson(path.join(CURATED, "mcc-college-overrides.json")).map((rule) => ({
+const mbbsIds = new Set(
+  seats.filter((s) => (PG ? s.track === "pg" : s.track === "ug" && s.course === "MBBS")).map((s) => s.collegeId),
+);
+const ugCrosswalk = PG ? readJson(path.join(CURATED, "mcc-college-crosswalk.json")) : {};
+// A rule marked "track": "pg" was decided for PG names only, so UG ignores it.
+const overrides = readJson(path.join(CURATED, "mcc-college-overrides.json")).filter((rule) => PG || rule.track !== "pg").map((rule) => ({
   ...rule,
   regex: new RegExp(rule.pattern, "i"),
 }));
@@ -77,7 +87,7 @@ function score(text, candidate, pins) {
 const institutes = new Map();
 for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".csv"))) {
   for (const row of readCsv(path.join(dir, file))) {
-    if (row.course !== "MBBS") continue;
+    if (PG ? /DNB/i.test(row.quota) : row.course !== "MBBS") continue;
     const key = squash(row.institute);
     const entry = institutes.get(key) ?? { text: row.institute, students: 0 };
     entry.students++;
@@ -87,7 +97,7 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".csv"))) {
 
 const crosswalk = {};
 const review = [];
-const tally = { override: 0, notOnSite: 0, exact: 0, "pin+name": 0, review: 0 };
+const tally = { override: 0, notOnSite: 0, ug: 0, exact: 0, "pin+name": 0, review: 0 };
 
 for (const [key, entry] of [...institutes].sort((a, b) => a[1].text.localeCompare(b[1].text))) {
   const short = entry.text.slice(0, 110);
@@ -96,6 +106,12 @@ for (const [key, entry] of [...institutes].sort((a, b) => a[1].text.localeCompar
     if (rule.id && !built.has(rule.id)) throw new Error(`Override "${rule.pattern}" names unknown college ${rule.id}`);
     crosswalk[key] = { id: rule.id, how: "override", mcc: short, site: rule.id ? built.get(rule.id).name : null };
     tally[rule.id ? "override" : "notOnSite"]++;
+    continue;
+  }
+  if (key in ugCrosswalk) {
+    const { id } = ugCrosswalk[key];
+    crosswalk[key] = { id, how: "ug", mcc: short, site: id ? built.get(id).name : null };
+    tally[id ? "ug" : "notOnSite"]++;
     continue;
   }
   const pins = entry.text.match(/\b\d{6}\b/g) ?? [];
@@ -130,7 +146,7 @@ for (const [key, entry] of [...institutes].sort((a, b) => a[1].text.localeCompar
   }
 }
 
-fs.writeFileSync(path.join(CURATED, "mcc-college-crosswalk.json"), JSON.stringify(crosswalk, null, 1) + "\n");
-fs.writeFileSync(path.join(CURATED, "mcc-matches-to-review.json"), JSON.stringify(review, null, 1) + "\n");
+fs.writeFileSync(path.join(CURATED, `${OUT}college-crosswalk.json`), JSON.stringify(crosswalk, null, 1) + "\n");
+fs.writeFileSync(path.join(CURATED, `${OUT}matches-to-review.json`), JSON.stringify(review, null, 1) + "\n");
 console.log("Institute names:", institutes.size, tally);
 console.log(`To review: ${review.length}, covering ${review.reduce((sum, r) => sum + r.students, 0)} allotments`);

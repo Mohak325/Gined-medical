@@ -19,6 +19,21 @@ stray and special stray, and 2026 Rounds 1 to 3 and stray. Retrieved 5 November 
 kept in git because they're large: `npm run data:download` fetches them again. The rows
 taken from them are in `data/extracted/mcc/`.
 
+**PG All India cutoffs also come straight from MCC.** The five NEET PG result PDFs are listed in
+`data/raw/mcc-pg/sources.json`: 2025 Rounds 1 to 3 and stray, and 2026 Round 1. Retrieved 6 November 2026 from
+<https://mcc.nic.in/archive-pg/> and <https://mcc.nic.in/current-events-pg/>. They hold ranks only, with no names.
+2025 Round 1 and stray and 2026 Round 1 are read, into `data/extracted/mcc-pg/`. Rounds 2 and 3 use a wider
+layout and aren't read yet. DNB quota rows (18,641) are left out, because DNB seats are in hospitals the site
+doesn't list.
+
+| Check | Result |
+|---|---|
+| Rows read | 2026 Round 1: 28,723, last rank 1,59,922, both matching [hireguideeducation.org](https://hireguideeducation.org/alerts/mcc-neet-pg-2026-round-1-final-result-cutoff-reporting-analysis). 2025 Round 1: 26,889. 2025 stray: 2,798. No serial number skipped and no rank out of order |
+| 2026 Round 1 All India closing rank by category | All five match [Careers360](https://medicine.careers360.com/articles/mcc-neet-pg-counselling-2026-round-1-cutoff-out): General 1,27,533, EWS 1,32,185, OBC 1,49,301, SC 1,59,338, ST 1,59,693 |
+| 2026 Round 1 Open closing rank by branch | MD General Medicine 4,703 and MD Radio Diagnosis 3,058, both matching hireguideeducation.org |
+| College names | 727 names: 24 reuse a UG decision, 530 matched by name or PIN, 170 by `mcc-college-overrides.json`, 134 of them new PG decisions marked `"track": "pg"`, 3 not on the site |
+| Courses | MCC writes one specialty several ways, so `pgSpecialty` in `scripts/data/mcc-lib.mjs` maps each to the name the college lists in its seats. 159 of 22,289 cutoff rows are on a course missing from the college's seat list |
+
 **Karnataka's state-quota cutoffs come straight from KEA.** The eight result PDFs are listed in
 `data/raw/kea/sources.json`: 2025 and 2026, Rounds 1 to 3 and the first stray round. Retrieved 5 November
 2026 from <https://cetonline.karnataka.gov.in/kea/ugneet2026> and the 2025 page beside it. KEA's lists hold
@@ -196,7 +211,7 @@ Fees read by hand from a notice go in `data/curated/fees.json`, with the documen
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. There are no PG cutoffs. Published fees cover Karnataka, Odisha, Puducherry, Uttar Pradesh, Madhya Pradesh and Tamil Nadu so far. Maharashtra's fee authority site couldn't be reached, and deemed universities have no single official fee list.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh, West Bengal, Odisha, Puducherry and Uttarakhand only. PG cutoffs cover MCC's All India rounds only: no state quota, no DNB, and not yet Rounds 2 and 3. Published fees cover Karnataka, Odisha, Puducherry, Uttar Pradesh, Madhya Pradesh and Tamil Nadu so far. Maharashtra's fee authority site couldn't be reached, and deemed universities have no single official fee list.
 - Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
 - 18 MBBS colleges still have no cutoffs: Jharkhand's 3 (separate portal, own merit rank), 6 in Tripura, Jammu and Kashmir, Sikkim, Manipur
   and Meghalaya, the 2 armed forces colleges, and 7 not in any state list found.

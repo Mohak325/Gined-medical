@@ -37,6 +37,9 @@ export default function ResultsClient() {
   const stateCategory = stateHasData ? (query.stateCategory ?? defaultStateCode) : undefined;
   const stateName = query.state ? INDIA_STATES.find((s) => s.code === query.state)?.name : undefined;
   const usesStateRank = isState && !!query.state && query.state in meta.stateRanks;
+  const isPg = query.track === "pg";
+  // PG: one specialty, or every specialty when none is chosen.
+  const specialty = isPg && query.course && query.course !== "all" ? query.course : undefined;
 
   useEffect(() => {
     let mounted = true;
@@ -62,7 +65,7 @@ export default function ResultsClient() {
         track: query.track,
         quota: query.quota,
         ...(isState ? { state: query.state, stateCategory } : { category: query.category }),
-        course: "MBBS",
+        ...(isPg ? (specialty ? { specialty } : {}) : { course: "MBBS" }),
         round: 1, // Only consider round 1 for initial prediction
         year: meta.cutoffYear
       })
@@ -74,20 +77,23 @@ export default function ResultsClient() {
       }
     });
     return () => { mounted = false; };
-  }, [query.rank, query.track, query.state, query.type, query.quota, query.category, isState, stateHasData, stateCategory]);
+  }, [query.rank, query.track, query.state, query.type, query.quota, query.category, isState, stateHasData, stateCategory, isPg, specialty]);
 
   // Compute Results
   const allResults = useMemo(() => {
     if (!query.rank) return [];
 
-    const computed = colleges.map(college => {
-      const cutoff = cutoffs.find(c => c.collegeId === college.id);
-
-      if (!cutoff) return null;
-
-      const confidence = computeConfidence(query.rank!, cutoff.closingRank);
-      return { college, cutoff, confidence };
-    }).filter(Boolean) as { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel }[];
+    // One result per college and course: the first cutoff found for each, as before.
+    const byId = new Map(colleges.map((college) => [college.id, college]));
+    const seen = new Set<string>();
+    const computed: { college: College; cutoff: CutoffEntry; confidence: ConfidenceLevel }[] = [];
+    for (const cutoff of cutoffs) {
+      const college = byId.get(cutoff.collegeId);
+      const key = `${cutoff.collegeId}|${cutoff.course}`;
+      if (!college || seen.has(key)) continue;
+      seen.add(key);
+      computed.push({ college, cutoff, confidence: computeConfidence(query.rank!, cutoff.closingRank) });
+    }
 
     // Sort
     computed.sort((a, b) => {
@@ -123,12 +129,14 @@ export default function ResultsClient() {
     return counts;
   }, [allResults]);
 
-  if (query.track === "pg" && !PG_ENABLED) {
+  if (isPg && (!PG_ENABLED || isState)) {
     return (
       <EmptyState
         icon={<SearchX className="w-12 h-12" />}
-        title="PG predictions are coming soon"
-        description="We don't have PG cutoff data yet. You can still browse the PG courses each college offers in the directory."
+        title={PG_ENABLED ? "PG state quota isn't covered yet" : "PG predictions are coming soon"}
+        description={PG_ENABLED
+          ? "Our PG closing ranks come from MCC's All India counselling. Try the All India, deemed or central university quota, or check your state counselling portal."
+          : "We don't have PG cutoff data yet. You can still browse the PG courses each college offers in the directory."}
         actions={[{ label: "Browse All Colleges", href: "/medical/colleges" }]}
       />
     );
@@ -172,6 +180,7 @@ export default function ResultsClient() {
     <div>
       <ResultsSummaryBar 
         total={results.length}
+        unitLabel={isPg && !specialty ? "Options Found" : "Colleges Found"}
         breakdown={breakdown}
         sortBy={sortBy}
         onSortChange={setSortBy}
@@ -185,11 +194,12 @@ export default function ResultsClient() {
           <div>
             <h3 className="text-body font-bold text-text-main mb-1">Your Summary</h3>
             <p className="text-small text-text-muted leading-relaxed">
-              Based on {meta.cutoffYear} Round 1 closing ranks, your {usesStateRank ? `${stateName} state rank` : "rank"} of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> colleges. These labels are indicative, not guarantees.
+              Based on {meta.cutoffYear} Round 1 closing ranks, your {usesStateRank ? `${stateName} state rank` : "rank"} of <strong className="text-text-main">{query.rank.toLocaleString("en-IN")}</strong> is labelled Safe for <strong>{breakdown.safe}</strong> {isPg ? "college and specialty options" : "colleges"}. These labels are indicative, not guarantees.
               {breakdown.moderate > 0 && ` Another ${breakdown.moderate} are Moderate.`}
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
               {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
               {usesStateRank && ` These closing ranks are ${stateName}'s own, so compare them with your state rank and not your All India rank.`}
+              {isPg && ` These are MCC's All India NEET PG results${specialty ? ` for ${specialty}` : ", across every specialty"}. DNB seats in hospitals aren't included.`}
               {query.state === "UP" && ` Uttar Pradesh only publishes who holds each seat now, so a student who got a seat and later moved on isn't counted. Its closing ranks can be slightly lower than the ones announced.`}
               {query.state === "TN" && ` Tamil Nadu's lists show each student's community and not the seat they took, so each figure is the last-ranked student of that community who got a seat.`}
             </p>

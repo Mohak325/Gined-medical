@@ -22,7 +22,7 @@ export default function ResultsList({ results, userRank }: ResultsListProps) {
       <AnimatePresence mode="popLayout">
         {results.map((item, i) => (
           <CollegeResultCard
-            key={item.college.id}
+            key={`${item.college.id}|${item.cutoff.course}`}
             college={item.college}
             cutoff={item.cutoff}
             confidence={item.confidence}

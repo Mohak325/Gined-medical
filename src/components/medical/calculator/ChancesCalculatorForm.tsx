@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTrack } from "@/lib/medical/TrackProvider";
 import { parseIndianNumber, formatIndian } from "@/lib/medical/format";
@@ -16,7 +16,13 @@ interface ChancesCalculatorFormProps {
 export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { track } = useTrack();
+  const { track, setTrack } = useTrack();
+
+  // On the results page the address decides UG or PG, so a shared PG link opens as PG.
+  const urlTrack = searchParams.get("track");
+  useEffect(() => {
+    if (mode === "results" && (urlTrack === "ug" || urlTrack === "pg")) setTrack(urlTrack);
+  }, [mode, urlTrack, setTrack]);
 
   // Initialize state from URL if in results mode, otherwise defaults
   const initRank = searchParams.get("rank") || "";
@@ -72,7 +78,9 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
     params.set("quota", quota);
     params.set("category", category);
     
-    if (quota === "state" && domicileState) {
+    // PG has no state quota data, so a state quota choice left over from UG becomes All India.
+    if (track === "pg" && quota === "state") params.set("quota", "aiq");
+    if (track === "ug" && quota === "state" && domicileState) {
       params.set("state", domicileState);
     }
     if (usesKarnataka) {
@@ -80,7 +88,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
     } else if (chosenStateCode) {
       params.set("stateCategory", chosenStateCode);
     }
-    if (course !== "all") {
+    if (track === "pg" && course !== "all") {
       params.set("course", course);
     }
 
@@ -136,8 +144,9 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
             onChange={(e) => setQuota(e.target.value)}
             className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
           >
-            <option value="aiq">All India Quota (15%)</option>
-            <option value="state">State Quota (85%)</option>
+            <option value="aiq">{track === "pg" ? "All India Quota (50%)" : "All India Quota (15%)"}</option>
+            {/* PG state quota results aren't collected yet. */}
+            {track === "ug" && <option value="state">State Quota (85%)</option>}
             <option value="deemed">Deemed Universities</option>
             <option value="central">Central Universities</option>
           </select>
@@ -263,9 +272,9 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
               className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
             >
               <option value="all">All Specialties</option>
-              <option value="MD General Medicine">MD General Medicine</option>
-              <option value="MS General Surgery">MS General Surgery</option>
-              {/* Add more in real app */}
+              {meta.pgCourses.map((name) => (
+                <option key={name} value={name}>{name}</option>
+              ))}
             </select>
           </div>
         )}

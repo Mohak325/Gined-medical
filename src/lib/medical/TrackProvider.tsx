@@ -4,8 +4,8 @@ import { createContext, useContext, useState, useEffect, useCallback } from "rea
 
 type Track = "ug" | "pg";
 
-/** PG stays off until PG cutoff data exists; every PG search would return nothing. */
-export const PG_ENABLED = false;
+/** PG uses MCC's All India NEET PG results. Turn it off again if that data is ever removed. */
+export const PG_ENABLED = true;
 
 interface TrackContextValue {
   track: Track;

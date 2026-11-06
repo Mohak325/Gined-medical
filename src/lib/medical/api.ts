@@ -133,6 +133,9 @@ export async function getCutoffs(params: Record<string, any>): Promise<CutoffEnt
   if (params.course) {
     results = results.filter(c => c.course === params.course);
   }
+  if (params.specialty) {
+    results = results.filter(c => c.specialty === params.specialty);
+  }
   if (params.round) {
     results = results.filter(c => c.round === params.round);
   }

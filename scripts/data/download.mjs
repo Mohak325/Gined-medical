@@ -14,7 +14,7 @@ import path from "node:path";
 const ROOT = path.resolve(import.meta.dirname, "../..");
 let failed = 0;
 
-for (const publisher of ["mcc", "kea"]) {
+for (const publisher of ["mcc", "mcc-pg", "kea"]) {
 const RAW = path.join(ROOT, "data/raw", publisher);
 const PDFS = path.join(RAW, "pdfs");
 const sources = JSON.parse(fs.readFileSync(path.join(RAW, "sources.json"), "utf8"));

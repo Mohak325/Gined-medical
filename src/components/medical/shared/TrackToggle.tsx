@@ -31,7 +31,7 @@ export default function TrackToggle() {
             : "bg-transparent text-text-muted enabled:hover:text-text-main disabled:cursor-not-allowed"
         }`}
       >
-        {PG_ENABLED ? "PG (MD / MS / DNB)" : "PG: Coming Soon"}
+        {PG_ENABLED ? "PG (MD / MS)" : "PG: Coming Soon"}
       </button>
     </div>
   );
