@@ -300,6 +300,166 @@
     "state": "AP"
   },
   {
+    "collegeId": "ug_br001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1540000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 121667,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1600000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1105000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1280000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1400000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1600000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br007p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1163000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br008p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1225000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br009p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1425000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1275000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1600000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_br012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1550000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
+    "collegeId": "ug_cg001g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 745187,
+    "year": 2026,
+    "source": "Chhattisgarh Medical Education Department, interim MBBS fee revision of 23.09.2025",
+    "sourceUrl": "https://drive.google.com/file/d/1eqQmwyVY4k58PkMsfGiJNnnJm2pxza8K/view",
+    "state": "CG"
+  },
+  {
+    "collegeId": "ug_cg002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 802700,
+    "year": 2026,
+    "source": "Chhattisgarh Medical Education Department, interim MBBS fee revision of 23.09.2025",
+    "sourceUrl": "https://drive.google.com/file/d/1eqQmwyVY4k58PkMsfGiJNnnJm2pxza8K/view",
+    "state": "CG"
+  },
+  {
+    "collegeId": "ug_cg003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 745187,
+    "year": 2026,
+    "source": "Chhattisgarh Medical Education Department, interim MBBS fee revision of 23.09.2025",
+    "sourceUrl": "https://drive.google.com/file/d/1eqQmwyVY4k58PkMsfGiJNnnJm2pxza8K/view",
+    "state": "CG"
+  },
+  {
     "collegeId": "ug_gj001p3",
     "course": "MBBS",
     "seatType": "government",
@@ -578,6 +738,246 @@
     "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
     "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
     "state": "GJ"
+  },
+  {
+    "collegeId": "ug_hp001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 847000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1597200,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hp006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+    "sourceUrl": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+    "state": "HP"
+  },
+  {
+    "collegeId": "ug_hr001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 600000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 818750,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1125000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr006p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 180000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 900000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 80000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr009p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 600000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr010p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 950000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr011p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 600000,
+    "year": 2026,
+    "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+    "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
   },
   {
     "collegeId": "ug_in003p3",
@@ -1195,6 +1595,16 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in044g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 202000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
     "collegeId": "ug_in044p3",
     "course": "MBBS",
     "seatType": "government",
@@ -1475,6 +1885,16 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in058p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1269000,
+    "year": 2026,
+    "source": "JCECEB, fee structure of Manipal Tata Medical College for 2026-27",
+    "sourceUrl": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2120.png",
+    "state": "JH"
+  },
+  {
     "collegeId": "ug_in059g1",
     "course": "MBBS",
     "seatType": "government",
@@ -1563,6 +1983,16 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_in064p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1525000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
   },
   {
     "collegeId": "ug_in066p3",
@@ -2059,6 +2489,36 @@
     "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
     "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
     "state": "GJ"
+  },
+  {
+    "collegeId": "ug_jh001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1325000,
+    "year": 2026,
+    "source": "JCECEB, fee structure of Laxmi Chandravansi Medical College for 2026-27",
+    "sourceUrl": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2111.pdf",
+    "state": "JH"
+  },
+  {
+    "collegeId": "ug_jh003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "JCECEB, proposed fee structure of Sido Kanhu Medical College for 2026-27",
+    "sourceUrl": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2112.pdf",
+    "state": "JH"
+  },
+  {
+    "collegeId": "ug_jk004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 145000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+    "sourceUrl": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+    "state": "UK"
   },
   {
     "collegeId": "ug_ka001g1",
@@ -3483,6 +3943,16 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_ka038p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1650000,
+    "year": 2026,
+    "source": "BCECEB, Fee Structure of UGMAC-2026",
+    "sourceUrl": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+    "state": "BR"
+  },
+  {
     "collegeId": "ug_ka039p3",
     "course": "MBBS",
     "seatType": "government",
@@ -4634,6 +5104,146 @@
     "source": "OJEE's Round 3 admission notice, 2026",
     "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
     "state": "OR"
+  },
+  {
+    "collegeId": "ug_pb001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 202000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 469000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb001p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 202000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 469000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 202000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb004p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 469000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb004p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 469000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb006p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 469000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
+  },
+  {
+    "collegeId": "ug_pb007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1206000,
+    "year": 2026,
+    "source": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+    "sourceUrl": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+    "state": "PB"
   },
   {
     "collegeId": "ug_py003p3",
@@ -5994,6 +6604,76 @@
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
     "state": "TN"
+  },
+  {
+    "collegeId": "ug_uk001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 145000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+    "sourceUrl": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1575000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, private college fee notices",
+    "sourceUrl": "https://meta-secure.com/HNBUMU_NEETUG",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 145000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+    "sourceUrl": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 145000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+    "sourceUrl": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1800000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, private college fee notices",
+    "sourceUrl": "https://meta-secure.com/HNBUMU_NEETUG",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 145000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+    "sourceUrl": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+    "state": "UK"
+  },
+  {
+    "collegeId": "ug_uk004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1800000,
+    "year": 2026,
+    "source": "HNBUMU NEET UG 2026 counselling, private college fee notices",
+    "sourceUrl": "https://meta-secure.com/HNBUMU_NEETUG",
+    "state": "UK"
   },
   {
     "collegeId": "ug_up001g1",

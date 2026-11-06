@@ -102,6 +102,66 @@
       "title": "Commissioner for Entrance Examinations, Kerala, KEAM 2026 notification including Palakkad Institute of Medical Sciences (PIMS) in the MBBS allotment, with its provisional annual fee",
       "url": "https://cee.kerala.gov.in/keam2026/noti_view/216/Upload1",
       "note": "Annual fee (provisional): Rs. 8,98,800 for a general seat and Rs. 21,65,720 for an NRI seat."
+    },
+    "BR-2026": {
+      "label": "BCECEB, Fee Structure of UGMAC-2026",
+      "title": "Bihar Combined Entrance Competitive Examination Board, Fee Structure of UGMAC-2026: each college's letter to the Board giving its MBBS fee for 2026-27",
+      "url": "https://bceceboard.bihar.gov.in/pdf_Web/TEMP_UGMAC26_FSTR.pdf",
+      "note": "Yearly tuition for a general (state counselling) seat, listed as a government quota seat; most colleges say it was fixed by Bihar's Educational Fee Fixation Committee (Shikshan Shulk Nirdharan Samiti) order of 10.09.2026 or 12.08.2026. Shrinivas's figure is marked as proposed, pending that committee. Katihar adds a Rs. 1,50,000 development fee, left out. Hostel, admission and deposit are extra. NRI fees are in US dollars, so they aren't listed. IGIMS's figure is its whole yearly fee. The document is scanned and was read by eye. Government colleges aren't in it."
+    },
+    "CG-2026": {
+      "label": "Chhattisgarh Medical Education Department, interim MBBS fee revision of 23.09.2025",
+      "title": "Government of Chhattisgarh, Medical Education Department, order No. STU-4702/10/2025-MED dated 23.09.2025: interim revision of MBBS fees for 2024-25, 2025-26 and 2026-27 under the Admission and Fee Regulatory Committee's resolution of 22.08.2024",
+      "url": "https://drive.google.com/file/d/1eqQmwyVY4k58PkMsfGiJNnnJm2pxza8K/view",
+      "note": "Published on cgdme.in. One fee per student per year, inclusive of growth, development and other charges, for four years, with half for the last half year. It doesn't vary by seat type, so it's listed as a private seat. Interim. Shri Shankaracharya, RIMS and Maa Padmavati aren't covered."
+    },
+    "HR-2026": {
+      "label": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
+      "title": "Pt. B.D. Sharma University of Health Sciences, Rohtak, Public Notice dated 02.09.2026: Provisional Tuition Fee for Admission to MBBS/BDS Courses for the Academic Session 2026-27",
+      "url": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+      "note": "Provisional yearly tuition paid through the admission portal, one fee per college for every state counselling seat. NRI fees are fixed in US dollars, so they aren't listed. Maharishi Markandeshwar Mullana and Amrita Faridabad aren't in the notice."
+    },
+    "PB-2026": {
+      "label": "BFUHS prospectus for MBBS/BDS 2026, state notification section 14 (Fee)",
+      "title": "Baba Farid University of Health Sciences, Faridkot, Prospectus for admission to MBBS/BDS courses, Session 2026, Part B: Government of Punjab admission notification, clause 14, Fee",
+      "url": "https://admission.bfuhsonline.ac.in/MBBS2026/Prospectus.pdf",
+      "note": "The fee rises every year; the first-year fee is listed. Government colleges and government societies: Rs. 2,02,000 in the first year (Rs. 2,22,000, 2,44,000, 2,68,000 and 1,47,000 after). Private colleges: government quota (50%) Rs. 4,69,000 and management quota (35%) Rs. 12,06,000 in the first year. SGRD Amritsar charges Rs. 12,06,000 to all its students. NRI seats are US$1,10,000 for the whole course, so they aren't listed. CMC Ludhiana sets its own fee (Rs. 6.60 lakh a year with 10% yearly increases from an unstated base year), so it isn't listed. ESIC Ludhiana isn't covered. Subject to change by government notification."
+    },
+    "UK-GOVT-2026": {
+      "label": "HNBUMU NEET UG 2026 counselling, government college fees and GO",
+      "title": "Hemwati Nandan Bahuguna Uttarakhand Medical Education University, NEET UG 2026 State Counselling: Govt college Fee and GO (Government of Uttarakhand order No. 1076/XXVIII(5)/2021-77/2013 of December 2021, with each college's 2026-27 fee notice)",
+      "url": "https://meta-secure.com/HNBUMUCollegLogin/UploadDocs/GovtcollegeFeeGoandCollegewisedetails.pdf",
+      "note": "Tuition Rs. 1,45,000 a year for a student who doesn't sign the compulsory state service bond; Rs. 50,000 for one who does. The bond-free fee is listed. Scanned, read by eye."
+    },
+    "UK-PVT-2026": {
+      "label": "HNBUMU NEET UG 2026 counselling, private college fee notices",
+      "title": "Hemwati Nandan Bahuguna Uttarakhand Medical Education University, NEET UG 2026 State Counselling: college-wise fee details for HIMS (Swami Rama Himalayan University), SGRR and Gautam Buddha Chikitsa Mahavidyalaya, 2026-27",
+      "url": "https://meta-secure.com/HNBUMU_NEETUG",
+      "note": "Tuition on an Uttarakhand quota seat (25-30% of seats, for permanent residents, after a 25% rebate), listed as a private seat, matching the counselling lists. All India open quota seats cost more: Rs. 24,00,000 at HIMS and SGRR and Rs. 21,00,000 at Gautam Buddha. NRI fees are in US dollars. Graphic Era's fee isn't on the portal. Scanned, read by eye."
+    },
+    "HP-2026": {
+      "label": "AMRU Himachal Pradesh, prospectus for MBBS/BDS counselling 2026, Section X",
+      "title": "Atal Medical and Research University, Himachal Pradesh, Prospectus for MBBS/BDS Counselling 2026, Section X: Fee Structure and Other Conditions",
+      "url": "https://amruhp.ac.in/wp-content/uploads/2026/08/Final-Prospectus-for-MBBS-BDS-counselling-2026-final.pdf",
+      "note": "Government colleges: tuition Rs. 40,000 a year (Rs. 60,000 in the first year with other funds and deposit); no tuition for BPL students. MM Kumarhatti (Solan), first year: Rs. 8,47,000 on a state quota seat and Rs. 15,97,200 on a management seat, rising each year, set by the state in June 2023 and open to review. NRI fees are in US dollars. Tuition is charged for 4.5 years."
+    },
+    "JH-LCMCH-2026": {
+      "label": "JCECEB, fee structure of Laxmi Chandravansi Medical College for 2026-27",
+      "title": "Laxmi Chandravansi Medical College & Hospital, Bishrampur, Palamu, letter to the Government of Jharkhand dated 06.08.2026 on seats and fees for MBBS 2026-27, published by JCECEB",
+      "url": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2111.pdf",
+      "note": "Tuition Rs. 13,25,000 a year for 4.5 years on Jharkhand-domicile and all-India seats. A development fee of Rs. 1,00,000 a year is extra. NRI seats are separate. Scanned, read by eye."
+    },
+    "JH-SKMCH-2026": {
+      "label": "JCECEB, proposed fee structure of Sido Kanhu Medical College for 2026-27",
+      "title": "Sido Kanhu Medical College & Hospital, Dumka, Proposed Fees Structure for MBBS Programme 2026-27 (17.07.2026), published by JCECEB",
+      "url": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2112.pdf",
+      "note": "Proposed by the college: tuition Rs. 15,00,000 a year for 4.5 years on a management quota seat. NRI tuition is in US dollars."
+    },
+    "JH-MTMC-2026": {
+      "label": "JCECEB, fee structure of Manipal Tata Medical College for 2026-27",
+      "title": "Manipal TATA Medical College, Jamshedpur, MBBS Admissions 2026-27: fee structure for the 25 seats filled through Jharkhand state counselling, published by JCECEB",
+      "url": "https://blobstorage2.blob.core.windows.net/jceceb/notifications/2120.png",
+      "note": "Rs. 12,69,000 per instalment for unreserved candidates and Rs. 8,46,000 for SC, ST, BC and EWS candidates, after the college's scholarship; four instalments for the course (Rs. 50,86,000 in all). The unreserved instalment is listed."
     }
   },
   "fees": [
@@ -560,6 +620,74 @@
     { "state": "KL", "source": "KL-2026", "year": 2026, "collegeId": "ug_kl010p3", "seatType": "private", "annualFee": 810175 },
     { "state": "KL", "source": "KL-2026", "year": 2026, "collegeId": "ug_kl010p3", "seatType": "nri", "annualFee": 2274006 },
     { "state": "KL", "source": "KL-PIMS-2026", "year": 2026, "collegeId": "ug_kl016p3", "seatType": "private", "annualFee": 898800 },
-    { "state": "KL", "source": "KL-PIMS-2026", "year": 2026, "collegeId": "ug_kl016p3", "seatType": "nri", "annualFee": 2165720 }
+    { "state": "KL", "source": "KL-PIMS-2026", "year": 2026, "collegeId": "ug_kl016p3", "seatType": "nri", "annualFee": 2165720 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br011p3", "seatType": "government", "annualFee": 1600000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br006p3", "seatType": "government", "annualFee": 1600000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br003g1", "seatType": "government", "annualFee": 1600000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br004p3", "seatType": "government", "annualFee": 1280000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br005p3", "seatType": "government", "annualFee": 1400000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br010p3", "seatType": "government", "annualFee": 1275000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_ka038p3", "seatType": "government", "annualFee": 1650000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_in064p3", "seatType": "government", "annualFee": 1525000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br012g1", "seatType": "government", "annualFee": 1550000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br009p3", "seatType": "government", "annualFee": 1425000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br001p3", "seatType": "government", "annualFee": 1540000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br003p3", "seatType": "government", "annualFee": 1105000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br007p3", "seatType": "government", "annualFee": 1163000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br008p3", "seatType": "government", "annualFee": 1225000 },
+    { "state": "BR", "source": "BR-2026", "year": 2026, "collegeId": "ug_br002p3", "seatType": "government", "annualFee": 121667 },
+    { "state": "CG", "source": "CG-2026", "year": 2026, "collegeId": "ug_cg002p3", "seatType": "private", "annualFee": 802700 },
+    { "state": "CG", "source": "CG-2026", "year": 2026, "collegeId": "ug_cg003p3", "seatType": "private", "annualFee": 745187 },
+    { "state": "CG", "source": "CG-2026", "year": 2026, "collegeId": "ug_cg001g1", "seatType": "private", "annualFee": 745187 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr007g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr001g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr008g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr004g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr009g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr005g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr006g1", "seatType": "government", "annualFee": 80000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr003g1", "seatType": "government", "annualFee": 100000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr006p3", "seatType": "private", "annualFee": 180000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr001p3", "seatType": "private", "annualFee": 600000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr009p3", "seatType": "private", "annualFee": 600000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr011p3", "seatType": "private", "annualFee": 600000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr005p3", "seatType": "private", "annualFee": 1125000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr002p3", "seatType": "private", "annualFee": 818750 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr007p3", "seatType": "private", "annualFee": 900000 },
+    { "state": "HR", "source": "HR-2026", "year": 2026, "collegeId": "ug_hr010p3", "seatType": "private", "annualFee": 950000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb003g1", "seatType": "government", "annualFee": 202000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_in044g1", "seatType": "government", "annualFee": 202000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb004g1", "seatType": "government", "annualFee": 202000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb001g1", "seatType": "government", "annualFee": 202000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb001p3", "seatType": "government", "annualFee": 469000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb001p3", "seatType": "management", "annualFee": 1206000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb003p3", "seatType": "government", "annualFee": 469000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb003p3", "seatType": "management", "annualFee": 1206000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb004p3", "seatType": "government", "annualFee": 469000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb004p3", "seatType": "management", "annualFee": 1206000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb005p3", "seatType": "government", "annualFee": 469000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb005p3", "seatType": "management", "annualFee": 1206000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb006p3", "seatType": "government", "annualFee": 469000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb006p3", "seatType": "management", "annualFee": 1206000 },
+    { "state": "PB", "source": "PB-2026", "year": 2026, "collegeId": "ug_pb007p3", "seatType": "private", "annualFee": 1206000 },
+    { "state": "UK", "source": "UK-GOVT-2026", "year": 2026, "collegeId": "ug_uk001g1", "seatType": "government", "annualFee": 145000 },
+    { "state": "UK", "source": "UK-GOVT-2026", "year": 2026, "collegeId": "ug_uk002g1", "seatType": "government", "annualFee": 145000 },
+    { "state": "UK", "source": "UK-GOVT-2026", "year": 2026, "collegeId": "ug_uk003g1", "seatType": "government", "annualFee": 145000 },
+    { "state": "UK", "source": "UK-GOVT-2026", "year": 2026, "collegeId": "ug_uk004g1", "seatType": "government", "annualFee": 145000 },
+    { "state": "UK", "source": "UK-GOVT-2026", "year": 2026, "collegeId": "ug_jk004g1", "seatType": "government", "annualFee": 145000 },
+    { "state": "UK", "source": "UK-PVT-2026", "year": 2026, "collegeId": "ug_uk003p3", "seatType": "private", "annualFee": 1800000 },
+    { "state": "UK", "source": "UK-PVT-2026", "year": 2026, "collegeId": "ug_uk004p3", "seatType": "private", "annualFee": 1800000 },
+    { "state": "UK", "source": "UK-PVT-2026", "year": 2026, "collegeId": "ug_uk001p3", "seatType": "private", "annualFee": 1575000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp001g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp002g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp003g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp004g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp005g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp006g1", "seatType": "government", "annualFee": 40000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp002p3", "seatType": "government", "annualFee": 847000 },
+    { "state": "HP", "source": "HP-2026", "year": 2026, "collegeId": "ug_hp002p3", "seatType": "management", "annualFee": 1597200 },
+    { "state": "JH", "source": "JH-LCMCH-2026", "year": 2026, "collegeId": "ug_jh001p3", "seatType": "government", "annualFee": 1325000 },
+    { "state": "JH", "source": "JH-SKMCH-2026", "year": 2026, "collegeId": "ug_jh003p3", "seatType": "management", "annualFee": 1500000 },
+    { "state": "JH", "source": "JH-MTMC-2026", "year": 2026, "collegeId": "ug_in058p3", "seatType": "government", "annualFee": 1269000 }
   ]
 }
