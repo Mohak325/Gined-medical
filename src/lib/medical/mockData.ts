@@ -33,6 +33,7 @@ export interface OfficialFee {
   annualFee: number;      // Rupees per year, as published
   year: number;
   source: string;
+  sourceUrl?: string;     // The document, where it has a stable address
   state: string;
 }
 

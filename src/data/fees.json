@@ -9,6 +9,46 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_in019p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3632000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_in019p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 908000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_in030p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3416000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_in030p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 854000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
     "collegeId": "ug_in038p3",
     "course": "MBBS",
     "seatType": "government",
@@ -1744,5 +1784,225 @@
     "year": 2026,
     "source": "KEA allotment lists",
     "state": "KA"
+  },
+  {
+    "collegeId": "ug_or002g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or002p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 4624000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1156000,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or007g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_or016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 37950,
+    "year": 2026,
+    "source": "OJEE's Round 3 admission notice, 2026",
+    "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
+    "state": "OR"
+  },
+  {
+    "collegeId": "ug_py003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1700000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py003p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py005p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 450000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1700000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py005p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "Puducherry's fee order of 28 August 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
   }
 ]

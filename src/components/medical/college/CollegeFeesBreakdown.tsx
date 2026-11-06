@@ -18,7 +18,7 @@ export default function CollegeFeesBreakdown({ courses }: { courses: CollegeCour
   const official = courses
     .flatMap((c) => c.officialFees ?? [])
     .sort((a, b) => a.course.localeCompare(b.course) || SEAT_ORDER.indexOf(a.seatType) - SEAT_ORDER.indexOf(b.seatType));
-  const sources = [...new Set(official.map((fee) => `${fee.source}, ${fee.year}`))];
+  const sources = [...new Map(official.map((fee) => [fee.source, fee])).values()];
 
   return (
     <div className="space-y-6">
@@ -28,7 +28,18 @@ export default function CollegeFeesBreakdown({ courses }: { courses: CollegeCour
             <FileCheck2 className="w-5 h-5 text-safe" /> Published Annual Fees
           </h3>
           <p className="text-small text-text-muted mb-4">
-            Tuition per year as printed in {sources.join("; ")}. The fee depends on the seat you get. Hostel, exam and other charges may be extra.
+            Per year, as published in{" "}
+            {sources.map((fee, index) => (
+              <span key={fee.source}>
+                {index > 0 && "; "}
+                {fee.sourceUrl ? (
+                  <a href={fee.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold-deep">{fee.source}</a>
+                ) : (
+                  `${fee.source}, ${fee.year}`
+                )}
+              </span>
+            ))}
+            . The fee depends on the seat you get. Hostel, exam and other charges may be extra.
           </p>
           <div className="divide-y divide-hairline">
             {official.map((fee) => (
