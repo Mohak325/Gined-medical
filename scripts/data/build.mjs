@@ -296,6 +296,31 @@ for (const { file, year, round } of KEA_ROUNDS) {
   }
 }
 
+/* ── Fees ─────────────────────────────────────────────────────────────── */
+
+// Official annual fees, one row per college, course and seat type. Colleges with none show an estimate.
+const fees = new Map();
+function addFee(fee) {
+  const key = [fee.collegeId, fee.course, fee.seatType].join("|");
+  const existing = fees.get(key);
+  if (existing && existing.year === fee.year && existing.annualFee !== fee.annualFee) {
+    throw new Error(`Two fees for ${key} in ${fee.year}: ${existing.annualFee} and ${fee.annualFee}.`);
+  }
+  if (!existing || existing.year < fee.year) fees.set(key, fee);
+}
+
+// Karnataka's allotment lists print the fee of every seat. The latest year wins.
+for (const { file, year } of KEA_ROUNDS) {
+  for (const row of readCsv(path.join(KEA, `${file}.csv`))) {
+    const { college, seatType } = kea.parseCourseCode(row.code);
+    const collegeId = keaCodes[college];
+    // A fee of 0 means none was printed for that seat.
+    if (!collegeId || !(Number(row.fee) > 0)) continue;
+    // KEA's management quota seats are "others" in kea-lib.
+    addFee({ collegeId, course: "MBBS", seatType: seatType === "others" ? "management" : seatType, annualFee: Number(row.fee), year, source: "KEA allotment lists", state: "KA" });
+  }
+}
+
 // Other states. Names vary between files, so a listed name only has to start the college's name.
 function matchStateCollege(state, name) {
   const squashed = squash(name);
@@ -354,6 +379,7 @@ const meta = {
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
   ugSeats,
   collegesWithCutoffs: new Set(cutoffs.map((cutoff) => cutoff.collegeId)).size,
+  collegesWithFees: new Set([...fees.values()].map((fee) => fee.collegeId)).size,
 };
 
 /* ── Write everything ─────────────────────────────────────────────────── */
@@ -365,6 +391,7 @@ writeJson("seats.json", seats);
 fs.writeFileSync(path.join(OUT, "cutoffs.json"), `[\n${cutoffs.map((c) => JSON.stringify(c)).join(",\n")}\n]\n`);
 writeJson("states.json", states);
 writeJson("meta.json", meta);
+writeJson("fees.json", [...fees.values()].sort((a, b) => a.collegeId.localeCompare(b.collegeId) || a.seatType.localeCompare(b.seatType)));
 
 console.log("Built src/data");
 console.log(`  Colleges: ${colleges.length} (${meta.ugCollegeCount} with UG seats)`);
