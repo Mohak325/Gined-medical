@@ -18,10 +18,13 @@
     "KL",
     "MH",
     "MP",
+    "OR",
     "PB",
+    "PY",
     "RJ",
     "TG",
     "TN",
+    "UK",
     "UP",
     "WB"
   ],
@@ -838,6 +841,108 @@
         "label": "Private management quota"
       }
     ],
+    "OR": [
+      {
+        "code": "OPEN",
+        "label": "Open"
+      },
+      {
+        "code": "SEBC",
+        "label": "SEBC"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      }
+    ],
+    "PY": [
+      {
+        "code": "UGE",
+        "label": "U.T. general (UGE), government quota"
+      },
+      {
+        "code": "UOB",
+        "label": "U.T. OBC (UOB), government quota"
+      },
+      {
+        "code": "UMB",
+        "label": "U.T. MBC (UMB), government quota"
+      },
+      {
+        "code": "UEB",
+        "label": "U.T. EBC (UEB), government quota"
+      },
+      {
+        "code": "UBM",
+        "label": "U.T. BCM (UBM), government quota"
+      },
+      {
+        "code": "USC",
+        "label": "U.T. SC (USC), government quota"
+      },
+      {
+        "code": "UEW",
+        "label": "U.T. EWS (UEW), government quota"
+      },
+      {
+        "code": "MGMT",
+        "label": "Management quota"
+      }
+    ],
+    "UK": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "UR-F",
+        "label": "Unreserved, women's seat"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC (NCL)"
+      },
+      {
+        "code": "OBC-F",
+        "label": "OBC (NCL), women's seat"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "SC-F",
+        "label": "SC, women's seat"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "ST-F",
+        "label": "ST, women's seat"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "EWS-F",
+        "label": "EWS, women's seat"
+      },
+      {
+        "code": "OPEN-AI",
+        "label": "All India open seats in private colleges"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -983,5 +1088,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 819
+  "collegesWithCutoffs": 828
 }

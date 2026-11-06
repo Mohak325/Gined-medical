@@ -1,0 +1,202 @@
+{
+  "PY-2026-r1": {
+    "pages": 23,
+    "rows": 451,
+    "unplaced": 0,
+    "mbbs": 320,
+    "badRank": 0,
+    "quotas": {
+      "GOVERNMENT QUOTA": 161,
+      "NRI / NRI SPONSORED / OCI / PIO / FN": 49,
+      "MANAGEMENT QUOTA": 110
+    },
+    "categories": {
+      "AGE": 159,
+      "UGE": 64,
+      "USC": 20,
+      "UMB": 19,
+      "UOB": 12,
+      "UEB": 6,
+      "KMB": 4,
+      "KGE": 3,
+      "UMB/GSS": 3,
+      "UOB/GSS": 3,
+      "USC/GSS": 3,
+      "UOB/FF": 3,
+      "YGE": 2,
+      "UGE/ESM": 2,
+      "KSC": 2,
+      "UEW": 2,
+      "UGE/GSS": 2,
+      "UBM": 2,
+      "KEB": 1,
+      "YSC": 1,
+      "MGE/GSS": 1,
+      "UGE/MSP": 1,
+      "KOB/GSS": 1,
+      "UGE/FF": 1,
+      "UMB/FF": 1,
+      "UBM/GSS": 1,
+      "UMB/MSP": 1
+    },
+    "statuses": {
+      "FRESH": 320
+    },
+    "colleges": {
+      "U.T. - Indira Gandhi Medical College and Research Institute, Puducherry": 63,
+      "Indira Gandhi Medical College and Research Institute, Puducherry": 11,
+      "U.T. - Pondicherry Institute of Medical Sciences, Puducherry": 52,
+      "Pondicherry Institute of Medical Sciences, Puducherry": 71,
+      "U.T. - Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 46,
+      "Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 77
+    }
+  },
+  "PY-2026-r2": {
+    "pages": 27,
+    "rows": 477,
+    "unplaced": 0,
+    "mbbs": 343,
+    "badRank": 0,
+    "quotas": {
+      "GOVERNMENT QUOTA": 207,
+      "NRI / NRI SPONSORED / OCI / PIO / FN": 24,
+      "MANAGEMENT QUOTA": 112
+    },
+    "categories": {
+      "AGE": 134,
+      "UGE": 88,
+      "USC": 29,
+      "UMB": 25,
+      "UOB": 15,
+      "KGE": 7,
+      "UBM": 5,
+      "UOB/FF": 5,
+      "UMB/GSS": 4,
+      "UEB": 4,
+      "KSC": 3,
+      "UMB/FF": 3,
+      "USC/GSS": 3,
+      "UGE/GSS": 3,
+      "UOB/GSS": 2,
+      "UEW": 2,
+      "YGE": 1,
+      "KOB": 1,
+      "MOB": 1,
+      "YMB": 1,
+      "KMB": 1,
+      "YSC": 1,
+      "MGE/GSS": 1,
+      "UGE/MSP": 1,
+      "KOB/GSS": 1,
+      "USC/FF": 1,
+      "UMB/ESM": 1
+    },
+    "statuses": {
+      "RETAINED": 146,
+      "FRESH": 178,
+      "TRANSFER": 18,
+      "UPGRADED": 1
+    },
+    "colleges": {
+      "U.T. - Indira Gandhi Medical College and Research Institute, Puducherry": 63,
+      "Indira Gandhi Medical College and Research Institute, Puducherry": 8,
+      "U.T. - Pondicherry Institute of Medical Sciences, Puducherry": 53,
+      "Pondicherry Institute of Medical Sciences, Puducherry": 67,
+      "U.T. - Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 45,
+      "Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 59,
+      "U.T. - Sri Venkateshwaraa Medical College and Research Institute, Puducherry": 46,
+      "TELUGU MINORITY - Sri Venkateshwaraa Medical College and Research Institute, Puducherry": 2
+    }
+  },
+  "PY-2026-r2b": {
+    "pages": 1,
+    "rows": 0,
+    "unplaced": 5,
+    "mbbs": 0,
+    "badRank": 0,
+    "quotas": {},
+    "categories": {},
+    "statuses": {},
+    "colleges": {}
+  },
+  "PY-2026-r3": {
+    "pages": 32,
+    "rows": 594,
+    "unplaced": 0,
+    "mbbs": 439,
+    "badRank": 0,
+    "quotas": {
+      "GOVERNMENT QUOTA": 213,
+      "NRI / NRI SPONSORED / OCI / PIO / FN": 21,
+      "MANAGEMENT QUOTA": 205
+    },
+    "categories": {
+      "AGE": 224,
+      "UGE": 90,
+      "USC": 32,
+      "UMB": 29,
+      "UOB": 14,
+      "UEW": 7,
+      "UEB": 5,
+      "UOB/FF": 4,
+      "UBM": 4,
+      "UGE/GSS": 4,
+      "KGE": 3,
+      "KMB": 3,
+      "USC/GSS": 3,
+      "UMB/FF": 2,
+      "UOB/GSS": 2,
+      "UMB/GSS": 2,
+      "MGE": 1,
+      "UGE/ESM": 1,
+      "KOB": 1,
+      "MOB": 1,
+      "KOB/GSS": 1,
+      "KMB/FF": 1,
+      "KSC": 1,
+      "UBT": 1,
+      "USC/FF": 1,
+      "UGE/MSP": 1,
+      "UMB/ESM": 1
+    },
+    "statuses": {
+      "RETAINED": 317,
+      "UPGRADED": 6,
+      "TRANSFER": 10,
+      "FRESH": 106
+    },
+    "colleges": {
+      "U.T. - Indira Gandhi Medical College and Research Institute, Puducherry": 65,
+      "Indira Gandhi Medical College and Research Institute, Puducherry": 11,
+      "U.T. - Pondicherry Institute of Medical Sciences, Puducherry": 54,
+      "Pondicherry Institute of Medical Sciences, Puducherry": 71,
+      "U.T. - Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 47,
+      "Sri Manakula Vinayagar Medical College and Hospital, Puducherry": 77,
+      "U.T. - Sri Venkateshwaraa Medical College and Research Institute, Puducherry": 47,
+      "Sri Venkateshwaraa Medical College and Research Institute, Puducherry": 65,
+      "TELUGU MINORITY - Sri Venkateshwaraa Medical College and Research Institute, Puducherry": 2
+    }
+  },
+  "PY-2026-stray": {
+    "pages": 3,
+    "rows": 18,
+    "unplaced": 0,
+    "mbbs": 0,
+    "badRank": 0,
+    "quotas": {},
+    "categories": {},
+    "statuses": {},
+    "colleges": {}
+  },
+  "PY-2026-strayb": {
+    "pages": 1,
+    "rows": 0,
+    "unplaced": 0,
+    "mbbs": 0,
+    "badRank": 0,
+    "quotas": {},
+    "categories": {},
+    "statuses": {},
+    "colleges": {}
+  }
+}

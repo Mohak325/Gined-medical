@@ -639,5 +639,46 @@
     "SHRI RAMKRISHNA": "ug_wb010p3",
     "PKG": "ug_in065p3",
     "JAKIR HOSAIN": "ug_wb006p3"
+  },
+  "OR": {
+    "SCB MCH": "ug_or012g1",
+    "MKCG": "ug_or007g1",
+    "VIMSAR": "ug_or016g1",
+    "SJMCH": "ug_or015g1",
+    "FM MCH": "ug_or004g1",
+    "BB MCH": "ug_or003g1",
+    "JKMCH": "ug_or008g1",
+    "PRM MCH": "ug_or011g1",
+    "SLN MCH": "ug_or013g1",
+    "GMCH, KEONJHAR": "ug_or002g1",
+    "GMCH, SUNDERGARH": "ug_or006g1",
+    "PABITRA MOHAN": "ug_or009g1",
+    "Government Medical College, Bhawanipatna": "ug_or014g1",
+    "GOVERNMENT MEDICAL COLLEGE , PHULBANI": "ug_or005g1",
+    "HITECH MCH, ROURKELA": "ug_in030p3",
+    "HITECH MCH, BHUBANESWAR": "ug_or002p3",
+    "DRIEMS": "ug_in019p3"
+  },
+  "PY": {
+    "U.T. - Indira Gandhi": "ug_py001g1",
+    "Indira Gandhi": "ug_py001g1",
+    "U.T. - Pondicherry Institute": "ug_py003p3",
+    "Pondicherry Institute": "ug_py003p3",
+    "U.T. - Sri Manakula Vinayagar": "ug_py005p3",
+    "Sri Manakula Vinayagar": "ug_py005p3",
+    "U.T. - Sri Venkateshwaraa": "ug_py006p3",
+    "Sri Venkateshwaraa": "ug_py006p3",
+    "TELUGU MINORITY - Sri Venkateshwaraa": "ug_py006p3"
+  },
+  "UK": {
+    "Government Doon": "ug_uk001g1",
+    "Government Medical College, Haldwani": "ug_uk002g1",
+    "Government Medical college, Haridwar": "ug_uk003g1",
+    "Veer Chandra Singh": "ug_jk004g1",
+    "Soban Singh Jeena": "ug_uk004g1",
+    "Himalayan Institute": "ug_uk003p3",
+    "Shri Guru Ram Rai": "ug_uk004p3",
+    "Gautam Buddha": "ug_uk001p3",
+    "Late Jagjivan Ram": null
   }
 }

@@ -1,0 +1,206 @@
+{
+  "OR-2026-r1": {
+    "pages": 39,
+    "seen": 2002,
+    "written": 2002,
+    "kept": 0,
+    "mbbs": 1874,
+    "statuses": {
+      "": 2002
+    },
+    "quotas": {
+      "HS": 1582,
+      "SGS": 274,
+      "NR": 18
+    },
+    "categories": {
+      "OPNO": 814,
+      "STNO": 366,
+      "SCNO": 270,
+      "EBNO": 188,
+      "OPGC": 45,
+      "EWNO": 38,
+      "OPPH": 37,
+      "OPEX": 27,
+      "STGC": 18,
+      "SCGC": 16,
+      "EBGC": 11,
+      "STEX": 11,
+      "SCEX": 9,
+      "EBPH": 8,
+      "EBEX": 6,
+      "SCPH": 3,
+      "EWGC": 2,
+      "STPH": 2,
+      "EWPH": 2,
+      "EWEX": 1
+    },
+    "colleges": {
+      "SCB MCH, CUTTACK": 211,
+      "MKCG MCH, BERHAMPUR": 208,
+      "VIMSAR, BURLA": 211,
+      "SJMCH, PURI": 83,
+      "FM MCH, BALASORE": 84,
+      "BB MCH, BALANGIR": 83,
+      "JKMCH, Jajpur": 42,
+      "PRM MCH, BARIPADA": 104,
+      "SLN MCH, KORAPUT": 104,
+      "GMCH, KEONJHAR": 84,
+      "GMCH, SUNDERGARH": 83,
+      "PABITRA MOHAN PRADHAN MEDICAL COLLEGE, TALCHER": 83,
+      "Government Medical College, Bhawanipatna": 84,
+      "GOVERNMENT MEDICAL COLLEGE , PHULBANI, KANDHAMAL": 84,
+      "HITECH MCH, ROURKELA": 79,
+      "HITECH MCH, BHUBANESWAR": 124,
+      "DRIEMS Institute of Health Sciences & Hospital, Hairapari": 123
+    }
+  },
+  "OR-2026-r2": {
+    "pages": 102,
+    "seen": 2027,
+    "written": 908,
+    "kept": 1119,
+    "mbbs": 821,
+    "statuses": {
+      "FRESH ALLOTTED IN 2nd ROUND": 378,
+      "FREEZE": 456,
+      "RETAIN": 663,
+      "UPGRADE": 530
+    },
+    "quotas": {
+      "-": 758,
+      "SGS": 30,
+      "NRI": 33
+    },
+    "categories": {
+      "OPNO": 487,
+      "EBNO": 126,
+      "SCNO": 94,
+      "STNO": 37,
+      "OPGC": 29,
+      "EWNO": 12,
+      "STGC": 9,
+      "OPEX": 7,
+      "OPPH": 7,
+      "EBGC": 5,
+      "EBPH": 3,
+      "SCPH": 2,
+      "SCGC": 2,
+      "EWGC": 1
+    },
+    "colleges": {
+      "SCB MCH, CUTTACK": 85,
+      "MKCG MCH, BERHAMPUR": 85,
+      "VIMSAR, BURLA": 88,
+      "SJMCH, PURI": 49,
+      "JKMCH, Jajpur": 15,
+      "FM MCH, BALASORE": 38,
+      "SLN MCH, KORAPUT": 38,
+      "BB MCH, BALANGIR": 28,
+      "PRM MCH, BARIPADA": 44,
+      "PABITRA MOHAN PRADHAN MEDICAL COLLEGE, TALCHER": 34,
+      "GMCH, KEONJHAR": 36,
+      "GMCH, SUNDERGARH": 41,
+      "Government Medical College, Bhawanipatna": 43,
+      "GOVERNMENT MEDICAL COLLEGE , PHULBANI, KANDHAMAL": 44,
+      "HITECH MCH, ROURKELA": 19,
+      "HITECH MCH, BHUBANESWAR": 76,
+      "DRIEMS Institute of Health Sciences & Hospital, Hairapari": 58
+    }
+  },
+  "OR-2026-r3": {
+    "pages": 145,
+    "seen": 2086,
+    "written": 735,
+    "kept": 1351,
+    "mbbs": 651,
+    "statuses": {
+      "Seat Retained": 1351,
+      "Seat Upgraded": 412,
+      "Fresh Allotted in 3rd Round": 323
+    },
+    "quotas": {
+      "-": 598,
+      "SGS": 21,
+      "NRI": 32
+    },
+    "categories": {
+      "OPNO": 341,
+      "EBNO": 105,
+      "SCNO": 90,
+      "STNO": 83,
+      "EWNO": 15,
+      "OPGC": 5,
+      "OPEX": 4,
+      "EBGC": 4,
+      "SCGC": 2,
+      "OPPH": 1,
+      "EBPH": 1
+    },
+    "colleges": {
+      "SCB MCH, CUTTACK": 17,
+      "VIMSAR, BURLA": 52,
+      "MKCG MCH, BERHAMPUR": 31,
+      "SJMCH, PURI": 37,
+      "FM MCH, BALASORE": 39,
+      "PRM MCH, BARIPADA": 47,
+      "BB MCH, BALANGIR": 20,
+      "GMCH, SUNDERGARH": 38,
+      "SLN MCH, KORAPUT": 48,
+      "JKMCH, Jajpur": 15,
+      "GMCH, KEONJHAR": 36,
+      "PABITRA MOHAN PRADHAN MEDICAL COLLEGE, TALCHER": 41,
+      "Government Medical College, Bhawanipatna": 44,
+      "GOVERNMENT MEDICAL COLLEGE , PHULBANI, KANDHAMAL": 45,
+      "HITECH MCH, BHUBANESWAR": 67,
+      "HITECH MCH, ROURKELA": 25,
+      "DRIEMS Institute of Health Sciences & Hospital, Hairapari": 49
+    }
+  },
+  "OR-2026-stray": {
+    "pages": 4,
+    "seen": 152,
+    "written": 52,
+    "kept": 100,
+    "mbbs": 17,
+    "statuses": {
+      "Seat Retained": 100,
+      "Seat Upgraded": 8,
+      "Fresh Allotment": 44
+    },
+    "quotas": {
+      "-": 13,
+      "NRI": 2,
+      "SGS": 2
+    },
+    "categories": {
+      "OPNO": 16,
+      "OPGC": 1
+    },
+    "colleges": {
+      "HITECH MCH, ROURKELA": 2,
+      "DRIEMS Institute of Health Sciences & Hospital, Hairapari": 8,
+      "HITECH MCH, BHUBANESWAR": 7
+    }
+  },
+  "OR-2026-spot": {
+    "pages": 1,
+    "seen": 14,
+    "written": 14,
+    "kept": 0,
+    "mbbs": 4,
+    "statuses": {
+      "Fresh Allotment": 14
+    },
+    "quotas": {
+      "": 4
+    },
+    "categories": {
+      "OPNO": 4
+    },
+    "colleges": {
+      "HITECH MCH, BHUBANESWAR": 1,
+      "DRIEMS Institute of Health Sciences & Hospital, Hairapari": 3
+    }
+  }
+}

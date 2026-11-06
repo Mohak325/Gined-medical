@@ -364,6 +364,28 @@ for (const [name, result] of Object.entries(stateReport)) {
   }
 }
 
+// Odisha's Round 1 counts, as reported by neet2seat from the same list.
+{
+  const rows = readCsv(path.join(ROOT, "data/extracted/states/OR-2026-r1.csv"));
+  const count = (test) => rows.filter(test).length;
+  expectEqual("Odisha Round 1 home state allotments, per neet2seat", count((r) => r.quota === "HS"), 1694);
+  expectEqual("Odisha Round 1 government school allotments, per neet2seat", count((r) => r.quota === "SGS"), 290);
+  expectEqual("Odisha Round 1 NRI allotments, per neet2seat", count((r) => r.quota === "NR"), 18);
+  const open = rows.filter((r) => r.course === "MBBS" && r.category === "OPNO" && !/^(HITECH|DRIEMS)/i.test(r.college)).map((r) => Number(r.rank));
+  expectEqual("Odisha Round 1 open government MBBS allotments, per neet2seat", open.length, 648);
+  expectEqual("Odisha Round 1 deepest open government MBBS rank, per neet2seat", Math.max(...open), 95204);
+}
+
+// Uttarakhand's Round 1 counts, as reported by neet2seat.
+{
+  const uk = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/uk-report.json"), "utf8"));
+  expectEqual("Uttarakhand 2026 Round 1 seats allotted, per neet2seat", uk["UK-2026-r1"].written, 1245);
+  expectEqual("Uttarakhand 2026 Round 1 MBBS seats allotted, per neet2seat", uk["UK-2026-r1"].mbbs, 1057);
+  for (const [name, file] of Object.entries(uk)) {
+    if (file.badRank > 0) errors.push(`${name}: ranks could not be read`);
+  }
+}
+
 // Telangana's counts, as reported by neet2seat.
 {
   const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));

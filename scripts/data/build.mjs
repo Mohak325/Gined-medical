@@ -156,6 +156,9 @@ const stateSources = [
   ...readJson(path.join(ROOT, "data/raw/states/kl.json")).map((s) => ({ ...s, state: "KL" })),
   ...readJson(path.join(ROOT, "data/raw/states/up.json")).map((s) => ({ ...s, state: "UP" })),
   ...readJson(path.join(ROOT, "data/raw/states/wb.json")).map((s) => ({ ...s, state: "WB" })),
+  ...readJson(path.join(ROOT, "data/raw/states/or.json")).map((s) => ({ ...s, state: "OR" })),
+  ...readJson(path.join(ROOT, "data/raw/states/py.json")).map((s) => ({ ...s, state: "PY" })),
+  ...readJson(path.join(ROOT, "data/raw/states/uk.json")).map((s) => ({ ...s, state: "UK" })),
 ];
 const extras = readJson(path.join(CURATED, "college-extras.json"));
 
