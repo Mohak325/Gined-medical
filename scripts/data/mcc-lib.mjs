@@ -62,6 +62,12 @@ const QUOTA_TABLE = [
   ["Non-Resident Indian", "nri", "NRI"],
   ["Non-Resident Indian(AMU)Quota", "nri", "NRI_AMU"],
   ["Non-Resident Indian(Jamia)Quota", "nri", "NRI_JAMIA"],
+  // NEET PG labels
+  ["Self-Financed Merit Seat/(Paid Seat Quota)", "deemed", "PAID_SEAT"],
+  ["Aligarh Muslim University", "central", "AMU"],
+  ["Banaras Hindu University", "central", "BHU"],
+  ["Armed Forces Medical", "special", "AFMS"],
+  ["DNB Quota", null, "DNB"],
   ["Foreign Country Quota", null, "FOREIGN"],
   ["B.Sc Nursing All India", null, "NURSING"],
   ["B.Sc Nursing Delhi NCR", null, "NURSING"],
@@ -106,3 +112,63 @@ export function mapCategory(label) {
  * and both years then mean the same thing.
  */
 export const isNewAllotment = (row) => /^(allotted|fresh allotted|upgraded)/i.test(row.remarks);
+
+/**
+ * NEET PG: MCC's course label to a specialty, so it can be matched with the site's PG
+ * seat names. MCC writes one specialty many ways ("M.D. (RADIO- DIAGNOSIS)" in 2025,
+ * "M.D. Radio-Diagnosis /Radiology" in 2026), and the site's names come from NMC.
+ *
+ * Returns { level, subject } where level is "degree" (MD or MS) or "diploma", or null
+ * for a course the site doesn't list. The same function reads the site's own names, so
+ * both sides land on the same specialty. Order matters: the first match wins.
+ */
+const PG_SUBJECTS = [
+  [/community health/, "Community Health Administration"],
+  [/hospital admin|health admin/, "Hospital Administration"],
+  [/traumatology/, "Traumatology & Surgery"],
+  [/physical med|phy\. ?medicine/, "Physical Medicine & Rehabilitation"],
+  [/radiation medicine/, "Radiation Medicine"],
+  [/radiation oncology|radiotherapy|radio- ?therapy/, "Radiation Oncology"],
+  [/radio\W*diagnosis|radiodiagnosis/, "Radio Diagnosis"],
+  [/transfusion|immuno\W*ha?ematology/, "Immunohematology & Blood Transfusion"],
+  [/obst|gyn/, "Obstetrics & Gynaecology"],
+  [/general medicine/, "General Medicine"],
+  [/general surgery/, "General Surgery"],
+  [/anaesth|anesth/, "Anaesthesiology"],
+  [/paediatric|pediatric|child health/, "Paediatrics"],
+  [/orthop/, "Orthopaedics"],
+  [/ophthalm|opthalm/, "Ophthalmology"],
+  [/\be\.?\s?n\.?\s?t\b|oto\W*rhino|otorhino/, "Otorhinolaryngology (ENT)"],
+  [/preventive|community medicine/, "Community Medicine"],
+  [/microbio|bacteriology/, "Microbiology"],
+  [/psychiat|psychological/, "Psychiatry"],
+  [/pharmacol/, "Pharmacology"],
+  [/derm/, "Dermatology, Venereology & Leprosy"],
+  [/physiolog/, "Physiology"],
+  [/tuberculosis|respiratory|chest|pulmonary/, "Tuberculosis & Respiratory Diseases"],
+  [/anatomy/, "Anatomy"],
+  [/bio\W*chem/, "Biochemistry"],
+  [/forensic/, "Forensic Medicine & Toxicology"],
+  [/emergency/, "Emergency Medicine"],
+  [/clinical pathology|pathology/, "Pathology"],
+  [/sports? medicine/, "Sports Medicine"],
+  [/geriatric/, "Geriatrics"],
+  [/nuclear/, "Nuclear Medicine"],
+  [/palliative/, "Palliative Medicine"],
+  [/family medicine/, "Family Medicine"],
+  [/tropical/, "Tropical Medicine"],
+  [/laboratory medicine/, "Laboratory Medicine"],
+  [/aerospace/, "Aerospace Medicine"],
+  [/diabetolog/, "Diabetology"],
+  [/public health/, "Public Health"],
+];
+
+export function pgSpecialty(label) {
+  const text = String(label).toLowerCase();
+  // Super-specialty and public health master's courses aren't on the site.
+  if (/\bm\.?\s?ch\b|m\.p\.h|master of public health|nbems/.test(text)) return null;
+  // Diplomas start "Diploma"/"Dip." or end in a short form such as "(D.D.V.L.)".
+  const level = /^(pg )?dip|\(d\.[a-z.]+\)/.test(text) ? "diploma" : "degree";
+  const found = PG_SUBJECTS.find(([pattern]) => pattern.test(text));
+  return found ? { level, subject: found[1] } : null;
+}

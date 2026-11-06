@@ -497,6 +497,34 @@ const jumps = [...firstRound(2026)]
   .map(([id, rank]) => `${id} ${before.get(id)} to ${rank}`);
 expectNone(jumps, "All India closing rank moved over 4 times between 2025 and 2026", warnings);
 
+/* ── NEET PG ──────────────────────────────────────────────────────────── */
+
+// Published 2026 Round 1 All India closing ranks, which MCC doesn't summarise itself:
+// by category from Careers360 (medicine.careers360.com/articles/mcc-neet-pg-counselling-2026-round-1-cutoff-out),
+// by branch for Open seats from hireguideeducation.org/alerts/mcc-neet-pg-2026-round-1-final-result-cutoff-reporting-analysis.
+{
+  const pg = cutoffs.filter((c) => c.track === "pg");
+  const r1 = pg.filter((c) => c.year === 2026 && c.round === 1 && c.quota === "aiq");
+  const highest = (rows) => Math.max(...rows.map((c) => c.closingRank));
+  const published = [
+    ["general", null, 127533], ["ews", null, 132185], ["obc", null, 149301], ["sc", null, 159338], ["st", null, 159693],
+    ["general", "MD - General Medicine", 4703], ["general", "MD - Radio Diagnosis", 3058],
+  ];
+  let same = 0;
+  for (const [category, course, rank] of published) {
+    const ours = highest(r1.filter((c) => c.category === category && (!course || c.course === course)));
+    if (ours === rank) same++;
+    else errors.push(`NEET PG 2026 Round 1 ${category} ${course ?? "all courses"}: published ${rank}, ours ${ours}`);
+  }
+  console.log(`NEET PG 2026 Round 1 published closing ranks matched: ${same} of ${published.length}`);
+
+  // Each PG cutoff should sit on a course the college lists. A few don't, because NMC's seat list is older.
+  const listed = new Set(seats.filter((s) => s.track === "pg").map((s) => `${s.collegeId}|${s.course}`));
+  const unlisted = pg.filter((c) => !listed.has(`${c.collegeId}|${c.course}`));
+  if (unlisted.length > pg.length * 0.02) errors.push(`PG cutoffs on a course the college doesn't list: ${unlisted.length} of ${pg.length}`);
+  console.log(`NEET PG cutoffs: ${pg.length} rows across ${new Set(pg.map((c) => c.collegeId)).size} colleges, ${unlisted.length} on a course the college doesn't list`);
+}
+
 /* ── Known gaps: these don't stop a build, but stay visible ──────────── */
 
 expectNone(colleges.filter((c) => c.city === c.state).map(label), "City is just the state name", warnings);
@@ -504,12 +532,12 @@ expectNone(colleges.filter((c) => !c.established).map(label), "Colleges with no 
 expectNone(colleges.filter((c) => !c.university).map(label), "Colleges with no university", warnings);
 expectNone(colleges.filter((c) => !c.website).map(label), "Colleges with no website", warnings);
 
-const withCutoffs = new Set(cutoffs.map((c) => c.collegeId));
+const withCutoffs = new Set(cutoffs.filter((c) => c.track === "ug").map((c) => c.collegeId));
 const ugColleges = colleges.filter((c) => c.ugSeats > 0);
 const missing = ugColleges.filter((c) => !withCutoffs.has(c.id));
 warnings.push(`UG colleges with no cutoffs: ${missing.length} of ${ugColleges.length}`);
 warnings.push(`State-quota cutoffs cover only: ${meta.stateCutoffs.join(", ")} (${cutoffs.filter((c) => c.quota === "state").length} rows)`);
-warnings.push(`PG cutoffs: ${cutoffs.filter((c) => c.track === "pg").length} rows (none collected yet)`);
+warnings.push("PG cutoffs cover MCC's All India rounds only (2025 Round 1 and stray, 2026 Round 1), with no state quota or DNB");
 
 /* ── Report ──────────────────────────────────────────────────────────── */
 

@@ -71,6 +71,9 @@ export default function CollegeResultCard({ college, cutoff, confidence, userRan
           <ArrowRight className="w-5 h-5 text-gold opacity-0 -translate-x-2 group-hover/title:opacity-100 group-hover/title:translate-x-0 transition-all" />
         </Link>
         
+        {cutoff.track === "pg" && (
+          <p className="text-body font-semibold text-gold-deep mb-2">{cutoff.course}</p>
+        )}
         <div className="flex flex-wrap gap-4 text-small text-text-muted mb-6">
           <p className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4 text-gold/70" />

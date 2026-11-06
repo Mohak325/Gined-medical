@@ -27,6 +27,8 @@
     "data:kea:extract": "python -I scripts/data/kea_extract.py data/raw/kea/pdfs data/extracted/kea",
     "data:mcc:extract": "python -I scripts/data/mcc_extract.py data/raw/mcc/pdfs data/extracted/mcc",
     "data:mcc:match": "node scripts/data/mcc-match.mjs",
+    "data:mcc-pg:extract": "python -I scripts/data/mcc_pg_extract.py data/raw/mcc-pg/pdfs data/extracted/mcc-pg",
+    "data:mcc-pg:match": "node scripts/data/mcc-match.mjs pg",
     "data:build": "node scripts/data/build.mjs",
     "data:check": "node scripts/data/check.mjs"
   },

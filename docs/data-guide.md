@@ -119,6 +119,31 @@ Two checks caught mistakes the script made:
 - **The source can be wrong.** The Pune and Sangli PINs for Bharati Vidyapeeth are swapped, so
   trusting them would have swapped those colleges' cutoffs.
 
+### PG results work the same way
+
+NEET PG results are at <https://mcc.nic.in/current-events-pg/> and <https://mcc.nic.in/archive-pg/>.
+Save them in `data/raw/mcc-pg/pdfs/`, add them to `data/raw/mcc-pg/sources.json` and to `MCC_PG_ROUNDS`
+in `scripts/data/build.mjs`, then run:
+
+```bash
+npm run data:mcc-pg:extract
+```
+
+```bash
+npm run data:mcc-pg:match
+```
+
+The PG matcher reuses every UG decision first. Its review list is `data/curated/mcc-pg-matches-to-review.json`.
+Add PG decisions to the same overrides file with `"track": "pg"`, so they can't change a UG match.
+
+Two things differ from UG:
+
+- **A specialty has many spellings.** "M.D. (RADIO- DIAGNOSIS)" in 2025 is "M.D. Radio-Diagnosis /Radiology"
+  in 2026. `pgSpecialty` in `scripts/data/mcc-lib.mjs` turns each into a specialty, and the build uses the name
+  the college lists in its seats. A new spelling it doesn't know is counted under "PG course the site doesn't
+  list" in the build report, so check that number after each new file.
+- **DNB rows are skipped.** They're for hospital seats the site doesn't list.
+
 ## Adding another state
 
 Every state publishes differently, so start by reading before writing any code.

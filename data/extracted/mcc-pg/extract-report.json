@@ -1,0 +1,72 @@
+{
+  "2025-r1": {
+    "pages": 1301,
+    "rowsSeen": 26889,
+    "lastRank": 138607.0,
+    "lastSno": 26889,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "written": 26889,
+    "rejected": 0,
+    "remarks": {
+      "Allotted": 26423,
+      "Allotted( NRI Priority : 2 )": 337,
+      "Allotted( NRI Priority : 1 )": 129
+    },
+    "rejectSamples": []
+  },
+  "2025-stray": {
+    "pages": 130,
+    "rowsSeen": 2798,
+    "lastRank": 230049.0,
+    "lastSno": 2798,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "written": 2798,
+    "rejected": 0,
+    "remarks": {
+      "Allotted": 2707,
+      "Allotted( NRI Priority : 2 )": 59,
+      "Allotted( NRI Priority : 1 )": 14,
+      "Allotted( AFMS Rank : 3661 )": 1,
+      "Allotted( AFMS Rank : 4426 )": 1,
+      "Allotted( AFMS Rank : 9433 )": 1,
+      "Allotted( AFMS Rank : 12084 )": 1,
+      "Allotted( AFMS Rank : 12364 )": 1,
+      "Allotted( AFMS Rank : 12587 )": 1,
+      "Allotted( AFMS Rank : 13318 )": 1,
+      "Allotted( AFMS Rank : 13337 )": 1,
+      "Allotted( AFMS Rank : 13917 )": 1,
+      "Allotted( AFMS Rank : 14077 )": 1,
+      "Allotted( AFMS Rank : 14538 )": 1,
+      "Allotted( AFMS Rank : 14929 )": 1,
+      "Allotted( AFMS Rank : 14966 )": 1,
+      "Allotted( AFMS Rank : 15328 )": 1,
+      "Allotted( AFMS Rank : 16536 )": 1,
+      "Allotted( AFMS Rank : 21694 )": 1,
+      "Allotted( AFMS Rank : 64 )": 1,
+      "Allotted( AFMS Rank : 80 )": 1
+    },
+    "rejectSamples": []
+  },
+  "2026-r1": {
+    "pages": 1735,
+    "rowsSeen": 28723,
+    "lastRank": 159922.0,
+    "lastSno": 28723,
+    "snoGaps": [],
+    "snoGapCount": 0,
+    "rankDrops": [],
+    "rankDropCount": 0,
+    "written": 28723,
+    "rejected": 0,
+    "remarks": {
+      "": 28723
+    },
+    "rejectSamples": []
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "2025-r1",
+    "title": "Final Result of Round 1 for PG Counselling 2025",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2025/11/202511221303622410.pdf",
+    "bytes": 5069993,
+    "sha256": "6a0706462f17d13ac7a521d2bd8a654f88780b09affa49e609d28f7d241a3c85",
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "2025-r2",
+    "title": "Final Result for Round 2 of PG counselling 2025",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2025/12/202512172132273940.pdf",
+    "bytes": 9572755,
+    "sha256": "094aa8c7343dbce3bcccf8864d516f39eac297a782f64d8231af77cb44d2c7b8",
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "2025-r3",
+    "title": "Final Result for Round-III of NEET PG Counselling 2025",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/02/20260206892439077.pdf",
+    "bytes": 9520528,
+    "sha256": "ce17a796fb30e03ffc6a6a3fe5f96bc96e8ef8a8df8c6e96f89797e0ded8ebdd",
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "2025-stray",
+    "title": "Final Result for Stray Round of PG counselling 2025",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/02/20260223177387794.pdf",
+    "bytes": 523346,
+    "sha256": "7e5f3cc95394b7550313d4c624f3436728621fe57b5cc1b4ab261d472abb9a27",
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "2026-r1",
+    "title": "Final Allotment Result for PG Counselling Round 1 dated 24.10.2026",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610241746468472.pdf",
+    "bytes": 5430262,
+    "sha256": "0cc737b10d3b6fc23ee4d814a18736f786ac3f1ed4d46538a4f670f013b482ac",
+    "retrieved": "2026-11-06"
+  }
+]

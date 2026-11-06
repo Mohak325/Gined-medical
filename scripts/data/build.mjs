@@ -14,7 +14,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { isNewAllotment, mapCategory, mapQuota, readCsv, squash } from "./mcc-lib.mjs";
+import { isNewAllotment, mapCategory, mapQuota, pgSpecialty, readCsv, squash } from "./mcc-lib.mjs";
 import * as kea from "./kea-lib.mjs";
 import { STATES } from "./state-rules.mjs";
 
@@ -23,6 +23,7 @@ const RAW = path.join(ROOT, "data/raw/nexdoc");
 const CURATED = path.join(ROOT, "data/curated");
 const OUT = path.join(ROOT, "src/data");
 const MCC = path.join(ROOT, "data/extracted/mcc");
+const MCC_PG = path.join(ROOT, "data/extracted/mcc-pg");
 const KEA = path.join(ROOT, "data/extracted/kea");
 const STATE_ROWS = path.join(ROOT, "data/extracted/states");
 
@@ -46,6 +47,13 @@ const MCC_ROUNDS = [
   { file: "2026-r2", year: 2026, round: 2 },
   { file: "2026-r3", year: 2026, round: 3 },
   { file: "2026-stray", year: 2026, round: 4 },
+];
+
+// NEET PG result files from MCC. Rounds 2 and 3 use a wider layout that isn't read yet.
+const MCC_PG_ROUNDS = [
+  { file: "2025-r1", year: 2025, round: 1 },
+  { file: "2025-stray", year: 2025, round: 4 },
+  { file: "2026-r1", year: 2026, round: 1 },
 ];
 
 /* ── Lookup tables: how source labels translate to the site's labels ──── */
@@ -270,6 +278,58 @@ for (const { file, year, round } of MCC_ROUNDS) {
   }
 }
 
+// NEET PG works the same way. MCC names a specialty differently from NMC's seat list, so each
+// row's specialty is matched to the course name the college itself lists (see pgSpecialty).
+const pgCrosswalk = readJson(path.join(CURATED, "mcc-pg-college-crosswalk.json"));
+const pgCourses = new Map();
+for (const seat of seats) {
+  const specialty = seat.track === "pg" && pgSpecialty(seat.course);
+  if (!specialty) continue;
+  for (const key of [`${seat.collegeId}|${specialty.level}|${specialty.subject}`, `any|${specialty.level}|${specialty.subject}`]) {
+    const names = pgCourses.get(key) ?? new Map();
+    names.set(seat.course, (names.get(seat.course) ?? 0) + seat.seats);
+    pgCourses.set(key, names);
+  }
+}
+// The name with the most seats wins, so "MD - Anatomy" beats "MD/MS - Anatomy" where both exist.
+const mostSeats = (names) => [...names].sort((a, b) => b[1] - a[1])[0][0];
+report.pgCourseNotListed = 0;
+
+for (const { file, year, round } of MCC_PG_ROUNDS) {
+  for (const row of readCsv(path.join(MCC_PG, `${file}.csv`))) {
+    const { quota, detail } = mapQuota(row.quota);
+    if (!quota) { drop(`PG quota ${detail}`); continue; }
+    // 2026 Round 1 has no remarks column: every row in it is a new allotment.
+    if (row.remarks && !isNewAllotment(row)) { drop("student kept an earlier seat"); continue; }
+    const specialty = pgSpecialty(row.course);
+    if (!specialty) { drop("PG course the site doesn't list"); continue; }
+
+    const match = pgCrosswalk[squash(row.institute)];
+    if (!match) throw new Error(`No PG match for "${row.institute}". Run: node scripts/data/mcc-match.mjs pg`);
+    if (!match.id) { drop("college not on the site"); continue; }
+
+    const own = pgCourses.get(`${match.id}|${specialty.level}|${specialty.subject}`);
+    const any = pgCourses.get(`any|${specialty.level}|${specialty.subject}`);
+    // A course missing from the college's seat list is still kept, under the usual name.
+    if (!own) report.pgCourseNotListed++;
+    const course = own ? mostSeats(own) : any ? mostSeats(any) : `${specialty.level === "diploma" ? "Diploma" : "MD"} - ${specialty.subject}`;
+
+    // The specialty groups names that differ only by college, such as "MD/MS - Anatomy".
+    const usualName = any ? mostSeats(any) : course;
+    const category = mapCategory(row.allottedCategory);
+    const key = ["PG", match.id, course, quota, detail, category, round, year].join("|");
+    const rank = Number(row.rank);
+    const group = groups.get(key) ?? {
+      collegeId: match.id, track: "pg", course, specialty: usualName, quota, category, round, year,
+      openingRank: rank, closingRank: rank, allotted: 0, quotaDetail: detail,
+    };
+    group.openingRank = Math.min(group.openingRank, rank);
+    group.closingRank = Math.max(group.closingRank, rank);
+    group.allotted++;
+    groups.set(key, group);
+  }
+}
+
 // Karnataka's rows work the same way, with its own seat types and categories.
 for (const { file, year, round } of KEA_ROUNDS) {
   for (const row of readCsv(path.join(KEA, `${file}.csv`))) {
@@ -389,6 +449,8 @@ const meta = {
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
   ugSeats,
   collegesWithCutoffs: new Set(cutoffs.map((cutoff) => cutoff.collegeId)).size,
+  // PG specialties with closing ranks in the latest year, for the predictor's specialty list.
+  pgCourses: [...new Set(cutoffs.filter((c) => c.track === "pg" && c.year === Math.max(...cutoffs.map((x) => x.year))).map((c) => c.specialty))].sort((a, b) => Number(a.startsWith("Diploma")) - Number(b.startsWith("Diploma")) || a.localeCompare(b)),
   collegesWithFees: new Set([...fees.values()].map((fee) => fee.collegeId)).size,
 };
 
