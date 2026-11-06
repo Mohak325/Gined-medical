@@ -190,6 +190,7 @@ export default function ResultsClient() {
               {breakdown.ambitious > 0 && ` Consider keeping a few of the ${breakdown.ambitious} Ambitious options in your list, as cutoffs change between years and rounds.`}
               {stateCategory && ` These are ${stateName} counselling results for seat code ${stateCategory} only. You may qualify for other codes too, so check your eligibility with the state's counselling authority.`}
               {usesStateRank && ` These closing ranks are ${stateName}'s own, so compare them with your state rank and not your All India rank.`}
+              {query.state === "UP" && ` Uttar Pradesh only publishes who holds each seat now, so a student who got a seat and later moved on isn't counted. Its closing ranks can be slightly lower than the ones announced.`}
               {query.state === "TN" && ` Tamil Nadu's lists show each student's community and not the seat they took, so each figure is the last-ranked student of that community who got a seat.`}
             </p>
           </div>

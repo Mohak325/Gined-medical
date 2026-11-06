@@ -315,6 +315,39 @@ for (const [name, result] of Object.entries(stateReport)) {
   if (general.length > 0) errors.push(`${general.length} state-rank rows could be mixed with All India rows`);
 }
 
+// Uttar Pradesh's Round 1 closing ranks, as reported by Sartha from the Round 1 lists. Our source shows
+// only the students still holding a seat, so ours can be lower where a student later moved, never higher.
+{
+  const sartha = {
+    ug_in068g1: [3001, 3706, 4583, 36962], ug_up019g1: [4857, 4742, 5903, 50624], ug_up022g1: [6517, 6345, 7724, 62039],
+    ug_up024g1: [8210, 7864, 11109, 73984], ug_up039g1: [8473, 8722, 10486, 79984], ug_up036g1: [8802, 8608, 10705, 68834],
+    ug_up045g1: [10558, 9602, 12428, 82993], ug_up013g1: [10731, 9440, 12356, 84282], ug_up037g1: [11559, 11291, 13156, 90632],
+    ug_up020g1: [11690, 8419, 13606, 86917], ug_up052g1: [12940, 12558, 13833, 94691], ug_in013g1: [13138, 11726, 14703, 98914],
+    ug_up049g1: [13560, 12213, 14559, 114145], ug_up018g1: [13901, 13730, 14635, 117441], ug_up044g1: [14592, 14093, 16052, 124312],
+    ug_up025g1: [14906, 15427, 15468, 105373], ug_up043g1: [15280, 15623, 16625, 130067], ug_up035g1: [16353, 16529, 17536, 118487],
+    ug_up023g1: [16429, 16063, 17157, 128803], ug_up026g1: [16793, 17569, 17597, 130707],
+  };
+  const codes = ["UR", "UR-F", "BC", "SC"];
+  let same = 0;
+  let total = 0;
+  for (const [collegeId, values] of Object.entries(sartha)) {
+    values.forEach((value, index) => {
+      const row = cutoffs.find((c) => c.state === "UP" && c.collegeId === collegeId && c.round === 1 && c.stateCategory === codes[index] && c.seatType === "government");
+      total++;
+      if (row?.closingRank === value) same++;
+      // A missing row means every student given that seat in Round 1 later moved on.
+      else if (row && row.closingRank > value) errors.push(`Uttar Pradesh ${collegeId} ${codes[index]} Round 1: Sartha ${value}, ours ${row?.closingRank}`);
+    });
+  }
+  console.log(`Uttar Pradesh Round 1 closing ranks matching Sartha: ${same} of ${total}, and none higher`);
+  const sarthaPrivate = { ug_up022p3: 126441, ug_up009p3: 148511, ug_in099p3: 173935, ug_up024p3: 203481, ug_up021g1: 352479 };
+  for (const [collegeId, value] of Object.entries(sarthaPrivate)) {
+    const row = cutoffs.find((c) => c.state === "UP" && c.collegeId === collegeId && c.round === 1 && c.stateCategory === "UR" && c.seatType === "private");
+    if (!row || row.closingRank > value) errors.push(`Uttar Pradesh private ${collegeId} Round 1: Sartha ${value}, ours ${row?.closingRank}`);
+  }
+  if (same < total * 0.7) errors.push(`Uttar Pradesh: only ${same} of ${total} closing ranks match Sartha`);
+}
+
 // Telangana's counts, as reported by neet2seat.
 {
   const tg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extracted/states/tg-report.json"), "utf8"));
