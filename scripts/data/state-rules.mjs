@@ -29,6 +29,10 @@ const TG_OPTIONS = Object.entries(TG_CATEGORIES).flatMap(([code, label]) => [
   { code: `${code}-F`, label: `${label}, female seat` },
 ]);
 
+// West Bengal's private colleges, as named in its lists. Their state quota seats are private seats.
+const WB_PRIVATE = ["KPC ", "JAGANNATH GUPTA", "ICARE", "GOURI DEVI", "I Q CITY", "SANTINIKETAN", "JIS ", "SKS ", "RANIGANJ", "JMN ",
+  "KRISHNANAGAR", "SHRI RAMKRISHNA", "PKG ", "JAKIR HOSAIN"];
+
 export const STATES = {
   BR: {
     name: "Bihar",
@@ -337,6 +341,26 @@ export const STATES = {
       if (match[2] !== "OP") return { code: `${base}-${match[2]}`, seatType, quota: "special", category: "state_only" };
       const site = { UR: "general", BC: "obc", SC: "sc", ST: "st", EWS: "ews" }[base];
       return { code: base, seatType, quota: "state", category: site };
+    },
+  },
+
+  WB: {
+    name: "West Bengal",
+    authority: "West Bengal Medical Counselling Committee",
+    isMbbs: (row) => row.course === "MBBS",
+    options: [
+      { code: "UR", label: "Unreserved (UR)" }, { code: "OBC", label: "OBC (non-creamy layer)" }, { code: "SC", label: "SC" },
+      { code: "ST", label: "ST" }, { code: "EWS", label: "EWS" }, { code: "MGMT", label: "Private management quota" },
+    ],
+    map(row) {
+      if (row.quota === "NRI Quota") return { code: "NRI", seatType: "nri", quota: "nri", category: "state_only" };
+      if (row.quota === "Private Management Quota") return { code: "MGMT", seatType: "others", quota: "state", category: "state_only" };
+      if (row.quota !== "State Quota") throw new Error(`Unknown West Bengal quota "${row.quota}".`);
+      const seatType = WB_PRIVATE.some((name) => row.college.startsWith(name)) ? "private" : "government";
+      if (/PwD$/.test(row.category)) return { code: row.category.replace(/\s*\(Non-Creamy Layer\)/, ""), seatType, quota: "special", category: "state_only" };
+      const found = { UR: ["UR", "general"], "OBC (Non-Creamy Layer)": ["OBC", "obc"], SC: ["SC", "sc"], ST: ["ST", "st"], EWS: ["EWS", "ews"] }[row.category];
+      if (!found) throw new Error(`Unknown West Bengal category "${row.category}".`);
+      return { code: found[0], seatType, quota: "state", category: found[1] };
     },
   },
 

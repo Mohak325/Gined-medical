@@ -25,8 +25,8 @@ taken from them are in `data/extracted/mcc/`.
 no student names. The rows taken from them are in `data/extracted/kea/`. They also hold each seat's fee,
 which isn't used on the site yet (Phase 4).
 
-**Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala and Uttar Pradesh come straight from their counselling authorities.** The files
-are listed in `data/raw/states/sources.json`, `gj.json`, `ap.json`, `tg.json`, `mh.json`, `pb.json`, `hp.json`, `mp.json`, `tn.json`, `kl.json` and `up.json`. These lists include student names, so the extractors keep only rank, college, course, category,
+**Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh and West Bengal come straight from their counselling authorities.** The files
+are listed in `data/raw/states/sources.json`, `gj.json`, `ap.json`, `tg.json`, `mh.json`, `pb.json`, `hp.json`, `mp.json`, `tn.json`, `kl.json`, `up.json` and `wb.json`. These lists include student names, so the extractors keep only rank, college, course, category,
 seat, quota, gender, remark and, where needed, merit number and round. The PDFs are never committed, so `npm run data:download` fetches
 Karnataka's and MCC's, and those three files give the addresses for the rest.
 
@@ -38,6 +38,7 @@ Karnataka's and MCC's, and those three files give the addresses for the rest.
 | Gujarat | 2026, Rounds 1 to 3 and stray | 52 of 53 of its own published Round 1 last merit numbers match, for Open seats. Rajpipla differs by one. Round 1 count matches [neet2seat](https://neet2seat.com/news/gujarat-neet-ug-2026-round-1-allotment) (7,459) |
 | Telangana | 2026, Phases 1 and 2, mop-up and stray, for competent authority and management quota | Counts match [neet2seat](https://neet2seat.com/news/telangana-neet-ug-2026-phase-1-mbbs-allotment) for Phase 1 (4,734) and [Phase 2](https://neet2seat.com/news/telangana-neet-ug-2026-phase-2-allotment-management-quota-phase-1) (6,181). All 12 of its statewide last ranks for Phase 1 match |
 | Haryana | 2026, Round 1 and stray, both marked provisional. Rounds 2 and 3 mark rows "Joined" or "Not Allotted", so new seats can't be told apart, and they aren't used | No outside figure yet. Each college's Round 1 count fits within its seats |
+| West Bengal | 2026, Round 1 from its own list (marked provisional). Rounds 2 and 3 and stray from the stray round result, which shows current seat holders only | The 6,422 seats and 5,833 MBBS seats in Round 1 match [neet2seat](https://neet2seat.com/news/wb-neet-ug-2026-round-1-seat-allotment-result), and so do all five of its government college median closing ranks |
 | Uttar Pradesh | 2026, Rounds 1 to 3, collected on 6 November 2026 from DGME's institute-wise page, one request per institute | 60 of 80 of [Sartha's](https://www.sartha.in/blogs/up-neet-ug-2026-round-1-cutoff-mbbs-college-wise-government-private) Round 1 government closing ranks match, and none of ours is higher. 4 of 5 private ones match |
 | Tamil Nadu | 2026, Rounds 1 to 3 and stray, government and management quota, all marked provisional. **Ranks are Tamil Nadu's own, not All India.** The 7.5% government school lists aren't included | 18 of [neet2seat's](https://neet2seat.com/guides/tamil-nadu/tamil-nadu-mbbs-cutoffs-2026) reserved category closing ranks, at Madras, Stanley and Kilpauk, match. Its Open figures differ slightly, as explained below |
 | Kerala | 2026, Phases 1 to 3 and stray. **Ranks are KEAM medical ranks, not All India** | All 378 of the state's own Phase 1 last ranks for the 13 seat codes we offer match |
@@ -49,6 +50,8 @@ Karnataka's and MCC's, and those three files give the addresses for the rest.
 
 **Check what a state's "rank" means before using it.** Gujarat's last-merit files use its own state merit numbers, and Tamil Nadu's and Kerala's lists use a state
 rank. The site compares against All India ranks, so those numbers can't be used directly. Gujarat's lists also have an All India rank column, which is what we use.
+
+West Bengal's stray round PDF draws text with Type 3 fonts that number each character in order of first use, so normal text extraction gives gibberish. No OCR is needed: each character is drawn by the same instructions wherever it appears, so `wb_extract.py` maps a hash of those instructions to the character. The 91 shapes were read by eye once, and an unknown shape stops the script. Its pages are sideways, so a student is a column of text on the page. Its Round 1 list uses ordinary fonts. Neither has names. Its Round 1 list is no longer linked from WBMCC's page, and neet2seat's article gave the address. West Bengal now has one OBC pool, where it used to have OBC-A and OBC-B. East West Institute, Burdwan isn't in its lists.
 
 Uttar Pradesh publishes no list file. Its page shows one institute at a time, so `npm run data:up:download` asks for each in turn, 6 seconds apart, and keeps only the institute,
 course, round, seat category, rank and whether the student moved from another seat. The page shows who holds each seat now. A student who got a seat and later moved on
@@ -169,7 +172,7 @@ NMC has since revised that to [1,40,664](https://medicaldialogues.in/amp/news/ed
 
 - Cutoffs cover two years, which shows a direction but not a reliable trend. MCC's archive goes
   back to 2019 if more years are wanted.
-- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala and Uttar Pradesh only. There are no PG cutoffs or real fees.
+- State-quota cutoffs cover Karnataka, Bihar, Chhattisgarh, Rajasthan, Gujarat, Andhra Pradesh, Telangana, Haryana, Maharashtra, Punjab, Himachal Pradesh, Madhya Pradesh, Tamil Nadu, Kerala, Uttar Pradesh and West Bengal only. There are no PG cutoffs or real fees.
 - Of the site's 926 colleges, 81 have no UG seats in our data, so most of them can't have UG cutoffs.
 - Many of the 845 UG colleges still have no cutoffs. Most fill seats only through states we haven't added yet.
 - Tamil Nadu and Kerala publish lists using their own state rank, with no All India rank, so they can't feed the site's predictor as it works today.

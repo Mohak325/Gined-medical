@@ -22,7 +22,8 @@
     "RJ",
     "TG",
     "TN",
-    "UP"
+    "UP",
+    "WB"
   ],
   "stateOptions": {
     "BR": [
@@ -811,6 +812,32 @@
         "label": "EWS, girls' seat"
       }
     ],
+    "WB": [
+      {
+        "code": "UR",
+        "label": "Unreserved (UR)"
+      },
+      {
+        "code": "OBC",
+        "label": "OBC (non-creamy layer)"
+      },
+      {
+        "code": "SC",
+        "label": "SC"
+      },
+      {
+        "code": "ST",
+        "label": "ST"
+      },
+      {
+        "code": "EWS",
+        "label": "EWS"
+      },
+      {
+        "code": "MGMT",
+        "label": "Private management quota"
+      }
+    ],
     "GJ": [
       {
         "code": "OPEN",
@@ -956,5 +983,5 @@
   "collegeCount": 926,
   "ugCollegeCount": 845,
   "ugSeats": 139439,
-  "collegesWithCutoffs": 804
+  "collegesWithCutoffs": 819
 }
