@@ -22,6 +22,7 @@ export default function PageHero({
   children,
   className = "",
   overlap = false,
+  breadcrumb,
 }: {
   photo: PhotoKey;
   eyebrow: string;
@@ -29,11 +30,14 @@ export default function PageHero({
   /** The words after the title, set in italic gold. */
   accent?: string;
   description: ReactNode;
-  stats?: { value: number; label: string; suffix?: string }[];
+  /** Numbers count up; text values (like a range) are shown as they are. */
+  stats?: { value: number | string; label: string; suffix?: string }[];
   children?: ReactNode;
   className?: string;
   /** Leave room at the bottom for content that rises over the hero's edge. */
   overlap?: boolean;
+  /** A trail of links shown above the eyebrow. */
+  breadcrumb?: ReactNode;
 }) {
   return (
     <section className={`relative bg-ink-deep text-text-on-dark overflow-hidden ${className}`}>
@@ -42,6 +46,7 @@ export default function PageHero({
       <div aria-hidden className="absolute -right-40 -top-20 z-[1] w-[36rem] h-[36rem] rounded-full bg-gold/10 blur-[140px]" />
 
       <div className={`relative z-[2] max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-32 md:pt-40 ${overlap ? "pb-36 md:pb-44" : "pb-12 md:pb-16"}`}>
+        {breadcrumb && <div className="intro-fade mb-6">{breadcrumb}</div>}
         <p className="intro-fade text-eyebrow text-gold mb-5 flex items-center gap-3">
           <span aria-hidden className="h-px w-10 bg-gold" /> {eyebrow}
         </p>
@@ -64,8 +69,8 @@ export default function PageHero({
             {stats.map((s) => (
               <div key={s.label} className="flex flex-col-reverse gap-1 p-5 md:p-6 bg-ink-deep/30 last:odd:col-span-2 md:last:odd:col-span-1">
                 <dt className="text-small text-text-on-dark/70">{s.label}</dt>
-                <dd className="font-[family-name:var(--font-instrument)] text-[2.5rem] md:text-[3rem] leading-none tabular-nums">
-                  <CountUp value={s.value} suffix={s.suffix} />
+                <dd className={`font-[family-name:var(--font-instrument)] leading-none tabular-nums ${typeof s.value === "number" ? "text-[2.5rem] md:text-[3rem]" : "text-[1.75rem] md:text-[2.1rem] whitespace-nowrap"}`}>
+                  {typeof s.value === "number" ? <CountUp value={s.value} suffix={s.suffix} /> : s.value}
                 </dd>
               </div>
             ))}

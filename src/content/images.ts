@@ -31,4 +31,8 @@ export const PHOTOS = {
 
 export type PhotoKey = keyof typeof PHOTOS;
 
-export const unsplashSrc = (p: SitePhoto) => `https://images.unsplash.com/photo-${p.id}`;
+/**
+ * Asks Unsplash for a 2400px JPEG rather than the original (often 5 MB or more), so the image
+ * optimizer fetches about a tenth as much and never times out on a slow first request.
+ */
+export const unsplashSrc = (p: SitePhoto) => `https://images.unsplash.com/photo-${p.id}?w=2400&q=80&fm=jpg&fit=max`;
