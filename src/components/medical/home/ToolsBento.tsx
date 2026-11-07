@@ -6,13 +6,7 @@ import Photo from "@/components/motion/Photo";
 import SplitWords from "@/components/motion/SplitWords";
 import CountUp from "@/components/motion/CountUp";
 import type { PhotoKey } from "@/content/images";
-
-const LABELS = [
-  // Wording follows CONFIDENCE_THRESHOLDS in src/lib/medical/confidence.ts.
-  { name: "Safe", tone: "bg-safe", text: "Your rank is at least 15% better than the closing rank." },
-  { name: "Moderate", tone: "bg-moderate", text: "Near the closing rank: up to 15% better or 10% past it." },
-  { name: "Ambitious", tone: "bg-ambitious", text: "10 to 35% past the closing rank. Worth a place in your list." },
-];
+import { LABEL_COPY } from "@/content/labels";
 
 function PhotoTile({
   href,
@@ -94,7 +88,7 @@ export default function ToolsBento() {
             <span className="relative z-[2] block">
               <span className="block text-display max-w-xl">Your rank against every college&apos;s {meta.cutoffYears.join(" and ")} closing ranks.</span>
               <span className="mt-10 grid gap-3 sm:grid-cols-3">
-                {LABELS.map((label, i) => (
+                {LABEL_COPY.map((label, i) => (
                   <span
                     key={label.name}
                     data-reveal="up"

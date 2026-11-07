@@ -13,8 +13,8 @@ export default function SaveToShortlistButton({ entry, compact = false }: { entr
       onClick={() => toggle(entry)}
       aria-pressed={saved}
       aria-label={saved ? `Saved ${entry.name}: remove from your shortlist` : `Save ${entry.name} to your shortlist`}
-      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-small font-semibold transition-colors ${
-        saved ? "border-ink bg-ink text-text-on-dark" : "border-hairline bg-paper-bright text-ink hover:border-border-strong"
+      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-small font-semibold transition-[background-color,border-color,color,transform] duration-300 active:scale-95 ${
+        saved ? "border-ink bg-ink text-text-on-dark shadow-[0_6px_16px_-8px_rgba(8,26,36,0.7)]" : "border-hairline bg-paper-bright text-ink hover:border-border-strong"
       }`}
     >
       {saved ? <BookmarkCheck className="w-4 h-4 text-gold" aria-hidden /> : <Bookmark className="w-4 h-4" aria-hidden />}

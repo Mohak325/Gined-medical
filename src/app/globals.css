@@ -412,4 +412,74 @@
   @keyframes intro-fade { from { opacity: 0; } }
   @keyframes split-in { from { transform: translateY(105%); } }
   @keyframes split-in-intro { from { transform: translateY(45%); opacity: 0.25; } }
+  /* With motion off, intro content is simply there: no start delay holding it hidden. */
+  @media (prefers-reduced-motion: reduce) {
+    .intro, .intro-scale, .intro-fade, [data-split-intro] .split-word > span { animation: none !important; }
+  }
+
+  /* A range slider for dark panels. --fill is how far along the thumb sits (0% to 100%). */
+  .range-premium { -webkit-appearance: none; appearance: none; width: 100%; height: 32px; background: transparent; cursor: pointer; }
+  .range-premium::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--gold) 0 var(--fill, 50%), rgba(255, 255, 255, 0.14) var(--fill, 50%) 100%);
+  }
+  .range-premium::-moz-range-track { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.14); }
+  .range-premium::-moz-range-progress { height: 6px; border-radius: 999px; background: var(--gold); }
+  .range-premium::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background: var(--paper-bright);
+    border: 6px solid var(--gold);
+    box-shadow: 0 0 0 6px rgba(201, 162, 75, 0.18), 0 8px 20px -6px rgba(0, 0, 0, 0.6);
+    transition: transform 250ms var(--ease-reveal), box-shadow 250ms ease;
+  }
+  .range-premium::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--paper-bright);
+    border: 6px solid var(--gold);
+    box-shadow: 0 0 0 6px rgba(201, 162, 75, 0.18), 0 8px 20px -6px rgba(0, 0, 0, 0.6);
+  }
+  .range-premium:hover::-webkit-slider-thumb,
+  .range-premium:active::-webkit-slider-thumb { transform: scale(1.12); box-shadow: 0 0 0 10px rgba(201, 162, 75, 0.22), 0 8px 20px -6px rgba(0, 0, 0, 0.6); }
+  .range-premium:focus-visible { outline: none; }
+  .range-premium:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--ink-deep), 0 0 0 6px var(--paper-bright); }
+  .range-premium:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--ink-deep), 0 0 0 6px var(--paper-bright); }
+
+  /* Bars that grow with transform only: set --s (0 to 1) for length and --o for offset. */
+  .bar-fill {
+    position: absolute;
+    inset: 0;
+    transform-origin: left center;
+    transform: translateX(calc(var(--o, 0) * 100%)) scaleX(var(--s, 1));
+    transition: transform 900ms var(--ease-reveal);
+    transition-delay: var(--bar-delay, 0ms);
+  }
+  .bar-dot {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transform: translateX(calc(var(--s, 0) * 100%));
+    transition: transform 700ms var(--ease-reveal);
+  }
+  /* Inside a card that hasn't been revealed yet, bars start empty and grow in with it. */
+  @media (prefers-reduced-motion: no-preference) {
+    html.motion-ready [data-reveal]:not([data-in]) .bar-fill { transform: translateX(calc(var(--o, 0) * 100%)) scaleX(0); }
+    html.motion-ready [data-reveal]:not([data-in]) .bar-dot { transform: translateX(0); }
+  }
+
+  /* Loading placeholder with a soft light sweep. */
+  .skeleton { position: relative; overflow: hidden; background: color-mix(in oklab, var(--paper-dim) 70%, var(--paper-bright)); }
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    animation: shimmer 1.6s ease-in-out infinite;
+  }
 }

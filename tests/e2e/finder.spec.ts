@@ -11,7 +11,7 @@ test("the homepage finder opens results with quota tabs and labelled colleges", 
 
 test("the what-if slider relabels without a new search", async ({ page }) => {
   await page.goto("/medical/results?track=ug&rank=25000&quota=aiq&category=general");
-  const safe = page.locator("p.text-safe").first();
+  const safe = page.locator('[data-count="safe"]');
   await expect(safe).toHaveText("0");
   await page.getByLabel(/What if my rank were/).fill("14000");
   await expect(safe).not.toHaveText("0");

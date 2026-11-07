@@ -11,7 +11,7 @@ import { ArrowRight } from "lucide-react";
 import { track as trackEvent } from "@vercel/analytics";
 
 interface ChancesCalculatorFormProps {
-  /** hero: the homepage card, which supplies its own heading; landing: a standalone card; results: the compact bar above results. */
+  /** hero: the homepage card, which supplies its own heading; landing: a standalone card; results: the compact bar in the results hero (its card comes from the page). */
   mode: "hero" | "landing" | "results";
 }
 
@@ -100,12 +100,12 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
   const isHero = mode === "hero";
   const isLanding = mode === "landing";
-  const fieldSpan = isHero ? "" : isLanding ? "lg:col-span-4" : "lg:col-span-1";
+  const fieldSpan = isHero ? "" : isLanding ? "lg:col-span-4" : "lg:flex-1 lg:min-w-0";
 
   return (
     <form 
       onSubmit={handleSubmit}
-      className={isHero ? "" : `bg-paper border border-hairline rounded-[var(--radius-md)] ${isLanding ? "p-6 md:p-10 shadow-card" : "p-4 md:p-6"}`}
+      className={isLanding ? "bg-paper border border-hairline rounded-[var(--radius-md)] p-6 md:p-10 shadow-card" : ""}
     >
       {isLanding && (
         <div className="mb-8">
@@ -116,7 +116,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         </div>
       )}
 
-      <div className={`grid ${isHero ? "gap-4 sm:grid-cols-2" : `gap-6 ${isLanding ? "md:grid-cols-2 lg:grid-cols-12" : "md:grid-cols-2 lg:grid-cols-5 items-end"}`}`}>
+      <div className={`grid ${isHero ? "gap-4 sm:grid-cols-2" : `gap-6 ${isLanding ? "md:grid-cols-2 lg:grid-cols-12" : "md:grid-cols-2 lg:flex lg:gap-4 items-end"}`}`}>
         
         {/* Rank Input */}
         <div className={`${fieldSpan}`}>
@@ -289,7 +289,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         )}
 
         {/* Submit */}
-        <div className={isHero ? "sm:col-span-2 pt-1" : isLanding ? "lg:col-span-4 flex items-end" : "lg:col-span-1"}>
+        <div className={isHero ? "sm:col-span-2 pt-1" : isLanding ? "lg:col-span-4 flex items-end" : "lg:w-44 lg:shrink-0"}>
           <button
             type="submit"
             className="w-full h-[50px] inline-flex items-center justify-center gap-2 bg-ink text-gold font-semibold text-body rounded-[var(--radius-sm)] hover:bg-ink-deep hover:text-gold-deep transition-colors"
