@@ -38,3 +38,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Booking requests
 
 The booking form sends each request as a JSON POST to the webhook in `LEADS_WEBHOOK_URL`, set in `.env.local` and in the Vercel project settings. If it is missing or the webhook fails, the form shows an error instead of confirming the request.
+
+Each booking arrives in two stages with the same `leadId`: `contact` (name and phone) and `details` (rank, category, quota, state, package, message, and `shortlist` when sent from the shortlist page).
+
+## Site address
+
+Canonical links, the sitemap and share images use `NEXT_PUBLIC_SITE_URL` if set, otherwise the Vercel production domain, otherwise `https://gined.in`.
+
+## Browser tests
+
+The tests in `tests/e2e/` cover the College Finder, shortlist, directory, college pages and booking, and run an accessibility check (axe, WCAG 2.2 AA) on every main page. Booking tests use a local stand-in webhook, never the real sheet.
+
+```bash
+npm run build
+npm run test:e2e
+```
+
+They use the installed Chrome. Set `PW_CHANNEL=msedge` to use Edge, or run `npx playwright install chromium` and set `PW_CHANNEL=chromium`.

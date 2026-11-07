@@ -10,6 +10,9 @@ import meta from "@/data/meta.json";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/site";
+import { stateByCode } from "@/lib/medical/states";
 import CollegeCover from "@/components/medical/shared/CollegeCover";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
 import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
@@ -25,6 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!college) return {};
   const close = college.aiqClose ? ` ${meta.cutoffYear} All India Round 1 closing rank ${formatRank(college.aiqClose)}.` : "";
   return {
+    alternates: { canonical: `/medical/college/${college.id}` },
     title: `${college.name} — cutoffs, seats and fees | gined.in`,
     description: `${college.type} medical college in ${college.city}, ${college.state}. ${college.mbbsSeats ? `${college.mbbsSeats} MBBS seats.` : ""}${close}`,
   };
@@ -50,8 +54,34 @@ export default async function CollegeDetailPage({ params }: Params) {
   const similar = similarColleges(collegeId);
   const fee = college.feeMin ? (college.feeMin === college.feeMax ? formatCurrencyShort(college.feeMin) : `${formatCurrencyShort(college.feeMin)}–${formatCurrencyShort(college.feeMax)}`) : "Not published";
 
+  const pageUrl = `${SITE_URL}/medical/college/${college.id}`;
+  const statePage = stateByCode(college.stateCode);
+
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollegeOrUniversity",
+              name: college.name,
+              url: pageUrl,
+              ...(college.website ? { sameAs: [college.website] } : {}),
+              address: { "@type": "PostalAddress", addressLocality: college.city, addressRegion: college.state, addressCountry: "IN" },
+              ...(college.established ? { foundingDate: String(college.established) } : {}),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Colleges", item: `${SITE_URL}/medical/colleges` },
+                ...(statePage ? [{ "@type": "ListItem", position: 2, name: college.state, item: `${SITE_URL}/medical/state/${statePage.slug}` }] : []),
+                { "@type": "ListItem", position: statePage ? 3 : 2, name: college.name, item: pageUrl },
+              ],
+            },
+          ],
+        }}
+      />
       <SiteNavbar />
       <main className="bg-paper min-h-screen">
         {/* Hero */}
@@ -62,7 +92,7 @@ export default async function CollegeDetailPage({ params }: Params) {
             <nav aria-label="Breadcrumb" className="text-small text-text-on-dark/60">
               <Link href="/medical/colleges" className="hover:text-text-on-dark">Colleges</Link>
               <span aria-hidden> / </span>
-              <Link href={`/medical/colleges?state=${college.stateCode}`} className="hover:text-text-on-dark">{college.state}</Link>
+              <Link href={statePage ? `/medical/state/${statePage.slug}` : `/medical/colleges?state=${college.stateCode}`} className="hover:text-text-on-dark">{college.state}</Link>
             </nav>
             <h1 className="text-display mt-4 max-w-4xl">{college.name}</h1>
             <p className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-small text-text-on-dark/75">

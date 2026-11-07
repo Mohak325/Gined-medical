@@ -5,8 +5,7 @@
    Import order matters: tokens → Tailwind → animations
    ═══════════════════════════════════════════════════════ */
 
-/* Switzer — Fontshare. Weights: 400, 500, 600, 700 */
-@import url("https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap");
+/* Switzer (Fontshare, weights 400-700) is linked from the root layout's <head>. */
 
 @import "../styles/tokens.css";
 @import "tailwindcss";

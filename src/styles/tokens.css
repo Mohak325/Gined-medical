@@ -18,13 +18,17 @@
   --gold-deep:     #8A6B22;  /* Gold for text on paper — passes AA */
   --gold-glow:     rgba(201, 162, 75, 0.18);
   --text:          #2B2B2B;
-  --text-muted:    #6E6A60;
+  --text-muted:    #5F5B52;  /* 4.5:1 or better on every paper tone */
   --text-on-dark:  #F2EEE4;
   --border:        #E4E0D4;
   --border-strong: #CFC8B5;
 
   /* ── Data Semantics (§3.1.2) — meaning-carrying, never decorative ── */
   --safe:             #1F7A5C;
+  /* Darker label text for tinted badges, so small text keeps 4.5:1 */
+  --safe-ink:         #17614A;
+  --moderate-ink:     #7A5C17;
+  --ambitious-ink:    #973B20;
   --moderate:         #C9A24B;
   --ambitious:        #B5482A;
   --trend-tightened:  #B5482A;

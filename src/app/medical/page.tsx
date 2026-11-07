@@ -10,10 +10,26 @@ import WhyGined from "@/components/medical/home/WhyGined";
 import Counsellors from "@/components/medical/home/Counsellors";
 import PackagesPreview from "@/components/medical/home/PackagesPreview";
 import HomeFAQ from "@/components/medical/home/HomeFAQ";
+import JsonLd from "@/components/JsonLd";
+import faqData from "@/content/faq.ug.json";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export default function MedicalLandingPage() {
   return (
     <div className="bg-background">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            { "@type": "Organization", "@id": `${SITE_URL}/#org`, name: SITE_NAME, url: `${SITE_URL}/medical` },
+            { "@type": "WebSite", name: SITE_NAME, url: SITE_URL, publisher: { "@id": `${SITE_URL}/#org` } },
+            {
+              "@type": "FAQPage",
+              mainEntity: faqData.questions.map((q) => ({ "@type": "Question", name: q.question, acceptedAnswer: { "@type": "Answer", text: q.answer } })),
+            },
+          ],
+        }}
+      />
       <SiteNavbar />
       <main>
         <HomeHero />

@@ -58,7 +58,7 @@ export function CalendarStrip() {
       <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10 py-4 flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
         <p className="flex items-center gap-2 text-small font-semibold shrink-0">
           <CalendarDays className="w-4 h-4 text-gold" aria-hidden /> Coming up
-          {calendar.placeholder && <span className="text-micro uppercase tracking-widest text-gold/80">(sample dates)</span>}
+          {calendar.placeholder && <span className="text-micro uppercase tracking-widest text-gold">(sample dates)</span>}
         </p>
         <ul className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-small text-text-on-dark/80 min-w-0">
           {upcoming.map((e) => (

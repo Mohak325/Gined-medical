@@ -97,10 +97,10 @@ export default function SeatMatrixClient() {
 
           <div className="space-y-6">
             <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Search</label>
+              <label htmlFor="sm-search" className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Search</label>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted group-focus-within:text-gold transition-colors" />
-                <input 
+                <input id="sm-search" 
                   type="text" 
                   placeholder="College or City..."
                   className="w-full pl-9 pr-3 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all placeholder:text-text-muted/50 shadow-inner"
@@ -111,9 +111,9 @@ export default function SeatMatrixClient() {
             </div>
 
             <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Quota</label>
+              <label htmlFor="sm-quota" className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Quota</label>
               <div className="relative">
-                <select
+                <select id="sm-quota"
                   className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
                   value={params.quota}
                   onChange={(e) => updateQuery({ quota: e.target.value })}
@@ -131,9 +131,9 @@ export default function SeatMatrixClient() {
             </div>
 
             <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">State</label>
+              <label htmlFor="sm-state" className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">State</label>
               <div className="relative">
-                <select 
+                <select id="sm-state" 
                   className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
                   value={params.state || ""}
                   onChange={(e) => updateQuery({ state: e.target.value })}
@@ -161,7 +161,7 @@ export default function SeatMatrixClient() {
                 <div className="w-3 h-3 rounded-full border-2 border-gold border-t-transparent animate-spin" /> Fetching allocations...
               </span>
             ) : (
-              <span>Found <strong className="text-gold font-bold">{seats.length.toLocaleString("en-IN")}</strong> college and course entries</span>
+              <span>Found <strong className="text-gold-deep font-bold">{seats.length.toLocaleString("en-IN")}</strong> college and course entries</span>
             )}
           </div>
           <button type="button" onClick={() => setFiltersOpen(open => !open)} aria-expanded={filtersOpen} className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform w-full sm:w-auto">
@@ -180,7 +180,7 @@ export default function SeatMatrixClient() {
               {/* Summary Metrics Bar */}
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="bg-paper-bright border border-hairline rounded-[var(--radius-md)] p-4 shadow-sm flex flex-col items-center text-center justify-center hover:border-gold/30 transition-colors">
-                  <div className="text-h3 font-bold text-gold mb-1">
+                  <div className="text-h3 font-bold text-gold-deep mb-1">
                     {seats.reduce((sum, s) => sum + s.seats, 0).toLocaleString("en-IN")}
                   </div>
                   <div className="text-micro uppercase tracking-wider text-text-muted">Total Seats</div>

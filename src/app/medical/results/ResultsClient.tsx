@@ -22,7 +22,7 @@ const PAGE_SIZE = 25;
 const QUOTA_NAMES: Record<FinderQuery["quota"], string> = { aiq: "All India", state: "State quota", deemed: "Deemed", central: "Central" };
 const TILE_TONES = {
   safe: "text-safe",
-  moderate: "text-moderate",
+  moderate: "text-gold-deep",
   ambitious: "text-ambitious",
 } as const;
 

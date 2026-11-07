@@ -28,12 +28,13 @@ export default function StateTileMap({
 }) {
   const max = Math.max(1, ...Object.values(counts));
   return (
-    <div className="grid grid-cols-8 gap-1" role="group" aria-label="Filter by state">
+    <div className="grid grid-cols-8 gap-0.5" role="group" aria-label="Filter by state">
       {Object.entries(TILES).map(([code, [col, row]]) => {
         const n = counts[code] ?? 0;
         const active = selected === code;
-        // Shade by how many colleges the state has, on a gentle curve so small counts still show.
-        const strength = n === 0 ? 0 : 0.12 + 0.6 * Math.sqrt(n / max);
+        // Four shades by how many colleges the state has; each keeps its text at 4.5:1 or better.
+        const share = Math.sqrt(n / max);
+        const shade = n === 0 ? "" : share > 0.7 ? "bg-ink text-text-on-dark" : share > 0.45 ? "bg-[#2E5262] text-text-on-dark" : share > 0.25 ? "bg-[#B9C7CC] text-ink" : "bg-[#DCE4E6] text-ink";
         return (
           <button
             key={code}
@@ -42,17 +43,17 @@ export default function StateTileMap({
             onClick={() => onSelect(active ? undefined : code)}
             aria-pressed={active}
             title={`${names[code] ?? code}: ${n} college${n === 1 ? "" : "s"}`}
-            style={{ gridColumnStart: col + 1, gridRowStart: row + 1, ...(active || n === 0 ? {} : { backgroundColor: `rgba(15, 46, 61, ${strength})` }) }}
-            className={`aspect-square rounded-[4px] text-[10px] font-semibold leading-none flex flex-col items-center justify-center transition-[outline-color] outline outline-2 outline-transparent ${
+            style={{ gridColumnStart: col + 1, gridRowStart: row + 1 }}
+            className={`aspect-square min-w-6 rounded-[4px] text-[10px] font-semibold leading-none flex flex-col items-center justify-center transition-[outline-color] outline outline-2 outline-transparent ${
               active
                 ? "bg-gold text-ink outline-ink"
                 : n === 0
-                  ? "bg-paper-dim text-text-muted/50 cursor-not-allowed"
-                  : `${strength > 0.45 ? "text-text-on-dark" : "text-ink"} hover:outline-gold`
+                  ? "bg-paper-dim text-text-muted cursor-not-allowed"
+                  : `${shade} hover:outline-gold`
             }`}
           >
             {code}
-            {n > 0 && <span className="text-[9px] font-normal opacity-80 tabular-nums">{n}</span>}
+            {n > 0 && <span className="text-[9px] font-normal tabular-nums">{n}</span>}
           </button>
         );
       })}
