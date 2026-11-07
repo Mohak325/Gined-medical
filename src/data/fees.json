@@ -1040,6 +1040,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in005p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in005p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in006p3",
     "course": "MBBS",
     "seatType": "government",
@@ -1089,6 +1109,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in009p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in009p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in011g1",
     "course": "MBBS",
     "seatType": "government",
@@ -1127,6 +1167,16 @@
     "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
     "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
     "state": "TG"
+  },
+  {
+    "collegeId": "ug_in014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 681819,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
   },
   {
     "collegeId": "ug_in015p3",
@@ -1179,6 +1229,16 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in018p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 56330,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in019p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -1216,6 +1276,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in021p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in021p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -1535,6 +1615,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in040p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in040p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in041p3",
     "course": "MBBS",
     "seatType": "government",
@@ -1595,6 +1695,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in043p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in043p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in044g1",
     "course": "MBBS",
     "seatType": "government",
@@ -1612,6 +1732,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in044p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in044p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -1702,6 +1842,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in048p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in048p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -2005,6 +2165,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in066p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in066p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in067g1",
     "course": "MBBS",
     "seatType": "government",
@@ -2033,6 +2213,16 @@
     "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
     "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
     "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in069p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 796733,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
   },
   {
     "collegeId": "ug_in070g1",
@@ -2281,6 +2471,16 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_in086g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
     "collegeId": "ug_in087g1",
     "course": "MBBS",
     "seatType": "government",
@@ -2298,6 +2498,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in087p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in087p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -2351,6 +2571,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in089p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in089p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in090g1",
     "course": "MBBS",
     "seatType": "government",
@@ -2368,6 +2608,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in091p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1620000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in091p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -2401,6 +2661,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in093p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in093p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in095p3",
     "course": "MBBS",
     "seatType": "government",
@@ -2408,6 +2688,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in095p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in095p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -2441,6 +2741,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_in097p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in097p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in099p3",
     "course": "MBBS",
     "seatType": "private",
@@ -2458,6 +2778,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in101p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in101p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -4659,6 +4999,576 @@
     "state": "KL"
   },
   {
+    "collegeId": "ug_mh001p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 752211,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh002p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1024796,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh003g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh003p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1029152,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh006g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh010g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh010p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 793777,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh011p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 810345,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh012g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh012p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 690583,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh014p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1135371,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh015p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 701818,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh017g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh017p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 876242,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh018g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh019g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh019p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 981366,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh020g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh020p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 847534,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh021g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh022g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh023g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh024g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh025g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh026g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh027g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh028g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh028p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 777273,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh029g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh030g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh030p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1076755,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh031g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh032g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh033g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh033p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 694546,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh034g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh034p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1159556,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh035g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh035p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 830000,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh036g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh036p3",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 1557273,
+    "year": 2026,
+    "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
+    "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh037g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh039g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh045g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh046g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh047g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh048g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh049g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh051g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 152100,
+    "year": 2025,
+    "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
+    "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
     "collegeId": "ug_mp001p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -6336,6 +7246,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn002p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1620000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn002p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn003g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6353,6 +7283,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn003p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn003p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -6396,6 +7346,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn006p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1620000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn006p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn007g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6413,6 +7383,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn007p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn007p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -6436,6 +7426,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn008p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn008p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn009g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6453,6 +7463,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn009p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn009p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -6476,6 +7506,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn010p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn010p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn011g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6496,6 +7546,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn011p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1620000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn011p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn012g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6513,6 +7583,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn012p3",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1620000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn012p3",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
@@ -6576,6 +7666,26 @@
     "state": "TN"
   },
   {
+    "collegeId": "ug_tn018g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn018g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_tn019g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6583,6 +7693,26 @@
     "year": 2026,
     "source": "Tamil Nadu's MBBS/BDS prospectus 2026-27",
     "sourceUrl": "https://tnmedicalselection.net/news/30062026003157.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn019g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1500000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_tn019g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2700000,
+    "year": 2026,
+    "source": "Tamil Nadu's management quota prospectus 2026-27",
+    "sourceUrl": "https://tnmedicalselection.net/news/28062026235144.pdf",
     "state": "TN"
   },
   {
