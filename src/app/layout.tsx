@@ -1,25 +1,27 @@
 import type { Metadata } from "next";
+import { Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
+// Headline serif; interface text stays in Switzer (loaded in globals.css).
+const serif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "gined.in — Medical (NEET) Counselling",
+  title: "gined.in — NEET Medical Counselling",
   description:
-    "Find which MBBS and BDS colleges you can realistically get into based on your NEET rank. Cutoff-based shortlisting, seat counts, and 1-to-1 counselling.",
+    "See which MBBS and BDS colleges your NEET rank can reach, from official 2025 and 2026 cutoffs, seat counts and published fees. Then plan choice filling with a counsellor.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
-        {/* Preload the two above-the-fold Switzer weights */}
-        <link
-          rel="preload"
-          href="https://api.fontshare.com/v2/css?f[]=switzer@700&display=swap"
-          as="style"
-        />
-      </head>
+    <html lang="en" className={serif.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

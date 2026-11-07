@@ -12,7 +12,7 @@ import ResultsClient from "./ResultsClient";
 export default function ResultsPage() {
   return (
     <>
-      <SiteNavbar variant="solid" />
+      <SiteNavbar />
       
       <main className="pt-24 pb-20 bg-paper min-h-screen">
         <div className="max-w-instrument mx-auto px-6 md:px-12">

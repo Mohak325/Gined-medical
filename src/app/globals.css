@@ -16,6 +16,7 @@
 /* ═══ Tailwind Theme Extension ═══ */
 @theme inline {
   --font-sans: 'Switzer', 'General Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: var(--font-instrument), 'Iowan Old Style', Georgia, serif;
 
   /* Brand colours mapped into Tailwind */
   --color-ink:           var(--ink);
@@ -62,7 +63,7 @@
   /* Radius — two tokens only */
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-md);
+  --radius-lg: var(--radius-lg);
   --radius-xl: var(--radius-md);
 }
 
@@ -89,23 +90,34 @@
 
 /* ═══ Typography Scale (Design §3.2.2) ═══ */
 @layer utilities {
+  /* Headlines use the serif at its single weight; never faux-bold it. */
   .text-display-xl {
-    font-size: clamp(3.5rem, 9vw, 9rem);
-    font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: -0.03em;
-  }
-  .text-display {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    font-weight: 700;
-    line-height: 1.05;
+    font-family: var(--font-instrument), Georgia, serif;
+    font-size: clamp(3.25rem, 8vw, 7rem);
+    font-weight: 400;
+    line-height: 0.98;
     letter-spacing: -0.02em;
   }
-  .text-h1 {
-    font-size: clamp(2rem, 3.5vw, 2.75rem);
-    font-weight: 700;
-    line-height: 1.15;
+  .text-display {
+    font-family: var(--font-instrument), Georgia, serif;
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+    font-weight: 400;
+    line-height: 1.04;
     letter-spacing: -0.015em;
+  }
+  .text-h1 {
+    font-family: var(--font-instrument), Georgia, serif;
+    font-size: clamp(2.125rem, 3.6vw, 3rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .text-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
   }
   .text-h2 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);

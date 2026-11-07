@@ -33,7 +33,7 @@ const sections = [
 export default function PrivacyPage() {
   return (
     <>
-      <SiteNavbar variant="solid" />
+      <SiteNavbar />
       <main className="pt-28 pb-24 bg-paper min-h-screen">
         <div className="max-w-2xl mx-auto px-6">
           <h1 className="text-h1 text-text-main mb-2">Privacy Policy</h1>

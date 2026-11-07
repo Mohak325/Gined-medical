@@ -8,15 +8,22 @@ interface CutoffTrendChartProps {
   cutoffs: CutoffEntry[];
   category: string;
   quota: string;
+  /** One course only: a college's PG specialties share its cutoff list, and mixing them drew a zigzag of unrelated ranks. */
+  course?: string;
 }
 
-export default function CutoffTrendChart({ cutoffs, category, quota }: CutoffTrendChartProps) {
-  // Filter for the specific category and quota
+export default function CutoffTrendChart({ cutoffs, category, quota, course = "MBBS" }: CutoffTrendChartProps) {
+  // One point per year: Round 1 closing rank for this course, category and quota.
   const relevant = useMemo(() => {
-    return cutoffs
-      .filter((c) => c.category === category && c.quota === quota && c.round === 1)
-      .sort((a, b) => a.year - b.year);
-  }, [cutoffs, category, quota]);
+    const byYear = new Map<number, CutoffEntry>();
+    for (const c of cutoffs) {
+      if (c.course !== course || c.category !== category || c.quota !== quota || c.round !== 1) continue;
+      const seen = byYear.get(c.year);
+      // Where a year has several rows (state sub-quotas), show the furthest one the round reached.
+      if (!seen || c.closingRank > seen.closingRank) byYear.set(c.year, c);
+    }
+    return [...byYear.values()].sort((a, b) => a.year - b.year);
+  }, [cutoffs, category, quota, course]);
 
   if (relevant.length < 2) {
     return (
@@ -47,7 +54,7 @@ export default function CutoffTrendChart({ cutoffs, category, quota }: CutoffTre
 
   return (
     <div className="bg-paper border border-hairline rounded-[var(--radius-md)] p-6 overflow-x-auto">
-      <h3 className="text-h4 mb-6 text-text-main">Closing Rank Trend (Round 1)</h3>
+      <h3 className="text-h4 mb-6 text-text-main">{course} closing rank trend (Round 1)</h3>
       <div className="min-w-[400px]">
         <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-auto overflow-visible">
           {/* Axes */}
@@ -63,7 +70,7 @@ export default function CutoffTrendChart({ cutoffs, category, quota }: CutoffTre
           />
 
           {/* Points & Labels */}
-          {points.map((p, i) => (
+          {points.map((p) => (
             <g key={p.year}>
               <circle cx={p.x} cy={p.y} r="5" fill="var(--paper-bright)" stroke="var(--gold)" strokeWidth="2" />
               <text x={p.x} y={height - padding + 20} textAnchor="middle" className="text-micro fill-text-muted">

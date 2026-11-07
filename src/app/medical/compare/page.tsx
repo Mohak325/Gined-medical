@@ -9,7 +9,7 @@ import SiteFooter from "@/components/SiteFooter";
 export default function ComparePage() {
   return (
     <>
-      <SiteNavbar variant="solid" />
+      <SiteNavbar />
       
       <main className="pt-24 pb-32 bg-paper min-h-screen">
         <div className="max-w-ledger mx-auto px-6 md:px-12">

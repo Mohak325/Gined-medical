@@ -48,6 +48,18 @@ export default function SeatMatrixClient() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
+  const updateQuery = useCallback((updates: Record<string, string | null>) => {
+    const current = new URLSearchParams(Array.from(searchParams.entries()));
+    Object.entries(updates).forEach(([key, value]) => {
+      if (value === null || value === "" || value === "all") {
+        current.delete(key);
+      } else {
+        current.set(key, value);
+      }
+    });
+    router.push(`${pathname}?${current.toString()}`);
+  }, [searchParams, pathname, router]);
+
   // Sync track with URL on load
   useEffect(() => {
     if (params.track !== track) {
@@ -68,17 +80,6 @@ export default function SeatMatrixClient() {
     return () => { mounted = false; };
   }, [searchParams, track]);
 
-  const updateQuery = useCallback((updates: Record<string, string | null>) => {
-    const current = new URLSearchParams(Array.from(searchParams.entries()));
-    Object.entries(updates).forEach(([key, value]) => {
-      if (value === null || value === "" || value === "all") {
-        current.delete(key);
-      } else {
-        current.set(key, value);
-      }
-    });
-    router.push(`${pathname}?${current.toString()}`);
-  }, [searchParams, pathname, router]);
 
   const hasFilters = params.state || params.search || params.quota !== "all";
 

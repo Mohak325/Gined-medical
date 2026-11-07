@@ -6,7 +6,7 @@ import BookingForm from "./BookingForm";
 export default function BookPage() {
   return (
     <>
-      <SiteNavbar variant="solid" />
+      <SiteNavbar />
       
       <main className="pt-24 pb-32 bg-paper-bright min-h-screen">
         <div className="max-w-xl mx-auto px-6">
