@@ -36,7 +36,7 @@ export default function AddToCompareButton({
           ? `Remove ${collegeName} from comparison`
           : `Add ${collegeName} to comparison`
       }
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-small font-medium transition-colors duration-[var(--dur-fast)] ${
+      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-small font-semibold transition-colors duration-[var(--dur-fast)] ${
         isSelected
           ? "bg-gold/15 text-gold-deep border border-gold/30"
           : isFull

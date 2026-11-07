@@ -3,6 +3,7 @@ import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
 import HomeHero from "@/components/medical/home/HomeHero";
 import DataStrip from "@/components/medical/home/DataStrip";
+import { CalendarStrip } from "@/components/medical/guide/CounsellingCalendar";
 import ToolsBento from "@/components/medical/home/ToolsBento";
 import HowItWorks from "@/components/medical/home/HowItWorks";
 import WhyGined from "@/components/medical/home/WhyGined";
@@ -16,6 +17,7 @@ export default function MedicalLandingPage() {
       <SiteNavbar />
       <main>
         <HomeHero />
+        <CalendarStrip />
         <DataStrip />
         <ToolsBento />
         <HowItWorks />

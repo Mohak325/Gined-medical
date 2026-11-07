@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import ShortlistNavLink from "./ShortlistNavLink";
 
 export const NAV_LINKS = [
   { label: "College Finder", href: "/medical#finder" },
@@ -65,6 +66,7 @@ export default function SiteNavbar() {
           </div>
 
           <div className="flex items-center gap-2">
+            <ShortlistNavLink onNavigate={() => setMenuOpen(false)} />
             <Link
               href="/medical/book?source=nav"
               className="hidden sm:inline-flex items-center gap-1.5 pl-4 pr-3.5 py-2.5 bg-ink text-text-on-dark font-semibold text-small rounded-full hover:bg-ink-soft transition-colors"

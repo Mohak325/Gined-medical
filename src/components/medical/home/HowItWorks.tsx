@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { FileText } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, FileText } from "lucide-react";
 import roadmap from "@/content/roadmap.ug.json";
 
 /** The 7 counselling steps as a compact stepper: pick a step, read its detail. */
@@ -67,6 +68,9 @@ export default function HowItWorks() {
                 </ul>
               </div>
             )}
+            <Link href="/medical/guide" className="mt-8 inline-flex items-center gap-1.5 text-small font-semibold text-ink underline underline-offset-4 hover:text-gold-deep">
+              Full guide: documents checklist, dates and every state <ArrowUpRight className="w-4 h-4" aria-hidden />
+            </Link>
           </article>
         </div>
       </div>

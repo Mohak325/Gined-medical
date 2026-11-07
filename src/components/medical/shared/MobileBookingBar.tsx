@@ -18,8 +18,8 @@ export default function MobileBookingBar() {
   return (
     <>
       {/* Keeps the footer's last lines clear of the bar. */}
-      <div className="h-20 md:hidden" aria-hidden />
-      <div className="md:hidden fixed inset-x-0 bottom-0 z-[var(--z-sticky)] border-t border-hairline bg-paper/95 backdrop-blur-xl px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-2">
+      <div className="h-20 md:hidden print:hidden" aria-hidden />
+      <div className="md:hidden print:hidden fixed inset-x-0 bottom-0 z-[var(--z-sticky)] border-t border-hairline bg-paper/95 backdrop-blur-xl px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-2">
         <Link
           href="/medical/book?source=mobile-bar"
           className="flex-1 inline-flex items-center justify-center py-3 bg-ink text-text-on-dark font-semibold text-small rounded-full"

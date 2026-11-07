@@ -23,6 +23,8 @@ const LeadSchema = z.object({
   stateCategory: optionalText(20),
   package: optionalText(40),
   message: optionalText(600),
+  /** The student's saved shortlist, one college per line, when they booked from it. */
+  shortlist: optionalText(1600),
   source: optionalText(60),
 });
 
@@ -54,6 +56,7 @@ export async function submitLead(formData: FormData): Promise<LeadResult> {
     stateCategory: field("stateCategory"),
     package: field("package"),
     message: field("message"),
+    shortlist: field("shortlist"),
     source: field("source"),
   });
   if (!parsed.success) return { ok: false, reason: "invalid" };
@@ -74,7 +77,7 @@ export async function submitLead(formData: FormData): Promise<LeadResult> {
         email: lead.email ?? "",
         submittedAt: new Date().toISOString(),
         // Lets chat webhooks such as Slack display the lead without any mapping.
-        text: `New gined.in booking (${lead.stage}): ${lead.name}, ${lead.phone}${lead.rank ? `, rank ${lead.rank}` : ""}${lead.package ? `, package ${lead.package}` : ""}`,
+        text: `New gined.in booking (${lead.stage}): ${lead.name}, ${lead.phone}${lead.rank ? `, rank ${lead.rank}` : ""}${lead.package ? `, package ${lead.package}` : ""}${lead.shortlist ? `, shortlist of ${lead.shortlist.split("\n").length}` : ""}`,
       }),
       signal: AbortSignal.timeout(8000),
     });

@@ -12,6 +12,7 @@ import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
 import CollegeCover from "@/components/medical/shared/CollegeCover";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
+import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
 import CollegeFeesBreakdown from "@/components/medical/college/CollegeFeesBreakdown";
 import CollegeBranchesMatrix from "@/components/medical/college/CollegeBranchesMatrix";
 import CutoffTables from "@/components/medical/college/CutoffTables";
@@ -123,6 +124,10 @@ export default async function CollegeDetailPage({ params }: Params) {
             <div className="lg:sticky lg:top-24 space-y-4">
               <ChancesHere collegeName={college.name} options={options} />
               <div className="rounded-[var(--radius-lg)] border border-hairline bg-paper-bright p-6 space-y-4">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-small font-semibold text-ink">Add to your shortlist</span>
+                  <SaveToShortlistButton entry={{ id: college.id, name: college.name, closing: college.aiqClose, basis: college.aiqClose ? `All India General · ${meta.cutoffYear} R1` : undefined }} />
+                </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-small font-semibold text-ink">Compare with others</span>
                   <AddToCompareButton collegeId={college.id} collegeName={college.name} />

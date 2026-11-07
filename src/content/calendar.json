@@ -1,0 +1,15 @@
+{
+  "_note": "PLACEHOLDER dates until the real counselling schedule is confirmed. While placeholder is true the site labels them as sample dates. Dates are ISO (YYYY-MM-DD); kind is mcc or state.",
+  "placeholder": true,
+  "cycle": "NEET UG 2027",
+  "events": [
+    { "date": "2027-06-14", "title": "NEET UG result", "body": "Download your scorecard and note your All India Rank.", "authority": "NTA", "kind": "mcc" },
+    { "date": "2027-07-08", "title": "MCC Round 1 registration and choice filling opens", "body": "Register, pay the fee and start filling your choice list.", "authority": "MCC", "kind": "mcc" },
+    { "date": "2027-07-15", "title": "MCC Round 1 choice locking closes", "body": "Lock your final order before the deadline, or the last saved list is locked for you.", "authority": "MCC", "kind": "mcc" },
+    { "date": "2027-07-19", "title": "MCC Round 1 result", "body": "See your allotment and decide whether to report, or join and opt for an upgrade.", "authority": "MCC", "kind": "mcc" },
+    { "date": "2027-07-20", "title": "State quota Round 1 registration (most states)", "body": "Each state runs its own schedule. Check your state's counselling portal.", "authority": "State authorities", "kind": "state" },
+    { "date": "2027-08-05", "title": "MCC Round 2 choice filling", "body": "Fresh choices for Round 2. Seats freed in Round 1 come back in.", "authority": "MCC", "kind": "mcc" },
+    { "date": "2027-08-26", "title": "MCC Round 3 choice filling", "body": "The last regular round before the stray vacancy round.", "authority": "MCC", "kind": "mcc" },
+    { "date": "2027-09-15", "title": "MCC stray vacancy round", "body": "Leftover seats are filled. Keep your documents ready.", "authority": "MCC", "kind": "mcc" }
+  ]
+}
