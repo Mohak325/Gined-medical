@@ -23,7 +23,7 @@ export default function CollegesPage() {
             </h1>
             <p className="text-body-large text-text-muted max-w-prose">
               Browse, filter, and compare medical colleges in India. See seat counts,
-              indicative fees, and {meta.cutoffYear} cutoffs where available.
+              official fees, and {meta.cutoffYear} cutoffs where published.
             </p>
           </header>
 

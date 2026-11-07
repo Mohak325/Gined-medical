@@ -42,9 +42,6 @@ export interface CollegeCourse {
   track: "ug" | "pg";
   course: string;
   officialFees: OfficialFee[]; // Published fees by seat type, newest year only
-  fees: number;           // Per year, estimated from college type
-  bondYears: number;      // 0 if none
-  bondPenalty: number;    // 0 if none
   totalSeats: number;
 }
 
