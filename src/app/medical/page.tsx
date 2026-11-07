@@ -8,6 +8,7 @@ import ToolsBento from "@/components/medical/home/ToolsBento";
 import HowItWorks from "@/components/medical/home/HowItWorks";
 import WhyGined from "@/components/medical/home/WhyGined";
 import Counsellors from "@/components/medical/home/Counsellors";
+import PhotoBand from "@/components/medical/home/PhotoBand";
 import PackagesPreview from "@/components/medical/home/PackagesPreview";
 import HomeFAQ from "@/components/medical/home/HomeFAQ";
 import JsonLd from "@/components/JsonLd";
@@ -37,6 +38,7 @@ export default function MedicalLandingPage() {
         <DataStrip />
         <ToolsBento />
         <HowItWorks />
+        <PhotoBand />
         <WhyGined />
         <Counsellors />
         <PackagesPreview />

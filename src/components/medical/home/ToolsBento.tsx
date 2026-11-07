@@ -1,6 +1,11 @@
 import Link from "next/link";
-import { ArrowUpRight, Building2, Columns3, IndianRupee, LayoutGrid } from "lucide-react";
+import type { CSSProperties } from "react";
+import { ArrowUpRight } from "lucide-react";
 import meta from "@/data/meta.json";
+import Photo from "@/components/motion/Photo";
+import SplitWords from "@/components/motion/SplitWords";
+import CountUp from "@/components/motion/CountUp";
+import type { PhotoKey } from "@/content/images";
 
 const LABELS = [
   // Wording follows CONFIDENCE_THRESHOLDS in src/lib/medical/confidence.ts.
@@ -9,107 +14,108 @@ const LABELS = [
   { name: "Ambitious", tone: "bg-ambitious", text: "10 to 35% past the closing rank. Worth a place in your list." },
 ];
 
-function Tile({
+function PhotoTile({
   href,
   className = "",
-  icon: Icon,
+  photo,
+  eyebrow,
   title,
   body,
   figure,
+  delay,
 }: {
   href: string;
   className?: string;
-  icon: typeof Building2;
+  photo: PhotoKey;
+  eyebrow: string;
   title: string;
   body: string;
-  figure?: string;
+  figure?: number;
+  delay: number;
 }) {
   return (
     <Link
       href={href}
-      className={`group relative flex flex-col justify-between gap-8 rounded-[var(--radius-lg)] border border-hairline bg-paper-bright p-6 md:p-7 transition-[border-color,transform] duration-[var(--dur-base)] hover:-translate-y-0.5 hover:border-border-strong ${className}`}
+      data-spotlight=""
+      data-reveal="up"
+      style={{ "--delay": `${delay}ms`, "--spot": "rgba(201,162,75,0.22)" } as CSSProperties}
+      className={`group relative min-h-[300px] overflow-hidden rounded-[24px] bg-ink-deep text-text-on-dark flex flex-col justify-end p-6 md:p-7 transition-[transform,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] ${className}`}
     >
-      <div className="flex items-start justify-between">
-        <span className="w-10 h-10 rounded-full bg-paper-dim flex items-center justify-center">
-          <Icon className="w-5 h-5 text-ink" aria-hidden />
-        </span>
-        <ArrowUpRight className="w-5 h-5 text-text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />
-      </div>
-      <div>
-        {figure && <p className="text-h1 text-ink tabular-nums mb-1">{figure}</p>}
-        <h3 className="text-h4 text-ink">{title}</h3>
-        <p className="text-small text-text-muted mt-1">{body}</p>
-      </div>
+      <span className="absolute inset-0 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]">
+        <Photo name={photo} overlay="tile" decorative sizes="(min-width: 1024px) 33vw, 100vw" />
+      </span>
+      <span className="absolute top-5 right-5 z-[2] w-10 h-10 rounded-full surface-ink-glass flex items-center justify-center transition-transform duration-500 group-hover:rotate-45" aria-hidden>
+        <ArrowUpRight className="w-5 h-5 text-gold" />
+      </span>
+      <span className="relative z-[2]">
+        <span className="block text-eyebrow text-gold mb-3">{eyebrow}</span>
+        {figure !== undefined && (
+          <span className="block font-[family-name:var(--font-instrument)] text-[3rem] leading-none tabular-nums mb-2">
+            <CountUp value={figure} />
+          </span>
+        )}
+        <span className="block text-h3">{title}</span>
+        <span className="block text-small text-text-on-dark/75 mt-1 max-w-sm">{body}</span>
+      </span>
     </Link>
   );
 }
 
 export default function ToolsBento() {
   return (
-    <section id="tools" className="py-20 md:py-28">
+    <section id="tools" className="py-24 md:py-32 scroll-mt-16">
       <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
-        <header className="max-w-2xl mb-10 md:mb-14">
-          <p className="text-eyebrow text-gold-deep mb-4">Free tools</p>
-          <h2 className="text-display text-ink">Everything you need before choice filling.</h2>
+        <header className="grid gap-6 lg:grid-cols-12 lg:items-end mb-12 md:mb-16">
+          <div className="lg:col-span-8">
+            <p className="text-eyebrow text-gold-deep mb-4" data-reveal="fade">Free tools</p>
+            <SplitWords text="Everything you need before choice filling." className="text-display text-ink" />
+          </div>
+          <p className="lg:col-span-4 text-body-large text-text-muted" data-reveal="up" style={{ "--delay": "200ms" } as CSSProperties}>
+            Built on official counselling results and fee documents, so every number has a source.
+          </p>
         </header>
 
-        <div className="grid gap-4 md:grid-cols-6 md:auto-rows-[minmax(200px,auto)]">
+        <div className="grid gap-4 md:grid-cols-6 md:auto-rows-[minmax(280px,auto)]">
           <Link
             href="/medical#finder"
-            className="group md:col-span-4 md:row-span-2 relative overflow-hidden rounded-[var(--radius-lg)] bg-ink text-text-on-dark p-7 md:p-10 flex flex-col justify-between gap-10"
+            data-spotlight=""
+            data-reveal="up"
+            style={{ "--spot": "rgba(201,162,75,0.2)" } as CSSProperties}
+            className="group md:col-span-4 md:row-span-2 relative overflow-hidden rounded-[24px] bg-ink text-text-on-dark p-7 md:p-10 flex flex-col justify-between gap-10 grain"
           >
-            <div aria-hidden className="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-gold/15 blur-3xl" />
-            <div className="relative flex items-start justify-between">
-              <p className="text-eyebrow text-gold">College Finder</p>
-              <ArrowUpRight className="w-6 h-6 text-gold transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />
-            </div>
-            <div className="relative">
-              <h3 className="text-h1 max-w-lg">Your rank against every college&apos;s {meta.cutoffYears.join(" and ")} closing ranks.</h3>
-              <ul className="mt-8 grid gap-3 sm:grid-cols-3">
-                {LABELS.map((label) => (
-                  <li key={label.name} className="rounded-[var(--radius-md)] bg-white/[0.06] border border-white/10 p-4">
+            <span aria-hidden className="absolute -right-32 -top-32 w-[28rem] h-[28rem] rounded-full bg-gold/15 blur-3xl transition-transform duration-[1500ms] group-hover:scale-125" />
+            <span aria-hidden className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,1)_1px,transparent_1px)] [background-size:48px_48px]" />
+            <span className="relative z-[2] flex items-start justify-between">
+              <span className="text-eyebrow text-gold">College Finder</span>
+              <span className="w-11 h-11 rounded-full bg-gold text-ink flex items-center justify-center transition-transform duration-500 group-hover:rotate-45" aria-hidden>
+                <ArrowUpRight className="w-5 h-5" />
+              </span>
+            </span>
+            <span className="relative z-[2] block">
+              <span className="block text-display max-w-xl">Your rank against every college&apos;s {meta.cutoffYears.join(" and ")} closing ranks.</span>
+              <span className="mt-10 grid gap-3 sm:grid-cols-3">
+                {LABELS.map((label, i) => (
+                  <span
+                    key={label.name}
+                    data-reveal="up"
+                    style={{ "--delay": `${300 + i * 120}ms` } as CSSProperties}
+                    className="block rounded-2xl surface-ink-glass p-4 transition-colors group-hover:bg-white/[0.08]"
+                  >
                     <span className="flex items-center gap-2 text-small font-semibold">
-                      <span className={`w-2.5 h-2.5 rounded-full ${label.tone}`} aria-hidden />
+                      <span className={`w-2.5 h-2.5 rounded-full ${label.tone} shadow-[0_0_12px_currentColor]`} aria-hidden />
                       {label.name}
                     </span>
-                    <span className="block text-micro font-normal tracking-normal text-text-on-dark/65 mt-2 leading-relaxed">{label.text}</span>
-                  </li>
+                    <span className="block text-micro font-normal tracking-normal text-text-on-dark/70 mt-2 leading-relaxed">{label.text}</span>
+                  </span>
                 ))}
-              </ul>
-            </div>
+              </span>
+            </span>
           </Link>
 
-          <Tile
-            href="/medical/colleges"
-            className="md:col-span-2"
-            icon={Building2}
-            figure={meta.collegeCount.toLocaleString("en-IN")}
-            title="Colleges directory"
-            body="Search and filter every medical college by state and type."
-          />
-          <Tile
-            href="/medical/seat-matrix"
-            className="md:col-span-2"
-            icon={LayoutGrid}
-            figure={meta.ugSeats.toLocaleString("en-IN")}
-            title="Seat matrix"
-            body={`${meta.seatYear} seats by college, course and quota.`}
-          />
-          <Tile
-            href="/medical/compare"
-            className="md:col-span-3"
-            icon={Columns3}
-            title="Compare colleges"
-            body="Put up to four colleges side by side: cutoffs, seats and fees."
-          />
-          <Tile
-            href="/medical/colleges"
-            className="md:col-span-3"
-            icon={IndianRupee}
-            figure={meta.collegesWithFees.toLocaleString("en-IN")}
-            title="Colleges with official fees"
-            body="Fees taken from counselling bodies' and fee committees' own documents."
-          />
+          <PhotoTile href="/medical/colleges" className="md:col-span-2" photo="microscope" eyebrow="Directory" figure={meta.collegeCount} title="Every medical college" body="Search by state, type and yearly fee." delay={100} />
+          <PhotoTile href="/medical/seat-matrix" className="md:col-span-2" photo="heartModel" eyebrow="Seat matrix" figure={meta.ugSeats} title={`${meta.seatYear} seats`} body="By college, course and quota." delay={200} />
+          <PhotoTile href="/medical/compare" className="md:col-span-3" photo="brainModel" eyebrow="Compare" title="Up to four colleges, side by side" body="Closing ranks, seats and official fees in one table." delay={100} />
+          <PhotoTile href="/medical/guide" className="md:col-span-3" photo="anatomyDrawing" eyebrow="Guide" title="Counselling, start to finish" body="Seven steps, a documents checklist and every state." delay={200} />
         </div>
       </div>
     </section>

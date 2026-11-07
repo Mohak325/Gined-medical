@@ -1,5 +1,7 @@
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import Photo from "@/components/motion/Photo";
+import SplitWords from "@/components/motion/SplitWords";
+import Cta from "@/components/ui/Cta";
+import type { PhotoKey } from "@/content/images";
 
 interface CTABandProps {
   id?: string;
@@ -7,30 +9,23 @@ interface CTABandProps {
   source: string;
   headline?: string;
   compact?: boolean;
+  photo?: PhotoKey;
 }
 
-/** The closing booking band: one component for every placement. */
-export default function CTABand({ id, source, headline = "Your rank is set. Your choice list isn't yet.", compact = false }: CTABandProps) {
+/** The closing booking band: a photo with a slow parallax, a split headline, and two actions. */
+export default function CTABand({ id, source, headline = "Your rank is set. Your choice list isn't yet.", compact = false, photo = "graduation" }: CTABandProps) {
   return (
-    <section id={id} className="px-4 sm:px-6 md:px-10 py-10">
-      <div className={`relative overflow-hidden max-w-marketing mx-auto rounded-[var(--radius-lg)] bg-ink text-text-on-dark ${compact ? "px-6 py-12 md:px-12" : "px-6 py-16 md:px-16 md:py-24"}`}>
-        <div aria-hidden className="absolute -left-20 -bottom-32 w-96 h-96 rounded-full bg-gold/15 blur-3xl" />
-        <div className="relative grid gap-8 lg:grid-cols-12 lg:items-end">
-          <h2 className={`${compact ? "text-h1" : "text-display"} lg:col-span-8`}>{headline}</h2>
-          <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end">
-            <Link
-              href={`/medical/book?source=${source}`}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold text-ink font-semibold rounded-full hover:bg-gold/90 transition-colors"
-            >
-              Book a 1-to-1 session
-              <ArrowUpRight className="w-4 h-4" aria-hidden />
-            </Link>
-            <Link
-              href="/medical#finder"
-              className="inline-flex items-center justify-center px-6 py-3.5 border border-white/20 text-text-on-dark font-semibold rounded-full hover:bg-white/5 transition-colors"
-            >
-              Check my chances first
-            </Link>
+    <section id={id} className="px-3 sm:px-4 py-6 print:hidden">
+      <div className={`relative overflow-hidden max-w-[1400px] mx-auto rounded-[28px] bg-ink-deep text-text-on-dark ${compact ? "min-h-[340px]" : "min-h-[520px]"} flex items-end`}>
+        <Photo name={photo} parallax overlay="left" decorative sizes="(min-width: 1400px) 1400px, 100vw" />
+        <div className={`relative z-[2] w-full px-6 sm:px-10 md:px-16 ${compact ? "py-12" : "py-16 md:py-24"} grid gap-10 lg:grid-cols-12 lg:items-end`}>
+          <div className="lg:col-span-8">
+            <p className="text-eyebrow text-gold mb-5" data-reveal="fade">One conversation away</p>
+            <SplitWords text={headline} className={compact ? "text-h1 md:text-display" : "text-display-xl"} />
+          </div>
+          <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end" data-reveal="up" style={{ ["--delay" as string]: "250ms" }}>
+            <Cta href={`/medical/book?source=${source}`} variant="gold" size="lg">Book a 1-to-1 session</Cta>
+            <Cta href="/medical#finder" variant="glass" size="lg">Check my chances first</Cta>
           </div>
         </div>
       </div>
