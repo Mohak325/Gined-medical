@@ -20,10 +20,26 @@ export interface College {
   address?: string;
   ugSeats?: number;
   pgSeats?: number;
-  hero_image_url: string | null;
+  /** A freely licensed photo from Wikimedia Commons, linked rather than copied (see scripts/data/photos.mjs). */
+  photo?: CollegePhoto | null;
   nirfRanking?: number;
   branches?: string[];
   totalSeats?: number;
+}
+
+export interface CollegePhoto {
+  /** Thumbnail address with {w} for the width; Wikimedia serves only standard widths. */
+  thumb?: string | null;
+  /** The original file, for photos too small to have thumbnails. */
+  src?: string;
+  width: number;
+  height: number;
+  /** Who took it and under what licence: both must be shown next to the photo. */
+  author: string | null;
+  license: string;
+  licenseUrl: string | null;
+  /** The photo's page on Wikimedia Commons. */
+  page: string;
 }
 
 export interface OfficialFee {

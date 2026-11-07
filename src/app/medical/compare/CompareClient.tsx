@@ -7,7 +7,7 @@ import { X, Columns3, Plus, Sparkles } from "lucide-react";
 import type { CollegeSummary } from "@/lib/medical/collegeSummary";
 import { useCompare, COMPARE_MAX } from "@/lib/medical/CompareProvider";
 import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
-import CollegeCover from "@/components/medical/shared/CollegeCover";
+import CollegeImage from "@/components/medical/shared/CollegeImage";
 import EmptyState from "@/components/medical/shared/EmptyState";
 
 type Row = {
@@ -113,7 +113,7 @@ export default function CompareClient({ colleges }: { colleges: CollegeSummary[]
                   <div className="group" data-reveal="up" style={{ "--delay": `${i * 90}ms` } as CSSProperties}>
                     <Link href={`/medical/college/${c.id}`} className="block relative h-24 rounded-[18px] overflow-hidden" tabIndex={-1} aria-hidden>
                       <span className="absolute inset-0 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110">
-                        <CollegeCover id={c.id} type={c.type} stateCode={c.stateCode} established={c.established} className="w-full h-full" />
+                        <CollegeImage college={c} sizes="240px" />
                       </span>
                     </Link>
                     <Link

@@ -6,6 +6,7 @@ const PAGES = [
   "/medical/results?track=ug&rank=25000&quota=aiq&category=general",
   "/medical/colleges",
   "/medical/college/ug_ap001g1",
+  "/medical/college/ug_in002i1",
   "/medical/compare?ids=ug_ap001g1,ug_ka001p3",
   "/medical/seat-matrix",
   "/medical/state/karnataka",

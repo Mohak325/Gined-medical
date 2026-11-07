@@ -171,6 +171,9 @@ const stateSources = [
   ...readJson(path.join(ROOT, "data/raw/states/uk.json")).map((s) => ({ ...s, state: "UK" })),
 ];
 const extras = readJson(path.join(CURATED, "college-extras.json"));
+// Checked Wikimedia Commons photos, from scripts/data/photos.mjs --pick.
+const photoFile = path.join(CURATED, "college-photos.json");
+const photos = fs.existsSync(photoFile) ? readJson(photoFile) : {};
 
 /* ── Seats ────────────────────────────────────────────────────────────── */
 
@@ -232,7 +235,7 @@ const colleges = rawColleges.map((raw) => {
     university: clean(raw.university),
     website: websiteUrl(raw.website),
     address: clean(raw.address).replace(/^[s,.-]+/, ""),
-    hero_image_url: extra.hero_image_url ?? null,
+    photo: photos[id] ? (({ file, source, ...shown }) => shown)(photos[id]) : null,
     ...(extra.nirfRanking ? { nirfRanking: extra.nirfRanking } : {}),
     branches: [...(courseNames.get(id) ?? [])],
     ugSeats: totals.ug,

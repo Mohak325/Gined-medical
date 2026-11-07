@@ -48,8 +48,14 @@ expectNone(
 const stateCodes = states.map((state) => state.code);
 expectNone(stateCodes.filter((code, i) => stateCodes.indexOf(code) !== i), "State codes used twice");
 
-const photos = colleges.map((c) => c.hero_image_url).filter(Boolean);
+const photos = colleges.map((c) => c.photo?.page).filter(Boolean);
 expectNone(photos.filter((url, i) => photos.indexOf(url) !== i), "A photo used for more than one college");
+const photoLinks = colleges.flatMap((c) => (c.photo ? [c.photo.thumb ?? c.photo.src ?? ""] : []));
+expectNone(photoLinks.filter((url) => !url.startsWith("https://upload.wikimedia.org/")), "A photo not served from Wikimedia");
+expectNone(
+  colleges.filter((c) => c.photo && (!c.photo.license || !c.photo.page)).map((c) => c.id),
+  "A photo without its licence or source page"
+);
 
 /* ── Links: does everything point at a real college? ─────────────────── */
 
