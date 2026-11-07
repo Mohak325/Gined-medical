@@ -1117,6 +1117,26 @@
       }
     ]
   },
+  "stateAuthorities": {
+    "BR": "BCECEB (Bihar Combined Entrance Competitive Examination Board)",
+    "AP": "Dr. NTR University of Health Sciences",
+    "TG": "KNRUHS (Kaloji Narayana Rao University of Health Sciences)",
+    "HR": "Department of Medical Education and Research, Haryana",
+    "MH": "State Common Entrance Test Cell, Maharashtra",
+    "PB": "Baba Farid University of Health Sciences, Faridkot",
+    "HP": "Atal Medical and Research University, Himachal Pradesh",
+    "MP": "Directorate of Medical Education, Madhya Pradesh",
+    "TN": "Selection Committee, Directorate of Medical Education and Research, Tamil Nadu",
+    "KL": "Commissioner for Entrance Examinations, Kerala",
+    "UP": "Directorate General of Medical Education and Training, Uttar Pradesh",
+    "WB": "West Bengal Medical Counselling Committee",
+    "OR": "Odisha Joint Entrance Examination (OJEE)",
+    "PY": "CENTAC (Centralised Admission Committee), Puducherry",
+    "UK": "H.N.B. Uttarakhand Medical Education University",
+    "GJ": "ACPUGMEC (Admission Committee for Professional Undergraduate Medical Educational Courses)",
+    "RJ": "NEET UG Admission / Counselling Board, SMS Medical College, Jaipur",
+    "CG": "Directorate of Medical Education, Chhattisgarh"
+  },
   "stateRanks": {
     "TN": {
       "label": "Tamil Nadu State Rank",

@@ -21,7 +21,7 @@ export default function CompareTray() {
         animate={{ y: 0 }}
         exit={{ y: "100%" }}
         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-        className="fixed bottom-0 left-0 right-0 z-[var(--z-tray)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
+        className="print:hidden fixed bottom-0 left-0 right-0 z-[var(--z-tray)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
       >
         <div className="max-w-ledger mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
           

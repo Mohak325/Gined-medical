@@ -8,6 +8,8 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import packagesData from "@/content/packages.json";
 import { INDIA_STATES } from "@/lib/medical/mockData";
 import { whatsappHref } from "@/lib/medical/booking";
+import { SHORTLIST_KEY, shortlistText, type ShortlistEntry } from "@/lib/medical/shortlist";
+import { readStored } from "@/lib/medical/sessionValue";
 import { submitLead, type LeadResult } from "./actions";
 
 const inputClass =
@@ -44,6 +46,14 @@ export default function BookingForm() {
     data.set("name", name);
     data.set("phone", phone);
     data.set("source", source);
+    if (source === "shortlist" && stage === "details") {
+      try {
+        const saved = JSON.parse(readStored("local", SHORTLIST_KEY) ?? "[]") as ShortlistEntry[];
+        if (saved.length) data.set("shortlist", shortlistText(saved));
+      } catch {
+        // A damaged list is simply not sent.
+      }
+    }
     setError(null);
     startTransition(async () => {
       try {

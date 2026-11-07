@@ -4,6 +4,7 @@ import { formatRank } from "@/lib/medical/format";
 import type { LabelledRow } from "@/lib/medical/finder";
 import ConfidenceBadge from "@/components/medical/shared/ConfidenceBadge";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
+import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
 
 const DOT: Record<LabelledRow["confidence"], string> = {
   safe: "bg-safe",
@@ -96,7 +97,15 @@ export default function CollegeResultCard({ row, rank }: { row: LabelledRow; ran
             )}
             <dd className="text-micro font-normal tracking-normal text-text-muted">{quotaLabel}</dd>
           </dl>
-          <div className="self-end sm:self-auto">
+          <div className="self-end sm:self-auto flex sm:flex-col items-end gap-2">
+            <SaveToShortlistButton
+              entry={{
+                id: college.id,
+                name: cutoff.track === "pg" ? `${college.name} (${cutoff.course})` : college.name,
+                closing: cutoff.closingRank,
+                basis: `${quotaLabel} · ${cutoff.year} R${cutoff.round}`,
+              }}
+            />
             <AddToCompareButton collegeId={college.id} collegeName={college.name} />
           </div>
         </div>

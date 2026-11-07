@@ -452,6 +452,8 @@ const meta = {
   laterRounds: [...new Set(cutoffs.filter((c) => c.round > 1).map((c) => `${c.track}|${c.year}|${c.quota === "state" ? c.state : c.quota}`))].sort(),
   stateCutoffs: [...new Set(cutoffs.map((cutoff) => cutoff.state).filter(Boolean))].sort(),
   stateOptions: Object.fromEntries(Object.entries(STATES).map(([code, rules]) => [code, rules.options])),
+  // Each state's counselling authority, for the state pages.
+  stateAuthorities: Object.fromEntries(Object.entries(STATES).filter(([, rules]) => rules.authority).map(([code, rules]) => [code, rules.authority])),
   stateRanks: Object.fromEntries(Object.entries(STATES).filter(([, rules]) => rules.stateRank).map(([code, rules]) => [code, rules.stateRank])),
   seatYear: SEAT_YEAR,
   collegeCount: colleges.length,

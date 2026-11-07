@@ -10,6 +10,7 @@ const footerLinks = [
       { label: "All colleges", href: "/medical/colleges" },
       { label: "Seat matrix", href: "/medical/seat-matrix" },
       { label: "Compare colleges", href: "/medical/compare" },
+      { label: "Your shortlist", href: "/medical/shortlist" },
     ],
   },
   {
@@ -17,7 +18,8 @@ const footerLinks = [
     links: [
       { label: "Packages and pricing", href: "/medical/pricing" },
       { label: "Book a session", href: "/medical/book?source=footer" },
-      { label: "How counselling works", href: "/medical#how-it-works" },
+      { label: "Counselling guide", href: "/medical/guide" },
+      { label: "Counselling calendar", href: "/medical/guide#calendar" },
       { label: "FAQ", href: "/medical#faq" },
     ],
   },

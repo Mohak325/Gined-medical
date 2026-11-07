@@ -9,9 +9,12 @@ import { INDIA_STATES } from "@/lib/medical/mockData";
 import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
 import CollegeCover from "@/components/medical/shared/CollegeCover";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
+import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
+import meta from "@/data/meta.json";
 import ShowMoreButton from "@/components/medical/shared/ShowMoreButton";
 import EmptyState from "@/components/medical/shared/EmptyState";
 import StateTileMap from "@/components/medical/directory/StateTileMap";
+import { stateSlug } from "@/lib/medical/states";
 
 const PAGE_SIZE = 24;
 const BUDGETS = [100000, 500000, 1000000, 1500000, 2000000, 3000000];
@@ -122,6 +125,11 @@ export default function DirectoryClient({ colleges }: { colleges: CollegeSummary
 
       <div>
         <p className={labelClass}>State {state && <span className="normal-case tracking-normal text-ink">· {STATE_NAMES[state]}</span>}</p>
+        {state && (
+          <Link href={`/medical/state/${stateSlug(STATE_NAMES[state] ?? state)}`} className="block mb-3 text-small font-semibold text-ink underline underline-offset-4 hover:text-gold-deep">
+            About counselling in {STATE_NAMES[state]}
+          </Link>
+        )}
         <StateTileMap counts={stateCounts} names={STATE_NAMES} selected={state} onSelect={(code) => setParam({ state: code })} />
       </div>
 
@@ -240,7 +248,8 @@ export default function DirectoryClient({ colleges }: { colleges: CollegeSummary
                     <Stat label="AIQ close" value={c.aiqClose ? formatRank(c.aiqClose) : "—"} />
                     <Stat label="Yearly fee" value={c.feeMin ? formatCurrencyShort(c.feeMin) : "—"} />
                   </dl>
-                  <div className="mt-4 flex justify-end">
+                  <div className="mt-4 flex justify-end gap-2">
+                    <SaveToShortlistButton entry={{ id: c.id, name: c.name, closing: c.aiqClose, basis: c.aiqClose ? `All India General · ${meta.cutoffYear} R1` : undefined }} />
                     <AddToCompareButton collegeId={c.id} collegeName={c.name} />
                   </div>
                 </div>
