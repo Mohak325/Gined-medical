@@ -1,0 +1,32 @@
+{
+  "_note": "PLACEHOLDER profiles and numbers until the real ones arrive. While placeholder is true, the site labels these as samples. Set it to false once every field below is real.",
+  "placeholder": true,
+  "stats": [
+    { "value": "000+", "label": "Students counselled" },
+    { "value": "0 years", "label": "Counselling NEET students" },
+    { "value": "00", "label": "States' counselling handled" }
+  ],
+  "counsellors": [
+    {
+      "name": "Counsellor name",
+      "role": "Lead counsellor",
+      "credentials": "Qualifications go here",
+      "experience": "Years of experience and focus areas go here.",
+      "photo": null
+    },
+    {
+      "name": "Counsellor name",
+      "role": "Counsellor, state quotas",
+      "credentials": "Qualifications go here",
+      "experience": "Years of experience and focus areas go here.",
+      "photo": null
+    },
+    {
+      "name": "Counsellor name",
+      "role": "Counsellor, PG admissions",
+      "credentials": "Qualifications go here",
+      "experience": "Years of experience and focus areas go here.",
+      "photo": null
+    }
+  ]
+}

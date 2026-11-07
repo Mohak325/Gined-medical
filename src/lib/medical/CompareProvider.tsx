@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { createContext, useContext, useCallback, useMemo } from "react";
+import { useSessionValue } from "./sessionValue";
 
 interface CompareContextValue {
   ids: string[];
@@ -16,39 +17,38 @@ const CompareContext = createContext<CompareContextValue | null>(null);
 const STORAGE_KEY = "medical:compare";
 const MAX = 3;
 
+function parseIds(raw: string): string[] {
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((id) => typeof id === "string").slice(0, MAX) : [];
+  } catch {
+    return [];
+  }
+}
+
 export function CompareProvider({ children }: { children: React.ReactNode }) {
-  const [ids, setIds] = useState<string[]>([]);
-
-  // Hydrate from sessionStorage
-  useEffect(() => {
-    try {
-      const stored = sessionStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed)) setIds(parsed.slice(0, MAX));
+  const [raw, store] = useSessionValue(STORAGE_KEY, "[]");
+  const ids = useMemo(() => parseIds(raw), [raw]);
+  // Read storage at call time, so two quick changes in a row both land.
+  const update = useCallback(
+    (change: (prev: string[]) => string[]) => {
+      let current = raw;
+      try {
+        current = sessionStorage.getItem(STORAGE_KEY) ?? "[]";
+      } catch {
+        // Storage blocked: fall back to what this render saw.
       }
-    } catch {
-      // ignore
-    }
-  }, []);
+      store(JSON.stringify(change(parseIds(current))));
+    },
+    [raw, store]
+  );
 
-  // Persist on change
-  useEffect(() => {
-    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(ids));
-  }, [ids]);
-
-  const add = useCallback((id: string) => {
-    setIds((prev) => {
-      if (prev.includes(id) || prev.length >= MAX) return prev;
-      return [...prev, id];
-    });
-  }, []);
-
-  const remove = useCallback((id: string) => {
-    setIds((prev) => prev.filter((i) => i !== id));
-  }, []);
-
-  const clear = useCallback(() => setIds([]), []);
+  const add = useCallback(
+    (id: string) => update((prev) => (prev.includes(id) || prev.length >= MAX ? prev : [...prev, id])),
+    [update]
+  );
+  const remove = useCallback((id: string) => update((prev) => prev.filter((i) => i !== id)), [update]);
+  const clear = useCallback(() => store("[]"), [store]);
 
   const has = useCallback((id: string) => ids.includes(id), [ids]);
 
