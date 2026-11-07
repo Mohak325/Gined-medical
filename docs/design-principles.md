@@ -31,3 +31,7 @@ All live in `src/components/motion/` and `src/app/globals.css`.
 | `Marquee` | A slow, pausable ticker |
 | `.grain` | The fine film grain over photos and dark sections |
 | `.surface-premium` | Raised card: layered shadow, top highlight, soft gradient |
+| `TweenNumber` | A number that glides to its new value when a control changes it |
+| `.bar-fill` / `.bar-dot` | Bars and markers moved with transform only (`--s` length, `--o` offset); they grow in with their revealed card |
+| `.range-premium` | The gold slider for dark panels (`--fill` sets the filled part) |
+| `.skeleton` | Loading placeholder with a light sweep; size it to match what it stands in for, so nothing jumps |
