@@ -12,7 +12,7 @@ export default function SaveToShortlistButton({ entry, compact = false }: { entr
       type="button"
       onClick={() => toggle(entry)}
       aria-pressed={saved}
-      aria-label={saved ? `Remove ${entry.name} from your shortlist` : `Save ${entry.name} to your shortlist`}
+      aria-label={saved ? `Saved ${entry.name}: remove from your shortlist` : `Save ${entry.name} to your shortlist`}
       className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-small font-semibold transition-colors ${
         saved ? "border-ink bg-ink text-text-on-dark" : "border-hairline bg-paper-bright text-ink hover:border-border-strong"
       }`}

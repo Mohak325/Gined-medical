@@ -141,10 +141,11 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
         {/* Quota */}
         <div className={`${fieldSpan}`}>
-          <label className="block text-small font-semibold text-text-main mb-2">
+          <label htmlFor="quota-select" className="block text-small font-semibold text-text-main mb-2">
             Counselling Quota
           </label>
           <select
+            id="quota-select"
             value={quota}
             onChange={(e) => setQuota(e.target.value)}
             className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
@@ -160,10 +161,11 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         {/* Category */}
         {!usesOwnCategories && (
           <div className={`${fieldSpan}`}>
-            <label className="block text-small font-semibold text-text-main mb-2">
+            <label htmlFor="category-select" className="block text-small font-semibold text-text-main mb-2">
               Category
             </label>
             <select
+              id="category-select"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"
@@ -180,10 +182,11 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         {/* State (Conditional) */}
         {quota === "state" && (
           <div className={`${fieldSpan}`}>
-            <label className="block text-small font-semibold text-text-main mb-2">
+            <label htmlFor="state-select" className="block text-small font-semibold text-text-main mb-2">
               Counselling State
             </label>
             <select
+              id="state-select"
               required
               value={domicileState}
               onChange={(e) => setDomicileState(e.target.value)}
@@ -268,10 +271,11 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         {/* Course (Conditional for PG) */}
         {track === "pg" && (
           <div className={`${fieldSpan}`}>
-            <label className="block text-small font-semibold text-text-main mb-2">
+            <label htmlFor="specialty-select" className="block text-small font-semibold text-text-main mb-2">
               Specialty
             </label>
             <select
+              id="specialty-select"
               value={course}
               onChange={(e) => setCourse(e.target.value)}
               className="w-full px-4 py-3 bg-paper-bright border border-border-strong rounded-[var(--radius-sm)] text-body focus:outline-none focus:border-gold transition-colors"

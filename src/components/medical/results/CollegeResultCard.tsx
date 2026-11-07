@@ -56,7 +56,7 @@ export default function CollegeResultCard({ row, rank }: { row: LabelledRow; ran
             <ConfidenceBadge level={row.confidence} />
             {row.laterRounds && allRounds && (
               <span
-                className="text-micro font-semibold text-gold-deep bg-gold/10 border border-gold/25 px-2 py-0.5 rounded-full"
+                className="text-micro font-semibold text-[var(--moderate-ink)] bg-gold/10 border border-gold/25 px-2 py-0.5 rounded-full"
                 title={`Round 1 closed before your rank, but ${allRounds.year} counselling reached it in Round 2 or 3`}
               >
                 Reached in {allRounds.year !== cutoff.year ? `${allRounds.year} ` : ""}Round 2 or 3
@@ -73,7 +73,7 @@ export default function CollegeResultCard({ row, rank }: { row: LabelledRow; ran
           <p className="flex items-center gap-1.5 text-small text-text-muted mt-1.5">
             <MapPin className="w-3.5 h-3.5" aria-hidden />
             {college.city}, {college.state}
-            {college.established > 0 && <span className="text-text-muted/80">· Est. {college.established}</span>}
+            {college.established > 0 && <span>· Est. {college.established}</span>}
           </p>
 
           <div className="mt-5">
@@ -95,8 +95,8 @@ export default function CollegeResultCard({ row, rank }: { row: LabelledRow; ran
                 <dd className="text-body font-semibold text-ink tabular-nums">{formatRank(allRounds.closingRank)}</dd>
               </div>
             )}
-            <dd className="text-micro font-normal tracking-normal text-text-muted">{quotaLabel}</dd>
           </dl>
+          <p className="text-micro font-normal tracking-normal text-text-muted sm:-mt-2">{quotaLabel}</p>
           <div className="self-end sm:self-auto flex sm:flex-col items-end gap-2">
             <SaveToShortlistButton
               entry={{

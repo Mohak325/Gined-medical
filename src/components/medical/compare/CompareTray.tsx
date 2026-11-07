@@ -5,7 +5,6 @@ import { useCompare, COMPARE_MAX } from "@/lib/medical/CompareProvider";
 import { useKeyed } from "@/lib/medical/useKeyed";
 import { getCompareNames } from "@/app/medical/compare/actions";
 import { X, Scale } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
 
 export default function CompareTray() {
   const { ids, remove, clear } = useCompare();
@@ -15,13 +14,8 @@ export default function CompareTray() {
   if (ids.length === 0) return null;
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ y: "100%" }}
-        animate={{ y: 0 }}
-        exit={{ y: "100%" }}
-        transition={{ type: "spring", damping: 25, stiffness: 200 }}
-        className="print:hidden fixed bottom-0 left-0 right-0 z-[var(--z-tray)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
+    <div
+        className="animate-in slide-in-from-bottom duration-300 print:hidden fixed bottom-0 left-0 right-0 z-[var(--z-tray)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
       >
         <div className="max-w-ledger mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
           
@@ -66,7 +60,6 @@ export default function CompareTray() {
           </div>
 
         </div>
-      </motion.div>
-    </AnimatePresence>
+    </div>
   );
 }

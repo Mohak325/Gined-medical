@@ -42,3 +42,7 @@ next-env.d.ts
 
 # The result PDFs are large. Each data/raw/<source>/sources.json records how to download them again.
 /data/raw/*/pdfs/
+
+# Playwright
+/test-results/
+/playwright-report/

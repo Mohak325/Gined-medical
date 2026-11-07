@@ -12,7 +12,7 @@ import ConfidenceBadge from "@/components/medical/shared/ConfidenceBadge";
 import EmptyState from "@/components/medical/shared/EmptyState";
 import { getShortlistDetails } from "./actions";
 
-const TONES: Record<Exclude<ConfidenceLevel, "longshot">, string> = { safe: "text-safe", moderate: "text-moderate", ambitious: "text-ambitious" };
+const TONES: Record<Exclude<ConfidenceLevel, "longshot">, string> = { safe: "text-safe", moderate: "text-gold-deep", ambitious: "text-ambitious" };
 
 export default function ShortlistClient() {
   const { entries, move, remove, clear, rank, rankText, setRankText } = useShortlist();

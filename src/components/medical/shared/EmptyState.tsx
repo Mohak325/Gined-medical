@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
@@ -29,13 +28,12 @@ export default function EmptyState({
       <p className="text-body text-text-muted max-w-md mb-6">{description}</p>
       <div className="flex flex-wrap gap-3 justify-center">
         {actions.map((action) => (
-          <Link href={action.href} key={action.href}>
-            <Button
-              variant="outline"
-              className="rounded-[var(--radius-md)] border-hairline"
-            >
-              {action.label}
-            </Button>
+          <Link
+            href={action.href}
+            key={action.href}
+            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-border-strong bg-paper-bright text-small font-semibold text-ink hover:bg-ink/[0.04]"
+          >
+            {action.label}
           </Link>
         ))}
       </div>

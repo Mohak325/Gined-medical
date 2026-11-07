@@ -31,11 +31,7 @@ export default function AddToCompareButton({
     <button
       onClick={handleClick}
       disabled={!isSelected && isFull}
-      aria-label={
-        isSelected
-          ? `Remove ${collegeName} from comparison`
-          : `Add ${collegeName} to comparison`
-      }
+      aria-label={isSelected ? `Comparing ${collegeName}: remove from comparison` : `Compare ${collegeName}`}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-small font-semibold transition-colors duration-[var(--dur-fast)] ${
         isSelected
           ? "bg-gold/15 text-gold-deep border border-gold/30"

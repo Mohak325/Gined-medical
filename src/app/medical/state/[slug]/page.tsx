@@ -6,6 +6,8 @@ import meta from "@/data/meta.json";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/site";
 import { collegeSummaries, type CollegeSummary } from "@/lib/medical/collegeSummary";
 import { STATE_PAGES, hasStateCutoffs, stateAuthority, stateBySlug } from "@/lib/medical/states";
 import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
@@ -26,6 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!state) return {};
   const colleges = stateColleges(state.code);
   return {
+    alternates: { canonical: `/medical/state/${state.slug}` },
     title: `MBBS colleges in ${state.name}: seats, cutoffs and fees — gined.in`,
     description: `${colleges.length} MBBS colleges and ${colleges.reduce((n, c) => n + c.mbbsSeats, 0).toLocaleString("en-IN")} seats in ${state.name}, with ${meta.cutoffYear} closing ranks and official fees.`,
   };
@@ -62,6 +65,16 @@ export default async function StatePage({ params }: Params) {
 
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Counselling guide", item: `${SITE_URL}/medical/guide` },
+            { "@type": "ListItem", position: 2, name: state.name, item: `${SITE_URL}/medical/state/${state.slug}` },
+          ],
+        }}
+      />
       <SiteNavbar />
       <main className="pt-24 md:pt-32 pb-16 bg-paper min-h-screen">
         <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">

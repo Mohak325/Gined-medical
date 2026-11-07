@@ -1,6 +1,11 @@
 import { Suspense } from "react";
 import meta from "@/data/meta.json";
 import SeatMatrixClient from "./SeatMatrixClient";
+
+export const metadata = {
+  title: "MBBS seat matrix by college and quota — gined.in",
+  description: "Every college's MBBS and PG seats by quota for the current counselling year, filterable by state and college type.",
+};
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";

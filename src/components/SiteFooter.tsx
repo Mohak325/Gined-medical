@@ -48,7 +48,7 @@ export default function SiteFooter() {
 
           {footerLinks.map((group) => (
             <nav key={group.title} aria-label={group.title} className="md:col-span-3">
-              <h2 className="text-eyebrow text-text-on-dark/45 mb-5">{group.title}</h2>
+              <h2 className="text-eyebrow text-text-on-dark/70 mb-5">{group.title}</h2>
               <ul className="space-y-3">
                 {group.links.map((link) => (
                   <li key={link.href}>
@@ -62,18 +62,18 @@ export default function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/10 grid gap-6 md:grid-cols-12 text-micro text-text-on-dark/45 font-normal tracking-normal">
+        <div className="mt-16 pt-8 border-t border-white/10 grid gap-6 md:grid-cols-12 text-micro text-text-on-dark/70 font-normal tracking-normal">
           <p className="md:col-span-9 leading-relaxed">
             Not affiliated with NTA, MCC or any state counselling authority. Cutoffs come from MCC&apos;s and {meta.stateCutoffs.length} state
             authorities&apos; published results, and fees from official fee documents. The college list and seats are adapted from{" "}
-            <a href="https://github.com/deekshithvodela/nexdoc" target="_blank" rel="noopener noreferrer" className="underline hover:text-text-on-dark/70">
+            <a href="https://github.com/deekshithvodela/nexdoc" target="_blank" rel="noopener noreferrer" className="underline hover:text-text-on-dark">
               NexDoc
             </a>{" "}
             (open licence). Always check the official portals before you decide.
           </p>
           <div className="md:col-span-3 flex md:justify-end gap-6">
-            <Link href="/privacy" className="hover:text-text-on-dark/70 transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-text-on-dark/70 transition-colors">Terms</Link>
+            <Link href="/privacy" className="hover:text-text-on-dark transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-text-on-dark transition-colors">Terms</Link>
             <span>© {new Date().getFullYear()} gined.in</span>
           </div>
         </div>

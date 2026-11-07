@@ -9,7 +9,6 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { type College, type SeatEntry } from "@/lib/medical/mockData";
-import { motion, AnimatePresence } from "framer-motion";
 
 type SeatWithCollege = SeatEntry & { college: College };
 const columnHelper = createColumnHelper<SeatWithCollege>();
@@ -50,12 +49,7 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
                 {val} <span className="text-text-muted font-normal">seats</span>
               </span>
               <div className="w-full h-1.5 bg-paper-dim rounded-full overflow-hidden">
-                <motion.div 
-                  initial={{ width: 0 }}
-                  animate={{ width: `${percentage}%` }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="h-full bg-gold rounded-full"
-                />
+                <div className="h-full bg-gold rounded-full" style={{ width: `${percentage}%` }} />
               </div>
             </div>
           );
@@ -97,14 +91,8 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
             ))}
           </thead>
           <tbody>
-            <AnimatePresence mode="popLayout">
-              {table.getRowModel().rows.map((row, i) => (
-                <motion.tr
-                  layout
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.3, delay: Math.min(i, 20) * 0.02 }}
+            {table.getRowModel().rows.map((row) => (
+                <tr
                   key={row.original.collegeId + row.original.course}
                   className="border-b border-hairline/60 last:border-0 hover:bg-gold/5 transition-colors group"
                 >
@@ -113,9 +101,8 @@ export default function SeatTableView({ seats }: { seats: SeatWithCollege[] }) {
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </td>
                   ))}
-                </motion.tr>
+                </tr>
               ))}
-            </AnimatePresence>
           </tbody>
         </table>
       </div>

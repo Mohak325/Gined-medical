@@ -6,19 +6,19 @@ const config: Record<
 > = {
   safe: {
     label: "Safe",
-    className: "bg-[var(--safe-bg)] text-safe border-safe/20",
+    className: "bg-[var(--safe-bg)] text-[var(--safe-ink)] border-safe/20",
   },
   moderate: {
     label: "Moderate",
-    className: "bg-[var(--moderate-bg)] text-moderate border-moderate/20",
+    className: "bg-[var(--moderate-bg)] text-[var(--moderate-ink)] border-moderate/30",
   },
   ambitious: {
     label: "Ambitious",
-    className: "bg-[var(--ambitious-bg)] text-ambitious border-ambitious/20",
+    className: "bg-[var(--ambitious-bg)] text-[var(--ambitious-ink)] border-ambitious/20",
   },
   longshot: {
     label: "Longshot",
-    className: "bg-[var(--no-data)]/10 text-no-data border-no-data/20",
+    className: "bg-paper-dim text-text-muted border-hairline",
   },
 };
 
