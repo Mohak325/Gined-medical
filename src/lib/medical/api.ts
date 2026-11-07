@@ -169,36 +169,11 @@ export async function getCourses(params: Record<string, any>) {
   }, {} as Record<string, any>);
 
   return Object.values(grouped).map((course: any) => {
-    // Generate estimated fees based on college type
-    let fees = 0;
-    let bondYears = 0;
-    let bondPenalty = 0;
-
-    if (college.type === "Government") {
-      fees = 50000;
-      bondYears = 1;
-      bondPenalty = 1000000;
-    } else if (college.type === "Central") {
-      fees = 15000;
-      bondYears = 0;
-    } else if (college.type === "Deemed") {
-      fees = 2000000; // 20 LPA
-      bondYears = 0;
-    } else {
-      // Private
-      fees = 1500000; // 15 LPA
-      bondYears = 1;
-      bondPenalty = 500000;
-    }
-
     const officialFees = (feesData as OfficialFee[]).filter((fee) => fee.collegeId === course.collegeId && fee.course === course.course);
 
     return {
       ...course,
       officialFees,
-      fees,
-      bondYears,
-      bondPenalty
     };
   });
 }
