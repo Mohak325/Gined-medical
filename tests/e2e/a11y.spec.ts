@@ -13,6 +13,8 @@ const PAGES = [
   "/medical/pricing",
   "/medical/book",
   "/medical/shortlist",
+  "/privacy",
+  "/medical/no-such-page",
 ];
 
 for (const path of PAGES) {

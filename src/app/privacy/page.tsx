@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import SiteNavbar from "@/components/SiteNavbar";
-import SiteFooter from "@/components/SiteFooter";
+import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — gined.in",
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     title: "What we collect",
-    body: "When you request counselling, we collect your name, email address, phone number, chosen package and, if you provide it, your NEET rank. The rank, quota and category you enter in the chances calculator are used to show your results and appear in that page's web address. They are not stored in an account.",
+    body: "When you request counselling, we collect your name and phone number and, if you provide them, your email address, NEET rank, category, quota, home state, chosen package, a message and, when you send it, your shortlist. The rank, quota and category you enter in the College Finder are used to show your results and appear in that page's web address. They are not stored in an account.",
   },
   {
     title: "How we use it",
@@ -22,7 +21,7 @@ const sections = [
   },
   {
     title: "Information kept in your browser",
-    body: "Your compare list is kept in your browser's session storage so it stays available while you browse. It is cleared when you close the tab.",
+    body: "Some things you do on the site are kept only in your own browser, not sent to us. Your compare list and your UG or PG choice are kept in session storage and cleared when you close the tab. Your shortlist, the rank you enter on it and your documents checklist are kept in local storage, so they are still there next time; clearing your browser's site data removes them.",
   },
   {
     title: "Your choices",
@@ -31,24 +30,5 @@ const sections = [
 ];
 
 export default function PrivacyPage() {
-  return (
-    <>
-      <SiteNavbar />
-      <main className="pt-28 pb-24 bg-paper min-h-screen">
-        <div className="max-w-2xl mx-auto px-6">
-          <h1 className="text-h1 text-text-main mb-2">Privacy Policy</h1>
-          <p className="text-small text-text-muted mb-10">Last updated: 5 November 2026</p>
-          <div className="space-y-8">
-            {sections.map((section) => (
-              <section key={section.title}>
-                <h2 className="text-h3 text-text-main mb-2">{section.title}</h2>
-                <p className="text-body text-text-muted">{section.body}</p>
-              </section>
-            ))}
-          </div>
-        </div>
-      </main>
-      <SiteFooter />
-    </>
-  );
+  return <LegalPage eyebrow="Privacy" title="Privacy Policy" updated="8 November 2026" sections={sections} />;
 }

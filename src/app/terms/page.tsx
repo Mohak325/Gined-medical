@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import SiteNavbar from "@/components/SiteNavbar";
-import SiteFooter from "@/components/SiteFooter";
+import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Terms of Use — gined.in",
@@ -14,7 +13,7 @@ const sections = [
   },
   {
     title: "Data accuracy",
-    body: "Cutoffs and seat counts come from past data and may be incomplete or out of date. Fees are published figures where a college page names their source, and estimates based on college type everywhere else. Bond details are estimates. Safe, Moderate and Ambitious labels are indicative. Always check details with MCC, your state counselling authority and the college before acting on them.",
+    body: "Cutoffs and seat counts come from past official results and may be incomplete or out of date. Fees are shown only where an official document publishes them; where none is published, we say so. Safe, Moderate and Ambitious labels are indicative. Always check details with MCC, your state counselling authority and the college before acting on them.",
   },
   {
     title: "Not affiliated",
@@ -31,24 +30,5 @@ const sections = [
 ];
 
 export default function TermsPage() {
-  return (
-    <>
-      <SiteNavbar />
-      <main className="pt-28 pb-24 bg-paper min-h-screen">
-        <div className="max-w-2xl mx-auto px-6">
-          <h1 className="text-h1 text-text-main mb-2">Terms of Use</h1>
-          <p className="text-small text-text-muted mb-10">Last updated: 5 November 2026</p>
-          <div className="space-y-8">
-            {sections.map((section) => (
-              <section key={section.title}>
-                <h2 className="text-h3 text-text-main mb-2">{section.title}</h2>
-                <p className="text-body text-text-muted">{section.body}</p>
-              </section>
-            ))}
-          </div>
-        </div>
-      </main>
-      <SiteFooter />
-    </>
-  );
+  return <LegalPage eyebrow="Terms" title="Terms of Use" updated="8 November 2026" sections={sections} />;
 }

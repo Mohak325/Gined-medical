@@ -14,32 +14,36 @@ const useToday = () => useSyncExternalStore(subscribe, () => new Date().toISOStr
 
 function SampleTag() {
   if (!calendar.placeholder) return null;
-  return <span className="text-micro font-semibold uppercase tracking-widest text-ambitious border border-dashed border-ambitious/50 rounded-full px-2.5 py-0.5">Sample dates</span>;
+  return <span className="text-micro font-semibold uppercase tracking-widest text-gold border border-dashed border-gold/60 rounded-full px-2.5 py-0.5">Sample dates</span>;
 }
 
-/** The full counselling calendar, with the next event marked. */
+/** The full counselling calendar on a dark card, with the next event marked by a pulsing dot. */
 export default function CounsellingCalendar() {
   const today = useToday();
   const nextIndex = today ? calendar.events.findIndex((e) => e.date >= today) : -1;
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-3 mb-4">
-        <h3 className="text-h4 text-ink">{calendar.cycle}</h3>
+      <div className="flex flex-wrap items-center gap-3 mb-6">
+        <h3 className="font-[family-name:var(--font-instrument)] text-[1.75rem] leading-none">{calendar.cycle}</h3>
         <SampleTag />
       </div>
-      <ol className="relative border-l border-hairline ml-2 space-y-5">
+      <ol className="relative ml-2 space-y-6">
+        <span aria-hidden className="absolute left-0 top-1 bottom-1 w-px bg-white/15" />
         {calendar.events.map((event, i) => {
           const past = today ? event.date < today : false;
           const next = i === nextIndex;
           return (
-            <li key={`${event.date}-${event.title}`} className={`pl-6 relative ${past ? "opacity-55" : ""}`}>
-              <span aria-hidden className={`absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full border-2 border-paper ${next ? "bg-gold" : event.kind === "state" ? "bg-ink-soft" : "bg-ink"}`} />
-              <p className="text-small font-semibold text-gold-deep tabular-nums">
+            <li key={`${event.date}-${event.title}`} className={`pl-7 relative transition-opacity ${past ? "opacity-50" : ""}`}>
+              <span aria-hidden className="absolute -left-[7px] top-1.5 w-3.5 h-3.5">
+                {next && <span className="absolute inset-0 rounded-full bg-gold animate-ping opacity-60" />}
+                <span className={`absolute inset-0 rounded-full ring-4 ring-ink ${next ? "bg-gold" : event.kind === "state" ? "bg-white/40" : "bg-white/80"}`} />
+              </span>
+              <p className="text-small font-semibold text-gold tabular-nums">
                 {day(event.date)} · {event.authority}
-                {next && <span className="ml-2 text-micro uppercase tracking-widest text-ink bg-gold/20 rounded-full px-2 py-0.5">Next</span>}
+                {next && <span className="ml-2 text-micro uppercase tracking-widest text-ink bg-gold rounded-full px-2 py-0.5">Next</span>}
               </p>
-              <p className="text-body font-semibold text-ink">{event.title}</p>
-              <p className="text-small text-text-muted">{event.body}</p>
+              <p className="text-body font-semibold mt-0.5">{event.title}</p>
+              <p className="text-small text-text-on-dark/75 mt-0.5">{event.body}</p>
             </li>
           );
         })}
