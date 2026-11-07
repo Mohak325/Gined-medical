@@ -4,6 +4,9 @@ import collegesData from "@/data/colleges.json";
 import cutoffsData from "@/data/cutoffs.json";
 import seatsData from "@/data/seats.json";
 import feesData from "@/data/fees.json";
+import meta from "@/data/meta.json";
+import { allRoundsIndex, allRoundsYear, seatGroupKey } from "./rounds";
+import { countLabels, labelRow, type FinderCollege, type FinderQuery, type FinderRow, type LabelCounts } from "./finder";
 
 export async function getColleges(params: Record<string, any>): Promise<College[]> {
   let results = [...collegesData] as College[];
@@ -176,4 +179,68 @@ export async function getCourses(params: Record<string, any>) {
       officialFees,
     };
   });
+}
+
+/* ── College Finder ───────────────────────────────────────────────────── */
+
+const finderCollege = (c: College): FinderCollege => ({
+  id: c.id, name: c.name, city: c.city, state: c.state, stateCode: c.stateCode, type: c.type, established: c.established,
+});
+
+/**
+ * One row per college and course: its latest Round 1 closing rank for the quota and category,
+ * plus how far all rounds reached in the latest year that has later rounds. No rank is sent,
+ * so the browser can label these rows for any rank without asking again.
+ */
+export async function getFinderRows(query: FinderQuery): Promise<FinderRow[]> {
+  return finderRows(query);
+}
+
+function finderRows(query: FinderQuery): FinderRow[] {
+  const isState = query.quota === "state";
+  const isPg = query.track === "pg";
+  const roundYear = allRoundsYear(query.track);
+  const matches = (c: CutoffEntry) =>
+    c.track === query.track &&
+    c.quota === query.quota &&
+    (isState ? c.state === query.state && (!query.stateCategory || c.stateCategory === query.stateCategory) : c.category === query.category) &&
+    (isPg ? !query.specialty || c.specialty === query.specialty : c.course === "MBBS");
+
+  const round1: CutoffEntry[] = [];
+  const later: CutoffEntry[] = [];
+  for (const c of cutoffsData as CutoffEntry[]) {
+    if (!matches(c)) continue;
+    if (c.year === meta.cutoffYear && c.round === 1) round1.push(c);
+    if (c.year === roundYear) later.push(c);
+  }
+  const reach = allRoundsIndex(later);
+
+  const byId = new Map((collegesData as College[]).map((c) => [c.id, c]));
+  const seen = new Set<string>();
+  const rows: FinderRow[] = [];
+  for (const c of round1) {
+    const college = byId.get(c.collegeId);
+    const key = `${c.collegeId}|${c.course}`;
+    if (!college || seen.has(key)) continue;
+    if (query.type && query.type !== "all" && college.type.toLowerCase() !== query.type) continue;
+    seen.add(key);
+    const final = reach.get(seatGroupKey({ ...c, year: roundYear }));
+    rows.push({
+      college: finderCollege(college),
+      cutoff: { track: c.track, course: c.course, quota: c.quota, year: c.year, round: c.round, closingRank: c.closingRank, state: c.state, stateCategory: c.stateCategory, rankType: c.rankType },
+      ...(final ? { allRounds: { closingRank: final.closingRank, year: final.year, round: final.round, mainRoundsClosing: final.mainRoundsClosing } } : {}),
+    });
+  }
+  return rows;
+}
+
+/** Label counts for the same rank in every quota, for the finder's quota tabs. */
+export async function getQuotaCounts(query: Omit<FinderQuery, "quota">, rank: number) {
+  const quotas: FinderQuery["quota"][] = query.track === "pg" ? ["aiq", "deemed", "central"] : ["aiq", "state", "deemed", "central"];
+  const out: Partial<Record<FinderQuery["quota"], LabelCounts>> = {};
+  for (const quota of quotas) {
+    if (quota === "state" && !(query.state && meta.stateCutoffs.includes(query.state))) continue;
+    out[quota] = countLabels(finderRows({ ...query, quota }).map((row) => labelRow(row, rank)));
+  }
+  return out;
 }

@@ -6,6 +6,7 @@ import DataStrip from "@/components/medical/home/DataStrip";
 import ToolsBento from "@/components/medical/home/ToolsBento";
 import HowItWorks from "@/components/medical/home/HowItWorks";
 import WhyGined from "@/components/medical/home/WhyGined";
+import Counsellors from "@/components/medical/home/Counsellors";
 import PackagesPreview from "@/components/medical/home/PackagesPreview";
 import HomeFAQ from "@/components/medical/home/HomeFAQ";
 
@@ -19,6 +20,7 @@ export default function MedicalLandingPage() {
         <ToolsBento />
         <HowItWorks />
         <WhyGined />
+        <Counsellors />
         <PackagesPreview />
         <HomeFAQ />
         <CTABand id="cta" source="landing_bottom" />

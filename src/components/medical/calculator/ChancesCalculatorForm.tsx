@@ -8,6 +8,7 @@ import { INDIA_STATES } from "@/lib/medical/mockData";
 import meta from "@/data/meta.json";
 import { KEA_GROUPS, KEA_SEATS, KEA_SUB_QUOTAS, composeKeaCode, parseKeaCode, type KeaSeat } from "@/lib/medical/karnataka";
 import { ArrowRight } from "lucide-react";
+import { track as trackEvent } from "@vercel/analytics";
 
 interface ChancesCalculatorFormProps {
   /** hero: the homepage card, which supplies its own heading; landing: a standalone card; results: the compact bar above results. */
@@ -93,6 +94,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
       params.set("course", course);
     }
 
+    trackEvent("rank_entered", { track, quota: params.get("quota") ?? quota, from: mode });
     router.push(`/medical/results?${params.toString()}`);
   };
 

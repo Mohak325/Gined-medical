@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { createContext, useContext, useCallback } from "react";
+import { useSessionValue } from "./sessionValue";
 
 type Track = "ug" | "pg";
 
@@ -17,21 +18,16 @@ const TrackContext = createContext<TrackContextValue | null>(null);
 const STORAGE_KEY = "medical:track";
 
 export function TrackProvider({ children }: { children: React.ReactNode }) {
-  const [track, setTrackState] = useState<Track>("ug");
+  const [stored, store] = useSessionValue(STORAGE_KEY, "ug");
+  const track: Track = stored === "pg" && PG_ENABLED ? "pg" : "ug";
 
-  // Hydrate from sessionStorage on mount
-  useEffect(() => {
-    const stored = sessionStorage.getItem(STORAGE_KEY);
-    if (stored === "ug" || (stored === "pg" && PG_ENABLED)) {
-      setTrackState(stored);
-    }
-  }, []);
-
-  const setTrack = useCallback((t: Track) => {
-    if (t === "pg" && !PG_ENABLED) return;
-    setTrackState(t);
-    sessionStorage.setItem(STORAGE_KEY, t);
-  }, []);
+  const setTrack = useCallback(
+    (t: Track) => {
+      if (t === "pg" && !PG_ENABLED) return;
+      store(t);
+    },
+    [store]
+  );
 
   return (
     <TrackContext value={{ track, setTrack }}>

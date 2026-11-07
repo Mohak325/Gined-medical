@@ -2,6 +2,7 @@ import { TrackProvider } from "@/lib/medical/TrackProvider";
 import { CompareProvider } from "@/lib/medical/CompareProvider";
 
 import CompareTray from "@/components/medical/compare/CompareTray";
+import MobileBookingBar from "@/components/medical/shared/MobileBookingBar";
 
 /**
  * Medical section layout.
@@ -18,6 +19,7 @@ export default function MedicalLayout({
         <div className="min-h-screen flex flex-col bg-background relative">
           {children}
           <CompareTray />
+          <MobileBookingBar />
         </div>
       </CompareProvider>
     </TrackProvider>

@@ -5,40 +5,33 @@ import CTABand from "@/components/medical/shared/CTABand";
 import ChancesCalculatorForm from "@/components/medical/calculator/ChancesCalculatorForm";
 import ResultsClient from "./ResultsClient";
 
-/**
- * Chances Calculator & Results Page — Phase 6
- * PRD v2 §M4, Register C (Instrument)
- */
+export const metadata = {
+  title: "Your college options — gined.in College Finder",
+  description: "MBBS colleges your NEET rank can reach, labelled Safe, Moderate or Ambitious from official closing ranks.",
+};
+
 export default function ResultsPage() {
   return (
     <>
       <SiteNavbar />
-      
-      <main className="pt-24 pb-20 bg-paper min-h-screen">
-        <div className="max-w-instrument mx-auto px-6 md:px-12">
-          
-          <header className="mb-10">
-            <h1 className="text-h2 mb-2 text-text-main">
-              Your College Options
-            </h1>
-            <p className="text-body text-text-muted">
-              Based on historical data and your NEET rank.
-            </p>
+      <main className="pt-24 md:pt-28 pb-16 bg-paper min-h-screen">
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
+          <header className="mb-6">
+            <p className="text-eyebrow text-gold-deep mb-3">College Finder</p>
+            <h1 className="text-h1 text-ink">Your college options</h1>
           </header>
 
-          <Suspense fallback={<div className="h-40 animate-pulse bg-paper-bright rounded-[var(--radius-md)] border border-hairline mb-10" />}>
-            <div className="mb-10">
+          <Suspense fallback={<div className="h-28 animate-pulse bg-paper-bright rounded-[var(--radius-md)] border border-hairline mb-8" />}>
+            <div className="mb-8">
               <ChancesCalculatorForm mode="results" />
             </div>
           </Suspense>
 
-          <Suspense fallback={<div className="h-96 flex items-center justify-center">Analyzing options...</div>}>
+          <Suspense fallback={<div className="h-96 rounded-[var(--radius-lg)] bg-paper-bright animate-pulse" />}>
             <ResultsClient />
           </Suspense>
-
         </div>
       </main>
-
       <CTABand source="results_bottom" compact />
       <SiteFooter />
     </>
