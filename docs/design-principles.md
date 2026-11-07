@@ -34,4 +34,6 @@ All live in `src/components/motion/` and `src/app/globals.css`.
 | `TweenNumber` | A number that glides to its new value when a control changes it |
 | `.bar-fill` / `.bar-dot` | Bars and markers moved with transform only (`--s` length, `--o` offset); they grow in with their revealed card |
 | `.range-premium` | The gold slider for dark panels (`--fill` sets the filled part) |
+| `PageHero` (`src/components/medical/shared`) | The dark photo hero for tool pages: eyebrow, split headline with a gold accent, text, optional counting figures |
+| `.vt-list` + `view-transition-name` | Rows that glide to their new places when a list is reordered (see the shortlist) |
 | `.skeleton` | Loading placeholder with a light sweep; size it to match what it stands in for, so nothing jumps |

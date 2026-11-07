@@ -1,6 +1,7 @@
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
+import PageHero from "@/components/medical/shared/PageHero";
 import { collegeSummary, type CollegeSummary } from "@/lib/medical/collegeSummary";
 import { CompareQuerySchema } from "@/lib/medical/schemas";
 import CompareClient from "./CompareClient";
@@ -19,13 +20,15 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
   return (
     <>
       <SiteNavbar />
-      <main className="pt-24 md:pt-32 pb-16 bg-paper min-h-screen">
-        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
-          <header className="mb-10 max-w-3xl">
-            <p className="text-eyebrow text-gold-deep mb-4">Compare</p>
-            <h1 className="text-display text-ink">Up to four colleges, side by side.</h1>
-            <p className="text-body-large text-text-muted mt-4">Add colleges from the directory, a college page or your finder results. The link to this page keeps your selection, so you can share it.</p>
-          </header>
+      <main className="bg-paper min-h-screen">
+        <PageHero
+          photo="brainModel"
+          eyebrow="Compare"
+          title="Up to four colleges,"
+          accent="side by side."
+          description="Add colleges from the directory, a college page or your finder results. The link to this page keeps your selection, so you can share it."
+        />
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-28">
           <CompareClient colleges={colleges} />
         </div>
       </main>
