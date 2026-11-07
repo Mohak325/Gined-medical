@@ -1,5 +1,15 @@
 [
   {
+    "collegeId": "ug_ap001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
     "collegeId": "ug_ap001p3",
     "course": "MBBS",
     "seatType": "government",
@@ -57,6 +67,36 @@
     "year": 2026,
     "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
     "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap004g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2537000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "AP"
   },
   {
@@ -120,6 +160,16 @@
     "state": "AP"
   },
   {
+    "collegeId": "ug_ap008g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
     "collegeId": "ug_ap008p3",
     "course": "MBBS",
     "seatType": "government",
@@ -180,6 +230,16 @@
     "state": "AP"
   },
   {
+    "collegeId": "ug_ap011g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
     "collegeId": "ug_ap011p3",
     "course": "MBBS",
     "seatType": "government",
@@ -217,6 +277,16 @@
     "year": 2026,
     "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
     "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_ap013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "AP"
   },
   {
@@ -298,6 +368,16 @@
     "source": "Andhra Pradesh's interim fee order for 2026-27, on drntr.uhsap.in",
     "sourceUrl": "https://drntr.uhsap.in/index/pdf/Admission/GOS/2026HMF_RT785_E.pdf",
     "state": "AP"
+  },
+  {
+    "collegeId": "ug_as005g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AS"
   },
   {
     "collegeId": "ug_br001p3",
@@ -460,6 +540,26 @@
     "state": "CG"
   },
   {
+    "collegeId": "ug_cg013g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 40000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "CG"
+  },
+  {
+    "collegeId": "ug_gj001g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "GJ"
+  },
+  {
     "collegeId": "ug_gj001p3",
     "course": "MBBS",
     "seatType": "government",
@@ -617,6 +717,16 @@
     "year": 2026,
     "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
     "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
+    "state": "GJ"
+  },
+  {
+    "collegeId": "ug_gj009g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 25000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "GJ"
   },
   {
@@ -857,6 +967,16 @@
     "year": 2026,
     "source": "UHSR Rohtak, provisional tuition fee for MBBS/BDS 2026-27",
     "sourceUrl": "https://uhsrugcounselling.com/Images/Notifications/163.PDF",
+    "state": "HR"
+  },
+  {
+    "collegeId": "ug_hr003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2660000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "HR"
   },
   {
@@ -1169,6 +1289,16 @@
     "state": "TG"
   },
   {
+    "collegeId": "ug_in014g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "DL"
+  },
+  {
     "collegeId": "ug_in014p3",
     "course": "MBBS",
     "seatType": "government",
@@ -1177,6 +1307,16 @@
     "source": "Maharashtra Fees Regulating Authority, approved MBBS fees for 2026-27",
     "sourceUrl": "https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report",
     "state": "MH"
+  },
+  {
+    "collegeId": "ug_in015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in015p3",
@@ -1197,6 +1337,26 @@
     "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
     "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
     "state": "TG"
+  },
+  {
+    "collegeId": "ug_in016g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "WB"
+  },
+  {
+    "collegeId": "ug_in016p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 3000000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
   },
   {
     "collegeId": "ug_in017p3",
@@ -1257,6 +1417,16 @@
     "source": "OJEE's Round 3 admission notice, 2026",
     "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
     "state": "OR"
+  },
+  {
+    "collegeId": "ug_in020p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
   },
   {
     "collegeId": "ug_in021g1",
@@ -1429,6 +1599,26 @@
     "state": "RJ"
   },
   {
+    "collegeId": "ug_in029g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 26250,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "JK"
+  },
+  {
+    "collegeId": "ug_in029p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2077500,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "DL"
+  },
+  {
     "collegeId": "ug_in030g1",
     "course": "MBBS",
     "seatType": "government",
@@ -1457,6 +1647,16 @@
     "source": "OJEE's Round 3 admission notice, 2026",
     "sourceUrl": "https://odishajee.com/news_document/Notice_3rd_round_Reporting_R_560.pdf",
     "state": "OR"
+  },
+  {
+    "collegeId": "ug_in031g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in031p3",
@@ -1547,6 +1747,16 @@
     "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
     "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
     "state": "KL"
+  },
+  {
+    "collegeId": "ug_in038g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
   },
   {
     "collegeId": "ug_in038p3",
@@ -1652,6 +1862,16 @@
     "year": 2026,
     "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
     "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in042g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "TG"
   },
   {
@@ -1775,6 +1995,16 @@
     "state": "AP"
   },
   {
+    "collegeId": "ug_in046g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_in046p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -1875,6 +2105,36 @@
     "state": "RJ"
   },
   {
+    "collegeId": "ug_in050p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_in051g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in051p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
+  },
+  {
     "collegeId": "ug_in052p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -1923,6 +2183,36 @@
     "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
     "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
     "state": "TG"
+  },
+  {
+    "collegeId": "ug_in054g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in054g1",
+    "course": "MBBS",
+    "seatType": "management",
+    "annualFee": 1200000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
+  },
+  {
+    "collegeId": "ug_in054g1",
+    "course": "MBBS",
+    "seatType": "nri",
+    "annualFee": 2000000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
   },
   {
     "collegeId": "ug_in054p3",
@@ -2085,6 +2375,16 @@
     "state": "TG"
   },
   {
+    "collegeId": "ug_in060p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in061p3",
     "course": "MBBS",
     "seatType": "nri",
@@ -2213,6 +2513,16 @@
     "source": "Rajasthan NEET UG Counselling Board, private college fees 2026",
     "sourceUrl": "https://ug.neetrajasthan.com/notifications/1787320285906.pdf",
     "state": "RJ"
+  },
+  {
+    "collegeId": "ug_in068p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
   },
   {
     "collegeId": "ug_in069p3",
@@ -2395,6 +2705,16 @@
     "state": "RJ"
   },
   {
+    "collegeId": "ug_in080p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 3100000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in081p3",
     "course": "MBBS",
     "seatType": "government",
@@ -2412,6 +2732,16 @@
     "year": 2026,
     "source": "Telangana's fee order for the 2026-29 block period, on knruhs.telangana.gov.in",
     "sourceUrl": "https://www.knruhs.telangana.gov.in/wp-content/uploads/notifications/20260811063812_KNRUHS-MBBS-BDS-ADMISSIONS-FOR-THE-AY-2026-27-NOTICE-WITH-REGARD-TO-TUITION-FEE-FOR-MBBS-AND-BDS-COURSES-FOR-THE-BLOCK-PERIOD-2026-29.pdf",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_in082g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "TG"
   },
   {
@@ -2433,6 +2763,26 @@
     "source": "Gujarat Fee Regulatory Committee (Medical), MBBS fees for 2025-26 and 2026-27",
     "sourceUrl": "https://frcmedical.org/2025/MBBS_FEE_STRUCTURE_FOR_THE_YEAR_2025_26_AND_2026_27.PDF",
     "state": "GJ"
+  },
+  {
+    "collegeId": "ug_in083p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
+  },
+  {
+    "collegeId": "ug_in084g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "AP"
   },
   {
     "collegeId": "ug_in084p3",
@@ -2651,6 +3001,16 @@
     "state": "GJ"
   },
   {
+    "collegeId": "ug_in093g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 15000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "DL"
+  },
+  {
     "collegeId": "ug_in093p3",
     "course": "MBBS",
     "seatType": "government",
@@ -2771,6 +3131,16 @@
     "state": "UP"
   },
   {
+    "collegeId": "ug_in100p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2400000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
+  },
+  {
     "collegeId": "ug_in101p3",
     "course": "MBBS",
     "seatType": "government",
@@ -2809,6 +3179,16 @@
     "source": "UP's fee orders for 2026-27, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
     "state": "UP"
+  },
+  {
+    "collegeId": "ug_in103p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TN"
   },
   {
     "collegeId": "ug_in104p3",
@@ -3200,6 +3580,16 @@
     "annualFee": 2265000,
     "year": 2026,
     "source": "KEA allotment lists",
+    "state": "KA"
+  },
+  {
+    "collegeId": "ug_ka009p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2222222,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "KA"
   },
   {
@@ -4247,6 +4637,16 @@
     "state": "KA"
   },
   {
+    "collegeId": "ug_ka036p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 1900000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "KA"
+  },
+  {
     "collegeId": "ug_ka037p3",
     "course": "MBBS",
     "seatType": "government",
@@ -4566,6 +4966,16 @@
     "year": 2026,
     "source": "CEE Kerala, MBBS and BDS option registration notification, KEAM 2026",
     "sourceUrl": "https://cee.kerala.gov.in/keam2026/noti_view/201/Upload1",
+    "state": "KL"
+  },
+  {
+    "collegeId": "ug_kl003p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "KL"
   },
   {
@@ -5039,6 +5449,16 @@
     "state": "MH"
   },
   {
+    "collegeId": "ug_mh004p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2552550,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
+  },
+  {
     "collegeId": "ug_mh005g1",
     "course": "MBBS",
     "seatType": "government",
@@ -5046,6 +5466,16 @@
     "year": 2025,
     "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
     "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2855600,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "MH"
   },
   {
@@ -5066,6 +5496,16 @@
     "year": 2025,
     "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
     "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh008p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2900000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "MH"
   },
   {
@@ -5199,6 +5639,16 @@
     "state": "MH"
   },
   {
+    "collegeId": "ug_mh016p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2600000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "MH"
+  },
+  {
     "collegeId": "ug_mh017g1",
     "course": "MBBS",
     "seatType": "government",
@@ -5226,6 +5676,16 @@
     "year": 2025,
     "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
     "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh018p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "MH"
   },
   {
@@ -5286,6 +5746,16 @@
     "year": 2025,
     "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
     "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh022p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "MH"
   },
   {
@@ -5506,6 +5976,16 @@
     "year": 2025,
     "source": "Maharashtra State CET Cell, NEET UG 2025-26 information brochure, section 19",
     "sourceUrl": "https://statecetcell.s3.ap-south-1.amazonaws.com/Old+Notifications/NEET-UG25_IB.pdf",
+    "state": "MH"
+  },
+  {
+    "collegeId": "ug_mh041g1",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "MH"
   },
   {
@@ -5916,6 +6396,16 @@
     "state": "OR"
   },
   {
+    "collegeId": "ug_or005p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2250000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "OR"
+  },
+  {
     "collegeId": "ug_or006g1",
     "course": "MBBS",
     "seatType": "government",
@@ -6156,6 +6646,26 @@
     "state": "PB"
   },
   {
+    "collegeId": "ug_py001p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2500000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py002p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2800000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "PY"
+  },
+  {
     "collegeId": "ug_py003p3",
     "course": "MBBS",
     "seatType": "government",
@@ -6213,6 +6723,16 @@
     "year": 2026,
     "source": "Puducherry's fee order of 28 August 2026",
     "sourceUrl": "https://drive.google.com/file/d/1ulK5ZSkqgWfZT6NwCN5LBkYD13GrOJbK/view",
+    "state": "PY"
+  },
+  {
+    "collegeId": "ug_py007p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2250000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "PY"
   },
   {
@@ -7226,6 +7746,36 @@
     "state": "TG"
   },
   {
+    "collegeId": "ug_tg015g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg020g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
+  },
+  {
+    "collegeId": "ug_tg023g1",
+    "course": "MBBS",
+    "seatType": "government",
+    "annualFee": 29000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
+    "state": "TG"
+  },
+  {
     "collegeId": "ug_tn002g1",
     "course": "MBBS",
     "seatType": "government",
@@ -8003,6 +8553,16 @@
     "year": 2026,
     "source": "ESIC Noida and Varanasi fee structure, UP NEET UG 2026, on upneet.gov.in",
     "sourceUrl": "https://upneet.gov.in/",
+    "state": "UP"
+  },
+  {
+    "collegeId": "ug_up020p3",
+    "course": "MBBS",
+    "seatType": "private",
+    "annualFee": 2400000,
+    "year": 2026,
+    "source": "MCC's NEET UG 2026 institute fee proformas",
+    "sourceUrl": "https://mcc.admissions.nic.in/Applicant/Report/ViewInstituteProfileDynamic.aspx?agencyid=140&boardid=140032621",
     "state": "UP"
   },
   {
