@@ -227,3 +227,189 @@
     scroll-behavior: auto !important;
   }
 }
+/* In the components layer, so Tailwind utilities on the same element always win. */
+@layer components {
+  /* ═══════════════════════════════════════════════════════
+     Motion & premium surfaces — see docs/design-principles.md
+     Reveal styles apply only once MotionRoot marks the page ready
+     (html.motion-ready), so without JavaScript everything is visible.
+     ═══════════════════════════════════════════════════════ */
+  
+  :root {
+    --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur-reveal: 900ms;
+    --shadow-premium:
+      0 1px 0 rgba(255, 255, 255, 0.7) inset,
+      0 1px 2px rgba(15, 46, 61, 0.06),
+      0 8px 24px -8px rgba(15, 46, 61, 0.12),
+      0 30px 60px -30px rgba(15, 46, 61, 0.25);
+    --shadow-lift: 0 2px 4px rgba(15, 46, 61, 0.06), 0 24px 48px -16px rgba(15, 46, 61, 0.28);
+  }
+  
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  
+  /* Reveal: rise and sharpen once, when scrolled into view. */
+  html.motion-ready [data-reveal] {
+    transition:
+      opacity var(--dur-reveal) var(--ease-reveal),
+      transform var(--dur-reveal) var(--ease-reveal),
+      filter var(--dur-reveal) var(--ease-reveal),
+      clip-path 1200ms var(--ease-reveal);
+    transition-delay: var(--delay, 0ms);
+  }
+  html.motion-ready [data-reveal="up"]:not([data-in]) { opacity: 0; transform: translateY(32px); filter: blur(6px); }
+  html.motion-ready [data-reveal="fade"]:not([data-in]) { opacity: 0; }
+  html.motion-ready [data-reveal="scale"]:not([data-in]) { opacity: 0; transform: scale(0.96); filter: blur(4px); }
+  html.motion-ready [data-reveal="clip"]:not([data-in]) { clip-path: inset(100% 0 0 0); }
+  html.motion-ready [data-reveal="clip"][data-in] { clip-path: inset(0 0 0 0); }
+  
+  /* Split words: each word slides up from behind its own mask. */
+  .split-word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+  .split-word > span { display: inline-block; }
+  html.motion-ready [data-split] .split-word > span {
+    transition: transform 1100ms var(--ease-reveal);
+    transition-delay: calc(var(--delay, 0ms) + var(--i, 0) * 55ms);
+  }
+  html.motion-ready [data-split]:not([data-in]) .split-word > span { transform: translateY(105%); }
+  
+  /* Scroll-linked parallax and progress, with no JavaScript, where the browser supports it. */
+  @supports (animation-timeline: view()) {
+    .parallax {
+      animation: parallax-drift linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+    .scroll-progress {
+      transform-origin: top;
+      animation: grow-y linear both;
+      animation-timeline: view();
+      animation-range: entry 20% exit 60%;
+    }
+  }
+  @keyframes parallax-drift {
+    from { transform: translateY(-7%) scale(1.14); }
+    to { transform: translateY(7%) scale(1.14); }
+  }
+  @keyframes grow-y {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+  }
+  
+  /* Film grain over photos and dark sections. */
+  .grain { position: relative; isolation: isolate; }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.14;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  
+  /* Raised premium surface: layered shadow, top highlight, soft gradient. */
+  .surface-premium {
+    background: linear-gradient(180deg, var(--paper-bright), color-mix(in oklab, var(--paper-bright) 88%, var(--paper-dim)));
+    border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+    box-shadow: var(--shadow-premium);
+  }
+  .surface-glass {
+    background: linear-gradient(180deg, rgba(252, 250, 244, 0.92), rgba(247, 244, 236, 0.86));
+    backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 40px 80px -30px rgba(8, 26, 36, 0.55);
+  }
+  .surface-ink-glass {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  
+  /* Pointer spotlight: a soft glow that follows the cursor (MotionRoot sets --mx/--my). */
+  [data-spotlight] { position: relative; overflow: hidden; }
+  [data-spotlight]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 400ms ease;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), var(--spot, rgba(201, 162, 75, 0.16)), transparent 60%);
+    z-index: 0;
+  }
+  [data-spotlight]:hover::before { opacity: 1; }
+  [data-spotlight] > * { position: relative; z-index: 1; }
+  
+  /* Magnetic elements lean toward the pointer (MotionRoot sets --tx/--ty). */
+  [data-magnetic] { transform: translate(var(--tx, 0px), var(--ty, 0px)); transition: transform 350ms var(--ease-reveal); }
+  
+  /* Primary buttons: a light sweep on hover. */
+  .btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+  .btn-shine::after {
+    content: "";
+    position: absolute;
+    inset: -50% auto -50% -60%;
+    width: 40%;
+    transform: skewX(-20deg) translateX(0);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transition: transform 800ms var(--ease-reveal);
+    z-index: -1;
+  }
+  .btn-shine:hover::after { transform: skewX(-20deg) translateX(420%); }
+  
+  /* Slow marquee that pauses on hover. */
+  .marquee-track { animation: marquee var(--marquee-duration, 60s) linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  
+  /* Gentle float for small floating cards. */
+  @keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  .float-slow { animation: float-y 7s ease-in-out infinite; }
+  
+  /* Gold text with a slow sheen. */
+  .text-sheen {
+    background: linear-gradient(110deg, var(--gold-deep) 20%, var(--gold) 40%, #f0d9a0 50%, var(--gold) 60%, var(--gold-deep) 80%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: sheen 6s ease-in-out infinite;
+  }
+  @keyframes sheen { 0%, 100% { background-position: 100% 0; } 50% { background-position: 0 0; } }
+  
+  /* Page transitions (React ViewTransition): a short cross-fade and rise. */
+  ::view-transition-old(root) { animation: 260ms var(--ease-reveal) both vt-out; }
+  ::view-transition-new(root) { animation: 520ms var(--ease-reveal) both vt-in; }
+  @keyframes vt-out { to { opacity: 0; transform: translateY(-8px); } }
+  @keyframes vt-in { from { opacity: 0; transform: translateY(12px); } }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html.motion-ready [data-reveal],
+    html.motion-ready [data-split] .split-word > span { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+    .parallax, .scroll-progress, .marquee-track, .float-slow, .text-sheen { animation: none !important; }
+    [data-magnetic] { transform: none !important; }
+    ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; }
+  }
+  
+  @keyframes scroll-cue { 0% { transform: translateY(-100%); } 100% { transform: translateY(200%); } }
+  @media (prefers-reduced-motion: reduce) { [class*="animate-[scroll-cue"] { animation: none !important; } }
+  
+  /* Smooth open and close for <details> where supported. */
+  :root { interpolate-size: allow-keywords; }
+  details::details-content { block-size: 0; overflow-y: clip; transition: block-size 450ms var(--ease-reveal), content-visibility 450ms allow-discrete; }
+  details[open]::details-content { block-size: auto; }
+  
+  /* Above-the-fold intro: plays on load with CSS alone, so it never waits for JavaScript. */
+  .intro { animation: intro-rise 1000ms var(--ease-reveal) both; animation-delay: var(--delay, 0ms); }
+  .intro-scale { animation: intro-scale 1200ms var(--ease-reveal) both; animation-delay: var(--delay, 0ms); }
+  .intro-fade { animation: intro-fade 1200ms ease both; animation-delay: var(--delay, 0ms); }
+  /* Words start part-way up (already painted), so the headline counts as shown on the first frame. */
+  [data-split-intro] .split-word > span { animation: split-in-intro 1000ms var(--ease-reveal) both; animation-delay: calc(var(--i, 0) * 35ms); }
+  @keyframes intro-rise { from { opacity: 0; transform: translateY(28px); filter: blur(6px); } }
+  @keyframes intro-scale { from { opacity: 0; transform: scale(0.95) translateY(16px); filter: blur(6px); } }
+  @keyframes intro-fade { from { opacity: 0; } }
+  @keyframes split-in { from { transform: translateY(105%); } }
+  @keyframes split-in-intro { from { transform: translateY(45%); opacity: 0.25; } }
+}
