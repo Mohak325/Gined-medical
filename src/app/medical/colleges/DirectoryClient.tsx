@@ -1,234 +1,283 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { getColleges } from "@/lib/medical/api";
-import { type College, INDIA_STATES } from "@/lib/medical/mockData";
-import { DirectoryQuerySchema } from "@/lib/medical/schemas";
-import CollegeListView from "@/components/medical/directory/CollegeListView";
-import CollegeTableView from "@/components/medical/directory/CollegeTableView";
-import EmptyState from "@/components/medical/shared/EmptyState";
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { LayoutGrid, List, Search, SlidersHorizontal, X } from "lucide-react";
+import type { CollegeSummary } from "@/lib/medical/collegeSummary";
+import { INDIA_STATES } from "@/lib/medical/mockData";
+import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
+import CollegeCover from "@/components/medical/shared/CollegeCover";
+import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
 import ShowMoreButton from "@/components/medical/shared/ShowMoreButton";
-import { Search, LayoutGrid, List, SlidersHorizontal, Building2 } from "lucide-react";
+import EmptyState from "@/components/medical/shared/EmptyState";
+import StateTileMap from "@/components/medical/directory/StateTileMap";
 
 const PAGE_SIZE = 24;
+const BUDGETS = [100000, 500000, 1000000, 1500000, 2000000, 3000000];
+const SORTS = {
+  name: "Name (A–Z)",
+  closing: "Most competitive first",
+  fee: "Lowest fee first",
+  newest: "Newest first",
+} as const;
+type SortKey = keyof typeof SORTS;
+const STATE_NAMES = Object.fromEntries(INDIA_STATES.map((s) => [s.code, s.name]));
 
-export default function DirectoryClient() {
+const selectClass = "w-full px-3 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-ink";
+const labelClass = "text-eyebrow text-text-muted block mb-2";
+
+function feeLabel(c: CollegeSummary) {
+  if (!c.feeMin) return "Not published";
+  return c.feeMin === c.feeMax ? formatCurrencyShort(c.feeMin) : `${formatCurrencyShort(c.feeMin)}–${formatCurrencyShort(c.feeMax)}`;
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-0">
+      <dt className="text-micro font-normal tracking-normal text-text-muted">{label}</dt>
+      <dd className="text-small font-semibold text-ink tabular-nums truncate">{value}</dd>
+    </div>
+  );
+}
+
+export default function DirectoryClient({ colleges }: { colleges: CollegeSummary[] }) {
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const params = useSearchParams();
 
-  // Parse params
-  const rawParams = Object.fromEntries(searchParams.entries());
-  const parsed = DirectoryQuerySchema.safeParse(rawParams);
-  const params = parsed.success ? parsed.data : DirectoryQuerySchema.parse({});
-
-  const [colleges, setColleges] = useState<College[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [view, setView] = useState<"grid" | "table">("grid");
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const state = params.get("state") ?? undefined;
+  const type = params.get("type") ?? "all";
+  const course = params.get("course") ?? "mbbs";
+  const budget = Number(params.get("budget")) || undefined;
+  const sort = (params.get("sort") as SortKey) in SORTS ? (params.get("sort") as SortKey) : "name";
+  const view = params.get("view") === "list" ? "list" : "grid";
+  const [search, setSearch] = useState(params.get("q") ?? "");
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [paging, setPaging] = useState<{ key: string; n: number }>({ key: "", n: PAGE_SIZE });
 
-  // Fetch
-  useEffect(() => {
-    let mounted = true;
-    setLoading(true);
-    setVisibleCount(PAGE_SIZE);
-    getColleges(params).then((data) => {
-      if (mounted) {
-        setColleges(data);
-        setLoading(false);
-      }
+  const setParam = (updates: Record<string, string | undefined>) => {
+    const next = new URLSearchParams(params.toString());
+    for (const [key, value] of Object.entries(updates)) {
+      if (value === undefined || value === "" || value === "all") next.delete(key);
+      else next.set(key, value);
+    }
+    router.replace(`${pathname}${next.size ? `?${next}` : ""}`, { scroll: false });
+  };
+
+  // Course and type filters first, so the state map counts what the other filters leave.
+  const base = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    return colleges.filter(
+      (c) =>
+        (course === "all" || (course === "mbbs" ? c.mbbsSeats > 0 : c.pgSeats > 0)) &&
+        (type === "all" || c.type.toLowerCase() === type) &&
+        (!q || `${c.name} ${c.city} ${c.university ?? ""}`.toLowerCase().includes(q))
+    );
+  }, [colleges, course, type, search]);
+
+  const beforeBudget = useMemo(() => (state ? base.filter((c) => c.stateCode === state) : base), [base, state]);
+  const filtered = useMemo(() => {
+    const list = budget ? beforeBudget.filter((c) => c.feeMin !== undefined && c.feeMin <= budget) : [...beforeBudget];
+    const last = Number.MAX_SAFE_INTEGER;
+    list.sort((a, b) => {
+      if (sort === "closing") return (a.aiqClose ?? last) - (b.aiqClose ?? last) || a.name.localeCompare(b.name);
+      if (sort === "fee") return (a.feeMin ?? last) - (b.feeMin ?? last) || a.name.localeCompare(b.name);
+      if (sort === "newest") return (b.established || 0) - (a.established || 0) || a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
     });
-    return () => { mounted = false; };
-  }, [searchParams]); // re-fetch when URL changes
+    return list;
+  }, [beforeBudget, budget, sort]);
+  const hiddenNoFee = budget ? beforeBudget.filter((c) => c.feeMin === undefined).length : 0;
 
-  // Update URL helper
-  const updateQuery = useCallback((updates: Record<string, string | null>) => {
-    const current = new URLSearchParams(Array.from(searchParams.entries()));
-    Object.entries(updates).forEach(([key, value]) => {
-      if (value === null || value === "") {
-        current.delete(key);
-      } else {
-        current.set(key, value);
-      }
-    });
-    router.push(`${pathname}?${current.toString()}`);
-  }, [searchParams, pathname, router]);
+  const stateCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const c of base) counts[c.stateCode] = (counts[c.stateCode] ?? 0) + 1;
+    return counts;
+  }, [base]);
 
-  const hasFilters = params.state || params.type !== "all" || params.search;
+  const filterKey = [state, type, course, budget, sort, search].join("|");
+  const visible = paging.key === filterKey ? paging.n : PAGE_SIZE;
+  const hasFilters = !!(state || type !== "all" || course !== "mbbs" || budget || search);
+
+  const filters = (
+    <div className="space-y-6">
+      <div>
+        <label htmlFor="dir-search" className={labelClass}>Search</label>
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" aria-hidden />
+          <input
+            id="dir-search"
+            type="search"
+            placeholder="College, city or university"
+            className={`${selectClass} pl-9`}
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setParam({ q: e.target.value });
+            }}
+          />
+        </div>
+      </div>
+
+      <div>
+        <p className={labelClass}>State {state && <span className="normal-case tracking-normal text-ink">· {STATE_NAMES[state]}</span>}</p>
+        <StateTileMap counts={stateCounts} names={STATE_NAMES} selected={state} onSelect={(code) => setParam({ state: code })} />
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <label htmlFor="dir-type" className={labelClass}>Type</label>
+          <select id="dir-type" className={selectClass} value={type} onChange={(e) => setParam({ type: e.target.value })}>
+            <option value="all">All</option>
+            <option value="government">Government</option>
+            <option value="private">Private</option>
+            <option value="deemed">Deemed</option>
+            <option value="central">Central</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="dir-course" className={labelClass}>Courses</label>
+          <select id="dir-course" className={selectClass} value={course} onChange={(e) => setParam({ course: e.target.value === "mbbs" ? undefined : e.target.value })}>
+            <option value="mbbs">MBBS</option>
+            <option value="pg">PG (MD/MS)</option>
+            <option value="all">Any</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="dir-budget" className={labelClass}>Yearly fee up to</label>
+        <select id="dir-budget" className={selectClass} value={budget ?? ""} onChange={(e) => setParam({ budget: e.target.value || undefined })}>
+          <option value="">Any fee</option>
+          {BUDGETS.map((b) => (
+            <option key={b} value={b}>{formatCurrencyShort(b)}</option>
+          ))}
+        </select>
+        <p className="text-micro font-normal tracking-normal text-text-muted mt-2">Uses the lowest published MBBS fee at each college.</p>
+      </div>
+
+      {hasFilters && (
+        <button
+          type="button"
+          onClick={() => {
+            setSearch("");
+            router.replace(pathname, { scroll: false });
+          }}
+          className="inline-flex items-center gap-1.5 text-small font-semibold text-ink underline underline-offset-4"
+        >
+          <X className="w-4 h-4" aria-hidden /> Clear filters
+        </button>
+      )}
+    </div>
+  );
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8">
-      {/* Sidebar Filters (Desktop) */}
-      <aside className={`${filtersOpen ? "block" : "hidden"} lg:block w-full lg:w-72 shrink-0`}>
-        <div className="bg-paper-bright/80 backdrop-blur-md border border-hairline rounded-[var(--radius-lg)] p-6 sticky top-28 shadow-card">
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-hairline/60">
-            <h3 className="font-semibold text-text-main flex items-center gap-2">
-              <SlidersHorizontal className="w-4 h-4 text-gold" /> Filters
-            </h3>
-            {hasFilters && (
-              <button 
-                onClick={() => router.push(pathname)}
-                className="text-micro font-medium text-gold-deep hover:text-gold transition-colors"
-              >
-                Reset All
-              </button>
-            )}
-          </div>
-
-          <div className="space-y-6">
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Search</label>
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted group-focus-within:text-gold transition-colors" />
-                <input 
-                  type="text" 
-                  placeholder="College or City..."
-                  className="w-full pl-9 pr-3 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all placeholder:text-text-muted/50 shadow-inner"
-                  value={params.search || ""}
-                  onChange={(e) => updateQuery({ search: e.target.value })}
-                />
-              </div>
-            </div>
-
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">State</label>
-              <div className="relative">
-                <select 
-                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
-                  value={params.state || ""}
-                  onChange={(e) => updateQuery({ state: e.target.value })}
-                >
-                  <option value="">All States</option>
-                  {INDIA_STATES.map((st) => (
-                    <option key={st.code} value={st.code}>{st.name}</option>
-                  ))}
-                </select>
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Institution Type</label>
-              <div className="relative">
-                <select 
-                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
-                  value={params.type}
-                  onChange={(e) => updateQuery({ type: e.target.value })}
-                >
-                  <option value="all">All Types</option>
-                  <option value="government">Government</option>
-                  <option value="private">Private</option>
-                  <option value="deemed">Deemed</option>
-                  <option value="central">Central / AIIMS</option>
-                </select>
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group">
-              <label className="text-micro font-bold text-text-muted uppercase tracking-wider block mb-2">Sort By</label>
-              <div className="relative">
-                <select 
-                  className="w-full pl-3 pr-9 py-2.5 bg-paper border border-hairline rounded-[var(--radius-sm)] text-small focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all appearance-none shadow-inner cursor-pointer"
-                  value={params.sort}
-                  onChange={(e) => updateQuery({ sort: e.target.value })}
-                >
-                  <option value="name_asc">Name (A-Z)</option>
-                  <option value="name_desc">Name (Z-A)</option>
-                  <option value="established">Oldest First</option>
-                  <option value="nirf_asc">NIRF Ranking (Top)</option>
-                </select>
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted group-focus-within:text-gold transition-colors">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="grid gap-8 lg:grid-cols-12">
+      <aside className="lg:col-span-4 xl:col-span-3">
+        <button
+          type="button"
+          onClick={() => setFiltersOpen((o) => !o)}
+          aria-expanded={filtersOpen}
+          className="lg:hidden w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full border border-hairline bg-paper-bright text-small font-semibold"
+        >
+          <SlidersHorizontal className="w-4 h-4" aria-hidden /> {filtersOpen ? "Hide filters" : "Filters"}
+        </button>
+        <div className={`${filtersOpen ? "block mt-4" : "hidden"} lg:block lg:sticky lg:top-24 rounded-[var(--radius-lg)] border border-hairline bg-paper-bright p-5`}>
+          {filters}
         </div>
       </aside>
 
-      {/* Main Content */}
-      <div className="flex-grow flex flex-col">
-        {/* Mobile Filter Toggle & Top Bar */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-          <div className="text-small text-text-muted">
-            {loading ? (
-              <span className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full border-2 border-gold border-t-transparent animate-spin" /> Searching...
-              </span>
-            ) : (
-              <span>Found <strong className="text-gold font-bold">{colleges.length}</strong> matching colleges</span>
-            )}
-          </div>
-          
-          <div className="flex items-center gap-3 w-full sm:w-auto">
-            <button type="button" onClick={() => setFiltersOpen(open => !open)} aria-expanded={filtersOpen} className="lg:hidden flex-1 px-4 py-2 border border-hairline rounded-[var(--radius-sm)] bg-paper-bright text-small font-medium flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
-              <SlidersHorizontal className="w-4 h-4 text-gold" /> Filters
-            </button>
-            
-            <div className="flex items-center bg-paper-bright border border-hairline rounded-[var(--radius-sm)] p-1 shrink-0 shadow-sm relative">
-              {/* Highlight Pill for toggle */}
-              <div 
-                className="absolute inset-y-1 w-8 bg-paper rounded-[var(--radius-sm)-2px] shadow-sm border border-hairline/30 transition-all duration-300 ease-out"
-                style={{ left: view === "grid" ? "4px" : "36px" }}
-              />
-              <button 
-                onClick={() => setView("grid")}
-                className={`relative z-10 w-8 h-7 flex items-center justify-center rounded-[var(--radius-sm)-2px] transition-colors duration-200 ${view === "grid" ? "text-gold" : "text-text-muted hover:text-text-main"}`}
-                aria-label="Grid view"
-              >
-                <LayoutGrid className="w-4 h-4" />
-              </button>
-              <button 
-                onClick={() => setView("table")}
-                className={`relative z-10 w-8 h-7 flex items-center justify-center rounded-[var(--radius-sm)-2px] transition-colors duration-200 ${view === "table" ? "text-gold" : "text-text-muted hover:text-text-main"}`}
-                aria-label="Table view"
-              >
-                <List className="w-4 h-4" />
-              </button>
+      <section className="lg:col-span-8 xl:col-span-9 min-w-0" aria-label="Colleges">
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
+          <p className="text-small text-text-muted" aria-live="polite">
+            <span className="font-semibold text-ink tabular-nums">{filtered.length.toLocaleString("en-IN")}</span> colleges
+            {hiddenNoFee > 0 && ` · ${hiddenNoFee} more have no published fee`}
+          </p>
+          <div className="flex items-center gap-2">
+            <select aria-label="Sort" className="px-3 py-2 bg-paper-bright border border-hairline rounded-full text-small" value={sort} onChange={(e) => setParam({ sort: e.target.value === "name" ? undefined : e.target.value })}>
+              {Object.entries(SORTS).map(([key, label]) => (
+                <option key={key} value={key}>{label}</option>
+              ))}
+            </select>
+            <div className="inline-flex rounded-full border border-hairline bg-paper-bright p-0.5" role="group" aria-label="View">
+              {(["grid", "list"] as const).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => setParam({ view: v === "grid" ? undefined : v })}
+                  aria-pressed={view === v}
+                  aria-label={v === "grid" ? "Grid view" : "List view"}
+                  className={`p-2 rounded-full ${view === v ? "bg-ink text-text-on-dark" : "text-text-muted hover:text-ink"}`}
+                >
+                  {v === "grid" ? <LayoutGrid className="w-4 h-4" /> : <List className="w-4 h-4" />}
+                </button>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Content Area */}
-        <div className="min-h-[500px]">
-          {loading ? (
-            <div className="flex flex-col items-center justify-center h-64 gap-4 animate-in fade-in duration-500">
-              <div className="w-10 h-10 border-4 border-gold/20 border-t-gold rounded-full animate-spin"></div>
-              <p className="text-small text-text-muted font-medium">Loading colleges...</p>
-            </div>
-          ) : colleges.length > 0 ? (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-              {view === "grid" ? (
-                <CollegeListView colleges={colleges.slice(0, visibleCount)} />
-              ) : (
-                <CollegeTableView colleges={colleges.slice(0, visibleCount)} />
-              )}
-              <ShowMoreButton
-                shown={Math.min(visibleCount, colleges.length)}
-                total={colleges.length}
-                noun="colleges"
-                onClick={() => setVisibleCount(count => count + PAGE_SIZE)}
-              />
-            </div>
-          ) : (
-            <div className="animate-in fade-in zoom-in-95 duration-500">
-              <EmptyState
-                icon={<Building2 className="w-12 h-12 text-gold/50" />}
-                title="No colleges found"
-                description="Try adjusting your filters or search terms to see more results."
-                actions={[{ label: "Clear all filters", href: pathname }]}
-              />
-            </div>
-          )}
-        </div>
-      </div>
+        {filtered.length === 0 ? (
+          <EmptyState
+            title="No colleges match"
+            description={budget ? "No college with a published fee fits this budget. Many colleges haven't published fees yet; a counsellor can tell you the real figures." : "Try clearing a filter or searching for a different name."}
+            actions={[{ label: "Ask a counsellor", href: "/medical/book?source=directory-empty" }]}
+          />
+        ) : view === "grid" ? (
+          <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {filtered.slice(0, visible).map((c) => (
+              <li key={c.id} className="group rounded-[var(--radius-lg)] border border-hairline bg-paper-bright overflow-hidden flex flex-col hover:border-border-strong transition-colors">
+                <Link href={`/medical/college/${c.id}`} className="block" tabIndex={-1} aria-hidden>
+                  <CollegeCover id={c.id} type={c.type} stateCode={c.stateCode} established={c.established} className="w-full h-28" />
+                </Link>
+                <div className="p-5 flex flex-col flex-1">
+                  <span className="text-micro font-semibold text-text-muted">{c.type} · {c.city}, {c.state}</span>
+                  <Link href={`/medical/college/${c.id}`} className="text-h4 text-ink mt-1.5 hover:text-gold-deep line-clamp-2">
+                    {c.name}
+                  </Link>
+                  <dl className="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-hairline">
+                    <Stat label="MBBS seats" value={c.mbbsSeats ? String(c.mbbsSeats) : "—"} />
+                    <Stat label="AIQ close" value={c.aiqClose ? formatRank(c.aiqClose) : "—"} />
+                    <Stat label="Yearly fee" value={c.feeMin ? formatCurrencyShort(c.feeMin) : "—"} />
+                  </dl>
+                  <div className="mt-4 flex justify-end">
+                    <AddToCompareButton collegeId={c.id} collegeName={c.name} />
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="rounded-[var(--radius-lg)] border border-hairline bg-paper-bright overflow-x-auto">
+            <table className="w-full text-small">
+              <thead className="text-left text-text-muted border-b border-hairline">
+                <tr>
+                  <th scope="col" className="px-4 py-3 font-semibold">College</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Type</th>
+                  <th scope="col" className="px-4 py-3 font-semibold text-right">MBBS seats</th>
+                  <th scope="col" className="px-4 py-3 font-semibold text-right">AIQ close {"(R1)"}</th>
+                  <th scope="col" className="px-4 py-3 font-semibold text-right">Yearly fee</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-hairline">
+                {filtered.slice(0, visible).map((c) => (
+                  <tr key={c.id} className="hover:bg-paper">
+                    <td className="px-4 py-3 min-w-[16rem]">
+                      <Link href={`/medical/college/${c.id}`} className="font-semibold text-ink hover:text-gold-deep">{c.name}</Link>
+                      <span className="block text-micro font-normal tracking-normal text-text-muted">{c.city}, {c.state}</span>
+                    </td>
+                    <td className="px-4 py-3 text-text-muted">{c.type}</td>
+                    <td className="px-4 py-3 text-right tabular-nums">{c.mbbsSeats || "—"}</td>
+                    <td className="px-4 py-3 text-right tabular-nums">{c.aiqClose ? formatRank(c.aiqClose) : "—"}</td>
+                    <td className="px-4 py-3 text-right tabular-nums whitespace-nowrap">{feeLabel(c)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        <ShowMoreButton shown={Math.min(visible, filtered.length)} total={filtered.length} noun="colleges" onClick={() => setPaging({ key: filterKey, n: visible + PAGE_SIZE })} />
+      </section>
     </div>
   );
 }

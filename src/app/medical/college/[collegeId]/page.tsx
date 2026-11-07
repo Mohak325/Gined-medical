@@ -1,137 +1,143 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCollegeById, getCutoffs, getCourses } from "@/lib/medical/api";
+import { ArrowUpRight, Globe, MapPin } from "lucide-react";
+import { getCourses, getCutoffs } from "@/lib/medical/api";
+import { collegeSummary, similarColleges } from "@/lib/medical/collegeSummary";
+import { chanceOptions, mbbsCutoffTables } from "@/lib/medical/collegeCutoffs";
+import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
+import meta from "@/data/meta.json";
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
 import CTABand from "@/components/medical/shared/CTABand";
-import CollegeHeader from "@/components/medical/college/CollegeHeader";
+import CollegeCover from "@/components/medical/shared/CollegeCover";
+import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
 import CollegeFeesBreakdown from "@/components/medical/college/CollegeFeesBreakdown";
-import CutoffTrendChart from "@/components/medical/college/CutoffTrendChart";
 import CollegeBranchesMatrix from "@/components/medical/college/CollegeBranchesMatrix";
+import CutoffTables from "@/components/medical/college/CutoffTables";
+import ChancesHere from "@/components/medical/college/ChancesHere";
 
-/**
- * College Detail Page — Phase 5
- */
-export default async function CollegeDetailPage({
-  params,
-}: {
-  params: Promise<{ collegeId: string }>;
-}) {
+type Params = { params: Promise<{ collegeId: string }> };
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const college = collegeSummary((await params).collegeId);
+  if (!college) return {};
+  const close = college.aiqClose ? ` ${meta.cutoffYear} All India Round 1 closing rank ${formatRank(college.aiqClose)}.` : "";
+  return {
+    title: `${college.name} — cutoffs, seats and fees | gined.in`,
+    description: `${college.type} medical college in ${college.city}, ${college.state}. ${college.mbbsSeats ? `${college.mbbsSeats} MBBS seats.` : ""}${close}`,
+  };
+}
+
+function Fact({ label, value, note }: { label: string; value: string; note?: string }) {
+  return (
+    <div className="flex flex-col-reverse justify-end">
+      <dt className="text-small text-text-on-dark/60">{label}{note && <span className="block text-micro font-normal tracking-normal text-text-on-dark/45">{note}</span>}</dt>
+      <dd className="text-h2 tabular-nums text-text-on-dark">{value}</dd>
+    </div>
+  );
+}
+
+export default async function CollegeDetailPage({ params }: Params) {
   const { collegeId } = await params;
-  const college = await getCollegeById(collegeId);
+  const college = collegeSummary(collegeId);
+  if (!college) notFound();
 
-  if (!college) {
-    notFound();
-  }
-
-  const courses = await getCourses({ collegeId });
-  const cutoffs = await getCutoffs({ collegeId });
+  const [courses, cutoffs] = await Promise.all([getCourses({ collegeId }), getCutoffs({ collegeId })]);
+  const tables = mbbsCutoffTables(cutoffs);
+  const options = chanceOptions(tables);
+  const similar = similarColleges(collegeId);
+  const fee = college.feeMin ? (college.feeMin === college.feeMax ? formatCurrencyShort(college.feeMin) : `${formatCurrencyShort(college.feeMin)}–${formatCurrencyShort(college.feeMax)}`) : "Not published";
 
   return (
     <>
       <SiteNavbar />
-      
-      <main className="pb-20 bg-paper min-h-screen">
-        <CollegeHeader college={college} />
-        
-        <div className="max-w-ledger mx-auto px-6 md:px-12 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
-          <div className="lg:col-span-2 space-y-16">
-            <section>
-              <h2 className="text-h2 text-text-main mb-6">Branches & Seat Matrix</h2>
+      <main className="bg-paper min-h-screen">
+        {/* Hero */}
+        <section className="relative bg-ink text-text-on-dark overflow-hidden pt-16 md:pt-[72px]">
+          <CollegeCover id={college.id} type={college.type} stateCode={college.stateCode} showLabel={false} className="absolute inset-0 w-full h-full opacity-70" />
+          <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink via-ink/85 to-ink/40" />
+          <div className="relative max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-12 md:pt-20 pb-10">
+            <nav aria-label="Breadcrumb" className="text-small text-text-on-dark/60">
+              <Link href="/medical/colleges" className="hover:text-text-on-dark">Colleges</Link>
+              <span aria-hidden> / </span>
+              <Link href={`/medical/colleges?state=${college.stateCode}`} className="hover:text-text-on-dark">{college.state}</Link>
+            </nav>
+            <h1 className="text-display mt-4 max-w-4xl">{college.name}</h1>
+            <p className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-small text-text-on-dark/75">
+              <span className="inline-flex items-center gap-1.5"><MapPin className="w-4 h-4" aria-hidden />{college.city}, {college.state}</span>
+              <span className="rounded-full border border-white/20 px-2.5 py-0.5">{college.type}</span>
+              {college.nmcStatus && <span className="rounded-full border border-white/20 px-2.5 py-0.5">NMC: {college.nmcStatus}</span>}
+              {college.university && <span>{college.university}</span>}
+            </p>
+            <dl className="mt-10 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6">
+              <Fact label="MBBS seats" value={college.mbbsSeats ? String(college.mbbsSeats) : "—"} note={meta.seatYear} />
+              <Fact label="All India close, General" value={college.aiqClose ? formatRank(college.aiqClose) : "—"} note={`${meta.cutoffYear} Round 1`} />
+              <Fact label="Yearly fee" value={fee} note={college.feeMin ? "Official, by seat type" : undefined} />
+              <Fact label="Established" value={college.established ? String(college.established) : "—"} />
+            </dl>
+          </div>
+        </section>
+
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-16 grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-8 space-y-14 min-w-0">
+            <section aria-labelledby="cutoffs-heading">
+              <h2 id="cutoffs-heading" className="text-h1 text-ink mb-6">MBBS closing ranks</h2>
+              <CutoffTables tables={tables} />
+            </section>
+
+            <section aria-labelledby="seats-heading">
+              <h2 id="seats-heading" className="text-h1 text-ink mb-6">Courses and seats</h2>
               <CollegeBranchesMatrix courses={courses} cutoffs={cutoffs} />
             </section>
 
-            <section>
-              <h2 className="text-h2 text-text-main mb-6">Fees & Bond</h2>
+            <section aria-labelledby="fees-heading">
+              <h2 id="fees-heading" className="text-h1 text-ink mb-6">Fees</h2>
               <CollegeFeesBreakdown courses={courses} />
             </section>
 
-            <section>
-              <h2 className="text-h2 text-text-main mb-6">Cutoff Trends</h2>
-              {(() => {
-                // Find the most represented quota and category for this college's cutoffs
-                if (cutoffs.length === 0) {
-                  return (
-                    <div className="bg-paper border border-hairline rounded-[var(--radius-md)] p-8 text-center text-text-muted">
-                      No historical cutoff data available for this institution in our database yet.
-                    </div>
-                  );
-                }
-
-                // Prefer AIQ General, but fallback to whatever has the most data points
-                let bestQuota = "aiq";
-                let bestCategory = "general";
-
-                const hasAiqGen = cutoffs.some(c => c.quota === "aiq" && c.category === "general");
-                
-                if (!hasAiqGen) {
-                  // A state's own codes have several rows per year, so they can't draw one line.
-                  const counts: Record<string, number> = {};
-                  cutoffs.filter(c => c.category !== "state_only").forEach(c => {
-                    const key = `${c.quota}|${c.category}`;
-                    counts[key] = (counts[key] || 0) + 1;
-                  });
-
-                  const keys = Object.keys(counts);
-                  if (keys.length === 0) {
-                    return (
-                      <p className="text-small text-text-muted">
-                        This college only has seats with their own category codes, so there&apos;s no single trend to show.
-                      </p>
-                    );
-                  }
-                  const bestKey = keys.includes("state|general")
-                    ? "state|general"
-                    : keys.reduce((a, b) => counts[a] > counts[b] ? a : b);
-                  [bestQuota, bestCategory] = bestKey.split("|");
-                }
-
-                // MBBS where the college has it; otherwise its course with the most cutoff rows.
-                const courseCounts: Record<string, number> = {};
-                cutoffs.forEach((c) => { courseCounts[c.course] = (courseCounts[c.course] || 0) + 1; });
-                const trendCourse = courseCounts.MBBS ? "MBBS" : Object.keys(courseCounts).reduce((a, b) => (courseCounts[a] >= courseCounts[b] ? a : b));
-
-                return (
-                  <>
-                    <CutoffTrendChart cutoffs={cutoffs} category={bestCategory} quota={bestQuota} course={trendCourse} />
-                    <p className="text-small text-text-muted mt-4">
-                      Note: This chart shows Round 1 {bestQuota === "state" ? "state counselling" : bestQuota.toUpperCase()} {bestCategory.toUpperCase()} category closing ranks. A lower rank number indicates higher competition.
-                    </p>
-                  </>
-                );
-              })()}
-            </section>
+            {similar.length > 0 && (
+              <section aria-labelledby="similar-heading">
+                <h2 id="similar-heading" className="text-h1 text-ink mb-6">Similar colleges</h2>
+                <ul className="grid gap-4 sm:grid-cols-2">
+                  {similar.map((c) => (
+                    <li key={c.id}>
+                      <Link href={`/medical/college/${c.id}`} className="group flex gap-4 rounded-[var(--radius-lg)] border border-hairline bg-paper-bright p-3 hover:border-border-strong">
+                        <CollegeCover id={c.id} type={c.type} stateCode={c.stateCode} showLabel={false} className="w-20 h-20 shrink-0 rounded-[var(--radius-md)]" />
+                        <span className="min-w-0 py-1">
+                          <span className="block text-small font-semibold text-ink group-hover:text-gold-deep line-clamp-2">{c.name}</span>
+                          <span className="block text-micro font-normal tracking-normal text-text-muted mt-1">
+                            {c.type} · {c.state}
+                            {c.aiqClose ? ` · AIQ close ${formatRank(c.aiqClose)}` : ""}
+                          </span>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </div>
 
-          {/* Sticky Sidebar */}
-          <aside className="relative">
-            <div className="sticky top-28 bg-paper-bright border border-hairline rounded-[var(--radius-md)] p-6 shadow-card">
-              <h3 className="text-h3 text-text-main mb-2">Want to know your chances?</h3>
-              <p className="text-small text-text-muted mb-6">
-                Enter your NEET rank to see if you can realistically get a seat at {college.name}.
-              </p>
-              
-              <a 
-                href="/medical#calculator"
-                className="block w-full text-center px-4 py-3 bg-gold text-ink font-semibold rounded-[var(--radius-sm)] hover:bg-gold/90 transition-colors"
-              >
-                Check My Chances
-              </a>
-              
-              <hr className="my-6 border-hairline" />
-              
-              <h4 className="text-small font-semibold text-text-main mb-3">Compare</h4>
-              <p className="text-micro text-text-muted mb-4">
-                Add this college to compare it side-by-side with others.
-              </p>
-              {/* Note: This is an RSC, we can't use AddToCompareButton directly unless it's imported or we make this part a client component. Let's make a small client wrapper for the sidebar actions if needed, but since it's just a placeholder button for now, I'll use a link to the compare tray or leave it. */}
+          <aside className="lg:col-span-4">
+            <div className="lg:sticky lg:top-24 space-y-4">
+              <ChancesHere collegeName={college.name} options={options} />
+              <div className="rounded-[var(--radius-lg)] border border-hairline bg-paper-bright p-6 space-y-4">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-small font-semibold text-ink">Compare with others</span>
+                  <AddToCompareButton collegeId={college.id} collegeName={college.name} />
+                </div>
+                {college.website && (
+                  <a href={college.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-small text-text-muted hover:text-ink">
+                    <Globe className="w-4 h-4" aria-hidden /> Official website <ArrowUpRight className="w-3.5 h-3.5" aria-hidden />
+                  </a>
+                )}
+              </div>
             </div>
           </aside>
-
         </div>
       </main>
-
-      <CTABand source="college_detail" />
+      <CTABand source="college_detail" headline="Is this college right for your list?" compact />
       <SiteFooter />
     </>
   );

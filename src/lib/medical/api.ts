@@ -1,5 +1,5 @@
 "use server";
-import type { College, CutoffEntry, OfficialFee, SeatEntry } from "./mockData";
+import type { College, CollegeCourse, CutoffEntry, OfficialFee, SeatEntry } from "./mockData";
 import collegesData from "@/data/colleges.json";
 import cutoffsData from "@/data/cutoffs.json";
 import seatsData from "@/data/seats.json";
@@ -8,76 +8,10 @@ import meta from "@/data/meta.json";
 import { allRoundsIndex, allRoundsYear, seatGroupKey } from "./rounds";
 import { countLabels, labelRow, type FinderCollege, type FinderQuery, type FinderRow, type LabelCounts } from "./finder";
 
-export async function getColleges(params: Record<string, any>): Promise<College[]> {
-  let results = [...collegesData] as College[];
+/** Seat matrix filters, as they arrive from the page address. */
+type SeatQuery = { track?: string; quota?: string; state?: string; type?: string; search?: string; course?: string };
 
-  results = results.map(c => {
-    // If it's a placeholder, missing, or an Unsplash URL, apply the brand-styled initials fallback
-    if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com") || c.hero_image_url.includes("data:image/svg+xml")) {
-      const words = c.name.split(/[\s,.-]+/);
-      const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
-      
-      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-        <rect width="100%" height="100%" fill="#0F2E3D" />
-        <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="#C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
-      </svg>`;
-      
-      // Use proper base64 encoding to prevent browser parsing errors
-      const base64Svg = Buffer.from(svg).toString('base64');
-      return { ...c, hero_image_url: `data:image/svg+xml;base64,${base64Svg}` };
-    }
-    return c;
-  });
-
-  if (params.type && params.type !== "all") {
-    results = results.filter((c) => c.type.toLowerCase() === params.type.toLowerCase());
-  }
-  if (params.state) {
-    results = results.filter((c) => c.stateCode.toLowerCase() === params.state.toLowerCase());
-  }
-  if (params.search) {
-    const q = params.search.toLowerCase();
-    results = results.filter(
-      (c) => c.name.toLowerCase().includes(q) || c.city.toLowerCase().includes(q)
-    );
-  }
-
-  // Sort
-  if (params.sort === "name_desc") {
-    results.sort((a, b) => b.name.localeCompare(a.name));
-  } else if (params.sort === "established") {
-    // Colleges with no known year go last.
-    results.sort((a, b) => (a.established || 9999) - (b.established || 9999));
-  } else if (params.sort === "nirf_asc") {
-    results.sort((a, b) => (a.nirfRanking || 9999) - (b.nirfRanking || 9999));
-  } else {
-    // name_asc is default
-    results.sort((a, b) => a.name.localeCompare(b.name));
-  }
-
-  return results;
-}
-
-export async function getCollegeById(id: string): Promise<College | null> {
-  const c = (collegesData as College[]).find((c) => c.id === id);
-  if (!c) return null;
-
-  if (!c.hero_image_url || c.hero_image_url.includes("images.unsplash.com") || c.hero_image_url.includes("data:image/svg+xml")) {
-    const words = c.name.split(/[\s,.-]+/);
-    const initials = words.map(w => w[0]).filter(char => char && /[a-zA-Z]/.test(char)).slice(0, 2).join('').toUpperCase() || "MC";
-    
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-      <rect width="100%" height="100%" fill="#0F2E3D" />
-      <text x="50%" y="50%" font-family="sans-serif" font-size="240" font-weight="700" fill="#C9A24B" text-anchor="middle" dominant-baseline="central" letter-spacing="4">${initials}</text>
-    </svg>`;
-    
-    const base64Svg = Buffer.from(svg).toString('base64');
-    return { ...c, hero_image_url: `data:image/svg+xml;base64,${base64Svg}` };
-  }
-  return c;
-}
-
-export async function getSeats(params: Record<string, any>): Promise<(SeatEntry & { college: College })[]> {
+export async function getSeats(params: SeatQuery): Promise<(SeatEntry & { college: College })[]> {
   let results = (seatsData as SeatEntry[]).map(seat => {
     const college = (collegesData as College[]).find(c => c.id === seat.collegeId);
     if (!college) return null;
@@ -96,8 +30,9 @@ export async function getSeats(params: Record<string, any>): Promise<(SeatEntry 
   if (params.state) {
     results = results.filter(s => s.college.stateCode === params.state);
   }
-  if (params.type && params.type !== "all") {
-    results = results.filter(s => s.college.type.toLowerCase() === params.type.toLowerCase());
+  const type = params.type?.toLowerCase();
+  if (type && type !== "all") {
+    results = results.filter(s => s.college.type.toLowerCase() === type);
   }
   if (params.search) {
     const q = params.search.toLowerCase();
@@ -112,7 +47,9 @@ export async function getSeats(params: Record<string, any>): Promise<(SeatEntry 
 }
 
 // Adding getCutoffs so client components don't have to import the whole JSON directly
-export async function getCutoffs(params: Record<string, any>): Promise<CutoffEntry[]> {
+type CutoffQuery = Partial<Record<"collegeId" | "track" | "quota" | "state" | "stateCategory" | "category" | "course" | "specialty", string>> & { round?: number; year?: number };
+
+export async function getCutoffs(params: CutoffQuery): Promise<CutoffEntry[]> {
   let results = [...cutoffsData] as CutoffEntry[];
 
   if (params.collegeId) {
@@ -149,36 +86,20 @@ export async function getCutoffs(params: Record<string, any>): Promise<CutoffEnt
   return results;
 }
 
-export async function getCourses(params: Record<string, any>) {
-  // Derive courses from seats data dynamically
-  const results = (seatsData as SeatEntry[]).filter(s => s.collegeId === params.collegeId);
-  
-  const college = await getCollegeById(params.collegeId);
-  if (!college) return [];
-
-  // Group by track and course to get total seats
-  const grouped = results.reduce((acc, curr) => {
-    const key = `${curr.track}_${curr.course}`;
-    if (!acc[key]) {
-      acc[key] = {
-        collegeId: curr.collegeId,
-        track: curr.track,
-        course: curr.course,
-        totalSeats: 0,
-      };
-    }
-    acc[key].totalSeats += curr.seats;
-    return acc;
-  }, {} as Record<string, any>);
-
-  return Object.values(grouped).map((course: any) => {
-    const officialFees = (feesData as OfficialFee[]).filter((fee) => fee.collegeId === course.collegeId && fee.course === course.course);
-
-    return {
-      ...course,
-      officialFees,
-    };
-  });
+/** One entry per track and course at a college: total seats, and its published fees. */
+export async function getCourses(params: { collegeId: string }): Promise<CollegeCourse[]> {
+  const grouped = new Map<string, CollegeCourse>();
+  for (const seat of seatsData as SeatEntry[]) {
+    if (seat.collegeId !== params.collegeId) continue;
+    const key = `${seat.track}_${seat.course}`;
+    const entry = grouped.get(key) ?? { collegeId: seat.collegeId, track: seat.track, course: seat.course, totalSeats: 0, officialFees: [] };
+    entry.totalSeats += seat.seats;
+    grouped.set(key, entry);
+  }
+  for (const entry of grouped.values()) {
+    entry.officialFees = (feesData as OfficialFee[]).filter((fee) => fee.collegeId === entry.collegeId && fee.course === entry.course);
+  }
+  return [...grouped.values()];
 }
 
 /* ── College Finder ───────────────────────────────────────────────────── */

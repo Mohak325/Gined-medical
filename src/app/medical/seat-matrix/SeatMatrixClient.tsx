@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { getSeats } from "@/lib/medical/api";
+import { useKeyed } from "@/lib/medical/useKeyed";
 import { type College, type SeatEntry, INDIA_STATES } from "@/lib/medical/mockData";
 import { SeatMatrixQuerySchema } from "@/lib/medical/schemas";
 import SeatTableView from "@/components/medical/seat-matrix/SeatTableView";
@@ -43,9 +44,13 @@ export default function SeatMatrixClient() {
   const parsed = SeatMatrixQuerySchema.safeParse(rawParams);
   const params = parsed.success ? parsed.data : SeatMatrixQuerySchema.parse({});
 
-  const [seats, setSeats] = useState<SeatWithCollege[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const dataKey = `${searchParams.toString()}|${track}`;
+  const loaded = useKeyed(dataKey, () => getSeats({ ...params, track }).then(totalByCourse));
+  const seats = loaded ?? [];
+  const loading = !loaded;
+  // Rows shown; starts again at one page whenever the filters change.
+  const [paging, setPaging] = useState({ key: "", n: PAGE_SIZE });
+  const visibleCount = paging.key === dataKey ? paging.n : PAGE_SIZE;
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   const updateQuery = useCallback((updates: Record<string, string | null>) => {
@@ -67,18 +72,6 @@ export default function SeatMatrixClient() {
     }
   }, [track]);
 
-  useEffect(() => {
-    let mounted = true;
-    setLoading(true);
-    setVisibleCount(PAGE_SIZE);
-    getSeats({ ...params, track }).then((data) => {
-      if (mounted) {
-        setSeats(totalByCourse(data));
-        setLoading(false);
-      }
-    });
-    return () => { mounted = false; };
-  }, [searchParams, track]);
 
 
   const hasFilters = params.state || params.search || params.quota !== "all";
@@ -211,7 +204,7 @@ export default function SeatMatrixClient() {
                 shown={Math.min(visibleCount, seats.length)}
                 total={seats.length}
                 noun="entries"
-                onClick={() => setVisibleCount(count => count + PAGE_SIZE)}
+                onClick={() => setPaging({ key: dataKey, n: visibleCount + PAGE_SIZE })}
               />
             </div>
           ) : (

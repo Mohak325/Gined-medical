@@ -34,7 +34,7 @@ export const DirectoryQuerySchema = z.object({
 
 // Compare Tray Query Params
 export const CompareQuerySchema = z.object({
-  ids: z.string().default("").transform((val) => val.split(",").filter(Boolean).slice(0, 3)),
+  ids: z.string().default("").transform((val) => val.split(",").filter(Boolean).slice(0, 4)),
 });
 
 // Seat Matrix Query Params
