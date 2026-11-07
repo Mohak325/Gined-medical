@@ -1,7 +1,11 @@
 "use server";
-import { getCollegeById } from "@/lib/medical/api";
 
-export async function getCompareColleges(ids: string[]) {
-  const colleges = await Promise.all(ids.map(id => getCollegeById(id)));
-  return colleges.filter(Boolean);
+import { collegeSummary } from "@/lib/medical/collegeSummary";
+
+/** Names for the compare tray. */
+export async function getCompareNames(ids: string[]): Promise<{ id: string; name: string }[]> {
+  return ids.flatMap((id) => {
+    const college = collegeSummary(id);
+    return college ? [{ id, name: college.name }] : [];
+  });
 }

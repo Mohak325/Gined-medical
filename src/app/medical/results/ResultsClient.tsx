@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import { useKeyed } from "@/lib/medical/useKeyed";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { SearchX, ArrowUpRight, MessageCircle, RotateCcw } from "lucide-react";
@@ -24,24 +25,6 @@ const TILE_TONES = {
   moderate: "text-moderate",
   ambitious: "text-ambitious",
 } as const;
-
-/** Fetches by a key, and reports the data only while the key still matches (no setState inside effects). */
-function useKeyed<T>(key: string | null, load: () => Promise<T>) {
-  const [state, setState] = useState<{ key: string; data: T } | null>(null);
-  useEffect(() => {
-    if (!key) return;
-    let live = true;
-    load().then((data) => {
-      if (live) setState({ key, data });
-    });
-    return () => {
-      live = false;
-    };
-    // `load` is rebuilt each render; the key captures everything it depends on.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key]);
-  return state && state.key === key ? state.data : undefined;
-}
 
 export default function ResultsClient() {
   const searchParams = useSearchParams();

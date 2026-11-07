@@ -1,32 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useCompare } from "@/lib/medical/CompareProvider";
-import { getCompareColleges } from "@/app/medical/compare/actions";
+import { useCompare, COMPARE_MAX } from "@/lib/medical/CompareProvider";
+import { useKeyed } from "@/lib/medical/useKeyed";
+import { getCompareNames } from "@/app/medical/compare/actions";
 import { X, Scale } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function CompareTray() {
   const { ids, remove, clear } = useCompare();
-  const [colleges, setColleges] = useState<{ id: string; name: string }[]>([]);
-
-  useEffect(() => {
-    if (ids.length === 0) {
-      setColleges([]);
-      return;
-    }
-    
-    // Fetch minimal details (just names) for the tray
-    let mounted = true;
-    getCompareColleges(ids).then(data => {
-      if (mounted) {
-        setColleges(data.map(c => ({ id: c!.id, name: c!.name })));
-      }
-    });
-
-    return () => { mounted = false; };
-  }, [ids]);
+  const idsKey = ids.join(",");
+  const colleges = useKeyed(idsKey || null, () => getCompareNames(ids)) ?? [];
 
   if (ids.length === 0) return null;
 
@@ -37,7 +21,7 @@ export default function CompareTray() {
         animate={{ y: 0 }}
         exit={{ y: "100%" }}
         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-        className="fixed bottom-0 left-0 right-0 z-[var(--z-drawer)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
+        className="fixed bottom-0 left-0 right-0 z-[var(--z-tray)] bg-ink border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] text-paper-bright"
       >
         <div className="max-w-ledger mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
           
@@ -58,9 +42,9 @@ export default function CompareTray() {
               </div>
             ))}
             
-            {colleges.length < 3 && (
+            {ids.length < COMPARE_MAX && (
               <div className="text-micro text-white/40 italic whitespace-nowrap">
-                Add up to {3 - colleges.length} more...
+                Add up to {COMPARE_MAX - ids.length} more
               </div>
             )}
           </div>

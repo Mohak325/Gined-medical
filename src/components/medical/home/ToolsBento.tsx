@@ -100,7 +100,7 @@ export default function ToolsBento() {
             className="md:col-span-3"
             icon={Columns3}
             title="Compare colleges"
-            body="Put up to three colleges side by side: cutoffs, seats and fees."
+            body="Put up to four colleges side by side: cutoffs, seats and fees."
           />
           <Tile
             href="/medical/colleges"

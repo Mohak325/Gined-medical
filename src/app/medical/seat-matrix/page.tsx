@@ -13,15 +13,13 @@ export default function SeatMatrixPage() {
     <>
       <SiteNavbar />
       
-      <main className="pt-24 pb-20 bg-paper min-h-screen">
-        <div className="max-w-ledger mx-auto px-6 md:px-12">
-          
-          <header className="mb-10">
-            <h1 className="text-display mb-4 text-text-main">
-              Seat Matrix Explorer
-            </h1>
-            <p className="text-body-large text-text-muted max-w-prose">
-              View {meta.seatYear} seats by college, course and quota. Category breakdowns are coming soon.
+      <main className="pt-24 md:pt-32 pb-16 bg-paper min-h-screen">
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
+          <header className="mb-10 max-w-3xl">
+            <p className="text-eyebrow text-gold-deep mb-4">Seat matrix</p>
+            <h1 className="text-display text-ink">Where the {meta.seatYear} seats are.</h1>
+            <p className="text-body-large text-text-muted mt-4">
+              Seats by college, course and quota. Filters stay in the page address, so you can share exactly what you&apos;re looking at.
             </p>
           </header>
 

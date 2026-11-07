@@ -15,7 +15,8 @@ interface CompareContextValue {
 const CompareContext = createContext<CompareContextValue | null>(null);
 
 const STORAGE_KEY = "medical:compare";
-const MAX = 3;
+export const COMPARE_MAX = 4;
+const MAX = COMPARE_MAX;
 
 function parseIds(raw: string): string[] {
   try {
