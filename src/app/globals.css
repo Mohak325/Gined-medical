@@ -471,6 +471,11 @@
   @media (prefers-reduced-motion: no-preference) {
     html.motion-ready [data-reveal]:not([data-in]) .bar-fill { transform: translateX(calc(var(--o, 0) * 100%)) scaleX(0); }
     html.motion-ready [data-reveal]:not([data-in]) .bar-dot { transform: translateX(0); }
+    /* Bars that appear later (after typing a rank, say) grow in from empty too. */
+    @starting-style {
+      .bar-fill { transform: translateX(calc(var(--o, 0) * 100%)) scaleX(0); }
+      .bar-dot { transform: translateX(0); }
+    }
   }
 
   /* Loading placeholder with a soft light sweep. */

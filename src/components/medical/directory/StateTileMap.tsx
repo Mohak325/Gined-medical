@@ -28,7 +28,7 @@ export default function StateTileMap({
 }) {
   const max = Math.max(1, ...Object.values(counts));
   return (
-    <div className="grid grid-cols-8 gap-0.5" role="group" aria-label="Filter by state">
+    <div className="grid grid-cols-8 gap-1" role="group" aria-label="Filter by state">
       {Object.entries(TILES).map(([code, [col, row]]) => {
         const n = counts[code] ?? 0;
         const active = selected === code;
@@ -44,9 +44,9 @@ export default function StateTileMap({
             aria-pressed={active}
             title={`${names[code] ?? code}: ${n} college${n === 1 ? "" : "s"}`}
             style={{ gridColumnStart: col + 1, gridRowStart: row + 1 }}
-            className={`aspect-square min-w-6 rounded-[4px] text-[10px] font-semibold leading-none flex flex-col items-center justify-center transition-[outline-color] outline outline-2 outline-transparent ${
+            className={`aspect-square min-w-6 rounded-[6px] text-[10px] font-semibold leading-none flex flex-col items-center justify-center transition-[outline-color,transform,box-shadow] duration-300 outline outline-2 outline-transparent enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_6px_14px_-6px_rgba(8,26,36,0.5)] ${
               active
-                ? "bg-gold text-ink outline-ink"
+                ? "bg-gold text-ink outline-ink shadow-[0_0_0_4px_rgba(201,162,75,0.25)]"
                 : n === 0
                   ? "bg-paper-dim text-text-muted cursor-not-allowed"
                   : `${shade} hover:outline-gold`

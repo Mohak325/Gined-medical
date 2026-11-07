@@ -13,6 +13,20 @@ test("a college page labels a rank in Your chances here", async ({ page }) => {
   await expect(page.getByText("Reached in Round 2 or 3")).toBeVisible();
 });
 
+test("a college page's section menu jumps to a section", async ({ page }) => {
+  await page.goto("/medical/college/ug_ap001g1");
+  await page.getByRole("navigation", { name: "On this page" }).getByRole("link", { name: "Fees" }).click();
+  await expect(page.locator("#fees-heading")).toBeInViewport();
+});
+
+test("the directory hero counts colleges and the list view shows a table", async ({ page }) => {
+  await page.goto("/medical/colleges");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(/Every medical college/);
+  await page.getByRole("button", { name: "List view" }).click();
+  await expect(page).toHaveURL(/view=list/);
+  await expect(page.locator("table tbody tr").first()).toBeVisible();
+});
+
 test("state, guide and pricing pages render", async ({ page }) => {
   for (const [path, heading] of [
     ["/medical/state/karnataka", /medical colleges/],

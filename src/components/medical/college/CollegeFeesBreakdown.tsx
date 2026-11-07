@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { formatCurrency } from "@/lib/medical/format";
 import { type CollegeCourse, type OfficialFee } from "@/lib/medical/mockData";
-import { FileCheck2, MessageCircle, ArrowRight } from "lucide-react";
+import { FileCheck2, MessageCircle } from "lucide-react";
+import Cta from "@/components/ui/Cta";
 
 const SEAT_LABELS: Record<OfficialFee["seatType"], string> = {
   government: "Government quota seat",
@@ -14,20 +14,20 @@ const SEAT_ORDER: OfficialFee["seatType"][] = ["government", "private", "managem
 /** Sends students to a counsellor for whatever the site has no official figure for. */
 function AskCounsellor({ title, body }: { title: string; body: string }) {
   return (
-    <div className="bg-gold/10 border border-gold/30 rounded-[var(--radius-md)] p-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
-      <div className="flex items-start gap-3">
-        <MessageCircle className="w-5 h-5 text-gold-deep shrink-0 mt-0.5" />
+    <div className="relative overflow-hidden rounded-[24px] bg-ink text-text-on-dark p-6 md:p-7 grain flex flex-col sm:flex-row sm:items-center gap-5 justify-between">
+      <div aria-hidden className="absolute -left-20 -bottom-24 w-64 h-64 rounded-full bg-gold/15 blur-3xl" />
+      <div className="relative z-[2] flex items-start gap-4">
+        <span className="w-10 h-10 shrink-0 rounded-full surface-ink-glass flex items-center justify-center" aria-hidden>
+          <MessageCircle className="w-4 h-4 text-gold" />
+        </span>
         <div>
-          <h3 className="text-body font-semibold text-text-main">{title}</h3>
-          <p className="text-small text-text-muted">{body}</p>
+          <h3 className="font-[family-name:var(--font-instrument)] text-[1.5rem] leading-tight">{title}</h3>
+          <p className="text-small text-text-on-dark/75 mt-1">{body}</p>
         </div>
       </div>
-      <Link
-        href="/medical/book?source=college-fees"
-        className="inline-flex items-center justify-center gap-2 shrink-0 bg-ink text-text-on-dark hover:bg-ink/90 font-semibold text-small px-5 py-3 rounded-[var(--radius-sm)] transition-colors"
-      >
-        Ask our counselling experts <ArrowRight className="w-4 h-4" />
-      </Link>
+      <Cta href="/medical/book?source=college-fees" variant="gold" className="relative z-[2] shrink-0">
+        Ask our counselling experts
+      </Cta>
     </div>
   );
 }
@@ -50,18 +50,20 @@ export default function CollegeFeesBreakdown({ courses }: { courses: CollegeCour
   }
 
   return (
-    <div className="space-y-6">
-      <div className="bg-paper border border-hairline rounded-[var(--radius-md)] p-6">
-        <h3 className="text-h4 text-text-main mb-1 flex items-center gap-2">
-          <FileCheck2 className="w-5 h-5 text-safe" /> Published Annual Fees
+    <div className="space-y-5">
+      <div className="rounded-[24px] surface-premium p-6 md:p-7">
+        <h3 className="flex items-center gap-2 text-eyebrow text-[var(--safe-ink)]">
+          <FileCheck2 className="w-4 h-4" aria-hidden /> Published annual fees
         </h3>
-        <p className="text-small text-text-muted mb-4">
+        <p className="text-small text-text-muted mt-3 mb-5">
           Per year, as published in{" "}
           {sources.map((fee, index) => (
             <span key={fee.source}>
               {index > 0 && "; "}
               {fee.sourceUrl ? (
-                <a href={fee.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold-deep">{fee.source}</a>
+                <a href={fee.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-gold-deep">
+                  {fee.source}
+                </a>
               ) : (
                 `${fee.source}, ${fee.year}`
               )}
@@ -69,16 +71,17 @@ export default function CollegeFeesBreakdown({ courses }: { courses: CollegeCour
           ))}
           . The fee depends on the seat you get. Hostel, exam and other charges may be extra.
         </p>
-        <div className="divide-y divide-hairline">
+        <ul className="divide-y divide-hairline border-t border-hairline">
           {official.map((fee) => (
-            <div key={`${fee.course}-${fee.seatType}`} className="flex items-baseline justify-between gap-4 py-3">
-              <span className="text-small text-text-main">
-                {fee.course} · {SEAT_LABELS[fee.seatType]}
+            <li key={`${fee.course}-${fee.seatType}`} className="flex items-baseline justify-between gap-4 py-4">
+              <span className="text-small text-ink">
+                {fee.course}
+                <span className="block text-micro font-normal tracking-normal text-text-muted mt-0.5">{SEAT_LABELS[fee.seatType]}</span>
               </span>
-              <span className="text-body font-semibold text-text-main tabular-nums">{formatCurrency(fee.annualFee)}</span>
-            </div>
+              <span className="font-[family-name:var(--font-instrument)] text-[1.75rem] leading-none text-ink tabular-nums">{formatCurrency(fee.annualFee)}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
       <AskCounsellor
         title="Service bond and other charges"

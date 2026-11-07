@@ -12,6 +12,7 @@ export default function SplitWords({
   className = "",
   delay = 0,
   intro = false,
+  id,
 }: {
   as?: ElementType;
   text?: string;
@@ -20,6 +21,7 @@ export default function SplitWords({
   delay?: number;
   /** Animate on page load (CSS only) instead of on scroll: for the first screen. */
   intro?: boolean;
+  id?: string;
 }) {
   const pieces = parts ?? [{ text: text ?? "" }];
   const label = pieces.map((p) => p.text).join(" ");
@@ -37,7 +39,7 @@ export default function SplitWords({
     }
   }
   return (
-    <Tag {...(intro ? { "data-split-intro": "" } : { "data-split": "" })} aria-label={label} className={className} style={{ "--delay": `${delay}ms` } as CSSProperties}>
+    <Tag id={id} {...(intro ? { "data-split-intro": "" } : { "data-split": "" })} aria-label={label} className={className} style={{ "--delay": `${delay}ms` } as CSSProperties}>
       <span aria-hidden>{words}</span>
     </Tag>
   );
