@@ -148,7 +148,7 @@ export async function getCutoffs(params: Record<string, any>): Promise<CutoffEnt
 
 export async function getCourses(params: Record<string, any>) {
   // Derive courses from seats data dynamically
-  let results = (seatsData as SeatEntry[]).filter(s => s.collegeId === params.collegeId);
+  const results = (seatsData as SeatEntry[]).filter(s => s.collegeId === params.collegeId);
   
   const college = await getCollegeById(params.collegeId);
   if (!college) return [];

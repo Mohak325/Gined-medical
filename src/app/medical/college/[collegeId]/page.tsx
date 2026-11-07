@@ -28,7 +28,7 @@ export default async function CollegeDetailPage({
 
   return (
     <>
-      <SiteNavbar variant="cinematic" />
+      <SiteNavbar />
       
       <main className="pb-20 bg-paper min-h-screen">
         <CollegeHeader college={college} />
@@ -86,9 +86,14 @@ export default async function CollegeDetailPage({
                   [bestQuota, bestCategory] = bestKey.split("|");
                 }
 
+                // MBBS where the college has it; otherwise its course with the most cutoff rows.
+                const courseCounts: Record<string, number> = {};
+                cutoffs.forEach((c) => { courseCounts[c.course] = (courseCounts[c.course] || 0) + 1; });
+                const trendCourse = courseCounts.MBBS ? "MBBS" : Object.keys(courseCounts).reduce((a, b) => (courseCounts[a] >= courseCounts[b] ? a : b));
+
                 return (
                   <>
-                    <CutoffTrendChart cutoffs={cutoffs} category={bestCategory} quota={bestQuota} />
+                    <CutoffTrendChart cutoffs={cutoffs} category={bestCategory} quota={bestQuota} course={trendCourse} />
                     <p className="text-small text-text-muted mt-4">
                       Note: This chart shows Round 1 {bestQuota === "state" ? "state counselling" : bestQuota.toUpperCase()} {bestCategory.toUpperCase()} category closing ranks. A lower rank number indicates higher competition.
                     </p>

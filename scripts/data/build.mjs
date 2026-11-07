@@ -458,6 +458,8 @@ const meta = {
   ugCollegeCount: colleges.filter((college) => college.ugSeats > 0).length,
   ugSeats,
   collegesWithCutoffs: new Set(cutoffs.map((cutoff) => cutoff.collegeId)).size,
+  // MBBS/BDS colleges only, so it can sit beside ugCollegeCount without looking larger than it.
+  ugCollegesWithCutoffs: new Set(cutoffs.filter((cutoff) => cutoff.track === "ug").map((cutoff) => cutoff.collegeId)).size,
   // PG specialties with closing ranks in the latest year, for the predictor's specialty list.
   pgCourses: [...new Set(cutoffs.filter((c) => c.track === "pg" && c.year === Math.max(...cutoffs.map((x) => x.year))).map((c) => c.specialty))].sort((a, b) => Number(a.startsWith("Diploma")) - Number(b.startsWith("Diploma")) || a.localeCompare(b)),
   collegesWithFees: new Set([...fees.values()].map((fee) => fee.collegeId)).size,

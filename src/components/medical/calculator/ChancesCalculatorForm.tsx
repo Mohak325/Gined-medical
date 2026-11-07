@@ -10,7 +10,8 @@ import { KEA_GROUPS, KEA_SEATS, KEA_SUB_QUOTAS, composeKeaCode, parseKeaCode, ty
 import { ArrowRight } from "lucide-react";
 
 interface ChancesCalculatorFormProps {
-  mode: "landing" | "results";
+  /** hero: the homepage card, which supplies its own heading; landing: a standalone card; results: the compact bar above results. */
+  mode: "hero" | "landing" | "results";
 }
 
 export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormProps) {
@@ -95,12 +96,14 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
     router.push(`/medical/results?${params.toString()}`);
   };
 
+  const isHero = mode === "hero";
   const isLanding = mode === "landing";
+  const fieldSpan = isHero ? "" : isLanding ? "lg:col-span-4" : "lg:col-span-1";
 
   return (
     <form 
       onSubmit={handleSubmit}
-      className={`bg-paper border border-hairline rounded-[var(--radius-md)] ${isLanding ? "p-6 md:p-10 shadow-card" : "p-4 md:p-6"}`}
+      className={isHero ? "" : `bg-paper border border-hairline rounded-[var(--radius-md)] ${isLanding ? "p-6 md:p-10 shadow-card" : "p-4 md:p-6"}`}
     >
       {isLanding && (
         <div className="mb-8">
@@ -111,10 +114,10 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         </div>
       )}
 
-      <div className={`grid gap-6 ${isLanding ? "md:grid-cols-2 lg:grid-cols-12" : "md:grid-cols-2 lg:grid-cols-5 items-end"}`}>
+      <div className={`grid ${isHero ? "gap-4 sm:grid-cols-2" : `gap-6 ${isLanding ? "md:grid-cols-2 lg:grid-cols-12" : "md:grid-cols-2 lg:grid-cols-5 items-end"}`}`}>
         
         {/* Rank Input */}
-        <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+        <div className={`${fieldSpan}`}>
           <label htmlFor="rank-input" className="block text-small font-semibold text-text-main mb-2">
             {stateRank ? stateRank.label : `NEET ${track.toUpperCase()} Rank`}
           </label>
@@ -135,7 +138,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         </div>
 
         {/* Quota */}
-        <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+        <div className={`${fieldSpan}`}>
           <label className="block text-small font-semibold text-text-main mb-2">
             Counselling Quota
           </label>
@@ -154,7 +157,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
         {/* Category */}
         {!usesOwnCategories && (
-          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+          <div className={`${fieldSpan}`}>
             <label className="block text-small font-semibold text-text-main mb-2">
               Category
             </label>
@@ -174,7 +177,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
         {/* State (Conditional) */}
         {quota === "state" && (
-          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+          <div className={`${fieldSpan}`}>
             <label className="block text-small font-semibold text-text-main mb-2">
               Counselling State
             </label>
@@ -194,7 +197,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
         {/* Another state's own categories */}
         {stateOptions && (
-          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+          <div className={`${fieldSpan}`}>
             <label htmlFor="state-code" className="block text-small font-semibold text-text-main mb-2">
               State Category
             </label>
@@ -212,7 +215,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         {/* Karnataka's own seat types and categories */}
         {usesKarnataka && (
           <>
-            <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+            <div className={`${fieldSpan}`}>
               <label htmlFor="kea-seat" className="block text-small font-semibold text-text-main mb-2">
                 Seat Type
               </label>
@@ -226,7 +229,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
               </select>
             </div>
             {keaSeat === "government" && (
-              <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+              <div className={`${fieldSpan}`}>
                 <label htmlFor="kea-group" className="block text-small font-semibold text-text-main mb-2">
                   Karnataka Category
                 </label>
@@ -241,7 +244,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
               </div>
             )}
             {keaSeat !== "private_open" && (
-              <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+              <div className={`${fieldSpan}`}>
                 <label htmlFor="kea-sub" className="block text-small font-semibold text-text-main mb-2">
                   Sub-quota
                 </label>
@@ -262,7 +265,7 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
 
         {/* Course (Conditional for PG) */}
         {track === "pg" && (
-          <div className={`${isLanding ? "lg:col-span-4" : "lg:col-span-1"}`}>
+          <div className={`${fieldSpan}`}>
             <label className="block text-small font-semibold text-text-main mb-2">
               Specialty
             </label>
@@ -280,13 +283,13 @@ export default function ChancesCalculatorForm({ mode }: ChancesCalculatorFormPro
         )}
 
         {/* Submit */}
-        <div className={`${isLanding ? "lg:col-span-4 flex items-end" : "lg:col-span-1"}`}>
+        <div className={isHero ? "sm:col-span-2 pt-1" : isLanding ? "lg:col-span-4 flex items-end" : "lg:col-span-1"}>
           <button
             type="submit"
             className="w-full h-[50px] inline-flex items-center justify-center gap-2 bg-ink text-gold font-semibold text-body rounded-[var(--radius-sm)] hover:bg-ink-deep hover:text-gold-deep transition-colors"
           >
-            {isLanding ? "See My Chances" : "Update"}
-            {isLanding && <ArrowRight className="w-4 h-4" />}
+            {isHero || isLanding ? "See my colleges" : "Update"}
+            {(isHero || isLanding) && <ArrowRight className="w-4 h-4" />}
           </button>
         </div>
       </div>

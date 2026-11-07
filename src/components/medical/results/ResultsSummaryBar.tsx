@@ -1,6 +1,5 @@
 "use client";
 
-import { useMemo } from "react";
 import { type ConfidenceLevel } from "@/lib/medical/confidence";
 import { SlidersHorizontal, Eye } from "lucide-react";
 import { motion } from "framer-motion";
