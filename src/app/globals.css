@@ -478,6 +478,11 @@
     }
   }
 
+  /* Reordering a list (the shortlist): rows glide to their new places; the page itself stays still. */
+  html.vt-list::view-transition-old(root),
+  html.vt-list::view-transition-new(root) { animation: none; }
+  html.vt-list::view-transition-group(*) { animation-duration: 450ms; animation-timing-function: var(--ease-reveal); }
+
   /* Loading placeholder with a soft light sweep. */
   .skeleton { position: relative; overflow: hidden; background: color-mix(in oklab, var(--paper-dim) 70%, var(--paper-bright)); }
   .skeleton::after {

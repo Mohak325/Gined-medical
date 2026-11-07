@@ -1,5 +1,6 @@
 import SiteNavbar from "@/components/SiteNavbar";
 import SiteFooter from "@/components/SiteFooter";
+import PageHero from "@/components/medical/shared/PageHero";
 import ShortlistClient from "./ShortlistClient";
 
 export const metadata = {
@@ -14,15 +15,17 @@ export default function ShortlistPage() {
       <div className="print:hidden">
         <SiteNavbar />
       </div>
-      <main className="pt-24 md:pt-32 pb-16 bg-paper min-h-screen print:pt-0 print:bg-white">
-        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
-          <header className="mb-8 max-w-3xl">
-            <p className="text-eyebrow text-gold-deep mb-4 print:hidden">Shortlist</p>
-            <h1 className="text-display text-ink">Your choice list.</h1>
-            <p className="text-body-large text-text-muted mt-4 print:hidden">
-              Put the colleges you want most at the top. During choice filling you&apos;re offered the highest one your rank reaches.
-            </p>
-          </header>
+      <main className="bg-paper min-h-screen print:bg-white">
+        <PageHero
+          photo="anatomyDrawing"
+          eyebrow="Shortlist"
+          title="Your choice"
+          accent="list."
+          description="Put the colleges you want most at the top. During choice filling you're offered the highest one your rank reaches."
+          className="print:hidden"
+        />
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-28 print:p-0">
+          <h1 className="hidden print:block text-display text-ink mb-4">Your choice list</h1>
           <ShortlistClient />
         </div>
       </main>

@@ -1,40 +1,39 @@
 import { Suspense } from "react";
 import meta from "@/data/meta.json";
+import SiteNavbar from "@/components/SiteNavbar";
+import SiteFooter from "@/components/SiteFooter";
+import CTABand from "@/components/medical/shared/CTABand";
+import PageHero from "@/components/medical/shared/PageHero";
 import SeatMatrixClient from "./SeatMatrixClient";
 
 export const metadata = {
   title: "MBBS seat matrix by college and quota — gined.in",
   description: "Every college's MBBS and PG seats by quota for the current counselling year, filterable by state and college type.",
 };
-import SiteNavbar from "@/components/SiteNavbar";
-import SiteFooter from "@/components/SiteFooter";
-import CTABand from "@/components/medical/shared/CTABand";
 
-/**
- * Seat Matrix Explorer — Phase 7
- */
 export default function SeatMatrixPage() {
   return (
     <>
       <SiteNavbar />
-      
-      <main className="pt-24 md:pt-32 pb-16 bg-paper min-h-screen">
-        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10">
-          <header className="mb-10 max-w-3xl">
-            <p className="text-eyebrow text-gold-deep mb-4">Seat matrix</p>
-            <h1 className="text-display text-ink">Where the {meta.seatYear} seats are.</h1>
-            <p className="text-body-large text-text-muted mt-4">
-              Seats by college, course and quota. Filters stay in the page address, so you can share exactly what you&apos;re looking at.
-            </p>
-          </header>
-
-          <Suspense fallback={<div className="h-96 flex items-center justify-center">Loading seat matrix...</div>}>
+      <main className="bg-paper min-h-screen">
+        <PageHero
+          photo="heartModel"
+          eyebrow="Seat matrix"
+          title={`Where the ${meta.seatYear}`}
+          accent="seats are."
+          description="Seats by college, course and quota. Filters stay in the page address, so you can share exactly what you're looking at."
+          stats={[
+            { value: meta.ugSeats, label: "MBBS seats" },
+            { value: meta.ugCollegeCount, label: "Colleges offering MBBS" },
+            { value: meta.pgCourses.length, label: "PG specialties" },
+          ]}
+        />
+        <div className="max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-28">
+          <Suspense fallback={<div className="skeleton h-[40rem] rounded-[28px]" />}>
             <SeatMatrixClient />
           </Suspense>
-
         </div>
       </main>
-
       <CTABand source="seat_matrix_bottom" compact />
       <SiteFooter />
     </>
