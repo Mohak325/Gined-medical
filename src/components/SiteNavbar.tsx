@@ -15,7 +15,7 @@ export const NAV_LINKS = [
 ];
 
 // Pages whose first screen is a dark photo or ink hero, where the bar starts clear with light text.
-const DARK_HEROES = [/^\/medical$/, /^\/medical\/college\//, /^\/medical\/results$/, /^\/medical\/colleges$/, /^\/medical\/(compare|seat-matrix|shortlist)$/];
+const DARK_HEROES = [/^\/medical$/, /^\/medical\/college\//, /^\/medical\/results$/, /^\/medical\/colleges$/, /^\/medical\/(compare|seat-matrix|shortlist|pricing|book)$/];
 
 /**
  * A floating glass capsule. Over a dark hero it starts clear with light text; once the page

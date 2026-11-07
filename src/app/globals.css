@@ -483,6 +483,13 @@
   html.vt-list::view-transition-new(root) { animation: none; }
   html.vt-list::view-transition-group(*) { animation-duration: 450ms; animation-timing-function: var(--ease-reveal); }
 
+  /* A tick that draws itself (booking confirmation). Shapes use pathLength="1". */
+  .draw-check circle, .draw-check path { stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw-line 900ms var(--ease-reveal) both; }
+  .draw-check circle { transform: rotate(-90deg); transform-origin: center; }
+  .draw-check path { animation-delay: 450ms; animation-duration: 600ms; }
+  @keyframes draw-line { from { stroke-dashoffset: 1; } }
+  @media (prefers-reduced-motion: reduce) { .draw-check circle, .draw-check path { animation: none; } }
+
   /* Loading placeholder with a soft light sweep. */
   .skeleton { position: relative; overflow: hidden; background: color-mix(in oklab, var(--paper-dim) 70%, var(--paper-bright)); }
   .skeleton::after {
