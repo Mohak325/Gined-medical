@@ -7,7 +7,7 @@ import cutoffsData from "@/data/cutoffs.json";
 import seatsData from "@/data/seats.json";
 import feesData from "@/data/fees.json";
 import meta from "@/data/meta.json";
-import type { College, CutoffEntry, OfficialFee, SeatEntry } from "./mockData";
+import type { College, CollegePhoto, CutoffEntry, OfficialFee, SeatEntry } from "./mockData";
 
 export interface CollegeSummary {
   id: string;
@@ -30,6 +30,8 @@ export interface CollegeSummary {
   feeMax?: number;
   /** Published yearly MBBS fee for government quota seats, where there is one. */
   feeGovt?: number;
+  /** A credited Wikimedia Commons photo, where one was found and checked. */
+  photo?: CollegePhoto;
 }
 
 let cache: { list: CollegeSummary[]; byId: Map<string, CollegeSummary> } | null = null;
@@ -80,6 +82,7 @@ function build() {
       feeMin: f?.min,
       feeMax: f?.max,
       feeGovt: f?.govt,
+      ...(c.photo ? { photo: c.photo } : {}),
     };
   });
   return { list, byId: new Map(list.map((c) => [c.id, c])) };

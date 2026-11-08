@@ -15,6 +15,7 @@ import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
 import { stateByCode } from "@/lib/medical/states";
 import CollegeCover from "@/components/medical/shared/CollegeCover";
+import CollegeImage, { creditText } from "@/components/medical/shared/CollegeImage";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
 import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
 import CollegeFeesBreakdown from "@/components/medical/college/CollegeFeesBreakdown";
@@ -112,12 +113,36 @@ export default async function CollegeDetailPage({ params }: Params) {
       />
       <SiteNavbar />
       <main className="bg-paper min-h-screen">
-        {/* Hero: the college's generated cover, never a photo we don't have the right to use */}
+        {/* Hero: a checked, freely licensed photo of the college where there is one, otherwise its generated cover */}
         <section className="relative bg-ink-deep text-text-on-dark overflow-hidden grain">
-          <div aria-hidden className="absolute inset-0 overflow-hidden">
-            <CollegeCover id={college.id} type={college.type} stateCode={college.stateCode} showLabel={false} className="parallax w-full h-full opacity-75" />
+          <div aria-hidden className={`absolute inset-0 overflow-hidden ${college.photo ? "" : "opacity-75"}`}>
+            <CollegeImage college={college} sizes="100vw" priority credit="none" coverLabel={false} imgClassName="parallax" />
           </div>
-          <div aria-hidden className="absolute inset-0 z-[1] bg-[linear-gradient(0deg,var(--ink-deep)_0%,rgba(8,26,36,0.82)_45%,rgba(8,26,36,0.45)_100%)]" />
+          <div
+            aria-hidden
+            className={`absolute inset-0 z-[1] ${
+              college.photo
+                ? "bg-[linear-gradient(0deg,var(--ink-deep)_0%,rgba(8,26,36,0.88)_40%,rgba(8,26,36,0.55)_100%),linear-gradient(90deg,rgba(8,26,36,0.7)_0%,transparent_70%)]"
+                : "bg-[linear-gradient(0deg,var(--ink-deep)_0%,rgba(8,26,36,0.82)_45%,rgba(8,26,36,0.45)_100%)]"
+            }`}
+          />
+          {college.photo && (
+            <p className="absolute z-[2] right-4 sm:right-6 bottom-3 max-w-[90%] truncate text-micro font-normal tracking-normal text-text-on-dark/70">
+              Photo:{" "}
+              <a href={college.photo.page} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-text-on-dark">
+                {creditText(college.photo).split(" · ")[0]}
+              </a>
+              ,{" "}
+              {college.photo.licenseUrl ? (
+                <a href={college.photo.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline underline-offset-2 hover:text-text-on-dark">
+                  {college.photo.license}
+                </a>
+              ) : (
+                college.photo.license
+              )}
+              , via Wikimedia Commons
+            </p>
+          )}
           <div aria-hidden className="absolute -right-32 top-10 z-[1] w-[34rem] h-[34rem] rounded-full bg-gold/10 blur-[130px]" />
 
           <div className="relative z-[2] max-w-marketing mx-auto px-4 sm:px-6 md:px-10 pt-32 md:pt-40 pb-12 md:pb-16">

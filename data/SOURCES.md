@@ -251,7 +251,12 @@ Fees read by hand from a notice go in `data/curated/fees.json`, with the documen
 - NexDoc's seat data shows only 15 All India seats at BHU and 22 at Aligarh, while MCC allotted
   100 and 72 in 2026 Round 1. Treat seat counts at central universities with care.
 - Seats have no category split.
-- College photos are switched off, so every college shows its initials. See
-  `data/curated/college-photos-to-review.json`.
+- College photos come from Wikimedia Commons only, under CC BY, CC BY-SA, CC0, public domain or
+  GODL-India, and the site shows each photographer and licence. `npm run data:photos` finds
+  candidates (`data/extracted/college-photo-candidates.json`); a person looks at each one and
+  lists wrong or poor ones in `data/curated/college-photo-rejects.json`; `npm run data:photos:pick`
+  then writes `data/curated/college-photos.json`, which `data:build` reads. 100 of 926 colleges
+  had a usable photo in November 2026. The rest show a generated cover. Photos from college
+  websites or Google aren't used: they're copyrighted or can't be stored.
 - NIRF ranks in `data/curated/college-extras.json` were carried over from the old data.
   Their source and year are unknown, so check them against nirfindia.org.

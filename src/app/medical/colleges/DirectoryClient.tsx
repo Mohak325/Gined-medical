@@ -7,7 +7,7 @@ import { ArrowUpRight, ChevronDown, LayoutGrid, List, MapPin, Search, SlidersHor
 import type { CollegeSummary } from "@/lib/medical/collegeSummary";
 import { INDIA_STATES } from "@/lib/medical/mockData";
 import { formatCurrencyShort, formatRank } from "@/lib/medical/format";
-import CollegeCover from "@/components/medical/shared/CollegeCover";
+import CollegeImage from "@/components/medical/shared/CollegeImage";
 import AddToCompareButton from "@/components/medical/shared/AddToCompareButton";
 import SaveToShortlistButton from "@/components/medical/shared/SaveToShortlistButton";
 import meta from "@/data/meta.json";
@@ -267,9 +267,9 @@ export default function DirectoryClient({ colleges }: { colleges: DirectoryColle
                 >
                   <Link href={`/medical/college/${c.id}`} className="block relative h-32 overflow-hidden" tabIndex={-1} aria-hidden>
                     <span className="absolute inset-0 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]">
-                      <CollegeCover id={c.id} type={c.type} stateCode={c.stateCode} established={c.established} className="w-full h-full" />
+                      <CollegeImage college={c} sizes="(min-width: 1280px) 300px, (min-width: 640px) 45vw, 100vw" />
                     </span>
-                    <span className="absolute top-3 left-3 rounded-full surface-ink-glass px-2.5 py-1 text-micro font-semibold text-text-on-dark">{c.type}</span>
+                    <span className="absolute top-3 left-3 z-[2] rounded-full bg-ink-deep/85 backdrop-blur-sm px-2.5 py-1 text-micro font-semibold text-text-on-dark">{c.type}</span>
                     <span className="absolute top-3 right-3 w-8 h-8 rounded-full bg-gold text-ink flex items-center justify-center opacity-0 scale-75 transition-[opacity,transform] duration-500 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-45">
                       <ArrowUpRight className="w-4 h-4" />
                     </span>

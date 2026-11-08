@@ -31,6 +31,7 @@ export default function CollegesPage() {
     aiqClose: c.aiqClose,
     feeMin: c.feeMin,
     feeMax: c.feeMax,
+    ...(c.photo ? { photo: c.photo } : {}),
   }));
   const states = new Set(colleges.map((c) => c.stateCode)).size;
   const stats = [

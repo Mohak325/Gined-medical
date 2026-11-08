@@ -29,6 +29,8 @@
     "data:mcc:match": "node scripts/data/mcc-match.mjs",
     "data:mcc-pg:extract": "python -I scripts/data/mcc_pg_extract.py data/raw/mcc-pg/pdfs data/extracted/mcc-pg",
     "data:mcc-pg:match": "node scripts/data/mcc-match.mjs pg",
+    "data:photos": "node scripts/data/photos.mjs",
+    "data:photos:pick": "node scripts/data/photos.mjs --pick",
     "data:build": "node scripts/data/build.mjs",
     "data:check": "node scripts/data/check.mjs",
     "test:e2e": "playwright test"
