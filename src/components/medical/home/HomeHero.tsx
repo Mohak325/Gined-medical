@@ -19,7 +19,8 @@ const sources = [
 
 // Real closing ranks floating beside the finder: proof of the data, not decoration.
 const CHIP_COLLEGES = ["ug_in073g1", "ug_ka001g1", "ug_in086g1"];
-const CHIP_POSITIONS = ["-left-28 top-28", "-right-6 -top-10", "-left-14 -bottom-10"];
+// Corners of the card only, so no chip ever covers a field: bottom-right, top-right, bottom-left.
+const CHIP_POSITIONS = ["-right-6 -bottom-12", "-right-6 -top-10", "-left-14 -bottom-10"];
 
 export default function HomeHero() {
   const chips = CHIP_COLLEGES.map((id) => collegeSummary(id)).filter((c) => c?.aiqClose);
